@@ -14555,7 +14555,7 @@ kind of free
 		<property name="Material" value="MWWorkStation" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#metalBench?metalBench" />
-        <property name="CustomIcon" value="ui_game_symbol_ArmorTable" />
+        <property name="CustomIcon" value="ui_game_symbol_workworkbench" />
 		<property name="MultiBlockDim" value="2,1,1" />
 		<property name="HeatMapStrength" value="2" />
 		<property name="HeatMapTime" value="1200" />
@@ -14742,7 +14742,6 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output,fuel" />
 		</property>
-		<property name="CustomIcon" value="BulletPress" />
 		<property name="DescriptionKey" value="BulletPressDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
@@ -15660,6 +15659,7 @@ kind of free
 			<property name="ItemCount" value="0" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
+         <property name="CustomIcon" value="cntCar03Damage2" />
         <drop event="Destroy" name="scrapSteel" count="5" />
 		<drop event="Fall" name="scrapSteelPile" count="2" prob="1" stick_chance=".75" />
 		<property name="DowngradeBlock" value="militaryTruckOpen" />
@@ -15675,6 +15675,7 @@ kind of free
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
 		<property name="MaxDamage" value="500" />
+        <property name="CustomIcon" value="cntCar03Damage2" />
      	<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
@@ -15791,6 +15792,7 @@ kind of free
 		<property name="Model" value="#lootcontainers?Container" />	
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="19" />	
+        <property name="CustomIcon" value="cntCar03Damage2" />
         <property name="DowngradeBlock" value="ContainerOpen" />
          <property class="UpgradeBlock">
 			<property name="ToBlock" value="ContainerOpen" />
@@ -15843,6 +15845,7 @@ kind of free
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
 		<property name="MaxDamage" value="250" />
+        <property name="CustomIcon" value="cntCar03Damage2" />
 		<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
@@ -16297,6 +16300,7 @@ kind of free
 		<property name="Tag" value="Door" />
 		<property name="PlaceEverywhere" value="true" />
 		<property name="Model" value="#ScrIrShut2?ScrIrShut2" />
+        <property name="CustomIcon" value="ui_game_symbol_Shutters2" />
 		<property name="OpenSound" value="UseActions/open_door_metal" />
 		<property name="CloseSound" value="UseActions/close_door_metal" />
 		<property name="MultiBlockDim" value="1,1,1" />
@@ -16329,6 +16333,7 @@ kind of free
         <property name="Extends" value="Scrap_Iron_Shutters2" />
 		<property name="Material" value="wood_weak" />
 		<property name="Model" value="#WoodShutters?WoodShutters" />
+        <property name="CustomIcon" value="ui_game_symbol_WoodShutters" />
         <property class="UpgradeBlock">
 			<property name="ToBlock" value="WoodShutRein" />
 			<property name="Item" value="Plank" />
@@ -16359,6 +16364,7 @@ kind of free
 	<block id="1997" name="Scrap_Iron_Shutters">
         <property name="Extends" value="Scrap_Iron_Shutters2" />
 		<property name="Model" value="#ScrapIronShatters?ScrapIronShatters" />
+        <property name="CustomIcon" value="ui_game_symbol_Shutters2" />
 		<property class="UpgradeBlock">
 		<property name="ToBlock" value="ScrIrShutR1" />
 			<property name="ItemCount" value="20" />
@@ -16366,6 +16372,7 @@ kind of free
 	</block>
 	<block id="1998" name="ScrIrShutR1">
         <property name="Extends" value="Scrap_Iron_Shutters2" />
+        <property name="CustomIcon" value="ui_game_symbol_ScrIrShutR1" />
 		<property name="Material" value="metal" />
 		<property name="Model" value="#ScrapIronShattersR1?ScrapIronShattersR1" />
 		<property name="DowngradeBlock" value="Scrap_Iron_Shutters" />
@@ -16383,6 +16390,7 @@ kind of free
 		<property name="Extends" value="Scrap_Iron_Shutters2" />
 		<property name="Material" value="wood_weak" />
 		<property name="Model" value="#WoodShutters2?WoodShutters2" />
+        <property name="CustomIcon" value="ui_game_symbol_WoodShutters2" />
 		<property name="OpenSound" value="UseActions/open_door_wood" />
 		<property name="CloseSound" value="UseActions/close_door_wood" />
 		<property class="UpgradeBlock">
@@ -16424,6 +16432,7 @@ kind of free
 		<property name="Tag" value="Door" />
 		<property name="PlaceEverywhere" value="true" />
 		<property name="Model" value="#WoodGate2x3?WoodGate2x3" />
+        <property name="CustomIcon" value="ui_game_symbol_WoodGate2x3" />
 		<property name="OpenSound" value="UseActions/open_door_wood" />
 		<property name="CloseSound" value="UseActions/close_door_wood" />
 		<property name="MultiBlockDim" value="-2,3,1" />
@@ -16435,6 +16444,7 @@ kind of free
         <property name="Extends" value="Wood_Gate_2x3" />
 		<property name="Material" value="metal" />
 		<property name="Model" value="#ScrIrGate2x3?ScrIrGate2x3" />
+        <property name="CustomIcon" value="ui_game_symbol_IronGate2x3" />
 		<property name="OpenSound" value="UseActions/open_door_metal" />
 		<property name="CloseSound" value="UseActions/close_door_metal" />
 		<property class="RepairItems"> <property name="scrapIron" value="40" /> </property>
@@ -16442,6 +16452,7 @@ kind of free
     <block id="2001" name="Wood_Gate_3x2">
         <property name="Extends" value="Wood_Gate_2x3" />
 		<property name="Model" value="#WoodGate3x2?WoodGate3x2" />
+        <property name="CustomIcon" value="ui_game_symbol_WoodGate3x2" />
 		<property name="MultiBlockDim" value="-2,2,1" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="WoodGate3x2R1" />
@@ -16474,6 +16485,7 @@ kind of free
         <property name="Extends" value="Wood_Gate_2x3" />
 		<property name="Material" value="Mmetal_medium" />
 		<property name="Model" value="#ScrapIronGate3x2?ScrapIronGate3x2" />
+        <property name="CustomIcon" value="ui_game_symbol_ScrapGate3x2" />
 		<property name="OpenSound" value="UseActions/open_door_metal" />
 		<property name="CloseSound" value="UseActions/close_door_metal" />
         <property name="MultiBlockDim" value="-2,2,1" />
@@ -16530,6 +16542,7 @@ kind of free
     <block id="1992" name="Wood_Bridge_1x3">
         <property name="Extends" value="Wood_Gate_2x3" />
 		<property name="Model" value="#WoodBridge1x3?WoodBridge1x3" />
+        <property name="CustomIcon" value="ui_game_symbol_WoodBridge1x3" />
 		<property name="OpenSound" value="UseActions/open_door_wood" />
 		<property name="CloseSound" value="UseActions/close_door_wood" />
 		<property name="MultiBlockDim" value="1,1,3" />
@@ -16538,6 +16551,7 @@ kind of free
 	<block id="1993" name="Wood_Bridge_2x4">
         <property name="Extends" value="Wood_Gate_2x3" />
 		<property name="Model" value="#WoodBridge2x4?WoodBridge2x4" />
+        <property name="CustomIcon" value="ui_game_symbol_WoodBridge2c4" />
 		<property name="MultiBlockDim" value="-2,1,1" />
 		<property class="RepairItems"> <property name="Plank" value="15" /> </property>
 	</block>
@@ -16549,6 +16563,7 @@ kind of free
 		<property name="Tag" value="Door" />
 		<property name="PlaceEverywhere" value="true" />
 		<property name="Model" value="#Elevator1x1x3?Elevator1x1x3" />
+        <property name="CustomIcon" value="ui_game_symbol_Elevator1x1x3" />
 		<property name="OpenSound" value="UseActions/open_door_metal" />
 		<property name="CloseSound" value="UseActions/close_door_metal" />
 		<property name="MultiBlockDim" value="1,1,1" />
@@ -16558,6 +16573,7 @@ kind of free
 	<block id="2010" name="LargeLift">
         <property name="Extends" value="Elevator_1x1x3" />
 		<property name="Model" value="#Elevator22?Elevator22" />
+        <property name="CustomIcon" value="ui_game_symbol_LargeLift" />
 	</block>
 	<!--JZMOD RADIATION-->
     <block id="1747" name="DecalSphere">
@@ -16659,6 +16675,7 @@ kind of free
         <property name="Extends" value="stone" />
 		<property name="Material" value="hardStone" />
 		<property name="Texture" value="322" />
+        <property name="CustomIcon" value="stone" />
 	</block>
 	<block id="1966" name="SteelSpikes">
 		<property name="Extends" value="trapSpikesNew" /> 
@@ -16667,6 +16684,7 @@ kind of free
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#irSpike?irSpikeR" />
+        <property name="CustomIcon" value="stone" />
 		<property class="RepairItems"> 
 			<property name="shortSteelPipe" value="15" /> 
 		</property>
