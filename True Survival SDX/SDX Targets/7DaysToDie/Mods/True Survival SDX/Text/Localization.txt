@@ -1,2 +1,0 @@
-Key,Source,Context,Changes,English,French,German,Klingon,Spanish
-SilencerDesc,"","","","The Silencer can be attached to the Pistol, Magnum, and Hunting Rifle.","","","",""
