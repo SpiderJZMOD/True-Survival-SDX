@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="True" />
+    <property name="YOffset" value="-34" />
+    <property name="RotationToFaceNorth" value="1" />
+    <property name="Zoning" value="Industrial" />
+    <property name="AllowedTownships" value="rural,wilderness" />
+    <property name="AllowedBiomes" value="snow,forest,burnt_forest,wasteland" />
+    <property name="StaticSpawner.Class" value="BanditSpawn" />
+    <property name="StaticSpawner.Size" value="64,32,64" />
+    <property name="StaticSpawner.Trigger" value="120" />
+    <property name="MaxPerHub" value="1" />
+</prefab>

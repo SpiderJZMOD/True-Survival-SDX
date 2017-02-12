@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="Zoning" value="Residential" />
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="YOffset" value="-12" />
+    <property name="RotationToFaceNorth" value="0" />
+    <property name="AllowedTownships" value="wilderness" />
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland_hub,wasteland" />
+    <property name="StaticSpawner.Class" value="SpawnExLarge" />
+    <property name="StaticSpawner.Size" value="32,3,32" />
+    <property name="StaticSpawner.Trigger" value="180" />
+</prefab>

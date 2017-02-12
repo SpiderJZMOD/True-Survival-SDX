@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="Zoning" value="Commercial" />
+    <property name="AllowedTownships" value="city,town,rural,wilderness" />
+    <property name="AllowedBiomes" value="snow,plains,pine_forest,forest,desert,wasteland_hub,wasteland,burnt_forest" />
+    <property name="MaxPerHub" value="1" />
+    <property name="TraderArea" value="False" />
+    <property name="RotationToFaceNorth" value="0" />
+</prefab>

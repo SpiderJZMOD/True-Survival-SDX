@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="False" />
+    <property name="AllowTopSoilDecorations" value="True" />
+    <property name="RotationToFaceNorth" value="2" />
+    <property name="Zoning" value="Residential" />
+    <property name="AllowedTownships" value="town,rural,wilderness" />
+    <property name="AllowedBiomes" value="snow" />
+    <property name="StaticSpawner.Class" value="SpawnSnowMedium" />
+    <property name="StaticSpawner.Size" value="32,2,32" />
+    <property name="StaticSpawner.Trigger" value="160" />
+    <property name="MaxPerHub" value="1" />
+</prefab>

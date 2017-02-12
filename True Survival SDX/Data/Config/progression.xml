@@ -1,0 +1,2166 @@
+<progression>
+	<player max_level="200" exp_to_level="5000" experience_multiplier="1.0151" skill_points_per_level="5" skill_point_multiplier="0" />
+	<skills max_level="100" exp_to_level="200" experience_multiplier="1.0195" skill_point_cost_multiplier="0" skill_point_cost_per_level="3">
+		<!-- these are defaults and can be used to modify individual skills as needed      -->
+		<!-- Player Action Skills -->
+		<!--health-->
+		<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="1000" experience_multiplier="1.07152" group="health" skill_point_cost_per_level="1000">
+			<effect name="StaminaDegradation">
+				<multiply skill_level="1,5" value="1,.97" />
+				<multiply skill_level="5,11" value=".97,.94" />
+				<multiply skill_level="11,19" value=".94,.91" />
+				<multiply skill_level="19,32" value=".91,.86" />
+				<multiply skill_level="32,49" value=".86,.84" />
+				<multiply skill_level="49,70" value=".84,.82" />
+				<multiply skill_level="70,100" value=".82,.80" />
+			</effect>
+			<effect name="BreathHoldDuration">
+				<setvalue skill_level="1,10" value="20,27" />
+				<setvalue skill_level="10,20" value="27,32" />
+				<setvalue skill_level="20,30" value="32,36" />
+				<setvalue skill_level="30,40" value="36,40" />
+				<setvalue skill_level="40,50" value="40,44" />
+				<setvalue skill_level="50,60" value="44,47" />
+				<setvalue skill_level="60,70" value="47,51" />
+				<setvalue skill_level="70,80" value="51,54" />
+				<setvalue skill_level="80,90" value="54,57" />
+				<setvalue skill_level="90,100" value="57,60" />
+			</effect>
+		</player_skill>
+		<perk name="Health Nut" icon="run" description_key="healthNutDesc" title_key="healthNut" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" always_fire="true" group="health">
+			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
+			<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40" />
+			<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60" />
+			<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80" />
+			<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="100" />
+			<effect name="MinWellness">
+				<add perk_level="0" value="0" />
+				<add perk_level="1" value="10" />
+				<add perk_level="2" value="20" />
+				<add perk_level="3" value="30" />
+				<add perk_level="4" value="40" />
+				<add perk_level="5" value="50" />
+			</effect>
+			<effect name="MaxWellness">
+				<add perk_level="0" value="0" />
+				<add perk_level="1" value="10" />
+				<add perk_level="2" value="20" />
+				<add perk_level="3" value="30" />
+				<add perk_level="4" value="40" />
+				<add perk_level="5" value="50" />
+			</effect>
+		</perk>
+		<perk name="Sexual Tyranosaurus" icon="run" description_key="sexualTyranosaurusDesc" title_key="sexualTyranosaurus" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" always_fire="true" group="health">
+			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
+			<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40" />
+			<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60" />
+			<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80" />
+			<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="100" />
+			<effect name="StaminaGain">
+				<add perk_level="0" value="0" />
+				<add perk_level="1" value=".1" />
+				<add perk_level="2" value=".2" />
+				<add perk_level="3" value=".3" />
+				<add perk_level="4" value=".4" />
+				<add perk_level="5" value=".5" />
+			</effect>
+		</perk>
+		<perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="2" group="health">
+			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="20" />
+			<requirement perk_level="2" required_player_level="40" />
+			<requirement perk_level="3" required_player_level="60" />
+			<requirement perk_level="4" required_player_level="80" />
+			<requirement perk_level="5" required_player_level="100" />
+			<effect name="HungerDegradation">
+				<multiply perk_level="1" value="0.9" />
+				<multiply perk_level="2" value="0.8" />
+				<multiply perk_level="3" value="0.7" />
+				<multiply perk_level="4" value="0.6" />
+				<multiply perk_level="5" value="0.5" />
+			</effect>
+			<effect name="WellnessGain">
+				<multiply perk_level="1" value="1.11" />
+				<multiply perk_level="2" value="1.25" />
+				<multiply perk_level="3" value="1.43" />
+				<multiply perk_level="4" value="1.67" />
+				<multiply perk_level="5" value="2.0" />
+			</effect>
+		</perk>
+		<perk name="Run Forest Run" icon="run" description_key="runForestRunDesc" title_key="runForestRun" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" passive_effect="true" group="health">
+			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="20" />
+			<requirement perk_level="2" required_player_level="40" />
+			<requirement perk_level="3" required_player_level="60" />
+			<requirement perk_level="4" required_player_level="80" />
+			<requirement perk_level="5" required_player_level="100" />
+			<effect name="StaminaDegradation">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="0.9" />
+				<multiply perk_level="2" value="0.8" />
+				<multiply perk_level="3" value="0.7" />
+				<multiply perk_level="4" value="0.6" />
+				<multiply perk_level="5" value="0.5" />
+			</effect>
+		</perk>
+		<perk name="The Camel" icon="run" description_key="theCamelDesc" title_key="theCamel" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" passive_effect="true" group="health">
+			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="20" />
+			<requirement perk_level="2" required_player_level="40" />
+			<requirement perk_level="3" required_player_level="60" />
+			<requirement perk_level="4" required_player_level="80" />
+			<requirement perk_level="5" required_player_level="100" />
+			<effect name="ThirstDegradation">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="0.9" />
+				<multiply perk_level="2" value="0.8" />
+				<multiply perk_level="3" value="0.7" />
+				<multiply perk_level="4" value="0.6" />
+				<multiply perk_level="5" value="0.5" />
+			</effect>
+		</perk>
+		<player_skill name="Scavenging" icon="loot_sack" description_key="scavengingDesc" title_key="scavenging" group="scavenging" skill_point_cost_per_level="1000">
+			<effect name="LootTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="LootQuality">
+				<add skill_level="1,5" value="1,8" />
+				<add skill_level="5,11" value="8,14" />
+				<add skill_level="11,19" value="14,19" />
+				<add skill_level="19,32" value="19,26" />
+				<add skill_level="32,49" value="26,34" />
+				<add skill_level="49,70" value="34,41" />
+				<add skill_level="70,100" value="41,50" />
+			</effect>
+		</player_skill>
+		<perk name="Fast Eddie" icon="loot_sack" description_key="fastEddieDesc" title_key="fastEddie" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" always_fire="true" group="scavenging">
+			<requirement perk_level="1" required_skill_name="Scavenging" required_skill_level="25" />
+			<requirement perk_level="2" required_skill_name="Scavenging" required_skill_level="50" />
+			<requirement perk_level="3" required_skill_name="Scavenging" required_skill_level="75" />
+			<effect name="LootTime">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="0.92" />
+				<multiply perk_level="2" value="0.84" />
+				<multiply perk_level="3" value="0.75" />
+			</effect>
+		</perk>
+		<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="scavenging">
+			<requirement skill_level="1" required_skill_name="Scavenging" required_skill_level="25" />
+			<requirement skill_level="2" required_skill_name="Scavenging" required_skill_level="50" />
+			<requirement skill_level="3" required_skill_name="Scavenging" required_skill_level="75" />
+			<effect name="LootQuality">
+				<add perk_level="0" value="0" />
+				<add skill_level="1" value="25" />
+				<add skill_level="2" value="50" />
+				<add skill_level="3" value="100" />
+			</effect>
+		</perk>
+		<action_skill name="Blunt Weapons" icon="club" description_key="bluntWeaponsDesc" title_key="bluntWeapons" group="weapons" skill_point_cost_per_level="1000">
+			<effect name="EntityDamage">
+				<multiply skill_level="1,5" value="1,1.04" />
+				<multiply skill_level="5,11" value="1.04,1.07" />
+				<multiply skill_level="11,19" value="1.07,1.1" />
+				<multiply skill_level="19,32" value="1.1,1.14" />
+				<multiply skill_level="32,49" value="1.14,1.19" />
+				<multiply skill_level="49,70" value="1.19,1.23" />
+				<multiply skill_level="70,100" value="1.23,1.28" />
+			</effect>
+			<effect name="HarvestCount">
+				<multiply skill_level="1,100" value="0,0" />
+			</effect>
+		</action_skill>
+		<perk name="Iron Club" icon="clubIron" description_key="Learn to upgrade your wooden Club to a iron melee club" title_key="Iron Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="weapons">
+			<requirement perk_level="1" required_skill_name="Blunt Weapons" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="2" />
+			<recipe name="clubIron" unlock_level="1" />
+		</perk>
+		<perk name="Spiked Club" icon="clubSpiked" description_key="Learn to apply spikes to your bats on the Wood Working Bench with a Claw Hammer" title_key="Spiked Clubs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="weapons">
+			<requirement perk_level="1" required_skill_name="Blunt Weapons" required_skill_level="5" />
+			<requirement perk_level="1" required_player_level="3" />
+			<recipe name="clubSpiked" unlock_level="1" />
+            <recipe name="nailedBat" unlock_level="1" />
+		</perk>
+		<perk name="Steel Spiked Club" icon="clubSteelSpiked" description_key="Learn to upgrade your spiked club using steel spikes on the metal working bench" title_key="Steel Spiked Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="6" group="weapons">
+			<requirement perk_level="1" required_skill_name="Blunt Weapons" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="clubSteelSpiked" unlock_level="1" />
+		</perk>
+		<action_skill name="Blade Weapons" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" group="weapons" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000">
+			<effect name="EntityDamage">
+				<multiply skill_level="1,5" value="1,1.04" />
+				<multiply skill_level="5,11" value="1.04,1.07" />
+				<multiply skill_level="11,19" value="1.07,1.1" />
+				<multiply skill_level="19,32" value="1.1,1.14" />
+				<multiply skill_level="32,49" value="1.14,1.19" />
+				<multiply skill_level="49,70" value="1.19,1.23" />
+				<multiply skill_level="70,100" value="1.23,1.28" />
+			</effect>
+		</action_skill>
+        <perk name="kaBar" icon="huntingKnife" description_key="Learn to craft a kaBar Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a small strong knife thats good for fighting." title_key="kaBar Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
+            <requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="10" />
+			<recipe name="SmallKnifeBlade" unlock_level="1" />
+			<recipe name="kaBar" unlock_level="1" />
+		</perk>
+		<perk name="Machete" icon="machete" description_key="Learn to craft a Machete on the anvile using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
+            <requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="25" />
+			<recipe name="LargeKnifeBlade" unlock_level="1" />
+            <recipe name="machete" unlock_level="1" />
+		</perk>
+        <perk name="The Shark" icon="FieldKnife" description_key="Learn to craft this awesome knife TheShark on the anvile using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a big strong knife thats best at fighting." title_key="The Shark" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
+            <requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="50" />
+			<recipe name="LargeKnifeBlade" unlock_level="1" />
+            <recipe name="TheShark" unlock_level="1" />
+		</perk>
+		<perk name="Knife Guy" icon="knife" description_key="knifeGuyDesc" title_key="knifeGuy" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="10" />
+			<requirement perk_level="2" required_skill_name="Blade Weapons" required_skill_level="20" />
+			<requirement perk_level="3" required_skill_name="Blade Weapons" required_skill_level="40" />
+			<requirement perk_level="4" required_skill_name="Blade Weapons" required_skill_level="60" />
+			<requirement perk_level="5" required_skill_name="Blade Weapons" required_skill_level="80" />
+			<effect name="EntityDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="1.1125" />
+				<multiply skill_level="2" value="1.225" />
+				<multiply skill_level="3" value="1.3375" />
+				<multiply skill_level="4" value="1.45" />
+				<multiply skill_level="5" value="1.5625" />
+			</effect>
+			<effect name="StaminaDegradation">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="0.95" />
+				<multiply skill_level="2" value="0.90" />
+				<multiply skill_level="3" value="0.85" />
+				<multiply skill_level="4" value="0.80" />
+				<multiply skill_level="5" value="0.75" />
+			</effect>
+		</perk>
+		<perk name="The Decapitator" icon="knife" description_key="theDecapitatorDesc" title_key="decapitator" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="25" />
+			<requirement perk_level="2" required_skill_name="Blade Weapons" required_skill_level="50" />
+			<requirement perk_level="3" required_skill_name="Blade Weapons" required_skill_level="75" />
+			<effect name="DismembermentChance">
+				<add perk_level="0" value="0" />
+				<add skill_level="1" value="0.1" />
+				<add skill_level="2" value="0.2" />
+				<add skill_level="3" value="0.3" />
+			</effect>
+		</perk>
+		<action_skill name="Pistols" icon="pistol" description_key="pistolsDesc" title_key="pistols" group="firearms" skill_point_cost_per_level="1000">
+			<effect name="EntityDamage">
+				<multiply skill_level="1,5" value="1,1.04" />
+				<multiply skill_level="5,11" value="1.04,1.07" />
+				<multiply skill_level="11,19" value="1.07,1.1" />
+				<multiply skill_level="19,32" value="1.1,1.14" />
+				<multiply skill_level="32,49" value="1.14,1.19" />
+				<multiply skill_level="49,70" value="1.19,1.23" />
+				<multiply skill_level="70,100" value="1.23,1.28" />
+			</effect>
+		</action_skill>
+		<perk name="Magnum Scope Attachment" icon="44MagnumScope" description_key="Learn to attach sniper scopes to Magnums on the metal working bench using a wrench" title_key="Magnum Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+			<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="20" />
+			<recipe name="MagnumFrameScope" unlock_level="1" />
+			<recipe name="44MagnumScope" unlock_level="1" />
+		</perk>
+		<perk name="Pistol Silencer Attachment" icon="SilencedPistol" description_key="Learn to attach Silencers to Pistols on the metal working bench using a wrench." title_key="Pistol Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="40" />
+			<recipe name="SilencedPistolBarrel" unlock_level="1" />
+			<recipe name="SilencedPistol" unlock_level="1" />
+		</perk>
+		<perk name="The Outlaw" icon="pistol" description_key="theOutlawDesc" title_key="theOutlaw" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="10" />
+			<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="20" />
+			<requirement perk_level="3" required_skill_name="Pistols" required_skill_level="40" />
+			<requirement perk_level="4" required_skill_name="Pistols" required_skill_level="60" />
+			<requirement perk_level="5" required_skill_name="Pistols" required_skill_level="80" />
+			<effect name="EntityDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="1.1125" />
+				<multiply skill_level="2" value="1.225" />
+				<multiply skill_level="3" value="1.3375" />
+				<multiply skill_level="4" value="1.45" />
+				<multiply skill_level="5" value="1.5625" />
+			</effect>
+		</perk>
+		<perk name="Dead Shot" icon="pistol" description_key="deadShotDesc" title_key="deadShot" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="25" />
+			<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="50" />
+			<requirement perk_level="3" required_skill_name="Pistols" required_skill_level="75" />
+			<effect name="DismembermentChance">
+				<add perk_level="0" value="0" />
+				<add skill_level="1" value="0.1" />
+				<add skill_level="2" value="0.2" />
+				<add skill_level="3" value="0.3" />
+			</effect>
+		</perk>
+		<action_skill name="Shotguns" icon="shotgun" description_key="shotgunsDesc" title_key="shotguns" group="firearms" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000">
+			<effect name="EntityDamage">
+				<multiply skill_level="1,5" value="1,1.04" />
+				<multiply skill_level="5,11" value="1.04,1.07" />
+				<multiply skill_level="11,19" value="1.07,1.1" />
+				<multiply skill_level="19,32" value="1.1,1.14" />
+				<multiply skill_level="32,49" value="1.14,1.19" />
+				<multiply skill_level="49,70" value="1.19,1.23" />
+				<multiply skill_level="70,100" value="1.23,1.28" />
+			</effect>
+		</action_skill>
+		<perk name="Blunderbuss" icon="blunderbuss" description_key="Learn to craft a make shift firearm and ammo. /nLevel 2 - Learn how to conect two Blunderbusses to make a double barrel version" title_key="Blunderbuss" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="firearms">
+			<requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="5" />
+			<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="2" />
+			<recipe name="blunderbuss" unlock_level="1" />
+			<recipe name="blunderbussAmmo" unlock_level="1" />
+			<recipe name="BlunderbussDouble" unlock_level="2" />
+		</perk>
+		<perk name="Slug" icon="shotgunSlug" description_key="Learn to craft Shotgun Slugs with a bullet press" title_key="Slug" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<recipe name="shotgunSlug" unlock_level="1" />
+		</perk>
+		<perk name="Boom Stick" icon="shotgun" description_key="boomStickDesc" title_key="boomStick" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="10" />
+			<requirement perk_level="2" required_skill_name="Shotguns" required_skill_level="20" />
+			<requirement perk_level="3" required_skill_name="Shotguns" required_skill_level="40" />
+			<requirement perk_level="4" required_skill_name="Shotguns" required_skill_level="60" />
+			<requirement perk_level="5" required_skill_name="Shotguns" required_skill_level="80" />
+			<effect name="EntityDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="1.1125" />
+				<multiply skill_level="2" value="1.225" />
+				<multiply skill_level="3" value="1.3375" />
+				<multiply skill_level="4" value="1.45" />
+				<multiply skill_level="5" value="1.5625" />
+			</effect>
+		</perk>
+		<perk name="Splatter Gun" icon="shotgun" description_key="splatterGunDesc" title_key="splatterGun" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="25" />
+			<requirement perk_level="2" required_skill_name="Shotguns" required_skill_level="50" />
+			<requirement perk_level="3" required_skill_name="Shotguns" required_skill_level="75" />
+			<effect name="DismembermentChance">
+				<add perk_level="0" value="0" />
+				<add skill_level="1" value="0.1" />
+				<add skill_level="2" value="0.2" />
+				<add skill_level="3" value="0.3" />
+			</effect>
+		</perk>
+		<action_skill name="Rifles" icon="rifle" description_key="riflesDesc" title_key="rifles" group="firearms" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000">
+			<effect name="EntityDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1,5" value="1,1.04" />
+				<multiply skill_level="5,11" value="1.04,1.07" />
+				<multiply skill_level="11,19" value="1.07,1.1" />
+				<multiply skill_level="19,32" value="1.1,1.14" />
+				<multiply skill_level="32,49" value="1.14,1.19" />
+				<multiply skill_level="49,70" value="1.19,1.23" />
+				<multiply skill_level="70,100" value="1.23,1.28" />
+			</effect>
+		</action_skill>
+		<perk name="Rifle Scope Attachment" icon="huntingRifleScope" description_key="Learn to attach sniper scopes to Huntingrifeles on the metal working bench using a wrench." title_key="Hunting Rifle Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+			<requirement perk_level="1" required_skill_name="Rifles" required_skill_level="20" />
+			<recipe name="huntingRifleStockScope" unlock_level="1" />
+			<recipe name="huntingRifleScope" unlock_level="1" />
+		</perk>
+		<perk name="Rifle Silencer Attachment" icon="SilencedhuntingRifle" description_key="Learn to attach Silencers to Hunting Rifles on the metal working bench using a wrench." title_key="Hunting Rifle Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_skill_name="Rifles" required_skill_level="40" />
+			<recipe name="SilencedHuntingBarrel" unlock_level="1" />
+			<recipe name="SilencedhuntingRifle" unlock_level="1" />
+		</perk>
+		<perk name="AK47 Scope Attachment" icon="ScopedAK47" description_key="Learn to attach sniper scopes to AK47s on the metal working bench using a wrench." title_key="AK47 Scope Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+			<requirement perk_level="1" required_skill_name="Rifles" required_skill_level="20" />
+			<recipe name="AK47StockScope" unlock_level="1" />
+			<recipe name="ScopedAK47" unlock_level="1" />
+		</perk>
+		<perk name="AK47 Silencer Attachment" icon="SilencedAK47" description_key="Learn to attach Silencers to AK47s on the metal working bench using a wrench." title_key="AK47 Silencer Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_skill_name="Rifles" required_skill_level="40" />
+			<recipe name="SilencedAK47Barrel" unlock_level="1" />
+			<recipe name="SilencedAK47" unlock_level="1" />
+		</perk>
+		<perk name="Better Lead Than Dead" icon="rifle" description_key="betterLeadThanDeadDesc" title_key="betterLeadThanDead" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_skill_name="Rifles" required_skill_level="10" />
+			<requirement perk_level="2" required_skill_name="Rifles" required_skill_level="20" />
+			<requirement perk_level="3" required_skill_name="Rifles" required_skill_level="40" />
+			<requirement perk_level="4" required_skill_name="Rifles" required_skill_level="60" />
+			<requirement perk_level="5" required_skill_name="Rifles" required_skill_level="80" />
+			<effect name="EntityDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="1.1125" />
+				<multiply skill_level="2" value="1.225" />
+				<multiply skill_level="3" value="1.3375" />
+				<multiply skill_level="4" value="1.45" />
+				<multiply skill_level="5" value="1.5625" />
+			</effect>
+		</perk>
+		<action_skill name="Archery" icon="archery" description_key="archeryDesc" title_key="archery" group="weapons" skill_point_cost_per_level="1000">
+			<effect name="EntityDamage">
+				<multiply skill_level="1,5" value="1,1.04" />
+				<multiply skill_level="5,11" value="1.04,1.07" />
+				<multiply skill_level="11,19" value="1.07,1.1" />
+				<multiply skill_level="19,32" value="1.1,1.14" />
+				<multiply skill_level="32,49" value="1.14,1.19" />
+				<multiply skill_level="49,70" value="1.19,1.23" />
+				<multiply skill_level="70,100" value="1.23,1.28" />
+			</effect>
+		</action_skill>
+		<perk name="Stone Spear" icon="IronSpears" description_key="Learn to harden a basic Wood Spear in the campfire and throwable Javelin" title_key="Wooden Spear and Javelin" max_level="1" skill_point_cost_per_level="5" group="weapons">
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="5" />
+			<recipe name="WoodSpear" unlock_level="1" />
+			<recipe name="WoodJavelin" unlock_level="1" />
+		</perk>
+		<perk name="Iron Spear" icon="IronSpears" description_key="Learn how to craft an Iron Spear head in the forge and craft a spear and throwable Javelin with it" title_key="Iron Spear and Javelin" max_level="1" skill_point_cost_per_level="5" group="weapons">
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="20" />
+			<recipe name="SpearHead" unlock_level="1" />
+            <recipe name="IronSpear" unlock_level="1" />
+			<recipe name="IronJavelin" unlock_level="1" />
+		</perk>
+		<perk name="Crossbow" icon="crossbow" description_key="Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench" title_key="Crossbow" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
+			<requirement perk_level="1" required_player_level="5" />
+			<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20" />
+			<recipe name="Crossbow_Limb" unlock_level="1" />
+			<recipe name="Crossbow_Stock" unlock_level="1" />
+			<recipe name="Crossbow_Barrel" unlock_level="1" />
+			<recipe name="crossbow" unlock_level="1" />
+			<recipe name="crossbowBolt" unlock_level="1" />
+			<recipe name="CrossbowStockScope" unlock_level="2" />
+			<recipe name="crossbowScope" unlock_level="2" />
+		</perk>
+		<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" group="health" skill_point_cost_per_level="1000">
+			<effect name="HealthGain">
+				<multiply skill_level="1,10" value="1.00,1.32" />
+				<multiply skill_level="10,20" value="1.32,1.45" />
+				<multiply skill_level="20,30" value="1.45,1.55" />
+				<multiply skill_level="30,40" value="1.55,1.63" />
+				<multiply skill_level="40,50" value="1.63,1.71" />
+				<multiply skill_level="50,60" value="1.71,1.77" />
+				<multiply skill_level="60,70" value="1.77,1.84" />
+				<multiply skill_level="70,80" value="1.84,1.89" />
+				<multiply skill_level="80,90" value="1.89,1.95" />
+				<multiply skill_level="90,100" value="1.95,2.00" />
+			</effect>
+		</player_skill>
+		<perk name="Wood Working Bench" icon="workworkbench" description_key="Learn to craft a Wood Working Bench. Use it to craft more complex items and faster. The wood working bench has 3 tools - CircularSaw, claw Hammer and wrench." title_key="Wood Working Bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+			<requirement perk_level="1" required_player_level="5" />
+			<recipe name="workworkbench" unlock_level="1" />
+		</perk>
+		<perk name="Fan Belt" icon="FanBelt" description_key="Learn to craft a Fan Belt on the wood working bench" title_key="Fan Belt" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
+			<recipe name="FanBelt" unlock_level="1" />
+		</perk>
+		<perk name="Forge" icon="forge1" description_key="Learn to craft and use a forge" title_key="Forge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="workforge" unlock_level="1" />
+			<recipe name="bellows" unlock_level="1" />
+		</perk>
+		<perk name="Anvil" icon="anvil" description_key="Learn to craft an anvil in a forge" title_key="Anvil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="anvil" unlock_level="1" />
+		</perk>
+		<perk name="Forged Iron" icon="forgedIron" description_key="Learn to craft a small stone Forge. Use it to smelt iron, brass, lead, glass, stone and clay. The Forge has 3 tools - anvil, calipers and tool And Die Set." title_key="Forged Iron" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="forgedIron" unlock_level="1" />
+		</perk>
+		<perk name="Short Metal Pipe" icon="shortMetalPipe" description_key="Learn to craft Short Metal Pipes like a man with your bare hands" title_key="Short Metal Pipe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="shortMetalPipe" unlock_level="1" />
+		</perk>
+		<perk name="Blast Furnace" icon="BlastFurnace" description_key="Learn to craft a large brick Blast Furnace. Use it to smelt steel, iron, coal and clay. Use this to forge steel." title_key="Blast Furnace" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="workBlastFurnace" unlock_level="1" />
+		</perk>
+		<perk name="Forged Steel" icon="forgedSteel" description_key="Learn to craft Forged Steel in the blast Furnace" title_key="Forged Steel" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="forgedSteel" unlock_level="1" />
+		</perk>
+		<perk name="Short Steel Pipe" icon="shortSteelPipe" description_key="Learn to craft Short Steel Pipe like a man with your bare hands" title_key="Short Steel Pipe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="shortSteelPipe" unlock_level="1" />
+		</perk>
+		<perk name="Steel Tools" icon="pickaxeSteel" description_key="Learn to forge Steel tool heads in the Blast furnace and craft steel tools on the the metal working bench." title_key="Steel Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="pickaxeSteel" unlock_level="1" />
+			<recipe name="fireaxeSteel" unlock_level="1" />
+			<recipe name="shovelSteel" unlock_level="1" />
+		</perk>
+		<perk name="metalWorkbench" icon="workworkbench" description_key="Learn to craft a Metal Working Bench to craft more metal items and faster" title_key="Metal Working bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+			<requirement perk_level="1" required_player_level="20" />
+			<recipe name="workMetalWorkBench" unlock_level="1" />
+		</perk>
+		<perk name="spotlight" icon="spotlight" description_key="Learn to craft a working spotlight on the metal work bench using the Compact Driver." title_key="Spotlight" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
+			<recipe name="spotlight" unlock_level="1" />
+		</perk>
+		<perk name="Barbed Wire" icon="barbedWireSheet" description_key="Learn to craft Barbed Wire in the forge using a anvil" title_key="Barbed Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+			<recipe name="barbedWireSheet" unlock_level="1" />
+		</perk>
+		<perk name="Small Bed" icon="Bed01" description_key="Learn to craft a Small Bed on the Metal Work Bench using a wrench. When rested on it will heal and warm you" title_key="Small Bed" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="5" />
+			<recipe name="bed01" unlock_level="1" />
+		</perk>
+		<perk name="Cement Mixer" icon="cementMixer" description_key="Lean to craft a cement mixer on the wood working bench using a wrench. use it to make cement, concrete mix and other terrain blocks" title_key="Cement Mixer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="workcementMixer" unlock_level="1" />
+		</perk>
+		<perk name="Concrete Mix" icon="concreteMix" description_key="Learn to craft concrete mix in the cement mixer" title_key="Concrete Mix" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="concreteMix" unlock_level="1" />
+		</perk>
+		<perk name="Cement" icon="cement1" description_key="Learn to craft cement in the forge" title_key="Cement" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="cement" unlock_level="1" />
+		</perk>
+		<perk name="Cobblestones" icon="cobblestones" description_key="Learn to craft cobblestones" title_key="Cobblestones" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="45" />
+			<recipe name="cobblestones" unlock_level="1" />
+		</perk>
+		<perk name="Refinery" icon="OilRefinery" description_key="Learn to craft a refinery on the wood working bench using a wrench. Use it to creat gas, oil and other chemicals" title_key="Refinery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="40" />
+			<recipe name="workOilRefinery" unlock_level="1" />
+		</perk>
+		<perk name="Bio Fuel" icon="bioFuel" description_key="Learn to process Bio Fuel in a refinery" title_key="Bio Fuel" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+            <requirement perk_level="1" required_skill_name="Engineering" required_skill_level="40" />
+			<recipe name="bioFuel" unlock_level="1" />
+		</perk>
+		<perk name="Oil" icon="oil" description_key="Learn to process oil in a refinery" title_key="Oil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+            <requirement perk_level="1" required_skill_name="Engineering" required_skill_level="40" />
+			<recipe name="oil" unlock_level="1" />
+		</perk>
+		<perk name="Gasoline" icon="gasCan" description_key="Learn to process Gasoline in a refinery" title_key="Gasoline" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+            <requirement perk_level="1" required_skill_name="Engineering" required_skill_level="40" />
+			<recipe name="gasCan" unlock_level="1" />
+		</perk>
+		<perk name="Wrench" icon="wrench" description_key="Learn to repair the wrench and craft it on a anvil using a claw hammer." title_key="Wrench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="wrench" unlock_level="1" />
+		</perk>
+        <perk name="Claw Hammer" icon="clawHammer" description_key="Learn to craft a hammer head in the forge and how to build and repair a claw hammer" title_key="Claw Hammer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="clawHammer" unlock_level="1" />
+		</perk>
+        <perk name="Screwdriver" icon="Screwdriver" description_key="Learn to craft and repair a screwdriver" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="screwdriver" unlock_level="1" />
+		</perk>
+		<perk name="Stone Drill" icon="auger" description_key="Learn to build and maintain a Stone drill that is cappable of digging hardstone and metals" title_key="Stone Drill" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="75" />
+			<recipe name="StoneDrill" unlock_level="1" />
+		</perk>
+		<crafting_skill name="Gun Smithing" icon="gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" group="firearms" skill_point_cost_per_level="3">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<!--
+                <multiply skill_level="1,5" value="1.67,1.464" />
+                <multiply skill_level="5,11" value="1.464,1.283" />
+                <multiply skill_level="11,19" value="1.283,1.109" />
+                <multiply skill_level="19,32" value="1.109,.892" />
+                <multiply skill_level="32,49" value=".892,.668" />
+                <multiply skill_level="49,70" value=".668,.44" />
+                <multiply skill_level="70,100" value=".44,.167" />
+                -->
+				<multiply skill_level="1,5" value="12,10.572" />
+				<multiply skill_level="5,11" value="10.572,9.323" />
+				<multiply skill_level="11,19" value="9.323,8.119" />
+				<multiply skill_level="19,32" value="8.119,6.619" />
+				<multiply skill_level="32,49" value="6.619,5.067" />
+				<multiply skill_level="49,70" value="5.067,3.487" />
+				<multiply skill_level="70,100" value="3.487,1.6" />
+				<!-- Known bug; see XML.txt; "12" and zero skills: 30 QL loss; "1.6" + Fixer = 2 points, almost down to 1 -->
+			</effect>
+		</crafting_skill>
+		<crafting_skill name="Engineering" icon="science" description_key="scienceDesc" title_key="Engineering" group="crafting" skill_point_cost_per_level="3">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="1,5" value="1.67,1.464" />
+				<!-- =100 points at QL 600 -->
+				<multiply skill_level="5,11" value="1.464,1.283" />
+				<multiply skill_level="11,19" value="1.283,1.109" />
+				<multiply skill_level="19,32" value="1.109,.892" />
+				<multiply skill_level="32,49" value=".892,.668" />
+				<multiply skill_level="49,70" value=".668,.44" />
+				<multiply skill_level="70,100" value=".44,.167" />
+				<!-- =10 points at QL 600 -->
+			</effect>
+		</crafting_skill>
+		<!--Clothes-->
+		<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="100" group="clothing">
+			<effect name="ArmorDefense">
+				<add skill_level="1,5" value="0,.03" />
+				<add skill_level="5,11" value=".03,.05" />
+				<add skill_level="11,19" value=".05,.07" />
+				<add skill_level="19,32" value=".07,.1" />
+				<add skill_level="32,49" value=".1,.13" />
+				<add skill_level="49,70" value=".13,.16" />
+				<add skill_level="70,100" value=".16,.2" />
+			</effect>
+		</action_skill>
+		<crafting_skill name="Tailoring" icon="tailoring" description_key="tailoringDesc" title_key="tailoring" group="clothing">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="1,5" value="1.67,1.464" />
+				<!-- =100 points at QL 600 -->
+				<multiply skill_level="5,11" value="1.464,1.283" />
+				<multiply skill_level="11,19" value="1.283,1.109" />
+				<multiply skill_level="19,32" value="1.109,.892" />
+				<multiply skill_level="32,49" value=".892,.668" />
+				<multiply skill_level="49,70" value=".668,.44" />
+				<multiply skill_level="70,100" value=".44,.167" />
+				<!-- =10 points at QL 600 -->
+			</effect>
+		</crafting_skill>
+		<crafting_skill name="Leatherworking" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="1,5" value="1.67,1.464" />
+				<!-- =100 points at QL 600 -->
+				<multiply skill_level="5,11" value="1.464,1.283" />
+				<multiply skill_level="11,19" value="1.283,1.109" />
+				<multiply skill_level="19,32" value="1.109,.892" />
+				<multiply skill_level="32,49" value=".892,.668" />
+				<multiply skill_level="49,70" value=".668,.44" />
+				<multiply skill_level="70,100" value=".44,.167" />
+				<!-- =10 points at QL 600 -->
+			</effect>
+		</crafting_skill>
+		<perk name="Animal Hide Armor" icon="armor_leather" description_key="Learn to craft basic animal hide clothing on the armor table using a Leather Needle." title_key="Animal Hide Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
+			<requirement perk_level="1" required_skill_name="Leatherworking" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="5" />
+			<recipe name="animalHideBoots" unlock_level="1" />
+			<recipe name="animalHideGloves" unlock_level="1" />
+			<recipe name="animalHideHood" unlock_level="1" />
+			<recipe name="animalHideChestArmor" unlock_level="1" />
+			<recipe name="animalHideLegArmor" unlock_level="1" />
+			<recipe name="animalHidePoncho" unlock_level="1" />
+		</perk>
+		<perk name="Leather Armor" icon="armor_leather" description_key="Learn to craft Leather Armor on the armor table using a Leather Needle." title_key="Leather Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
+			<requirement perk_level="1" required_skill_name="Leatherworking" required_skill_level="5" />
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="leatherBoots" unlock_level="1" />
+			<recipe name="leatherGloves" unlock_level="1" />
+			<recipe name="leatherHood" unlock_level="1" />
+			<recipe name="leatherDuster" unlock_level="1" />
+			<recipe name="leatherJacket" unlock_level="1" />
+			<recipe name="leatherPants" unlock_level="1" />
+		</perk>
+        <action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="100" group="clothing">
+			<effect name="ArmorDefense">
+				<add skill_level="1,5" value="0,.03" />
+				<add skill_level="5,11" value=".03,.05" />
+				<add skill_level="11,19" value=".05,.07" />
+				<add skill_level="19,32" value=".07,.1" />
+				<add skill_level="32,49" value=".1,.13" />
+				<add skill_level="49,70" value=".13,.16" />
+				<add skill_level="70,100" value=".16,.2" />
+			</effect>
+		</action_skill>
+		<crafting_skill name="Armor Smithing" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="1,5" value="1.67,1.464" />
+				<!-- =100 points at QL 600 -->
+				<multiply skill_level="5,11" value="1.464,1.283" />
+				<multiply skill_level="11,19" value="1.283,1.109" />
+				<multiply skill_level="19,32" value="1.109,.892" />
+				<multiply skill_level="32,49" value=".892,.668" />
+				<multiply skill_level="49,70" value=".668,.44" />
+				<multiply skill_level="70,100" value=".44,.167" />
+				<!-- =10 points at QL 600 -->
+			</effect>
+		</crafting_skill>
+		<perk name="Scrap Iron Armor" icon="scrapChestArmor" description_key="Learn to craft Scrap Iron Armor on the armor table using a claw hammer." title_key="Scrap Iron Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="clothing">
+			<requirement perk_level="1" required_skill_name="Armor Smithing" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="15" />
+			<recipe name="scrapBoots" unlock_level="1" />
+			<recipe name="scrapChestArmor" unlock_level="1" />
+			<recipe name="scrapGloves" unlock_level="1" />
+			<recipe name="scrapHelmet" unlock_level="1" />
+			<recipe name="scrapLegArmor" unlock_level="1" />
+		</perk>
+		<perk name="Iron Armor" icon="ironChestArmor" description_key="Learn to craft Iron Armor on the armor table using a anvil." title_key="Iron Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
+			<requirement perk_level="1" required_skill_name="Armor Smithing" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="ironBoots" unlock_level="1" />
+			<recipe name="ironChestArmor" unlock_level="1" />
+			<recipe name="ironGloves" unlock_level="1" />
+			<recipe name="ironHelmet" unlock_level="1" />
+			<recipe name="ironLegArmor" unlock_level="1" />
+		</perk>
+		<perk name="Steel Armor" icon="SteelChestArmor" description_key="Learn to craft Steel Armor on the armor table using a Wielder." title_key="Steel Armor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
+			<requirement perk_level="1" required_skill_name="Armor Smithing" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="SteelGauntlets" unlock_level="1" />
+			<recipe name="SteelHelmet" unlock_level="1" />
+			<recipe name="SteelLegArmor" unlock_level="1" />
+			<recipe name="SteelBoots" unlock_level="1" />
+			<recipe name="SteelChestArmor" unlock_level="1" />
+		</perk>
+		<perk name="Light Attachment" icon="flashlight02" description_key="Learn to attach flashlights to helmets on the armor table" title_key="Light Attachment" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="clothing">
+			<requirement perk_level="1" required_skill_name="Miscellaneous Crafting" required_skill_level="20" />
+			<recipe name="scrapHelmet+Light" unlock_level="1" />
+			<recipe name="militaryHelmet+Light" unlock_level="1" />
+			<recipe name="footballHelmet+Light" unlock_level="1" />
+			<recipe name="ironHelmet+Light" unlock_level="1" />
+			<recipe name="SteelHelmet+Light" unlock_level="1" />
+		</perk>
+		<!--Building-->
+		<crafting_skill name="Primitive Crafting" icon="wood" description_key="Crafting simple items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Primitive Crafting" group="crafting" skill_point_cost_per_level="3">
+            <recipe name="stoneKnife" unlock_level="2" />
+            <recipe name="workMortarAndPestle" unlock_level="5" />
+            <recipe name="workStoneMill" unlock_level="5" />
+            <recipe name="ironShiv" unlock_level="50" /> 
+            <effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="1,5" value="1.67,1.464" />
+				<!-- =100 points at QL 600 -->
+				<multiply skill_level="5,11" value="1.464,1.283" />
+				<multiply skill_level="11,19" value="1.283,1.109" />
+				<multiply skill_level="19,32" value="1.109,.892" />
+				<multiply skill_level="32,49" value=".892,.668" />
+				<multiply skill_level="49,70" value=".668,.44" />
+				<multiply skill_level="70,100" value=".44,.167" />
+				<!-- =10 points at QL 600 -->
+			</effect>
+		</crafting_skill>
+		<perk name="Wooden Ladder" icon="Ladder" description_key="Learn to craft a wooden ladder" title_key="Wooden Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="1" />
+			<recipe name="ladderWood" unlock_level="1" />
+		</perk>
+        <perk name="Logcabin" icon="LogCabin" description_key="Learn to build basic Logcabin Blocks" title_key="Logcabin" max_level="1" skill_point_cost_per_level="1" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="3" />
+			<recipe name="logCabinBlock" unlock_level="1" />
+			<recipe name="woodLogPillar100" unlock_level="1" />
+			<recipe name="logCabinRamp" unlock_level="1" />
+		</perk>
+        <perk name="Plank" icon="Plank" description_key="Learn to cut basic wood Planks" title_key="Planks" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="5" />
+			<recipe name="Plank" unlock_level="1" />
+		</perk>
+        <perk name="Nail" icon="nail" description_key="Learn to craft basic Nail in the forge" title_key="Nails" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="5" />
+            <recipe name="nail" unlock_level="1" />
+		</perk>
+        <perk name="Chest" icon="SecureStorageChest" description_key="Learn to craft a secure storage container" title_key="Secure Storage" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="2" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="5" />
+			<recipe name="SecureStorageChest" unlock_level="1" />
+		</perk>
+        <perk name="Redwood Building" icon="Cobblestone" description_key="Learn to craft Redwood blocks on the wood working bench using a CircularSaw" title_key="Redwood Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
+			<recipe name="RedwoodBlock" unlock_level="1" />
+			<recipe name="RedwoodRamp" unlock_level="1" />
+			<recipe name="RedwoodStairs" unlock_level="1" />
+		</perk>
+		<perk name="Wood Building" icon="reinforcedWood" description_key="Learn to craft basic wood frames on the wood working bench. use them to build and upgrade wooden blocks" title_key="Wood Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
+			<recipe name="woodFrameBlock" unlock_level="1" />
+			<recipe name="woodFrameCNRFull" unlock_level="1" />
+			<recipe name="woodFrameCNRInside" unlock_level="1" />
+			<recipe name="woodFrameWedge" unlock_level="1" />
+			<recipe name="woodFrameRamp" unlock_level="1" />
+			<recipe name="woodStairs25" unlock_level="1" />
+			<recipe name="woodPillar100" unlock_level="1" />
+			<recipe name="woodPlate" unlock_level="1" />
+			<recipe name="woodPole" unlock_level="1" />
+			<recipe name="woodArrowSlitHalf" unlock_level="1" />
+            <recipe name="Wood_Shutters" unlock_level="1" />
+            <recipe name="Wood_Shutters_2" unlock_level="1" />
+		</perk>
+		<perk name="Wooden Door" icon="secureDoorWooden" description_key="Learn to craft a secure Wooden Door" title_key="Wooden Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
+			<recipe name="secureDoorWooden" unlock_level="1" />
+		</perk>
+		<perk name="Wood Hatch" icon="woodHatch1_v1" description_key="Learn to craft a secure Wooden Hatche" title_key="Wood Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
+			<recipe name="woodHatch1_v1" unlock_level="1" />
+		</perk>
+        <perk name="Wooden Bridges" icon="secureDoorWooden" description_key="Learn to craft secure Wooden bridges on the wood working bench using a claw hammer" title_key="Wooden Bridges" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
+			<recipe name="Wood_Bridge_1x3" unlock_level="1" />
+            <recipe name="Wood_Bridge_2x4" unlock_level="1" />
+		</perk>
+        <perk name="Wooden Gates" icon="secureDoorWooden" description_key="Learn to craft secure Wooden gates on the wood working bench using a claw hammer" title_key="Wooden Gates" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
+			<recipe name="Wood_Gate_2x3" unlock_level="1" />
+            <recipe name="Wood_Gate_3x2" unlock_level="1" />
+		</perk>
+        <perk name="Wooden Shutters" icon="secureDoorWooden" description_key="Learn to craft Wooden shutters on the wood working bench using a claw hammer" title_key="Wooden Shutters" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
+			<recipe name="Wood_Shutters" unlock_level="1" />
+            <recipe name="Wood_Shutters_2" unlock_level="1" />
+		</perk>
+		<perk name="Storage" icon="cntStorageHealth" description_key="Learn to craft labeled secure storage containers" title_key="Labeled Secure Storage" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="StorageAmmo" unlock_level="1" />
+			<recipe name="StorageBuilding" unlock_level="1" />
+			<recipe name="StorageExplosives" unlock_level="1" />
+			<recipe name="StorageFood" unlock_level="1" />
+			<recipe name="StorageHealth" unlock_level="1" />
+			<recipe name="StorageWeapons" unlock_level="1" />
+		</perk>
+        <perk name="Cobble Building" icon="Cobblestone" description_key="Learn to craft Cobblestone blocks on the wood working bench using a CircularSaw" title_key="Cobble Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="45" />
+			<recipe name="cobblestoneFrameBlock" unlock_level="1" />
+			<recipe name="cobblestoneFrameRamp" unlock_level="1" />
+			<recipe name="cobblestoneStairs25" unlock_level="1" />
+			<recipe name="cobblestoneArrowSlitHalf" unlock_level="1" />
+			<recipe name="cobblestoneFrameWedge" unlock_level="1" />
+			<recipe name="cobblestoneFrameWedgeTip" unlock_level="1" />
+			<recipe name="cobblestoneFramePlate" unlock_level="1" />
+			<recipe name="cobblestoneFrameCNRFull" unlock_level="1" />
+			<recipe name="cobblestoneFrameCNRInside" unlock_level="1" />
+			<recipe name="cobblestoneFramePillar100" unlock_level="1" />
+			<recipe name="cobblestoneFramePillar50" unlock_level="1" />
+			<recipe name="cobblestoneFramePole" unlock_level="1" />
+		</perk>
+        
+		<crafting_skill name="Journeyman Crafting" icon="Stone" description_key="Crafting intermediate items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Journeyman Crafting" group="crafting" skill_point_cost_per_level="3">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="1,5" value="1.67,1.464" />
+				<!-- =100 points at QL 600 -->
+				<multiply skill_level="5,11" value="1.464,1.283" />
+				<multiply skill_level="11,19" value="1.283,1.109" />
+				<multiply skill_level="19,32" value="1.109,.892" />
+				<multiply skill_level="32,49" value=".892,.668" />
+				<multiply skill_level="49,70" value=".668,.44" />
+				<multiply skill_level="70,100" value=".44,.167" />
+				<!-- =10 points at QL 600 -->
+			</effect>
+		</crafting_skill>
+		<perk name="Scrap Iron Building" icon="scrapIronBlock" description_key="Learn to craft Scrap Iron Blocks on the metal work bench using a wrench" title_key="Scrap Iron Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="scrapIronFrameBlock" unlock_level="1" />
+			<recipe name="scrapIronFrameCNRFull" unlock_level="1" />
+			<recipe name="scrapIronFrameCNRInside" unlock_level="1" />
+			<recipe name="scrapIronFrameRamp" unlock_level="1" />
+			<recipe name="scrapIronFrameWedge" unlock_level="1" />
+			<recipe name="scrapIronStairs25" unlock_level="1" />
+			<recipe name="rScrapIronPlate" unlock_level="1" />
+			<recipe name="scrapIronSheet" unlock_level="1" />
+			<recipe name="scrapIronArrowSlitHalf" unlock_level="1" />
+            <recipe name="Scrap_Iron_Shutters" unlock_level="1" />
+            <recipe name="Scrap_Iron_Shutters2" unlock_level="1" />
+        </perk>
+        <perk name="Nuts and Bolts" icon="NutAndBolt" description_key="Learn to craft basic Nuts and Bolts in the forge using calipers" title_key="Nuts and Bolts" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="1" />
+            <requirement perk_level="1" required_player_level="25" />
+			<recipe name="NutAndBolt" unlock_level="1" />
+		</perk>
+        <perk name="Metal Ladder" icon="ladderMetal" description_key="Learn to craft a Metal Ladder on the Metal Working Bench" title_key="Metal Ladder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="25" />
+            <recipe name="ladderMetal" unlock_level="1" />
+		</perk>
+        <perk name="Iron Hatch" icon="scrapHatch_v1" description_key="Learn to craft Iron Hatches on the metal working bench using a wrench" title_key="Iron Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="1" />
+            <requirement perk_level="1" required_player_level="25" />
+			<recipe name="scrapHatch_v1" unlock_level="1" />
+		</perk>
+        <perk name="Door Knob" icon="doorKnob" description_key="Learn to craft Door Knobs in the forge using calipers" title_key="Door Knob" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="2" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="3" />
+			<recipe name="doorKnob" unlock_level="1" />
+		</perk>
+		<perk name="Scrap Iron Gates" icon="ironDoor1_v1" description_key="Learn to craft Iron Doors on the metal working bench using a Wielder" title_key="Iron Gates" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
+            <requirement perk_level="1" required_player_level="25" />
+			<recipe name="Scrap_Iron_Gate_2x3" unlock_level="1" />
+            <recipe name="Scrap_Iron_Gate_3x2" unlock_level="1" />
+		</perk>
+        <perk name="Scrap Iron Shutters" icon="ironDoor1_v1" description_key="Learn to craft Iron Doors on the metal working bench using a Wielder" title_key="Iron Shutters" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
+            <requirement perk_level="1" required_player_level="25" />
+			<recipe name="Scrap_Iron_Shutters" unlock_level="1" />
+            <recipe name="Scrap_Iron_Shutters2" unlock_level="1" />
+		</perk>
+        <perk name="Iron Door" icon="ironDoor1_v1" description_key="Learn to craft Iron Doors on the metal working bench using a wrench" title_key="Iron Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
+            <requirement perk_level="1" required_player_level="25" />
+			<recipe name="ironDoor1_v1" unlock_level="1" />
+		</perk>
+        <perk name="Iron Gun Safe" icon="GunSafe" description_key="Learn to craft Iron Gun Safe on the metal working bench using a wrench" title_key="Iron Gun Safes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="10" />
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="cntGunSafe" unlock_level="1" />
+			<recipe name="cntDeskSafe" unlock_level="1" />
+			<recipe name="cntWallSafe" unlock_level="1" />
+		</perk>
+		<perk name="Concrete Building" icon="ConcreteReinforced" description_key="Learn to craft rebar frames in the forge using a anvil and use them to build Concrete Blocks" title_key="Concrete Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="rebarFrameBlock" unlock_level="1" />
+			<recipe name="rebarFrameCNRInside" unlock_level="1" />
+			<recipe name="rebarFramePillar100" unlock_level="1" />
+			<recipe name="rebarFrameRamp" unlock_level="1" />
+		</perk>
+		<perk name="Iron Trussing" icon="MetalTrussing" description_key="Learn to craft Iron Trussing in the forge using a anvil" title_key="Iron Trussing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
+            <requirement perk_level="1" required_player_level="25" />
+			<recipe name="metalTrussingBlock" unlock_level="1" />
+			<recipe name="metalTrussingRamp" unlock_level="1" />
+		</perk>
+        <perk name="Concrete Draw Bridge" icon="MetalTrussing" description_key="Learn to craft a concrete draw bridge on the metal working bench using the Wielder" title_key="Concrete Draw Bridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
+            <requirement perk_level="1" required_player_level="25" />
+			<recipe name="drawBridge" unlock_level="1" />
+		</perk>
+        <perk name="Small Elevator" icon="MetalTrussing" description_key="Learn to craft a small elevator on the metal working bench using a Compact Driver" title_key="Small Elevator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
+            <requirement perk_level="1" required_player_level="25" />
+			<recipe name="Elevator_1x1x3" unlock_level="1" />
+		</perk>
+		<crafting_skill name="Master Craftsman" icon="forgedSteel" description_key="weaponSmithingDesc" title_key="Master Craftsman" group="crafting" skill_point_cost_per_level="3">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="1,5" value="1.67,1.464" />
+				<!-- =100 points at QL 600 -->
+				<multiply skill_level="5,11" value="1.464,1.283" />
+				<multiply skill_level="11,19" value="1.283,1.109" />
+				<multiply skill_level="19,32" value="1.109,.892" />
+				<multiply skill_level="32,49" value=".892,.668" />
+				<multiply skill_level="49,70" value=".668,.44" />
+				<multiply skill_level="70,100" value=".44,.167" />
+				<!-- =10 points at QL 600 -->
+			</effect>
+		</crafting_skill>
+		<perk name="Steel Building" icon="SteelWall" description_key="Learn to craft steel frames in the blast furnace and use them to build steel blocks" title_key="Steel Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="forgedFrame" unlock_level="1" />
+			<recipe name="forgedRampFrame" unlock_level="1" />
+		</perk>
+		<perk name="Steel Vault Hatch" icon="vaultHatch_v1" description_key="Learn to craft steel Vault Hatches on the metal working bench using the wielder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="2" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="vaultHatch_v1" unlock_level="1" />
+		</perk>
+		<perk name="Steel Rolling Garage Door" icon="VaultDoor01" description_key="Learn to craft Steel Vault Doors on the metal working bench using the CompactDriver." title_key="Steel Rolling Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="3" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="garageDoorRolling" unlock_level="1" />
+		</perk>
+        <perk name="Steel Vault Door" icon="VaultDoor01" description_key="Learn to craft Steel Vault Doors on the metal working bench using the Wielder" title_key="Steel Vault Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="3" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="vaultDoor01" unlock_level="1" />
+		</perk>
+		<perk name="Steel Gun Safe" icon="GunSafe" description_key="Learn to craft The Steel Gun Safe on the metal work bench using the Wielder. these are the strongest secure storage container you can make" title_key="Steel Gun Safe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="cntSteelGunSafe" unlock_level="1" />
+            <recipe name="cntSteelGunSafeB" unlock_level="1" />
+		</perk>
+		<crafting_skill name="Miscellaneous Crafting" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting" skill_point_cost_per_level="3">
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="1,5" value="1.67,1.464" />
+				<!-- =100 points at QL 600 -->
+				<multiply skill_level="5,11" value="1.464,1.283" />
+				<multiply skill_level="11,19" value="1.283,1.109" />
+				<multiply skill_level="19,32" value="1.109,.892" />
+				<multiply skill_level="32,49" value=".892,.668" />
+				<multiply skill_level="49,70" value=".668,.44" />
+				<multiply skill_level="70,100" value=".44,.167" />
+				<!-- =10 points at QL 600 -->
+			</effect>
+		</crafting_skill>
+		<perk name="Quicker Crafting" icon="forge" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="2" group="crafting">
+			<requirement perk_level="1" required_player_level="20" />
+			<requirement perk_level="2" required_player_level="40" />
+			<requirement perk_level="3" required_player_level="60" />
+			<requirement perk_level="4" required_player_level="80" />
+			<requirement perk_level="5" required_player_level="100" />
+			<effect name="CraftingTime">
+				<multiply skill_level="1" value="0.9" />
+				<multiply skill_level="2" value="0.8" />
+				<multiply skill_level="3" value="0.7" />
+				<multiply skill_level="4" value="0.6" />
+				<multiply skill_level="5" value="0.5" />
+			</effect>
+		</perk>
+		<perk name="The Fixer" icon="wrench" description_key="theFixerDesc" title_key="theFixer" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" passive_effect="true" group="crafting">
+			<requirement perk_level="1" required_player_level="10" />
+			<requirement perk_level="2" required_player_level="20" />
+			<requirement perk_level="3" required_player_level="30" />
+			<requirement perk_level="4" required_player_level="40" />
+			<requirement perk_level="5" required_player_level="55" />
+			<effect name="RepairTime">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="0.95" />
+				<multiply skill_level="2" value="0.9" />
+				<multiply skill_level="3" value="0.85" />
+				<multiply skill_level="4" value="0.8" />
+				<multiply skill_level="5" value="0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="1.05" />
+				<multiply skill_level="2" value="1.1" />
+				<multiply skill_level="3" value="1.15" />
+				<multiply skill_level="4" value="1.2" />
+				<multiply skill_level="5" value="1.25" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="0.95" />
+				<multiply skill_level="2" value="0.9" />
+				<multiply skill_level="3" value="0.85" />
+				<multiply skill_level="4" value="0.8" />
+				<multiply skill_level="5" value="0.75" />
+			</effect>
+		</perk>
+		<perk name="Pummel Pete" icon="club" description_key="pummelPeteDesc" title_key="pummelPete" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+			<requirement perk_level="1" required_skill_name="Blunt Weapons" required_skill_level="20" />
+			<requirement perk_level="2" required_skill_name="Blunt Weapons" required_skill_level="40" />
+			<requirement perk_level="3" required_skill_name="Blunt Weapons" required_skill_level="60" />
+			<requirement perk_level="4" required_skill_name="Blunt Weapons" required_skill_level="80" />
+			<requirement perk_level="5" required_skill_name="Blunt Weapons" required_skill_level="95" />
+			<effect name="EntityDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="1.1125" />
+				<multiply skill_level="2" value="1.225" />
+				<multiply skill_level="3" value="1.3375" />
+				<multiply skill_level="4" value="1.45" />
+				<multiply skill_level="5" value="1.5625" />
+			</effect>
+			<effect name="StaminaDegradation">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="0.9" />
+				<multiply skill_level="2" value="0.8" />
+				<multiply skill_level="3" value="0.7" />
+				<multiply skill_level="4" value="0.6" />
+				<multiply skill_level="5" value="0.5" />
+			</effect>
+		</perk>
+		<perk name="Miner 69er" icon="mining" description_key="miner69erDesc" title_key="miner69er" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
+			<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40" />
+			<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60" />
+			<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80" />
+			<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="95" />
+			<effect name="BlockDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="1.05" />
+				<multiply skill_level="2" value="1.1" />
+				<multiply skill_level="3" value="1.15" />
+				<multiply skill_level="4" value="1.2" />
+				<multiply skill_level="5" value="1.25" />
+			</effect>
+			<effect name="StaminaDegradation">
+				<multiply perk_level="0" value="1" />
+				<multiply skill_level="1" value="0.95" />
+				<multiply skill_level="2" value="0.9" />
+				<multiply skill_level="3" value="0.85" />
+				<multiply skill_level="4" value="0.8" />
+				<multiply skill_level="5" value="0.75" />
+			</effect>
+		</perk>
+		<perk name="Treasure Hunter" icon="treasure" description_key="treasureHunterDesc" title_key="treasureHunter" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="scavenging">
+			<effect name="TreasureRadius">
+				<setvalue perk_level="0" value="10" />
+				<setvalue skill_level="1" value="8" />
+				<setvalue skill_level="2" value="6" />
+				<setvalue skill_level="3" value="4" />
+			</effect>
+		</perk>
+		<perk name="Chemistry Station" icon="AloeCream" description_key="Learn to craft achemistry Station on the wood working bench using a claw hammer. Use it to craft complex chemical and medical items. The Chemistry Station has 2 tools - Mortar And Pestle and beaker." title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
+			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="workchemistryStation" unlock_level="1" />
+		</perk>
+		<perk name="Aloe Cream" icon="AloeCream" description_key="Learn to craft Aloe Cream" title_key="Aloe Cream" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="1" />
+			<requirement perk_level="1" required_player_level="3" />
+			<recipe name="aloeCream" unlock_level="1" />
+		</perk>
+		<perk name="First Aid Bandage" icon="firstAidBandage" description_key="Learn to craft a First Aid Bandage" title_key="First Aid Bandage" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="3" />
+			<recipe name="firstAidBandage" unlock_level="1" />
+		</perk>
+		<perk name="Gun Powder" icon="gunPowder" description_key="Learn to craft Gun Powder on the chemistry station using the Mortar And Pestle" title_key="Gun Powder" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="gunPowder" unlock_level="1" />
+		</perk>
+		<perk name="Pipe Bomb" icon="pipeBomb" description_key="Learn to craft Pipe Bombs on the wood working bench" title_key="Pipe Bomb" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_player_level="10" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="5" />
+			<recipe name="pipeBomb" unlock_level="1" />
+		</perk>
+		<perk name="Candy Tin Mine" icon="mineCandyTin" description_key="Learn to craft Candy Tin Mine on the wood working bench using a wrench" title_key="Candy Tin Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+			<requirement perk_level="1" required_player_level="10" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="5" />
+			<recipe name="mineCandyTin" unlock_level="1" />
+		</perk>
+		<perk name="Hubcap Mine" icon="mineHubcap" description_key="Learn to craft Hubcap Mine on the wood working bench using a wrench" title_key="Hubcap Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_player_level="15" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="6" />
+			<recipe name="mineHubcap" unlock_level="1" />
+		</perk>
+		<perk name="Air Filter Mine" icon="mineAirFilter" description_key="Learn to craft a Air Filter Mine on the metal working bench using a wrench" title_key="Air Filter Mine" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+			<requirement perk_level="1" required_player_level="25" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="7" />
+			<recipe name="mineAirFilter" unlock_level="1" />
+		</perk>
+		<perk name="Dynamite" icon="Tnt" description_key="Learn to craft Dynamite and TNT on the chemistry station. These explosives will destroy hardstone " title_key="Dynamite" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+			<requirement perk_level="1" required_player_level="75" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="45" />
+			<recipe name="dynamite" unlock_level="1" />
+			<recipe name="tnt" unlock_level="1" />
+		</perk>
+		<perk name="Grain Alcohol" icon="grainAlcohol" description_key="Learn to distill Grain Alcohol in the still" title_key="Grain Alcohol" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="10" />
+			<recipe name="grainAlcohol" unlock_level="1" />
+		</perk>
+		<perk name="Iron Arrows" icon="ironArrow" description_key="Learn to craft Iron Arrow heads in the forge using an anvil and crossbow bolts" title_key="Iron Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
+            <requirement perk_level="1" required_player_level="10" />
+			<recipe name="ironArrowHead" unlock_level="1" />
+			<recipe name="ironArrow" unlock_level="1" />
+			<recipe name="ironCrossbowBolt" unlock_level="1" />
+		</perk>
+		<perk name="Steel Arrows" icon="steelArrow" description_key="Learn to craft Steel Arrows and crossbow bolts on the metal work bench" title_key="Steel Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="25" />
+            <requirement perk_level="1" required_player_level="75" />
+			<recipe name="steelArrowHead" unlock_level="1" />
+			<recipe name="steelArrow" unlock_level="1" />
+			<recipe name="steelCrossbowBolt" unlock_level="1" />
+		</perk>
+		<perk name="Carbon Arrow" icon="CarbonArrow" description_key="Learn to craft strong powerful Carbon Arrow on the metal work bench" title_key="Carbon Arrow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="weapons">
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="45" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="CarbonArrow" unlock_level="1" />
+            <recipe name="CarbonCrossbowBolt" unlock_level="1" />
+		</perk>
+		<perk name="Flaming Arrows" icon="flamingArrow" description_key="Learn to craft Flaming Arrows at the wood work bench" title_key="Flaming Arrows" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
+			<recipe name="flamingArrow" unlock_level="1" />
+		</perk>
+		<perk name="Exploding Crossbow Bolts" icon="explodingCrossbowBolt" description_key="Learn to craft powerful Exploding Crossbow Bolts at the wood work bench" title_key="Exploding Crossbow Bolts" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="30" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
+			<recipe name="explodingCrossbowBolt" unlock_level="1" />
+		</perk>
+		<perk name="Weapon Repair" icon="repairKit" description_key="Learn to craft weapon repair kits" title_key="Weapon Repair" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+			<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="1" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="10" />
+			<recipe name="weaponRepairKit" unlock_level="1" />
+		</perk>
+		<perk name="Silencer" icon="Silencer" description_key="Learn to build a Silencer on the metal work bench" title_key="Silencer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+			<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="40" />
+			<recipe name="Silencer" unlock_level="1" />
+		</perk>
+		<perk name="Bullet Casing" icon="bulletCasing" description_key="Learn to craft brass into bullet Casing with the chemistry set" title_key="Bullet Casing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+			<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="50" />
+			<recipe name="bulletCasing" unlock_level="1" />
+		</perk>
+		<perk name="Hot Lead" icon="bulletTip" description_key="Learn to smelt lead into bullet tips and buck shot in the forge" title_key="Bullet Parts" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="firearms">
+			<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="50" />
+			<recipe name="bulletTip" unlock_level="1" />
+			<recipe name="buckshot" unlock_level="1" />
+		</perk>
+		<perk name="Bullet Press" icon="BulletPress" description_key="Learn how to craft your very own bullet press on the metal work bench" title_key="Bullet Press" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="20" group="firearms">
+			<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="10" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="workBulletPress" unlock_level="1" />
+		</perk>
+		<perk name="Asphalt" icon="asphalt" description_key="Learn to make asphalt in a mixer. use it to make traveling easier" title_key="Asphalt" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="50" />
+			<recipe name="asphalt" unlock_level="1" />
+		</perk>
+		<perk name="Blood Draw Kit" icon="bloodDrawKit" description_key="Learn how to craft a Blood Draw Kit with the Chemistry set" title_key="Blood Draw Kit" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="2" group="health">
+			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="5" />
+			<recipe name="bloodDrawKit" unlock_level="1" />
+		</perk>
+		<perk name="First Aid" icon="FirstAidKit" description_key="Learn advanced a first aid kit" title_key="First Aid" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="10" />
+			<recipe name="firstAidKit" unlock_level="1" />
+			<recipe name="Large1stAidKit" unlock_level="1" />
+		</perk>
+		<perk name="Cooking Gear" icon="FryingPan" description_key="Learn to craft cooking equipment in the forge" title_key="Cooking Gear" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
+			<recipe name="cookingPot" unlock_level="1" />
+			<recipe name="cookingGrill" unlock_level="1" />
+			<recipe name="FryingPan" unlock_level="1" />
+		</perk>
+		<perk name="Purification Tablets" icon="PurificationTablets" description_key="Learn to craft Purification Tablets to clean water on the go" title_key="Purification Tablets" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="health">
+			<recipe name="PurificationTablets" unlock_level="1" />
+		</perk>
+		<perk name="GoldenRod Tea" icon="goldenRodTea" description_key="Learn to brew healthy GoldenRod Tea on the campfire" title_key="GoldenRod Tea" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+			<recipe name="goldenRodTea" unlock_level="1" />
+		</perk>
+		<perk name="Red Tea" icon="redTea" description_key="Learn to brew healthy Red Tea on the campfire" title_key="Red Tea" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+			<recipe name="redTea" unlock_level="1" />
+		</perk>
+		<perk name="Wellness Juice" icon="WellnessJuice" description_key="Learn to brew Wellness Juice on the campfire" title_key="Wellness Juice" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
+			<recipe name="WellnessJuice" unlock_level="1" />
+		</perk>
+		<perk name="Fishing Pole" icon="fork" description_key="Learn to craft Fishing Pole" title_key="Fishing Pole" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="health">
+            <recipe name="SimplePole" unlock_level="1" />
+            <recipe name="fishingLure1" unlock_level="1" />
+		</perk>
+       	<perk name="Tallow" icon="tallow" description_key="Learn to craft Tallow on the camp fire" title_key="Tallow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="2" />
+			<recipe name="tallow" unlock_level="1" />
+		</perk>
+		<perk name="Candles" icon="candle" description_key="Learn to craft Candles" title_key="Candles" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="2" />
+			<recipe name="candle" unlock_level="1" />
+		</perk>
+		<perk name="Glue" icon="glue" description_key="Learn to craft Glue with the chemistry station" title_key="Glue" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="25" />
+			<recipe name="glue" unlock_level="1" />
+		</perk>
+		<perk name="Garage Door" icon="lightbulb" description_key="Learn to craft a Garage Door on the metal work bench Bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="35" />
+			<recipe name="garageDoorMetal_v1" unlock_level="1" />
+		</perk>
+		<perk name="Metal Draw Bridge" icon="lightbulb" description_key="Learn to craft more a Draw Bridge on the metal work bench Bench using a wrench" title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="55" />
+			<recipe name="metalReinforcedWoodDrawBridge" unlock_level="1" />
+		</perk>
+        <perk name="Large Lift" icon="lightbulb" description_key="Learn to craft more a Draw Bridge on the metal work bench Bench" title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="55" />
+			<recipe name="LargeLift" unlock_level="1" />
+		</perk>
+		<perk name="Electric Lights" icon="lightbulb" description_key="Learn to craft working electric lights on the Metal Work Bench" title_key="Electric Lights" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="crafting">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
+			<recipe name="porchLight01Switch" unlock_level="1" />
+			<recipe name="ceilingLight02Switch" unlock_level="1" />
+			<recipe name="ceilingLight07Switch" unlock_level="1" />
+			<recipe name="industrialLight01Switch" unlock_level="1" />
+			<recipe name="streetLight01Switch" unlock_level="1" />
+		</perk>
+		<perk name="Spikes" icon="TrapSpikes01" description_key="Learn to craft Wooden Spikes" title_key="Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+			<recipe name="SetUpASpikeTrap" unlock_level="1" />
+		</perk>
+		<perk name="Log Tips" icon="woodLogSpike1" description_key="Learn to craft Log Tips" title_key="Log Tips" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="3" />
+			<recipe name="woodLogSpike1" unlock_level="1" />
+		</perk>
+        <perk name="Steel Spikes" icon="woodLogSpike1" description_key="Learn to craft Steel Spikes on the metal working bench" title_key="Steel Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
+			<recipe name="SteelSpikes" unlock_level="1" />
+		</perk>
+		<perk name="Barbed Fence" icon="barbedFence" description_key="Learn to craft Barbed Fence" title_key="Barbed Fence" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="5" />
+            <recipe name="barbedFence" unlock_level="1" />
+		</perk>
+		<perk name="Shock Trap" icon="weapon_smithing" description_key="Learn to craft a Shock Trap" title_key="Shock Trap" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
+			<recipe name="ShockTrap" unlock_level="1" />
+        </perk>
+        <perk name="Bear Trap" icon="weapon_smithing" description_key="Learn to craft Bear Trap" title_key="Bear Trap" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="5" />
+			<recipe name="BearTrap" unlock_level="1" />
+		</perk>
+        <perk name="Trap Nail" icon="weapon_smithing" description_key="Learn to craft traps" title_key="Trap Nail" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="5" />
+            <recipe name="trapNail" unlock_level="1" />
+		</perk>
+        <perk name="Powered Spikes" icon="weapon_smithing" description_key="Learn to craft Powered Spikes" title_key="Powered Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="65" />
+			<recipe name="trapSpike" unlock_level="1" />
+		</perk>
+        <perk name="Powered Fire Trap" icon="weapon_smithing" description_key="Learn to craft Powered Fire Trap" title_key="Powered Fire Trap" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="65" />
+			<recipe name="trapFire" unlock_level="1" />
+		</perk>
+        <perk name="Razor Wire" icon="weapon_smithing" description_key="Learn to craft Razor Wire" title_key="Razor Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
+			<recipe name="RazorWire" unlock_level="1" />
+			<recipe name="RazorWireOffSet" unlock_level="1" />
+		</perk>
+		<perk name="Farming" icon="SeedNursery" description_key="Learn to craft a seed nursery that will allow you to cultivate basic seeds from plants" title_key="Seed Nursery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="health">
+			<recipe name="workSeedNursery" unlock_level="1" />
+			<recipe name="cornSeed" unlock_level="1" />
+			<recipe name="potatoSeed" unlock_level="1" />
+			<recipe name="blueberrySeed" unlock_level="1" />
+			<recipe name="cottonSeed" unlock_level="1" />
+			<recipe name="goldenrodSeed" unlock_level="1" />
+			<recipe name="yuccaSeed" unlock_level="1" />
+			<recipe name="ChrysanthemumSeed" unlock_level="1" />
+			<recipe name="TomatoSeed1" unlock_level="1" />
+		</perk>
+		<action_skill name="Hunting" icon="light_armor" description_key="Learn to craft better Hunting knifes to harvest more and better animal parts.Gain skill by harvesting dead animal carcasses with hunting and field knives" title_key="Hunting" skill_point_cost_per_level="1000" group="health">
+			<recipe name="fishingLure2" unlock_level="10" />
+			<recipe name="fishingLure3" unlock_level="20" />
+            <recipe name="fishingLure4" unlock_level="40" />
+            <recipe name="fishingLure5" unlock_level="50" />
+            <recipe name="FishingPole" unlock_level="75" />
+			<effect name="CraftingTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="CraftingQuality">
+				<setvalue skill_level="1,10" value="1,239" />
+				<setvalue skill_level="10,20" value="239,316" />
+				<setvalue skill_level="20,30" value="316,371" />
+				<setvalue skill_level="30,40" value="371,416" />
+				<setvalue skill_level="40,50" value="416,455" />
+				<setvalue skill_level="50,60" value="455,489" />
+				<setvalue skill_level="60,70" value="489,520" />
+				<setvalue skill_level="70,80" value="520,549" />
+				<setvalue skill_level="80,90" value="549,575" />
+				<setvalue skill_level="90,100" value="575,600" />
+			</effect>
+			<effect name="RepairTime">
+				<multiply skill_level="1,10" value="1,0.975" />
+				<multiply skill_level="10,20" value="0.975,0.95" />
+				<multiply skill_level="20,30" value="0.95,0.925" />
+				<multiply skill_level="30,40" value="0.925,0.9" />
+				<multiply skill_level="40,50" value="0.9,0.875" />
+				<multiply skill_level="50,60" value="0.875,0.85" />
+				<multiply skill_level="60,70" value="0.85,0.825" />
+				<multiply skill_level="70,80" value="0.825,0.8" />
+				<multiply skill_level="80,90" value="0.8,0.775" />
+				<multiply skill_level="90,100" value="0.775,0.75" />
+			</effect>
+			<effect name="RepairAmount">
+				<add skill_level="1,10" value="1,21" />
+				<add skill_level="10,20" value="21,27" />
+				<add skill_level="20,30" value="27,31" />
+				<add skill_level="30,40" value="31,35" />
+				<add skill_level="40,50" value="35,38" />
+				<add skill_level="50,60" value="38,41" />
+				<add skill_level="60,70" value="41,43" />
+				<add skill_level="70,80" value="43,46" />
+				<add skill_level="80,90" value="46,48" />
+				<add skill_level="90,100" value="48,50" />
+			</effect>
+			<effect name="RepairQualityLoss">
+				<multiply skill_level="1,5" value="1.67,1.464" />
+				<!-- =100 points at QL 600 -->
+				<multiply skill_level="5,11" value="1.464,1.283" />
+				<multiply skill_level="11,19" value="1.283,1.109" />
+				<multiply skill_level="19,32" value="1.109,.892" />
+				<multiply skill_level="32,49" value=".892,.668" />
+				<multiply skill_level="49,70" value=".668,.44" />
+				<multiply skill_level="70,100" value=".44,.167" />
+				<!-- =10 points at QL 600 -->
+			</effect>
+			<effect name="HarvestCount">
+				<multiply skill_level="1,10" value="1,1.1" />
+				<multiply skill_level="10,20" value="1.1,1.2" />
+				<multiply skill_level="20,30" value="1.2,1.3" />
+				<multiply skill_level="30,40" value="1.3,1.4" />
+				<multiply skill_level="40,50" value="1.4,1.5" />
+				<multiply skill_level="50,60" value="1.5,1.6" />
+				<multiply skill_level="60,70" value="1.6,1.7" />
+				<multiply skill_level="70,80" value="1.7,1.8" />
+				<multiply skill_level="80,90" value="1.8,1.9" />
+				<multiply skill_level="90,100" value="1.9,2" />
+			</effect>
+		</action_skill>
+        
+		<perk name="Hunters Kinfe" icon="huntingKnife" description_key="Learn to craft a hunting Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a sharpe knife that will harvest more and better animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Hunters Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="1" />
+			<recipe name="SmallKnifeBlade" unlock_level="1" />
+			<recipe name="huntingKnife" unlock_level="1" />
+		</perk>
+		<perk name="Field Kinfe" icon="FieldKnife" description_key="Learn to craft a Field Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a very sharpe knife that will harvest the most and best animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Field Kinfe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="40" />
+			<recipe name="SmallKnifeBlade" unlock_level="1" />
+            <recipe name="FieldKnife" unlock_level="1" />
+		</perk>
+        <perk name="Animal Bags" icon="FieldKnife" description_key="Learn to craft and use cloth a Animal bag to catch wild poisonous animals like spiders snakes and scorpions. You can then place them as traps for your enemies" title_key="Animal Bags" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
+			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="40" />
+			<recipe name="scorpionBag" unlock_level="1" />
+            <recipe name="spiderBag" unlock_level="1" />
+            <recipe name="snakeBag" unlock_level="1" />
+		</perk>
+        <perk name="Chicken Coop" icon="FieldKnife" description_key="Learn to craft a chicken coop and use it to hatch and raise a chicken. Once fully grown it will produce feathers or eggs and can be slaughtered for meat." title_key="Chicken Coop" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
+			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="50" />
+			<recipe name="workChickenCoop" unlock_level="1" />
+        </perk>
+        <action_skill name="Heavy Guns" icon="rocketLauncher" description_key="Do more damage with Heavy Guns. Gain skill by using items from this group" title_key="Heavy Guns" group="firearms" skill_point_cost_per_level="1000">
+			<effect name="EntityDamage">
+				<multiply skill_level="1,5" value="1,1.04" />
+				<multiply skill_level="5,11" value="1.04,1.07" />
+				<multiply skill_level="11,19" value="1.07,1.1" />
+				<multiply skill_level="19,32" value="1.1,1.14" />
+				<multiply skill_level="32,49" value="1.14,1.19" />
+				<multiply skill_level="49,70" value="1.19,1.23" />
+				<multiply skill_level="70,100" value="1.23,1.28" />
+			</effect>
+		</action_skill>
+        <!--JZMOD PROFESSIONS-->
+		<perk name="Carpenter" icon="gunsmithing" description_key="These are the skills a Carpenter starts with. Collect 20 Profession pages to learn another profession" title_key="Carpenter" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="woodFrameBlock" unlock_level="1" />
+			<recipe name="woodFrameCNRFull" unlock_level="1" />
+			<recipe name="woodFrameCNRInside" unlock_level="1" />
+			<recipe name="woodFrameWedge" unlock_level="1" />
+			<recipe name="woodFrameRamp" unlock_level="1" />
+			<recipe name="woodStairs25" unlock_level="1" />
+			<recipe name="woodPillar100" unlock_level="1" />
+			<recipe name="woodPlate" unlock_level="1" />
+			<recipe name="woodPole" unlock_level="1" />
+			<recipe name="woodArrowSlitHalf" unlock_level="1" />
+			<recipe name="clawHammer" unlock_level="1" />
+			<recipe name="Plank" unlock_level="1" />
+			<effect name="HarvestCount">
+                <multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="2" />
+			</effect>
+            <effect name="CraftingTime">
+                <multiply perk_level="0" value="1" />
+                <multiply perk_level="1" value="0.9" />
+			</effect>
+		</perk>
+		<perk name="Doctor" icon="gunsmithing" description_key="These are the skills a Doctor starts with. Collect 20 Profession pages to learn another profession" title_key="Doctor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="DoctorBook" unlock_level="1" />
+			<recipe name="painkillers" unlock_level="1" />
+			<recipe name="SuperPill" unlock_level="1" />
+			<recipe name="PainKillerShot" unlock_level="1" />
+			<recipe name="StimulantShot" unlock_level="1" />
+			<recipe name="InfectedShot" unlock_level="1" />
+			<recipe name="SedativeShot" unlock_level="1" />
+			<recipe name="firstAidKit" unlock_level="1" />
+			<recipe name="Large1stAidKit" unlock_level="1" />
+			<recipe name="firstAidBandage" unlock_level="1" />
+			<recipe name="aloeCream" unlock_level="1" />
+            <recipe name="antibiotics" unlock_level="1" />
+        </perk>
+		<perk name="Cop" icon="gunsmithing" description_key="These are the skills a cop starts with. Collect 20 Profession pages to learn another profession" title_key="Cop" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="NightStick" unlock_level="1" />
+			<recipe name="GunOil" unlock_level="1" />
+			<recipe name="weaponRepairKit" unlock_level="1" />
+            <effect name="DismembermentChance">
+				<add perk_level="0" value="0" />
+				<add perk_level="1" value="0.25" />
+			</effect>
+            <effect name="EntityDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.05" />
+			</effect>
+            <effect name="ReloadSpeed">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="0.9" />
+			</effect>
+        </perk>
+		<perk name="Soldier" icon="gunsmithing" description_key="These are the skills a soldier starts with. Collect 20 Profession pages to learn another profession" title_key="Soldier" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="Grubs" unlock_level="1" />
+			<recipe name="weaponRepairKit" unlock_level="1" />
+			<recipe name="pipeBomb" unlock_level="1" />
+			<recipe name="blunderbuss" unlock_level="1" />
+			<recipe name="blunderbussAmmo" unlock_level="1" />
+            <recipe name="mineCookingPot" unlock_level="1" />
+            <effect name="DismembermentChance">
+				<add perk_level="0" value="0" />
+				<add perk_level="1" value="0.30" />
+			</effect>
+            <effect name="EntityDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.1" />
+			</effect>
+            <effect name="ReloadSpeed">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="0.9" />
+			</effect>
+        </perk>
+        <perk name="Farmer" icon="gunsmithing" description_key="These are the skills a farmer starts with. Collect 20 Profession pages to learn another profession" title_key="Farmer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="workSeedNursery" unlock_level="1" />
+            <recipe name="StoneHoe" unlock_level="1" />
+            <recipe name="fertilizer" unlock_level="1" />
+			<recipe name="AppleSeed" unlock_level="1" />
+			<recipe name="hopSeed" unlock_level="1" />
+			<recipe name="aloeSeed" unlock_level="1" />
+			<recipe name="mushroomSeed" unlock_level="1" />
+			<recipe name="CarrotSeed" unlock_level="1" />
+			<recipe name="WheatSeed" unlock_level="1" />
+			<recipe name="CoffeeSeeds" unlock_level="1" />
+            <recipe name="StrawberrySeed" unlock_level="1" />
+            <recipe name="SunflowerSeed" unlock_level="1" />
+            <recipe name="cornSeed" unlock_level="1" />
+			<recipe name="potatoSeed" unlock_level="1" />
+			<recipe name="blueberrySeed" unlock_level="1" />
+			<recipe name="cottonSeed" unlock_level="1" />
+			<recipe name="goldenrodSeed" unlock_level="1" />
+			<recipe name="yuccaSeed" unlock_level="1" />
+			<recipe name="chrysanthemumSeed" unlock_level="1" />
+			<recipe name="TomatoSeed" unlock_level="1" />
+        </perk>
+		<perk name="Chemist" icon="gunsmithing" description_key="These are the skills a Chemist starts with. Collect 20 Profession pages to learn another profession" title_key="Chemist" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="RedBull" unlock_level="1" />
+			<recipe name="Stimulant" unlock_level="1" />
+			<recipe name="MixedChemicals" unlock_level="1" />
+			<recipe name="oilShale" unlock_level="1" />
+			<recipe name="gunPowder" unlock_level="1" />
+			<recipe name="oil" unlock_level="1" />
+			<recipe name="bioFuel" unlock_level="1" />
+			<recipe name="PurificationTablets" unlock_level="1" />
+		</perk>
+        <perk name="Fisherman" icon="gunsmithing" description_key="These are the skills a Fisherman starts with. Collect 20 Profession pages to learn another profession" title_key="Fisherman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="SimplePole" unlock_level="1" />
+			<recipe name="FishingPole" unlock_level="1" />
+			<recipe name="fishingLure1" unlock_level="1" />
+			<recipe name="fishingLure2" unlock_level="1" />
+			<recipe name="fishingLure3" unlock_level="1" />
+			<recipe name="fishingLure4" unlock_level="1" />
+			<recipe name="fishingLure5" unlock_level="1" />
+		</perk>
+        <perk name="Chef" icon="gunsmithing" description_key="These are the skills a Chef starts with. Collect 20 Profession pages to learn another profession" title_key="Chef" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="SharpeningStone" unlock_level="1" />
+		</perk>
+        <perk name="Fitness Instructor" icon="gunsmithing" description_key="These are the skills a Fitness Instructor starts with. Collect 20 Profession pages to learn another profession" title_key="Fitness Instructor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="RedBull" unlock_level="1" />
+			<recipe name="WellnessJuice" unlock_level="1" />
+			<recipe name="goldenRodTea" unlock_level="1" />
+            <recipe name="redTea" unlock_level="1" />
+			<effect name="MaxStamina">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.1" />
+			</effect>
+            <effect name="StaminaDegradation">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="0.9" />
+			</effect>
+            <effect name="MaxSpeed">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.1" />
+			</effect>
+            <effect name="WalkSpeed">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.1" />
+			</effect>
+            <effect name="RunSpeed">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.1" />
+			</effect>
+            <effect name="BreathHoldDuration">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="2" />
+			</effect>
+		</perk>
+        <perk name="Fireman" icon="gunsmithing" description_key="These are the skill a Fireman starts with. Collect 20 Profession pages to learn another profession" title_key="Fireman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="aloeCream" unlock_level="1" />
+			<recipe name="fireaxeIron" unlock_level="1" />
+			<recipe name="fireaxeSteel" unlock_level="1" />
+			<effect name="MaxStamina">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.1" />
+			</effect>
+            <effect name="BlockDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.2" />
+			</effect>
+        </perk>
+        <perk name="Construction Worker" icon="gunsmithing" description_key="These are the skills a Construction Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Construction Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="wrench" unlock_level="1" />
+			<recipe name="scrapIronFrameBlock" unlock_level="1" />
+			<recipe name="scrapIronFrameCNRFull" unlock_level="1" />
+			<recipe name="scrapIronFrameCNRInside" unlock_level="1" />
+			<recipe name="scrapIronFrameRamp" unlock_level="1" />
+			<recipe name="scrapIronFrameWedge" unlock_level="1" />
+			<recipe name="scrapIronStairs25" unlock_level="1" />
+			<recipe name="rScrapIronPlate" unlock_level="1" />
+			<recipe name="scrapIronSheet" unlock_level="1" />
+			<recipe name="scrapIronArrowSlitHalf" unlock_level="1" />
+            <effect name="BlockDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.1" />
+			</effect>
+        </perk>
+        <perk name="Electrician" icon="gunsmithing" description_key="These are the skills a Electrician starts with. Collect 20 Profession pages to learn another profession" title_key="Electrician" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+            <recipe name="screwdriver" unlock_level="1" />
+            <recipe name="ShockStick" unlock_level="1" />
+            <recipe name="powerCeilingLight01" unlock_level="1" />
+            <recipe name="powerPorchLight04" unlock_level="1" />
+            <recipe name="powerPorchLight01" unlock_level="1" />
+            <recipe name="powerCeilingLight02" unlock_level="1" />
+            <recipe name="powerCeilingLight07" unlock_level="1" />
+            <recipe name="powerStreetLight01" unlock_level="1" />
+            <recipe name="powerIndustrialLight01" unlock_level="1" />
+            <recipe name="dieselGen" unlock_level="1" />
+            <recipe name="electricParts" unlock_level="1" />
+            <recipe name="electronicParts" unlock_level="1" />
+            <effect name="HarvestCount">
+                <multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="2" />
+			</effect>
+            <effect name="CraftingTime">
+                <multiply perk_level="0" value="1" />
+                <multiply perk_level="1" value="0.9" />
+			</effect>
+            <effect name="RepairQualityLoss">
+                <multiply perk_level="0" value="1" />
+                <multiply perk_level="1" value="0.9" />
+			</effect>
+        </perk>
+        <perk name="Metal Worker" icon="gunsmithing" description_key="These are the skills a Metal Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Metal Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="workforge" unlock_level="1" />
+			<recipe name="rebarFrameBlock" unlock_level="1" />
+			<recipe name="rebarFrameCNRInside" unlock_level="1" />
+			<recipe name="rebarFramePillar100" unlock_level="1" />
+			<recipe name="rebarFrameRamp" unlock_level="1" />
+			<effect name="BlockDamage">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.1" />
+			</effect>
+        </perk>
+        <perk name="Burglar" icon="gunsmithing" description_key="These are the skills a Burglar starts with. Collect 20 Profession pages to learn another profession" title_key="Burglar" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="ironShiv" unlock_level="1" />
+			<recipe name="LockPick" unlock_level="1" />
+			<effect name="TreasureRadius">
+				<setvalue perk_level="0" value="10" />
+				<setvalue perk_level="1" value="2" />
+			</effect>
+            <effect name="LootTime">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="0.75" />
+			</effect>
+            <effect name="CrouchSpeed">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="1.2" />
+			</effect>
+            <effect name="Noise">
+				<multiply perk_level="0" value="1" />
+				<multiply perk_level="1" value="0.75" />
+			</effect>
+        </perk>
+        <perk name="Park Ranger" icon="gunsmithing" description_key="These are the skills a Park Ranger starts with. Collect 20 Profession pages to learn another profession" title_key="Park Ranger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+			<recipe name="BearTrap" unlock_level="1" />
+            <recipe name="StoneSpear" unlock_level="1" />
+			<recipe name="StoneJavelin" unlock_level="1" />
+			<recipe name="SetUpASpikeTrap" unlock_level="1" />
+			<recipe name="herbalAntibiotics" unlock_level="1" />
+			<recipe name="PurificationTablets" unlock_level="1" />
+        </perk>
+        <perk name="Mechanic" icon="gunsmithing" description_key="These are the skills a Mechanic starts with. Collect 20 Profession pages to learn another profession" title_key="Mechanic" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+            <recipe name="auger" unlock_level="1" />
+            <recipe name="chainsaw" unlock_level="1" />
+            <recipe name="wrench" unlock_level="1" />
+            <recipe name="mechanicalParts" unlock_level="1" />
+            <effect name="HarvestCount">
+                <multiply perk_level="0" value="1" />
+                <multiply perk_level="1" value="2" />
+            </effect>
+            <effect name="CraftingTime">
+                <multiply perk_level="0" value="1" />
+                <multiply perk_level="1" value="0.9" />
+            </effect>
+        </perk>
+	</skills>
+</progression>
+<!--
+EFFECTS:
+TreasureRadius,
+BreathHoldDuration,
+Count,
+CraftingTime,
+CraftingQuality,
+CraftingOutputCount,
+RepairTime,
+RepairAmount,
+RepairQualityLoss,
+EntityDamage,
+BlockDamage,
+RangedFalloff,
+ReloadSpeed,
+ArmorDefense,
+MaxHealth,
+MaxStamina,
+MaxHunger,
+MaxThirst,
+MinWellness,
+MaxWellness,
+WellnessGain,
+WellnessReduction,
+HealthGain,
+StaminaGain,
+ThirstDegradation,
+HealthDegradation,
+StaminaDegradation,
+MaxSpeed,
+WalkSpeed,
+RunSpeed,
+LootTime,
+LootQuality,
+HarvestCount,
+CrouchSpeed,
+Noise,
+Smell
+HungerDegradation is a multiplier. 2 would make you 2x as hungry. .5 you would be hungry half as fast.
+DismembermentChance,
+DismembermentBonus
+
+TreasureRadius
+	Bartering
+	SecretStash
+	LockPickChance
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+REQUIREMENTS:
+Only use requirements on perks. Player, Crafting, and Action skills do not properly support requirements at this time.
+Requirements allow the gating of perks so that the benefits can be stretched out over the course of the game. Instead
+of having to make two perks with different requirements, this allows us to simply have perks with multiple tiers gated by
+player level or the level of some other skill or perk.
+
+Perk levels may be filtered by player level:
+<requirement skill_level="1" required_player_level="10"/>
+
+Perk levels may also be filtered by another skill's level:
+<requirement skill_level="1" required_skill_name="Tool Smithing" required_skill_level="40"/>
+
+There can be any number of requirements, even for the same skill_level. The parameter "skill_level" is required on all 
+requirement entries. "required_skill_level" must exist if "required_skill_name" exists. If "required_skill_name" exists, it will
+ignore "required_player_level" so never use both in one <requirement> node.
+
+
+skill_point_cost_multiplier="1" skill_point_cost_per_level="10"
+	The perk costs 10/20/30/etc. points.
+skill_point_cost_multiplier="0" skill_point_cost_per_level="10"
+	The perk costs 10/10/10/etc. points.
+
+Note: all perks together cost 885 skill points
+-->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="YOffset" value="-11" />
+    <property name="RotationToFaceNorth" value="0" />
+    <property name="AllowedTownships" value="city,rural,wilderness" />
+    <property name="AllowedBiomes" value="wasteland_hub,wasteland" />
+</prefab>

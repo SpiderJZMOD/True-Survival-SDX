@@ -1,0 +1,1037 @@
+<!-- 
+	Quest format description:
+	
+	Example: <quest id="quest_BasicSurvival1" name_key="Basic Survival 1/8" subtitle_key="Craft a Stone Axe" description_key="blah" icon="ui_game_symbol_hammer" >	
+	
+	id = ID used for the quest
+	name_key - localization key for the quest used when displayed in the quest list.
+	subtitle_key = localization key for the sub name used when displayed in the quest details and tracker.
+	description_key = localization key for the description displayed in the description window.
+    offer_key = localization key for the offer window description.
+	icon = icon shown in the quest list and on the tracker.
+	category_key = localization key for the category type (quest,challenge)
+	difficulty = (veryeasy, easy, medium, hard, insane )
+Alternative settings for custom quest creation:
+	
+	name - quest name without localization.
+	subtitle - sub name without localization.
+	description - description without localization.
+	offer - offer without localization.
+	group_name - quest chain name without localization.
+	category - category type without localization.
+-->
+<quests>
+	<!-- Basic Survival 1 - Choose Profession /> -->
+	<quest id="quest_BasicSurvival1" group_name_key="quest_BasicSurvival" name="Basic Survival 1/9" name_key="quest_BasicSurvival1" subtitle="Choose your profession" subtitle_key="quest_BasicSurvival1_subtitle" description_key="quest_BasicSurvival1_description" icon="ui_game_symbol_book" category_key="Quest" offer_key="quest_BasicSurvival_offer">
+		<action type="ShowTip" value="tutorialTipQuest02" />
+		<action type="TrackQuest" />
+		<objective type="FetchKeep" id="KeystoneRock" value="1" />
+		<reward type="Quest" id="quest_BasicSurvival2" />
+		<reward type="Quest" id="quest_BasicSurvival3" />
+		<reward type="Quest" id="quest_BasicSurvival4" />
+		<reward type="Quest" id="quest_BasicSurvival5" />
+        <reward type="Quest" id="quest_BasicSurvival6" />
+		<reward type="Quest" id="quest_BasicSurvival7" />
+		<reward type="Quest" id="quest_BasicSurvival8" />
+        <reward type="Quest" id="quest_BasicSurvival9" />
+		<reward type="Quest" id="quest_BasicSurvival10" />
+		<reward type="Quest" id="quest_BasicSurvival11" />
+		<reward type="Quest" id="quest_BasicSurvival12" />
+		<reward type="Quest" id="quest_BasicSurvival13" />
+		<reward type="Quest" id="quest_BasicSurvival14" />
+		<reward type="Quest" id="quest_BasicSurvival15" />
+		<reward type="Quest" id="quest_BasicSurvival16" />
+		<reward type="Quest" id="quest_BasicSurvival17" />
+		<reward type="Quest" id="quest_BasicSurvival18" />
+		<reward type="Quest" id="quest_BasicSurvival19" />
+		<reward type="Quest" id="quest_BasicSurvival20" />
+		<reward type="Quest" id="quest_BasicSurvival21" />
+		<reward type="Exp" id="400" />
+		<reward type="ShowTip" value="skillPointTip" stage="aftercomplete" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<!-- Basic Survival 2 - Craft Fiber Rope /> -->
+	<quest id="quest_BasicSurvival9" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival9" subtitle_key="quest_BasicSurvival9_subtitle" description_key="quest_BasicSurvival9_description" icon="ui_game_symbol_hammer" category_key="Quest">
+		<objective type="FetchKeep" id="PlantFibers" value="60" />
+		<objective type="Craft" id="FiberRope" value="30" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 3 - Craft Stone Axe /> -->
+	<quest id="quest_BasicSurvival2" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival2" subtitle_key="quest_BasicSurvival2_subtitle" description_key="quest_BasicSurvival2_description" icon="ui_game_symbol_hammer" category_key="Quest">
+		<objective type="FetchKeep" id="stick" value="2" />
+		<objective type="FetchKeep" id="FiberRope" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="5" />
+		<objective type="Craft" id="stoneAxe" value="1" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 4 - Craft Plant Fiber Clothing /> -->
+	<quest id="quest_BasicSurvival3" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival3" subtitle_key="quest_BasicSurvival3_subtitle" description_key="quest_BasicSurvival3_description" icon="ui_game_symbol_tailoring" category_key="Quest">
+		<objective type="FetchKeep" id="PlantFibers" value="75" />
+		<objective type="FetchKeep" id="FiberRope" value="20" />
+		<objective type="Craft" id="plantFiberPants" value="1" />
+		<objective type="Craft" id="plantFiberShirt" value="1" />
+		<objective type="Craft" id="plantFiberHood" value="1" />
+		<objective type="Craft" id="plantFiberShoes" value="1" />
+		<objective type="Craft" id="plantFiberGloves" value="1" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 5 - Craft a Wooden Club /> -->
+	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_club" category_key="Quest">
+		<objective type="FetchKeep" id="stick" value="10" />
+		<objective type="FetchKeep" id="PlantFibers" value="10" />
+		<objective type="Craft" id="FiberRope" value="5" />
+		<objective type="Craft" id="clubWood" value="1" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 6 - Craft Bow & Arrows /> -->
+	<quest id="quest_BasicSurvival5" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival5" subtitle_key="quest_BasicSurvival5_subtitle" description_key="quest_BasicSurvival5_description" icon="ui_game_symbol_archery" category_key="Quest">
+		<objective type="FetchKeep" id="stick" value="8" />
+		<objective type="FetchKeep" id="PlantFibers" value="6" />
+		<objective type="FetchKeep" id="feather" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="2" />
+		<objective type="Craft" id="FiberRope" value="3" />
+		<objective type="Craft" id="woodenBow" value="1" />
+		<objective type="Craft" id="arrow" value="2" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 7 - Craft Cloth /> -->
+	<quest id="quest_BasicSurvival7" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival7" subtitle_key="quest_BasicSurvival7_subtitle" description_key="quest_BasicSurvival7_description" icon="ui_game_symbol_tailoring" category_key="Quest">
+		<objective type="FetchKeep" id="cottonPlant" value="95" />
+		<objective type="Craft" id="cloth" value="19" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 8 - Craft Bandages /> -->
+	<quest id="quest_BasicSurvival8" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival8" subtitle_key="quest_BasicSurvival8_subtitle" description_key="quest_BasicSurvival8_description" icon="ui_game_symbol_medical" category_key="Quest">
+		<objective type="FetchKeep" id="cloth" value="9" />
+		<objective type="Craft" id="bandage" value="3" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 9 - Kill Zombie /> -->
+	<quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_zombie" category_key="Quest">
+		<objective type="ZombieKill" value="2" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<!-- Basic Survival 10 - Craft Bed Roll /> -->
+	<quest id="quest_BasicSurvival10" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival10" subtitle_key="quest_BasicSurvival10_subtitle" description_key="quest_BasicSurvival10_description" icon="ui_game_symbol_map_bed" category_key="Quest">
+		<objective type="FetchKeep" id="cloth" value="10" />
+		<objective type="Craft" id="bedroll" value="1" />
+		<objective type="BlockPlace" id="bedroll" value="1" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 11 - Craft Campfire /> -->
+	<quest id="quest_BasicSurvival11" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival11" subtitle_key="quest_BasicSurvival11_subtitle" description_key="quest_BasicSurvival11_description" icon="ui_game_symbol_campfire" category_key="Quest">
+		<objective type="FetchKeep" id="PlantFibers" value="3" />
+		<objective type="FetchKeep" id="rockSmall" value="16" />
+		<objective type="Craft" id="workcampfire" value="1" />
+		<objective type="BlockPlace" id="workcampfire" value="1" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 12 - Craft Stone Shovel /> -->
+	<quest id="quest_BasicSurvival12" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival12" subtitle_key="quest_BasicSurvival12_subtitle" description_key="quest_BasicSurvival12_description" icon="ui_game_symbol_tool" category_key="Quest">
+		<objective type="FetchKeep" id="FiberRope" value="3" />
+		<objective type="FetchKeep" id="rockSmall" value="3" />
+		<objective type="FetchKeep" id="stick" value="3" />
+		<objective type="Craft" id="stoneShovel" value="1" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 13 - Craft Bone Shiv /> -->
+	<quest id="quest_BasicSurvival13" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival13" subtitle_key="quest_BasicSurvival13_subtitle" description_key="quest_BasicSurvival13_description" icon="ui_game_symbol_knife" category_key="Quest">
+		<objective type="FetchKeep" id="femur" value="1" />
+		<objective type="Craft" id="boneShiv" value="1" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 14 - Clean Some Water /> -->
+	<quest id="quest_BasicSurvival14" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival14" subtitle_key="quest_BasicSurvival14_subtitle" description_key="quest_BasicSurvival14_description" icon="ui_game_symbol_water" category_key="Quest">
+		<objective type="FetchKeep" id="canEmpty" value="2" />
+		<objective type="FetchKeep" id="canMurkyWater" value="2" />
+		<objective type="FetchKeep" id="canBoiledWater" value="2" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 15 - Craft Iron Reinforced Club /> -->
+	<quest id="quest_BasicSurvival15" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival15" subtitle_key="quest_BasicSurvival15_subtitle" description_key="quest_BasicSurvival15_description" icon="ui_game_symbol_club" category_key="Quest">
+		<objective type="FetchKeep" id="clubWood" value="1" />
+		<objective type="FetchKeep" id="scrapIron" value="10" />
+		<objective type="Craft" id="clubIron" value="1" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<!-- Basic Survival 16 - Find some Yucca /> -->
+	<quest id="quest_BasicSurvival16" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival16" subtitle_key="quest_BasicSurvival16_subtitle" description_key="quest_BasicSurvival16_description" icon="ui_game_symbol_fork" category_key="Quest">
+		<objective type="FetchKeep" id="foodYuccaFruit" value="3" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 17 - Craft a Torch /> -->
+	<quest id="quest_BasicSurvival17" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival17" subtitle_key="quest_BasicSurvival17_subtitle" description_key="quest_BasicSurvival17_description" icon="ui_game_symbol_lightbulb" category_key="Quest">
+		<objective type="FetchKeep" id="stick" value="2" />
+		<objective type="FetchKeep" id="coal" value="5" />
+		<objective type="Craft" id="torch" value="1" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 18 - Craft a Splint /> -->
+	<quest id="quest_BasicSurvival18" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival18" subtitle_key="quest_BasicSurvival18_subtitle" description_key="quest_BasicSurvival18_description" icon="ui_game_symbol_splint" category_key="Quest">
+		<objective type="FetchKeep" id="cloth" value="2" />
+		<objective type="FetchKeep" id="stick" value="2" />
+		<objective type="Craft" id="splint" value="1" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 19 - Craft and place Spikes /> -->
+	<quest id="quest_BasicSurvival19" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival19" subtitle_key="quest_BasicSurvival19_subtitle" description_key="quest_BasicSurvival19_description" icon="ui_game_symbol_weapon_smithing" category_key="Quest">
+		<objective type="FetchKeep" id="stick" value="200" />
+		<objective type="Craft" id="SetUpASpikeTrap" value="10" />
+		<objective type="BlockPlace" id="SetUpASpikeTrap" value="10" />
+		<objective type="BlockUpgrade" id="SetUpASpikeTrap" value="10" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<!-- Basic Survival 20 - Craft Hay Bales /> -->
+	<quest id="quest_BasicSurvival20" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival20" subtitle_key="quest_BasicSurvival20_subtitle" description_key="quest_BasicSurvival20_description" icon="ui_game_symbol_map_house" category_key="Quest">
+		<objective type="FetchKeep" id="PlantFibers" value="40" />
+		<objective type="Craft" id="hayBaleBlock" value="4" />
+		<reward type="Exp" id="400" />
+	</quest>
+	<!-- Basic Survival 21 - Cure and Dry Leather /> -->
+	<quest id="quest_BasicSurvival21" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival21" subtitle_key="quest_BasicSurvival21_subtitle" description_key="quest_BasicSurvival21_description" icon="ui_game_symbol_armor_leather" category_key="Quest">
+		<objective type="FetchKeep" id="animalHide" value="4" />
+		<objective type="FetchKeep" id="BrainMatter" value="4" />
+		<objective type="FetchKeep" id="coal" value="4" />
+		<objective type="FetchKeep" id="CuredLeather" value="4" />
+		<objective type="FetchKeep" id="stick" value="10" />
+		<objective type="Craft" id="workDryingRack" value="1" />
+		<objective type="BlockPlace" id="workDryingRack" value="1" />
+		<objective type="FetchKeep" id="leather" value="4" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete" />
+	</quest>
+	<!-- White River Citizen 1 - Journey to Settlement -->
+	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="Quest">
+		<objective type="Goto" id="trader" value="5" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<!-- CHALLENGES -->
+	<quest id="challenge_silenceofthelambs" name_key="challenge_silenceofthelambs" subtitle_key="challenge_silenceofthelambs_subtitle" description_key="challenge_silenceofthelambs_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_silenceofthelambs_offer" difficulty="insane">
+		<objective type="Time" value="1200" optional="true" />
+		<objective type="ZombieKill" id="zombieScreamer" value="3" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="2" optional="true" />
+	</quest>
+	<quest id="challenge_drunkanddisorderly" name_key="challenge_drunkanddisorderly" subtitle_key="challenge_drunkanddisorderly_subtitle" description_key="challenge_drunkanddisorderly_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_drunkanddisorderly_offer" difficulty="medium">
+		<objective type="Time" value="600" optional="true" />
+		<objective type="ZombieKill" value="2" />
+		<requirement type="Holding" id="" />
+		<requirement type="Group" value="OR">
+			<requirement type="Buff" id="Drunk" />
+			<requirement type="Buff" id="SickDrunk" />
+		</requirement>
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+	<quest id="challenge_nurseyoubacktohealth" name_key="challenge_nurseyoubacktohealth" subtitle_key="challenge_nurseyoubacktohealth_subtitle" description_key="challenge_nurseyoubacktohealth_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_nurseyoubacktohealth_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieNurse" value="3" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+	<quest id="challenge_copanattitude" name_key="challenge_copanattitude" subtitle_key="challenge_copanattitude_subtitle" description_key="challenge_copanattitude_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_copanattitude_offer" difficulty="hard">
+		<objective type="Time" value="1500" optional="true" />
+		<objective type="ZombieKill" id="fatzombiecop" value="2" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+	<quest id="challenge_dogdaysareover" name_key="challenge_dogdaysareover" subtitle_key="challenge_dogdaysareover_subtitle" description_key="challenge_dogdaysareover_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_dogdaysareover_offer" difficulty="hard">
+		<objective type="Time" value="1500" optional="true" />
+		<objective type="ZombieKill" id="zombiedog" value="3" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+	<quest id="challenge_itsybitsyspider" name_key="challenge_itsybitsyspider" subtitle_key="challenge_itsybitsyspider_subtitle" description_key="challenge_itsybitsyspider_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_itsybitsyspider_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="spiderzombie" value="3" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+	<quest id="challenge_ladykiller" name_key="challenge_ladykiller" subtitle_key="challenge_ladykiller_subtitle" description_key="challenge_ladykiller_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_ladykiller_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieArlene" value="1" />
+		<objective type="ZombieKill" id="zombieDarlene" value="1" />
+		<objective type="ZombieKill" id="zombieMarlene" value="1" />
+		<objective type="ZombieKill" id="zombieNurse" value="1" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+	<quest id="challenge_maneater" name_key="challenge_maneater" subtitle_key="challenge_maneater_subtitle" description_key="challenge_maneater_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_maneater_offer" difficulty="medium">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="zombieBoe" value="1" />
+		<objective type="ZombieKill" id="zombieJoe" value="1" />
+		<objective type="ZombieKill" id="zombieMoe" value="1" />
+		<objective type="ZombieKill" id="zombieYo" value="1" />
+		<objective type="ZombieKill" id="zombieSteve" value="1" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+	<quest id="challenge_yournothingspecial" name_key="challenge_yournothingspecial" subtitle_key="challenge_yournothingspecial_subtitle" description_key="challenge_yournothingspecial_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_yournothingspecial_offer" difficulty="insane">
+		<objective type="Time" value="1800" optional="true" />
+		<objective type="ZombieKill" id="spiderzombie" value="1" />
+		<objective type="ZombieKill" id="fatzombiecop" value="1" />
+		<objective type="ZombieKill" id="zombieferal" value="1" />
+		<objective type="ZombieKill" id="zombieScreamer" value="1" />
+		<objective type="ZombieKill" id="burntzombie" value="1" />
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="2" optional="true" />
+	</quest>
+	<quest id="challenge_imalumberjackandimokay" name_key="challenge_imalumberjackandimokay" subtitle_key="challenge_imalumberjackandimokay_subtitle" description_key="challenge_imalumberjackandimokay_offer" icon="ui_game_symbol_zombie" repeatable="true" category_key="challenge" offer_key="challenge_imalumberjackandimokay_offer" difficulty="hard">
+		<objective type="Time" value="900" optional="true" />
+		<objective type="ZombieKill" id="snowzombie" value="3" />
+		<requirement type="Group" id="requirementGroupFireaxe" value="OR">
+			<requirement type="Holding" id="fireaxeIron" />
+			<requirement type="Holding" id="fireaxeSteel" />
+		</requirement>
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+	<quest id="challenge_killthewabbit" name_key="challenge_killthewabbit" subtitle_key="challenge_killthewabbit_subtitle" description_key="challenge_killthewabbit_offer" icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" offer_key="challenge_killthewabbit_offer" difficulty="medium">
+		<objective type="AnimalKill" id="animalRabbit" value="5" />
+		<requirement type="Group" id="requirementGroupShotgun" value="OR">
+			<requirement type="Holding" id="gunSawedOffPumpShotgun" />
+			<requirement type="Holding" id="gunPumpShotgun" />
+		</requirement>
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_nailsomechicks" name_key="challenge_nailsomechicks" subtitle_key="challenge_nailsomechicks_subtitle" description_key="challenge_nailsomechicks_offer" icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" offer_key="challenge_nailsomechicks_offer" difficulty="medium">
+		<objective type="AnimalKill" id="animalChicken" value="5" />
+		<requirement type="Holding" id="nailgun" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_thatlldopig" name_key="challenge_thatlldopig" subtitle_key="challenge_thatlldopig_subtitle" description_key="challenge_thatlldopig_offer" icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" offer_key="challenge_thatlldopig_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalPig" value="5" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_stagparty" name_key="challenge_stagparty" subtitle_key="challenge_stagparty_subtitle" description_key="challenge_stagparty_offer" icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" offer_key="challenge_stagparty_offer" difficulty="easy">
+		<objective type="AnimalKill" id="animalStag" value="5" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_dontfeedthebears" name_key="challenge_dontfeedthebears" subtitle_key="challenge_dontfeedthebears_subtitle" description_key="challenge_dontfeedthebears_offer" icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" offer_key="challenge_dontfeedthebears_offer" difficulty="hard">
+		<objective type="AnimalKill" id="animalBear" value="3" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_buythefarm" name_key="challenge_buythefarm" subtitle_key="challenge_buythefarm_subtitle" description_key="challenge_buythefarm_offer" icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" offer_key="challenge_buythefarm_offer" difficulty="medium">
+		<objective type="AnimalKill" id="animalRabbit" value="1" />
+		<objective type="AnimalKill" id="animalChicken" value="1" />
+		<objective type="AnimalKill" id="animalPig" value="1" />
+		<objective type="AnimalKill" id="animalStag" value="1" />
+		<objective type="AnimalKill" id="animalBear" value="1" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<!--Treasure Quest-->
+	<quest id="treasure_taylor" name_key="treasure_taylor" subtitle_key="treasure_taylor_subtitle" description_key="treasure_taylor_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_taylor_offer" difficulty="medium">
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+	<quest id="treasure_nickole" name_key="treasure_nickole" subtitle_key="treasure_nickole_subtitle" description_key="treasure_nickole_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_nickole_offer" difficulty="medium">
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+	<quest id="treasure_stephan" name_key="treasure_stephan" subtitle_key="treasure_stephan_subtitle" description_key="treasure_stephan_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_stephan_offer" difficulty="medium">
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+	<quest id="treasure_jennifer" name_key="treasure_jennifer" subtitle_key="treasure_jennifer_subtitle" description_key="treasure_jennifer_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_jennifer_offer" difficulty="medium">
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+	<quest id="treasure_claude" name_key="treasure_claude" subtitle_key="treasure_claude_subtitle" description_key="treasure_claude_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_claude_offer" difficulty="medium">
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+	<quest id="treasure_sarah" name_key="treasure_sarah" subtitle_key="treasure_sarah_subtitle" description_key="treasure_sarah_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_sarah_offer" difficulty="medium">
+		<objective type="TreasureChest" id="treasureChest" value="1000-1750" />
+	</quest>
+	<quest id="treasure_raphael" name_key="treasure_raphael" subtitle_key="treasure_raphael_subtitle" description_key="treasure_raphael_offer" icon="ui_game_symbol_treasure" repeatable="true" category_key="treasure" offer_key="treasure_raphael_offer" difficulty="medium">
+		<objective type="TreasureChest" id="treasureChest" value="500-1500" />
+	</quest>
+	<!-- <quest id="intro_oldsurvival4" name_key="Basic Survival 4/7" subtitle_key="Spend Skill Points" icon="ui_game_symbol_skills" category_key="Quest">
+		<objective type="openwindow" id="skills" />
+		<objective type="spendskillpoints" value="2" />
+		
+		<reward type="SkillPoints" value="2" />
+    </quest>
+	
+	
+	<quest id="dc_medicine1" name_key="Leg Breaker" subtitle_key="Break a Leg" icon="ui_game_symbol_medical" repeatable="true" category_key="challenge">
+		<objective type="Buff" id="brokenLeg" />
+		<objective type="Buff" id="splint" />
+		
+		<reward type="skill" id="Medicine" value="1" />
+	</quest> -->
+	<!--JZMOD PROFESSION QUEST CHAINS-->
+	<!--Doctor-->
+    <quest id="StartDoctor" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Doctor" />
+        <reward type="Quest" id="challenge_Doctor2" />
+        <reward type="Quest" id="challenge_Doctor3" />
+        <reward type="Quest" id="challenge_Doctor4" />
+	</quest>
+	<quest id="challenge_Doctor" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<objective type="Craft" id="PainKillerShot" value="1" />
+        <objective type="Craft" id="StimulantShot" value="1" />
+        <objective type="Craft" id="InfectedShot" value="1" />
+        <objective type="Craft" id="SedativeShot" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Doctor2" name_key="challenge_Profession" subtitle_key="challenge_Doctor2_subtitle" description_key="challenge_Doctor2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor2_offer" difficulty="easy">
+		<objective type="Craft" id="painkillers" value="1" />
+		<objective type="Craft" id="antibiotics" value="1" />
+		<objective type="Craft" id="SuperPill" value="1" />
+        <reward type="Exp" id="1000" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Doctor3" name_key="challenge_Profession" subtitle_key="challenge_Doctor3_subtitle" description_key="challenge_Doctor3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor3_offer" difficulty="easy">
+		<objective type="Craft" id="aloeCream" value="1" />
+		<objective type="Craft" id="firstAidBandage" value="1" />
+		<objective type="Craft" id="firstAidKit" value="1" />
+		<objective type="Craft" id="firstAidBandage" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Doctor4" name_key="challenge_Profession" subtitle_key="challenge_Doctor4_subtitle" description_key="challenge_Doctor4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor4_offer" difficulty="easy">
+		<objective type="FetchKeep" id="DoctorBook" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<!--Carpenter-->
+    <quest id="StartCarpenter" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Doctor" />
+        <reward type="Quest" id="challenge_Doctor2" />
+        <reward type="Quest" id="challenge_Doctor3" />
+        <reward type="Quest" id="challenge_Doctor4" />
+	</quest>
+	<quest id="challenge_Carpenter" name_key="challenge_Profession" subtitle_key="challenge_Engineer_subtitle" description_key="challenge_Engineer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Engineer_offer" difficulty="easy">
+		<objective type="Craft" id="woodFrameBlock" value="50" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Carpenter2" name_key="challenge_Profession" subtitle_key="challenge_Engineer2_subtitle" description_key="challenge_Engineer2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Engineer2_offer" difficulty="easy">
+		<objective type="Craft" id="woodFrameCNRFull" value="1" />
+		<objective type="Craft" id="woodFrameCNRInside" value="1" />
+		<objective type="Craft" id="woodFrameWedge" value="1" />
+        <objective type="Craft" id="woodFrameRamp" value="1" />
+        <objective type="Craft" id="woodStairs25" value="1" />
+        <objective type="Craft" id="woodPillar100" value="1" />
+        <objective type="Craft" id="woodPlate" value="1" />
+        <objective type="Craft" id="woodPole" value="1" />
+        <objective type="Craft" id="woodArrowSlitHalf" value="1" />
+        <reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Carpenter3" name_key="challenge_Profession" subtitle_key="challenge_Engineer3_subtitle" description_key="challenge_Engineer3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Engineer3_offer" difficulty="easy">
+		<objective type="Craft" id="clawHammer" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Carpenter4" name_key="challenge_Profession" subtitle_key="challenge_Engineer5_subtitle" description_key="challenge_Engineer5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Engineer5_offer" difficulty="easy">
+		<objective type="Craft" id="Plank" value="250" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<!--Farmer-->
+    <quest id="StartFarmer" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Doctor" />
+        <reward type="Quest" id="challenge_Doctor2" />
+        <reward type="Quest" id="challenge_Doctor3" />
+        <reward type="Quest" id="challenge_Doctor4" />
+	</quest>
+	<quest id="challenge_Farmer" name_key="challenge_Profession" subtitle_key="challenge_Farmer_subtitle" description_key="challenge_Farmer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer_offer" difficulty="easy">
+		<objective type="Craft" id="StoneHoe" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Farmer2" name_key="challenge_Profession" subtitle_key="challenge_Farmer2_subtitle" description_key="challenge_Farmer2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer2_offer" difficulty="easy">
+		<objective type="Craft" id="workSeedNursery" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Farmer3" name_key="challenge_Profession" subtitle_key="challenge_Farmer3_subtitle" description_key="challenge_Farmer3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer3_offer" difficulty="easy">
+		<objective type="Craft" id="fertilizer" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Farmer4" name_key="challenge_Profession" subtitle_key="challenge_Farmer4_subtitle" description_key="challenge_Farmer4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer4_offer" difficulty="easy">
+		<objective type="Craft" id="cornSeed" value="1" />
+		<objective type="Craft" id="potatoSeed" value="1" />
+		<objective type="Craft" id="blueberrySeed" value="1" />
+        <objective type="Craft" id="CarrotSeed" value="1" />
+        <objective type="Craft" id="SunflowerSeed" value="1" />
+		<objective type="Craft" id="WheatSeed" value="1" />
+		<objective type="Craft" id="AppleSeed" value="1" />
+		<objective type="Craft" id="yuccaSeed" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Farmer5" name_key="challenge_Profession" subtitle_key="challenge_Farmer5_subtitle" description_key="challenge_Farmer5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer5_offer" difficulty="easy">
+		<objective type="Craft" id="hopSeed" value="1" />
+		<objective type="Craft" id="aloeSeed" value="1" />
+		<objective type="Craft" id="mushroomSeed" value="1" />
+        <objective type="Craft" id="CoffeeSeeds" value="1" />
+        <objective type="Craft" id="cottonSeed" value="1" />
+		<objective type="Craft" id="goldenrodSeed" value="1" />
+		<objective type="Craft" id="chrysanthemumSeed" value="1" />
+		<objective type="Craft" id="TomatoSeed" value="1" />
+        <objective type="Craft" id="StrawberrySeed" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<!--Cop-->
+    <quest id="StartCop" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Doctor" />
+        <reward type="Quest" id="challenge_Doctor2" />
+        <reward type="Quest" id="challenge_Doctor3" />
+        <reward type="Quest" id="challenge_Doctor4" />
+	</quest>
+	<quest id="challenge_Cop" name_key="challenge_Profession" subtitle_key="challenge_Cop_subtitle" description_key="challenge_Cop_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Cop_offer" difficulty="easy">
+		<objective type="Craft" id="GunOil" value="10" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Cop2" name_key="challenge_Profession" subtitle_key="challenge_Cop2_subtitle" description_key="challenge_Cop2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Cop2_offer" difficulty="easy">
+		<objective type="Craft" id="weaponRepairKit" value="10" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Cop3" name_key="challenge_Profession" subtitle_key="challenge_Cop3_subtitle" description_key="challenge_Cop3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Cop3_offer" difficulty="easy">
+		<objective type="Craft" id="NightStick" value="1" />
+        <reward type="Exp" id="1200" />
+		<reward type="SkillPoints" value="3" />
+	</quest>
+	<!--Soldier-->
+    <quest id="StartSoldier" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Soldier" />
+        <reward type="Quest" id="challenge_Soldier2" />
+        <reward type="Quest" id="challenge_Soldier3" />
+        <reward type="Quest" id="challenge_Soldier4" />
+	</quest>
+	<quest id="challenge_Soldier" name_key="challenge_Profession" subtitle_key="challenge_Soldier_subtitle" description_key="challenge_Soldier_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier_offer" difficulty="easy">
+		<objective type="Craft" id="Grubs" value="20" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Soldier2" name_key="challenge_Profession" subtitle_key="challenge_Soldier2_subtitle" description_key="challenge_Soldier2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier2_offer" difficulty="easy">
+		<objective type="Craft" id="blunderbuss" value="1" />
+		<objective type="Craft" id="blunderbussAmmo" value="5" />
+        <objective type="ZombieKill" value="1" />
+        <requirement type="Holding" id="blunderbuss" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Soldier3" name_key="challenge_Profession" subtitle_key="challenge_Soldier4_subtitle" description_key="challenge_Soldier4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier4_offer" difficulty="easy">
+		<objective type="Craft" id="mineCookingPot" value="3" />
+		<objective type="Craft" id="pipeBomb" value="3" />
+        <reward type="Exp" id="800" />		
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Soldier4" name_key="challenge_Profession" subtitle_key="challenge_Soldier5_subtitle" description_key="challenge_Soldier5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier5_offer" difficulty="easy">
+		<objective type="Craft" id="weaponRepairKit" value="5" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<!--Scientist-->
+    <quest id="StartScientist" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Scientist" />
+        <reward type="Quest" id="challenge_Scientist2" />
+        <reward type="Quest" id="challenge_Scientist3" />
+        <reward type="Quest" id="challenge_Scientist4" />
+        <reward type="Quest" id="challenge_Scientist5" />
+	</quest>
+	<quest id="challenge_Scientist" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="PurificationTablets" value="10" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Scientist2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="RedBull" value="6" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Scientist3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="Craft" id="MixedChemicals" value="5" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Scientist4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
+		<objective type="Craft" id="gunPowder" value="100" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+    </quest>
+	<quest id="challenge_Scientist5" name_key="challenge_Profession" subtitle_key="challenge_Scientist5_subtitle" description_key="challenge_Scientist5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist5_offer" difficulty="easy">
+		<objective type="Craft" id="oilShale" value="1" />
+		<objective type="Craft" id="oil" value="1" />
+		<objective type="Craft" id="bioFuel" value="1" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+    <!--Fisherman-->
+    <quest id="StartFisherman" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Fisherman" />
+        <reward type="Quest" id="challenge_Fisherman2" />
+        <reward type="Quest" id="challenge_Fisherman3" />
+    </quest>
+	<quest id="challenge_Fisherman" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="SimplePole" value="1" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Fisherman2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="fishingLure1" value="1" />
+        <objective type="Craft" id="fishingLure2" value="1" />
+        <objective type="Craft" id="fishingLure3" value="1" />
+        <objective type="Craft" id="fishingLure3" value="1" />
+        <objective type="Craft" id="fishingLure3" value="1" />
+        <reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Fisherman3" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
+		<objective type="Craft" id="FishingPole" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+    </quest>
+	<!--Chef-->
+    <quest id="StartChef" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Chef" />
+        <reward type="Quest" id="challenge_Chef2" />
+        <reward type="Quest" id="challenge_Chef3" />
+        <reward type="Quest" id="challenge_Chef4" />
+	</quest>
+	<quest id="challenge_Chef" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="canMeat" value="1" />
+        <objective type="Craft" id="cornBread" value="1" />
+        <objective type="Craft" id="FriedEggOmelet" value="1" />
+        <objective type="Craft" id="baconAndEggs" value="1" />
+       	<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Chef2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="blueberryPie" value="1" />
+        <objective type="Craft" id="ApplePie" value="1" />
+        <objective type="Craft" id="CarrotCake" value="1" />
+        <objective type="Craft" id="Bread" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Chef3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="Craft" id="FishChowder" value="1" />
+        <objective type="Craft" id="BearStew" value="1" />
+        <objective type="Craft" id="vegetableStew" value="1" />
+        <objective type="Craft" id="beer" value="1" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Chef4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
+		<objective type="Craft" id="BrainShnitzel" value="1" />
+        <objective type="Craft" id="FishNChips" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+    </quest>
+	<quest id="challenge_Chef5" name_key="challenge_Profession" subtitle_key="challenge_Scientist5_subtitle" description_key="challenge_Scientist5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist5_offer" difficulty="easy">
+		<objective type="Craft" id="SharpeningStone" value="10" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+    <!--Fitness Instructor-->
+    <quest id="StartFitness" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Fitness" />
+        <reward type="Quest" id="challenge_Fitness2" />
+        <reward type="Quest" id="challenge_Fitness3" />
+    </quest>
+	<quest id="challenge_Fitness" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="goldenRodTea" value="15" />
+        <objective type="Craft" id="redTea" value="15" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Fitness2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="RedBull" value="12" />
+        <reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Fitness3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="Craft" id="WellnessJuice" value="5" />
+		<reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+    <!--Fireman-->
+    <quest id="StartFireman" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Fireman" />
+        <reward type="Quest" id="challenge_Fireman2" />
+        <reward type="Quest" id="challenge_Fireman3" />
+    </quest>
+	<quest id="challenge_Fireman" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="aloeCream" value="20" />
+       	<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Fireman2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="fireaxeIron" value="1" />
+        <reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Fireman3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="Craft" id="fireaxeSteel" value="1" />
+      	<reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<!--Construction Worker-->
+    <quest id="StartConstruction" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Construction" />
+        <reward type="Quest" id="challenge_Construction2" />
+        <reward type="Quest" id="challenge_Construction3" />
+    </quest>
+	<quest id="challenge_Construction" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="wrench" value="1" />
+       	<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Construction2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="scrapIronFrameBlock" value="50" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Construction3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="Craft" id="scrapIronFrameCNRFull" value="1" />
+        <objective type="Craft" id="scrapIronFrameCNRInside" value="1" />
+        <objective type="Craft" id="scrapIronFrameRamp" value="1" />
+        <objective type="Craft" id="scrapIronFrameWedge" value="1" />
+        <objective type="Craft" id="scrapIronStairs25" value="1" />
+        <objective type="Craft" id="rScrapIronPlate" value="1" />
+        <objective type="Craft" id="scrapIronSheet" value="1" />
+        <objective type="Craft" id="scrapIronArrowSlitHalf" value="1" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+    <!--Electrician-->
+    <quest id="StartElectrician" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Electrician" />
+        <reward type="Quest" id="challenge_Electrician2" />
+        <reward type="Quest" id="challenge_Electrician3" />
+        <reward type="Quest" id="challenge_Electrician4" />
+	</quest>
+	<quest id="challenge_Electrician" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="CompactDriver" value="1" />
+      	<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Electrician2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="dieselGen" value="1" />
+        <reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Electrician3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="Craft" id="electricParts" value="10" />
+        <objective type="Craft" id="electronicParts" value="10" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Electrician4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
+		<objective type="Craft" id="ShockStick" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+    </quest>
+	<!--Metal Worker-->
+    <quest id="StartMetal" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Metal" />
+        <reward type="Quest" id="challenge_Metal2" />
+        <reward type="Quest" id="challenge_Metal3" />
+    </quest>
+	<quest id="challenge_Metal" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="workforge" value="1" />
+       	<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Metal2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="rebarFrameBlock" value="50" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Metal3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="Craft" id="rebarFrameCNRInside" value="1" />
+        <objective type="Craft" id="rebarFramePillar100" value="1" />
+        <objective type="Craft" id="rebarFrameRamp" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+    <!--Burglar-->
+    <quest id="StartBurglar" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Burglar" />
+        <reward type="Quest" id="challenge_Burglar2" />
+        <reward type="Quest" id="challenge_Burglar3" />
+    </quest>
+	<quest id="challenge_Burglar" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="SteakKnife" value="1" />
+       	<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Burglar2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="LockPick" value="1" />
+        <reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<quest id="challenge_Burglar3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="ZombieKill" value="5" />
+        <requirement type="Holding" id="SteakKnife" />
+		<reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+	</quest>
+	<!--Park Ranger-->
+    <quest id="StartRanger" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Ranger" />
+        <reward type="Quest" id="challenge_Ranger2" />
+        <reward type="Quest" id="challenge_Ranger3" />
+        <reward type="Quest" id="challenge_Ranger4" />
+        <reward type="Quest" id="challenge_Ranger5" />
+	</quest>
+	<quest id="challenge_Ranger" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="PurificationTablets" value="1" />
+       	<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Ranger2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="WoodSpear" value="1" />
+        <objective type="Craft" id="WoodJavelin" value="50" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Ranger3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="Craft" id="SetUpASpikeTrap" value="50" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Ranger4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
+		<objective type="Craft" id="BearTrap" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+    </quest>
+	<quest id="challenge_Ranger5" name_key="challenge_Profession" subtitle_key="challenge_Scientist5_subtitle" description_key="challenge_Scientist5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist5_offer" difficulty="easy">
+		<objective type="Craft" id="herbalAntibiotics" value="2" />
+		<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+    <!--Mechanic-->
+    <quest id="StartMechanic" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+		<reward type="Quest" id="challenge_Mechanic" />
+        <reward type="Quest" id="challenge_Mechanic2" />
+        <reward type="Quest" id="challenge_Mechanic3" />
+        <reward type="Quest" id="challenge_Mechanic4" />
+	</quest>
+	<quest id="challenge_Mechanic" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
+		<objective type="Craft" id="wrench" value="1" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Mechanic2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+		<objective type="Craft" id="mechanicalParts" value="10" />
+        <reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Mechanic3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
+		<objective type="Craft" id="chainsaw" value="1" />
+      	<reward type="Exp" id="400" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Mechanic4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
+		<objective type="Craft" id="auger" value="1" />
+        <reward type="Exp" id="800" />
+		<reward type="SkillPoints" value="2" />
+    </quest>
+	<!--JZMOD CHALLENGES-->
+	<quest id="challenge_Hen" name_key="challenge_Hen" subtitle_key="challenge_Hen_subtitle" description_key="challenge_Hen_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Hen_offer" difficulty="easy">
+		<objective type="BlockPlace" id="workChickenCoop" value="1" />
+		<objective type="Craft" id="workChickenCoop" value="1" />
+		<objective type="FetchKeep" id="BabyChicken" value="1" />
+		<objective type="FetchKeep" id="Hen" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_InfectedAnimals" name_key="challenge_Vorpal" subtitle_key="challenge_Vorpal_subtitle" description_key="challenge_Vorpal_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Vorpal_offer" difficulty="easy">
+		<objective type="AnimalKill" id="ZombieRabbit" value="1" />
+		<objective type="AnimalKill" id="ZombieChicken" value="1" />
+		<objective type="ZombieKill" id="zombiedog" value="1" />
+		<objective type="AnimalKill" id="zombieBear" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_AntiVenom" name_key="challenge_AntiVenom" subtitle_key="challenge_AntiVenom_subtitle" description_key="challenge_AntiVenom_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_AntiVenom_offer" difficulty="easy">
+		<objective type="Buff" id="VenomPoisoning1" />
+		<objective type="FetchKeep" id="AntiVenom" value="1" />
+		<objective type="Buff" id="AntiVenom" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_PlantSeeds" name_key="challenge_Plants" subtitle_key="challenge_Plants_subtitle" description_key="challenge_Plants_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Plants_offer" difficulty="easy">
+		<objective type="BlockPlace" id="plantedCorn1" value="1" />
+		<objective type="BlockPlace" id="plantedPotato1" value="1" />
+		<objective type="BlockPlace" id="plantedBlueberry1" value="1" />
+		<objective type="BlockPlace" id="plantedGoldenrod1" value="1" />
+		<objective type="BlockPlace" id="plantedCotton1" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Boe" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="Boe1" value="1" />
+		<objective type="ZombieKill" id="zombieBoe" value="1" />
+		<objective type="ZombieKill" id="Boe3" value="1" />
+		<objective type="ZombieKill" id="CrawlerBoe" value="1" />
+		<objective type="ZombieKill" id="Boe5" value="1" />
+		<objective type="ZombieKill" id="Boe6" value="1" />
+		<objective type="ZombieKill" id="Boe7" value="1" />
+		<objective type="ZombieKill" id="Boe8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Joe" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="Joe1" value="1" />
+		<objective type="ZombieKill" id="Joe2" value="1" />
+		<objective type="ZombieKill" id="Joe3" value="1" />
+		<objective type="ZombieKill" id="CrawlerJoe" value="1" />
+		<objective type="ZombieKill" id="zombieJoe" value="1" />
+		<objective type="ZombieKill" id="Joe6" value="1" />
+		<objective type="ZombieKill" id="Joe7" value="1" />
+		<objective type="ZombieKill" id="Joe8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Arlene" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="Arlene1" value="1" />
+		<objective type="ZombieKill" id="Arlene2" value="1" />
+		<objective type="ZombieKill" id="zombieArlene" value="1" />
+		<objective type="ZombieKill" id="CrawlerArlene" value="1" />
+		<objective type="ZombieKill" id="Arlene5" value="1" />
+		<objective type="ZombieKill" id="Arlene6" value="1" />
+		<objective type="ZombieKill" id="Arlene7" value="1" />
+		<objective type="ZombieKill" id="Arlene8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Darlene" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="Darlene1" value="1" />
+		<objective type="ZombieKill" id="Darlene2" value="1" />
+		<objective type="ZombieKill" id="zombieDarlene" value="1" />
+		<objective type="ZombieKill" id="CrawlerDarlene" value="1" />
+		<objective type="ZombieKill" id="Darlene6" value="1" />
+		<objective type="ZombieKill" id="Darlene7" value="1" />
+		<objective type="ZombieKill" id="Darlene8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Marlene" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="Marlene1" value="1" />
+		<objective type="ZombieKill" id="Marlene2" value="1" />
+		<objective type="ZombieKill" id="Marlene3" value="1" />
+		<objective type="ZombieKill" id="CrawlerMarlene" value="1" />
+		<objective type="ZombieKill" id="zombieMarlene" value="1" />
+		<objective type="ZombieKill" id="Marlene6" value="1" />
+		<objective type="ZombieKill" id="Marlene7" value="1" />
+		<objective type="ZombieKill" id="Marlene8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Yo" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="Yo1" value="1" />
+		<objective type="ZombieKill" id="Yo2" value="1" />
+		<objective type="ZombieKill" id="Yo3" value="1" />
+		<objective type="ZombieKill" id="CrawlerYo" value="1" />
+		<objective type="ZombieKill" id="zombieYo" value="1" />
+		<objective type="ZombieKill" id="Yo6" value="1" />
+		<objective type="ZombieKill" id="Yo7" value="1" />
+		<objective type="ZombieKill" id="Yo8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_spider" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="spider1" value="1" />
+		<objective type="ZombieKill" id="spider2" value="1" />
+		<objective type="ZombieKill" id="spider3" value="1" />
+		<objective type="ZombieKill" id="spiderCrawler" value="1" />
+		<objective type="ZombieKill" id="spider5" value="1" />
+		<objective type="ZombieKill" id="spider6" value="1" />
+		<objective type="ZombieKill" id="spider7" value="1" />
+		<objective type="ZombieKill" id="spiderzombie" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_burnt" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="burnt1" value="1" />
+		<objective type="ZombieKill" id="burnt2" value="1" />
+		<objective type="ZombieKill" id="burnt3" value="1" />
+		<objective type="ZombieKill" id="burntCrawler" value="1" />
+		<objective type="ZombieKill" id="burnt5" value="1" />
+		<objective type="ZombieKill" id="burnt6" value="1" />
+		<objective type="ZombieKill" id="burntzombie" value="1" />
+		<objective type="ZombieKill" id="burnt8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Nurse" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="Nurse1" value="1" />
+		<objective type="ZombieKill" id="Nurse2" value="1" />
+		<objective type="ZombieKill" id="Nurse3" value="1" />
+		<objective type="ZombieKill" id="CrawlerNurse" value="1" />
+		<objective type="ZombieKill" id="Nurse5" value="1" />
+		<objective type="ZombieKill" id="Nurse6" value="1" />
+		<objective type="ZombieKill" id="zombieNurse" value="1" />
+		<objective type="ZombieKill" id="Nurse8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Steve" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="Steve1" value="1" />
+		<objective type="ZombieKill" id="Steve2" value="1" />
+		<objective type="ZombieKill" id="Steve3" value="1" />
+		<objective type="ZombieKill" id="zombieSteveCrawler" value="1" />
+		<objective type="ZombieKill" id="Steve5" value="1" />
+		<objective type="ZombieKill" id="zombieSteve" value="1" />
+		<objective type="ZombieKill" id="Steve7" value="1" />
+		<objective type="ZombieKill" id="Steve8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_Moe" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="zombieMoe" value="1" />
+		<objective type="ZombieKill" id="Moe2" value="1" />
+		<objective type="ZombieKill" id="Moe3" value="1" />
+		<objective type="ZombieKill" id="Moe5" value="1" />
+		<objective type="ZombieKill" id="Moe6" value="1" />
+		<objective type="ZombieKill" id="Moe7" value="1" />
+		<objective type="ZombieKill" id="Moe8" value="1" />
+		<reward type="SkillPoints" value="1" />
+	</quest>
+	<quest id="challenge_feral" name_key="challenge_KillemAll" subtitle_key="challenge_KillemAll_subtitle" description_key="challenge_KillemAll_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_KillemAll_offer" difficulty="easy">
+		<objective type="ZombieKill" id="feral1" value="1" />
+		<objective type="ZombieKill" id="zombieferal" value="1" />
+		<objective type="ZombieKill" id="feral3" value="1" />
+		<objective type="ZombieKill" id="feral5" value="1" />
+		<objective type="ZombieKill" id="feral6" value="1" />
+		<objective type="ZombieKill" id="feral7" value="1" />
+		<objective type="ZombieKill" id="feral8" value="1" />
+		<reward type="SkillPoints" value="7" />
+	</quest>
+	<quest id="challenge_Killer" name_key="challenge_Killer" subtitle_key="challenge_Killer_subtitle" description_key="challenge_Killer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Killer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Slayer" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Slayer" name_key="challenge_Killer" subtitle_key="challenge_Killer_subtitle" description_key="challenge_Killer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Killer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_King" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_King" name_key="challenge_Killer" subtitle_key="challenge_Killer_subtitle" description_key="challenge_Killer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Killer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer4" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer4" name_key="challenge_Slayer" subtitle_key="challenge_Slayer_subtitle" description_key="challenge_Slayer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Slayer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer5" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer5" name_key="challenge_Slayer" subtitle_key="challenge_Slayer_subtitle" description_key="challenge_Slayer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Slayer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer6" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer6" name_key="challenge_Slayer" subtitle_key="challenge_Slayer_subtitle" description_key="challenge_Slayer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Slayer_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer7" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer7" name_key="challenge_King" subtitle_key="challenge_King_subtitle" description_key="challenge_King_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_King_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="Quest" id="challenge_Killer8" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+	<quest id="challenge_Killer8" name_key="challenge_King" subtitle_key="challenge_King_subtitle" description_key="challenge_King_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_King_offer" difficulty="easy">
+		<objective type="ZombieKill" value="250" />
+		<reward type="SkillPoints" value="5" />
+	</quest>
+</quests>
