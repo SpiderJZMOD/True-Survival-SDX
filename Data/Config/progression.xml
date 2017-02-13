@@ -205,7 +205,7 @@
 				<multiply skill_level="70,100" value="1.23,1.28" />
 			</effect>
 		</action_skill>
-        <perk name="kaBar" icon="huntingKnife" description_key="Learn to craft a kaBar Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a small strong knife thats good for fighting." title_key="kaBar Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+        <perk name="kaBar" icon="kaBar" description_key="Learn to craft a kaBar Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a small strong knife thats good for fighting." title_key="kaBar Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
             <requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="10" />
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
@@ -217,7 +217,7 @@
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
             <recipe name="machete" unlock_level="1" />
 		</perk>
-        <perk name="The Shark" icon="FieldKnife" description_key="Learn to craft this awesome knife TheShark on the anvile using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a big strong knife thats best at fighting." title_key="The Shark" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+        <perk name="The Shark" icon="TheShark" description_key="Learn to craft this awesome knife TheShark on the anvile using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a big strong knife thats best at fighting." title_key="The Shark" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
             <requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="50" />
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
