@@ -30,10 +30,10 @@ Alternative settings for custom quest creation:
 		<reward type="Quest" id="quest_BasicSurvival3" />
 		<reward type="Quest" id="quest_BasicSurvival4" />
 		<reward type="Quest" id="quest_BasicSurvival5" />
-        <reward type="Quest" id="quest_BasicSurvival6" />
+		<reward type="Quest" id="quest_BasicSurvival6" />
 		<reward type="Quest" id="quest_BasicSurvival7" />
 		<reward type="Quest" id="quest_BasicSurvival8" />
-        <reward type="Quest" id="quest_BasicSurvival9" />
+		<reward type="Quest" id="quest_BasicSurvival9" />
 		<reward type="Quest" id="quest_BasicSurvival10" />
 		<reward type="Quest" id="quest_BasicSurvival11" />
 		<reward type="Quest" id="quest_BasicSurvival12" />
@@ -360,26 +360,26 @@ Alternative settings for custom quest creation:
 		<reward type="skill" id="Medicine" value="1" />
 	</quest> -->
 	<!--JZMOD PROFESSION QUEST CHAINS-->
-	<!--Doctor-->
-    <quest id="StartDoctor" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<!--Doctor--> 
+	<quest id="StartDoctor" name_key="challenge_Profession" subtitle_key="Doctors Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Doctor" />
-        <reward type="Quest" id="challenge_Doctor2" />
-        <reward type="Quest" id="challenge_Doctor3" />
-        <reward type="Quest" id="challenge_Doctor4" />
+		<reward type="Quest" id="challenge_Doctor2" />
+		<reward type="Quest" id="challenge_Doctor3" />
+		<reward type="Quest" id="challenge_Doctor4" />
 	</quest>
-	<quest id="challenge_Doctor" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="challenge_Doctor" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_description" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<objective type="Craft" id="PainKillerShot" value="1" />
-        <objective type="Craft" id="StimulantShot" value="1" />
-        <objective type="Craft" id="InfectedShot" value="1" />
-        <objective type="Craft" id="SedativeShot" value="1" />
-        <reward type="Exp" id="400" />
+		<objective type="Craft" id="StimulantShot" value="1" />
+		<objective type="Craft" id="InfectedShot" value="1" />
+		<objective type="Craft" id="SedativeShot" value="1" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Doctor2" name_key="challenge_Profession" subtitle_key="challenge_Doctor2_subtitle" description_key="challenge_Doctor2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor2_offer" difficulty="easy">
 		<objective type="Craft" id="painkillers" value="1" />
 		<objective type="Craft" id="antibiotics" value="1" />
 		<objective type="Craft" id="SuperPill" value="1" />
-        <reward type="Exp" id="1000" />
+		<reward type="Exp" id="1000" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Doctor3" name_key="challenge_Profession" subtitle_key="challenge_Doctor3_subtitle" description_key="challenge_Doctor3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor3_offer" difficulty="easy">
@@ -387,156 +387,156 @@ Alternative settings for custom quest creation:
 		<objective type="Craft" id="firstAidBandage" value="1" />
 		<objective type="Craft" id="firstAidKit" value="1" />
 		<objective type="Craft" id="firstAidBandage" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Doctor4" name_key="challenge_Profession" subtitle_key="challenge_Doctor4_subtitle" description_key="challenge_Doctor4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor4_offer" difficulty="easy">
 		<objective type="FetchKeep" id="DoctorBook" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Carpenter-->
-    <quest id="StartCarpenter" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="StartCarpenter" name_key="challenge_Profession" subtitle_key="Carpenters Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Doctor" />
-        <reward type="Quest" id="challenge_Doctor2" />
-        <reward type="Quest" id="challenge_Doctor3" />
-        <reward type="Quest" id="challenge_Doctor4" />
+		<reward type="Quest" id="challenge_Doctor2" />
+		<reward type="Quest" id="challenge_Doctor3" />
+		<reward type="Quest" id="challenge_Doctor4" />
 	</quest>
-	<quest id="challenge_Carpenter" name_key="challenge_Profession" subtitle_key="challenge_Engineer_subtitle" description_key="challenge_Engineer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Engineer_offer" difficulty="easy">
+	<quest id="challenge_Carpenter" name_key="challenge_Profession" subtitle_key="challenge_Carpenter_subtitle" description_key="challenge_Carpenter_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter_offer" difficulty="easy">
 		<objective type="Craft" id="woodFrameBlock" value="50" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Carpenter2" name_key="challenge_Profession" subtitle_key="challenge_Engineer2_subtitle" description_key="challenge_Engineer2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Engineer2_offer" difficulty="easy">
+	<quest id="challenge_Carpenter2" name_key="challenge_Profession" subtitle_key="challenge_Carpenter2_subtitle" description_key="challenge_Carpenter2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter2_offer" difficulty="easy">
 		<objective type="Craft" id="woodFrameCNRFull" value="1" />
 		<objective type="Craft" id="woodFrameCNRInside" value="1" />
 		<objective type="Craft" id="woodFrameWedge" value="1" />
-        <objective type="Craft" id="woodFrameRamp" value="1" />
-        <objective type="Craft" id="woodStairs25" value="1" />
-        <objective type="Craft" id="woodPillar100" value="1" />
-        <objective type="Craft" id="woodPlate" value="1" />
-        <objective type="Craft" id="woodPole" value="1" />
-        <objective type="Craft" id="woodArrowSlitHalf" value="1" />
-        <reward type="Exp" id="800" />
+		<objective type="Craft" id="woodFrameRamp" value="1" />
+		<objective type="Craft" id="woodStairs25" value="1" />
+		<objective type="Craft" id="woodPillar100" value="1" />
+		<objective type="Craft" id="woodPlate" value="1" />
+		<objective type="Craft" id="woodPole" value="1" />
+		<objective type="Craft" id="woodArrowSlitHalf" value="1" />
+		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-	<quest id="challenge_Carpenter3" name_key="challenge_Profession" subtitle_key="challenge_Engineer3_subtitle" description_key="challenge_Engineer3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Engineer3_offer" difficulty="easy">
+	<quest id="challenge_Carpenter3" name_key="challenge_Profession" subtitle_key="challenge_Carpenter3_subtitle" description_key="challenge_Carpenter3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter3_offer" difficulty="easy">
 		<objective type="Craft" id="clawHammer" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Carpenter4" name_key="challenge_Profession" subtitle_key="challenge_Engineer5_subtitle" description_key="challenge_Engineer5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Engineer5_offer" difficulty="easy">
+	<quest id="challenge_Carpenter4" name_key="challenge_Profession" subtitle_key="challenge_Carpenter4_subtitle" description_key="challenge_Carpenter4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Carpenter4_offer" difficulty="easy">
 		<objective type="Craft" id="Plank" value="250" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Farmer-->
-    <quest id="StartFarmer" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="StartFarmer" name_key="challenge_Profession" subtitle_key="Farmers Quest" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Doctor" />
-        <reward type="Quest" id="challenge_Doctor2" />
-        <reward type="Quest" id="challenge_Doctor3" />
-        <reward type="Quest" id="challenge_Doctor4" />
+		<reward type="Quest" id="challenge_Doctor2" />
+		<reward type="Quest" id="challenge_Doctor3" />
+		<reward type="Quest" id="challenge_Doctor4" />
 	</quest>
 	<quest id="challenge_Farmer" name_key="challenge_Profession" subtitle_key="challenge_Farmer_subtitle" description_key="challenge_Farmer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer_offer" difficulty="easy">
 		<objective type="Craft" id="StoneHoe" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Farmer2" name_key="challenge_Profession" subtitle_key="challenge_Farmer2_subtitle" description_key="challenge_Farmer2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer2_offer" difficulty="easy">
 		<objective type="Craft" id="workSeedNursery" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Farmer3" name_key="challenge_Profession" subtitle_key="challenge_Farmer3_subtitle" description_key="challenge_Farmer3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer3_offer" difficulty="easy">
-		<objective type="Craft" id="fertilizer" value="1" />
-        <reward type="Exp" id="400" />
+		<objective type="Craft" id="fertilizer" value="20" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Farmer4" name_key="challenge_Profession" subtitle_key="challenge_Farmer4_subtitle" description_key="challenge_Farmer4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer4_offer" difficulty="easy">
 		<objective type="Craft" id="cornSeed" value="1" />
 		<objective type="Craft" id="potatoSeed" value="1" />
 		<objective type="Craft" id="blueberrySeed" value="1" />
-        <objective type="Craft" id="CarrotSeed" value="1" />
-        <objective type="Craft" id="SunflowerSeed" value="1" />
+		<objective type="Craft" id="CarrotSeed" value="1" />
+		<objective type="Craft" id="SunflowerSeed" value="1" />
 		<objective type="Craft" id="WheatSeed" value="1" />
 		<objective type="Craft" id="AppleSeed" value="1" />
 		<objective type="Craft" id="yuccaSeed" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Farmer5" name_key="challenge_Profession" subtitle_key="challenge_Farmer5_subtitle" description_key="challenge_Farmer5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer5_offer" difficulty="easy">
+	<quest id="challenge_Farmer5" name_key="challenge_Profession" subtitle_key="challenge_Farmer4_subtitle" description_key="challenge_Farmer4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer4_offer" difficulty="easy">
 		<objective type="Craft" id="hopSeed" value="1" />
 		<objective type="Craft" id="aloeSeed" value="1" />
 		<objective type="Craft" id="mushroomSeed" value="1" />
-        <objective type="Craft" id="CoffeeSeeds" value="1" />
-        <objective type="Craft" id="cottonSeed" value="1" />
+		<objective type="Craft" id="CoffeeSeeds" value="1" />
+		<objective type="Craft" id="cottonSeed" value="1" />
 		<objective type="Craft" id="goldenrodSeed" value="1" />
 		<objective type="Craft" id="chrysanthemumSeed" value="1" />
 		<objective type="Craft" id="TomatoSeed" value="1" />
-        <objective type="Craft" id="StrawberrySeed" value="1" />
-        <reward type="Exp" id="400" />
+		<objective type="Craft" id="StrawberrySeed" value="1" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Cop-->
-    <quest id="StartCop" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="StartCop" name_key="challenge_Profession" subtitle_key="Cops Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Doctor" />
-        <reward type="Quest" id="challenge_Doctor2" />
-        <reward type="Quest" id="challenge_Doctor3" />
-        <reward type="Quest" id="challenge_Doctor4" />
+		<reward type="Quest" id="challenge_Doctor2" />
+		<reward type="Quest" id="challenge_Doctor3" />
+		<reward type="Quest" id="challenge_Doctor4" />
 	</quest>
 	<quest id="challenge_Cop" name_key="challenge_Profession" subtitle_key="challenge_Cop_subtitle" description_key="challenge_Cop_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Cop_offer" difficulty="easy">
 		<objective type="Craft" id="GunOil" value="10" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Cop2" name_key="challenge_Profession" subtitle_key="challenge_Cop2_subtitle" description_key="challenge_Cop2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Cop2_offer" difficulty="easy">
 		<objective type="Craft" id="weaponRepairKit" value="10" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Cop3" name_key="challenge_Profession" subtitle_key="challenge_Cop3_subtitle" description_key="challenge_Cop3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Cop3_offer" difficulty="easy">
 		<objective type="Craft" id="NightStick" value="1" />
-        <reward type="Exp" id="1200" />
+		<reward type="Exp" id="1200" />
 		<reward type="SkillPoints" value="3" />
 	</quest>
 	<!--Soldier-->
-    <quest id="StartSoldier" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="StartSoldier" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Soldier" />
-        <reward type="Quest" id="challenge_Soldier2" />
-        <reward type="Quest" id="challenge_Soldier3" />
-        <reward type="Quest" id="challenge_Soldier4" />
+		<reward type="Quest" id="challenge_Soldier2" />
+		<reward type="Quest" id="challenge_Soldier3" />
+		<reward type="Quest" id="challenge_Soldier4" />
 	</quest>
 	<quest id="challenge_Soldier" name_key="challenge_Profession" subtitle_key="challenge_Soldier_subtitle" description_key="challenge_Soldier_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier_offer" difficulty="easy">
 		<objective type="Craft" id="Grubs" value="20" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Soldier2" name_key="challenge_Profession" subtitle_key="challenge_Soldier2_subtitle" description_key="challenge_Soldier2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier2_offer" difficulty="easy">
 		<objective type="Craft" id="blunderbuss" value="1" />
 		<objective type="Craft" id="blunderbussAmmo" value="5" />
-        <objective type="ZombieKill" value="1" />
-        <requirement type="Holding" id="blunderbuss" />
+		<objective type="ZombieKill" value="1" />
+		<requirement type="Holding" id="blunderbuss" />
 		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Soldier3" name_key="challenge_Profession" subtitle_key="challenge_Soldier4_subtitle" description_key="challenge_Soldier4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier4_offer" difficulty="easy">
 		<objective type="Craft" id="mineCookingPot" value="3" />
 		<objective type="Craft" id="pipeBomb" value="3" />
-        <reward type="Exp" id="800" />		
+		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Soldier4" name_key="challenge_Profession" subtitle_key="challenge_Soldier5_subtitle" description_key="challenge_Soldier5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier5_offer" difficulty="easy">
 		<objective type="Craft" id="weaponRepairKit" value="5" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<!--Scientist-->
-    <quest id="StartScientist" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="StartScientist" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Scientist" />
-        <reward type="Quest" id="challenge_Scientist2" />
-        <reward type="Quest" id="challenge_Scientist3" />
-        <reward type="Quest" id="challenge_Scientist4" />
-        <reward type="Quest" id="challenge_Scientist5" />
+		<reward type="Quest" id="challenge_Scientist2" />
+		<reward type="Quest" id="challenge_Scientist3" />
+		<reward type="Quest" id="challenge_Scientist4" />
+		<reward type="Quest" id="challenge_Scientist5" />
 	</quest>
 	<quest id="challenge_Scientist" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="PurificationTablets" value="10" />
@@ -545,7 +545,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Scientist2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="RedBull" value="6" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Scientist3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
@@ -555,9 +555,9 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Scientist4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
 		<objective type="Craft" id="gunPowder" value="100" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
-    </quest>
+	</quest>
 	<quest id="challenge_Scientist5" name_key="challenge_Profession" subtitle_key="challenge_Scientist5_subtitle" description_key="challenge_Scientist5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist5_offer" difficulty="easy">
 		<objective type="Craft" id="oilShale" value="1" />
 		<objective type="Craft" id="oil" value="1" />
@@ -565,12 +565,12 @@ Alternative settings for custom quest creation:
 		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-    <!--Fisherman-->
-    <quest id="StartFisherman" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<!--Fisherman-->
+	<quest id="StartFisherman" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Fisherman" />
-        <reward type="Quest" id="challenge_Fisherman2" />
-        <reward type="Quest" id="challenge_Fisherman3" />
-    </quest>
+		<reward type="Quest" id="challenge_Fisherman2" />
+		<reward type="Quest" id="challenge_Fisherman3" />
+	</quest>
 	<quest id="challenge_Fisherman" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="SimplePole" value="1" />
 		<reward type="Exp" id="400" />
@@ -578,75 +578,75 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Fisherman2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="fishingLure1" value="1" />
-        <objective type="Craft" id="fishingLure2" value="1" />
-        <objective type="Craft" id="fishingLure3" value="1" />
-        <objective type="Craft" id="fishingLure3" value="1" />
-        <objective type="Craft" id="fishingLure3" value="1" />
-        <reward type="Exp" id="800" />
+		<objective type="Craft" id="fishingLure2" value="1" />
+		<objective type="Craft" id="fishingLure3" value="1" />
+		<objective type="Craft" id="fishingLure3" value="1" />
+		<objective type="Craft" id="fishingLure3" value="1" />
+		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Fisherman3" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
 		<objective type="Craft" id="FishingPole" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
-    </quest>
+	</quest>
 	<!--Chef-->
-    <quest id="StartChef" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="StartChef" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Chef" />
-        <reward type="Quest" id="challenge_Chef2" />
-        <reward type="Quest" id="challenge_Chef3" />
-        <reward type="Quest" id="challenge_Chef4" />
+		<reward type="Quest" id="challenge_Chef2" />
+		<reward type="Quest" id="challenge_Chef3" />
+		<reward type="Quest" id="challenge_Chef4" />
 	</quest>
 	<quest id="challenge_Chef" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="canMeat" value="1" />
-        <objective type="Craft" id="cornBread" value="1" />
-        <objective type="Craft" id="FriedEggOmelet" value="1" />
-        <objective type="Craft" id="baconAndEggs" value="1" />
-       	<reward type="Exp" id="400" />
+		<objective type="Craft" id="cornBread" value="1" />
+		<objective type="Craft" id="FriedEggOmelet" value="1" />
+		<objective type="Craft" id="baconAndEggs" value="1" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Chef2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="blueberryPie" value="1" />
-        <objective type="Craft" id="ApplePie" value="1" />
-        <objective type="Craft" id="CarrotCake" value="1" />
-        <objective type="Craft" id="Bread" value="1" />
-        <reward type="Exp" id="400" />
+		<objective type="Craft" id="ApplePie" value="1" />
+		<objective type="Craft" id="CarrotCake" value="1" />
+		<objective type="Craft" id="Bread" value="1" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Chef3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
 		<objective type="Craft" id="FishChowder" value="1" />
-        <objective type="Craft" id="BearStew" value="1" />
-        <objective type="Craft" id="vegetableStew" value="1" />
-        <objective type="Craft" id="beer" value="1" />
+		<objective type="Craft" id="BearStew" value="1" />
+		<objective type="Craft" id="vegetableStew" value="1" />
+		<objective type="Craft" id="beer" value="1" />
 		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Chef4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
 		<objective type="Craft" id="BrainShnitzel" value="1" />
-        <objective type="Craft" id="FishNChips" value="1" />
-        <reward type="Exp" id="400" />
+		<objective type="Craft" id="FishNChips" value="1" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
-    </quest>
+	</quest>
 	<quest id="challenge_Chef5" name_key="challenge_Profession" subtitle_key="challenge_Scientist5_subtitle" description_key="challenge_Scientist5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist5_offer" difficulty="easy">
 		<objective type="Craft" id="SharpeningStone" value="10" />
 		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-    <!--Fitness Instructor-->
-    <quest id="StartFitness" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<!--Fitness Instructor-->
+	<quest id="StartFitness" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Fitness" />
-        <reward type="Quest" id="challenge_Fitness2" />
-        <reward type="Quest" id="challenge_Fitness3" />
-    </quest>
+		<reward type="Quest" id="challenge_Fitness2" />
+		<reward type="Quest" id="challenge_Fitness3" />
+	</quest>
 	<quest id="challenge_Fitness" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="goldenRodTea" value="15" />
-        <objective type="Craft" id="redTea" value="15" />
+		<objective type="Craft" id="redTea" value="15" />
 		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Fitness2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="RedBull" value="12" />
-        <reward type="Exp" id="800" />
+		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Fitness3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
@@ -654,189 +654,189 @@ Alternative settings for custom quest creation:
 		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-    <!--Fireman-->
-    <quest id="StartFireman" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<!--Fireman-->
+	<quest id="StartFireman" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Fireman" />
-        <reward type="Quest" id="challenge_Fireman2" />
-        <reward type="Quest" id="challenge_Fireman3" />
-    </quest>
+		<reward type="Quest" id="challenge_Fireman2" />
+		<reward type="Quest" id="challenge_Fireman3" />
+	</quest>
 	<quest id="challenge_Fireman" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="aloeCream" value="20" />
-       	<reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Fireman2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="fireaxeIron" value="1" />
-        <reward type="Exp" id="800" />
+		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Fireman3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
 		<objective type="Craft" id="fireaxeSteel" value="1" />
-      	<reward type="Exp" id="800" />
+		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Construction Worker-->
-    <quest id="StartConstruction" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="StartConstruction" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Construction" />
-        <reward type="Quest" id="challenge_Construction2" />
-        <reward type="Quest" id="challenge_Construction3" />
-    </quest>
+		<reward type="Quest" id="challenge_Construction2" />
+		<reward type="Quest" id="challenge_Construction3" />
+	</quest>
 	<quest id="challenge_Construction" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="wrench" value="1" />
-       	<reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Construction2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="scrapIronFrameBlock" value="50" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Construction3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
 		<objective type="Craft" id="scrapIronFrameCNRFull" value="1" />
-        <objective type="Craft" id="scrapIronFrameCNRInside" value="1" />
-        <objective type="Craft" id="scrapIronFrameRamp" value="1" />
-        <objective type="Craft" id="scrapIronFrameWedge" value="1" />
-        <objective type="Craft" id="scrapIronStairs25" value="1" />
-        <objective type="Craft" id="rScrapIronPlate" value="1" />
-        <objective type="Craft" id="scrapIronSheet" value="1" />
-        <objective type="Craft" id="scrapIronArrowSlitHalf" value="1" />
+		<objective type="Craft" id="scrapIronFrameCNRInside" value="1" />
+		<objective type="Craft" id="scrapIronFrameRamp" value="1" />
+		<objective type="Craft" id="scrapIronFrameWedge" value="1" />
+		<objective type="Craft" id="scrapIronStairs25" value="1" />
+		<objective type="Craft" id="rScrapIronPlate" value="1" />
+		<objective type="Craft" id="scrapIronSheet" value="1" />
+		<objective type="Craft" id="scrapIronArrowSlitHalf" value="1" />
 		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
-    <!--Electrician-->
-    <quest id="StartElectrician" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<!--Electrician-->
+	<quest id="StartElectrician" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Electrician" />
-        <reward type="Quest" id="challenge_Electrician2" />
-        <reward type="Quest" id="challenge_Electrician3" />
-        <reward type="Quest" id="challenge_Electrician4" />
+		<reward type="Quest" id="challenge_Electrician2" />
+		<reward type="Quest" id="challenge_Electrician3" />
+		<reward type="Quest" id="challenge_Electrician4" />
 	</quest>
 	<quest id="challenge_Electrician" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="CompactDriver" value="1" />
-      	<reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Electrician2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="dieselGen" value="1" />
-        <reward type="Exp" id="800" />
+		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Electrician3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
 		<objective type="Craft" id="electricParts" value="10" />
-        <objective type="Craft" id="electronicParts" value="10" />
-        <reward type="Exp" id="400" />
+		<objective type="Craft" id="electronicParts" value="10" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Electrician4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
 		<objective type="Craft" id="ShockStick" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
-    </quest>
+	</quest>
 	<!--Metal Worker-->
-    <quest id="StartMetal" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="StartMetal" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Metal" />
-        <reward type="Quest" id="challenge_Metal2" />
-        <reward type="Quest" id="challenge_Metal3" />
-    </quest>
+		<reward type="Quest" id="challenge_Metal2" />
+		<reward type="Quest" id="challenge_Metal3" />
+	</quest>
 	<quest id="challenge_Metal" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="workforge" value="1" />
-       	<reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Metal2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="rebarFrameBlock" value="50" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Metal3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
 		<objective type="Craft" id="rebarFrameCNRInside" value="1" />
-        <objective type="Craft" id="rebarFramePillar100" value="1" />
-        <objective type="Craft" id="rebarFrameRamp" value="1" />
-        <reward type="Exp" id="400" />
+		<objective type="Craft" id="rebarFramePillar100" value="1" />
+		<objective type="Craft" id="rebarFrameRamp" value="1" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-    <!--Burglar-->
-    <quest id="StartBurglar" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<!--Burglar-->
+	<quest id="StartBurglar" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Burglar" />
-        <reward type="Quest" id="challenge_Burglar2" />
-        <reward type="Quest" id="challenge_Burglar3" />
-    </quest>
+		<reward type="Quest" id="challenge_Burglar2" />
+		<reward type="Quest" id="challenge_Burglar3" />
+	</quest>
 	<quest id="challenge_Burglar" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="SteakKnife" value="1" />
-       	<reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Burglar2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="LockPick" value="1" />
-        <reward type="Exp" id="800" />
+		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Burglar3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
 		<objective type="ZombieKill" value="5" />
-        <requirement type="Holding" id="SteakKnife" />
+		<requirement type="Holding" id="SteakKnife" />
 		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<!--Park Ranger-->
-    <quest id="StartRanger" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<quest id="StartRanger" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Ranger" />
-        <reward type="Quest" id="challenge_Ranger2" />
-        <reward type="Quest" id="challenge_Ranger3" />
-        <reward type="Quest" id="challenge_Ranger4" />
-        <reward type="Quest" id="challenge_Ranger5" />
+		<reward type="Quest" id="challenge_Ranger2" />
+		<reward type="Quest" id="challenge_Ranger3" />
+		<reward type="Quest" id="challenge_Ranger4" />
+		<reward type="Quest" id="challenge_Ranger5" />
 	</quest>
 	<quest id="challenge_Ranger" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="PurificationTablets" value="1" />
-       	<reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Ranger2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="WoodSpear" value="1" />
-        <objective type="Craft" id="WoodJavelin" value="50" />
-        <reward type="Exp" id="400" />
+		<objective type="Craft" id="WoodJavelin" value="50" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Ranger3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
 		<objective type="Craft" id="SetUpASpikeTrap" value="50" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Ranger4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
 		<objective type="Craft" id="BearTrap" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
-    </quest>
+	</quest>
 	<quest id="challenge_Ranger5" name_key="challenge_Profession" subtitle_key="challenge_Scientist5_subtitle" description_key="challenge_Scientist5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist5_offer" difficulty="easy">
 		<objective type="Craft" id="herbalAntibiotics" value="2" />
 		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-    <!--Mechanic-->
-    <quest id="StartMechanic" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_Doctor_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Doctor_offer" difficulty="easy">
+	<!--Mechanic-->
+	<quest id="StartMechanic" name_key="challenge_Profession" subtitle_key="challenge_Doctor_subtitle" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
 		<reward type="Quest" id="challenge_Mechanic" />
-        <reward type="Quest" id="challenge_Mechanic2" />
-        <reward type="Quest" id="challenge_Mechanic3" />
-        <reward type="Quest" id="challenge_Mechanic4" />
+		<reward type="Quest" id="challenge_Mechanic2" />
+		<reward type="Quest" id="challenge_Mechanic3" />
+		<reward type="Quest" id="challenge_Mechanic4" />
 	</quest>
 	<quest id="challenge_Mechanic" name_key="challenge_Profession" subtitle_key="challenge_Scientist_subtitle" description_key="challenge_Scientist_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist_offer" difficulty="easy">
 		<objective type="Craft" id="wrench" value="1" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Mechanic2" name_key="challenge_Profession" subtitle_key="challenge_Scientist2_subtitle" description_key="challenge_Scientist2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
 		<objective type="Craft" id="mechanicalParts" value="10" />
-        <reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Mechanic3" name_key="challenge_Profession" subtitle_key="challenge_Scientist3_subtitle" description_key="challenge_Scientist3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist3_offer" difficulty="easy">
 		<objective type="Craft" id="chainsaw" value="1" />
-      	<reward type="Exp" id="400" />
+		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Mechanic4" name_key="challenge_Profession" subtitle_key="challenge_Scientist4_subtitle" description_key="challenge_Scientist4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
 		<objective type="Craft" id="auger" value="1" />
-        <reward type="Exp" id="800" />
+		<reward type="Exp" id="800" />
 		<reward type="SkillPoints" value="2" />
-    </quest>
+	</quest>
 	<!--JZMOD CHALLENGES-->
 	<quest id="challenge_Hen" name_key="challenge_Hen" subtitle_key="challenge_Hen_subtitle" description_key="challenge_Hen_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Hen_offer" difficulty="easy">
 		<objective type="BlockPlace" id="workChickenCoop" value="1" />
