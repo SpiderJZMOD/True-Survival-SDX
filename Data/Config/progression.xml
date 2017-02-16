@@ -1714,6 +1714,7 @@
 		</perk>
 		<perk name="Farming" icon="SeedNursery" description_key="Learn to craft a seed nursery that will allow you to cultivate basic seeds from plants" title_key="Seed Nursery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="health">
 			<recipe name="workSeedNursery" unlock_level="1" />
+			<recipe name="hoeIron" unlock_level="1" />
 			<recipe name="cornSeed" unlock_level="1" />
 			<recipe name="potatoSeed" unlock_level="1" />
 			<recipe name="blueberrySeed" unlock_level="1" />
@@ -1941,6 +1942,8 @@
 		<perk name="Fisherman" icon="gunsmithing" description_key="These are the skills a Fisherman starts with. Collect 20 Profession pages to learn another profession" title_key="Fisherman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="SimplePole" unlock_level="1" />
 			<recipe name="FishingPole" unlock_level="1" />
+			<recipe name="barge" unlock_level="1" />
+			<recipe name="bambooRaft" unlock_level="1" />
 			<recipe name="fishingLure1" unlock_level="1" />
 			<recipe name="fishingLure2" unlock_level="1" />
 			<recipe name="fishingLure3" unlock_level="1" />
