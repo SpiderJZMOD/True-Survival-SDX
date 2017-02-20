@@ -4598,17 +4598,16 @@ fishingLure5Desc,,,,"Use while fishing to have a 50% better chance at chatching 
 CleaningFishDesc,,,,"Wow nice catch! Now what are you going to do with it? Place the fish on the ground and harvest the meat from it. Be careful cleaning fishing smells.",,,,
 FlaotDesc,,,,"Place the float on the water and climb on. Use this to fish in deep water for a better chance to catch fish. Makes a nice place to hide from the horde too.",,,,
 earthwormDesc,,,,"Use these little guys to bait a fishing hook and catch some fish.",,,,
-
-
-
-
-
-
-
-
-
-
-
+RadMushroomDesc,,,,"This strange looking Mushroom was growing from radiated soil and give off a strange glow and warmth. It doesn’t look edible.",,,,
+AdvAssaultGroupDesc,,,,",A part of an Advanced Assault Rifle. Assemble with other parts to create a complete AK47, HK416 or LSAT once you've read the appropriate schematic.",,,,
+CraftedGunPartsDesc,,,,"A part of an Crafted Gun. Assemble with other parts to create a complete Crafted Revolver.",,,,
+CraftedRiflePartsDesc,,,,"A part of an Crafted Rilfe. Assemble with other parts to create a complete Crafted Rifle.",,,,
+RevolverPartsDesc,,,,"A basic revolver. Uses 9mm ammo. Can be re-assembled and repaired if you read the appropriate schematic.",,,,
+colt1911Desc,,,,"A bad ass colt. Uses 10mm ammo. Can be re-assembled and repaired if you read the appropriate schematic.",,,,
+parts1911GroupDesc,,,,"A part of a Delta Elite 1911. Assemble with other parts to create a complete Delta Elite 1911 once you've read the appropriate schematic.",,,,
+partsHkUspGroupDesc,,,,"A part of a Hk Usp Compact. Assemble with other parts to create a complete Hk Usp Compact once you've read the appropriate schematic.",,,,
+partsDEVIGroupDesc,,,,"A part of a Desert Eagle VII. Assemble with other parts to create a complete Desert Eagle VII once you've read the appropriate schematic.",,,,
+partsP229GroupDesc,,,,"A part of a SIG Sauer P229. Assemble with other parts to create a complete SIG Sauer P229 once you've read the appropriate schematic.",,,,
 
 
 
