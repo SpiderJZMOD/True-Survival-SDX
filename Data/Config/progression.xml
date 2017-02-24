@@ -423,17 +423,26 @@
 			<recipe name="IronSpear" unlock_level="1" />
 			<recipe name="IronJavelin" unlock_level="1" />
 		</perk>
-		<perk name="Crossbow" icon="crossbow" description_key="Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench" title_key="Crossbow" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+        <perk name="Electric Spear" icon="electricSpears" description_key="Learn to Craft a Electric Spear on the metal working bench with the compact driver." title_key="Electric Spear" max_level="1" skill_point_cost_per_level="5" group="weapons">
+			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1" />
+            <requirement perk_level="1" required_skill_name="Engineering" required_skill_level="10" />
+			<requirement perk_level="1" required_player_level="20" />
+			<recipe name="electricSpear" unlock_level="1" />
+		</perk>
+		<perk name="Crossbow" icon="crossbow" description_key="Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench" title_key="Crossbow" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="5" />
 			<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20" />
+            <requirement perk_level="2" required_skill_name="Archery" required_skill_level="40" />
 			<recipe name="Crossbow_Limb" unlock_level="1" />
 			<recipe name="Crossbow_Stock" unlock_level="1" />
 			<recipe name="Crossbow_Barrel" unlock_level="1" />
-			<recipe name="crossbow" unlock_level="1" />
+			<!--<recipe name="crossbow" unlock_level="1" />
 			<recipe name="crossbowBolt" unlock_level="1" />
 			<recipe name="CrossbowStockScope" unlock_level="2" />
 			<recipe name="crossbowScope" unlock_level="2" />
+            <recipe name="BoltCylinder" unlock_level="3" />
+            <recipe name="AutoCrossbow" unlock_level="3" />-->
 		</perk>
 		<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" group="health" skill_point_cost_per_level="1000">
 			<effect name="HealthGain">
@@ -487,7 +496,7 @@
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="shortSteelPipe" unlock_level="1" />
 		</perk>
-		<perk name="Steel Tools" icon="pickaxeSteel" description_key="Learn to forge Steel tool heads in the Blast furnace and craft steel tools on the the metal working bench." title_key="Steel Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
+		<perk name="Steel Tools" icon="pickaxeSteel" description_key="Learn to forge Steel tool heads in the Blast furnace and craft steel tools on the the metal working bench." title_key="Steel Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="tools">
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="pickaxeSteel" unlock_level="1" />
 			<recipe name="fireaxeSteel" unlock_level="1" />
@@ -552,7 +561,7 @@
 			<recipe name="wrench" unlock_level="1" />
 		</perk>
 		<perk name="Claw Hammer" icon="clawHammer" description_key="Learn to craft a hammer head in the forge and how to build and repair a claw hammer" title_key="Claw Hammer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-			<requirement perk_level="1" required_player_level="10" />
+			<requirement perk_level="1" required_player_level="5" />
 			<recipe name="clawHammer" unlock_level="1" />
 		</perk>
 		<perk name="Screwdriver" icon="Screwdriver" description_key="Learn to craft and repair a screwdriver" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
@@ -1173,6 +1182,15 @@
 				<!-- =10 points at QL 600 -->
 			</effect>
 		</crafting_skill>
+        <perk name="Iron Tools" icon="pickaxeSteel" description_key="Learn to forge Iron tool heads in the Forge with a Anvil and use them to craft Iron tools" title_key="Iron Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="IronFireaxeHead" unlock_level="1" />
+			<recipe name="fireaxeIron" unlock_level="1" />
+			<recipe name="IronPickaxeHead" unlock_level="1" />
+            <recipe name="pickaxeIron" unlock_level="1" />
+			<recipe name="IronShovelHead" unlock_level="1" />
+			<recipe name="shovelIron" unlock_level="1" />
+		</perk>
 		<perk name="Scrap Iron Building" icon="scrapIronBlock" description_key="Learn to craft Scrap Iron Blocks on the metal work bench using a wrench" title_key="Scrap Iron Building" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="25" />

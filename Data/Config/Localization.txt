@@ -4608,6 +4608,6 @@ parts1911GroupDesc,,,,"A part of a Delta Elite 1911. Assemble with other parts t
 partsHkUspGroupDesc,,,,"A part of a Hk Usp Compact. Assemble with other parts to create a complete Hk Usp Compact once you've read the appropriate schematic.",,,,
 partsDEVIGroupDesc,,,,"A part of a Desert Eagle VII. Assemble with other parts to create a complete Desert Eagle VII once you've read the appropriate schematic.",,,,
 partsP229GroupDesc,,,,"A part of a SIG Sauer P229. Assemble with other parts to create a complete SIG Sauer P229 once you've read the appropriate schematic.",,,,
-
+USASPartsDesc,,,,"A part of a Automatic Shotgun. Assemble with other parts to create a complete Automatic Shotgun once you've read the appropriate schematic.",,,,
 
 
