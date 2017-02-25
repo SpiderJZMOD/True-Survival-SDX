@@ -4609,5 +4609,5 @@ partsHkUspGroupDesc,,,,"A part of a Hk Usp Compact. Assemble with other parts to
 partsDEVIGroupDesc,,,,"A part of a Desert Eagle VII. Assemble with other parts to create a complete Desert Eagle VII once you've read the appropriate schematic.",,,,
 partsP229GroupDesc,,,,"A part of a SIG Sauer P229. Assemble with other parts to create a complete SIG Sauer P229 once you've read the appropriate schematic.",,,,
 USASPartsDesc,,,,"A part of a Automatic Shotgun. Assemble with other parts to create a complete Automatic Shotgun once you've read the appropriate schematic.",,,,
-
-
+TatteredClothesDesc,,,,"Threadbare clothes give you no protection for the elements or attackers but its better than being naked. Might come in handy for scrap cloth though.",,,,
+ProfessionKitDesc,,,,"Your only worldy possessions. Place on the ground and use your key to open or break open to gather your belongings. Check your skill screen to see what each profession teaches.",,,,
