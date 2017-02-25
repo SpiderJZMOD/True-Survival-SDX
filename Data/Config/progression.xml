@@ -217,11 +217,17 @@
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
 			<recipe name="machete" unlock_level="1" />
 		</perk>
-		<perk name="The Shark" icon="TheShark" description_key="Learn to craft this awesome knife TheShark on the anvile using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a big strong knife thats best at fighting." title_key="The Shark" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+		<perk name="The Shark" icon="TheShark" description_key="Learn to craft this awesome knife TheShark on the anvile using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a big strong knife thats best at fighting." title_key="The Shark" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="health">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="50" />
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
 			<recipe name="TheShark" unlock_level="1" />
+		</perk>
+        <perk name="Katana" icon="katanamichonne" description_key="Learn to craft a mighty Katana on the anvile using a claw hammer and learn how to craft the Sword Blade in the Blast Furnace that you need to craft it. This is a lomg Sharp sword thats best at cutting things off." title_key="Katana" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="health">
+			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
+			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
+			<recipe name="SwordBlade" unlock_level="1" />
+			<recipe name="katanamichonne" unlock_level="1" />
 		</perk>
 		<perk name="Knife Guy" icon="knife" description_key="knifeGuyDesc" title_key="knifeGuy" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="10" />
@@ -965,7 +971,7 @@
 			<recipe name="SteelHelmet+Light" unlock_level="1" />
 		</perk>
 		<!--Building-->
-		<crafting_skill name="Primitive Crafting" icon="wood" description_key="Crafting simple items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group" title_key="Primitive Crafting" group="crafting" skill_point_cost_per_level="3">
+		<crafting_skill name="Primitive Crafting" icon="wood" description_key="Crafting simple items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group. Recipe unlock levels 2/5/5/50" title_key="Primitive Crafting" group="crafting" skill_point_cost_per_level="3">
 			<recipe name="stoneKnife" unlock_level="2" />
 			<recipe name="workMortarAndPestle" unlock_level="5" />
 			<recipe name="workStoneMill" unlock_level="5" />
@@ -1183,7 +1189,7 @@
 			</effect>
 		</crafting_skill>
         <perk name="Iron Tools" icon="pickaxeSteel" description_key="Learn to forge Iron tool heads in the Forge with a Anvil and use them to craft Iron tools" title_key="Iron Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
-			<requirement perk_level="1" required_player_level="75" />
+			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="IronFireaxeHead" unlock_level="1" />
 			<recipe name="fireaxeIron" unlock_level="1" />
 			<recipe name="IronPickaxeHead" unlock_level="1" />
@@ -1527,12 +1533,13 @@
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="workchemistryStation" unlock_level="1" />
 		</perk>
-		<perk name="Aloe Cream" icon="AloeCream" description_key="Learn to craft Aloe Cream" title_key="Aloe Cream" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+		<perk name="Aloe Cream" icon="AloeCream" description_key="Learn to craft healing creams" title_key="Healing Creams" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="health">
 			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="3" />
 			<recipe name="aloeCream" unlock_level="1" />
+            <recipe name="herbalCream" unlock_level="1" />
 		</perk>
-		<perk name="First Aid Bandage" icon="firstAidBandage" description_key="Learn to craft a First Aid Bandage" title_key="First Aid Bandage" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+		<perk name="First Aid Bandage" icon="firstAidBandage" description_key="Learn to craft a First Aid Bandage" title_key="First Aid Bandage" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
 			<requirement perk_level="1" required_skill_name="Medicine" required_skill_level="3" />
 			<recipe name="firstAidBandage" unlock_level="1" />
 		</perk>

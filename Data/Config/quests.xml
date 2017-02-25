@@ -775,7 +775,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Burglar-->
 	<quest id="StartBurglar" name_key="challenge_Profession" subtitle_key="Burglars Quests" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="LockPickGun" value="600" />
+		<reward type="Item" id="LockPickGun" value="300" />
         <reward type="Quest" id="challenge_Burglar" />
 		<reward type="Quest" id="challenge_Burglar2" />
 		<reward type="Quest" id="challenge_Burglar3" />
