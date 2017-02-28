@@ -4674,17 +4674,3 @@ gasTank,,,,"Methane Bomb",,,,
 gasTankDesc,,,,"Place this bomb with with your defenses and shot it when the zombies are close. It will not hurt blocks only organics.",,,,
 BatteryTip,,,,"Batteries can not be repaired but when they have been degraded they must be recharged in a Battery Pack that is powered by a generator.",,,,
 
-
-
-
-
-
-
-
-
-
-trapnailDesc,,,,This ingeneous trap can be deadly.,,,,
-trapbearDesc,,,,A bear trap. It can be baited with raw meat to attract animals.,,,,
-trapfireDesc,,,,A triggered fire trap! Connect it to you gas pipe line,,,,
-trapspikeDesc,,,,A triggered spike trap! Connect it to you heat pipe line,,,,
-
