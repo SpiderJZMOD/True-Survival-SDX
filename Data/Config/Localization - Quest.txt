@@ -404,4 +404,33 @@ challenge_Scientist4_offer,,,,"Build up your supply of Gun Powder. You'll need i
 challenge_Scientist4_subtitle,,,,"Scientists Quest-Gun Powder",,,,
 challenge_Scientist5_offer,,,,"The world might of ended but the need for Chemist didnt. Craft up these chemical.",,,,
 challenge_Scientist5_subtitle,,,,"Scientists Quest-Refining",,,,
+FishingTip,,,,"If you can fish you will see a buff icon with a drop of water, and your cane will move up. To begin press R to bait your hook with a earthworm. Once baited the cane should go down. When you get a bite the cane will move down and you'll hear a splash. Quickly press the left mouse button to yank the rod. If you catch something quickly grab the loot by pressing the right mouse button. The deeper the water the better the chance for better fish and dont forget your fishing lures.",,,,
+FishingTip_title,,,,"How to Fish",,,,
+PowerTip,,,,"After placing a generator conect power lines to it to power work benches, lights and traps. Power will not travel more than 10 blocks with out a switch or fuse box being installed to extend it.",,,,
+PowerTip_title,,,,"Powering up",,,,
+BatteryTip,,,,"Batteries can not be repaired but when they have been degraded they must be recharged in a Battery Pack that is powered by a generator.",,,,
+BatteryTip_title,,,,"Repairing Batteries",,,,
+HardStoneTip,,,,"After about 6 layers of normal stone rock under the soil of the biome you will find HandStone. It has the color of bedrock but does not chime when hit. This stone is very hard and can only be hurt by Steel Tools, Stone Drills and Explosives that contains Nitroglycerin.",,,,
+HardStoneTip_title,,,,"Hard Stone!?",,,,
+PowerSwingTip,,,,"On many blunt melee weapons and on some tools the right mouse button can be used to perform a Power Swing. A Power Swing has a longer delay between swings and uses more stamina but it receives much higher head damage, a slight overall damage increase and a better chance to apply any debuffs like bleeds or crits.",,,,
+PowerSwingTip_title,,,,"Power Swing!?",,,,
+PowerNeededTip,,,,"To place a Powered item you must first place a generator and run power lines. Then you can place the item requiring power touching the powerline.",,,,
+PowerNeededTip_title,,,,"To Place Powered Items",,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

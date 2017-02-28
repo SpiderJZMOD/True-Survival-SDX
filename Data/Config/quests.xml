@@ -861,8 +861,8 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--JZMOD CHALLENGES-->
 	<quest id="challenge_Hen" name_key="challenge_Hen" subtitle_key="challenge_Hen_subtitle" description_key="challenge_Hen_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Hen_offer" difficulty="easy">
-		<objective type="BlockPlace" id="workChickenCoop" value="1" />
 		<objective type="Craft" id="workChickenCoop" value="1" />
+        <objective type="BlockPlace" id="workChickenCoop" value="1" />
 		<objective type="FetchKeep" id="BabyChicken" value="1" />
 		<objective type="FetchKeep" id="Hen" value="1" />
 		<reward type="SkillPoints" value="1" />
@@ -875,8 +875,7 @@ Alternative settings for custom quest creation:
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_AntiVenom" name_key="challenge_AntiVenom" subtitle_key="challenge_AntiVenom_subtitle" description_key="challenge_AntiVenom_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_AntiVenom_offer" difficulty="easy">
-		<objective type="Buff" id="VenomPoisoning1" />
-		<objective type="FetchKeep" id="AntiVenom" value="1" />
+		<objective type="Craft" id="AntiVenom" value="1" />
 		<objective type="Buff" id="AntiVenom" />
 		<reward type="SkillPoints" value="1" />
 	</quest>

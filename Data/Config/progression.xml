@@ -1,10 +1,10 @@
 <progression>
-	<player max_level="200" exp_to_level="5000" experience_multiplier="1.0151" skill_points_per_level="5" skill_point_multiplier="0" />
-	<skills max_level="100" exp_to_level="200" experience_multiplier="1.0195" skill_point_cost_multiplier="0" skill_point_cost_per_level="3">
+	<player max_level="200" exp_to_level="1250" experience_multiplier="1.0151" skill_points_per_level="5" skill_point_multiplier="0" />
+	<skills max_level="100" exp_to_level="50" experience_multiplier="1.0195" skill_point_cost_multiplier="0" skill_point_cost_per_level="3">
 		<!-- these are defaults and can be used to modify individual skills as needed      -->
 		<!-- Player Action Skills -->
 		<!--health-->
-		<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="1000" experience_multiplier="1.07152" group="health" skill_point_cost_per_level="1000">
+		<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="250" experience_multiplier="1.07152" group="health" skill_point_cost_per_level="1000">
 			<effect name="StaminaDegradation">
 				<multiply skill_level="1,5" value="1,.97" />
 				<multiply skill_level="5,11" value=".97,.94" />
@@ -504,9 +504,12 @@
 		</perk>
 		<perk name="Steel Tools" icon="pickaxeSteel" description_key="Learn to forge Steel tool heads in the Blast furnace and craft steel tools on the the metal working bench." title_key="Steel Tools" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="tools">
 			<requirement perk_level="1" required_player_level="75" />
-			<recipe name="pickaxeSteel" unlock_level="1" />
+			<recipe name="SteelPickaxeHead" unlock_level="1" />
+            <recipe name="pickaxeSteel" unlock_level="1" />
 			<recipe name="fireaxeSteel" unlock_level="1" />
+            <recipe name="SteelFireaxeHead" unlock_level="1" />
 			<recipe name="shovelSteel" unlock_level="1" />
+            <recipe name="SteelShovelHead" unlock_level="1" />
 		</perk>
 		<perk name="metalWorkbench" icon="workworkbench" description_key="Learn to craft a Metal Working Bench to craft more metal items and faster" title_key="Metal Working bench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="20" />
@@ -710,7 +713,7 @@
 			</effect>
 		</crafting_skill>
 		<!--Clothes-->
-		<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="100" group="clothing">
+		<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="25" group="clothing">
 			<effect name="ArmorDefense">
 				<add skill_level="1,5" value="0,.03" />
 				<add skill_level="5,11" value=".03,.05" />
@@ -863,7 +866,7 @@
 			<recipe name="leatherJacket" unlock_level="1" />
 			<recipe name="leatherPants" unlock_level="1" />
 		</perk>
-		<action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="100" group="clothing">
+		<action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="25" group="clothing">
 			<effect name="ArmorDefense">
 				<add skill_level="1,5" value="0,.03" />
 				<add skill_level="5,11" value=".03,.05" />
@@ -1264,6 +1267,12 @@
 			<recipe name="rebarFramePillar100" unlock_level="1" />
 			<recipe name="rebarFrameRamp" unlock_level="1" />
 		</perk>
+        <perk name="CraftedGenerator" icon="dieselGen" description_key="Learn to craft a Small Generator on the wood working bench using a wrench. Use it to power traps, lights and work benches" title_key="Crafted Generator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="25" />
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="dieselGen" unlock_level="1" />
+            <recipe name="cableTest" unlock_level="1" />
+        </perk>
 		<perk name="Iron Trussing" icon="MetalTrussing" description_key="Learn to craft Iron Trussing in the forge using a anvil" title_key="Iron Trussing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
 			<requirement perk_level="1" required_player_level="25" />
@@ -1275,7 +1284,13 @@
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="drawBridge" unlock_level="1" />
 		</perk>
-		<perk name="Small Elevator" icon="MetalTrussing" description_key="Learn to craft a small elevator on the metal working bench using a Compact Driver" title_key="Small Elevator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+        <perk name="MethaneProducer" icon="biogasDigester" description_key="Learn to craft a Methane gas producer on the metal working bench and use it to craft methane gas bombs." title_key="Methane Gas Bombs" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
+			<requirement perk_level="1" required_player_level="25" />
+			<recipe name="biogasDigester" unlock_level="1" />
+            <recipe name="gasTankEmpty" unlock_level="1" />
+		</perk>
+        <perk name="Small Elevator" icon="MetalTrussing" description_key="Learn to craft a small elevator on the metal working bench using a Compact Driver" title_key="Small Elevator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="Elevator_1x1x3" unlock_level="1" />
@@ -1368,6 +1383,12 @@
 			<recipe name="cntSteelGunSafe" unlock_level="1" />
 			<recipe name="cntSteelGunSafeB" unlock_level="1" />
 		</perk>
+        <perk name="LargeGenerator" icon="bigGenerator" description_key="Learn to craft a Large Generator on the metal working bench using the Wielder. Use it to power traps, lights and work benches more effeicently." title_key="Large Generator" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
+			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
+			<requirement perk_level="1" required_player_level="75" />
+			<recipe name="bigGenerator" unlock_level="1" />
+            <recipe name="cableTest" unlock_level="1" />
+        </perk>
 		<crafting_skill name="Miscellaneous Crafting" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
