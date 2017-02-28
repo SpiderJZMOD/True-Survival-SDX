@@ -974,8 +974,9 @@
 			<recipe name="SteelHelmet+Light" unlock_level="1" />
 		</perk>
 		<!--Building-->
-		<crafting_skill name="Primitive Crafting" icon="wood" description_key="Crafting simple items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group. Recipe unlock levels 2/5/5/50" title_key="Primitive Crafting" group="crafting" skill_point_cost_per_level="3">
+		<crafting_skill name="Primitive Crafting" icon="wood" description_key="Crafting simple items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group. Recipe unlock levels 2/3/5/5/50" title_key="Primitive Crafting" group="crafting" skill_point_cost_per_level="3">
 			<recipe name="stoneKnife" unlock_level="2" />
+            <recipe name="SharpeningStone" unlock_level="3" />
 			<recipe name="workMortarAndPestle" unlock_level="5" />
 			<recipe name="workStoneMill" unlock_level="5" />
 			<recipe name="ironShiv" unlock_level="50" />
@@ -1686,7 +1687,7 @@
 			<recipe name="SimplePole" unlock_level="1" />
 			<recipe name="fishingLure1" unlock_level="1" />
 		</perk>
-		<perk name="Tallow" icon="tallow" description_key="Learn to craft Tallow on the camp fire" title_key="Tallow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+		<perk name="Tallow" icon="tallow" description_key="Learn to craft Tallow on the Campfire in a Pot" title_key="Tallow" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="2" />
 			<recipe name="tallow" unlock_level="1" />
 		</perk>
@@ -2086,6 +2087,7 @@
 		</perk>
 		<perk name="Metal Worker" icon="gunsmithing" description_key="These are the skills a Metal Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Metal Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="workforge" unlock_level="1" />
+            <recipe name="bellows" unlock_level="1" />
 			<recipe name="rebarFrameBlock" unlock_level="1" />
 			<recipe name="rebarFrameCNRInside" unlock_level="1" />
 			<recipe name="rebarFramePillar100" unlock_level="1" />
