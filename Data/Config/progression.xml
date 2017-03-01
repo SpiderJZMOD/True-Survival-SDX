@@ -1719,42 +1719,42 @@
 			<recipe name="industrialLight01Switch" unlock_level="1" />
 			<recipe name="streetLight01Switch" unlock_level="1" />
 		</perk>
-		<perk name="Spikes" icon="TrapSpikes01" description_key="Learn to craft Wooden Spikes" title_key="Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="weapons">
+		<perk name="Spikes" icon="TrapSpikes01" description_key="Learn to craft Wooden Spikes" title_key="Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<recipe name="SetUpASpikeTrap" unlock_level="1" />
 		</perk>
-		<perk name="Log Tips" icon="woodLogSpike1" description_key="Learn to craft Log Tips" title_key="Log Tips" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+		<perk name="Log Tips" icon="woodLogSpike1" description_key="Learn to craft Log Tips" title_key="Log Tips" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="3" />
 			<recipe name="woodLogSpike1" unlock_level="1" />
 		</perk>
-		<perk name="Steel Spikes" icon="woodLogSpike1" description_key="Learn to craft Steel Spikes on the metal working bench" title_key="Steel Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<perk name="Steel Spikes" icon="woodLogSpike1" description_key="Learn to craft Steel Spikes on the metal working bench" title_key="Steel Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
 			<recipe name="SteelSpikes" unlock_level="1" />
 		</perk>
-		<perk name="Barbed Fence" icon="barbedFence" description_key="Learn to craft Barbed Fence" title_key="Barbed Fence" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+		<perk name="Barbed Fence" icon="barbedFence" description_key="Learn to craft Barbed Fence" title_key="Barbed Fence" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="5" />
 			<recipe name="barbedFence" unlock_level="1" />
 		</perk>
-		<perk name="Shock Trap" icon="weapon_smithing" description_key="Learn to craft a Shock Trap" title_key="Shock Trap" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<perk name="Shock Trap" icon="ShockTrap" description_key="Learn to craft a Shock Trap" title_key="Shock Trap" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
 			<recipe name="ShockTrap" unlock_level="1" />
 		</perk>
-		<perk name="Bear Trap" icon="weapon_smithing" description_key="Learn to craft Bear Trap" title_key="Bear Trap" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+		<perk name="Bear Trap" icon="BearTrap" description_key="Learn to craft Bear Trap" title_key="Bear Trap" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="5" />
 			<recipe name="BearTrap" unlock_level="1" />
 		</perk>
-		<perk name="Trap Nail" icon="weapon_smithing" description_key="Learn to craft traps" title_key="Trap Nail" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+		<perk name="Trap Nail" icon="trapNail" description_key="Learn to craft traps" title_key="Trap Nail" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="5" />
 			<recipe name="trapNail" unlock_level="1" />
 		</perk>
-		<perk name="Powered Spikes" icon="weapon_smithing" description_key="Learn to craft Powered Spikes" title_key="Powered Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<perk name="Powered Spikes" icon="trapSpike" description_key="Learn to craft Powered Spikes" title_key="Powered Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="65" />
 			<recipe name="trapSpike" unlock_level="1" />
 		</perk>
-		<perk name="Powered Fire Trap" icon="weapon_smithing" description_key="Learn to craft Powered Fire Trap" title_key="Powered Fire Trap" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
+		<perk name="Powered Fire Trap" icon="trapFire" description_key="Learn to craft Powered Fire Trap" title_key="Powered Fire Trap" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="65" />
 			<recipe name="trapFire" unlock_level="1" />
 		</perk>
-		<perk name="Razor Wire" icon="weapon_smithing" description_key="Learn to craft Razor Wire" title_key="Razor Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+		<perk name="Razor Wire" icon="RazorWire" description_key="Learn to craft Razor Wire" title_key="Razor Wire" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<recipe name="RazorWire" unlock_level="1" />
 			<recipe name="RazorWireOffSet" unlock_level="1" />
