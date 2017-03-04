@@ -4673,4 +4673,5 @@ gasTankEmptyDesc,,,,"Fill this with methane gas in a methane producer to use as 
 gasTank,,,,"Methane Bomb",,,,
 gasTankDesc,,,,"Place this bomb with with your defenses and shot it when the zombies are close. It will not hurt blocks only organics.",,,,
 BatteryTip,,,,"Batteries can not be repaired but when they have been degraded they must be recharged in a Battery Pack that is powered by a generator.",,,,
-
+Wielder Book,,,,"Welder Book",,,,
+Wielder,,,,"Welder",,,,
