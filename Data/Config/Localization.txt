@@ -4675,3 +4675,4 @@ gasTankDesc,,,,"Place this bomb with with your defenses and shot it when the zom
 BatteryTip,,,,"Batteries can not be repaired but when they have been degraded they must be recharged in a Battery Pack that is powered by a generator.",,,,
 Wielder Book,,,,"Welder Book",,,,
 Wielder,,,,"Welder",,,,
+BoneMealDesc,,,," Bone Meal freshly ground on a stonemill. Can be used in fertilizer, glue and other chemicals.",,,,
