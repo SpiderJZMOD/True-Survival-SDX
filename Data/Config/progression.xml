@@ -1,10 +1,10 @@
 <progression>
-	<player max_level="200" exp_to_level="1250" experience_multiplier="1.0151" skill_points_per_level="5" skill_point_multiplier="0" />
-	<skills max_level="100" exp_to_level="50" experience_multiplier="1.0195" skill_point_cost_multiplier="0" skill_point_cost_per_level="3">
+	<player max_level="200" exp_to_level="5000" experience_multiplier="1.0151" skill_points_per_level="5" skill_point_multiplier="0" />
+	<skills max_level="100" exp_to_level="200" experience_multiplier="1.0195" skill_point_cost_multiplier="0" skill_point_cost_per_level="3">
 		<!-- these are defaults and can be used to modify individual skills as needed      -->
 		<!-- Player Action Skills -->
 		<!--health-->
-		<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="250" experience_multiplier="1.07152" group="health" skill_point_cost_per_level="1000">
+		<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="1000" experience_multiplier="1.07152" group="health" skill_point_cost_per_level="1000">
 			<effect name="StaminaDegradation">
 				<multiply skill_level="1,5" value="1,.97" />
 				<multiply skill_level="5,11" value=".97,.94" />
@@ -713,7 +713,7 @@
 			</effect>
 		</crafting_skill>
 		<!--Clothes-->
-		<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="25" group="clothing">
+		<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="100" group="clothing">
 			<effect name="ArmorDefense">
 				<add skill_level="1,5" value="0,.03" />
 				<add skill_level="5,11" value=".03,.05" />
@@ -866,7 +866,7 @@
 			<recipe name="leatherJacket" unlock_level="1" />
 			<recipe name="leatherPants" unlock_level="1" />
 		</perk>
-		<action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="25" group="clothing">
+		<action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="100" group="clothing">
 			<effect name="ArmorDefense">
 				<add skill_level="1,5" value="0,.03" />
 				<add skill_level="5,11" value=".03,.05" />
