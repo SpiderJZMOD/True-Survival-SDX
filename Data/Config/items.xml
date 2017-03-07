@@ -493,7 +493,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.earth" value=".5" />
 			<property name="DamageBonus.cloth" value="50" />
 			<property name="DamageBonus.organic" value="10" />
-			<property name="ToolCategory.Hunter" value=".2" />
+			<property name="ToolCategory.Hunter" value=".5" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
 			<property name="ActionExp" value="5" />
 			<property name="ActionExpBonusMultiplier" value="4" />
@@ -518,7 +518,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.earth" value=".75" />
 			<property name="DamageBonus.cloth" value="75" />
 			<property name="DamageBonus.organic" value="10" />
-			<property name="ToolCategory.Hunter" value=".2" />
+			<property name="ToolCategory.Hunter" value=".5" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
 			<property name="ActionExp" value="5" />
 			<property name="ActionExpBonusMultiplier" value="4" />
@@ -11319,7 +11319,7 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".01,.01" />
-			<property name="ToolCategory.Butcher" value="0.1" />
+			<property name="ToolCategory.Hunter" value="0.25" />
 			<property name="ActionExp" value="2" />
 			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
@@ -11599,7 +11599,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.wood" value="0.01" />
 			<property name="DamageBonus.stone" value="0.01" />
 			<property name="DamageBonus.metal" value="0.01" />
-			<property name="ToolCategory.Butcher" value="0.8" />
+			<property name="ToolCategory.Hunter" value="0.4" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
 		</property>
 		<property class="Attributes">
@@ -11684,6 +11684,8 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".4,.4" />
+            <property name="ToolCategory.Butcher" value="1" />
+			<property name="Sound_harvesting" value="UseActions/open_animal" />
 			<property name="ActionExp" value="20" />
 			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
@@ -12249,7 +12251,7 @@ Mesh files no longer used:
 			<property name="Buff_chance" value="1,.8,.5" />
 			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.head" value="77" />
-			<property name="ToolCategory.Hunter" value="0.5" />
+			<property name="ToolCategory.Hunter" value=".8" />
 		</property>
 		<property class="Action1">
 			<property name="Delay" value="2.25" />
@@ -12259,7 +12261,7 @@ Mesh files no longer used:
 			<property name="Buff_chance" value="1,.9,.6" />
 			<property name="DamageBonus.wood" value="7.5" />
 			<property name="DamageBonus.head" value="115.5" />
-			<property name="ToolCategory.Hunter" value="0.5" />
+			<property name="ToolCategory.Hunter" value=".8" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="15,35" />

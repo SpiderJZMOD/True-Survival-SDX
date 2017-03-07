@@ -508,8 +508,8 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="2" stat="coretemp" modifyValue="10" />
 	</buff>
 	<buff id="cauterize" castsound="Player_Female/player2death" duration="1" actions="buff(biteWound);debuff(bite)" />
-	<buff id="biteWound" duration="600t" onexpired="infection" ondebuff="tendingbite" name_key="Bite Wound" tooltip_key="Care for your bite wound or catch the Z virus" description_key="You’ve held off the Z virus for now but if you don’t care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" icon="bite" />
-	<buff id="tendingbite" duration="600t" onexpired="dirtyBiteBandage1" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve held off the Z virus for now but if you don’t care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" icon="bandaged" />
+	<buff id="biteWound" duration="600t" onexpired="infection" ondebuff="tendingbite" name_key="Bite Wound" tooltip_key="Care for your bite wound or catch the Z virus" description_key="You've held off the Z virus for now but if you don’t care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" icon="bite" />
+	<buff id="tendingbite" duration="600t" onexpired="dirtyBiteBandage1" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve held off the Z virus for now but if you don't care for this bite wound you still could catch it. Treat it with a bandage and be sure to change it when it gets dirty" icon="bandaged" />
 	<buff id="dirtyBiteBandage1" smell="smallSmell" duration="600t" onexpired="dirtyBite" ondebuff="tendingbite2" name_key="Dirty Bite" tooltip_key="Your bite wound is getting dirty" description_key="Your bite wound is dirty and starting to smell. Change it with another Bandage soon or your wound could get worst and you could catch the z virus" cures="bandage,firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit" icon="bite" />
 	<buff id="dirtyBite" duration="1" actions="buff(infection);increment(scratch, 10, 0, 0, 1)" />
 	<buff id="tendingbite2" duration="600t" onexpired="healBiteWound" name_key="Bandaged Bite" tooltip_key="Your bite is bandaged up" description_key="You’ve done it your bite wound is healing nicely and you are clear of the z virus. You may still have a wound or some bruises left that may need tending to." icon="bandaged" />
@@ -518,7 +518,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="scratch" duration="1" actions="increment(scratch, 1, 0, 0, 1)" />
 	<buff id="ScratchesHealing" buffif="scratch gequal 1" debuffif="scratch gequal 6" actions="increment(scratch, -1, 1200, 0, 0);min(scratch, 0)" />
 	<!--JZMOD WOUND 1-->
-	<buff id="bruised" buffif="scratch gequal 2" debuffif="scratch less 2" mutex="smallWound,wound,severeWound,InfectedWound" name_key="Bruised" type="bleeding" tooltip_key="Thats going to leave a bruies" description_key="You’re getting bruised up. The bruises will heal by themselves over time but you might want to be more careful." icon="bruised">
+	<buff id="bruised" buffif="scratch gequal 2" debuffif="scratch less 2" mutex="smallWound,wound,severeWound,InfectedWound" name_key="Bruised" type="bleeding" tooltip_key="Thats going to leave a bruies" description_key="You're getting bruised up. The bruises will heal by themselves over time but you might want to be more careful." icon="bruised">
 		<modify id="0" stat="stamina" amount="-1" rate="4" />
 	</buff>
 	<!--JZMOD WOUND 2-->
@@ -537,7 +537,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="tending2" duration="1200t" onexpired="healSmallWound" actions="debuff(dirtyBandage1)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged" />
 	<buff id="healSmallWound" duration="1" actions="setvar(scratch, 2)" />
 	<!-- JZMOD WOUND 3-->
-	<buff id="wound" buffif="scratch gequal 11" mutex="dirtyBandage2,dirtyBandage3,dirtyBandage4,tending3,tending4,tending5,tending6,tending7,tending8,severeWound,InfectedWound" ondebuff="tending3" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You’ve gotten a wound. Treat it with a First Aid Bandage and be sure to change it when it gets dirty." icon="wound" cures="firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit">
+	<buff id="wound" buffif="scratch gequal 11" mutex="dirtyBandage2,dirtyBandage3,dirtyBandage4,tending3,tending4,tending5,tending6,tending7,tending8,severeWound,InfectedWound" ondebuff="tending3" actions="buff(sprainedLeg);debuff(smallWound);debuff(tending2);debuff(tending1);debuff(dirtyBandage1)" name_key="Wound" type="bleeding" tooltip_key="Ouch! You've been wounded" description_key="You've gotten a wound. Treat it with a First Aid Bandage and be sure to change it when it gets dirty." icon="wound" cures="firstAidBandage,SanitizingBandage,firstAidKit,Large1stAidKit">
 		<modify id="0" stat="stamina" amount="-1" rate="1" />
 		<modify id="1" stat="speedmodifier" setValue="0.9" />
 		<modify id="2" stat="health" amount="-1" rate="25" />
@@ -548,7 +548,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="tending4" duration="1200t" onexpired="healWound" actions="debuff(dirtyBandage2)" name_key="Bandaged Wound" tooltip_key="Thats better for now" description_key="Your wound is bandaged and healing. Try not to get hurt so it will heal." icon="bandaged" />
 	<buff id="healWound" duration="10" actions="setvar(scratch, 6)" />
 	<!-- JZMOD WOUND 4-->
-	<buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,InfectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="Severe Wound" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You’ve gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="severeWound" cures="SanitizingBandage,firstAidKit,Large1stAidKit">
+	<buff id="severeWound" buffif="scratch gequal 16" mutex="dirtyBandage3,dirtyBandage4,tending5,tending6,tending7,tending8,InfectedWound" ondebuff="tending5" actions="buff(gash);debuff(tending4);debuff(tending3);debuff(dirtyBandage2);debuff(wound)" name_key="Severe Wound" type="bleeding" tooltip_key="You have gotten a severe wound" description_key="You've gotten a sever wound. Treat it with Sanitized Bandage and be sure to change it when it gets dirty." icon="severeWound" cures="SanitizingBandage,firstAidKit,Large1stAidKit">
 		<modify id="0" stat="stamina" amount="-6" rate="5" />
 		<modify id="1" stat="speedmodifier" setValue="0.89" />
 		<modify id="2" stat="health" amount="-1" rate="20" />
@@ -582,33 +582,33 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="useStim" duration="1" actions="increment(stim, 1, 0, 0, 1);debuff(WithdrawalLv1);debuff(WithdrawalLv2);debuff(WithdrawalLv3)" />
 	<buff id="zz" buffif="stim greater 0" debuffif="stim less 1" actions="increment(stim, -1, 1200, 0, 0);min(stim, 0)" />
 	<buff id="turnoff" buffif="stim less 1" debuffif="stim greater 1" actions="debuff(WithdrawalLv1);debuff(WithdrawalLv2);debuff(WithdrawalLv3)" />
-	<buff id="AddictionLv1" mutex="AddictionLv2,AddictionLv3,WithdrawalLv2,WithdrawalLv3" buffif="stim gequal 3" debuffif="stim less 3" name_key="Adiction Stage 1" type="staminaup" ondebuff="WithdrawalLv1" actions="increment(@wellness, -0.1, 1200, 0, 0)" tooltip_key="You have become addicted to Stimulants" description_key="These pills really work be nice to have another.(Wellness loss 0.1 every 2 game hours)" icon="ui_game_symbol_run">
+	<buff id="AddictionLv1" mutex="AddictionLv2,AddictionLv3,WithdrawalLv2,WithdrawalLv3" buffif="stim gequal 3" debuffif="stim less 3" name_key="Adiction Stage 1" type="staminaup" ondebuff="WithdrawalLv1" actions="increment(@wellness, -0.1, 1200, 0, 0)" tooltip_key="You have become addicted to Stimulants" description_key="These pills really work! Would be nice to have another.(Wellness loss 0.1 every 20 min)" icon="ui_game_symbol_run">
 		<modify id="0" stat="stamina" amount="1" rate="1" />
 		<modify id="1" stat="speedmodifier" modifyMaxValue="2" />
-		<modify id="2" stat="speedmodifier" modifyValue="0.1" />
+		<modify id="2" stat="speedmodifier" mulValue="1.1" />
 		<modify id="3" stat="food" amount="1" rate="25" />
 	</buff>
-	<buff id="AddictionLv2" mutex="AddictionLv3,WithdrawalLv3" buffif="stim gequal 6" debuffif="stim less 6" name_key="Adiction Stage 2" type="staminaup" ondebuff="WithdrawalLv2" actions="increment(@wellness, -0.1, 1200, 0, 0);debuff(AddictionLv1)" tooltip_key="You have become more addicted to Stimulants" description_key="O Ya! I feel great!(Wellness loss 0.2 every 2 game hours)" icon="ui_game_symbol_run">
+	<buff id="AddictionLv2" mutex="AddictionLv3,WithdrawalLv3" buffif="stim gequal 6" debuffif="stim less 6" name_key="Adiction Stage 2" type="staminaup" ondebuff="WithdrawalLv2" actions="increment(@wellness, -0.1, 1200, 0, 0);debuff(AddictionLv1)" tooltip_key="You have become more addicted to Stimulants" description_key="O Ya! I feel great!(Wellness loss 0.1 every 20 min)" icon="ui_game_symbol_run">
 		<modify id="0" stat="stamina" amount="2" rate="1" />
 		<modify id="1" stat="speedmodifier" modifyMaxValue="2" />
-		<modify id="2" stat="speedmodifier" modifyValue=".15" />
+		<modify id="2" stat="speedmodifier" mulValue="1.15" />
 		<modify id="3" stat="food" amount="1" rate="20" />
 	</buff>
-	<buff id="AddictionLv3" buffif="stim gequal 9" debuffif="stim less 9" name_key="Adiction Stage 3" type="staminaup" ondebuff="WithdrawalLv3" actions="increment(@wellness, -0.2, 1200, 0, 0);debuff(AddictionLv2)" tooltip_key="You have become very addicted to Stimulants" description_key="Wooo! Man I feel pumped. I need to find more of these.(Wellness loss 0.3 every 2 game hours)" icon="ui_game_symbol_run">
+	<buff id="AddictionLv3" buffif="stim gequal 9" debuffif="stim less 9" name_key="Adiction Stage 3" type="staminaup" ondebuff="WithdrawalLv3" actions="increment(@wellness, -0.2, 1200, 0, 0);debuff(AddictionLv2)" tooltip_key="You have become very addicted to Stimulants" description_key="Wooo! Man I feel pumped. I need to find more of these.(Wellness loss 0.2 every 20 min)" icon="ui_game_symbol_run">
 		<modify id="0" stat="stamina" amount="4" rate="1" />
 		<modify id="1" stat="speedmodifier" modifyMaxValue="2" />
-		<modify id="2" stat="speedmodifier" modifyValue=".25" />
+		<modify id="2" stat="speedmodifier" mulValue="1.25" />
 		<modify id="3" stat="food" amount="1" rate="20" />
 	</buff>
-	<buff id="WithdrawalLv1" mutex="AddictionLv2" debuffif="stim gequal 3;stim less 1" name_key="Withdrawal Stage 1" type="staminadown" actions="increment(@wellness, -0.2, 200t, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 1" description_key="I know if I could just find another Stim I would feel better.(Wellness loss 0.5 every 2 game hours)" icon="ui_game_symbol_death">
+	<buff id="WithdrawalLv1" mutex="AddictionLv2" debuffif="stim gequal 3;stim less 1" name_key="Withdrawal Stage 1" type="staminadown" actions="increment(@wellness, -0.2, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 1" description_key="I know if I could just find another Stim I would feel better.(Wellness loss 0.2 every 20 min)" icon="ui_game_symbol_death">
 		<modify id="0" stat="stamina" amount="1" rate="1" />
 		<modify id="1" stat="speedmodifier" setValue="0.95" />
 	</buff>
-	<buff id="WithdrawalLv2" mutex="AddictionLv3" debuffif="stim gequal 6;stim less 1" name_key="Withdrawal Stage 2" type="staminadown" actions="increment(@wellness, -0.4, 200t, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 2" description_key="I’ve gotta find me somemore Stims.(Wellness loss 0.8 every 2 game hours)" icon="ui_game_symbol_death">
+	<buff id="WithdrawalLv2" mutex="AddictionLv3" debuffif="stim gequal 6;stim less 1" name_key="Withdrawal Stage 2" type="staminadown" actions="increment(@wellness, -0.4, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 2" description_key="I've gotta find me somemore Stims.(Wellness loss 0.4 every 20 min)" icon="ui_game_symbol_death">
 		<modify id="0" stat="stamina" amount="2" rate="1" />
 		<modify id="1" stat="speedmodifier" setValue="0.90" />
 	</buff>
-	<buff id="WithdrawalLv3" debuffif="stim gequal 9;stim less 1" name_key="Withdrawal Stage 3" type="staminadown" actions="increment(@wellness, 0.5, 200t, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 3" description_key="I’d do anything for a Stim right now!(Wellness loss 1 every 2 game hours)" icon="ui_game_symbol_death">
+	<buff id="WithdrawalLv3" debuffif="stim gequal 9;stim less 1" name_key="Withdrawal Stage 3" type="staminadown" actions="increment(@wellness, -0.5, 1200, 0, 0)" tooltip_key="You have entered Stimulant Withdrawl Stage 3" description_key="I'd do anything for a Stim right now!(Wellness loss 0.5 every 20 min)" icon="ui_game_symbol_death">
 		<modify id="0" stat="stamina" amount="2" rate="1" />
 		<modify id="1" stat="speedmodifier" setValue="0.85" />
 	</buff>
@@ -616,7 +616,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="aa" duration="7200t" name="Antibiotic 1" mutex="aa,bb,cc,immunity" actions="debuff(infection);debuff(infection2);debuff(infection3)" />
 	<buff id="bb" duration="7200t" name="Antibiotic 2" requires="aa" actions="debuff(aa);debuff(infection);debuff(infection2);debuff(infection3)" onexpired="aa" />
 	<buff id="cc" duration="7200t" name="Antibiotic 3" requires="bb" actions="debuff(bb);debuff(infection);debuff(infection2);debuff(infection3)" onexpired="bb" />
-	<buff id="immunity" duration="161200" name_key="Antibiotic Overuse" requires="cc" actions="debuff(cc)" description_key="You have used too many Antibiotics and have developed a resistant’s to them for 7 Days." icon="ui_game_symbol_skull" />
+	<buff id="immunity" duration="161200" name_key="Antibiotic Overuse" requires="cc" actions="debuff(cc)" description_key="You have used too many Antibiotics and have developed a resistance to them for 7 Days." icon="ui_game_symbol_skull" />
 	<buff id="Antibiotic" duration="1" name="Antibiotic Start" actions="buff(immunity);buff(cc);buff(bb);buff(aa)" />
 	<buff id="bearTrap" castsound="Buffs/critical_blunt" actions="buff(bleeding);debuff(firstAid);debuff(splint);debuff(sprainedLeg);debuff(brokenLeg)" name_key="Bear Trap" type="bleeding" ondebuff="brokenLeg" onexpired="brokenLeg" tooltip_key="You were caught in a Bear Trap. Free your self." description_key="You were caught in a Bear Trap and are bleeding badly." icon="ui_game_symbol_knife">
 		<modify id="0" stat="stamina" amount="-2" rate="1" />
@@ -626,10 +626,10 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="RedBull" duration="360" name_key="Red Bull" type="staminaup" tooltip_key="A nice rush of energy" description_key="A nice rush of energy" icon="RedBull" stack="extend">
 		<modify id="0" stat="stamina" amount="2" rate="1" />
 	</buff>
-	<buff id="Sedative" name_key="Sedative Shot" type="bleeding" duration="30" tooltip_key="Hit with a Sedative Shot" description_key="You have been shot with a sedative and are losing strength." icon="ui_game_symbol_death">
+	<buff id="Sedative" name_key="Sedative Shot" type="bleeding" duration="30" stack="extend" tooltip_key="Hit with a Sedative Shot" description_key="You have been shot with a sedative and are losing strength." icon="ui_game_symbol_death">
 		<modify id="0" stat="stamina" amount="-2" rate="1" />
 	</buff>
-	<buff id="Smoking" duration="180" name_key="Smoking" type="sickness" actions="increment(@wellness, 0.1, 150, 0, 0);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every game hour)" icon="cigarette">
+	<buff id="Smoking" duration="180" name_key="Smoking" type="sickness" actions="increment(@wellness, -0.1, 180, 0, 0);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every 3 min)" icon="cigarette">
 		<modify id="0" stat="stamina" amount="-1" rate="5" />
 		<modify id="1" stat="food" amount="1" rate="18" />
 	</buff>
@@ -741,19 +741,19 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<!--JZMOD Brute Charge -->
 	<buff id="bruteCharge" duration="4" castsound="Enemies/Acid_Puking_Hulk/hulkpain" onexpiredsound="Enemies/Acid_Puking_Hulk/hulkattack" type="speedmodifier">
 		<modify id="0" stat="speedmodifier" modifyMaxValue="2" />
-		<modify id="1" stat="speedmodifier" modifyValue="2" />
+		<modify id="1" stat="speedmodifier" mulValue="2" />
 	</buff>
 	<!--JZMOD Brute Charge -->
 	<buff id="charredFlame" duration="4" castsound="Enemies/Spider_Zombie/spideralert" type="speedmodifier" actions="attach(ParticleEffects/p_onFire, @impact)">
 		<modify id="0" stat="speedmodifier" modifyMaxValue="2" />
-		<modify id="1" stat="speedmodifier" modifyValue="1.5" />
+		<modify id="1" stat="speedmodifier" mulValue="1.5" />
 	</buff>
 	<!--JZMOD Animal Guts-->
 	<buff id="guts" duration="120" smell="exLargeSmell" stack="extend" icon="ui_game_symbol_drunk" />
 	<!--JZMOD High-->
-	<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="increment(stuffed, -1, 25, 0, 0);min(stuffed, 0);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="Your high" icon="ui_game_symbol_run">
+	<buff id="high" stack="extend" duration="300" name_key="Stoned" type="speedmodifier" actions="increment(stuffed, -1, 25, 0, 0);min(stuffed, 0);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh Dude...huh...Im getting hungry" description_key="You're high. You just smoked... uh, what? Hey, is that pie?" icon="ui_game_symbol_run">
 		<modify id="0" stat="stamina" amount="-1" rate="1" />
-		<modify id="1" stat="speedmodifier" setValue="0.5" />
+		<modify id="1" stat="speedmodifier" mulValue="0.5" />
 		<modify id="2" stat="food" amount="-1" rate="15" />
 		<modify id="3" stat="water" amount="-1" rate="15" />
 	</buff>
