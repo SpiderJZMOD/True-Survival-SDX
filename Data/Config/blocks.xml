@@ -5759,9 +5759,9 @@ kind of free
 		<property name="Model" value="Entities/Resources/rock_resourcePrefab" />
 		<property name="MultiBlockDim" value="3,2,3" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
-		<drop event="Harvest" name="rockSmall" count="22" prob="1" />
+		<drop event="Harvest" name="rockSmall" count="30" prob="1" />
 		<drop event="Harvest" name="ZincPowder" count="3" prob="1" />
-		<drop event="Destroy" name="rockSmall" count="11" prob="1" />
+		<drop event="Destroy" name="rockSmall" count="20" prob="1" />
 		<property name="DowngradeBlock" value="rockResourceBroke1" />
 	</block>
 	<block id="631" name="secureDoorWooden">

@@ -961,7 +961,7 @@
 	<entitygroup name="RadZoneAnimalGrp">
 		<entity name="Dummy" prob="0.18" />
 		<entity name="RadSpider" prob="0.33" />
-		<entity name="zombiedog" prob="0.33" />
+		<entity name="zombiedog" prob="0.2" />
 		<entity name="Dummy" prob="0.33" />
 	</entitygroup>
 	<entitygroup name="Zombie7thDayHorde">
@@ -1090,7 +1090,7 @@
         <entity name="Dummy" prob="0.15" />
     </entitygroup>
     <entitygroup name="ArmedSurvivorGroup">
-        <entity name="Dummy" prob="0.9" />
+        <entity name="Dummy" prob="0.95" />
 		<entity name="Maggi" prob="0.15" />
 		<entity name="Morgan" prob="0.15" />
 		<entity name="DarrylDixon" prob="0.15" />

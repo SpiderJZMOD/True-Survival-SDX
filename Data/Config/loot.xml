@@ -1159,6 +1159,9 @@
 		<item name="FryingPan" prob="0.3" />
 		<item name="leather" prob="0.4" />
 		<item name="goggles" prob="0.4" />
+        <item name="bat" prob="0.5" />
+		<item name="GoodNight" prob="0.5" />
+		<item name="TPXBat" prob="0.5" />
 		<item group="denimShortsPantsAll" prob="0.4" />
 		<item name="nightvisionGoggles" prob="0.4" />
 		<item name="firstAidKit" prob="0.4" />
@@ -1208,6 +1211,9 @@
         <item name="OldRevolver" count="0,1" prob="0.01" />
         <item name="OldRifle" count="0,1" prob="0.01" />
         <item name="OldAxe" count="0,1" prob="0.01" />
+        <item name="bat" prob="0.05" />
+		<item name="GoodNight" prob="0.05" />
+		<item name="TPXBat" prob="0.05" />
         <item name="smallGenerator" count="0,1" prob="0.01" />
 	</lootgroup>
 	<lootgroup name="airdropfood" count="all">

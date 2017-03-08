@@ -3338,11 +3338,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="BoneMeal" count="1" />
 		<ingredient name="ZincPowder" count="10" />
 	</recipe>
-	<recipe name="workMortarAndPestle" count="1" craft_area="workforge" craft_tool="calipers" material_based="true" craft_time="300" craft_exp_gain="25">
-		<ingredient name="unit_lead" count="10" />
-		<ingredient name="unit_clay" count="25" />
-		<ingredient name="unit_stone" count="100" />
-	</recipe>
 	<recipe name="MTAR" count="1" craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="SubMachine_stock" count="1" />
@@ -4343,6 +4338,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="mechanicalParts" count="20" />
 		<ingredient name="scrapCable" count="3" />
 	</recipe>
+    <recipe name="workMortarAndPestle" count="1" craft_area="workforge" craft_tool="calipers" material_based="true" craft_time="300" craft_exp_gain="25">
+		<ingredient name="unit_lead" count="10" />
+		<ingredient name="unit_clay" count="25" />
+		<ingredient name="unit_stone" count="100" />
+	</recipe>
 	<recipe name="workOilRefinery" count="1" craft_area="workworkbench" craft_tool="wrench" craft_time="300" craft_exp_gain="100">
 		<ingredient name="forgedIron" count="20" />
 		<ingredient name="shortMetalPipe" count="10" />
@@ -4361,6 +4361,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="dirtFragment" count="60" />
 		<ingredient name="turd" count="30" />
 		<ingredient name="earthworm" count="30" />
+	</recipe>
+    <recipe name="workStoneMill" count="1" craft_area="workforge" material_based="true" craft_time="300" craft_exp_gain="25">
+		<ingredient name="unit_clay" count="50" />
+		<ingredient name="unit_stone" count="250" />
 	</recipe>
     <recipe name="workStove" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="75">
 		<ingredient name="scrapIron" count="100" />

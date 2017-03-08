@@ -2119,8 +2119,8 @@
 		</perk>
 		<perk name="Park Ranger" icon="gunsmithing" description_key="These are the skills a Park Ranger starts with. Collect 20 Profession pages to learn another profession" title_key="Park Ranger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="BearTrap" unlock_level="1" />
-			<recipe name="StoneSpear" unlock_level="1" />
-			<recipe name="StoneJavelin" unlock_level="1" />
+			<recipe name="WoodSpear" unlock_level="1" />
+			<recipe name="WoodJavelin" unlock_level="1" />
 			<recipe name="SetUpASpikeTrap" unlock_level="1" />
 			<recipe name="herbalAntibiotics" unlock_level="1" />
 			<recipe name="PurificationTablets" unlock_level="1" />

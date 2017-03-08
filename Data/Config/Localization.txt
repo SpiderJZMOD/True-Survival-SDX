@@ -2383,7 +2383,7 @@ shovelIronDesc,items,Tool,KgNone,"The iron shovel is great for digging through e
 shovelSteel,items,Tool,KgNone,Steel Shovel,Pelle en acier,Stahlschaufel,,Pala de acero
 shovelSteelDesc,items,Tool,KgNone,"The steel shovel is very durable and the ideal tool for digging through earth, sand or snow.","La pelle en acier est un outil durable et idéal pour creuser la terre, le sable ou la neige.","Die Stahlschaufel ist sehr robust und das ideale Werkzeug, um sich durch Erde, Sand und Schnee zu graben.",,"La pala de acero es muy duradera y es la herramienta ideal para cavar en la tierra, arena o nieve."
 stoneAxe,items,Tool,KgNone,Stone Axe,Hache de pierre,Steinaxt,,Hacha de piedra
-stoneAxeDesc,items,Tool,KgNone,"A primitive tool useful for cutting wood, mining stone, repairing & upgrading walls, doors & windows. Not the best weapon.","Un outil primitif pratique pour couper du bois, extraire de la pierre, ainsi que réparer et améliorer les murs, les portes et les fenêtres. Pas ce qui se fait de mieux en matière d'arme.","Ein primitives Werkzeug zum Holzfällen, Abbauen von Stein, Reparieren und Aufwerten von Mauern, Türen und Fenstern. Es gibt bessere Waffen.",,"Una herramienta primitiva para cortar madera, picar piedra y reparar o mejorar paredes, puertas o ventanas. No es la mejor arma."
+stoneAxeDesc,items,Tool,KgNone,"A primitive tool useful for cutting wood or mining stone. Not the best weapon but with enough work might even crack a skull or two.","Un outil primitif pratique pour couper du bois, extraire de la pierre, ainsi que réparer et améliorer les murs, les portes et les fenêtres. Pas ce qui se fait de mieux en matière d'arme.","Ein primitives Werkzeug zum Holzfällen, Abbauen von Stein, Reparieren und Aufwerten von Mauern, Türen und Fenstern. Es gibt bessere Waffen.",,"Una herramienta primitiva para cortar madera, picar piedra y reparar o mejorar paredes, puertas o ventanas. No es la mejor arma."
 stoneShovel,items,Tool,KgNone,Stone Shovel,Pelle en pierre,Steinschaufel,,Pala de piedra
 stoneShovelDesc,items,Tool,KgNone,"The stone shovel is a primitive tool useful for digging dirt, sand or snow.","La pelle en pierre est un outil primitif pratique pour creuser la terre, le sable ou la neige.","Die Steinschaufel ist ein primitives Werkzeug, mit dem man in Erde, Sand und Schnee graben kann.",,"La pala de piedra es una herramienta primitiva que se usa para cavar en la tierra, arena o nieve."
 tazasStoneaxe,items,Tool,KgNone,Taza's Stone Axe,Hache de pierre de Taza,Tazas Steinaxt,,Hacha de piedra de Taza
@@ -4537,9 +4537,34 @@ SetUpASpikeTrapDesc,,,,"Place on the ground to start building the trap. With sti
 BikeNABoxDesc,,,,"A crate with a mini bike in it. Place it on the ground and break it open to loot it",,,,
 BearTrap,,,,"Bear Trap",,,,
 qc_ZombieDesc,,,,"So you think you’re a True Survivor. Let’s see you do this",,,,
-SkillMagazineReadDesc,,,,"Select recipes and craft Read the Magazine to gain some knowledge",,,,
+SkillMagazineReadDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(50XP) in the category of the magazine.",,,,
+SkillMagazinemonthlyDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(100XP) in the category of the magazine.",,,,
 SkillMagazineDesc,,,,"You have gotten all the knowledge you can get from this magazine burn it or scrap it for paper",,,,
-DeadBatteryDesc,,,,"Use this in a Steam Generator to recharge it",,,,
+Primitive1,,,,"Read the Magazine",,,,
+Primitive2,,,,"Read the Magazine",,,,
+Journeyman1,,,,"Read the Magazine",,,,
+Journeyman2,,,,"Read the Magazine",,,,
+MasterCraftsman1,,,,"Read the Magazine",,,,
+MasterCraftsman2,,,,"Read the Magazine",,,,
+Hunting1,,,,"Read the Magazine",,,,
+Hunting2,,,,"Read the Magazine",,,,
+Engineering1,,,,"Read the Magazine",,,,
+Engineering2,,,,"Read the Magazine",,,,
+Scavenging1,,,,"Read the Magazine",,,,
+Scavenging2,,,,"Read the Magazine",,,,
+Medicine1,,,,"Read the Magazine",,,,
+Medicine2,,,,"Read the Magazine",,,,
+GunSmithing1,,,,"Read the Magazine",,,,
+GunSmithing2,,,,"Read the Magazine",,,,
+Tailoring1,,,,"Read the Magazine",,,,
+Tailoring2,,,,"Read the Magazine",,,,
+LeatherWorking1,,,,"Read the Magazine",,,,
+LeatherWorking2,,,,"Read the Magazine",,,,
+ArmorSmithing1,,,,"Read the Magazine",,,,
+ArmorSmithing2,,,,"Read the Magazine",,,,
+Miscellaneous1,,,,"Read the Magazine",,,,
+Miscellaneous2,,,,"Read the Magazine",,,,
+DeadBatteryDesc,,,,"Use this in a Battery Pack to recharge it",,,,
 BladderFlaskFull,,,,Bladder Flask,,,
 BladderFlask5,,,,Bladder Flask,,,,
 BladderFlask4,,,,Bladder Flask,,,,
@@ -4605,7 +4630,7 @@ fishingLure4Desc,,,,"Use while fishing to have a 25% better chance at catching f
 fishingLure5,,,,"Salmon Lure",,,,
 fishingLure5Desc,,,,"Use while fishing to have a 50% better chance at catching fish, 34% better chance at catching big fish and 10% better chance at catching bass.",,,,
 CleaningFishDesc,,,,"Wow nice catch! Now what are you going to do with it? Place the fish on the ground and harvest the meat from it. Be careful cleaning fishing smells.",,,,
-FlaotDesc,,,,"Place the float on the water and climb on. Use this to fish in deep water for a better chance to catch fish. Makes a nice place to hide from the horde too.",,,,
+FloatDesc,,,,"Place the float on the water and climb on. Use this to fish in deep water for a better chance to catch fish. Makes a nice place to hide from the horde too.",,,,
 earthwormDesc,,,,"Use these little guys to bait a fishing hook and catch some fish.",,,,
 RadMushroomDesc,,,,"This strange looking Mushroom was growing from radiated soil and give off a strange glow and warmth. It doesn’t look edible.",,,,
 AdvAssaultGroupDesc,,,,"A part of an Advanced Assault Rifle. Assemble with other parts to create a complete AK47, HK416 or LSAT once you've read the appropriate schematic.",,,,
@@ -4676,3 +4701,4 @@ BatteryTip,,,,"Batteries can not be repaired but when they have been degraded th
 Wielder Book,,,,"Welder Book",,,,
 Wielder,,,,"Welder",,,,
 BoneMealDesc,,,," Bone Meal freshly ground on a stonemill. Can be used in fertilizer, glue and other chemicals.",,,,
+AirCompressorDesc,,,,"This can be used to refill Scuba tanks when used in the Battery Pack Workstation",,,,
