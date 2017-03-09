@@ -336,11 +336,26 @@
 			<window name="lowerwindowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-        <window_group name="workstation_biogasDigester" controller="XUiC_WorkstationWindowGroup">
+        <window_group name="workstation_workBiogasDigester" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />
 			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_workFermentationBarrel" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+        <window_group name="workstation_workStill" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList" />
+			<window name="craftingInfoPanel" />
+			<window name="windowCraftingQueue" />
+			<window name="lowerwindowOutput" />
+			<window name="windowFuel" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 	</ruleset>
