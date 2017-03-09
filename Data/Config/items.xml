@@ -6008,7 +6008,7 @@ Mesh files no longer used:
 		</property>
 		<property name="Group" value="Medicine" />
 		<property name="ActionSkillGroup" value="Medicine" />
-		<property name="CraftingSkillGroup" value="Engineering" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 		<property name="ActionExp" value="10" />
 	</item>
 	<item id="655" name="aloeCream">
@@ -6305,6 +6305,7 @@ Mesh files no longer used:
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="Medicine" />
+        <property name="DescriptionKey" value="PieDesc" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionExp" value="20" />
 	</item>
@@ -9100,6 +9101,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="plantedPotato1" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
+        <property name="DescriptionKey" value="SeedDesc" />
 		<property name="PickupJournalEntry" value="farmingTip" />
 	</item>
 	<item id="1412" name="blueberrySeed">
@@ -9116,6 +9118,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="plantedBlueberry1" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
+        <property name="DescriptionKey" value="SeedDesc" />
 		<property name="PickupJournalEntry" value="farmingTip" />
 	</item>
 	<item id="1413" name="coffeeBeans">
@@ -9143,6 +9146,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="plantedCotton1" />
 		</property>
 		<property name="Group" value="Resources" />
+        <property name="DescriptionKey" value="SeedDesc" />
 		<property name="PickupJournalEntry" value="farmingTip" />
 	</item>
 	<item id="1415" name="goldenrodSeed">
@@ -9159,6 +9163,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="plantedGoldenrod1" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
+        <property name="DescriptionKey" value="SeedDesc" />
 		<property name="PickupJournalEntry" value="farmingTip" />
 	</item>
 	<item id="1416" name="hopSeed">
@@ -9175,6 +9180,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="plantedHop1" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
+        <property name="DescriptionKey" value="SeedDesc" />
 		<property name="PickupJournalEntry" value="farmingTip" />
 	</item>
 	<item id="1417" name="aloeSeed">
@@ -9190,7 +9196,8 @@ Mesh files no longer used:
 			<property name="Delay" value="0.5" />
 			<property name="Blockname" value="plantedAloe1" />
 		</property>
-		<property name="Group" value="Food/Cooking,Medicine" />
+		<property name="Group" value="Food/Cooking" />
+        <property name="DescriptionKey" value="SeedDesc" />
 		<property name="PickupJournalEntry" value="farmingTip" />
 	</item>
 	<item id="1418" name="chrysanthemumSeed">
@@ -9209,6 +9216,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="plantedChrysanthemum1" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
+        <property name="DescriptionKey" value="SeedDesc" />
 		<property name="PickupJournalEntry" value="farmingTip" />
 	</item>
 	<item id="1419" name="mushroomSeed">
@@ -9225,6 +9233,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="plantedMushroom1" />
 		</property>
 		<property name="Group" value="Food/Cooking" />
+        <property name="DescriptionKey" value="SeedDesc" />
 		<property name="PickupJournalEntry" value="farmingTip" />
 	</item>
 	<item id="1420" name="pineSeed">
@@ -9291,6 +9300,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="plantedYucca1" />
 		</property>
 		<property name="Group" value="Food/Cooking,Medicine" />
+		<property name="DescriptionKey" value="SeedDesc" />
 		<property name="PickupJournalEntry" value="farmingTip" />
 	</item>
 	<item id="1430" name="candle">
@@ -11932,7 +11942,7 @@ Mesh files no longer used:
 		<property name="Extends" value="fireaxeIron" />
 		<property name="HoldType" value="2" />
 		<property name="Meshfile" value="#ZdWeapons?Tomahawk" />
-		<property name="RepairTools" value="shortMetalPipe" />
+		<property name="RepairTools" value="SharpeningStone" />
 		<property name="FuelValue" value="1" />
 		<property name="Weight" value="15" />
 		<property class="Action0">
@@ -13058,7 +13068,7 @@ Mesh files no longer used:
 	<item id="1710" name="Home Brewing">
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
-			<property name="Recipes_to_learn" value="beer,Still" />
+			<property name="Recipes_to_learn" value="beer,workFermentationBarrel" />
 		</property>
 		<property name="DescriptionKey" value="SkillBookDesc" />
 		<property name="Group" value="Books" />
