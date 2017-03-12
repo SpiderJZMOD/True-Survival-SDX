@@ -649,6 +649,7 @@ redWoodFloorBlock,blocks,Block,KgNone,Red Wood Floor Block,Bloc de sol en bois r
 redWoodPillar100,blocks,Block,KgNone,Red Wood Pillar 100,Pilier 100 en bois rouge,Rotholzsäule 100,,Pilar de madera rojo 100
 redWoodStairs25,blocks,Block,KgNone,Red Wood Stairs,Escaliers en bois rouge,Rotholzstufen,,Escaleras de madera rojas
 redWoodTable,blocks,Block,KgNone,Red Wood Table,Table en bois rouge,Rotholztisch,,Mesa de madera roja
+RedwoodGroupDesc,,,,"Red Painted wood, For that classy look without all the hard work. Crafted on the wood working bench",,,,
 roadRailing,blocks,Block,KgNone,Road Railing,Rambarde de route,Straßengeländer,,Barandilla de carretera
 roadRailingEnd,blocks,Block,KgNone,Road Railing End,Extrémité de rambarde de route,Straßengeländer – Ende,,Extremo de barandilla de carretera
 roadRailingEnd2,blocks,Block,KgNone,Road Railing End2,Extrémité de rambarde de route 2,Straßengeländer – Ende 2,,Extremo 2 de barandilla de carretera
@@ -730,7 +731,7 @@ sandbagEnd2,blocks,Block,KgNone,Sandbag End2,Extrémité de sac de sable 2,Sands
 sandbagsBlock,blocks,Block,KgNone,Sandbags,Sacs de sable,Sandsäcke,,Bolsas de arena
 sandbagsGroupDesc,blocks,Block,KgNone,Sandbags are not very sturdy but can be put down quickly and provide decent protection from bullets.,"Les sacs de sable ne sont pas très robustes, mais ils s'installent rapidement et protègent assez bien des balles.","Sandsäcke sind nicht sehr robust, können aber schnell platziert werden und bieten ganz guten Schutz gegen Kugeln.",,"Las bolsas de arena no son muy robustas, pero se pueden colocar rápido y brindan buena protección contra las balas."
 schoolDesk,blocks,Block,KgNone,School Desk,Table d'école,Schultisch,,Escritorio escolar
-scrapFrameGroupDesc,blocks,Block,EnChanged,Used for bases. Upgrade & repair with iron and construction tool. Upgrade more with concrete mix & forged steel.,,Wird für Basen verwendet. Kann mit Eisen und Bauwerkzeugen aufgewertet und repariert werden. Kann mit Betonmischung und geschmiedetem Stahl weiter aufgewertet werden.,,
+scrapFrameGroupDesc,blocks,Block,EnChanged,Used for bases. Upgrade & repair with iron and construction tool. Upgrade more with concrete mix & forged steel. crafted in the metal working bench with a wrench.,,Wird für Basen verwendet. Kann mit Eisen und Bauwerkzeugen aufgewertet und repariert werden. Kann mit Betonmischung und geschmiedetem Stahl weiter aufgewertet werden.,,
 scrapHatch_v1,blocks,Block,KgNone,Scrap Iron Hatch,Trappe en ferraille,Alteisenklappe,,Escotilla de chatarra de hierro
 scrapHatch_v1Desc,blocks,Block,EnChanged,Press & hold [activate] to lock it or set a combination. Upgrade & repair with iron and a construction tool using the secondary action.,,Zum Verschließen oder Kombination eingeben [activate] gedrückt halten. Kann mit Eisen und Bauwerkzeugen unter Verwendung der sekundären Aktion aufgewertet und repariert werden.,,
 scrapHatch_v2,blocks,Block,KgNone,Scrap Hatch v2,Trappe en ferraille v2,Schrottklappe v2,,Escotilla de chatarra v2
@@ -1359,7 +1360,7 @@ plainsGroundDesc,blocks,Terrain,KgNone,Replace missing pieces of terrain in the 
 potassiumNitrate,blocks,Terrain,KgNone,Potassium Nitrate,Nitrate de potassium,Kaliumnitrat,,Nitrato de potasio
 radiated,blocks,Terrain,KgNone,Radiated Earth,Terre irradiée,Radioaktive Erde,,Tierra irradiada
 sand,blocks,Terrain,KgNone,Sand,Sable,Sand,,Arena
-sandDesc,blocks,Terrain,KgNone,Like rocks... Only much smaller.,Comme des cailloux... mais beaucoup plus petit.,Wie Steine … nur viel kleiner.,,Como rocas... Pero más pequeñas.
+sandDesc,blocks,Terrain,KgNone,Like rocks... Only much smaller. Crafted in the Cement Mixer.,Comme des cailloux... mais beaucoup plus petit.,Wie Steine … nur viel kleiner.,,Como rocas... Pero más pequeñas.
 sandStone,blocks,Terrain,KgNone,Sandstone,Grès,Sandstein,,Arenisca
 snow,blocks,Terrain,KgNone,Snow,Neige,Schnee,,Nieve
 snowDesc,blocks,Terrain,GrChanged,Snow is another source of water. Melt it at a campfire if you have some empty cans or jars.,La neige peut être une source d'eau. Faites-la fondre au feu de camp si vous avez des conserves ou des bocaux vides.,"Schnee kann an einem Lagerfeuer geschmolzen werden, wenn du ein paar leere Dosen oder Gläser hast.",,La nieve es otra fuente de agua. Derrítela en una fogata si tienes latas o tarros vacíos.
@@ -1650,7 +1651,7 @@ ironArrowDesc,items,Ammo,KgNone,An iron arrow does more damage than the basic st
 ironCrossbowBolt,items,Ammo,KgNone,Iron Crossbow Bolt,Carreau d'arbalète en fer,Eisenbolzen für Armbrüste,,Saeta de hierro para ballesta
 ironCrossbowBoltDesc,items,Ammo,EnChanged,An iron-tipped bolt for the crossbow.. Hold reload to use alternate ammo.,,"Ein Eisenbolzen für Armbrüste. Nachladen gedrückt halten, um zwischen Munitionsarten zu wechseln.",,
 rocket,items,Ammo,KgNone,Rocket,Roquette,Rakete,,Cohete
-rocketDesc,items,Ammo,EnChanged,A rocket used as rocket launcher ammunition can be crafted at a forge and workbench once you've read the schematic.,,"Eine Rakete dient als Munition für Raketenwerfer und kann mittels Schmiede und Werkbank gefertigt werden, wenn du den Bauplan dafür gelesen hast.",,
+rocketDesc,items,Ammo,EnChanged,A rocket used as rocket launcher ammunition can be crafted at a forge and metal working bench once you've read the schematic.,,"Eine Rakete dient als Munition für Raketenwerfer und kann mittels Schmiede und Werkbank gefertigt werden, wenn du den Bauplan dafür gelesen hast.",,
 shotgunShell,items,Ammo,KgNone,Shotgun Shell,Cartouche de fusil à pompe,Flintenmunition,,Cartucho de escopeta
 shotgunShellDesc,items,Ammo,KgNone,A shotgun shell used for all shotguns. Can be crafted at a Bulletpress.,Une cartouche de fusil à pompe pouvant être utilisée pour tous les fusils à pompe. Achetez l'avantage de munitions pour pouvoir en fabriquer.,"Flintenmunition, die mit allen Schrotflinten benutzt werden kann. Kann gefertigt werden, nachdem die Fertigkeit „Munition“ erworben wurde.",,Un cartucho de escopeta que se puede usar para todo tipo de escopetas. Se puede fabricar tras comprar el beneficio de la munición.
 shotgunSlug,items,Ammo,KgNone,Shotgun Slug,Balle pour fusil à pompe,Flintenlaufgeschosse,,Perdigón de escopeta
@@ -1845,7 +1846,7 @@ militaryHelmetDesc,items,Clothes,KgNone,The military helmet offers the very best
 militaryLegArmor,items,Clothes,KgNone,Military Leg Armor,Jambières militaires,Militärbeinschienen,,Greba militar
 militaryVest,items,Clothes,KgNone,Military Vest,Gilet militaire,Militärweste,,Chaleco militar
 miningHelmet,items,Clothes,KgNone,Mining Helmet,Casque de mineur,Bergbauhelm,,Casco de minero
-miningHelmetDesc,items,Clothes,KgNone,This helmet offers good concussive & puncture defense & the added bonus of a mobile light source. No more dark caves for you.,"Ce casque protège bien contre les commotions cérébrales et autres blessures perforantes. Il offre également une source de lumière mobile. Finies, les grottes sombres.",Dieser Helm bietet guten Schutz vor Schlag- und Stichschaden und hat zudem eine mobile Lichtquelle. Jetzt bleibt keine Höhle mehr dunkel.,,"Este casco ofrece buena protección frente a contusiones y perforaciones, además de ser una fuente de luz móvil. ¡Ya no habrá más cuevas oscuras para ti!"
+miningHelmetDesc,items,Clothes,KgNone,This helmet offers good concussive & puncture defense & the added bonus of a mobile light source. No more dark caves for you. Crafted on the metal working bench.,"Ce casque protège bien contre les commotions cérébrales et autres blessures perforantes. Il offre également une source de lumière mobile. Finies, les grottes sombres.",Dieser Helm bietet guten Schutz vor Schlag- und Stichschaden und hat zudem eine mobile Lichtquelle. Jetzt bleibt keine Höhle mehr dunkel.,,"Este casco ofrece buena protección frente a contusiones y perforaciones, además de ser una fuente de luz móvil. ¡Ya no habrá más cuevas oscuras para ti!"
 nightvisionGoggles,items,Clothes,KgNone,Night Vision Goggles,Lunettes de vision nocturne,Nachtsichtbrille,,Gafas de visión nocturna
 nightvisionGogglesDesc,items,Clothes,KgNone,These night vision goggles provide a little face protection but probably don't work any more.,"Ces lunettes de vision nocturne protègent légèrement le visage, mais ne fonctionnent sûrement plus.","Diese Nachtsichtbrille schützt das Gesicht etwas, funktioniert aber wahrscheinlich nicht mehr.",,"Las gafas de visión nocturna ofrecen un poco de protección facial, pero probablemente no sirvan para nada más."
 plaidShirt,items,Clothes,KgNone,Plaid Shirt,Chemise à carreaux,Kariertes Hemd,,Camisa a cuadros
@@ -1874,7 +1875,7 @@ scrapBoots,items,Clothes,KgNone,Scrap Boots,Bottes recyclées,Alteisenstiefel,,B
 scrapChestArmor,items,Clothes,KgNone,Scrap Chest Armor,Plastron recyclé,Alteisenbrustpanzer,,Coraza de chatarra
 scrapGloves,items,Clothes,KgNone,Scrap Gloves,Gants recyclés,Alteisenhandschuhe,,Guantes de chatarra
 scrapHelmet,items,Clothes,KgNone,Scrap Helmet,Casque recyclé,Alteisenhelm,,Casco de chatarra
-scrapIronClothesGroupDesc,items,Clothes,KgNone,Scrap iron clothing provides good protection against concussive and puncture damage but will not keep you warm.,"Les vêtements en ferraille vous offrent une bonne protection contre les commotions cérébrales et autres blessures perforantes, mais ne vous garderont pas au chaud.","Alteisenkleidung bietet guten Schutz vor Schlag- und Stichschaden, hält aber nicht warm.",,"La ropa de chatarra de hierro ofrece buena protección frente a contusiones y perforaciones, pero no te mantendrá abrigado."
+scrapIronClothesGroupDesc,items,Clothes,KgNone,Scrap iron clothing provides good protection against concussive and puncture damage but will not keep you warm. Crafted on the Armor table with a claw hammer.,"Les vêtements en ferraille vous offrent une bonne protection contre les commotions cérébrales et autres blessures perforantes, mais ne vous garderont pas au chaud.","Alteisenkleidung bietet guten Schutz vor Schlag- und Stichschaden, hält aber nicht warm.",,"La ropa de chatarra de hierro ofrece buena protección frente a contusiones y perforaciones, pero no te mantendrá abrigado."
 scrapLegArmor,items,Clothes,KgNone,Scrap Leg Armor,Jambières recyclées,Alteisenbeinschienen,,Espinillera de chatarra
 shades,items,Clothes,KgNone,Shades,Lunettes de soleil,Sonnenbrille,,Gafas de sol
 shadesDesc,items,Clothes,EnChanged,Sunglasses make you look cool.,Les lunettes de soleil vous donnent l'air cool et vous protègent des rayons solaires.,Mit einer Sonnenbrille siehst du cool aus.,,"Con estas gafas te ves cool, además te mantienes fresco en climas calurosos. "
@@ -2131,7 +2132,7 @@ concreteMixDesc,items,Item,KgNone,Can be used as a resource to make rebar frames
 cookingGrill,items,Item,KgNone,Cooking Grill,Grill,Kochgrill,,Parrilla
 cookingGrillDesc,items,Item,KgNone,A cooking utensil used in the campfire to unlock recipes. Crafted in the forge with an anvil.,Un ustensile de cuisine à utiliser sur le feu de camp pour déverrouiller des compositions.,"Ein Kochgerät, mit dem am Lagerfeuer Rezepte freigeschaltet werden.",,Un instrumento de cocina que se usa en la fogata para desbloquear recetas.
 crushedSand,items,Item,KgNone,Crushed Sand,Sable de concassage,Bruchsand,,Arena fina
-crushedSandDesc,items,Item,KgNone,Crushed sand is a core resource that can be smelted in the forge to make glass and used to craft items.,Le sable de concassage est une ressource de base qui peut être fondue à la forge pour faire du verre et qui sert à fabriquer des objets.,"Bruchsand ist ein wichtiger Rohstoff, der in der Schmiede geschmolzen werden kann, um Glas herzustellen. Er dient auch zur Fertigung von Gegenständen.",,La arena fina es un recurso básico que se puede fundir para fabricar cristal y usar para fabricar objetos.
+crushedSandDesc,items,Item,KgNone,Crushed sand is a core resource that can be smelted in the forge to make glass and used to craft items. Crafted in the Cement Mixer.,Le sable de concassage est une ressource de base qui peut être fondue à la forge pour faire du verre et qui sert à fabriquer des objets.,"Bruchsand ist ein wichtiger Rohstoff, der in der Schmiede geschmolzen werden kann, um Glas herzustellen. Er dient auch zur Fertigung von Gegenständen.",,La arena fina es un recurso básico que se puede fundir para fabricar cristal y usar para fabricar objetos.
 dirtFragment,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Dirt Fragment,,,,
 dirtFragmentDesc,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Does not sound very exciting but it might have something to do with farming.,,,,
 doorKnob,items,Item,KgNone,Brass Doorknob,Poignée en laiton,Messingtürgriff,,Pomo de latón
@@ -2194,9 +2195,9 @@ radiatorDesc,items,Item,KgNone,Brass objects can be scrapped into scrap brass in
 repairKit,items,Item,KgNone,Repair Kit,Kit de réparation,Reparaturkit,,Kit de reparación
 repairKitDesc,items,Item,KgNone,"Repair kits made from cloth, oil, duct tape and forged iron are used to repair guns, motorized tools, vehicles and more.","Les kits de réparation se fabriquent à partir de tissu, d'essence, de ruban adhésif en toile et de fer forgé. Ils servent à réparer les armes, les outils motorisés, les véhicules et bien d'autres choses.","Reparaturkits aus Stoff, Öl, Klebeband und geschmiedetem Eisen dienen dazu, Waffen, motorisierte Werkzeuge, Fahrzeuge und mehr zu reparieren.",,"Los kits de reparación elaborados a partir de tela, aceite, hierro forjado y cinta de embalar se usan para reparar pistolas, herramientas motorizadas, vehículos, etc."
 rocketCasing,items,Item,KgNone,Rocket Casing,Douille de roquette,Raketengehäuse,,Carcasa de cohete
-rocketCasingDesc,items,Item,KgNone,A rocket casing is used to make ammo for the rocket launcher.,Utilisez une douille de roquette pour fabriquer une roquette pour le lance-roquettes.,Mit einem Raketengehäuse wird Munition für Raketenwerfer hergestellt.,,Una carcasa de cohete se usa para obtener munición para el lanzacohetes.
+rocketCasingDesc,items,Item,KgNone,A rocket casing is used to make ammo for the rocket launcher. Crafted in the forge with a tool And Die Set.,Utilisez une douille de roquette pour fabriquer une roquette pour le lance-roquettes.,Mit einem Raketengehäuse wird Munition für Raketenwerfer hergestellt.,,Una carcasa de cohete se usa para obtener munición para el lanzacohetes.
 rocketTip,items,Item,KgNone,Rocket Tip,Pointe de roquette,Raketenspitze,,Punta de cohete
-rocketTipDesc,items,Item,KgNone,A rocket tip is used to make ammo for the rocket launcher.,Utilisez une pointe de roquette pour fabriquer une roquette pour le lance-roquettes.,Mit einer Raketenspitze wird Munition für Raketenwerfer hergestellt.,,Una punta de cohete se usa para obtener munición para el lanzacohetes.
+rocketTipDesc,items,Item,KgNone,A rocket tip is used to make ammo for the rocket launcher. Crafted in the forge with a tool And Die Set.,Utilisez une pointe de roquette pour fabriquer une roquette pour le lance-roquettes.,Mit einer Raketenspitze wird Munition für Raketenwerfer hergestellt.,,Una punta de cohete se usa para obtener munición para el lanzacohetes.
 rockSmall,items,Item,KgNone,Small Stone,Petite pierre,Kleiner Stein,,Piedra pequeña
 rockSmallDesc,items,Item,KgNone,"Used in many recipes including stone axes, campfires & arrows. Can be thrown to distract zombies & are a core forging resource.","Composant courant, les petites pierres servent notamment à fabriquer des haches de pierre, des feux de camp et des flèches. Elles peuvent aussi être jetées pour distraire les zombies et représentent une ressource de base pour forger.","Wird in vielen Rezepten benutzt, darunter Steinäxte, Lagerfeuer und Pfeile. Er kann geworfen werden, um Zombies abzulenken, und ist ein Grundrohstoff beim Schmieden.",,"Se usa en muchas recetas, como hachas de piedra, fogatas o flechas. También se pueden lanzar para distraer a los zombis y son un recurso de forja básico."
 rottingFlesh,items,Item,KgNone,Rotting Flesh,Chair pourrie,Verrottendes Fleisch,,Carne podrida
@@ -2278,7 +2279,7 @@ huntingKnifeDesc,items,Melee,KgNone,Great for slashing zombies and gutting anima
 machete,items,Melee,KgNone,Machete,Machette,Machete,,Machete
 macheteDesc,items,Melee,KgNone,Great for chopping zombie limbs off and gutting animals for meat.,Idéale pour démembrer des zombies et étriper des animaux pour leur viande.,"Eignet sich prima dafür, Zombiegliedmaßen abzuschlagen und Tiere auszuweiden.",,Excelente para cortarles las extremidades a los zombis y destripar animales para conseguir carne.
 sledgehammer,items,Melee,KgNone,Iron Sledgehammer,Masse en fer,Eisenvorschlaghammer,,Mazo de hierro
-sledgehammerDesc,items,Melee,KgNone,The sledgehammer is one of the best weapons for cracking skulls with a better chance to score a critical blow.,La masse en fer est l'une des meilleures armes pour défoncer des crânes avec de grandes chances de porter un coup critique.,"Der Vorschlaghammer ist eine der besten Waffen, wenn es darum geht, Schädel zu brechen. Mit ihm hast du eine erhöhte Chance, einen kritischen Treffer zu landen.",,El mazo es una de las mejores armas para destrozar cráneos. Aumenta la probabilidad de asestar golpes críticos.
+sledgehammerDesc,items,Melee,KgNone,The sledgehammer is one of the best weapons for cracking skulls with a better chance to score a critical blow. Crafted on the wood working bench.,La masse en fer est l'une des meilleures armes pour défoncer des crânes avec de grandes chances de porter un coup critique.,"Der Vorschlaghammer ist eine der besten Waffen, wenn es darum geht, Schädel zu brechen. Mit ihm hast du eine erhöhte Chance, einen kritischen Treffer zu landen.",,El mazo es una de las mejores armas para destrozar cráneos. Aumenta la probabilidad de asestar golpes críticos.
 commonShotgunPartsGroupDesc,items,Part,KgNone,A common part for shotguns. Assemble with other parts to create a complete shotgun once you've read the right schematic.,Une pièce commune aux fusils à pompe. À assembler à d'autres pièces pour fabriquer un fusil à pompe une fois que vous avez lu le bon schéma.,"Ein gewöhnliches Teil für Schrotflinten. Setze es mit den anderen Teilen zu einer Schrotflinte zusammen, wenn du den richtigen Bauplan gelesen hast.",,"Una parte común de escopeta. Una vez que hayas leído el esquema correcto, ármala con otras partes para crear una escopeta completa."
 handleBarsSchematic,items,Part,KgNone,Handlebars Schematic,Schéma de guidon,Bauplan – Handgriffe,,Esquema de manillar
 handleBarsSchematicDesc,items,Part,KgNone,Learn how to craft handlebars for motorized tools like the auger and chainsaw by reading this schematic.,Apprenez à fabriquer un guidon pour les outils motorisés comme la foreuse ou la tronçonneuse en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Handgriffe für motorisierte Werkzeuge wie Erdbohrer und Kettensägen gefertigt werden.",,Lee este esquema para aprender a fabricar un manillar para herramientas motorizadas como el taladro o la motosierra.
@@ -4405,7 +4406,7 @@ HandSawDesc,,,,"You could use this to cut Planks or as a Tool on a Wood Working 
 SkillBookDesc,,,,"A old dusty book filled with knowledge.",,,,
 SanitizingBandageDesc,,,,"This sanitized bandage should clean some of those scratches up. You don’t want it getting infected",,,,
 RedHotDesc,,,,"The pipe glows red hot from the fire. Use this to cauterizes a bite wound",,,,
-AntiVenomDesc,,,,"Created from the venom sack of a poisonous animal. Used to cure Venom Poison",,,,
+AntiVenomDesc,,,,"Created in the campfire in a cooking pot from the venom sack of a poisonous animal. Used to cure Venom Poison",,,,
 StimulantDesc,,,,"A crudely made pill that taste terrible but take a few of these and you will run even faster. Chemist have been known to bake these up",,,,
 SuperPillDesc,,,,"A powerful pill made by a doctor that can cure almost anything.",,,,
 DoctorShotDesc,,,,"A dart with a chemical injector on the tip that can be fired with a Bow, Crossbow or Hunting Rifle. The beneficial shots can be self-injected",,,,
@@ -4417,7 +4418,7 @@ ChooseAProfessionDesc,,,,"Use this to choose what your profession was before the
 workBurnBarrel,,,,"Burn Barrel",,,,
 BurnBarrelDesc,,,,"A easy way to warm up and have a little light.",,,,
 workChickenCoop,,,,"Chicken Coop",,,,
-ChickenCoopDesc,,,,"A nest that you can raise a hen in and harvest eggs and feathers.",,,,
+ChickenCoopDesc,,,,"Place Coop and upgrade with egg in hand. Craft Babay Chick then upgrade Coop with Baby Chicken in hand. Last, craft Hen then upgrade with hen in hand and you will be able to harvet eggs and feathers. You do not gain any XP in this Workstation.",,,,
 workBlastFurnace,,,,"Blast Furnace",,,,
 BlastFurnaceDesc,,,,"A high temperature forge capable of smelting Steel.",,,,
 workOilRefinery,,,,"Oil Refinery",,,,
@@ -4427,7 +4428,7 @@ BulletPressDesc,,,,"A refurbished military bullet press capable of mass producin
 workDryingRack,,,,"Leather Drying Rack",,,,
 DryingRackDesc,,,,"A Drying table that can be used indoors to dry leather.",,,,
 workSeedNursery,,,,"Seed Nursery",,,,
-SeedNurseryDesc,,,,"A nice dry place to harvest seeds from common plants.",,,,
+SeedNurseryDesc,,,,"A nice dry place to harvest seeds from common plants and make fertilizer. You do not gain any XP in this Workstation.",,,,
 workArmorTable,,,,"Armor Table",,,,
 ArmorTableDesc,,,,"A good work bench for crafting armor, clothes and building fabrics.",,,,
 workResearchDesk,,,,"Research Desk",,,,
@@ -4469,7 +4470,7 @@ BrainShnitzelDesc,,,,"Brain Schnitzel is packed with nutrition and gives a good 
 canMeat,,,,"Canned Meat",,,,
 CanMeatDesc,,,,"Freshly canned meat helps remove the smell but you lose the wellness gain.",,,,
 VenomSack,,,,"Venom Sack",,,,
-VenomSackDesc,,,,"A venom gland from a poisonous animal. The potent chemicals in the gland make it very useful in crafting.",,,,
+VenomSackDesc,,,,"A venom gland from a poisonous animal. The potent chemicals in the gland make it very useful in crafting. Can be crafted into Anti Venom on the Campfire in a Cooking Pot",,,,
 yuccaSeed,,,,"Yucca Seed",,,,
 SeedDesc,,,,"Plant these seeds in the sunlight near water to grow. Plant on fertile dirt to increase its produce, add fertilizer to increase it even more. To craft more Seeds build a Seed Nursery",,,,
 AppleSeed,,,,"Apple Seed",,,,
@@ -4667,10 +4668,12 @@ workforge,,,,"Forge",,,,
 workcementMixer,,,,"Cement Mixer",,,,
 workworkbench,,,,"Wood Working Bench",,,,
 workBatteryPack,,,,"Battery Pack",,,,
+workBatteryPackDesc,,,,"Place the Battery Pack next to a power line and power it with a genorator. Use this workstation to recharge batteries and refill scuba tanks. You do not gain any XP in this Workstation.",,,,
 workMortarAndPestle,,,,"Mortar & Pestle",,,,
 workAnvil,,,,"Anvil",,,,
 workStoneMill,,,,"Stone Mill",,,,
 workStove,,,,"Stove",,,,
+workStoveDesc,,,,"A Stove can be used to bake bread and pies and all other cooking recipes. You do not gain any XP in this Workstation.",,,,
 bigGenerator,,,,"Large Generator",,,,
 bigGeneratorDesc,,,,"This large generator uses the lest amount of fuel and is very durable. Check your journal for more instructions.",,,,
 dieselGen,,,,"Crafted Generator",,,,

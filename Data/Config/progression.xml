@@ -435,20 +435,20 @@
 			<requirement perk_level="1" required_player_level="20" />
 			<recipe name="electricSpear" unlock_level="1" />
 		</perk>
-		<perk name="Crossbow" icon="crossbow" description_key="Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench" title_key="Crossbow" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
+		<perk name="Crossbow" icon="crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="Crossbow" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="5" />
 			<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20" />
-            <requirement perk_level="2" required_skill_name="Archery" required_skill_level="40" />
+            <requirement perk_level="3" required_skill_name="Archery" required_skill_level="40" />
 			<recipe name="Crossbow_Limb" unlock_level="1" />
 			<recipe name="Crossbow_Stock" unlock_level="1" />
 			<recipe name="Crossbow_Barrel" unlock_level="1" />
-			<!--<recipe name="crossbow" unlock_level="1" />
+			<recipe name="crossbow" unlock_level="1" />
 			<recipe name="crossbowBolt" unlock_level="1" />
 			<recipe name="CrossbowStockScope" unlock_level="2" />
 			<recipe name="crossbowScope" unlock_level="2" />
             <recipe name="BoltCylinder" unlock_level="3" />
-            <recipe name="AutoCrossbow" unlock_level="3" />-->
+            <recipe name="AutoCrossbow" unlock_level="3" />
 		</perk>
 		<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" group="health" skill_point_cost_per_level="1000">
 			<effect name="HealthGain">
@@ -478,9 +478,9 @@
 			<recipe name="workforge" unlock_level="1" />
 			<recipe name="bellows" unlock_level="1" />
 		</perk>
-		<perk name="Anvil" icon="anvil" description_key="Learn to craft an anvil in a forge" title_key="Anvil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+		<perk name="Anvil" icon="Anvil" description_key="Learn to craft an anvil in a forge. The Anvil can be used as a workstation or as a tool in a workstation. Use a Hand Dolly to pick it back up and re install it." title_key="Anvil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
-			<recipe name="anvil" unlock_level="1" />
+			<recipe name="workAnvil" unlock_level="1" />
 		</perk>
 		<perk name="Forged Iron" icon="forgedIron" description_key="Learn to craft a small stone Forge. Use it to smelt iron, brass, lead, glass, stone and clay. The Forge has 3 tools - anvil, calipers and tool And Die Set." title_key="Forged Iron" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_player_level="25" />
@@ -573,7 +573,7 @@
 			<requirement perk_level="1" required_player_level="5" />
 			<recipe name="clawHammer" unlock_level="1" />
 		</perk>
-		<perk name="Screwdriver" icon="Screwdriver" description_key="Learn to craft and repair a screwdriver" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<perk name="Screwdriver" icon="screwdriver" description_key="Learn to craft and repair a screwdriver" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="screwdriver" unlock_level="1" />
 		</perk>
@@ -1091,17 +1091,17 @@
 			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
 			<recipe name="woodHatch1_v1" unlock_level="1" />
 		</perk>
-		<perk name="Wooden Bridges" icon="secureDoorWooden" description_key="Learn to craft secure Wooden bridges on the wood working bench using a claw hammer" title_key="Wooden Bridges" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="crafting">
+		<perk name="Wooden Bridges" icon="WoodBridge1x3" description_key="Learn to craft secure Wooden bridges on the wood working bench using a claw hammer" title_key="Wooden Bridges" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="crafting">
 			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
 			<recipe name="Wood_Bridge_1x3" unlock_level="1" />
 			<recipe name="Wood_Bridge_2x4" unlock_level="1" />
 		</perk>
-		<perk name="Wooden Gates" icon="secureDoorWooden" description_key="Learn to craft secure Wooden gates on the wood working bench using a claw hammer" title_key="Wooden Gates" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+		<perk name="Wooden Gates" icon="WoodGate2x3" description_key="Learn to craft secure Wooden gates on the wood working bench using a claw hammer" title_key="Wooden Gates" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
 			<recipe name="Wood_Gate_2x3" unlock_level="1" />
 			<recipe name="Wood_Gate_3x2" unlock_level="1" />
 		</perk>
-		<perk name="Wooden Shutters" icon="secureDoorWooden" description_key="Learn to craft Wooden shutters on the wood working bench using a claw hammer" title_key="Wooden Shutters" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
+		<perk name="Wooden Shutters" icon="WoodShutters" description_key="Learn to craft Wooden shutters on the wood working bench using a claw hammer" title_key="Wooden Shutters" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="crafting">
 			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="10" />
 			<recipe name="Wood_Shutters" unlock_level="1" />
 			<recipe name="Wood_Shutters_2" unlock_level="1" />
@@ -1363,12 +1363,12 @@
 			<recipe name="forgedFrame" unlock_level="1" />
 			<recipe name="forgedRampFrame" unlock_level="1" />
 		</perk>
-		<perk name="Steel Vault Hatch" icon="vaultHatch_v1" description_key="Learn to craft steel Vault Hatches on the metal working bench using the wielder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+		<perk name="Steel Vault Hatch" icon="vaultHatch" description_key="Learn to craft steel Vault Hatches on the metal working bench using the wielder" title_key="Steel Vault Hatch" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="2" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="vaultHatch_v1" unlock_level="1" />
 		</perk>
-		<perk name="Steel Rolling Garage Door" icon="VaultDoor01" description_key="Learn to craft Steel Vault Doors on the metal working bench using the CompactDriver." title_key="Steel Rolling Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+		<perk name="Steel Rolling Garage Door" icon="garageDoorRolling" description_key="Learn to craft Steel Vault Doors on the metal working bench using the CompactDriver." title_key="Steel Rolling Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="3" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="garageDoorRolling" unlock_level="1" />
@@ -1504,19 +1504,19 @@
 			<requirement perk_level="5" required_skill_name="Blunt Weapons" required_skill_level="95" />
 			<effect name="EntityDamage">
 				<multiply perk_level="0" value="1" />
-				<multiply skill_level="1" value="1.1125" />
-				<multiply skill_level="2" value="1.225" />
-				<multiply skill_level="3" value="1.3375" />
-				<multiply skill_level="4" value="1.45" />
-				<multiply skill_level="5" value="1.5625" />
+				<multiply perk_level="1" value="1.1125" />
+				<multiply perk_level="2" value="1.225" />
+				<multiply perk_level="3" value="1.3375" />
+				<multiply perk_level="4" value="1.45" />
+				<multiply perk_level="5" value="1.5625" />
 			</effect>
 			<effect name="StaminaDegradation">
 				<multiply perk_level="0" value="1" />
-				<multiply skill_level="1" value="0.9" />
-				<multiply skill_level="2" value="0.8" />
-				<multiply skill_level="3" value="0.7" />
-				<multiply skill_level="4" value="0.6" />
-				<multiply skill_level="5" value="0.5" />
+				<multiply perk_level="1" value="0.9" />
+				<multiply perk_level="2" value="0.8" />
+				<multiply perk_level="3" value="0.7" />
+				<multiply perk_level="4" value="0.6" />
+				<multiply perk_level="5" value="0.5" />
 			</effect>
 		</perk>
 		<perk name="Miner 69er" icon="mining" description_key="miner69erDesc" title_key="miner69er" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
@@ -1527,27 +1527,27 @@
 			<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="95" />
 			<effect name="BlockDamage">
 				<multiply perk_level="0" value="1" />
-				<multiply skill_level="1" value="1.05" />
-				<multiply skill_level="2" value="1.1" />
-				<multiply skill_level="3" value="1.15" />
-				<multiply skill_level="4" value="1.2" />
-				<multiply skill_level="5" value="1.25" />
+				<multiply perk_level="1" value="1.05" />
+				<multiply perk_level="2" value="1.1" />
+				<multiply perk_level="3" value="1.15" />
+				<multiply perk_level="4" value="1.2" />
+				<multiply perk_level="5" value="1.25" />
 			</effect>
 			<effect name="StaminaDegradation">
 				<multiply perk_level="0" value="1" />
-				<multiply skill_level="1" value="0.95" />
-				<multiply skill_level="2" value="0.9" />
-				<multiply skill_level="3" value="0.85" />
-				<multiply skill_level="4" value="0.8" />
-				<multiply skill_level="5" value="0.75" />
+				<multiply perk_level="1" value="0.95" />
+				<multiply perk_level="2" value="0.9" />
+				<multiply perk_level="3" value="0.85" />
+				<multiply perk_level="4" value="0.8" />
+				<multiply perk_level="5" value="0.75" />
 			</effect>
 		</perk>
 		<perk name="Treasure Hunter" icon="treasure" description_key="treasureHunterDesc" title_key="treasureHunter" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="scavenging">
 			<effect name="TreasureRadius">
 				<setvalue perk_level="0" value="10" />
-				<setvalue skill_level="1" value="8" />
-				<setvalue skill_level="2" value="6" />
-				<setvalue skill_level="3" value="4" />
+				<setvalue perk_level="1" value="8" />
+				<setvalue perk_level="2" value="6" />
+				<setvalue perk_level="3" value="4" />
 			</effect>
 		</perk>
 		<perk name="Chemistry Station" icon="AloeCream" description_key="Learn to craft achemistry Station on the wood working bench using a claw hammer. Use it to craft complex chemical and medical items. The Chemistry Station has 2 tools - Mortar And Pestle and beaker." title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
@@ -1720,14 +1720,14 @@
 			<recipe name="industrialLight01Switch" unlock_level="1" />
 			<recipe name="streetLight01Switch" unlock_level="1" />
 		</perk>
-		<perk name="Spikes" icon="TrapSpikes01" description_key="Learn to craft Wooden Spikes" title_key="Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
+		<perk name="Spikes" icon="SetUpASpikeTrap" description_key="Learn to craft Wooden Spikes" title_key="Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
 			<recipe name="SetUpASpikeTrap" unlock_level="1" />
 		</perk>
 		<perk name="Log Tips" icon="woodLogSpike1" description_key="Learn to craft Log Tips" title_key="Log Tips" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
 			<requirement perk_level="1" required_skill_name="Primitive Crafting" required_skill_level="3" />
 			<recipe name="woodLogSpike1" unlock_level="1" />
 		</perk>
-		<perk name="Steel Spikes" icon="woodLogSpike1" description_key="Learn to craft Steel Spikes on the metal working bench" title_key="Steel Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+		<perk name="Steel Spikes" icon="SteelSpikes" description_key="Learn to craft Steel Spikes on the metal working bench" title_key="Steel Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
 			<recipe name="SteelSpikes" unlock_level="1" />
 		</perk>
@@ -1850,12 +1850,12 @@
 				<multiply skill_level="90,100" value="1.9,2" />
 			</effect>
 		</action_skill>
-		<perk name="Hunters Kinfe" icon="huntingKnife" description_key="Learn to craft a hunting Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a sharpe knife that will harvest more and better animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Hunters Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+		<perk name="Hunters Knife" icon="huntingKnife" description_key="Learn to craft a hunting Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade that you need to craft it in the forge using the anvil. This is a sharpe knife that will harvest more and better animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Hunters Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
 			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="1" />
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
 			<recipe name="huntingKnife" unlock_level="1" />
 		</perk>
-		<perk name="Field Kinfe" icon="FieldKnife" description_key="Learn to craft a Field Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a very sharpe knife that will harvest the most and best animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Field Kinfe" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+		<perk name="Field Knife" icon="FieldKnife" description_key="Learn to craft a Field Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a very sharpe knife that will harvest the most and best animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
 			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="40" />
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
 			<recipe name="FieldKnife" unlock_level="1" />

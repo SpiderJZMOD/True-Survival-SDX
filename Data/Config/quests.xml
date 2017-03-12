@@ -205,7 +205,6 @@ Alternative settings for custom quest creation:
 		<objective type="FetchKeep" id="leather" value="4" />
 		<reward type="Exp" id="400" />
 		<reward type="SkillPoints" value="1" />
-		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete" />
 	</quest>
 	<!-- White River Citizen 1 - Journey to Settlement -->
 	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="Quest">

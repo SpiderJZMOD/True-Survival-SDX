@@ -438,7 +438,7 @@
 		<item name="44MagBullet" count="5,25" prob="0.6" />
 		<item name="steelArrow" count="3,12" prob="0.4" />
 		<item name="weaponRepairKit" count="1,3" prob="0.5" />
-		<item name="GunOil" count="6,24" prob="0.5" />
+		<item name="GunOil" count="5,15" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="magnumparts" count="1">
 		<item name="parts44Magnum_cylinder" quality="1,350" prob="0.4" />
@@ -792,15 +792,15 @@
 	</lootgroup>
 	<lootgroup name="cupboard" count="1">
 		<item name="canEmpty" prob="0.2" />
-		<item name="SteakKnife" prob="0.24" />
-		<item group="cannedfood" prob="0.18" />
+		<item name="SteakKnife" prob="0.2" />
+		<item group="cannedfood" prob="0.19" />
 		<item group="seeds" prob="0.06" />
 		<item name="bottledWater" prob="0.25" />
 		<item name="emptyJar" count="1" prob="0.3" />
 		<item name="cornMeal" prob="0.05" />
 		<item name="CarrotCake" count="1" prob="0.04" />
-		<item name="Bread" count="1,2" prob="0.18" />
-		<item name="Flour" count="1,2" prob="0.2" />
+		<item name="Bread" count="1,2" prob="0.12" />
+		<item name="Flour" count="1,2" prob="0.05" />
 	</lootgroup>
 	<lootgroup name="rareOres">
 		<!-- 907 average -->
@@ -827,7 +827,7 @@
 		<item name="emptyJar" count="1" prob="0.3" />
 		<item name="canEmpty" count="1" prob="0.2" />
 		<item name="painkillers" prob="0.5" />
-		<item name="ductTape" count="1,5" prob="0.5" />
+		<item name="ductTape" count="1,4" prob="0.5" />
 		<item name="paper" count="1,6" prob="0.3" />
 		<item name="cloth" count="1,4" prob="0.3" />
 		<item group="trophyGroup" prob="0.3" />
@@ -841,7 +841,7 @@
 		<item name="shortMetalPipe" count="1" prob="0.3" />
 		<item name="fishingWeight" count="1,3" prob="0.5" />
 		<item name="Plank" count="1" prob="0.5" />
-		<item name="glue" count="1,2" prob="0.7" />
+		<item name="glue" count="1,3" prob="0.75" />
 		<item name="nail" count="1,6" prob="0.7" />
         <item name="OldRevolver" prob="0.01" />
         <item name="OldRifle" prob="0.01" />
@@ -1204,17 +1204,17 @@
 	</lootgroup>
 	<lootgroup name="automotive+tools+junk" count="1">
 		<item group="junk" count="0,1" prob="0.7" />
-		<item group="automotive" count="0,1" prob="0.15" />
-		<item group="tools" count="0,1" prob="0.15" />
-		<item group="backpacks" count="0,1" prob="0.15" />
-		<item group="workingStiffs" count="0,1" prob="0.05" />
+		<item group="automotive" count="0,1" prob="0.2" />
+		<item group="tools" count="0,1" prob="0.2" />
+		<item group="backpacks" count="0,1" prob="0.25" />
+		<item group="workingStiffs" count="0,1" prob="0.08" />
         <item name="OldRevolver" count="0,1" prob="0.01" />
         <item name="OldRifle" count="0,1" prob="0.01" />
-        <item name="OldAxe" count="0,1" prob="0.01" />
-        <item name="bat" prob="0.05" />
-		<item name="GoodNight" prob="0.05" />
-		<item name="TPXBat" prob="0.05" />
-        <item name="smallGenerator" count="0,1" prob="0.01" />
+        <item name="OldAxe" count="0,1" prob="0.02" />
+        <item name="bat" prob="0.04" />
+		<item name="GoodNight" prob="0.01" />
+		<item name="TPXBat" prob="0.01" />
+        <item name="smallGenerator" count="0,1" prob="0.09" />
 	</lootgroup>
 	<lootgroup name="airdropfood" count="all">
 		<item group="cupboard" count="1,3" />
@@ -1404,7 +1404,7 @@
 		<item group="militaryWeaponParts" count="1,3" />
 		<item group="commonWeaponParts" count="1,3" />
 		<item group="ammoBig" count="1,3" />
-		<item name="GunOil" count="6,24" />
+		<item name="GunOil" count="5,20" />
 	</lootgroup>
 	<lootgroup name="BikeNABox" count="all">
 		<item name="minibikeWheels" count="1" />
@@ -1874,7 +1874,7 @@
 		<item group="commonWeaponParts" prob="0.8" />
 		<item group="empty" prob="0.2" />
 		<item name="mechanicalParts" count="1,5" prob=".1" />
-		<item name="GunOil" count="6,24" prob="0.5" />
+		<item name="GunOil" count="5,20" prob="0.5" />
 	</lootcontainer>
 	<!-- pop n pills -->
 	<lootcontainer id="51" count="0,2" size="4,4" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" open_time="5">

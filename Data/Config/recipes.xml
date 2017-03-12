@@ -875,7 +875,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cottonPlant" count="1" />
 	</recipe>
 	<recipe name="crossbow" count="1" craft_area="assembly">
-		<ingredient name="Crossbow_Stock" count="1" />
+		<ingredient name="flashlight02" count="0" />
+        <ingredient name="Crossbow_Stock" count="1" />
 		<ingredient name="Crossbow_Parts" count="1" />
 		<ingredient name="Crossbow_Limb" count="1" />
 		<ingredient name="Crossbow_Barrel" count="1" />
@@ -886,7 +887,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="destroyedStone" count="1" craft_area="workcementMixer" craft_time="5" craft_exp_gain="5">
 		<ingredient name="rockSmall" count="18" />
 	</recipe>
-	<recipe name="ductTape" count="1" craft_area="workchemistryStation" craft_time="30" craft_exp_gain="0">
+	<recipe name="ductTape" count="1" craft_area="workchemistryStation" craft_time="10" craft_exp_gain="5">
 		<ingredient name="glue" count="1" />
 		<ingredient name="cloth" count="1" />
 	</recipe>
@@ -1497,8 +1498,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="chrysanthemumPlant" count="2" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
-                <!--JZMOD WORKSTATION DEWSCRIPTION STOPED-->
-	<recipe name="redWoodBlock" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
+    <recipe name="redWoodBlock" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
 		<ingredient name="chrysanthemumPlant" count="1" />
 		<ingredient name="Plank" count="15" />
 		<ingredient name="nail" count="5" />
@@ -1514,7 +1514,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="GunOil" count="1" />
 		<ingredient name="cloth" count="1" />
 	</recipe>
-	<recipe name="rocket" count="1" craft_area="workworkbench" craft_tool="wrench" craft_time="20" craft_exp_gain="5">
+	<recipe name="rocket" count="1" craft_area="workMetalWorkBench" craft_tool="wrench" craft_time="20" craft_exp_gain="5">
 		<ingredient name="rocketTip" count="1" />
 		<ingredient name="gunPowder" count="20" />
 		<ingredient name="ductTape" count="3" />
@@ -1667,7 +1667,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="IronShovelHead" count="1" />
 		<ingredient name="stick" count="20" />
 	</recipe>
-	<recipe name="shovelSteel" count="1" craft_area="workMetalWorkBench" craft_time="30" craft_exp_gain="20">
+	<recipe name="shovelSteel" count="1" craft_time="30" craft_exp_gain="20">
 		<ingredient name="SteelShovelHead" count="1" />
 		<ingredient name="stick" count="20" />
 	</recipe>
@@ -1678,6 +1678,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="snow" count="1" craft_time="5" craft_exp_gain="1">
 		<ingredient name="snowBall" count="12" />
 	</recipe>
+    <!--JZMOD WORKSTATION DESCRIPTION STOPpED-->
 	<recipe name="snowberryExtract" count="1" craft_area="workMortarAndPestle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="snowberryPlant" count="5" />
 	</recipe>
@@ -2070,7 +2071,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="BlankSkillBook" count="1" />
 	</recipe>
 	<recipe name="AutoCrossbow" count="1" craft_area="assembly">
-		<ingredient name="BoltCylinder" count="1" />
+		<ingredient name="flashlight02" count="0" />
+        <ingredient name="BoltCylinder" count="1" />
 		<ingredient name="Crossbow_Limb" count="1" />
 		<ingredient name="Crossbow_Stock" count="1" />
 		<ingredient name="Crossbow_Parts" count="1" />
@@ -2316,7 +2318,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="feather" count="2" />
 	</recipe>
 	<recipe name="CarbonCrossbow" count="1" craft_area="assembly">
-		<ingredient name="CarbonCrossbow_Stock" count="1" />
+		<ingredient name="flashlight02" count="0" />
+        <ingredient name="CarbonCrossbow_Stock" count="1" />
 		<ingredient name="CarbonCrossbow_Limb" count="1" />
 		<ingredient name="CarbonCrossbow_Parts" count="1" />
 		<ingredient name="CarbonCrossbow_Barrel" count="1" />
@@ -2502,7 +2505,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="NutAndBolt" count="4" />
 	</recipe>
 	<recipe name="crossbowScope" count="1" craft_area="assembly">
-		<ingredient name="CrossbowStockScope" count="1" />
+		<ingredient name="flashlight02" count="0" />
+        <ingredient name="CrossbowStockScope" count="1" />
 		<ingredient name="Crossbow_Barrel" count="1" />
 		<ingredient name="Crossbow_Limb" count="1" />
 		<ingredient name="Crossbow_Parts" count="1" />

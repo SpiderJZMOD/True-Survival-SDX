@@ -3630,7 +3630,7 @@ then add recipes for those white/red/green metals
 		<property name="IndexName" value="lpblock" />
 		<property name="Stacknumber" value="1" />
 		<property name="DescriptionKey" value="KeystoneDesc" />
-		<drop event="Destroy" name="keystoneBlock" count="1" />
+		<drop event="Destroy" name="keystoneSteel" count="1" />
 		<drop event="Fall" name="keystoneSteel" count="1" prob="1" stick_chance="0" />
 		<property name="Group" value="Building" />
 		<property name="EconomicValue" value="160" />
@@ -12284,7 +12284,7 @@ kind of free
 	</block>
 	<block id="1469" name="vaultHatch_v1">
 		<property name="Extends" value="vaultDoor01" />
-		<property name="CustomIcon" value="vaultHatch_v1" />
+		<property name="CustomIcon" value="ui_game_symbol_vaultHatch" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Model" value="Entities/Doors/steel_hatch_v1Prefab" />
 		<property name="MultiBlockDim" value="1,1,1" />
@@ -14081,6 +14081,10 @@ kind of free
         <property class="RepairItems">
 			<property name="rockSmall" value="100" />
 		</property>
+        <drop event="Destroy" name="keystoneSteel" count="0" />
+		<drop event="Fall" name="keystoneSteel" count="0" prob="1" stick_chance="0" />
+        <drop event="Destroy" name="keystoneRock" count="1" />
+		<drop event="Fall" name="keystoneRock" count="1" prob="1" stick_chance="0" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 	</block>
 	<block id="74" name="keystoneIron">
@@ -14090,6 +14094,10 @@ kind of free
 			<property name="forgedIron" value="10" />
 		</property>
 		<property name="CraftingSkillGroup" value="Journeyman Craftsman" />
+        <drop event="Destroy" name="keystoneSteel" count="0" />
+		<drop event="Fall" name="keystoneSteel" count="0" prob="1" stick_chance="0" />
+        <drop event="Destroy" name="keystoneIron" count="1" />
+		<drop event="Fall" name="keystoneIron" count="1" prob="1" stick_chance="0" />
 	</block>
 	<!--stone set1-->
 	<block id="75" name="UpGradedBrick">
@@ -14683,7 +14691,7 @@ kind of free
 		<drop event="Destroy" name="Stove" count="1" tool_category="Dolly" />
 		<drop event="Destroy" name="scrapIron" count="3,8" />
 		<property name="Group" value="Food/Cooking" />
-		<property name="DescriptionKey" value="stoveDesc" />
+		<property name="DescriptionKey" value="workStoveDesc" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
@@ -14972,6 +14980,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#batteries?BatteryBlock" />
 		<property name="CustomIcon" value="ui_game_symbol_MortarAndPestle" />
+        <property name="DescriptionKey" value="workBatteryPackDesc" />
 		<property name="HeatMapStrength" value="1" />
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
@@ -16241,6 +16250,7 @@ kind of free
 	<!--JZMOD GENERATORS-->
 	<block id="1710" name="dieselGen">
 		<property name="Class" value="Generator, Mods" />
+        <property name="CustomIcon" value="ui_game_symbol_dieselGen" />
 		<property name="FuelName" value="gasCan,1" />
         <property name="TickRate" value="1" />
 		<property name="FuelRate" value="60" />
@@ -16259,11 +16269,15 @@ kind of free
 		<property class="RepairItems">
 			<property name="scrapLead" value="20" />
 		</property>
-		<drop event="Destroy" count="0" />
 		<property name="Group" value="Decor" />
 		<property name="debug" value="false" />
         <property name="DescriptionKey" value="dieselGenDesc" />
         <property name="CraftingSkillGroup" value="Journeyman Crafting" />
+        <drop event="Destroy" count="0" />
+        <drop event="Harvest" name="scrapIron" count="20" prob="1" />
+        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="DieselGen" count="1" prob="1" tool_category="Dolly" />
+        <drop event="Destroy" name="dieselGen" count="1" prob="1" tool_category="Disassemble" />
     </block>
 	<block id="1711" name="bigGenerator">
 		<property name="Extends" value="dieselGen" />
@@ -16274,12 +16288,19 @@ kind of free
 		<property class="RepairItems">
 			<property name="scrapLead" value="40" />
 		</property>
+        <property name="CustomIcon" value="ui_game_symbol_bigGenerator" />
         <property name="DescriptionKey" value="bigGeneratorDesc" />
         <property name="CraftingSkillGroup" value="Master Craftsman" />
+        <drop event="Destroy" count="0" />
+        <drop event="Harvest" name="scrapIron" count="50" prob="1" />
+        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="BigGenerator" count="1" prob="1" tool_category="Dolly" />
+        <drop event="Destroy" name="bigGenerator" count="1" prob="1" tool_category="Disassemble" />
     </block>
 	<block id="1712" name="smallGenerator">
 		<property name="Extends" value="dieselGen" />
         <property name="Model" value="#smallgenerator?smallGeneratorPrefab" />
+        <property name="CustomIcon" value="smallGenerator" />
 		<property name="FuelRate" value="50" />
 		<property name="DecayTime" value="120" />
         <property name="MaxDamage" value="800" />
@@ -16287,8 +16308,12 @@ kind of free
 			<property name="scrapLead" value="10" />
 		</property>
 		<property name="CanPickup" value="true" />
-		<drop event="Destroy" count="0" />
-        <property name="DescriptionKey" value="smallGeneratorDesc" />
+		<property name="DescriptionKey" value="smallGeneratorDesc" />
+        <drop event="Destroy" count="0" />
+        <drop event="Harvest" name="scrapIron" count="10" prob="1" />
+        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="SmallGenerator" count="1" prob="1" tool_category="Dolly" />
+        <drop event="Destroy" name="smallGenerator" count="1" prob="1" tool_category="Disassemble" />
     </block>
 	<block id="1718" name="powerCeilingLight01">
 		<property name="Extends" value="ceilingLight01" />
@@ -16500,7 +16525,8 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Tag" value="Door" />
 		<property name="Model" value="#GarageDoorNew1?GarageDoorNew1Prefab" />
-		<property name="OpenSound" value="open_garagedoor" />
+		<property name="CustomIcon" value="ui_game_symbol_garageDoorRolling" />
+        <property name="OpenSound" value="open_garagedoor" />
 		<property name="CloseSound" value="open_garagedoor" />
 		<drop event="Harvest" name="scrapIron" count="25" />
 		<drop event="Destroy" name="scrapIron" count="10" prob="1" />
@@ -16941,7 +16967,7 @@ kind of free
 		<property name="Material" value="metal" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#irSpike?irSpikeR" />
-		<property name="CustomIcon" value="stone" />
+		<property name="CustomIcon" value="ui_game_symbol_SteelSpikes" />
 		<property class="RepairItems">
 			<property name="shortSteelPipe" value="15" />
 		</property>

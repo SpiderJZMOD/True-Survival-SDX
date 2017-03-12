@@ -8873,7 +8873,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/Metal/IronBucket" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="34" />
-		<property name="Weight" value="100" />
+		<property name="Weight" value="50" />
 		<property name="Stacknumber" value="1" />
 		<property name="EconomicValue" value="84" />
 		<property class="Action0">
@@ -12442,7 +12442,7 @@ Mesh files no longer used:
 	</item>
 	<!--JZMOD TOOLS -->
 	<item id="1670" name="screwdriver">
-		<property name="CustomIcon" value="screwdriver" />
+		<property name="CustomIcon" value="ui_game_symbol_screwdriver" />
 		<property name="Meshfile" value="#screwdriver?screwdriver" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="36" />
@@ -17087,6 +17087,27 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="ui_game_symbol_Stove" />
 		<property class="Action1">
 			<property name="Blockname" value="workStove" />
+		</property>
+	</item>
+    <item id="3001" name="DieselGen">
+		<property name="Extends" value="forge" />
+		<property name="CustomIcon" value="ui_game_symbol_dieselGen" />
+		<property class="Action1">
+			<property name="Blockname" value="dieselGen" />
+		</property>
+	</item>
+    <item id="3002" name="BigGenerator">
+		<property name="Extends" value="forge" />
+		<property name="CustomIcon" value="smallGenerator" />
+		<property class="Action1">
+			<property name="Blockname" value="bigGenerator" />
+		</property>
+	</item>
+    <item id="3003" name="SmallGenerator">
+		<property name="Extends" value="forge" />
+		<property name="CustomIcon" value="smallGenerator" />
+		<property class="Action1">
+			<property name="Blockname" value="smallGenerator" />
 		</property>
 	</item>
 	<item id="2098" name="scorpionBag">
