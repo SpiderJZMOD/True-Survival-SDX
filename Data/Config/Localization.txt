@@ -4428,7 +4428,7 @@ BulletPressDesc,,,,"A refurbished military bullet press capable of mass producin
 workDryingRack,,,,"Leather Drying Rack",,,,
 DryingRackDesc,,,,"A Drying table that can be used indoors to dry leather.",,,,
 workSeedNursery,,,,"Seed Nursery",,,,
-SeedNurseryDesc,,,,"A nice dry place to harvest seeds from common plants and make fertilizer. You do not gain any XP in this Workstation.",,,,
+SeedNurseryDesc,,,,"A nice dry place to harvest seeds from common plants and make fertilizer. You will need a generator and power lines to place and use this. You do not gain any XP in this Workstation.",,,,
 workArmorTable,,,,"Armor Table",,,,
 ArmorTableDesc,,,,"A good work bench for crafting armor, clothes and building fabrics.",,,,
 workResearchDesk,,,,"Research Desk",,,,

@@ -2969,18 +2969,21 @@
 		<property name="IsEntityAnimal" value="true" />
 		<property name="PhysicsBody" value="Stag" />
 		<property name="HandItem" value="SpiderBite" />
-		<!-- AI properties -->
+        <!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<property name="AITask-3" value="Territorial" param1="10" />
 		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="20" />
-		<property name="AITask-5" value="ApproachSpot" />
-		<property name="AITask-6" value="Wander" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" param2="20" />
+		<property name="AITask-6" value="ApproachSpot" />
+		<property name="AITask-7" value="Wander" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
-		<property name="AITarget-2" value="BlockingTargetTask" />
-		<property name="AITarget-3" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
-		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
-		<property name="CanClimbLadders" value="false" />
+		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityNPC" />
+		<property name="AITarget-3" value="BlockingTargetTask" />
+		<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC" />
+        <property name="CanClimbLadders" value="true" />
 		<!-- General entity properties -->
 		<property name="WanderSpeed" value="0.5" />
 		<property name="ApproachSpeed" value="1.1" />
@@ -3037,6 +3040,23 @@
 		<property name="Mesh" value="#RadSpider?RadSpider" />
 		<property name="MeshScale" value="0.5,0.5" />
 		<property name="HandItem" value="RadSpiderBite" />
+        <!-- JZMOD Harvest For Beginner -->
+		<drop event="Harvest" name="rawMeat" count="2" />
+		<drop event="Harvest" name="VenomSack" count="1" />
+		<drop event="Harvest" name="BrainMatter" count="1" />
+		<!--JZMOD Hunter-->
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="VenomSack" tool_category="Hunter" count="1" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="1" />
+		<!--JZMOD Butcher-->
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="VenomSack" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="2" />
+		<!--JZMOD Destroy-->
+		<drop event="Destroy" name="femur" count="1" />
 	</entity_class>
 	<entity_class name="Bobcat">
 		<!-- Mesh and class properties -->

@@ -2271,8 +2271,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="FiberRope" count="5" />
 		<ingredient name="dirtFragment" count="5" />
 	</recipe>
-	<recipe name="cableTest" count="1" craft_area="workMetalWorkBench" craft_time="5" craft_exp_gain="5">
-		<ingredient name="scrapCable" count="5" />
+	<recipe name="cableTest" count="1" craft_area="workworkbench" craft_time="5" craft_exp_gain="5">
+		<ingredient name="scrapCable" count="3" />
 		<ingredient name="ductTape" count="1" />
 	</recipe>
 	<recipe name="cableTestTop" count="1" craft_time="2" craft_exp_gain="0">

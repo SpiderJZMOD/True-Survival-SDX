@@ -708,7 +708,7 @@ then add recipes for those white/red/green metals
 		<property name="RotationAllowed" value="pivotOnFloor" />
 		<property name="Class" value="MortePlantGrowing, Mods" />
 		<property name="PlantGrowing.Next" value="cropsHarvestableMaster" />
-		<property name="PlantGrowing.GrowthRate" value="2" />
+		<property name="PlantGrowing.GrowthRate" value="300" />
 		<property name="PlantGrowing.FertileLevel" value="5" />
 		<property name="PlantGrowing.IsRandom" value="false" />
 		<drop event="Destroy" count="0" />
@@ -3740,8 +3740,8 @@ then add recipes for those white/red/green metals
 		<property name="Model" value="OutdoorDecor/scrapmetalblock" param1="main_mesh" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Harvest" name="scrapIron" count="10" />
-		<drop event="Destroy" name="scrapIron" count="5" />
+		<drop event="Harvest" name="scrapIron" count="30" />
+		<drop event="Destroy" name="scrapIron" count="20" />
 	</block>
 	<block id="418" name="woodLogSpike1">
 		<!-- log spike 1 -->
@@ -12095,7 +12095,8 @@ kind of free
 		<drop event="Harvest" name="cloth" count="5" />
 		<drop event="Harvest" name="spring" count="5" tool_category="Disassemble" />
 		<drop event="Harvest" name="FanBelt" count="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapIron" count="15" tool_category="Disassemble" />
+		<drop event="Destroy" name="hubcap" count="4" tool_category="Disassemble" />
+        <drop event="Harvest" name="scrapIron" count="15" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="2" prob=".2" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
@@ -15406,8 +15407,8 @@ kind of free
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="CustomIcon" value="scrapMetalPile" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
-		<drop event="Harvest" name="scrapSteel" count="10" />
-		<drop event="Destroy" name="scrapSteel" count="5" />
+		<drop event="Harvest" name="scrapSteel" count="30" />
+		<drop event="Destroy" name="scrapSteel" count="20" />
 	</block>
 	<block id="1486" name="BikeLoot">
 		<property name="Class" value="Loot" />
@@ -16399,9 +16400,10 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#cable?cableTest" />
 		<property name="ShapeMinBB" value="0.3,0,0.3" />
+        <drop event="Destroy" name="cableTest" count="1" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,10" prob="1" />
         <property name="DescriptionKey" value="powerlineDesc" />
-        <property name="CraftingSkillGroup" value="Master Craftsman" />
+        <property name="CraftingSkillGroup" value="Engineering" />
     </block>
 	<block id="1728" name="cableTestTop">
 		<property name="Extends" value="cableTest" />

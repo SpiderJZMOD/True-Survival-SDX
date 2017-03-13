@@ -205,25 +205,25 @@
 				<multiply skill_level="70,100" value="1.23,1.28" />
 			</effect>
 		</action_skill>
-		<perk name="kaBar" icon="kaBar" description_key="Learn to craft a kaBar Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a small strong knife thats good for fighting." title_key="kaBar Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+		<perk name="kaBar" icon="kaBar" description_key="Learn to craft a kaBar Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a small strong knife thats good for fighting." title_key="kaBar Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="10" />
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
 			<recipe name="kaBar" unlock_level="1" />
 		</perk>
-		<perk name="Machete" icon="machete" description_key="Learn to craft a Machete on the anvile using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+		<perk name="Machete" icon="machete" description_key="Learn to craft a Machete on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="25" />
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
 			<recipe name="machete" unlock_level="1" />
 		</perk>
-		<perk name="The Shark" icon="TheShark" description_key="Learn to craft this awesome knife TheShark on the anvile using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a big strong knife thats best at fighting." title_key="The Shark" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="health">
+		<perk name="The Shark" icon="TheShark" description_key="Learn to craft this awesome knife TheShark on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a big strong knife thats best at fighting." title_key="The Shark" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="health">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="50" />
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
 			<recipe name="TheShark" unlock_level="1" />
 		</perk>
-        <perk name="Katana" icon="katanamichonne" description_key="Learn to craft a mighty Katana on the anvile using a claw hammer and learn how to craft the Sword Blade in the Blast Furnace that you need to craft it. This is a lomg Sharp sword thats best at cutting things off." title_key="Katana" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="health">
+        <perk name="Katana" icon="katanamichonne" description_key="Learn to craft a mighty Katana on the anvil using a claw hammer and learn how to craft the Sword Blade in the Blast Furnace that you need to craft it. This is a lomg Sharp sword thats best at cutting things off." title_key="Katana" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="health">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<recipe name="SwordBlade" unlock_level="1" />
@@ -479,7 +479,7 @@
 			<recipe name="bellows" unlock_level="1" />
 		</perk>
 		<perk name="Anvil" icon="Anvil" description_key="Learn to craft an anvil in a forge. The Anvil can be used as a workstation or as a tool in a workstation. Use a Hand Dolly to pick it back up and re install it." title_key="Anvil" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
-			<requirement perk_level="1" required_player_level="10" />
+			<requirement perk_level="1" required_player_level="5" />
 			<recipe name="workAnvil" unlock_level="1" />
 		</perk>
 		<perk name="Forged Iron" icon="forgedIron" description_key="Learn to craft a small stone Forge. Use it to smelt iron, brass, lead, glass, stone and clay. The Forge has 3 tools - anvil, calipers and tool And Die Set." title_key="Forged Iron" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
@@ -1272,7 +1272,6 @@
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="25" />
 			<requirement perk_level="1" required_player_level="25" />
 			<recipe name="dieselGen" unlock_level="1" />
-            <recipe name="cableTest" unlock_level="1" />
         </perk>
 		<perk name="Iron Trussing" icon="MetalTrussing" description_key="Learn to craft Iron Trussing in the forge using a anvil" title_key="Iron Trussing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="45" />
@@ -1544,10 +1543,10 @@
 		</perk>
 		<perk name="Treasure Hunter" icon="treasure" description_key="treasureHunterDesc" title_key="treasureHunter" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="scavenging">
 			<effect name="TreasureRadius">
-				<setvalue perk_level="0" value="10" />
-				<setvalue perk_level="1" value="8" />
-				<setvalue perk_level="2" value="6" />
-				<setvalue perk_level="3" value="4" />
+				<setvalue perk_level="0" value="9" />
+				<setvalue perk_level="1" value="5" />
+				<setvalue perk_level="2" value="3" />
+				<setvalue perk_level="3" value="1" />
 			</effect>
 		</perk>
 		<perk name="Chemistry Station" icon="AloeCream" description_key="Learn to craft achemistry Station on the wood working bench using a claw hammer. Use it to craft complex chemical and medical items. The Chemistry Station has 2 tools - Mortar And Pestle and beaker." title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
@@ -1700,19 +1699,19 @@
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="25" />
 			<recipe name="glue" unlock_level="1" />
 		</perk>
-		<perk name="Garage Door" icon="lightbulb" description_key="Learn to craft a Garage Door on the metal work bench Bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
+		<perk name="Garage Door" icon="lightbulb" description_key="Learn to craft a Garage Door on the metal work bench" title_key="Garage Door" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="35" />
 			<recipe name="garageDoorMetal_v1" unlock_level="1" />
 		</perk>
-		<perk name="Metal Draw Bridge" icon="lightbulb" description_key="Learn to craft more a Draw Bridge on the metal work bench Bench using a wrench" title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="crafting">
+		<perk name="Metal Draw Bridge" icon="lightbulb" description_key="Learn to craft a Draw Bridge on the metal working bench using a wrench" title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="crafting">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="55" />
 			<recipe name="metalReinforcedWoodDrawBridge" unlock_level="1" />
 		</perk>
-		<perk name="Large Lift" icon="lightbulb" description_key="Learn to craft more a Draw Bridge on the metal work bench Bench" title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="crafting">
+		<perk name="Large Lift" icon="lightbulb" description_key="Learn to craft a Large lift on the metal working bench." title_key="DrawBridge" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="crafting">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="55" />
 			<recipe name="LargeLift" unlock_level="1" />
 		</perk>
-		<perk name="Electric Lights" icon="lightbulb" description_key="Learn to craft working electric lights on the Metal Work Bench" title_key="Electric Lights" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="crafting">
+		<perk name="Electric Lights" icon="lightbulb" description_key="Learn to craft working electric lights on the Metal Working Bench" title_key="Electric Lights" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="crafting">
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
 			<recipe name="porchLight01Switch" unlock_level="1" />
 			<recipe name="ceilingLight02Switch" unlock_level="1" />
@@ -1728,7 +1727,7 @@
 			<recipe name="woodLogSpike1" unlock_level="1" />
 		</perk>
 		<perk name="Steel Spikes" icon="SteelSpikes" description_key="Learn to craft Steel Spikes on the metal working bench" title_key="Steel Spikes" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="5" />
+			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="SteelSpikes" unlock_level="1" />
 		</perk>
 		<perk name="Barbed Fence" icon="barbedFence" description_key="Learn to craft Barbed Fence" title_key="Barbed Fence" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="tools">
@@ -1760,7 +1759,7 @@
 			<recipe name="RazorWire" unlock_level="1" />
 			<recipe name="RazorWireOffSet" unlock_level="1" />
 		</perk>
-		<perk name="Farming" icon="SeedNursery" description_key="Learn to craft a seed nursery that will allow you to cultivate basic seeds from plants" title_key="Seed Nursery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="health">
+		<perk name="Farming" icon="SeedNursery" description_key="Learn to craft a seed nursery that will allow you to cultivate basic seeds from plants" title_key="Seed Nursery" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="40" group="health">
 			<recipe name="workSeedNursery" unlock_level="1" />
 			<recipe name="hoeIron" unlock_level="1" />
 			<recipe name="cornSeed" unlock_level="1" />
@@ -1855,7 +1854,7 @@
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
 			<recipe name="huntingKnife" unlock_level="1" />
 		</perk>
-		<perk name="Field Knife" icon="FieldKnife" description_key="Learn to craft a Field Knife on the anvile using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a very sharpe knife that will harvest the most and best animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+		<perk name="Field Knife" icon="FieldKnife" description_key="Learn to craft a Field Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a very sharpe knife that will harvest the most and best animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
 			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="40" />
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
 			<recipe name="FieldKnife" unlock_level="1" />
