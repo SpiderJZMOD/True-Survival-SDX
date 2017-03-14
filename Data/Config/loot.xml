@@ -1214,7 +1214,7 @@
         <item name="bat" prob="0.04" />
 		<item name="GoodNight" prob="0.01" />
 		<item name="TPXBat" prob="0.01" />
-        <item name="smallGenerator" count="0,1" prob="0.09" />
+        <item name="smallGenerator" count="1" prob="0.05" />
 	</lootgroup>
 	<lootgroup name="airdropfood" count="all">
 		<item group="cupboard" count="1,3" />

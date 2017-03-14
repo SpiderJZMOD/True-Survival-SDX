@@ -11974,6 +11974,7 @@ Mesh files no longer used:
 			<property name="DismembermentBonus" value="0.001,0.005" />
 		</property>
         <property name="ActionSkillGroup" value="Blade Weapons" />
+        <property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</item>
 	<item id="1656" name="axe02">
 		<property name="Meshfile" value="#axe1?AXE2" />

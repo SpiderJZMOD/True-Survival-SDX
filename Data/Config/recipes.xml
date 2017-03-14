@@ -4080,7 +4080,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="stick" count="4" />
 	</recipe>
 	<recipe name="Tomahawk" count="1" craft_area="workforge" craft_tool="workAnvil" material_based="true" craft_time="30" craft_exp_gain="25">
-		<ingredient name="unit_iron" count="80" />
+		<ingredient name="unit_iron" count="150" />
 		<ingredient name="unit_clay" count="20" />
 	</recipe>
 	<recipe name="TomatoSeed" count="2" craft_area="workSeedNursery" craft_time="60" craft_exp_gain="0">
