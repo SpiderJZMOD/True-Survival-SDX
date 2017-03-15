@@ -212,7 +212,7 @@ challenge_Slayer_offer,,Challenge Info,,"Lay waste to the hordes and prove that 
 challenge_King,,Challenge Info,,"Become King of the Wastelands"
 challenge_King_subtitle,,Challenge Info,,"Become King of the Wastelands"
 challenge_King_offer,,Challenge Info,,"You have become death destroyer of worlds. Lay waste to all before you, let fall away the ways of the old world and impose your will upon all you see. It is good to be King",,
-tutorialTipQuest01_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,Started Basics of Survival,,,,
+tutorialTipQuest01_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,Welcome to True Survival,,,,
 tutorialTipQuest02_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,True Survival Mod Notes,,,,
 skillPointTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,True Survival Mod Notes,,,,
 Tip_keyword,,Keywords,KeyTrunk FrNone GrNone KgNone SpNone,Tip,,,,
@@ -236,8 +236,8 @@ chemistryStationTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"The Chemist
 chemistryStationTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,Chemistry Station,,,,
 alternateAmmoTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,Some weapons have more than one ammo type. Hold the reload action to see and load the possible ammo types for a weapon.,,,,
 alternateAmmoTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,Alternate Ammo,,,,
-augmentGunsTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"Guns can be augmented with Flashlights once you have read the gun recipe. Build them by selecting the gun in your inventory, click the “Assemble” action and drag the flashlight into the slot. These recipes will not appear in the Crafting menus.",,,,
-augmentGunsTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,Augment Guns,,,,
+augmentGunsTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"Loot Progression\n\nGood loot is broken down in 3 tiers.\n\n1st tier is found in any house hold loot container.\n\n2nd tier is found in iron wall, desk and gun safes.\n\n3rd tier is the best loot and it is found in steel ammunition crates and steel military vehicles.\n\nSteel Ammunition crates must be broken open with steel tools and will reset to a locked container after some time. If you hear a chime when hitting it that means it has not reset with loot yet.",,,,
+augmentGunsTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"True Survival Loot Progression Note",,,,
 farmingTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,True Survival Farming Note\n\n1)Plants need water near them and will consume it when they grow.\n\n2)Crops must be protected from getting trampled by animals and zombies\n\n3)To craft seeds purchase the farming perk and build a seed nursery. You will need a generator to power the seed nursery.,,,,
 farmingTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,True Survival Farming Note,,,,
 firstAidTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"True Survival Electricity Note\n\n1)Many Workstations, Lights and traps now require power to use. A block requiring power can only be placed next to a power line that is run from a generator. The Block will only become active and or usable once the generator is supplied with gas and started.\n\n2)Power lines can only deliver power up to 10 blocks away before needing a Fuse box or Power Switch, after that power lines can again be extended 10 blocks, repeating these steps as you go.\n\n3)Generators will degrade as used and need repairs They will also make noise that can attract nearby zombies.",,,,

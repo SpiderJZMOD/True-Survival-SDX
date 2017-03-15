@@ -2198,8 +2198,6 @@ Mesh files no longer used:
 			<property name="Horde_meter_rate" value=".275" />
 			<property name="Horde_meter_distance" value="20" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
-			<property name="Buff" value="headshotMelee5" />
-			<property name="Buff_chance" value="1" />
 			<property name="DamageBonus.head" value="4" />
 			<property name="DamageBonus.stone" value="15" />
 			<property name="DamageBonus.wood" value="1" />
@@ -2287,7 +2285,7 @@ Mesh files no longer used:
 		<property name="DropMeshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
 		<property name="HandMeshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
 		<property name="Material" value="wood" />
-		<property name="RepairTools" value="shortMetalPipe" />
+		<property name="RepairTools" value="scrapIron" />
 		<property name="HoldType" value="26" />
 		<property name="FuelValue" value="70" />
 		<property name="EconomicValue" value="220" />
@@ -6234,6 +6232,7 @@ Mesh files no longer used:
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="Medicine" />
+        <property name="PickupJournalEntry" value="gunAssemblyTip,firstAidTip,farmingTip,augmentGunsTip" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionExp" value="10" />
     </item>
@@ -8107,13 +8106,12 @@ Mesh files no longer used:
 		<property name="Material" value="metal" />
 		<property name="Weight" value="1" />
 		<property name="Stacknumber" value="5000" />
-		<!-- STK resource -->
 		<property name="EconomicValue" value="10" />
 		<property name="EconomicBundleSize" value="10" />
 		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="Group" value="Resources" />
 		<property name="RepairTime" value="0.5" />
-		<property name="RepairAmount" value="20" />
+		<property name="RepairAmount" value="50" />
 		<property name="CraftingIngredientTime" value="0.2" />
 	</item>
 	<item id="1306" name="forgedIron">
@@ -8123,7 +8121,6 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="EconomicValue" value="12" />
 		<property name="Stacknumber" value="500" />
-		<!-- STK resource -->
         <property name="Weight" value="40" />
 		<property name="CraftingIngredientExp" value="10" />
 		<property name="CraftingIngredientTime" value="10" />
@@ -8137,11 +8134,10 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/Metal/shortMetalPipe" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="16" />
-		<property name="Stacknumber" value="500" />
-		<!-- STK resource -->
+		<property name="Stacknumber" value="5000" />
         <property name="Weight" value="20" />
 		<property name="RepairTime" value="5" />
-		<property name="RepairAmount" value="100" />
+		<property name="RepairAmount" value="200" />
 		<property name="Group" value="Resources" />
 		<property name="MeltTimePerUnit" value="0.5" />
 		<property name="EconomicValue" value="12" />
@@ -8901,6 +8897,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="34" />
+        <property name="Weight" value="50" />
 		<property name="Stacknumber" value="1" />
 		<property name="EconomicValue" value="88" />
 		<property class="Action1">
@@ -8917,8 +8914,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/hubcap" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="23" />
-		<property name="Stacknumber" value="250" />
-		<!-- STK loot -->
+		<property name="Stacknumber" value="5000" />
 		<property name="Weight" value="10" />
 		<property class="Action1">
 			<!-- UseAction -->
@@ -8954,8 +8950,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/candy_tinPrefab" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="21" />
-		<property name="Stacknumber" value="250" />
-		<!-- STK loot -->
+		<property name="Stacknumber" value="5000" />
 		<property name="Weight" value="5" />
 		<property name="EconomicValue" value="5" />
 		<property name="Group" value="Decor/Miscellaneous" />
@@ -8970,8 +8965,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/door_knob" />
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="21" />
-		<property name="Stacknumber" value="250" />
-		<!-- STK loot -->
+		<property name="Stacknumber" value="5000" />
 		<property name="Weight" value="20" />
 		<property name="EconomicValue" value="40" />
 		<property name="Group" value="Resources" />
@@ -8981,8 +8975,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Crafting/candlestick" />
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="2" />
-		<property name="Stacknumber" value="250" />
-		<!-- STK loot -->
+		<property name="Stacknumber" value="5000" />
 		<property name="Weight" value="5" />
 		<property name="EconomicValue" value="120" />
 		<property name="Group" value="Resources" />
@@ -13981,6 +13974,9 @@ Mesh files no longer used:
 	<item id="1834" name="RedHotPipe">
 		<property name="Extends" value="RedHotSteelPipe" />
 		<property name="Material" value="metal" />
+        <property class="Action1">
+            <property name="Create_item" value="shortMetalPipe" />
+		</property>
 	</item>
 	<item id="1835" name="AntiVenom">
 		<property name="Extends" value="SuterKit" />
@@ -15839,7 +15835,7 @@ Mesh files no longer used:
 		<property name="Material" value="Msteel" />
 		<property name="Stacknumber" value="1000" />
 		<property name="RepairTime" value="5" />
-		<property name="RepairAmount" value="100" />
+		<property name="RepairAmount" value="200" />
 		<property name="HoldType" value="16" />
 		<property name="Weight" value="20" />
 		<property name="Group" value="Resources" />
@@ -15963,7 +15959,7 @@ Mesh files no longer used:
 	<item id="1986" name="Plank">
 		<property name="Extends" value="itemMaster" />
 		<property name="Stacknumber" value="5000" />
-		<property name="FuelValue" value="5" />
+		<property name="FuelValue" value="3" />
 		<property name="CustomIcon" value="ui_game_symbol_Plank" />
 		<property name="DescriptionKey" value="PlankDesc" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
