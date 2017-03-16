@@ -440,7 +440,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="femur" count="1" />
 	</recipe>
 	<recipe name="bottledWater" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="30" craft_exp_gain="0">
-		<ingredient name="snowBall" count="1" />
+		<ingredient name="snowBall" count="4" />
 		<ingredient name="emptyJar" count="1" />
 	</recipe>
 	<recipe name="bottledWater" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="30" craft_exp_gain="0">
@@ -1926,14 +1926,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="glue" count="10" />
 		<ingredient name="mechanicalParts" count="20" />
 		<ingredient name="scrapCable" count="5" />
-		<ingredient name="electronicParts" count="5" />
-		<ingredient name="electricParts" count="2" />
+		<ingredient name="electronicParts" count="10" />
+		<ingredient name="electricParts" count="5" />
 	</recipe>
-    <recipe name="wrench" count="1" craft_area="workforge" craft_tool="workAnvil" material_based="true" craft_time="30" craft_exp_gain="10">
-		<ingredient name="unit_clay" count="5" />
-		<ingredient name="unit_iron" count="100" />
-	</recipe>
-	<recipe name="wroughtIronFenceSheet" count="1" craft_area="workforge" craft_tool="workAnvil" material_based="true" craft_time="5" craft_exp_gain="5">
+    <recipe name="wroughtIronFenceSheet" count="1" craft_area="workforge" craft_tool="workAnvil" material_based="true" craft_time="5" craft_exp_gain="5">
 		<ingredient name="unit_iron" count="15" />
 		<ingredient name="unit_clay" count="1" />
 	</recipe>
@@ -3025,7 +3021,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="IronJavelin" count="1" craft_time="30" craft_exp_gain="15">
 		<ingredient name="SpearHead" count="1" />
-		<ingredient name="Lashing" count="1" />
+		<ingredient name="FiberRope" count="1" />
 		<ingredient name="stick" count="5" />
 	</recipe>
 	<recipe name="IronPickaxeHead" count="1" craft_area="workforge" craft_tool="workAnvil" material_based="true" craft_time="30" craft_exp_gain="10">
@@ -3129,6 +3125,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="stick" count="3" />
 		<ingredient name="ductTape" count="1" />
 	</recipe>
+    <!--
+    <recipe name="LockPickGun" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="10" craft_exp_gain="5">
+		<ingredient name="forgedSteel" count="1" />
+		<ingredient name="stick" count="3" />
+		<ingredient name="ductTape" count="1" />
+	</recipe>-->
 	<recipe name="LSAT" count="1" craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="MachineGun_stock" count="1" />
@@ -3849,11 +3851,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="10" />
 		<ingredient name="FiberRope" count="4" />
 	</recipe>
-	<recipe name="SteakKnife" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
-		<ingredient name="scrapIron" count="20" />
-		<ingredient name="stick" count="3" />
-		<ingredient name="ductTape" count="1" />
-	</recipe>
 	<recipe name="SteelBoots" count="1" craft_area="workArmorTable" craft_tool="Wielder" craft_time="120" craft_exp_gain="100">
 		<ingredient name="forgedSteel" count="8" />
 		<ingredient name="FiberRope" count="6" />
@@ -4080,7 +4077,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="stick" count="4" />
 	</recipe>
 	<recipe name="Tomahawk" count="1" craft_area="workforge" craft_tool="workAnvil" material_based="true" craft_time="30" craft_exp_gain="25">
-		<ingredient name="unit_iron" count="150" />
+		<ingredient name="unit_iron" count="200" />
 		<ingredient name="unit_clay" count="20" />
 	</recipe>
 	<recipe name="TomatoSeed" count="2" craft_area="workSeedNursery" craft_time="60" craft_exp_gain="0">
@@ -4384,6 +4381,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="wrench" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="10">
 		<ingredient name="forgedIron" count="5" />
 		<ingredient name="MeltedRubber" count="1" />
+        <ingredient name="mechanicalParts" count="2" />
 	</recipe>
 	<recipe name="YuccaGlazedMeat" count="1" craft_area="workcampfire" craft_tool="FryingPan" craft_time="5" craft_exp_gain="0">
 		<ingredient name="rawMeat" count="1" />
@@ -4394,6 +4392,62 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="foodHoney" count="1" />
 		<ingredient name="foodYuccaFruit" count="1" />
 		<ingredient name="rawMeat" count="1" />
+	</recipe>
+    <recipe name="NPCPistol" count="1" craft_area="notuse">
+		<ingredient name="flashlight02" count="0" />
+		<ingredient name="partsPistol_parts" count="1" />
+		<ingredient name="partsPistol_barrel" count="1" />
+		<ingredient name="partsPistol_receiver" count="1" />
+		<ingredient name="partsPistol_grip" count="1" />
+	</recipe>
+    <recipe name="NPC44Magnum" count="1" craft_area="notuse">
+		<ingredient name="flashlight02" count="0" />
+		<ingredient name="partsPistol_parts" count="1" />
+		<ingredient name="partsPistol_barrel" count="1" />
+		<ingredient name="partsPistol_receiver" count="1" />
+		<ingredient name="partsPistol_grip" count="1" />
+	</recipe>
+    <recipe name="NPCSawedOffPumpShotgun" count="1" craft_area="notuse">
+		<ingredient name="flashlight02" count="0" />
+		<ingredient name="partsPistol_parts" count="1" />
+		<ingredient name="partsPistol_barrel" count="1" />
+		<ingredient name="partsPistol_receiver" count="1" />
+		<ingredient name="partsPistol_grip" count="1" />
+	</recipe>
+    <recipe name="NPCPumpShotgun" count="1" craft_area="notuse">
+		<ingredient name="flashlight02" count="0" />
+		<ingredient name="partsPistol_parts" count="1" />
+		<ingredient name="partsPistol_barrel" count="1" />
+		<ingredient name="partsPistol_receiver" count="1" />
+		<ingredient name="partsPistol_grip" count="1" />
+	</recipe>
+    <recipe name="NPCHuntingRifle" count="1" craft_area="notuse">
+		<ingredient name="flashlight02" count="0" />
+		<ingredient name="partsPistol_parts" count="1" />
+		<ingredient name="partsPistol_barrel" count="1" />
+		<ingredient name="partsPistol_receiver" count="1" />
+		<ingredient name="partsPistol_grip" count="1" />
+	</recipe>
+    <recipe name="NPCMP5" count="1" craft_area="notuse">
+		<ingredient name="flashlight02" count="0" />
+		<ingredient name="partsPistol_parts" count="1" />
+		<ingredient name="partsPistol_barrel" count="1" />
+		<ingredient name="partsPistol_receiver" count="1" />
+		<ingredient name="partsPistol_grip" count="1" />
+	</recipe>
+    <recipe name="NPCSniperRifle" count="1" craft_area="notuse">
+		<ingredient name="flashlight02" count="0" />
+		<ingredient name="partsPistol_parts" count="1" />
+		<ingredient name="partsPistol_barrel" count="1" />
+		<ingredient name="partsPistol_receiver" count="1" />
+		<ingredient name="partsPistol_grip" count="1" />
+	</recipe>
+    <recipe name="NPCRocketLauncher" count="1" craft_area="notuse">
+		<ingredient name="flashlight02" count="0" />
+		<ingredient name="partsPistol_parts" count="1" />
+		<ingredient name="partsPistol_barrel" count="1" />
+		<ingredient name="partsPistol_receiver" count="1" />
+		<ingredient name="partsPistol_grip" count="1" />
 	</recipe>
 </recipes>
 <!-- To do (maybe / later)cookingGrill

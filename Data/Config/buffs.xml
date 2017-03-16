@@ -629,7 +629,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<buff id="Sedative" name_key="Sedative Shot" type="bleeding" duration="30" stack="extend" tooltip_key="Hit with a Sedative Shot" description_key="You have been shot with a sedative and are losing strength." icon="ui_game_symbol_death">
 		<modify id="0" stat="stamina" amount="-2" rate="1" />
 	</buff>
-	<buff id="Smoking" duration="180" name_key="Smoking" type="sickness" actions="increment(@wellness, -0.1, 180, 0, 0);attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every 3 min)" icon="cigarette">
+	<buff id="Smoking" duration="180" name_key="Smoking" type="sickness" stack="extend" actions="attach(ParticleEffects/p_breath, Origin/CameraNode, 0, firstperson)" tooltip_key="Ahh! Nothing better than a smoke" description_key="You are enjoying a smoke.(Wellness loss 0.1 every 3 min)" icon="cigarette">
 		<modify id="0" stat="stamina" amount="-1" rate="5" />
 		<modify id="1" stat="food" amount="1" rate="18" />
 	</buff>

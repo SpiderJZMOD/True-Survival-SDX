@@ -205,25 +205,30 @@
 				<multiply skill_level="70,100" value="1.23,1.28" />
 			</effect>
 		</action_skill>
-		<perk name="kaBar" icon="kaBar" description_key="Learn to craft a kaBar Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a small strong knife thats good for fighting." title_key="kaBar Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+		<perk name="kaBar" icon="kaBar" description_key="Learn to craft a kaBar Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a small strong knife thats good for fighting." title_key="kaBar Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="10" />
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
 			<recipe name="kaBar" unlock_level="1" />
 		</perk>
-		<perk name="Machete" icon="machete" description_key="Learn to craft a Machete on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="weapons">
+		<perk name="Machete" icon="machete" description_key="Learn to craft a Machete on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="25" />
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
 			<recipe name="machete" unlock_level="1" />
 		</perk>
-		<perk name="The Shark" icon="TheShark" description_key="Learn to craft this awesome knife TheShark on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a big strong knife thats best at fighting." title_key="The Shark" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="health">
+        <perk name="The Shark" icon="TheShark" description_key="Learn to craft this awesome knife TheShark on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a big strong knife thats best at fighting." title_key="The Shark" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="50" />
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
 			<recipe name="TheShark" unlock_level="1" />
 		</perk>
-        <perk name="Katana" icon="katanamichonne" description_key="Learn to craft a mighty Katana on the anvil using a claw hammer and learn how to craft the Sword Blade in the Blast Furnace that you need to craft it. This is a lomg Sharp sword thats best at cutting things off." title_key="Katana" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="health">
+		<perk name="Tomahawk" icon="Tomahawk" description_key="Learn to craft a Tomahawk in the forge with the anvil. This is a big sharpe axe thats best at fighting." title_key="Tomahawk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="weapons">
+			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
+			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="65" />
+			<recipe name="Tomahawk" unlock_level="1" />
+		</perk>
+        <perk name="Katana" icon="katanamichonne" description_key="Learn to craft a mighty Katana on the anvil using a claw hammer and learn how to craft the Sword Blade in the Blast Furnace that you need to craft it. This is a lomg Sharp sword thats best at cutting things off." title_key="Katana" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<recipe name="SwordBlade" unlock_level="1" />
@@ -571,7 +576,8 @@
 		</perk>
 		<perk name="Claw Hammer" icon="clawHammer" description_key="Learn to craft a hammer head in the forge and how to build and repair a claw hammer" title_key="Claw Hammer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="5" />
-			<recipe name="clawHammer" unlock_level="1" />
+			<recipe name="HammerHead" unlock_level="1" />
+            <recipe name="clawHammer" unlock_level="1" />
 		</perk>
 		<perk name="Screwdriver" icon="screwdriver" description_key="Learn to craft and repair a screwdriver" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
@@ -1131,7 +1137,7 @@
 			<recipe name="cobblestoneFramePillar50" unlock_level="1" />
 			<recipe name="cobblestoneFramePole" unlock_level="1" />
 		</perk>
-		<crafting_skill name="Journeyman Crafting" icon="Stone" description_key="Crafting intermediate items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group or by using the a Wrench." title_key="Journeyman Crafting" group="crafting" skill_point_cost_per_level="3">
+		<crafting_skill name="Journeyman Crafting" icon="Stone" description_key="Crafting intermediate items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group or by using a Wrench." title_key="Journeyman Crafting" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1769,7 +1775,7 @@
 			<recipe name="goldenrodSeed" unlock_level="1" />
 			<recipe name="yuccaSeed" unlock_level="1" />
 			<recipe name="ChrysanthemumSeed" unlock_level="1" />
-			<recipe name="TomatoSeed1" unlock_level="1" />
+			<recipe name="TomatoSeed" unlock_level="1" />
 		</perk>
 		<action_skill name="Hunting" icon="light_armor" description_key="Learn to craft better Hunting knifes to harvest more and better animal parts.Gain skill by harvesting dead animal carcasses with hunting and field knives" title_key="Hunting" skill_point_cost_per_level="1000" group="health">
 			<recipe name="fishingLure2" unlock_level="10" />
@@ -1989,6 +1995,7 @@
 		<perk name="Fisherman" icon="gunsmithing" description_key="These are the skills a Fisherman starts with. Collect 20 Profession pages to learn another profession" title_key="Fisherman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="SimplePole" unlock_level="1" />
 			<recipe name="FishingPole" unlock_level="1" />
+            <recipe name="hook" unlock_level="1" />
 			<recipe name="barge" unlock_level="1" />
 			<recipe name="bambooRaft" unlock_level="1" />
 			<recipe name="fishingLure1" unlock_level="1" />

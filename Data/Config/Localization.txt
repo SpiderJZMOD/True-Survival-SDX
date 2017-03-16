@@ -2390,7 +2390,7 @@ stoneShovelDesc,items,Tool,KgNone,"The stone shovel is a primitive tool useful f
 tazasStoneaxe,items,Tool,KgNone,Taza's Stone Axe,Hache de pierre de Taza,Tazas Steinaxt,,Hacha de piedra de Taza
 tazasStoneaxeDesc,items,Tool,KgNone,"Taza's stone axe is a rare, powerful, ancient Indian artifact. The Apache believed those who wielded it were invincible in battle.",La hache de pierre de Taza est un artefact indien rare et puissant. Les Apaches croyaient que ceux qui brandissaient cette arme devenaient invulnérables lors des batailles.,"Tazas Steinaxt ist ein seltenes und mächtiges Artefakt der Indianer. Die Apachen glaubten, dass der Träger dieser Axt im Kampf unbesiegbar ist.",,El hacha de piedra de Taza es un extraño y poderoso artefacto de los antiguos indios. Los apaches creían que aquel que la empuñase sería invencible en la batalla.
 wrench,items,Tool,KgNone,Wrench,Clé à molette,Schraubenschlüssel,,Llave inglesa
-wrenchDesc,items,Tool,KgNone,"Great for disassembling mechanical devices like cars, air conditioners and more. Can also be used to repair and upgrade walls.","Parfaite pour désassembler voitures, climatiseurs et autres. Sert également à réparer et améliorer les murs.","Ist toll, um mechanische Geräte wie Autos, Klimaanlagen usw. auseinanderzunehmen. Kann auch dazu benutzt werden, Mauern zu reparieren und aufzuwerten.",,"Perfecta para desarmar aparatos mecánicos como coches, aires acondicionados y mucho más. También se puede usar para reparar y mejorar paredes."
+wrenchDesc,items,Tool,KgNone,"Great for disassembling mechanical devices like cars, air conditioners and more. Can also be used to repair and upgrade walls. This tool gives Journyman Craft XP and is crafted on the Anvil with a Claw Hammer.","Parfaite pour désassembler voitures, climatiseurs et autres. Sert également à réparer et améliorer les murs.","Ist toll, um mechanische Geräte wie Autos, Klimaanlagen usw. auseinanderzunehmen. Kann auch dazu benutzt werden, Mauern zu reparieren und aufzuwerten.",,"Perfecta para desarmar aparatos mecánicos como coches, aires acondicionados y mucho más. También se puede usar para reparar y mejorar paredes."
 qt_claude,items,Treasure Map,KgNone,Claude's Treasure Map,La carte au trésor de Claude,Claudes Schatzkarte,,Mapa del tesoro de Claude
 qt_desc,items,Treasure Map,KgNone,A ragged old treasure map I found with some scribbling on it.,Une vieille carte au trésor ornée de gribouillages que j'ai trouvée.,"Eine alte, vergilbte Schatzkarte mit ein paar Kritzeleien, die ich gefunden habe.",,Un viejo mapa del tesoro arrugado y con garabatos que encontré por ahí.
 qt_jennifer,items,Treasure Map,KgNone,Jennifer's Treasure Map,La carte au trésor de Jennifer,Jennifers Schatzkarte,,Mapa del tesoro de Jennifer
@@ -4393,8 +4393,8 @@ CarbonArrowDesc,,,,"A powerful arrow. You will need a Compound bow to fire one o
 clubSteelSpikedDesc,,,,"Nothing beats in a Zombies head better.",,,,
 NightStickDesc,,,,"A strong club made by a cop that can break the targets leg with every hit.",,,,
 ShockStickDesc,,,,"A strong club made by an engineer that Shocks the target Stunning, hurting and lowering its wellness.",,,,
-IronSpearDesc,,,,"A sharp piece of metal on a long stick great for making Zombie-kababs. You can use this to throw the javelins.",,,,
-AtlatlsDesc,,,,"Use these as throwable Spears with the Iron Spear",,,,
+IronSpearDesc,,,,"A sharp piece of metal on a long stick great for making Zombie-kababs. With the Iron Spear in hand you can throw the iron javelins with the left mouse button.",,,,
+AtlatlsDesc,,,,"Use these as throwable Spears with the Iron Spear in hand",,,,
 smallEngineDesc,,,,"A mini bike engine that can be improved by exchanging out better parts.",,,,
 ExhaustDesc,,,,"The exhaust to a mini bike. With the right tools you can craft this.",,,,
 EngineBlockDesc,,,,"The engine block for a mini bike. With the right tools you can craft this.",,,,
@@ -4710,6 +4710,7 @@ workFermentationBarrel,,,,"Fermitation Barrel",,,,
 workFermentationBarrelDesc,,,,"Used to make fermented Mead or Beer. Crafted on the Anvil with a Claw Hammer.",,,,
 workStill,,,,"Still",,,,
 workStillDesc,,,,"A crude still perched above a fire. Used to make Grain alcohol. Craft it on the Wood Working Bench.",,,,
-
-
-
+WoodSpear,,,,"Wooden Spear",,,,
+WoodSpearDesc,,,,"A Sharp stick hardened in a fire. Good for puncturing rotten skulls but not very durable. With the wooden spear in hand you can throw the wooden javelins with the left mouse button.",,,,
+SmokingDesc,,,,"The worlds gone to shit and you might be dead tomorrow. No reason to quite now. Smoking reduces hunger by 10 over 3 min.",,,,
+xed,,,,"A powerful crossbolt. You will need a Carbon Crossbow to fire one of these. They are crafted on the metal working bench.",,,,

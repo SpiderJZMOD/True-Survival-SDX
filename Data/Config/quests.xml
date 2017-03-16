@@ -435,7 +435,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!--Farmer-->
 	<quest id="StartFarmer" name_key="challenge_Profession" subtitle_key="Farmers Quest" description_key="challenge_all_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_all_offer" difficulty="easy">
-		<reward type="Item" id="OldHoe" value="600" />
+		<reward type="Item" id="OldRifle" value="600" />
         <reward type="Quest" id="challenge_Farmer" />
 		<reward type="Quest" id="challenge_Farmer2" />
 		<reward type="Quest" id="challenge_Farmer3" />

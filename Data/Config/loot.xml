@@ -834,6 +834,7 @@
 		<item name="candleStick" prob="0.3" />
 		<item name="brokenGlass" prob="0.3" />
 		<item name="canUnlabeled" prob="0.1" />
+        <item name="hook" prob="0.2" />
 		<item name="gunPowder" count="1,3" prob="0.02" />
 		<item name="doorKnob" count="1" prob="0.3" />
 		<item name="oil" count="1,4" prob="0.5" />
@@ -1068,7 +1069,7 @@
 		<item group="BikeLoot" prob="0.5" />
 		<item name="HandDolly" prob="0.05" />
 		<item name="Wielder" prob="0.5" />
-        <item name="smallGenerator" prob="0.3" />
+        <item name="smallGenerator" prob="0.2" />
 		<item name="calipers" prob="0.1" />
 		<item name="toolAndDieSet" prob="0.05" />
 		<item name="lightBulb" prob="0.3"/>
@@ -1079,7 +1080,7 @@
 		<item name="LeatherNeedle" prob="0.3" />
 		<item name="padlock" prob="0.5" />
 		<item name="clawHammer" prob="0.08" quality="1,300" />
-		<item name="wrench" prob="0.08" quality="1,300" />
+		<item name="wrench" prob="0.05" quality="1,300" />
 		<item name="ScavengedParts" count="1,4" prob="0.5" />
 		<item group="rareTools" prob="0.4" />
 		<item group="nailgun+parts" prob="0.1" />
@@ -1088,7 +1089,8 @@
 		<!--JZMOD ADD MORE LOOT-->
 		<item name="chainsawSchematic" prob="0.01" />
 		<item name="augerSchematic" prob="0.01" />
-		<item name="wrench" prob="0.1" quality="1,300" />
+        <item name="clawHammer" prob="0.1" quality="1,300" />
+		<item name="wrench" prob="0.08" quality="1,300" />
 		<item name="CircularSaw" prob="0.3" />
         <item name="cableTest" count="10,25" prob="0.3" />
         <item group="workStations" count="1" prob="0.3" />
@@ -1211,10 +1213,10 @@
         <item name="OldRevolver" count="0,1" prob="0.01" />
         <item name="OldRifle" count="0,1" prob="0.01" />
         <item name="OldAxe" count="0,1" prob="0.02" />
-        <item name="bat" prob="0.04" />
-		<item name="GoodNight" prob="0.01" />
-		<item name="TPXBat" prob="0.01" />
-        <item name="smallGenerator" count="1" prob="0.05" />
+        <item name="bat" count="0,1" prob="0.01" />
+		<item name="GoodNight" count="0,1" prob="0.01" />
+		<item name="TPXBat" count="0,1" prob="0.01" />
+        <item name="smallGenerator" count="0,1" prob="0.01" />
 	</lootgroup>
 	<lootgroup name="airdropfood" count="all">
 		<item group="cupboard" count="1,3" />
@@ -1253,6 +1255,7 @@
 		<item name="bottledWater" />
 		<item name="KeystoneRock" />
 		<item name="painkillers" />
+        <item name="308mmBullet" count="19" />
 		<item name="Farmer" />
 		<item name="qc_Farmer" />
 		<item name="qc_King" />
@@ -1615,7 +1618,8 @@
 		<item group="cupboard" count="1,2" prob="0.3" />
 		<item name="coffeeBeans" count="1,4" prob="0.3" />
 		<item name="shortMetalPipe" count="1,2" prob="0.7" />
-		<item name="wrench" count="1" quality="1,300" prob="0.15" />
+        <item name="clawHammer" count="1" prob="0.15" quality="1,300" />
+		<item name="wrench" count="1" quality="1,300" prob="0.1" />
 		<item name="scrapLead" count="1" prob="0.5" />
 	</lootcontainer>
 	<!-- lootcontainer 9 backpack, place where people stash things, -->

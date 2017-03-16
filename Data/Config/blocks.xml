@@ -4597,12 +4597,12 @@ kind of free
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
 		<property name="CanPickup" value="true" />
 		<property class="RepairItems">
-			<property name="leather" value="5" />
+			<property name="leather" value="2" />
 			<property name="cottonPlant" value="10" />
 			<property name="mechanicalParts" value="2" />
 			<property name="forgedIron" value="3" />
 		</property>
-		<drop event="Harvest" name="leather" count="3" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="leather" count="2" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="mechanicalParts" count="1" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="mechanicalParts" count="1" prob=".4" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,15" />
@@ -12047,16 +12047,18 @@ kind of free
 		<property name="Model" value="Entities/Vehicles/car03_blue_dmg0_Prefab" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
-		<property name="MaxDamage" value="250" />
+		<property name="MaxDamage" value="500" />
 		<drop event="Harvest" name="EngineBlock" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="gasCan" count="1" prob="0.5" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
-		<drop event="Harvest" name="leather" count="5" prob=".5" />
+		<drop event="Harvest" name="leather" count="2" prob=".5" />
 		<drop event="Harvest" name="scrapIron" count="15" prob="0.5" />
 		<drop event="Destroy" name="scrapIron" count="10" prob="1" />
 		<property name="DowngradeBlock" value="cntCar03BlueDamage1" />
@@ -12089,7 +12091,7 @@ kind of free
 		<property name="Model" value="Entities/Vehicles/car03_blue_dmg1_Prefab" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
-		<property name="MaxDamage" value="250" />
+		<property name="MaxDamage" value="500" />
 		<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" />
@@ -12097,6 +12099,8 @@ kind of free
 		<drop event="Harvest" name="FanBelt" count="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="hubcap" count="1,4" prob=".5" tool_category="Disassemble" />
         <drop event="Harvest" name="scrapIron" count="15" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="2" prob=".2" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
@@ -12133,6 +12137,8 @@ kind of free
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="15" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".15" tool_category="Disassemble" />
 		<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
@@ -15892,7 +15898,7 @@ kind of free
 		<property name="Model" value="#DecoVehiclesPrefabs?military_truck" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
-		<property name="MaxDamage" value="500" />
+		<property name="MaxDamage" value="800" />
         <property name="CustomIcon" value="cntCar03Damage2" />
 		<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
@@ -15906,13 +15912,15 @@ kind of free
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="shortMetalPipe" count="8" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" />
-		<drop event="Harvest" name="leather" count="5" prob=".5" />
-		<drop event="Harvest" name="leather" count="5" prob=".5" />
+		<drop event="Harvest" name="leather" count="2" prob=".5" />
+		<drop event="Harvest" name="leather" count="2" prob=".5" />
 		<drop event="Harvest" name="gasCan" count="50" prob="0.5" />
 		<drop event="Harvest" name="scrapSteel" count="4" prob="0.5" />
 		<drop event="Destroy" name="scrapSteel" count="1,2" prob="1" />
@@ -16073,7 +16081,7 @@ kind of free
 		<property name="Place" value="TowardsPlacer" />
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="ShowModelOnFall" value="false" />
-		<property name="MaxDamage" value="250" />
+		<property name="MaxDamage" value="1000" />
 		<property name="CustomIcon" value="cntCar03Damage2" />
 		<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
@@ -16085,6 +16093,8 @@ kind of free
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
@@ -16092,8 +16102,8 @@ kind of free
 		<drop event="Harvest" name="scrapIron" count="15" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="shortMetalPipe" count="8" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" />
-		<drop event="Harvest" name="leather" count="5" prob=".5" />
-		<drop event="Harvest" name="leather" count="5" prob=".5" />
+		<drop event="Harvest" name="leather" count="2" prob=".5" />
+		<drop event="Harvest" name="leather" count="2" prob=".5" />
 		<drop event="Harvest" name="gasCan" count="50" prob="0.5" />
 		<drop event="Harvest" name="scrapIron" count="15" prob="0.5" />
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
@@ -16118,7 +16128,7 @@ kind of free
 		<property name="MultiBlockDim" value="2,2,6" />
 		<property name="Model" value="#DecoVehiclesPrefabs?oldArmyTruck" />
 		<property name="LootList" value="19" />
-		<property name="MaxDamage" value="400" />
+		<property name="MaxDamage" value="800" />
 		<property name="CustomIcon" value="cntCar03Damage2" />
 		<drop event="Harvest" name="gasCan" count="50" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
@@ -16127,6 +16137,8 @@ kind of free
 		<drop event="Harvest" name="EngineBlock" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
@@ -16137,8 +16149,8 @@ kind of free
 		<drop event="Harvest" name="scrapIron" count="15" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="shortMetalPipe" count="8" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" />
-		<drop event="Harvest" name="leather" count="5" prob=".5" />
-		<drop event="Harvest" name="leather" count="5" prob=".5" />
+		<drop event="Harvest" name="leather" count="2" prob=".5" />
+		<drop event="Harvest" name="leather" count="2" prob=".5" />
 		<drop event="Harvest" name="gasCan" count="50" prob="0.5" />
 		<drop event="Harvest" name="scrapIron" count="15" prob="0.5" />
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
@@ -16156,11 +16168,13 @@ kind of free
 		<property name="Model" value="#schoolBus?schoolBusD0" />
 		<property name="DowngradeBlock" value="SchoolBusDamaged" />
         <property name="CustomIcon" value="cntCar03Damage2" />
+        <property name="MaxDamage" value="800" />
 	</block>
 	<block id="1984" name="SchoolBusDamaged">
 		<property name="Extends" value="cntCar03BlueDamage1" param1="DowngradeBlock" />
 		<property name="Model" value="#schoolBus?schoolBusD1" />
         <property name="CustomIcon" value="cntCar03Damage2" />
+        <property name="MaxDamage" value="800" />
 	</block>
 	<block id="1797" name="Tractor">
 		<property name="Extends" value="OldArmyTruck" />
@@ -16168,6 +16182,7 @@ kind of free
 		<property name="DowngradeBlock" value="cntCar03Damage2" />
 		<property name="LootList" value="19" />
         <property name="CustomIcon" value="cntCar03Damage2" />
+        <property name="MaxDamage" value="800" />
 	</block>
 	<block id="1798" name="TractorG">
 		<property name="Extends" value="OldArmyTruck" />
@@ -16175,6 +16190,7 @@ kind of free
 		<property name="DowngradeBlock" value="cntCar03Damage2" />
 		<property name="LootList" value="19" />
         <property name="CustomIcon" value="cntCar03Damage2" />
+        <property name="MaxDamage" value="800" />
 	</block>
 	<block id="1786" name="Skylark">
 		<property name="Extends" value="OldArmyTruck" />
@@ -16261,6 +16277,7 @@ kind of free
 		<property name="HeatMapTime" value="200" />
 		<property name="Stacknumber" value="1" />
 		<property name="Material" value="metal" />
+        <property name="Weight" value="5000" />
 		<property name="MaxDamage" value="500" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#animGen?dieselGen" />
@@ -16283,6 +16300,7 @@ kind of free
 	<block id="1711" name="bigGenerator">
 		<property name="Extends" value="dieselGen" />
 		<property name="Model" value="#biggenerator?Generator1" />
+        <property name="Weight" value="5000" />
 		<property name="FuelRate" value="30" />
         <property name="DecayTime" value="120" />
 		<property name="MaxDamage" value="1000" />
@@ -16302,6 +16320,7 @@ kind of free
 		<property name="Extends" value="dieselGen" />
         <property name="Model" value="#smallgenerator?smallGeneratorPrefab" />
         <property name="CustomIcon" value="smallGenerator" />
+        <property name="Weight" value="500" />
 		<property name="FuelRate" value="50" />
 		<property name="DecayTime" value="120" />
         <property name="MaxDamage" value="800" />
