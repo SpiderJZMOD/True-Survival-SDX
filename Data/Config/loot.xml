@@ -619,7 +619,6 @@
         <item name="MachineGunSchematics" prob="0.4" />
         <item name="USASSchematic" prob="0.4" />
         <item name="AssaultRifleSchematics" prob="0.4" />
-		<item name="ak47Schematic" prob="0.4" />
 		<item name="SubMachineGunSchematics" prob="0.4" />
 		<item name="pistolBook" prob="0.7" />
 		<item name="pumpShotgunSchematic" prob="0." />
@@ -686,7 +685,7 @@
 		<item name="pistolBook" prob="0.4" />
 		<item name="pumpShotgunSchematic" prob="0.4" />
 		<item name="sawedoffPumpShotgunSchematic" prob="0.4" />
-		<item name="ak47Schematic" prob="0.5" />
+		<item name="AssaultRifleSchematics" prob="0.5" />
 		<item name="huntingRifleSchematic" prob="0.5" />
 		<item name="theEnforcerMagazine" prob="0.6" />
 		<item name="SubMachineGunSchematics" prob="0.6" />
@@ -2009,7 +2008,7 @@
 	</lootcontainer>
 	<!-- Treasure chest -->
 	<lootcontainer id="70" count="2,5" size="8,9" destroy_on_close="true" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="treasureTemplate">
-		<item name="calipers" count="1" prob="1" />
+		<item name="calipers" count="1" prob="0.8" />
         <item group="ammoSmall" count="5,10" prob="0.5" />
 		<item group="rareOres" count="5,10" prob="0.5" />
 		<item name="toolAndDieSet" count="1" prob="0.23" />

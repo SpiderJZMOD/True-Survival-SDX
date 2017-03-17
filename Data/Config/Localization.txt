@@ -1678,11 +1678,11 @@ ak47SchematicDesc,items,Book,KgNone,"Learn how to assemble, repair and augment A
 ammunitionNationBook,items,Book,KgNone,Ammunition Nation Book,Livre « La nation des munitions »,Buch „Munition-Nation“,,Libro Nación de munición
 ammunitionNationBookDesc,items,Book,KgNone,Learn to craft brass casings and lead tips for ammunition crafting.,Apprenez à fabriquer des douilles en laiton et des pointes en plomb pour la fabrication de munitions.,"In diesem Buch erfährst du, wie Patronenhülsen aus Messing und Geschossspitzen aus Blei gefertigt werden.",,Aprende a fabricar cartuchos de latón y puntas de bala de plomo para fabricar munición.
 augerSchematic,items,Book,KgNone,Auger Schematic,Schéma de foreuse,Bauplan – Erdbohrer,,Esquema de taladro
-augerSchematicDesc,items,Book,KgNone,Learn how to repair and assemble augers by reading this schematic.,Apprenez à assembler et réparer les foreuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Erdbohrer zusammengesetzt und repariert werden.",,Lee este esquema para aprender a reparar y armar taladros.
+augerSchematicDesc,items,Book,KgNone,Learn how to repair and assemble augers by reading this schematic. Gather the needed items and craft a copy of this book on the Research Desk.,Apprenez à assembler et réparer les foreuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Erdbohrer zusammengesetzt und repariert werden.",,Lee este esquema para aprender a reparar y armar taladros.
 beerBook,items,Book,KeyTrunk FrNone GrNone KgNone SpNone,Tasting And Brewing,,,,
 beerBookDesc,items,Book,KeyTrunk FrNone GrNone KgNone SpNone,Read this book to learn how to grow hops and brew beer.,,,,
 chainsawSchematic,items,Book,KgNone,Chainsaw Schematic,Schéma de tronçonneuse,Bauplan – Kettensäge,,Esquema de motosierra
-chainsawSchematicDesc,items,Book,KgNone,Learn how to assemble and repair chainsaws by reading this schematic.,Apprenez à assembler et réparer les tronçonneuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Kettensägen zusammengesetzt und repariert werden.",,Lee este esquema para aprender a armar y reparar motosierras.
+chainsawSchematicDesc,items,Book,KgNone,Learn how to assemble and repair chainsaws by reading this schematic. Collect the requiered parts to craft a copy on the Research Desk,Apprenez à assembler et réparer les tronçonneuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Kettensägen zusammengesetzt und repariert werden.",,Lee este esquema para aprender a armar y reparar motosierras.
 clawHammerSchematic,items,Book,KgNone,Claw Hammer Schematic,Schéma d'arrache-clou,Bauplan – Klauenhammer,,Esquema de martillo de orejas
 clawHammerSchematicDesc,items,Book,KgNone,Learn how to craft a claw hammer by reading this schematic.,Apprenez à fabriquer un arrache-clou en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Klauenhämmer gefertigt werden.",,Lee este esquema para aprender a fabricar un martillo de orejas.
 clubSpikedSchematic,items,Book,KgNone,Spiked Club Schematic,Schéma de massue à pointes,Bauplan – Nagelkeule,,Esquema del lucero del alba
@@ -1780,7 +1780,7 @@ bandana,items,Clothes,KgNone,Bandana,Bandana,Halstuch,,Bandana
 bandanaBlack,items,Clothes,KgNone,Black Bandana,Bandana noir,Schwarzes Halstuch,,Bandana negra
 bandanaBlue,items,Clothes,KgNone,Blue Bandana,Bandana bleu,Blaues Halstuch,,Bandana azul
 bandanaBrown,items,Clothes,KgNone,Brown Bandana,Bandana marron,Braunes Halstuch,,Bandana marrón
-bandanaClothesGroupDesc,items,Clothes,EnChanged,Bandanas provide some protection against damage.,"Les bandanas vous protègent lorsqu'il fait chaud et vous protègent également contre d'autres sortes de dégâts, comme n'importe quel accessoire vestimentaire.",Halstücher bieten etwas Schutz vor Schaden.,,"Las bandanas te mantienen fresco en climas calurosos y, al igual que toda la ropa, brindan un poco de protección contra otro tipo de daños."
+bandanaClothesGroupDesc,items,Clothes,EnChanged,Bandanas provide some protection against damage. Crafted on the Armor table using a sewing needle.,"Les bandanas vous protègent lorsqu'il fait chaud et vous protègent également contre d'autres sortes de dégâts, comme n'importe quel accessoire vestimentaire.",Halstücher bieten etwas Schutz vor Schaden.,,"Las bandanas te mantienen fresco en climas calurosos y, al igual que toda la ropa, brindan un poco de protección contra otro tipo de daños."
 bandanaGreen,items,Clothes,KgNone,Green Bandana,Bandana vert,Grünes Halstuch,,Bandana verde
 bandanaRed,items,Clothes,KgNone,Red Bandana,Bandana rouge,Rotes Halstuch,,Bandana roja
 banditArmorGroupDesc,items,Clothes,KeyTrunk FrNone GrNone KgNone SpNone,It may look like junk but it was worn by a survivor so it clearly works.,,,,
@@ -1798,7 +1798,7 @@ clothJacket,items,Clothes,KgNone,Cloth Chest Armor,Plastron en tissu,Stoffbrustp
 clothPants,items,Clothes,KgNone,Cloth Leg Armor,Jambières en tissu,Stoffbeinschienen,,Espinillera de tela
 cowboyHat,items,Clothes,KgNone,Cowboy Hat,Chapeau de cowboy,Cowboyhut,,Sombrero de vaquero
 cowboyHatGroupDesc,items,Clothes,KgNone,Look cool and keep your cool in hotter environments when you wear this stylish ten gallon hat.,Portez ce chapeau de cowboy stylé pour avoir l'air cool et rester au frais lorsqu'il fait très chaud.,Dieser stilsichere und breitrandige Cowboyhut sieht gut aus und schützt vor der Hitze.,,Mantente fresco y luce cool con tu sombrero de vaquero.
-denimClothesGroupDesc,items,Clothes,KgNone,Be really comfortable & get a little protection against the weather and other damage types in this fine denim apparel.,Portez ces vêtements en jean pour vous sentir à l'aise et vous protéger contre les intempéries et d'autres sortes de dégâts.,Denim-Kleidung sitzt perfekt und schützt etwas vor der Witterung und anderen Schadensarten.,,Siéntete completamente cómodo al tiempo que te proteges un poco del clima y otros tipos de daño con este conjunto de mezclilla.
+denimClothesGroupDesc,items,Clothes,KgNone,Be really comfortable & get a little protection against the weather and other damage types in this fine denim apparel. Crafted on the Armor Table using a sewing needle.,Portez ces vêtements en jean pour vous sentir à l'aise et vous protéger contre les intempéries et d'autres sortes de dégâts.,Denim-Kleidung sitzt perfekt und schützt etwas vor der Witterung und anderen Schadensarten.,,Siéntete completamente cómodo al tiempo que te proteges un poco del clima y otros tipos de daño con este conjunto de mezclilla.
 denimJacket,items,Clothes,KgNone,Denim Jacket,Veste en jean,Denim-Jacke,,Chaqueta de mezclilla
 denimPants,items,Clothes,KgNone,Blue Denim Pants,Jean bleu,Blaue Denim-Hose,,Pantalones de mezclilla azules
 footballHelmet,items,Clothes,KgNone,Football Helmet,Casque de football américain,Footballhelm,,Casco de fútbol americano
@@ -1853,7 +1853,7 @@ plaidShirt,items,Clothes,KgNone,Plaid Shirt,Chemise à carreaux,Kariertes Hemd,,
 plaidShirtBlack,items,Clothes,KgNone,Black Plaid Shirt,Chemise noire à carreaux,Schwarzes kariertes Hemd,,Camisa a cuadros negra
 plaidShirtBlue,items,Clothes,KgNone,Blue Plaid Shirt,Chemise bleue à carreaux,Blaues kariertes Hemd,,Camisa a cuadros azul
 plaidShirtBrown,items,Clothes,KgNone,Brown Plaid Shirt,Chemise marron à carreaux,Braunes kariertes Hemd,,Camisa a cuadros marrón
-plaidShirtClothesGroupDesc,items,Clothes,KgNone,Look like a lumberjack while getting a little protection against the weather and other damage types with this fine flannel shirt.,Portez cette chemise en flanelle pour avoir l'air d'un bucheron et être protégé contre les intempéries et d'autres sortes de dégâts.,Kleide dich im Holzfällerstil ein und erhalte mit diesem Flanellhemd etwas Schutz gegen die Witterungen und andere Schadensarten.,,Siéntete como un leñador al tiempo que te proteges un poco del clima y otros tipos de daño con esta camisa de franela.
+plaidShirtClothesGroupDesc,items,Clothes,KgNone,Look like a lumberjack while getting a little protection against the weather and other damage types with this fine flannel shirt. Crafted on the Armor Table using a sewing needle.,Portez cette chemise en flanelle pour avoir l'air d'un bucheron et être protégé contre les intempéries et d'autres sortes de dégâts.,Kleide dich im Holzfällerstil ein und erhalte mit diesem Flanellhemd etwas Schutz gegen die Witterungen und andere Schadensarten.,,Siéntete como un leñador al tiempo que te proteges un poco del clima y otros tipos de daño con esta camisa de franela.
 plaidShirtGreen,items,Clothes,KgNone,Green Plaid Shirt,Chemise verte à carreaux,Grünes kariertes Hemd,,Camisa a cuadros verde
 plaidShirtRed,items,Clothes,KgNone,Red Plaid Shirt,Chemise rouge à carreaux,Rotes kariertes Hemd,,Camisa a cuadros roja
 plantFiberClothesGroupDesc,items,Clothes,KgNone,Plant fiber clothing provides basic protection against cold weather but is not ideal against other damage types.,"Les vêtements en fibres végétales protègent légèrement du froid, mais ne sont pas conseillés pour faire face à d'autres sortes de dégâts.","Kleidung aus Pflanzenfasern bietet grundlegenden Schutz gegen Kälte, schützt aber nicht besonders gut vor anderen Schadensarten.",,"La ropa de fibra vegetal ofrece protección básica contra el frío, pero no es aconsejable para daños de otro tipo."
@@ -1961,7 +1961,7 @@ baconAndEggsDesc,items,Food,GrChanged,Bacon and eggs will really fill you up and
 bakedPotato,items,Food,KgNone,Baked Potato,Pomme de terre au four,Gebackene Kartoffel,,Papa asada
 bakedPotatoDesc,items,Food,KgNone,A nutritious baked potato full of carbohydrates. Great for couch potatoes too.,Une pomme de terre au four qui regorge de féculents. C'est l'idéal pour les flemmards.,Eine nahrhafte Kartoffel voller Kohlenhydrate. Ideal für Couchkartoffeln.,,Una nutritiva papa asada repleta de carbohidratos. Genial para personas sedentarias.
 beer,items,Food,KgNone,Beer,Bière,Bier,,Cerveza
-beerDesc,items,Food,EnChanged KgNone,"Gain stamina, bravado and stun immunity all in one bottle of this tasty home brewed beer. Just like grandpa used to make.","Boire une bouteille de cette délicieuse bière artisanale vous offre de l'endurance, une dose de bravoure et une haute opinion de vous-même. Exactement comme celle que faisait papy.","Erhalte Ausdauer, Wagemut und ein großes Ego. All das in nur einer Flasche dieses leckeren selbst gebrauten Biers. Das gleiche Bier, das Opa früher immer braute.",,"Aumenta tu resistencia, valentía y tu gran ego con una simple botella de esta deliciosa cerveza casera. Tal y como el abuelo solía hacerla."
+beerDesc,items,Food,EnChanged KgNone,"Gain stamina and bravado all in one bottle of this tasty home brewed beer. Just like grandpa used to make. Crafted ina Fermentation Barrel.","Boire une bouteille de cette délicieuse bière artisanale vous offre de l'endurance, une dose de bravoure et une haute opinion de vous-même. Exactement comme celle que faisait papy.","Erhalte Ausdauer, Wagemut und ein großes Ego. All das in nur einer Flasche dieses leckeren selbst gebrauten Biers. Das gleiche Bier, das Opa früher immer braute.",,"Aumenta tu resistencia, valentía y tu gran ego con una simple botella de esta deliciosa cerveza casera. Tal y como el abuelo solía hacerla."
 blueberryPie,items,Food,KgNone,Blueberry Pie,Tarte aux myrtilles,Blaubeerkuchen,,Pastel de moras
 blueberryPieDesc,items,Food,KgNone,This homemade blueberry pie is nutritious and raises your wellness. Mmm...just like Grandma used to make.,Cette tarte aux myrtilles faite maison vous nourrit et améliore votre bien-être. Miam... Exactement comme celle que faisait mamie.,Dieser selbst gemachte Blaubeerkuchen ist nahrhaft und erhöht dein Wohlbefinden. Mmm … wie von der Oma.,,Este pastel de moras casero es nutritivo y mejora tu bienestar. Mmmm... Tal y como la abuela solía hacerlo.
 boiledMeat,items,Food,KgNone,Boiled Meat,Viande bouillie,Gekochtes Fleisch,,Carne cocida
@@ -2114,7 +2114,7 @@ candyTinDesc,items,Item,KgNone,Grandma's candy tin. Good for scrapping or a perf
 canEmpty,items,Item,KgNone,Empty Can,Conserve vide,Leere Dose,,Lata vacía
 canEmptyDesc,items,Item,KgNone,An empty can which you can scrap or fill with water.,Une conserve vide que vous pouvez recycler ou remplir d'eau.,"Eine leere Dose, die zerlegt oder mit Wasser gefüllt werden kann.",,Una lata vacía que puedes desechar o llenar de agua.
 carBattery,items,Item,KgNone,Lead Car Battery,Batterie de voiture en plomb,Bleibatterie für Autos,,Batería de coche de plomo
-carBatteryDesc,items,Item,KgNone,"Car batteries can be used in vehicles, scrapped for lead in your backpack or smelted at the forge for lead. Check your Journal on how to repair it.","Les batteries de voiture peuvent être utilisées sur les véhicules, recyclées en plomb dans votre sac à dos ou fondues dans la forge pour obtenir du plomb.","Autobatterien können für Fahrzeuge benutzt, für Blei im Rucksack zerlegt oder in der Schmiede eingeschmolzen werden.",,"Las baterías de coche se pueden usar en vehículos, despedazar para tener plomo en tu mochila o fundir en la fragua para obtener plomo."
+carBatteryDesc,items,Item,KgNone,"Car batteries can be used in vehicles, scrapped for lead in your backpack or smelted at the forge for lead. Recharge it in a Battery Pack using scrap wire.","Les batteries de voiture peuvent être utilisées sur les véhicules, recyclées en plomb dans votre sac à dos ou fondues dans la forge pour obtenir du plomb.","Autobatterien können für Fahrzeuge benutzt, für Blei im Rucksack zerlegt oder in der Schmiede eingeschmolzen werden.",,"Las baterías de coche se pueden usar en vehículos, despedazar para tener plomo en tu mochila o fundir en la fragua para obtener plomo."
 casinoCoin,items,Item,KgNone,Duke's Casino Token,Jeton du Duke's Casino,Jeton aus Dukes Kasino,,Ficha del casino de Duke
 casinoCoinDesc,items,Item,KgNone,A Duke's casino coin. After the epidemic and war it became the main currency for trading in Navezgane.,"Une pièce du Duke's Casino. Après l'épidémie et la guerre, ces pièces sont devenues la monnaie principale de Navezgane.",Ein Jeton aus Dukes Kasino. Nach der Seuche und dem Krieg wurden diese Jetons zur Hauptwährung in Navezgane.,,Una moneda del casino de Duke. Se convirtió en la moneda principal para comerciar en Navezgane tras la epidemia y la guerra.
 cement,items,Item,KgNone,Cement,Ciment,Zement,,Cemento
@@ -2247,7 +2247,7 @@ bandageDesc,items,Medical,KgNone,A simple bandage. Use it to stop bleeding.,Un s
 bloodBag,items,Medical,KgNone,Blood Bag,Poche de sang,Blutbeutel,,Bolsa de sangre
 bloodBagDesc,items,Medical,KgNone,Use blood bags to restore a little health or to craft first aid kits.,Utilisez les poches de sang pour restaurer un peu de santé ou fabriquer des trousses de premiers soins.,"Benutze Blutbeutel, um etwas Gesundheit wiederherzustellen oder Verbandskasten zu fertigen.",,Usa bolsas de sangre para recuperar algo de salud o fabricar botiquines de primeros auxilios.
 bloodDrawKit,items,Medical,KgNone,Blood Draw Kit,Kit de prise de sang,Blutabnahmekit,,Kit de extracción de sangre
-bloodDrawKitDesc,items,Medical,KgNone,Use blood draw kits to make blood bags. These are used to craft first aid kits.,Utilisez les kits de prise de sang pour faire des poches de sang. Ces dernières servent à fabriquer des trousses de premiers soins.,"Benutze Blutabnahmekits, um Blutbeutel zu erhalten. Mit ihnen können Verbandskasten gefertigt werden.",,Usa kits de extracción de sangre para preparar las bolsas de sangre. Estas se necesitan para fabricar botiquines de primeros auxilios.
+bloodDrawKitDesc,items,Medical,KgNone,Use blood draw kits to make blood bags. These are used to craft first aid kits. Craft a kit on the chemistry Station,Utilisez les kits de prise de sang pour faire des poches de sang. Ces dernières servent à fabriquer des trousses de premiers soins.,"Benutze Blutabnahmekits, um Blutbeutel zu erhalten. Mit ihnen können Verbandskasten gefertigt werden.",,Usa kits de extracción de sangre para preparar las bolsas de sangre. Estas se necesitan para fabricar botiquines de primeros auxilios.
 firstAidBandage,items,Medical,KgNone,First Aid Bandage,Bandage médical,Erste-Hilfe-Verband,,Vendaje de primeros auxilios
 firstAidBandageDesc,items,Medical,KgNone,A first aid bandage can stop bleeding and restore some health.,Le bandage médical peut arrêter une hémorragie et restaurer de la santé.,Erste-Hilfe-Verbände können Blutungen stoppen und Gesundheit wiederherstellen.,,Un vendaje de primeros auxilios puede detener una hemorragia y restaurar algo de salud.
 firstAidKit,items,Medical,KgNone,First Aid Kit,Trousse de premiers soins,Verbandskasten,,Botiquín de primeros auxilios
@@ -2364,7 +2364,7 @@ augerDesc,items,Tool,KgNone,Rock out with your auger out and be the envy of ever
 chainsaw,items,Tool,KgNone,Chainsaw,Tronçonneuse,Kettensäge,,Motosierra
 chainsawDesc,items,Tool,KgNone,Chop down the biggest trees or zombies faster than Paul Bunyan with this great chainsaw that uses gasoline for fuel.,Abattez les plus gros arbres et découpez du zombie plus vite que votre ombre avec cette merveilleuse tronçonneuse qui consomme du carburant.,Fälle mit dieser benzinbetriebenen Kettensäge die größten Bäume oder Zombies schneller als Paul Bunyan.,,Tala los árboles más grandes y elimina zombis más rápido que Paul Bunyan con esta magnífica motosierra que usa gasolina como combustible.
 clawHammer,items,Tool,KgNone,Claw Hammer,Arrache-clou,Klauenhammer,,Martillo de orejas
-clawHammerDesc,items,Tool,KgNone,The claw hammer is great for repairing and upgrading base walls and not bad as a weapon.,"Génial pour réparer et améliorer les murs de base, l'arrache-clou est également pas mal en tant qu'arme.","Der Klauenhammer eignet sich prima dazu, die Mauern der Basis zu reparieren und aufzuwerten. Er stellt auch eine ziemlich gute Waffe dar.",,El martillo de orejas es genial para reparar y mejorar las paredes de la base. También sirve como arma.
+clawHammerDesc,items,Tool,KgNone,The claw hammer is great for repairing and upgrading base walls and not bad as a weapon. Using it will increase your Primitive Crafting skill.,"Génial pour réparer et améliorer les murs de base, l'arrache-clou est également pas mal en tant qu'arme.","Der Klauenhammer eignet sich prima dazu, die Mauern der Basis zu reparieren und aufzuwerten. Er stellt auch eine ziemlich gute Waffe dar.",,El martillo de orejas es genial para reparar y mejorar las paredes de la base. También sirve como arma.
 fireaxeIron,items,Tool,KgNone,Iron Fireaxe,Hache de pompier en fer,Eiserne Feueraxt,,Hacha de bombero de hierro
 fireaxeIronDesc,items,Tool,KgNone,The fireaxe is good for harvesting wood and has a better chance to dismember than most weapons.,"Pratique pour couper du bois, la hache de pompier est également l'arme qui a le plus de chance de démembrer un adversaire.","Die Feueraxt eignet sich gut dazu, Holz zu fällen. Sie hat zudem eine erhöhte Chance, Gegner zu zergliedern.",,El hacha de bombero es buena para recolectar madera y tiene más posibilidades de desmembrar que la mayoría de armas.
 fireaxeSteel,items,Tool,KgNone,Steel Fireaxe,Hache de pompier en acier,Stählerne Feueraxt,,Hacha de bombero de acero
@@ -4379,7 +4379,7 @@ CompoundBowDesc,,,,"This powerful Bow is too strong for normal arrows but will s
 Crossbow_LimbDesc,,,,"Used to assemble a Crossbow",,,,
 Crossbow_StockDesc,,,,"Used to assemble a Crossbow",,,,
 Crossbow_BarrelDesc,,,,"Used to assemble a Crossbow",,,,
-BoltCylinderDesc,,,,"Used to assemble an Auto Crossbow",,,,
+BoltCylinderDesc,,,,"Used to assemble an Auto Crossbow. Crafted on the metal working bench.",,,,
 BlunderbussDoubleDesc,,,,"If one was good then two should be even better.",,,,
 SilencedPistolBarrelDesc,,,,"Used to assemble a Silenced Pistol",,,,
 SilencedHuntingBarrelDesc,,,,"Used to assemble a Silenced Hunting Rifle",,,,
@@ -4403,7 +4403,7 @@ SteelArmorDesc,,,,"Strong steel armor. Great for preventing zombie hickeys.",,,,
 ProfessionDesc,,,,"A vast amount of knowledge lies with in these pages.",,,,
 DoctorBook,,,,"Doctor Book",,,,
 HandSawDesc,,,,"You could use this to cut Planks or as a Tool on a Wood Working Bench.",,,,
-SkillBookDesc,,,,"A old dusty book filled with knowledge.",,,,
+SkillBookDesc,,,,"A old dusty book filled with knowledge. Gather the needed items to craft a copy on the Research Desk.",,,,
 SanitizingBandageDesc,,,,"This sanitized bandage should clean some of those scratches up. You don’t want it getting infected",,,,
 RedHotDesc,,,,"The pipe glows red hot from the fire. Use this to cauterizes a bite wound",,,,
 AntiVenomDesc,,,,"Created in the campfire in a cooking pot from the venom sack of a poisonous animal. Used to cure Venom Poison",,,,
@@ -4505,9 +4505,9 @@ ScubaTankFullDesc,,,,"Scuba tanks can be used to breath under water for five min
 BlankSkillBook,,,,"Blank Skill Book",,,,
 BlankSkillBookDesc,,,,"Used to craft Skill Books",,,,
 PlankDesc,,,,"A nicely cut plank of wood perfect for building a home.",,,,
-BabyChickenDesc,,,,"A cute little chick. Not too good for eating but might be good for some eggs if you feed it  and keep it safe.",,,,
+BabyChickenDesc,,,,"A cute little chick. Not too good for eating but might be good for some eggs if you feed it and keep it safe. With the baby chicken in your hand upgrade the Chicken Coop.",,,,
 BabyChicken,,,,"Baby Chicken",,,,
-HenDesc,,,,"A adult Hen can produce eggs almost every day, and if you get tired of feeding her just eater.",,,,
+HenDesc,,,,"A adult Hen can produce eggs almost every day, and if you get tired of feeding her just eater. With the hen in your hand upgrade the Chicken Coop.",,,,
 SewingNeedle,,,,"Sewing Needle",,,,
 SewingNeedleDesc,,,,"Perfect for stitching together some needed padding.",,,,
 LeatherNeedle,,,,"Leather Needle",,,,
@@ -4537,6 +4537,7 @@ SetUpASpikeTrap,,,,"Spike Trap",,,,
 SetUpASpikeTrapDesc,,,,"Place on the ground to start building the trap. With sticks in inventory use a tool on it to finish creating the Spike trap",,,,
 BikeNABoxDesc,,,,"A crate with a mini bike in it. Place it on the ground and break it open to loot it",,,,
 BearTrap,,,,"Bear Trap",,,,
+trapbearDesc,,,,"A Strong metal Bear Trap. Use it as a trap for zombies or bait it to try and catch some animals. Crafted on the wood working bench using a wrench.",,,,
 qc_ZombieDesc,,,,"So you think you’re a True Survivor. Let’s see you do this",,,,
 SkillMagazineReadDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(50XP) in the category of the magazine.",,,,
 SkillMagazinemonthlyDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(100XP) in the category of the magazine.",,,,
@@ -4574,7 +4575,7 @@ BladderFlask2,,,,Bladder Flask,,,,
 BladderFlask1,,,,Bladder Flask,,,,
 BladderFlaskEmpty,,,,Empty Bladder Flask,,,,
 FlaskDesc,,,,"Take a huge drink or pour this on your head with the left mouse button to remove zombie vomit, douse fires and cool yourself off a little",,,,
-EmptyFlaskDesc,,,,"You can fill this with 30 bottles of water. Saving room and gaining more stamina taking larger drinks",,,,
+EmptyFlaskDesc,,,,"You can fill this with 30 bottles of water. Saving room and gaining more stamina taking larger drinks. Crafted on the armor table using a leather needle.",,,,
 qc_Chemist,,,,"Chemist Quest",,,,
 qc_Carpenter,,,,"Carpenter Quest",,,,
 qc_Fisherman,,,,"Fisherman Quest",,,,
@@ -4675,13 +4676,13 @@ workStoneMill,,,,"Stone Mill",,,,
 workStove,,,,"Stove",,,,
 workStoveDesc,,,,"A Stove can be used to bake bread and pies and all other cooking recipes. You do not gain any XP in this Workstation.",,,,
 bigGenerator,,,,"Large Generator",,,,
-bigGeneratorDesc,,,,"This large generator uses the lest amount of fuel and is very durable. Check your journal for more instructions.",,,,
+bigGeneratorDesc,,,,"This large generator uses the lest amount of fuel and is very durable. Crafted on the metal working bench using a welder. Check your journal for more instructions.",,,,
 dieselGen,,,,"Crafted Generator",,,,
 dieselGenDesc,,,,"A small generator crafted from scraps. It will put out some watts but it uses a lot gas and needs repairs often. Check your journal for more instructions.",,,,
 smallGenerator,,,,"Generator",,,,
 smallGeneratorDesc,,,,"A good quality generator. Uses a moderate amount of gas and is well built needing little repairs. Check your journal for more instructions.",,,,
 cableTest,,,,"Power Line Master",,,,
-powerlineDesc,,,,"Place next to a generator to run power to traps, lights and workbenches. Power will only go 10 blocks without a switch or fuse box. Check your journal for more instructions.",,,,
+powerlineDesc,,,,"Place next to a generator to run power to traps, lights and workbenches. Power will only go 10 blocks without a switch or fuse box. Crafted on the wood working bench. Check your journal for more instructions.",,,,
 cableTestTop,,,,"Power Line",,,,
 cableTestV,,,,"Power Line",,,,
 cableTestV1,,,,"Power Line",,,,
@@ -4691,7 +4692,7 @@ cableTestCrossV,,,,"Power Line",,,,
 cableTestCross,,,,"Power Line",,,,
 GasTankTrap,,,"Gas Fire Trap",,,,
 workBiogasDigester,,,,"Methane Producer",,,,
-digesterDesc,,,,"A home-made Mathane gas Producer. Put 2 turds, 10 Rotting Flash amd a empty gas tank inside and wait for it to be filled.",,,,
+digesterDesc,,,,"A home-made Mathane gas Producer. Used to creat Methane Bombs. Crafted on the metal working work bench.",,,,
 knifeSwithc,,,,"Knife Switch",,,,
 knifeSwitchDesc,,,,"This Switch can turn off and on its entire power branch.",,,,
 powerBox,,,,"Fuse box",,,,
@@ -4703,7 +4704,7 @@ gasTankDesc,,,,"Place this bomb with with your defenses and shot it when the zom
 BatteryTip,,,,"Batteries can not be repaired but when they have been degraded they must be recharged in a Battery Pack that is powered by a generator.",,,,
 Wielder Book,,,,"Welder Book",,,,
 Wielder,,,,"Welder",,,,
-BoneMealDesc,,,," Bone Meal freshly ground on a stonemill. Can be used in fertilizer, glue and other chemicals.",,,,
+BoneMealDesc,,,,"Bone Meal freshly ground on a stonemill. Can be used in fertilizer, glue and other chemicals.",,,,
 AirCompressorDesc,,,,"This can be used to refill Scuba tanks when used in the Battery Pack Workstation",,,,
 garageDoorDesc,,,,"A strong garage door crafted on the Wood Working Bench.",,,,
 workFermentationBarrel,,,,"Fermitation Barrel",,,,
@@ -4713,4 +4714,11 @@ workStillDesc,,,,"A crude still perched above a fire. Used to make Grain alcohol
 WoodSpear,,,,"Wooden Spear",,,,
 WoodSpearDesc,,,,"A Sharp stick hardened in a fire. Good for puncturing rotten skulls but not very durable. With the wooden spear in hand you can throw the wooden javelins with the left mouse button.",,,,
 SmokingDesc,,,,"The worlds gone to shit and you might be dead tomorrow. No reason to quite now. Smoking reduces hunger by 10 over 3 min.",,,,
-xed,,,,"A powerful crossbolt. You will need a Carbon Crossbow to fire one of these. They are crafted on the metal working bench.",,,,
+CarbonCrossblotDesc,,,,"A powerful crossbolt. You will need a Carbon Crossbow to fire one of these. Crafted on the metal working bench.",,,,
+MakeBookDesc,,,,"A old dusty book filled with knowledge. Collect the requierd items to make a copy of this book on the Research Desk.",,,,
+AK47StockScopeDesc,,,,"An AK47 Stock with a crudely attached scope. Crafted on the Wood Working Bench with a wrench.",,,,
+bigGeneratorFrame,,,,"Big Generator Frame",,,,
+GeneratorFrameDesc,,,,"Large Metal frame used in crafting a generator. Crafted on the metal working bench using a welder.",,,,
+BowString,,,,"Bow String",,,,
+BowStringDesc,,,,"A strong natural cord used in advanced archery weapons. Crafted in the campfire in a cooking pot.",,,,
+

@@ -178,7 +178,7 @@
 				<multiply skill_level="1,100" value="0,0" />
 			</effect>
 		</action_skill>
-		<perk name="Iron Club" icon="clubIron" description_key="Learn to upgrade your wooden Club to a iron melee club" title_key="Iron Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="weapons">
+		<perk name="Iron Club" icon="clubIron" description_key="Learn to upgrade your wooden Club to a iron melee club. Crafted on the Anvil using the Claw Hammer." title_key="Iron Club" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blunt Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="2" />
 			<recipe name="clubIron" unlock_level="1" />
@@ -223,7 +223,7 @@
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
 			<recipe name="TheShark" unlock_level="1" />
 		</perk>
-		<perk name="Tomahawk" icon="Tomahawk" description_key="Learn to craft a Tomahawk in the forge with the anvil. This is a big sharpe axe thats best at fighting." title_key="Tomahawk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="weapons">
+		<perk name="Tomahawk" icon="Tomahawk" description_key="Learn to craft a Tomahawk in the forge with the anvil. This is a big sharp axe thats best at fighting." title_key="Tomahawk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="65" />
 			<recipe name="Tomahawk" unlock_level="1" />
@@ -985,6 +985,7 @@
             <recipe name="SharpeningStone" unlock_level="3" />
 			<recipe name="workMortarAndPestle" unlock_level="5" />
 			<recipe name="workStoneMill" unlock_level="5" />
+            <recipe name="bucket" unlock_level="15" />
 			<recipe name="ironShiv" unlock_level="50" />
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
@@ -1855,12 +1856,12 @@
 				<multiply skill_level="90,100" value="1.9,2" />
 			</effect>
 		</action_skill>
-		<perk name="Hunters Knife" icon="huntingKnife" description_key="Learn to craft a hunting Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade that you need to craft it in the forge using the anvil. This is a sharpe knife that will harvest more and better animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Hunters Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
+		<perk name="Hunters Knife" icon="huntingKnife" description_key="Learn to craft a hunting Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade that you need to craft it in the forge using the anvil. This is a sharp knife that will harvest more and better animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Hunters Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="health">
 			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="1" />
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
 			<recipe name="huntingKnife" unlock_level="1" />
 		</perk>
-		<perk name="Field Knife" icon="FieldKnife" description_key="Learn to craft a Field Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a very sharpe knife that will harvest the most and best animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
+		<perk name="Field Knife" icon="FieldKnife" description_key="Learn to craft a Field Knife on the anvil using a claw hammer and learn how to craft the Small Knife Blade in the forge using the anvil that you need to craft it. This is a very sharp knife that will harvest the most and best animal parts. Harvesting animals with this knife will increase your hunting skill" title_key="Field Knife" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="health">
 			<requirement perk_level="1" required_skill_name="Hunting" required_skill_level="40" />
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
 			<recipe name="FieldKnife" unlock_level="1" />

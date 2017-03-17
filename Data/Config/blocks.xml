@@ -14444,7 +14444,7 @@ kind of free
 		<property name="CustomIcon" value="ui_game_symbol_BearTrap" />
 		<property name="KillChance" value="90" />
 		<property name="SpawnChance" value="100" />
-		<property name="DamageDone" value="20" />
+		<property name="DamageDone" value="25" />
 		<property name="HitLegs" value="true" />
 		<property name="Baited" value="true" />
 		<property name="EntityGroup" value="AnimalsAll" />
