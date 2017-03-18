@@ -223,12 +223,7 @@
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
 			<recipe name="TheShark" unlock_level="1" />
 		</perk>
-		<perk name="Tomahawk" icon="Tomahawk" description_key="Learn to craft a Tomahawk in the forge with the anvil. This is a big sharp axe thats best at fighting." title_key="Tomahawk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="weapons">
-			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
-			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="65" />
-			<recipe name="Tomahawk" unlock_level="1" />
-		</perk>
-        <perk name="Katana" icon="katanamichonne" description_key="Learn to craft a mighty Katana on the anvil using a claw hammer and learn how to craft the Sword Blade in the Blast Furnace that you need to craft it. This is a lomg Sharp sword thats best at cutting things off." title_key="Katana" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
+		<perk name="Katana" icon="katanamichonne" description_key="Learn to craft a mighty Katana on the anvil using a claw hammer and learn how to craft the Sword Blade in the Blast Furnace that you need to craft it. This is a lomg Sharp sword thats best at cutting things off." title_key="Katana" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<recipe name="SwordBlade" unlock_level="1" />
@@ -980,11 +975,12 @@
 			<recipe name="SteelHelmet+Light" unlock_level="1" />
 		</perk>
 		<!--Building-->
-		<crafting_skill name="Primitive Crafting" icon="wood" description_key="Crafting simple items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group or by using the Claw Hammer. Recipe unlock levels 2/3/5/5/50" title_key="Primitive Crafting" group="crafting" skill_point_cost_per_level="3">
+		<crafting_skill name="Primitive Crafting" icon="wood" description_key="Crafting simple items faster and at better quality. Decrease repair penalties and use fewer repair items. Gain skill by crafting and repairing items from this group or by using the Claw Hammer. Recipe unlock levels 2/3/5/5/5/15/50" title_key="Primitive Crafting" group="crafting" skill_point_cost_per_level="3">
 			<recipe name="stoneKnife" unlock_level="2" />
             <recipe name="SharpeningStone" unlock_level="3" />
 			<recipe name="workMortarAndPestle" unlock_level="5" />
 			<recipe name="workStoneMill" unlock_level="5" />
+            <recipe name="axe02" unlock_level="5" />
             <recipe name="bucket" unlock_level="15" />
 			<recipe name="ironShiv" unlock_level="50" />
 			<effect name="CraftingTime">

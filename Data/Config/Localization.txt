@@ -4721,4 +4721,18 @@ bigGeneratorFrame,,,,"Big Generator Frame",,,,
 GeneratorFrameDesc,,,,"Large Metal frame used in crafting a generator. Crafted on the metal working bench using a welder.",,,,
 BowString,,,,"Bow String",,,,
 BowStringDesc,,,,"A strong natural cord used in advanced archery weapons. Crafted in the campfire in a cooking pot.",,,,
+axe02,,,,"Stone Fighting Axe",,,,
+axe02Desc,,,,"A curdle made primitive stone fighting axe. The extra weight gives you a better chance to bash skulls but ruins it as a tool.",,,,
+axe03,,,,"Iron Fighting Axe",,,,
+axe03Desc,,,,"A Heavy iron battle axe. Takes some effort to swing but lands like a clever. Not very useful as a tool Crafted on the Anvil using a claw hammer.",,,,
+axe04,,,,"Steel Fighting Axe",,,,
+axe04Desc,,,,"A razor sharp steel battle axe. Quick and deadly. Its light weight design makes it only useful as a fighting weapon. Crafted on the Anvil with a Claw hammer.",,,,
+axe06,,,,"Death Bringer",,,,
+axe06Desc,,,,"An antic axe probably looted from a museum at some point. On the handle a very old engraving can barely still be read. All you can make out is the words Death Bringer.",,,,
+TomahawkDesc,,,,"A Modern made Tomahawk. Sharp and strong. Designed for fighting.",,,,
+
+
+
+
+
 

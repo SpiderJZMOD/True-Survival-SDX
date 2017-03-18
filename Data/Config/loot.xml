@@ -559,6 +559,7 @@
 		<item group="AssaultWeaponParts" prob="0.5" />
 		<item group="AdvAssaultWeaponParts" prob="0.5" />
 		<item group="SubMachineWeaponParts" prob="0.5" />
+        <item group="MachineGunWeaponParts" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="smallCommonWeaponParts" count="1">
 		<item group="RevolverWeaponParts" prob="0.5" />
@@ -585,7 +586,9 @@
 	<lootgroup name="melee" count="1">
 		<item name="SteakKnife" prob="0.3" />
 		<item name="huntingKnife" prob="0.2" quality="1,50" />
-		<item name="machete" prob="0.1" quality="1,50" />
+		<item name="machete" prob="0.1" quality="1,75" />
+        <item name="Tomahawk" prob="0.07" quality="200,600" />
+        <item name="axe06" prob="0.01" quality="200,300" />
 	</lootgroup>
 	<lootgroup name="CompoundBow+ammo" count="all">
 		<item name="CompoundBow" count="1" quality="300,600" />
@@ -1776,6 +1779,8 @@
 		<item group="books" prob="0.1" />
 		<item group="empty" prob="0.45" />
 		<item group="GunBooks" prob="0.7" />
+         <item name="Tomahawk" prob="0.01" quality="300,600" />
+        <item name="axe06" prob="0.1" quality="300,600" />
 		<item name="ProfessionPage" count="1" prob="0.45" />
 	</lootcontainer>
 	<!-- player dropped backpacks -->
@@ -1790,6 +1795,8 @@
 		<item group="commonWeaponParts" count="1,2" prob="0.5" />
 		<item group="magnumparts" count="1,2" prob="0.5" />
 		<item group="militaryammo" prob="0.2" />
+         <item name="Tomahawk" prob="0.07" quality="200,600" />
+        <item name="axe06" prob="0.01" quality="250,400" />
 		<item group="empty" prob="0.2" />
 	</lootcontainer>
 	<!-- lockers -->

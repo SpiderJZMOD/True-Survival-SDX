@@ -2077,6 +2077,27 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="USAS_barrel" count="1" />
 		<ingredient name="partsPumpShotgun_stock" count="1" />
 	</recipe>
+    <recipe name="axe02" count="1" craft_time="30" craft_exp_gain="15">
+		<ingredient name="glue" count="1" />
+		<ingredient name="FiberRope" count="5" />
+		<ingredient name="Lashing" count="1" />
+        <ingredient name="stick" count="5" />
+		<ingredient name="rockSmall" count="50" />
+	</recipe>
+    <recipe name="axe03" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="20">
+		<ingredient name="glue" count="1" />
+		<ingredient name="NutAndBolt" count="3" />
+		<ingredient name="Lashing" count="1" />
+        <ingredient name="stick" count="10" />
+        <ingredient name="forgedIron" count="25" />
+	</recipe>
+    <recipe name="axe04" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="30">
+		<ingredient name="glue" count="1" />
+		<ingredient name="NutAndBolt" count="2" />
+		<ingredient name="Lashing" count="1" />
+        <ingredient name="stick" count="10" />
+        <ingredient name="forgedSteel" count="10" />
+	</recipe>
 	<recipe name="BabyChicken" count="1" craft_area="workChickenCoop1" craft_time="21600" craft_exp_gain="0">
 		<ingredient name="cloth" count="3" />
 		<ingredient name="candle" count="2" />
@@ -4073,10 +4094,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="scrapIron" count="4" />
 		<ingredient name="glue" count="4" />
 		<ingredient name="stick" count="4" />
-	</recipe>
-	<recipe name="Tomahawk" count="1" craft_area="workforge" craft_tool="workAnvil" material_based="true" craft_time="30" craft_exp_gain="25">
-		<ingredient name="unit_iron" count="200" />
-		<ingredient name="unit_clay" count="20" />
 	</recipe>
 	<recipe name="TomatoSeed" count="2" craft_area="workSeedNursery" craft_time="60" craft_exp_gain="0">
 		<ingredient name="Tomato" count="1" />

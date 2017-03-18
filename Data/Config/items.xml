@@ -6233,7 +6233,7 @@ Mesh files no longer used:
 		</property>
 		<property name="ActionSkillGroup" value="Medicine" />
 		<property name="CraftingSkillGroup" value="Medicine" />
-        <property name="PickupJournalEntry" value="gunAssemblyTip,firstAidTip,farmingTip,augmentGunsTip" />
+        <property name="PickupJournalEntry" value="gunAssemblyTip,firstAidTip,farmingTip,augmentGunsTip,bedrollTip" />
 		<property name="Group" value="Medicine" />
 		<property name="ActionExp" value="10" />
     </item>
@@ -11566,8 +11566,10 @@ Mesh files no longer used:
 	</item>
 	<item id="1639" name="OldAxe">
 		<property name="Extends" value="fireaxeIron" />
+        <property name="Meshfile" value="#axe1?AXE5" />
+		<property name="HoldType" value="2" />
 		<property name="RepairTools" value="NoRepair" />
-        <property name="CustomIcon" value="fireaxeIron" />
+        <property name="CustomIcon" value="axe05" />
 		<property class="Action0">
 			<property name="Delay" value="1.3" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
@@ -11941,221 +11943,377 @@ Mesh files no longer used:
 	<item id="1655" name="Tomahawk">
 		<property name="Extends" value="fireaxeIron" />
 		<property name="HoldType" value="2" />
-		<property name="Meshfile" value="#ZdWeapons?Tomahawk" />
+        <property name="Meshfile" value="#ZdWeapons?Tomahawk" />
+		<property name="HandMeshfile" value="#ZdWeapons?Tomahawk" />
+		<property name="DropMeshfile" value="#ZdWeapons?Tomahawk" />
 		<property name="RepairTools" value="SharpeningStone" />
+        <property name="DegradationBreaksAfter" value="false" />
 		<property name="FuelValue" value="1" />
 		<property name="Weight" value="200" />
 		<property class="Action0">
-			<property name="Delay" value="0.8" />
+			<property name="Delay" value="1.3" />
 			<property name="Range" value="2.7" />
-			<property name="Buff" value="bleeding,criticalBlunt" />
-			<property name="Buff_chance" value=".5,.45" />
+            <property name="Stamina_usage" value="6" />
+			<property name="Buff" value="bleeding" />
+			<property name="Buff_chance" value=".5" />
 			<property name="DamageBonus.wood" value="25" />
-			<property name="DamageBonus.head" value="75" />
+			<property name="DamageBonus.head" value="60" />
+            <property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.stone" value="1" />
 			<property name="DamageBonus.cloth" value="10" />
 			<property name="DamageBonus.organic" value="10" />
-            <property name="DamageBonus.metal" value="2" />
+            <property name="DamageBonus.metal" value="1" />
+            <property name="DamageBonus.earth" value="0.3" />
             <property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="1.2" />
+            <property name="Class" value="Melee" />
+			<property name="Delay" value="2.6" />
 			<property name="Range" value="2.7" />
-			<property name="DamageBonus.wood" value="38" />
-			<property name="DamageBonus.head" value="112.5" />
+            <property name="Stamina_usage" value="9" />
+            <property name="Buff" value="bleeding" />
+			<property name="Buff_chance" value=".6" />
+			<property name="DamageBonus.wood" value="37" />
+			<property name="DamageBonus.head" value="90" />
+            <property name="DamageBonus.glass" value="37" />
 			<property name="DamageBonus.stone" value="1.5" />
 			<property name="DamageBonus.cloth" value="15" />
 			<property name="DamageBonus.organic" value="10" />
-            <property name="DamageBonus.metal" value="2" />
+            <property name="DamageBonus.metal" value="1.5" />
+            <property name="DamageBonus.earth" value="0.45" />
             <property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="10,25" />
-			<property name="BlockDamage" value="4,10" />
-			<property name="DegradationMax" value="50,600" />
-            <property name="DegradationRate" value="15,5" />
-			<property name="DismembermentBaseChance" value="0.2,0.4" />
-			<property name="DismembermentBonus" value="0.001,0.005" />
+			<property name="EntityDamage" value="6,15" />
+			<property name="BlockDamage" value="2,5" />
+			<property name="DegradationMax" value="100,600" />
+            <property name="DegradationRate" value="10,5" />
+			<property name="DismembermentBaseChance" value="0.1,0.4" />
+			<property name="DismembermentBonus" value="0.0008,0.005" />
 		</property>
+        <property name="DescriptionKey" value="TomahawkDesc" />
         <property name="ActionSkillGroup" value="Blade Weapons" />
-        <property name="CraftingSkillGroup" value="Journeyman Crafting" />
-	</item>
+    </item>
 	<item id="1656" name="axe02">
 		<property name="Meshfile" value="#axe1?AXE2" />
-		<property name="Material" value="metal" />
+       	<property name="HandMeshfile" value="#axe1?AXE2" />
+		<property name="DropMeshfile" value="#axe1?AXE2" />
+		<property name="Material" value="stone" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="1" />
-		<property name="RepairTools" value="forgedSteel" />
+		<property name="RepairTools" value="rockSmall" />
 		<property name="Degradation" value="200" param1="true" />
-		<property name="FuelValue" value="4" />
+        <property name="DegradationBreaksAfter" value="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
-		<property name="Weight" value="24" />
+		<property name="Weight" value="50" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.5" />
-			<property name="Range" value="2.3" />
+			<property name="Range" value="2.7" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="3" />
-			<property name="Buff" value="headshot" />
-			<property name="Buff_chance" value="1" />
-			<property name="DamageBonus.head" value="5" />
-			<property name="DamageBonus.glass" value="0.01" />
-			<property name="DamageBonus.plants" value="25" />
-			<property name="DamageBonus.leaves" value="25" />
+			<property name="Stamina_usage" value="8" />
+			<property name="Buff" value="bleeding" />
+			<property name="Buff_chance" value="0.1" />
+			<property name="DamageBonus.wood" value="15" />
+			<property name="DamageBonus.head" value="45" />
+            <property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.stone" value="1" />
+			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.organic" value="10" />
+            <property name="DamageBonus.metal" value="0" />
+            <property name="DamageBonus.earth" value="0.3" />
+            <property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
+		</property>
+        <property class="Action1">
+            <property name="Class" value="Melee" />
+			<property name="Delay" value="3" />
+			<property name="Range" value="2.7" />
+            <property name="Stamina_usage" value="12" />
+            <property name="Buff" value="bleeding" />
+			<property name="Buff_chance" value="0.2" />
+			<property name="DamageBonus.wood" value="22" />
+			<property name="DamageBonus.head" value="67" />
+            <property name="DamageBonus.glass" value="37" />
+			<property name="DamageBonus.stone" value="1.5" />
+			<property name="DamageBonus.cloth" value="15" />
+			<property name="DamageBonus.organic" value="10" />
+            <property name="DamageBonus.metal" value="0" />
+            <property name="DamageBonus.earth" value="0.45" />
+            <property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="15,25" />
-			<property name="BlockDamage" value="1,2" />
-			<property name="DegradationMax" value="200,400" />
-			<property name="DegradationRate" value="2,1" />
-		</property>
+			<property name="EntityDamage" value="6,15" />
+			<property name="BlockDamage" value="2,5" />
+			<property name="DegradationMax" value="50,600" />
+			<property name="DegradationRate" value="5,1" />
+       	</property>
 		<property name="Group" value="Ammo/Weapons" />
-		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+        <property name="DescriptionKey" value="axe02Desc" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 	</item>
 	<item id="1657" name="axe03">
 		<property name="Meshfile" value="#axe1?AXE3" />
+        <property name="HandMeshfile" value="#axe1?AXE3" />
+		<property name="DropMeshfile" value="#axe1?AXE3" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="17" />
 		<property name="Stacknumber" value="1" />
-		<property name="RepairTools" value="forgedSteel" />
+		<property name="RepairTools" value="SharpeningStone" />
 		<property name="Degradation" value="500" param1="true" />
-		<property name="FuelValue" value="4" />
+        <property name="DegradationBreaksAfter" value="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
-		<property name="Weight" value="24" />
+		<property name="Weight" value="1000" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.8" />
 			<property name="Range" value="3" />
-			<property name="Sphere" value="0.7" />
+			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="2" />
-			<property name="Buff" value="headshot" />
-			<property name="Buff_chance" value="1" />
-			<property name="DamageBonus.head" value="4" />
-			<property name="DamageBonus.glass" value="0.01" />
-			<property name="DamageBonus.plants" value="25" />
-			<property name="DamageBonus.leaves" value="25" />
+			<property name="Stamina_usage" value="9" />
+			<property name="Buff" value="bleeding,criticalBlunt" />
+			<property name="Buff_chance" value="0.4,0.2" />
+			<property name="DamageBonus.wood" value="22" />
+			<property name="DamageBonus.head" value="67" />
+            <property name="DamageBonus.glass" value="37" />
+			<property name="DamageBonus.stone" value="1.5" />
+			<property name="DamageBonus.cloth" value="15" />
+			<property name="DamageBonus.organic" value="10" />
+            <property name="DamageBonus.metal" value="0" />
+            <property name="DamageBonus.earth" value="0.45" />
+            <property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
+		</property>
+         <property class="Action1">
+            <property name="Class" value="Melee" />
+			<property name="Delay" value="3.6" />
+			<property name="Range" value="2.7" />
+            <property name="Stamina_usage" value="13.5" />
+            <property name="Buff" value="bleeding,criticalBlunt" />
+			<property name="Buff_chance" value="0.5,0.3" />
+			<property name="DamageBonus.wood" value="30" />
+			<property name="DamageBonus.head" value="82" />
+            <property name="DamageBonus.glass" value="37" />
+			<property name="DamageBonus.stone" value="1.5" />
+			<property name="DamageBonus.cloth" value="15" />
+			<property name="DamageBonus.organic" value="10" />
+            <property name="DamageBonus.metal" value="0" />
+            <property name="DamageBonus.earth" value="0.45" />
+            <property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="30,45" />
-			<property name="BlockDamage" value="3,7" />
-			<property name="DegradationMax" value="300,800" />
-			<property name="DegradationRate" value="2,1" />
+			<property name="EntityDamage" value="6,15" />
+			<property name="BlockDamage" value="2,5" />
+			<property name="DegradationMax" value="50,600" />
+			<property name="DegradationRate" value="10,5" />
+            <property name="DismembermentBaseChance" value="0.1,0.4" />
+			<property name="DismembermentBonus" value="0.0005,0.005" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
-		<property name="ActionSkillGroup" value="Blunt Weapons" />
+        <property name="DescriptionKey" value="axe03Desc" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</item>
 	<item id="1658" name="axe04">
 		<property name="Meshfile" value="#axe1?AXE4" />
-		<property name="Material" value="metal" />
+        <property name="HandMeshfile" value="#axe1?AXE4" />
+		<property name="DropMeshfile" value="#axe1?AXE4" />
+		<property name="Material" value="Msteel" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="1" />
-		<property name="RepairTools" value="forgedSteel" />
+		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="Degradation" value="200" param1="true" />
-		<property name="FuelValue" value="4" />
+        <property name="DegradationBreaksAfter" value="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
-		<property name="Weight" value="24" />
+		<property name="Weight" value="400" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="1.5" />
-			<property name="Range" value="2.3" />
-			<property name="Sphere" value="0.5" />
+			<property name="Range" value="2.7" />
+			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="3" />
-			<property name="Buff" value="headshot" />
-			<property name="Buff_chance" value="1" />
-			<property name="DamageBonus.head" value="5" />
-			<property name="DamageBonus.glass" value="0.01" />
-			<property name="DamageBonus.plants" value="25" />
-			<property name="DamageBonus.leaves" value="25" />
+			<property name="Stamina_usage" value="5" />
+			<property name="Buff" value="bleeding" />
+			<property name="Buff_chance" value="0.6" />
+            <property name="DamageBonus.head" value="65" />
+			<property name="DamageBonus.wood" value="25" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.stone" value="2" />
+			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.organic" value="10" />
+            <property name="DamageBonus.metal" value="2" />
+            <property name="DamageBonus.earth" value="0.3" />
+            <property name="DamageBonus.steel" value="1" />
+			<property name="DamageBonus.hardStone" value="1" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
+		</property>
+        <property class="Action1">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="3" />
+			<property name="Range" value="2.7" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="7.5" />
+			<property name="Buff" value="bleeding" />
+			<property name="Buff_chance" value="0.7" />
+            <property name="DamageBonus.head" value="97" />
+			<property name="DamageBonus.wood" value="37" />
+			<property name="DamageBonus.glass" value="37" />
+			<property name="DamageBonus.stone" value="3" />
+			<property name="DamageBonus.cloth" value="15" />
+			<property name="DamageBonus.organic" value="10" />
+            <property name="DamageBonus.metal" value="3" />
+            <property name="DamageBonus.earth" value="0.45" />
+            <property name="DamageBonus.steel" value="1.5" />
+			<property name="DamageBonus.hardStone" value="1.5" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="20,30" />
-			<property name="BlockDamage" value="1,2" />
-			<property name="DegradationMax" value="200,400" />
-			<property name="DegradationRate" value="2,1" />
+			<property name="EntityDamage" value="6,15" />
+			<property name="BlockDamage" value="2,5" />
+			<property name="DegradationMax" value="50,600" />
+			<property name="DegradationRate" value="10,5" />
+            <property name="DismembermentBaseChance" value="0.1,0.4" />
+			<property name="DismembermentBonus" value="0.0009,0.005" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
-		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+        <property name="DescriptionKey" value="axe04Desc" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
+		<property name="CraftingSkillGroup" value="Master Craftsman" />
 	</item>
-	<item id="1659" name="axe05">
+	<item id="1659" name="axe05"><!--JZMOD DELETE-->
 		<property name="Meshfile" value="#axe1?AXE5" />
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="1" />
-		<property name="RepairTools" value="forgedSteel" />
+		<property name="RepairTools" value="SharpeningStone" />
 		<property name="Degradation" value="200" param1="true" />
-		<property name="FuelValue" value="4" />
+        <property name="DegradationBreaksAfter" value="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1" />
-			<property name="Range" value="1.3" />
-			<property name="Sphere" value="0.2" />
+			<property name="Delay" value="1.3" />
+			<property name="Range" value="2.5" />
+			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="3" />
-			<property name="Buff" value="headshot" />
-			<property name="Buff_chance" value="1" />
-			<property name="DamageBonus.head" value="5" />
-			<property name="DamageBonus.glass" value="0.01" />
-			<property name="DamageBonus.plants" value="25" />
-			<property name="DamageBonus.leaves" value="25" />
+			<property name="Stamina_usage" value="7" />
+			<property name="Buff" value="bleeding,criticalBlunt" />
+			<property name="Buff_chance" value="0.7,0.3" />
+            <property name="DamageBonus.head" value="65" />
+			<property name="DamageBonus.wood" value="25" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.stone" value="2" />
+			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.organic" value="10" />
+            <property name="DamageBonus.metal" value="2" />
+            <property name="DamageBonus.earth" value="0.3" />
+            <property name="DamageBonus.steel" value="1" />
+			<property name="DamageBonus.hardStone" value="1" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="10,15" />
 			<property name="BlockDamage" value="1,2" />
 			<property name="DegradationMax" value="100,150" />
 			<property name="DegradationRate" value="2,1" />
+            <property name="DismembermentBaseChance" value="0.2,0.4" />
+			<property name="DismembermentBonus" value="0.001,0.005" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
-		<property name="ActionSkillGroup" value="Blunt Weapons" />
+        <property name="DescriptionKey" value="axe06Desc" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 	</item>
 	<item id="1660" name="axe06">
-		<property name="Meshfile" value="#axe1?AXE6" />
-		<property name="Material" value="metal" />
+	    <property name="Meshfile" value="#axe1?AXE6" />
+		<property name="HandMeshfile" value="#axe1?AXE6" />
+		<property name="DropMeshfile" value="#axe1?AXE6" />
+		<property name="Material" value="Msteel" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="1" />
-		<property name="RepairTools" value="forgedSteel" />
+		<property name="RepairTools" value="shortSteelPipe" />
 		<property name="Degradation" value="200" param1="true" />
+        <property name="DegradationBreaksAfter" value="true" />
 		<property name="FuelValue" value="4" />
 		<property name="SoundDestroy" value="wooddestroy1" />
-		<property name="Weight" value="24" />
+		<property name="Weight" value="500" />
 		<property class="Action0">
-			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1" />
-			<property name="Range" value="1.3" />
-			<property name="Sphere" value="0.2" />
+			<property name="Delay" value="1.3" />
+			<property name="Range" value="2.5" />
+			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="3" />
-			<property name="Buff" value="headshot" />
-			<property name="Buff_chance" value="1" />
-			<property name="DamageBonus.head" value="5" />
-			<property name="DamageBonus.glass" value="0.01" />
-			<property name="DamageBonus.plants" value="25" />
-			<property name="DamageBonus.leaves" value="25" />
+			<property name="Stamina_usage" value="7" />
+			<property name="Buff" value="bleeding,criticalBlunt" />
+			<property name="Buff_chance" value="0.7,0.3" />
+            <property name="DamageBonus.head" value="80" />
+			<property name="DamageBonus.wood" value="30" />
+			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.stone" value="2" />
+			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.organic" value="10" />
+            <property name="DamageBonus.metal" value="2" />
+            <property name="DamageBonus.earth" value="0.3" />
+            <property name="DamageBonus.steel" value="1" />
+			<property name="DamageBonus.hardStone" value="1" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
+		</property>
+        <property class="Action1">
+			<property name="Class" value="Melee" />
+			<property name="Delay" value="1.3" />
+			<property name="Range" value="2.5" />
+			<property name="Sphere" value="0.1" />
+			<property name="Sound_start" value="swoosh" />
+			<property name="Stamina_usage" value="7" />
+			<property name="Buff" value="bleeding,criticalBlunt" />
+			<property name="Buff_chance" value="0.8,0.4" />
+            <property name="DamageBonus.head" value="120" />
+			<property name="DamageBonus.wood" value="45" />
+			<property name="DamageBonus.glass" value="37" />
+			<property name="DamageBonus.stone" value="3" />
+			<property name="DamageBonus.cloth" value="15" />
+			<property name="DamageBonus.organic" value="10" />
+            <property name="DamageBonus.metal" value="3" />
+            <property name="DamageBonus.earth" value="0.3" />
+            <property name="DamageBonus.steel" value="1.5" />
+			<property name="DamageBonus.hardStone" value="1.5" />
+            <property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="10,15" />
-			<property name="BlockDamage" value="1,2" />
-			<property name="DegradationMax" value="100,150" />
-			<property name="DegradationRate" value="2,1" />
+			<property name="EntityDamage" value="6,15" />
+			<property name="BlockDamage" value="2,5" />
+			<property name="DegradationMax" value="100,600" />
+			<property name="DegradationRate" value="10,5" />
+            <property name="DismembermentBaseChance" value="0.1,0.4" />
+			<property name="DismembermentBonus" value="0.001,0.005" />
 		</property>
+        <property name="DescriptionKey" value="axe06Desc" />
 		<property name="Group" value="Ammo/Weapons" />
-		<property name="ActionSkillGroup" value="Blunt Weapons" />
-		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="ActionSkillGroup" value="Blade Weapons" />
 	</item>
 	<item id="1661" name="sword2">
 		<property name="Extends" value="machete" />
