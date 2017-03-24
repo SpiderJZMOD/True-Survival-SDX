@@ -780,7 +780,7 @@ Alternative settings for custom quest creation:
 		<reward type="Quest" id="challenge_Burglar3" />
 	</quest>
 	<quest id="challenge_Burglar" name_key="challenge_Profession" subtitle_key="challenge_Burglar_subtitle" description_key="challenge_Burglar_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Burglar_offer" difficulty="easy">
-		<objective type="Craft" id="SteakKnife" value="1" />
+		<objective type="Craft" id="ironShiv" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -791,7 +791,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<quest id="challenge_Burglar3" name_key="challenge_Profession" subtitle_key="challenge_Burglar3_subtitle" description_key="challenge_Burglar3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Burglar3_offer" difficulty="easy">
 		<objective type="ZombieKill" value="5" />
-		<requirement type="Holding" id="SteakKnife" />
+		<requirement type="Holding" id="ironShiv" />
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />
 	</quest>

@@ -2476,7 +2476,7 @@ lightArmorDesc,progression,Skill,KgNone,Receive less damage while wearing hide o
 medicine,progression,Skill,KgNone,Medicine,Médecine,Medizin,,Medicina
 medicineDesc,progression,Skill,KgNone,Get more health from topical and consumable remedies. Gain skill by using items from this group.,Obtenez davantage de santé avec les remèdes à appliquer et à consommer. Obtenez cette compétence en utilisant des objets de ce groupe.,"Heile mehr Gesundheit mit örtlichen und Verbrauchsheilmitteln. Erhalte die Fertigkeit, indem du Gegenstände aus dieser Kategorie benutzt.",,Consigue más salud de remedios tópicos o consumibles. Mejora tu habilidad usando objetos de este grupo.
 miner69er,progression,Skill,KgNone,Miner 69er,Mine de rien,Bergarbeitermeister,,Minero 69
-miner69erDesc,progression,Skill,KgNone,Do 20% more block damage with mining tools and use 10% less stamina per swing per rank.,Infligez 20 % de dégâts de bloc avec les outils miniers et consommez 10 % d'endurance en moins par coup par rang.,Verursache pro Rang 20 % mehr Blockschaden mit Bergbauwerkzeugen und verbrauche 10 % weniger Ausdauer pro Schlag.,,"Inflige 20 % más de daño en bloque con herramientas de minería. Además, cada golpe consume un 10 % menos de resistencia por nivel."
+miner69erDesc,progression,Skill,KgNone,Do 5% more block damage and use 5% less stamina per swing per rank.,Infligez 20 % de dégâts de bloc avec les outils miniers et consommez 10 % d'endurance en moins par coup par rang.,Verursache pro Rang 20 % mehr Blockschaden mit Bergbauwerkzeugen und verbrauche 10 % weniger Ausdauer pro Schlag.,,"Inflige 20 % más de daño en bloque con herramientas de minería. Además, cada golpe consume un 10 % menos de resistencia por nivel."
 miningTools,progression,Skill,KgNone,Mining Tools,Outils miniers,Bergbauwerkzeuge,,Herramientas de minería
 miningToolsDesc,progression,Skill,KgNone,Do more damage with mining tools and harvest resources faster. Gain skill by using items from this group.,Infligez davantage de dégâts avec les outils miniers et récoltez les ressources plus rapidement. Obtenez cette compétence en utilisant des objets de ce groupe.,"Verursache mehr Schaden mit Bergbauwerkzeugen und baue Rohstoffe schneller ab. Erhöhe die Fertigkeit, indem du Gegenstände aus dieser Kategorie benutzt.",,Inflige más daño con herramientas de minería y cosecha recursos más rápido.Mejora tu habilidad usando objetos de este grupo.
 miscCrafting,progression,Skill,KgNone,Misc Crafting,Fabrication diverse,Sonstiger Handwerksmeister,,Fabricación varia
@@ -4616,7 +4616,7 @@ scrapCable,,,,"Electric wire",,,,
 canUnlabeled,,,,"Unlabeled Can",,,,
 canUnlabeledDesc,,,,"This can of food has long since lost its label, leaving the contents of the can a mystery. It could fill you up or it could make you sick. Are you hungry enough to chance it?",,,,,
 AnimalGutsDesc,,,,"Rub this on a follower to make them smell and use them as bait for the zombies",,,,
-HandDollyDesc,,,,"Warning!!  Only used to move workstations!!   Place in hand and click on Workstation to be moved.",,,,
+HandDollyDesc,,,,"Warning!!  Only used to pick up workstations!! Do not use on anything else!!   Place in hand and click on Workstation to be moved.",,,,
 ttScrapMetalSteel,,,,"Scrap Steel",,,,
 SimplePole,,,,"Simple Fishing Pole",,,,
 FishingPole,,,,"Nice Fishing Pole",,,,

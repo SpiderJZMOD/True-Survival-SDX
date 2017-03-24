@@ -27,7 +27,7 @@
 				<setvalue skill_level="90,100" value="57,60" />
 			</effect>
 		</player_skill>
-		<perk name="Health Nut" icon="run" description_key="healthNutDesc" title_key="healthNut" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" always_fire="true" group="health">
+		<perk name="Health Nut" icon="run" description_key="healthNutDesc" title_key="healthNut" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" always_fire="true" group="health">
 			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
 			<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40" />
 			<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60" />
@@ -50,7 +50,7 @@
 				<add perk_level="5" value="50" />
 			</effect>
 		</perk>
-		<perk name="Sexual Tyranosaurus" icon="run" description_key="sexualTyranosaurusDesc" title_key="sexualTyranosaurus" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" always_fire="true" group="health">
+		<perk name="Sexual Tyranosaurus" icon="run" description_key="sexualTyranosaurusDesc" title_key="sexualTyranosaurus" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" always_fire="true" group="health">
 			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20" />
 			<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40" />
 			<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="60" />
@@ -65,7 +65,7 @@
 				<add perk_level="5" value=".5" />
 			</effect>
 		</perk>
-		<perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="2" group="health">
+		<perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="1" passive_effect="true" skill_point_cost_per_level="5" group="health">
 			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="20" />
 			<requirement perk_level="2" required_player_level="40" />
@@ -87,7 +87,7 @@
 				<multiply perk_level="5" value="2.0" />
 			</effect>
 		</perk>
-		<perk name="Run Forest Run" icon="run" description_key="runForestRunDesc" title_key="runForestRun" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" passive_effect="true" group="health">
+		<perk name="Run Forest Run" icon="run" description_key="runForestRunDesc" title_key="runForestRun" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" passive_effect="true" group="health">
 			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="20" />
 			<requirement perk_level="2" required_player_level="40" />
@@ -103,7 +103,7 @@
 				<multiply perk_level="5" value="0.5" />
 			</effect>
 		</perk>
-		<perk name="The Camel" icon="run" description_key="theCamelDesc" title_key="theCamel" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" passive_effect="true" group="health">
+		<perk name="The Camel" icon="run" description_key="theCamelDesc" title_key="theCamel" max_level="5" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" passive_effect="true" group="health">
 			<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1" />
 			<requirement perk_level="1" required_player_level="20" />
 			<requirement perk_level="2" required_player_level="40" />
@@ -559,11 +559,6 @@
 			<requirement perk_level="1" required_player_level="1" />
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="40" />
 			<recipe name="oil" unlock_level="1" />
-		</perk>
-		<perk name="Gasoline" icon="gasCan" description_key="Learn to process Gasoline in a refinery" title_key="Gasoline" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="tools">
-			<requirement perk_level="1" required_player_level="1" />
-			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="40" />
-			<recipe name="gasCan" unlock_level="1" />
 		</perk>
 		<perk name="Wrench" icon="wrench" description_key="Learn to repair the wrench and craft it on a anvil using a claw hammer." title_key="Wrench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="10" />

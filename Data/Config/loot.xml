@@ -1069,7 +1069,7 @@
 		<item name="partsAuger_blade" prob="0.5"/>
 		<item name="partsChainsaw_blade" prob="0.5"/>
 		<item group="BikeLoot" prob="0.5" />
-		<item name="HandDolly" prob="0.05" />
+		<item name="Crowbar" prob="0.05" />
 		<item name="Wielder" prob="0.5" />
         <item name="smallGenerator" prob="0.2" />
 		<item name="calipers" prob="0.1" />
@@ -1112,7 +1112,7 @@
 		<item name="toolAndDieSet" prob="0.08" />
 		<item group="rareTools" prob="0.1" />
 		<item group="automotive" prob=".2" />
-		<item name="HandDolly" prob="0.05" />
+		<item name="Crowbar" prob="0.05" />
 		<item name="fertilizer" count="1,3" prob="0.5" />
 		<item name="electricParts" count="4,8" prob=".5" />
 		<item name="electronicParts" count="1,3" prob=".2" />
@@ -1141,7 +1141,7 @@
 		<item name="Stimulant" count="1,3" prob="0.2" />
 		<item group="rareMedicine" prob="0.15" />
 		<item name="emptyJar" prob="0.6" />
-		<item name="SanitizingBandage" prob="0.2" />
+		<item name="SanitizingBandage" prob="0.17" />
 		<item name="PurificationTablets" count="1,2" prob="0.5" />
 		<item name="PainKillerShot" count="1,4" prob="0.03" />
 		<item name="StimulantShot" count="1,4" prob="0.03" />
@@ -1188,6 +1188,7 @@
 		<item name="emptyJar" prob="0.4" />
 		<item name="bottledWater" prob="0.4" />
 		<item name="beer" prob="0.4" />
+        <item name="mead" prob="0.2" />
 		<item name="BlueBerryJuice" prob="0.4" />
 		<item name="CarrotJuice" prob="0.5" />
 		<item name="AppleJuice" prob="0.5" />
@@ -2112,6 +2113,7 @@
 		<item name="gothicPants" />
 		<item name="gothBootsBlack" />
 		<item name="beer" prob="3" />
+        <item name="mead" prob="0.2" />
 		<item name="grainAlcohol" />
 		<item name="shades" prob=".1" />
 		<item name="shadesBlack" prob=".5" />
@@ -2147,6 +2149,7 @@
 		<item name="shovelIron" prob="1" />
 		<item name="shovelSteel" prob=".5" />
 		<item name="beer" prob="1" />
+        <item name="mead" prob="0.5" />
 	</lootcontainer>
 	<!-- JZMOD ADDED-->
 	<!-- lootcontainer 88 empty, generators-->
