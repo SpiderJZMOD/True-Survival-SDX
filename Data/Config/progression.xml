@@ -435,7 +435,7 @@
 			<requirement perk_level="1" required_player_level="20" />
 			<recipe name="electricSpear" unlock_level="1" />
 		</perk>
-		<perk name="Crossbow" icon="crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="Crossbow" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
+		<perk name="Crossbow" icon="crossbow" description_key="Level 1 - Learn to build and disassemble a simple Crossbow, crafting its parts on the wood working bench using a wrench. Level 2 - Learn to add a scope to the crossbow. Level 3 - Learn to upgrade to a automatic 6 shot crossbow." title_key="Crossbow" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="weapons">
 			<requirement perk_level="1" required_skill_name="Archery" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="5" />
 			<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20" />
@@ -560,25 +560,41 @@
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="40" />
 			<recipe name="oil" unlock_level="1" />
 		</perk>
-		<perk name="Wrench" icon="wrench" description_key="Learn to repair the wrench and craft it on a anvil using a claw hammer." title_key="Wrench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
-			<requirement perk_level="1" required_player_level="10" />
-			<recipe name="wrench" unlock_level="1" />
-		</perk>
 		<perk name="Claw Hammer" icon="clawHammer" description_key="Learn to craft a hammer head in the forge and how to build and repair a claw hammer" title_key="Claw Hammer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
 			<requirement perk_level="1" required_player_level="5" />
 			<recipe name="HammerHead" unlock_level="1" />
             <recipe name="clawHammer" unlock_level="1" />
 		</perk>
-		<perk name="Screwdriver" icon="screwdriver" description_key="Learn to craft and repair a screwdriver" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="tools">
+        <perk name="Wrench" icon="wrench" description_key="Learn to repair the wrench and craft it on a anvil using a claw hammer." title_key="Wrench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+			<requirement perk_level="1" required_player_level="10" />
+			<recipe name="wrench" unlock_level="1" />
+		</perk>
+		<perk name="Screwdriver" icon="screwdriver" description_key="Learn to repair a screwdriver and craft it on the Metal Working Bench" title_key="Screwdriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 			<requirement perk_level="1" required_player_level="10" />
 			<recipe name="screwdriver" unlock_level="1" />
 		</perk>
-		<perk name="Stone Drill" icon="auger" description_key="Learn to build and maintain a Stone drill that is cappable of digging hardstone and metals" title_key="Stone Drill" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+        <perk name="Chainsaw" icon="chainsaw" description_key="Learn to build and maintain a Chainsaw" title_key="Chainsaw" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
-			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="75" />
+			<recipe name="chainsaw" unlock_level="1" />
+		</perk>
+        <perk name="Auger" icon="auger" description_key="Learn to build and maintain an Auger that is cappable of digging soil and gravel quickly" title_key="Auger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<recipe name="auger" unlock_level="1" />
+		</perk>
+        <perk name="Nailgun" icon="nailgun" description_key="Learn to build and maintain a nailgun" title_key="Chainsaw" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="35" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<recipe name="nailgun" unlock_level="1" />
+		</perk>
+        <perk name="CompactDriver" icon="CompactDriver" description_key="Learn to build and maintain a CompactDriver" title_key="Chainsaw" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="40" group="tools">
+			<requirement perk_level="1" required_player_level="1" />
+			<recipe name="CompactDriver" unlock_level="1" />
+		</perk>
+		<perk name="Stone Drill" icon="auger" description_key="Learn to build and maintain a Stone drill that is cappable of digging hardstone and metals" title_key="Stone Drill" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="50" group="tools">
+			<requirement perk_level="1" required_player_level="75" />
+            <recipe name="partsAuger_bladeDiamond" unlock_level="1" />
 			<recipe name="StoneDrill" unlock_level="1" />
 		</perk>
-		<crafting_skill name="Gun Smithing" icon="gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" group="firearms" skill_point_cost_per_level="3">
+        <crafting_skill name="Gun Smithing" icon="gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" group="firearms" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">
 				<multiply skill_level="1,10" value="1,0.975" />
 				<multiply skill_level="10,20" value="0.975,0.95" />
@@ -1955,6 +1971,7 @@
 		<perk name="Farmer" icon="gunsmithing" description_key="These are the skills a farmer starts with. Collect 20 Profession pages to learn another profession" title_key="Farmer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="workSeedNursery" unlock_level="1" />
 			<recipe name="StoneHoe" unlock_level="1" />
+            <recipe name="hoeIron" unlock_level="1" />
 			<recipe name="fertilizer" unlock_level="1" />
 			<recipe name="AppleSeed" unlock_level="1" />
 			<recipe name="hopSeed" unlock_level="1" />

@@ -420,6 +420,7 @@
 		<item name="trophy2" />
 	</lootgroup>
 	<lootgroup name="ammoBig" count="1">
+        <item name="50CalBullet" count="1,6" prob="0.2" />
 		<item name="PersonalRocket" count="1,3" prob="0.2" />
 		<item name="DemoRocket" count="1,3" prob="0.2" />
 	</lootgroup>
@@ -616,6 +617,28 @@
 		<item name="partsNailgun_parts" prob="0.4" />
 		<item name="partsNailgun_battery" prob="0.4" />
 	</lootgroup>
+    <lootgroup name="WeeklyMagazines" count="1">
+        <item name="Miscellaneous Weekly" prob="0.4" />
+		<item name="Armor Smithing Weekly" prob="0.4" />
+		<item name="Leather Working Weekly" prob="0.4" />
+		<item name="Tailoring Weekly" prob="0.4" />
+		<item name="Gun Smithing Weekly" prob="0.4" />
+		<item name="Medicine Weekly" prob="0.4" />
+		<item name="Scavenging Weekly" prob="0.4" />
+		<item name="Engineering Weekly" prob="0.4" />
+		<item name="Hunting Weekly" prob="0.4" />
+    </lootgroup>
+    <lootgroup name="MonthlyMagazines" count="1">
+        <item name="Hunting Monthly" prob="0.4" />
+		<item name="Engineering Monthly" prob="0.4" />
+		<item name="Scavenging Monthly" prob="0.4" />
+		<item name="Medicine Monthly" prob="0.4" />
+		<item name="Gun Smithing Monthly" prob="0.4" />
+		<item name="Tailoring Monthly" prob="0.4" />
+		<item name="Leather Working Monthly" prob="0.4" />
+		<item name="Armor Smithing Monthly" prob="0.4" />
+		<item name="Miscellaneous Monthly" prob="0.4" />
+    </lootgroup>
 	<lootgroup name="TierThreeBooks" count="1">
         <item name="grenadeLauncherSchematic" prob="0.4" />
         <item name="AdvAssaultRifleSchematics" prob="0.4" />
@@ -635,15 +658,6 @@
 		<item name="Canning Food" prob="0.7" />
 		<item name="Holy Schnit thats good!" prob="0.7" />
 		<item name="Wielder Book" prob="0.7" />
-		<item name="Hunting Monthly" prob="0.4" />
-		<item name="Engineering Monthly" prob="0.4" />
-		<item name="Scavenging Monthly" prob="0.4" />
-		<item name="Medicine Monthly" prob="0.4" />
-		<item name="Gun Smithing Monthly" prob="0.4" />
-		<item name="Tailoring Monthly" prob="0.4" />
-		<item name="Leather Working Monthly" prob="0.4" />
-		<item name="Armor Smithing Monthly" prob="0.4" />
-		<item name="Miscellaneous Monthly" prob="0.4" />
 	</lootgroup>
 	<lootgroup name="TierTwoBooks" count="1">
 		<item name="Home Brewing" prob="0.4" />
@@ -664,15 +678,6 @@
 		<item name="Wood Shingles Book" prob="0.7" />
 		<item name="Fencing" prob="0.7" />
 		<item name="DuctTapeBook" prob="0.7" />
-		<item name="Miscellaneous Weekly" prob="0.4" />
-		<item name="Armor Smithing Weekly" prob="0.4" />
-		<item name="Leather Working Weekly" prob="0.4" />
-		<item name="Tailoring Weekly" prob="0.4" />
-		<item name="Gun Smithing Weekly" prob="0.4" />
-		<item name="Medicine Weekly" prob="0.4" />
-		<item name="Scavenging Weekly" prob="0.4" />
-		<item name="Engineering Weekly" prob="0.4" />
-		<item name="Hunting Weekly" prob="0.4" />
 	</lootgroup>
 	<lootgroup name="TierOneBooks" count="1">
 		<item name="Red Wood Book" prob="0.7" />
@@ -829,7 +834,7 @@
 		<item name="emptyJar" count="1" prob="0.3" />
 		<item name="canEmpty" count="1" prob="0.2" />
 		<item name="painkillers" prob="0.5" />
-		<item name="ductTape" count="1,4" prob="0.5" />
+		<item name="ductTape" count="1,3" prob="0.5" />
 		<item name="paper" count="1,6" prob="0.3" />
 		<item name="cloth" count="1,4" prob="0.3" />
 		<item group="trophyGroup" prob="0.3" />
@@ -839,12 +844,12 @@
         <item name="hook" prob="0.2" />
 		<item name="gunPowder" count="1,3" prob="0.02" />
 		<item name="doorKnob" count="1" prob="0.3" />
-		<item name="oil" count="1,4" prob="0.5" />
+		<item name="oil" count="1,3" prob="0.5" />
 		<item name="femur" count="1,2" prob="0.5" />
 		<item name="shortMetalPipe" count="1" prob="0.3" />
 		<item name="fishingWeight" count="1,3" prob="0.5" />
 		<item name="Plank" count="1" prob="0.5" />
-		<item name="glue" count="1,3" prob="0.75" />
+		<item name="glue" count="1,3" prob="0.7" />
 		<item name="nail" count="1,6" prob="0.7" />
         <item name="OldRevolver" prob="0.01" />
         <item name="OldRifle" prob="0.01" />
@@ -857,7 +862,7 @@
 		<item name="SewingNeedle" prob="0.2" />
 		<item group="seeds" prob="0.5" />
 		<item name="Ink Pen" prob="0.2" />
-		<item name="cigarette" count="1,4" prob="0.5" />
+		<item name="cigarette" count="1,3" prob="0.5" />
 		<item name="cigar" count="1" prob="0.5" />
 	</lootgroup>
 	<lootgroup name="rareAutomotive" count="1">
@@ -1091,6 +1096,7 @@
 		<!--JZMOD ADD MORE LOOT-->
 		<item name="chainsawSchematic" prob="0.01" />
 		<item name="augerSchematic" prob="0.01" />
+        <item name="nailgunSchematic" prob="0.01" />
         <item name="clawHammer" prob="0.1" quality="1,300" />
 		<item name="wrench" prob="0.08" quality="1,300" />
 		<item name="CircularSaw" prob="0.3" />
@@ -1608,6 +1614,8 @@
 		<item group="medicine" prob="0.5" />
 		<item name="candleStick" prob="0.2" />
 		<item group="TierOneBooks" prob="0.05" />
+        <item group="MonthlyMagazines" prob="0.1" />
+        <item group="WeeklyMagazines" prob="0.2" />
 	</lootcontainer>
 	<!-- lootcontainer 7 medicine cabinets -->
 	<lootcontainer id="7" count="0,2" size="4,2" sound_open="UseActions/open_medicine_cabinet" sound_close="UseActions/close_medicine_cabinet" open_time="5">
@@ -1637,7 +1645,8 @@
 	<lootcontainer id="11" count="1,2" size="4,3" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="30">
 		<item group="commonWeaponParts" prob="0.5" />
 		<item group="smallCommonWeaponParts" prob="0.5" />
-		<item name="book" count="1,2" prob="0.3" />
+		<item group="MonthlyMagazines" prob="0.1" />
+        <item group="WeeklyMagazines" prob="0.2" />
 		<item group="TierOneBooks" prob="0.3" />
 		<item group="TierTwoBooks" prob="0.5" />
 		<item group="magnumparts" prob="0.5" />
@@ -1649,6 +1658,8 @@
 		<item name="paper" count="1,10" />
 		<item name="book" prob="0.8" />
 		<item group="books" prob="0.07" />
+        <item group="MonthlyMagazines" prob="0.3" />
+        <item group="WeeklyMagazines" prob="0.5" />
 		<item name="pipeBomb" count="1,2" prob="0.1" />
 	</lootcontainer>
 	<!-- lootcontainer 15 generic zombie loot-->
@@ -1672,6 +1683,8 @@
 		<item group="books" prob="0.08" />
 		<item name="NightStick" prob="0.01" />
 		<item name="weaponRepairKit" prob="0.1" />
+        <item group="MonthlyMagazines" prob="0.1" />
+        <item group="WeeklyMagazines" prob="0.2" />
 		<item name="militaryFiber" count="1,4" prob="0.04" />
 	</lootcontainer>
 	<!-- lootcontainer 19 cars-->
@@ -1768,6 +1781,9 @@
 		<item group="ammoSmall" prob="0.1" />
 		<item group="hazmatGear" count="1" prob="0.008" />
 		<item group="books" prob="0.01" />
+        <item group="MonthlyMagazines" prob="0.1" />
+        <item group="WeeklyMagazines" prob="0.2" />
+        <item name="ProfessionPage" count="1,2" prob="0.5" />
 	</lootcontainer>
 	<!-- shotgun messiah -->
 	<lootcontainer id="39" count="0,2" size="4,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest"></lootcontainer>
@@ -1778,11 +1794,10 @@
 		<item group="TierThreeBooks" prob="0.7" />
 		<item group="militaryWeaponParts" count="1,2" prob="0.8" />
 		<item group="books" prob="0.1" />
-		<item group="empty" prob="0.45" />
 		<item group="GunBooks" prob="0.7" />
-         <item name="Tomahawk" prob="0.01" quality="300,600" />
+        <item name="Tomahawk" prob="0.01" quality="300,600" />
         <item name="axe06" prob="0.1" quality="300,600" />
-		<item name="ProfessionPage" count="1" prob="0.45" />
+		<item name="ProfessionPage" count="1,2" prob="0.5" />
 	</lootcontainer>
 	<!-- player dropped backpacks -->
 	<lootcontainer id="41" count="0,1" size="5,10" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1">
@@ -1812,6 +1827,8 @@
 		<item group="trophyGroup" prob="0.5" />
 		<item name="gunPowder" count="1,5" prob="0.5" />
 		<item name="book" count="1,2" prob="0.5" />
+        <item group="MonthlyMagazines" prob="0.1" />
+        <item group="WeeklyMagazines" prob="0.2" />
 		<item group="hazmatGear" prob="0.02" />
 	</lootcontainer>
 	<!-- file cabinet -->
@@ -1822,6 +1839,8 @@
 		<item name="painkillers" prob="0.1" />
 		<item group="trophyGroup" prob="0.5" />
 		<item name="book" count="1,4" prob="0.5" />
+        <item group="MonthlyMagazines" prob="0.1" />
+        <item group="WeeklyMagazines" prob="0.2" />
 		<item group="ammoSmall" prob="0.4" />
 	</lootcontainer>
 	<!-- cooler loot -->
@@ -1839,7 +1858,7 @@
 		<item group="books" prob="0.1" />
 		<item group="empty" prob="0.45" />
 		<item group="GunBooks" prob="0.7" />
-		<item name="ProfessionPage" count="1" prob="0.45" />
+		<item name="ProfessionPage" count="1,2" prob="0.5" />
 	</lootcontainer>
 	<!-- Police Car -->
 	<lootcontainer id="47" count="1,4" size="8,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="30" destroy_on_close="false">
@@ -1851,7 +1870,7 @@
 		<item name="bottledWater" prob="0.5" />
 		<item group="medicine" prob="0.2" />
 		<item name="Stimulant" prob="0.4" />
-		<item name="ProfessionPage" count="1" prob="0.45" />
+		<item name="ProfessionPage" count="1,2" prob="0.45" />
 	</lootcontainer>
 	<!-- 47 free-->
 	<!-- lootcontainer 48 purse -->
@@ -1861,6 +1880,8 @@
 		<item group="smallUncommonWeaponParts" prob="0.05" />
 		<item name="book" prob="0.05" />
 		<item group="cannedfood" />
+        <item group="MonthlyMagazines" prob="0.1" />
+        <item group="WeeklyMagazines" prob="0.2" />
 		<item name="bottledWater" />
 		<item group="medicine" prob="0.2" />
 		<item name="Stimulant" prob="0.4" />
@@ -1870,6 +1891,8 @@
 		<item group="TierOneBooks" prob="0.5" />
 		<item group="books" prob="0.05" />
 		<item name="book" prob="0.5" />
+        <item group="MonthlyMagazines" prob="0.1" />
+        <item group="WeeklyMagazines" prob="0.2" />
 	</lootcontainer>
 	<!-- shotgun Messiah -->
 	<lootcontainer id="50" count="1,2" size="4,4" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" open_time="10">
@@ -1913,7 +1936,7 @@
 		<item name="paper" />
 	</lootcontainer>
 	<!-- Apache Artifact Chest -->
-	<lootcontainer id="56" count="0,2" size="4,4" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" open_time="10">
+	<lootcontainer id="56" count="1,2" size="4,4" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" open_time="10">
 		<item group="CompoundBow+ammo" count="1" prob="0.3" />
 		<item name="PainKillerShot" count="1,4" prob="0.3" />
 		<item name="StimulantShot" count="1,4" prob="0.3" />
@@ -1955,6 +1978,8 @@
 		<item group="TierOneBooks" prob="0.5" />
 		<item name="book" prob="0.8" />
 		<item group="books" prob="0.05" />
+        <item group="MonthlyMagazines" prob="0.3" />
+        <item group="WeeklyMagazines" prob="0.4" />
 	</lootcontainer>
 	<!-- feral loot -->
 	<lootcontainer id="61" count="1,3" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
@@ -1964,7 +1989,7 @@
 		<item group="TierThreeBooks" prob="0.5" />
 		<item group="books" prob="0.2" />
 		<item group="ammoBig" count="1" prob="0.01" />
-		<item group="empty" prob="0.2" />
+        <item name="ProfessionPage" count="1,2" prob="0.5" />
 	</lootcontainer>
 	<!-- minibike storage -->
 	<lootcontainer id="62" count="0,1" size="3,6" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket">

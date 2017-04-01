@@ -3410,6 +3410,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="Park RangerProfession" count="1" craft_area="workResearchDesk" craft_time="30" craft_exp_gain="1000">
 		<ingredient name="ProfessionPage" count="20" />
 	</recipe>
+    <recipe name="partsAuger_bladeDiamond" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="300" craft_exp_gain="30">
+		<ingredient name="partsAuger_blade" count="1" />
+		<ingredient name="rawDiamond" count="100" />
+		<ingredient name="crushedSand" count="500" />
+		<ingredient name="glue" count="10" />
+		<ingredient name="scrapBrass" count="100" />
+		<ingredient name="scrapSteel" count="25" />
+	</recipe>
 	<recipe name="partsNailgun_battery" count="1" craft_area="workBatteryPack" craft_tool="scrapCable" craft_time="150" craft_exp_gain="0">
 		<ingredient name="partsNailgun_battery" count="1" />
 	</recipe>

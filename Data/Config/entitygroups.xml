@@ -1078,7 +1078,7 @@
 		<entity name="BanditPestilenceLeader" prob="0.15" />
 	</entitygroup>
     <entitygroup name="StartingSurvivorGroup">
-        <entity name="Dummy" prob="0.99" />
+        <entity name="Dummy" prob="1" />
         <entity name="Dummy" prob="0.5" />
 		<entity name="Maggi" prob="0.15" />
 		<entity name="Morgan" prob="0.15" />
@@ -1088,11 +1088,11 @@
 		<entity name="Rosita" prob="0.15" />
 		<entity name="Rick" prob="0.15" />
         <entity name="Abraham" prob="0.15" />
-        <entity name="Dummy" prob="0.35" />
+        <entity name="Dummy" prob="1" />
     </entitygroup>
     <entitygroup name="ArmedSurvivorGroup">
         <entity name="Dummy" prob="0.99" />
-        <entity name="Dummy" prob="0.5" />
+        <entity name="Dummy" prob="1" />
 		<entity name="Maggi" prob="0.15" />
 		<entity name="Morgan" prob="0.15" />
 		<entity name="DarrylDixon" prob="0.15" />
@@ -1105,14 +1105,14 @@
 		<entity name="Rick" prob="0.15" />
         <entity name="Abraham" prob="0.15" />
         <entity name="Dummy" prob="0.35" />
-        <entity name="BanditWarLeader" prob="0.05" />
-		<entity name="BanditDreadLeader" prob="0.05" />
-		<entity name="BanditTheMakerLeader" prob="0.05" />
-		<entity name="BanditFamineLeader" prob="0.05" />
-		<entity name="BanditDragonLeader" prob="0.05" />
-		<entity name="BanditDeathLeader" prob="0.05" />
-		<entity name="BanditPestilenceLeader" prob="0.05" />
-        <entity name="Dummy" prob="0.35" />
+        <entity name="BanditWarLeader" prob="0.2" />
+		<entity name="BanditDreadLeader" prob="0.2" />
+		<entity name="BanditTheMakerLeader" prob="0.2" />
+		<entity name="BanditFamineLeader" prob="0.2" />
+		<entity name="BanditDragonLeader" prob="0.2" />
+		<entity name="BanditDeathLeader" prob="0.2" />
+		<entity name="BanditPestilenceLeader" prob="0.2" />
+        <entity name="Dummy" prob="1" />
 	</entitygroup>
 	<entitygroup name="SupplyCrates_General">
 		<entity name="sc_General" />
