@@ -77,11 +77,61 @@ At a GS of 14, <gamestage stage="12"> is used.
 There is a console command: forcegamestage
 	This will force a gamestage for testing.
 	The calculation will not run at all but you jump directly to the spawn set for this stage.
+	
+- - - - - - -
+
+Jeoshua: I have changed the variables "slightly" so that 1 week is equal to double the game stage, and Game Bonus means much more
+
+Vanilla:
+gameStage = (Player Level 1) * (1 + (Days Survived 0 * Days Alive Bonus .1 + Scavenger Difficulty Multiplier .2))
+gameStage = 1 * (1 + (0 * .1) + .2)
+gameStage = 1.2
+
+gameStage = (Player Level 10) * (1 + (Days Survived 4 * Days Alive Bonus .1 + Nomad Difficulty Multiplier .2))
+gameStage = 10 * (1 + (4 * .1) + .2)
+gameStage = 16
+
+gameStage = (Player Level 10) * (1 + (Days Survived 10 * Days Alive Bonus .1 + Nomad Difficulty Multiplier .2))
+gameStage = 10 * (1 + (10 * .1) + .2)
+gameStage = 22
+
+gameStage = (Player Level 10) * (1 + (Days Survived 4 * Days Alive Bonus .1 + Survivalist Difficulty Multiplier .6))
+gameStage = 10 * (1 + (4 * .1) + .6)
+gameStage = 20
+
+gameStage = (Player Level 100) * (1 + (Days Survived 28 * Days Alive Bonus .1 + Insane Difficulty Multiplier .8))
+gameStage = 100 * (1 + (28 * .1) + .8)
+gameStage = 460
+
+Modded:
+gameStage = (Player 1) * (1 + (Days Survived 0 * Days Alive Bonus 0.1428) + Scavenger Difficulty -1)
+gameStage = 1 * (1 + (0 * 0.1428) - 1)
+gameStage = 0
+
+gameStage = (Player 10) * (1 + (Days Survived 4 * Days Alive Bonus 0.1428) + Nomad Difficulty 0)
+gameStage = 10 * (1 + (4 * 0.1428) + 0)
+gameStage = 15.714
+
+gameStage = (Player 10) * (1 + (Days Survived 10 * Days Alive Bonus 0.1428) + Nomad Difficulty 0)
+gameStage = 10 * (1 + (10 * 0.1428) + 0)
+gameStage = 24.28
+
+gameStage = (Player 10) * (1 + (Days Survived 4 * Days Alive Bonus 0.1428) + Survivalist Difficulty 1)
+gameStage = 10 * (1 + (4 * 0.1428) + 1)
+gameStage = 25.712
+
+gameStage = (Player 100) * (1 + (Days Survived 28 * Days Alive Bonus 0.1428) + Insane Difficulty 2)
+gameStage = 100 * (1 + (28 * 0.1428) + 2)
+gameStage = 700
 -->
 <gamestages>
-	<config startingWeight="1" scavengerGameDifficultyBonus="0" adventurerGameDifficultyBonus="0.1" nomadGameDifficultyBonus="0.2" warriorGameDifficultyBonus="0.3" survivalistGameDifficultyBonus="0.4" insaneGameDifficultyBonus="0.5" daysAliveDifficultyBonus="0.1" daysAliveChangeWhenKilled="2" diminishingReturns="0.2" />
+	<config startingWeight="1" scavengerGameDifficultyBonus="-1" adventurerGameDifficultyBonus="-0.5" nomadGameDifficultyBonus="0" warriorGameDifficultyBonus="0.5" survivalistGameDifficultyBonus="1.0" insaneGameDifficultyBonus="2.0" daysAliveDifficultyBonus="0.1428" daysAliveChangeWhenKilled="2" diminishingReturns="0.2" />
 	<spawner name="BloodMoonHorde">
 		<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated horde stages  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+		<gamestage stage="0">
+			<spawn group="hordeStageGS1" num="1" maxAlive="1" duration="1" />
+			<spawn group="ZombiesNight" num="1" maxAlive="1" />
+		</gamestage>
 		<gamestage stage="1">
 			<spawn group="hordeStageGS1" num="1" maxAlive="1" duration="1" />
 			<spawn group="ZombiesNight" num="1" maxAlive="1" />

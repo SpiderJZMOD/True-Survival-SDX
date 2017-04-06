@@ -4,9 +4,9 @@
 	<rulesets>
 		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0.382" generation_distance="3500" terrain_generator="vanilla">
 			<cell_rule name="wastelandHub" position="0,0" />
-			<cell_rule name="wastelandCity" prob="0.2"/>
-			<cell_rule name="lowDensity" prob="0.5" />
-			<cell_rule name="highDensity" prob="0.3" />
+			<cell_rule name="wastelandCity" prob="0.3" />
+			<cell_rule name="lowDensity" prob="0.4" />
+			<cell_rule name="highDensity" prob="0.5" />
 		</ruleset>
 	</rulesets>
 	
@@ -1586,7 +1586,9 @@
         Voronoi    -->
 		
 	<terrain_generators>
-		<terrain_generator name="vanilla" use_old_final="false">
+		
+		<!-- WIP Jeoshua -->
+		<!--<terrain_generator name="vanilla" use_old_final="false">
 			<module name="continents" type="FastNoise">
 				<property name="frequency" value="0.5"/>
 			</module>
@@ -1658,8 +1660,160 @@
 			</module>
 			
 			<output module="clampOutput" />
-		</terrain_generator>
+		</terrain_generator> -->
 	
+
+		<!-- Tin's 4 part generator -->
+		<terrain_generator name="vanilla" use_old_final="false">
+			
+			<module name="landBaseFinal" type="FastNoise" no_seed="true">
+				<property name="frequency" value="0.012"/>
+			</module>
+			<module name="landBaseScale" type="ScaleOutput">
+				<property name="sourceModule" value="landBaseFinal"/>
+				<property name="scale" value="0.05"/>
+				<property name="bias" value="-0.9"/>
+			</module>
+			<module name="landBase" type="FastTurbulence">
+				<property name="sourceModule" value="landBaseScale"/>
+				<property name="frequency" value="1.9"/>
+				<property name="power" value="30"/>
+				<property name="roughness" value="8"/>
+			</module>
+
+			<module name="HillBase" type="FastBillow" no_seed="true">
+				<property name="frequency" value="0.0045"/>
+			</module>
+			<module name="HillScaled" type="ScaleBiasOutput">
+				<property name="sourceModule" value="HillBase"/>
+				<property name="scale" value="0.30"/>
+				<property name="bias" value="-0.8"/>
+			</module>
+			<module name="Hill" type="FastTurbulence">
+				<property name="sourceModule" value="HillScaled"/>
+				<property name="power" value="30"/>
+				<property name="frequency" value="0.5"/>
+				<property name="roughness" value="12"/>
+			</module>
+			<module name="HillOutput" type="ClampOutput">
+				<property name="sourceModule" value="Hill"/>
+				<property name="bounds" value="0,180"/>
+			</module>
+			
+			<module name="MntBase" type="FastBillow" no_seed="true">
+				<property name="frequency" value="0.009"/>
+			</module>
+			<module name="MntScaled" type="ScaleBiasOutput">
+				<property name="sourceModule" value="MntBase"/>
+				<property name="scale" value="0.75"/>
+				<property name="bias" value="-0.8"/>
+			</module>
+			<module name="Mnt" type="FastTurbulence">
+				<property name="sourceModule" value="MntScaled"/>
+				<property name="power" value="30"/>
+				<property name="frequency" value="0.5"/>
+				<property name="roughness" value="12"/>
+			</module>
+			<module name="MntOutput" type="ClampOutput">
+				<property name="sourceModule" value="Mnt"/>
+				<property name="bounds" value="0,180"/>
+			</module>
+			
+			<module name="WaterBase" type="FastNoise" no_seed="true">
+				<property name="frequency" value="1.5"/>
+				<property name="displacement" value="0.1"/>
+			</module>
+			<module name="WaterOutput" type="BiasOutput">
+				<property name="sourceModule" value="WaterBase"/>
+				<property name="bias" value="0.95"/>
+			</module>
+			<module name="Water" type="ScaleOutput">
+				<property name="sourceModule" value="WaterOutput"/>
+				<property name="scale" value="0.13"/>
+			</module>
+			
+			<module name="RiverBase" type="FastBillow" seed_additive="2">
+				<property name="frequency" value="0.66"/>
+			</module>
+			<module name="RiverScaled" type="ScaleBiasOutput">
+				<property name="sourceModule" value="RiverBase"/>
+				<property name="scale" value="0"/>
+				<property name="bias" value="-0.22"/>
+			</module>
+			
+			<module name="ControlBase1" type="FastNoise">
+				<property name="frequency" value="1"/>
+			</module>
+			
+			<module name="ControlBase2" type="FastNoise" seed_additive="1">
+				<property name="frequency" value="1.012"/>
+			</module>
+			
+			<module name="Hill" type="Add">
+				<property name="controlModule" value="ControlBase2"/>
+				<property name="sourceModule1" value="landBase"/>
+				<property name="sourceModule2" value="HillOutput"/>
+				<property name="bounds" value="0, 2500"/>
+				<property name="edgeFalloff" value="128"/>
+			</module>
+			
+			<module name="Mnt" type="Add">
+				<property name="controlModule" value="ControlBase2"/>
+				<property name="sourceModule1" value="landBase"/>
+				<property name="sourceModule2" value="MntOutput"/>
+				<property name="bounds" value="0, 2500"/>
+				<property name="edgeFalloff" value="128"/>
+			</module>
+			
+			<module name="HillMnt" type="Add">
+				<property name="controlModule" value="ControlBase2"/>
+				<property name="sourceModule1" value="Hill"/>
+				<property name="sourceModule2" value="Mnt"/>
+				<property name="bounds" value="0, 4000"/>
+				<property name="edgeFalloff" value="128"/>
+			</module>
+			
+			<module name="Combined" type="Select">
+				<property name="controlModule" value="ControlBase2"/>
+				<property name="sourceModule1" value="Water"/>
+				<property name="sourceModule2" value="HillMnt"/>
+				<property name="bounds" value="0,1"/>
+				<property name="edgeFalloff" value="0.5"/>
+			</module>
+			
+			<module name="worldController" type="FastRidgedMultifractal" seed_additive="-3">
+				<property name="frequency" value="0.25"/>
+			</module>
+			<module name="invertedWorldController" type="InvertOutput">
+				<property name="sourceModule" value="worldController"/>
+			</module>
+			<module name="plusWorldController" type="Select"> <!-- is this needed....? -->
+				<property name="controlModule" value="worldController"/>
+				<property name="sourceModule1" value="invertedWorldController"/>
+				<property name="sourceModule2" value="worldController"/>
+				<property name="bounds" value="0,100"/>
+			</module>
+			<module name="worldMixed" type="Select">
+				<property name="controlModule" value="plusWorldController"/>
+				<property name="sourceModule1" value="Combined"/>
+				<property name="sourceModule2" value="RiverScaled"/>
+				<property name="bounds" value="-100,0.03"/>
+				<property name="edgeFalloff" value="0.25"/>
+			</module>
+		
+			<module name="scaleBiasOutput" type="ScaleBiasOutput">
+				<property name="sourceModule" value="worldMixed"/>
+				<property name="scale" value="180"/>
+				<property name="bias" value="-1"/>
+			</module>
+			<module name="clampOutput" type="ClampOutput">
+				<property name="sourceModule" value="scaleBiasOutput"/>
+				<property name="bounds" value="-28,160"/>
+			</module>
+			
+			<output module="clampOutput"/>
+		</terrain_generator>
+		
 	</terrain_generators>
 	
 	<biome_generators>
@@ -1667,7 +1821,7 @@
 		<biome_generator name="vanilla">
 		
 			<module name="biomeBase" type="FastNoise" >
-				<property name="frequency" value="0.0007375" /> <!-- lower for larger & fewer biomes, higher for smaller & more biomes -->
+				<property name="frequency" value="0.0006375" /> <!-- lower for larger & fewer biomes, higher for smaller & more biomes -->
 			</module>
 			
 			<module name="biomeDither" type="Turbulence">
@@ -1725,7 +1879,7 @@
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="water">
-			<terrain_generator range="-31,1"/>
+			<terrain_generator range="-2,2"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="city">
@@ -1773,5 +1927,10 @@
 			<terrain_generator range="135,255" />
 		</biome_spawn_rule>
 		
+		<!-- Water Table Visualization -->
+		<!--biome_spawn_rule name="water">
+			<terrain_generator range="-28,0"/>
+		</biome_spawn_rule-->
+
 	</biome_spawn_rules>
 </rwgmixer>
