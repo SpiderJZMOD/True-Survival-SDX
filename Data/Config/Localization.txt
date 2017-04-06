@@ -1,5 +1,5 @@
 Key,Source,Context,Changes,English,French,German,Klingon,Spanish
-adobeGroupDesc,blocks,Block,KgNone,adobe is an easy to make block on a Wood Working Bench.,"Dans les régions désertes, l'adobe est simple à fabriquer. Vous n'avez besoin d'aucun outil en particulier.",Adobe ist in Wüstenregionen einfach herzustellen und es erfordert keine besonderen Werkzeuge.,,"En regiones desérticas, el adobe es fácil de hacer. Además, no se necesitan herramientas especiales."
+adobeGroupDesc,blocks,Block,KgNone,In desert regions adobe is easy an easy to make block on a Wood Working Bench.,"Dans les régions désertes, l'adobe est simple à fabriquer. Vous n'avez besoin d'aucun outil en particulier.",Adobe ist in Wüstenregionen einfach herzustellen und es erfordert keine besonderen Werkzeuge.,,"En regiones desérticas, el adobe es fácil de hacer. Además, no se necesitan herramientas especiales."
 adobePeachBlock,blocks,Block,KgNone,Adobe Peach Block,Bloc d'adobe pêche,Pfirsich-Adobe – Block,,Bloque de adobe color melocotón
 adobePeachCNRFull,blocks,Block,KgNone,Adobe Peach Full Corner,Angle complet en adobe pêche,Pfirsich-Adobe – Komplette Ecke,,Esquina de adobe color melocotón
 adobePeachCNRInside,blocks,Block,KgNone,Adobe Peach Inside Corner,Angle intérieur en adobe pêche,Pfirsich-Adobe – Innenecke,,Esquina interior de adobe color melocotón
@@ -731,7 +731,7 @@ sandbagEnd2,blocks,Block,KgNone,Sandbag End2,Extrémité de sac de sable 2,Sands
 sandbagsBlock,blocks,Block,KgNone,Sandbags,Sacs de sable,Sandsäcke,,Bolsas de arena
 sandbagsGroupDesc,blocks,Block,KgNone,Sandbags are not very sturdy but can be put down quickly and provide decent protection from bullets.,"Les sacs de sable ne sont pas très robustes, mais ils s'installent rapidement et protègent assez bien des balles.","Sandsäcke sind nicht sehr robust, können aber schnell platziert werden und bieten ganz guten Schutz gegen Kugeln.",,"Las bolsas de arena no son muy robustas, pero se pueden colocar rápido y brindan buena protección contra las balas."
 schoolDesk,blocks,Block,KgNone,School Desk,Table d'école,Schultisch,,Escritorio escolar
-scrapFrameGroupDesc,blocks,Block,EnChanged,Used for bases. Upgrade & repair with iron and construction tool. Upgrade more with concrete mix & forged steel. crafted in the metal working bench with a wrench.,,Wird für Basen verwendet. Kann mit Eisen und Bauwerkzeugen aufgewertet und repariert werden. Kann mit Betonmischung und geschmiedetem Stahl weiter aufgewertet werden.,,
+scrapFrameGroupDesc,blocks,Block,EnChanged,Used for bases. Upgrade & repair with iron and construction tool. Upgrade more with concrete mix & forged steel. Crafted in the metal working bench with a wrench.,,Wird für Basen verwendet. Kann mit Eisen und Bauwerkzeugen aufgewertet und repariert werden. Kann mit Betonmischung und geschmiedetem Stahl weiter aufgewertet werden.,,
 scrapHatch_v1,blocks,Block,KgNone,Scrap Iron Hatch,Trappe en ferraille,Alteisenklappe,,Escotilla de chatarra de hierro
 scrapHatch_v1Desc,blocks,Block,EnChanged,Press & hold [activate] to lock it or set a combination. Upgrade & repair with iron and a construction tool using the secondary action.,,Zum Verschließen oder Kombination eingeben [activate] gedrückt halten. Kann mit Eisen und Bauwerkzeugen unter Verwendung der sekundären Aktion aufgewertet und repariert werden.,,
 scrapHatch_v2,blocks,Block,KgNone,Scrap Hatch v2,Trappe en ferraille v2,Schrottklappe v2,,Escotilla de chatarra v2
@@ -1403,12 +1403,12 @@ woodLogSpike1Desc,blocks,Trap,EnChanged KgNone,"Log spike traps can damage, crip
 campfire,blocks,Workstation,KgNone,Campfire,Feu de camp,Lagerfeuer,,Fogata
 campfireDesc,blocks,Workstation,KgNone,"Useful to cook food and warm up. Unlock more recipes by adding a stick, cooking pot, cooking grill or Frying Pan. You do not gain any XP in this Workstation.","Utile pour cuisiner de la nourriture et se réchauffer. Déverrouillez d'autres compositions en ajoutant une marmite, un grill ou un bécher.","Nützlich zum Kochen von Nahrung und zum Aufwärmen. Schalte mehr Rezepte frei, indem du einen Kochtopf, Kochgrill oder Messbecher hinzufügst.",,"Útil para cocinar comida y calentarse. Añade una olla, una parrilla o un matraz para desbloquear más recetas."
 cementMixer,blocks,Workstation,KgNone,Cement Mixer,Bétonnière,Zementmischer,,Mezclador de cemento
-workcementMixerDesc,blocks,Workstation,KgNone,A cement mixer needs a solid foundation and will help you craft materials like concrete or asphalt. Craft it on the Wood Working Bench using a Wrench.,Une bétonnière nécessite une base solide et vous aidera à fabriquer des matériaux comme le béton ou l'asphalte.,Ein Zementmischer benötigt ein stabiles Fundament und dient zur Fertigung von Beton oder Asphalt.,,Una mezcladora de cemento necesita una base sólida. Te ayudará a fabricar materiales como hormigón o asfalto.
+cementMixerDesc,blocks,Workstation,KgNone,A cement mixer needs a solid foundation and will help you craft materials like concrete or asphalt. Craft it on the Wood Working Bench using a Wrench.,Une bétonnière nécessite une base solide et vous aidera à fabriquer des matériaux comme le béton ou l'asphalte.,Ein Zementmischer benötigt ein stabiles Fundament und dient zur Fertigung von Beton oder Asphalt.,,Una mezcladora de cemento necesita una base sólida. Te ayudará a fabricar materiales como hormigón o asfalto.
 chemistryStation,blocks,Workstation,KeyTrunk FrNone GrNone KgNone SpNone,Chemistry Station,,Chemietisch,,
-workchemistryStationDesc,blocks,Workstation,KeyTrunk FrNone GrNone KgNone SpNone,With the proper equipment you can work far more efficiently than on a campfire. Crafted on the Wood Working Bench using a Claw Hammer.,,Mit der richtigen Ausrüstung kannst du effektiver arbeiten als mit einem Messbecher am Lagerfeuer.,,
+chemistryStationDesc,blocks,Workstation,KeyTrunk FrNone GrNone KgNone SpNone,With the proper equipment you can work far more efficiently than on a campfire. Crafted on the Wood Working Bench using a Claw Hammer.,,Mit der richtigen Ausrüstung kannst du effektiver arbeiten als mit einem Messbecher am Lagerfeuer.,,
 forge,blocks,Workstation,KgNone,Forge,Forge,Schmiede,,Fragua
 forgeDesc,blocks,Workstation,KgNone,"Used to smelt metals into tools and weapons. Unlock more recipes by adding an anvil, calipers or tool and die set.","Sert à faire fondre des métaux pour en faire des outils ou des armes. Déverrouillez d'autres compositions en ajoutant une enclume, un pied à coulisse ou un lot de matrices et d'outils.","Dient zum Einschmelzen von Metallen für Werkzeuge und Waffen. Schalte mehr Rezepte frei, indem du einen Amboss, einen Messschieber oder eine Werkzeugkiste hinzufügst.",,"Se usa para fundir metales y convertirlos en herramientas y armas. Añade un yunque, calibradores o herramientas y un juego de ajuste para desbloquear más recetas."
-workbench,blocks,Workstation,KgNone,Workbench,Établi,Werkbank,,Mesa de trabajo
+workbench,blocks,Workstation,KgNone,Wood Working Bench,Établi,Werkbank,,Mesa de trabajo
 workbenchDesc,blocks,Workstation,KgNone,A workbench lets you craft items just like you do in your backpack.,Un établi vous permet de fabriquer des objets comme vous le faites dans votre sac à dos.,Mit einer Werkbank kannst du genauso wie in deinem Rucksack Gegenstände fertigen.,,"Una mesa de trabajo te permite fabricar objetos, igual que en la mochila."
 alcoholPoisoning,buffs,Buff,KgNone,Inebriated,Ébriété,Berauscht,,Embriaguez
 alcoholPoisoningDesc,buffs,Buff,EnChanged KgNone,You have alcohol poisoning. There may be a duration but you're too sick to figure it out.,"Vous êtes en état d'ébriété. Les effets ont une durée limitée, mais vous ne la connaissez pas.","Du hast eine Alkoholvergiftung. Dies hält vielleicht eine gewisse Zeit an, aber du kannst nicht rauskriegen, wie lange.",,"Tienes una congestión alcohólica. Puede que solo sea durante un rato, pero no sabes cuánto durará."
@@ -1682,7 +1682,7 @@ augerSchematicDesc,items,Book,KgNone,Learn how to repair and assemble augers by 
 beerBook,items,Book,KeyTrunk FrNone GrNone KgNone SpNone,Tasting And Brewing,,,,
 beerBookDesc,items,Book,KeyTrunk FrNone GrNone KgNone SpNone,Read this book to learn how to grow hops and brew beer.,,,,
 chainsawSchematic,items,Book,KgNone,Chainsaw Schematic,Schéma de tronçonneuse,Bauplan – Kettensäge,,Esquema de motosierra
-chainsawSchematicDesc,items,Book,KgNone,Learn how to assemble and repair chainsaws by reading this schematic. Collect the requiered parts to craft a copy on the Research Desk,Apprenez à assembler et réparer les tronçonneuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Kettensägen zusammengesetzt und repariert werden.",,Lee este esquema para aprender a armar y reparar motosierras.
+chainsawSchematicDesc,items,Book,KgNone,Learn how to assemble and repair chainsaws by reading this schematic. Collect the required parts to craft a copy on the Research Desk,Apprenez à assembler et réparer les tronçonneuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Kettensägen zusammengesetzt und repariert werden.",,Lee este esquema para aprender a armar y reparar motosierras.
 clawHammerSchematic,items,Book,KgNone,Claw Hammer Schematic,Schéma d'arrache-clou,Bauplan – Klauenhammer,,Esquema de martillo de orejas
 clawHammerSchematicDesc,items,Book,KgNone,Learn how to craft a claw hammer by reading this schematic.,Apprenez à fabriquer un arrache-clou en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Klauenhämmer gefertigt werden.",,Lee este esquema para aprender a fabricar un martillo de orejas.
 clubSpikedSchematic,items,Book,KgNone,Spiked Club Schematic,Schéma de massue à pointes,Bauplan – Nagelkeule,,Esquema del lucero del alba
@@ -2114,7 +2114,7 @@ candyTinDesc,items,Item,KgNone,Grandma's candy tin. Good for scrapping or a perf
 canEmpty,items,Item,KgNone,Empty Can,Conserve vide,Leere Dose,,Lata vacía
 canEmptyDesc,items,Item,KgNone,An empty can which you can scrap or fill with water.,Une conserve vide que vous pouvez recycler ou remplir d'eau.,"Eine leere Dose, die zerlegt oder mit Wasser gefüllt werden kann.",,Una lata vacía que puedes desechar o llenar de agua.
 carBattery,items,Item,KgNone,Lead Car Battery,Batterie de voiture en plomb,Bleibatterie für Autos,,Batería de coche de plomo
-carBatteryDesc,items,Item,KgNone,"Car batteries can be used in vehicles, scrapped for lead in your backpack or smelted at the forge for lead. Recharge it in a Battery Pack using scrap wire.","Les batteries de voiture peuvent être utilisées sur les véhicules, recyclées en plomb dans votre sac à dos ou fondues dans la forge pour obtenir du plomb.","Autobatterien können für Fahrzeuge benutzt, für Blei im Rucksack zerlegt oder in der Schmiede eingeschmolzen werden.",,"Las baterías de coche se pueden usar en vehículos, despedazar para tener plomo en tu mochila o fundir en la fragua para obtener plomo."
+carBatteryDesc,items,Item,KgNone,"Car batteries can be used in vehicles, or scrapped for electrical parts. Recharge it in a Battery Pack using scrap wire.","Les batteries de voiture peuvent être utilisées sur les véhicules, recyclées en plomb dans votre sac à dos ou fondues dans la forge pour obtenir du plomb.","Autobatterien können für Fahrzeuge benutzt, für Blei im Rucksack zerlegt oder in der Schmiede eingeschmolzen werden.",,"Las baterías de coche se pueden usar en vehículos, despedazar para tener plomo en tu mochila o fundir en la fragua para obtener plomo."
 casinoCoin,items,Item,KgNone,Duke's Casino Token,Jeton du Duke's Casino,Jeton aus Dukes Kasino,,Ficha del casino de Duke
 casinoCoinDesc,items,Item,KgNone,A Duke's casino coin. After the epidemic and war it became the main currency for trading in Navezgane.,"Une pièce du Duke's Casino. Après l'épidémie et la guerre, ces pièces sont devenues la monnaie principale de Navezgane.",Ein Jeton aus Dukes Kasino. Nach der Seuche und dem Krieg wurden diese Jetons zur Hauptwährung in Navezgane.,,Una moneda del casino de Duke. Se convirtió en la moneda principal para comerciar en Navezgane tras la epidemia y la guerra.
 cement,items,Item,KgNone,Cement,Ciment,Zement,,Cemento
@@ -2232,12 +2232,12 @@ trophy2,items,Item,KgNone,Lead Trophy,Trophée en plomb,Bleitrophäe,,Trofeo de 
 trophy2Desc,items,Item,KgNone,Lead objects can be scrapped into scrap lead in your backpack or smelted in a forge as a core resource.,"Les objets en plomb peuvent être recyclés dans votre sac à dos pour obtenir du plomb recyclé, ou fondus dans la forge pour obtenir une ressource de base.","Gegenstände aus Blei können in deinem Rucksack zerlegt werden, um Bleistücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de plomo se pueden despedazar para tener chatarra de plomo en tu mochila o fundir en la fragua para obtener recursos básicos.
 trophy3,items,Item,KgNone,Tungsten Trophy,Trophée en tungstène,Wolframtrophäe,,Trofeo de tungsteno
 trophyDesc,items,Item,KgNone,Brass objects can be scrapped into scrap brass in your backpack or smelted in a forge as a core resource.,"Les objets en laiton peuvent être recyclés dans votre sac à dos pour obtenir du laiton recyclé, ou fondus dans la forge pour obtenir une ressource de base.","Gegenstände aus Messing können in deinem Rucksack zerlegt werden, um Messingstücke zu erhalten. Sie können auch in der Schmiede eingeschmolzen werden, um den Rohstoff selbst zu erhalten.",,Los objetos de latón se pueden despedazar para tener chatarra de latón en tu mochila o fundir en la fragua para obtener recursos básicos.
-turd,items,Item,KgNone,A human turd,Une crotte d'humain,Menschliche Scheiße,,Una mierda humana
-turdDesc,items,Item,KgNone,A disgusting turd. Only pick up on the clean end. It can be thrown at your friends or to distract zombies.,Une crotte dégoutante. À ramasser par le bout propre. Vous pouvez la jeter sur vos amis ou vous en servir pour distraire des zombies.,Ekelhafte Scheiße. Heb sie nur am sauberen Ende auf. Du kannst sie auf deine Freunde werfen oder damit Zombies ablenken.,,"Una mierda asquerosa. Recógela por la parte limpia. Se la puedes lanzar a tus amigos, o a los zombis para distraerlos."
+turd,items,Item,KgNone,A turd,Une crotte,Scheiße,,Una mierda
+turdDesc,items,Item,KgNone,A turd. Only pick up on the clean end. It can be thrown at your friends or to distract zombies.,Une crotte dégoutante. À ramasser par le bout propre. Vous pouvez la jeter sur vos amis ou vous en servir pour distraire des zombies.,Ekelhafte Scheiße. Heb sie nur am sauberen Ende auf. Du kannst sie auf deine Freunde werfen oder damit Zombies ablenken.,,"Una mierda asquerosa. Recógela por la parte limpia. Se la puedes lanzar a tus amigos, o a los zombis para distraerlos."
 wood,items,Item,KgNone,Wood,Bois,Holz,,Madera
 woodDesc,items,Item,KgNone,A piece of wood. Great for building tools and constructing wood frames for building.,Un morceau de bois. Idéal pour fabriquer des outils et construire des structures en bois pour les constructions.,"Ein Stück Holz. Ideal, um Werkzeuge und Holzrahmen für den Bau herzustellen.",,Un trozo de madera. Ideal para construir herramientas y estructuras de madera para edificios.
-yuccaFibers,items,Item,KgNone,Plant Fibers,Fibres végétales,Pflanzenfaser,,Fibra vegetal
-yuccaFibersDesc,items,Item,KgNone,Plant fibers are a common resource acquired from destroying grass & small plants. Can be used to craft many things including clothing.,"Les fibres végétales sont une ressource commune obtenue en détruisant de l'herbe et de petites plantes. Elles peuvent servir à fabriquer de nombreuses choses, y compris des vêtements.","Pflanzenfasern sind ein gewöhnlicher Rohstoff, der gesammelt werden kann, wenn Gras und kleinere Pflanzen zerstört werden. Sie haben viele Verwendungszwecke, darunter auch das Fertigen von Kleidung.",,"La fibra vegetal es un recurso común que se adquiere al destruir hierba y pequeñas plantas. Se puede usar para fabricar diversos objetos, como ropa."
+PlantFibers,items,Item,KgNone,Plant Fibers,Fibres végétales,Pflanzenfaser,,Fibra vegetal
+PlantFibersDesc,items,Item,KgNone,Plant fibers are a common resource acquired from destroying grass & small plants. Can be used to craft many things including clothing.,"Les fibres végétales sont une ressource commune obtenue en détruisant de l'herbe et de petites plantes. Elles peuvent servir à fabriquer de nombreuses choses, y compris des vêtements.","Pflanzenfasern sind ein gewöhnlicher Rohstoff, der gesammelt werden kann, wenn Gras und kleinere Pflanzen zerstört werden. Sie haben viele Verwendungszwecke, darunter auch das Fertigen von Kleidung.",,"La fibra vegetal es un recurso común que se adquiere al destruir hierba y pequeñas plantas. Se puede usar para fabricar diversos objetos, como ropa."
 aloeCream,items,Medical,KgNone,Aloe Cream,Pommade d'aloe vera,Aloe-Creme,,Crema de aloe
 aloeCreamDesc,items,Medical,KgNone,Aloe cream can be used to craft first aid bandages.,La pommade d'aloe vera sert à fabriquer des bandages médicaux.,Mit Aloe-Creme können Erste-Hilfe-Bandagen gefertigt werden.,,La crema de aloe se puede usar para elaborar vendajes de primeros auxilios.
 antibiotics,items,Medical,KgNone,Antibiotics,Antibiotiques,Antibiotika,,Antibióticos
@@ -2390,7 +2390,7 @@ stoneShovelDesc,items,Tool,KgNone,"The stone shovel is a primitive tool useful f
 tazasStoneaxe,items,Tool,KgNone,Taza's Stone Axe,Hache de pierre de Taza,Tazas Steinaxt,,Hacha de piedra de Taza
 tazasStoneaxeDesc,items,Tool,KgNone,"Taza's stone axe is a rare, powerful, ancient Indian artifact. The Apache believed those who wielded it were invincible in battle.",La hache de pierre de Taza est un artefact indien rare et puissant. Les Apaches croyaient que ceux qui brandissaient cette arme devenaient invulnérables lors des batailles.,"Tazas Steinaxt ist ein seltenes und mächtiges Artefakt der Indianer. Die Apachen glaubten, dass der Träger dieser Axt im Kampf unbesiegbar ist.",,El hacha de piedra de Taza es un extraño y poderoso artefacto de los antiguos indios. Los apaches creían que aquel que la empuñase sería invencible en la batalla.
 wrench,items,Tool,KgNone,Wrench,Clé à molette,Schraubenschlüssel,,Llave inglesa
-wrenchDesc,items,Tool,KgNone,"Great for disassembling mechanical devices like cars, air conditioners and more. Can also be used to repair and upgrade walls. This tool gives Journyman Craft XP and is crafted on the Anvil with a Claw Hammer.","Parfaite pour désassembler voitures, climatiseurs et autres. Sert également à réparer et améliorer les murs.","Ist toll, um mechanische Geräte wie Autos, Klimaanlagen usw. auseinanderzunehmen. Kann auch dazu benutzt werden, Mauern zu reparieren und aufzuwerten.",,"Perfecta para desarmar aparatos mecánicos como coches, aires acondicionados y mucho más. También se puede usar para reparar y mejorar paredes."
+wrenchDesc,items,Tool,KgNone,"Great for disassembling mechanical devices like cars, air conditioners and more. Can also be used to repair and upgrade walls. This tool gives Journeyman Craft XP and is crafted on the Anvil with a Claw Hammer.","Parfaite pour désassembler voitures, climatiseurs et autres. Sert également à réparer et améliorer les murs.","Ist toll, um mechanische Geräte wie Autos, Klimaanlagen usw. auseinanderzunehmen. Kann auch dazu benutzt werden, Mauern zu reparieren und aufzuwerten.",,"Perfecta para desarmar aparatos mecánicos como coches, aires acondicionados y mucho más. También se puede usar para reparar y mejorar paredes."qt_claude,items,Treasure Map,KgNone,Claude's Treasure Map,La carte au trésor de Claude,Claudes Schatzkarte,,Mapa del tesoro de Claude
 qt_claude,items,Treasure Map,KgNone,Claude's Treasure Map,La carte au trésor de Claude,Claudes Schatzkarte,,Mapa del tesoro de Claude
 qt_desc,items,Treasure Map,KgNone,A ragged old treasure map I found with some scribbling on it.,Une vieille carte au trésor ornée de gribouillages que j'ai trouvée.,"Eine alte, vergilbte Schatzkarte mit ein paar Kritzeleien, die ich gefunden habe.",,Un viejo mapa del tesoro arrugado y con garabatos que encontré por ahí.
 qt_jennifer,items,Treasure Map,KgNone,Jennifer's Treasure Map,La carte au trésor de Jennifer,Jennifers Schatzkarte,,Mapa del tesoro de Jennifer
@@ -4393,9 +4393,8 @@ CarbonArrowDesc,,,,"A powerful arrow. You will need a Compound bow to fire one o
 clubSteelSpikedDesc,,,,"Nothing beats in a Zombies head better.",,,,
 NightStickDesc,,,,"A strong club made by a cop that can break the targets leg with every hit.",,,,
 ShockStickDesc,,,,"A strong club made by an engineer that Shocks the target Stunning, hurting and lowering its wellness.",,,,
-IronSpearDesc,,,,"A sharp piece of metal on a long stick great for making Zombie-kababs. With the Iron Spear in hand you can throw the iron javelins with the left mouse button.",,,,
+IronSpearDesc,,,,"A sharp piece of metal on a long stick is great for making Zombie-kebabs. With the Iron Spear in hand you can throw the iron javelins with the left mouse button.",,,,
 AtlatlsDesc,,,,"Use these as throwable Spears with the Iron Spear in hand",,,,
-smallEngineDesc,,,,"A mini bike engine that can be improved by exchanging out better parts.",,,,
 ExhaustDesc,,,,"The exhaust to a mini bike. With the right tools you can craft this.",,,,
 EngineBlockDesc,,,,"The engine block for a mini bike. With the right tools you can craft this.",,,,
 HelmetLightDesc,,,,"A helmet with a flashlight crudely attached to it.",,,,
@@ -4471,7 +4470,6 @@ canMeat,,,,"Canned Meat",,,,
 CanMeatDesc,,,,"Freshly canned meat helps remove the smell but you lose the wellness gain.",,,,
 VenomSack,,,,"Venom Sack",,,,
 VenomSackDesc,,,,"A venom gland from a poisonous animal. The potent chemicals in the gland make it very useful in crafting. Can be crafted into Anti Venom on the Campfire in a Cooking Pot",,,,
-yuccaSeed,,,,"Yucca Seed",,,,
 SeedDesc,,,,"Plant these seeds in the sunlight near water to grow. Plant on fertile dirt to increase its produce, add fertilizer to increase it even more. To craft more Seeds build a Seed Nursery",,,,
 AppleSeed,,,,"Apple Seed",,,,
 CarrotSeed,,,,"Carrot Seed",,,,
@@ -4512,10 +4510,9 @@ SewingNeedle,,,,"Sewing Needle",,,,
 SewingNeedleDesc,,,,"Perfect for stitching together some needed padding.",,,,
 LeatherNeedle,,,,"Leather Needle",,,,
 LeatherNeedleDesc,,,,"A strong needle for sewing leather",,,,
-WielderDesc,,,,"Used to cut and connect hard metals",,,,
+WelderDesc,,,,"Used to cut and connect hard metals",,,,
 FryingPanDesc,,,,"Great for cooking up some grub on the campfire",,,,
 FryingPan,,,,"Frying Pan",,,,
-workMortarAndPestle,,,,"Mortar and Pestle",,,,
 MortarAndPestleDesc,,,,"Used to grind Plants and Minerals into powders and creams.",,,,
 SteakKnife,,,,"Steak Knife",,,,
 SteakKnifeDesc,,,,"A old rusty steak knife. You might be able to crush a few more skulls with it before it breaks.",,,,
@@ -4539,8 +4536,8 @@ BikeNABoxDesc,,,,"A crate with a mini bike in it. Place it on the ground and bre
 BearTrap,,,,"Bear Trap",,,,
 trapbearDesc,,,,"A Strong metal Bear Trap. Use it as a trap for zombies or bait it to try and catch some animals. Crafted on the wood working bench using a wrench.",,,,
 qc_ZombieDesc,,,,"So you think you’re a True Survivor. Let’s see you do this",,,,
-SkillMagazineReadDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(50XP) in the category of the magazine.",,,,
-SkillMagazinemonthlyDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(100XP) in the category of the magazine.",,,,
+SkillMagazineReadDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(200XP) in the category of the magazine.",,,,
+SkillMagazinemonthlyDesc,,,,"Select recipes and craft Read the Magazine to gain knowledge(1000XP) in the category of the magazine.",,,,
 SkillMagazineDesc,,,,"You have gotten all the knowledge you can get from this magazine burn it or scrap it for paper",,,,
 Primitive1,,,,"Read the Magazine",,,,
 Primitive2,,,,"Read the Magazine",,,,
@@ -4616,7 +4613,7 @@ scrapCable,,,,"Electric wire",,,,
 canUnlabeled,,,,"Unlabeled Can",,,,
 canUnlabeledDesc,,,,"This can of food has long since lost its label, leaving the contents of the can a mystery. It could fill you up or it could make you sick. Are you hungry enough to chance it?",,,,,
 AnimalGutsDesc,,,,"Rub this on a follower to make them smell and use them as bait for the zombies",,,,
-HandDollyDesc,,,,"Warning!!  Only used to pick up workstations!! Do not use on anything else!!   Place in hand and click on Workstation to be moved.",,,,
+HandDollyDesc,,,,"Warning!!  Only used to move workstations!!  Do not attempt to use on anything else!! Place in hand and click on Workstation to be moved.",,,,
 ttScrapMetalSteel,,,,"Scrap Steel",,,,
 SimplePole,,,,"Simple Fishing Pole",,,,
 FishingPole,,,,"Nice Fishing Pole",,,,
@@ -4692,8 +4689,8 @@ cableTestCrossV,,,,"Power Line",,,,
 cableTestCross,,,,"Power Line",,,,
 GasTankTrap,,,"Gas Fire Trap",,,,
 workBiogasDigester,,,,"Methane Producer",,,,
-digesterDesc,,,,"A home-made Mathane gas Producer. Used to creat Methane Bombs. Crafted on the metal working work bench.",,,,
-knifeSwithc,,,,"Knife Switch",,,,
+workBiogasDigesterDesc,,,,"A home-made Methane Gas producer. Used to create Methane Bombs. Crafted on the metal working work bench.",,,,
+knifeSwitch,,,,"Knife Switch",,,,
 knifeSwitchDesc,,,,"This Switch can turn off and on its entire power branch.",,,,
 powerBox,,,,"Fuse box",,,,
 powerBoxDesc,,,,"This fuse box will allow the power to extend 10 more blocks.",,,,
@@ -4702,23 +4699,24 @@ gasTankEmptyDesc,,,,"Fill this with methane gas in a methane producer to use as 
 gasTank,,,,"Methane Bomb",,,,
 gasTankDesc,,,,"Place this bomb with with your defenses and shot it when the zombies are close. It will not hurt blocks only organics.",,,,
 BatteryTip,,,,"Batteries can not be repaired but when they have been degraded they must be recharged in a Battery Pack that is powered by a generator.",,,,
-Wielder Book,,,,"Welder Book",,,,
-Wielder,,,,"Welder",,,,
-BoneMealDesc,,,,"Bone Meal freshly ground on a stonemill. Can be used in fertilizer, glue and other chemicals.",,,,
+Welder Book,,,,"Welder Book",,,,
+Welder,,,,"Welder",,,,
+BoneMealDesc,,,," Bone Meal freshly ground on a stonemill. Can be used in fertilizer, glue and other chemicals.",,,,
 AirCompressorDesc,,,,"This can be used to refill Scuba tanks when used in the Battery Pack Workstation",,,,
 garageDoorDesc,,,,"A strong garage door crafted on the Wood Working Bench.",,,,
 workFermentationBarrel,,,,"Fermitation Barrel",,,,
 workFermentationBarrelDesc,,,,"Used to make fermented Mead or Beer. Crafted on the Anvil with a Claw Hammer.",,,,
 workStill,,,,"Still",,,,
 workStillDesc,,,,"A crude still perched above a fire. Used to make Grain alcohol. Craft it on the Wood Working Bench.",,,,
+PieDesc,items,Food,KgNone,This homemade pie is nutritious and raises your wellness. Mmm...just like Grandma used to make.,Cette tarte aux myrtilles faite maison vous nourrit et améliore votre bien-être. Miam... Exactement comme celle que faisait mamie.,Dieser selbst gemachte Blaubeerkuchen ist nahrhaft und erhöht dein Wohlbefinden. Mmm … wie von der Oma.,,Este pastel de moras casero es nutritivo y mejora tu bienestar. Mmmm... Tal y como la abuela solía hacerlo.
 WoodSpear,,,,"Wooden Spear",,,,
-WoodSpearDesc,,,,"A Sharp stick hardened in a fire. Good for puncturing rotten skulls but not very durable. With the wooden spear in hand you can throw the wooden javelins with the left mouse button.",,,,
+WoodSpearDesc,,,,"A sharp stick. Good for puncturing rotten skulls but not very durable. With the wooden spear in hand you can throw the wooden javelins with the left mouse button.",,,,
 SmokingDesc,,,,"The worlds gone to shit and you might be dead tomorrow. No reason to quite now. Smoking reduces hunger by 10 over 3 min.",,,,
-CarbonCrossblotDesc,,,,"A powerful crossbolt. You will need a Carbon Crossbow to fire one of these. Crafted on the metal working bench.",,,,
+CarbonCrossbowBoltDesc,,,,"A powerful crossbow bolt. You will need a Carbon Crossbow to fire one of these. Crafted on the metal working bench.",,,,
 MakeBookDesc,,,,"A old dusty book filled with knowledge. Collect the requierd items to make a copy of this book on the Research Desk.",,,,
 AK47StockScopeDesc,,,,"An AK47 Stock with a crudely attached scope. Crafted on the Wood Working Bench with a wrench.",,,,
 bigGeneratorFrame,,,,"Big Generator Frame",,,,
-GeneratorFrameDesc,,,,"Large Metal frame used in crafting a generator. Crafted on the metal working bench using a welder.",,,,
+bigGeneratorFrameDesc,,,,"Large Metal frame used in crafting a generator. Crafted on the metal working bench using a welder.",,,,
 BowString,,,,"Bow String",,,,
 BowStringDesc,,,,"A strong natural cord used in advanced archery weapons. Crafted in the campfire in a cooking pot.",,,,
 axe02,,,,"Stone Fighting Axe",,,,

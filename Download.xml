@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+   <ServerGroup Name="Jeoshua" Logo="" Description="True Survival Mods">
+	       <Server Name="TS Mod" Logo="">
+         <Description>True Survival SDX
+Personal Testing Ground and Experimental Build of True Survival
+Includes custom assemblies and
+		 
+		 </Description>
+		 <Address></Address>						<!-- IP address of the Server, this value gets updated in the Registry -->
+		<Port></Port>	
+		 <DownloadMode>Clone</DownloadMode>
+		<ReleaseNotes>https://7daystodie.com/forums/showthread.php?59466-WIP-True-Survival-SDX</ReleaseNotes>
+         <Downloads>
+            <Download>https://github.com/SpiderJZMOD/True-Survival-SDX</Download>
+            <Download>https://github.com/SpiderJZMOD/TSMod</Download>
+         </Downloads>
+      </Server>
+   </ServerGroup>
+</Servers>

@@ -236,9 +236,7 @@ chemistryStationTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"The Chemist
 chemistryStationTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,Chemistry Station,,,,
 alternateAmmoTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"True Survival Workstation Note\n\n1)To pick up a workstation or generator click on it with a crowbar in hand. When you place back down the block you will be returned the crowbar. Make sure to empty the block of any resources or they will be lost and do not use the crowbar on any other block or it will break .\n\n2) You can see all the workstations by searching the word work in the crafting menu.3) Workstations that burn fuel can attract zombies.",,,,
 alternateAmmoTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,True Survival Workstation Note,,,,
-augmentGunsTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"Loot Progression\n\nGood loot is broken down in 3 tiers.\n\n1st tier is found in any house hold loot container.\n\n2nd tier is found in iron wall, desk and gun safes.\n\n3rd tier is the best loot and it is found in steel ammunition crates and steel military vehicles.\n\nTier 3 loot containers must be broken open with steel tools and the amumunition crates will reset to a locked container after some time. If you hear a chime when hitting it that means it has not reset with loot yet.",,,,
-augmentGunsTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"True Survival Loot Progression Note",,,,
-farmingTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,True Survival Farming Note\n\n1)Plants need water near them and will consume it when they grow.\n\n2)Crops must be protected from getting trampled by animals and zombies\n\n3)To craft seeds purchase the farming perk and build a seed nursery. You will need a generator to power the seed nursery.,,,,
+augmentGunsTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"Loot Progression\n\nGood loot is broken down in 3 tiers.\n\n1st tier is found in any house hold loot container.\n\n2nd tier is found in iron wall, desk and gun safes.\n\n3rd tier is the best loot and it is found in steel ammunition crates and steel military vehicles.\n\nTier 3 loot containers must be broken open with steel tools and the amumunition crates will reset to a locked container after some time. If you hear a chime when hitting it that means it has not reset with loot yet.",,,,farmingTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,True Survival Farming Note\n\n1)Plants need water near them and will consume it when they grow.\n\n2)Crops must be protected from getting trampled by animals and zombies\n\n3)To craft seeds purchase the farming perk and build a seed nursery. You will need a generator to power the seed nursery.,,,,
 farmingTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,True Survival Farming Note,,,,
 firstAidTip,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,"True Survival Electricity Note\n\n1)Many Workstations, Lights and traps now require power to use. A block requiring power can only be placed next to a power line that is run from a generator. The Block will only become active and or usable once the generator is supplied with gas and started.\n\n2)Power lines can only deliver power up to 10 blocks away before needing a Fuse box or Power Switch, after that power lines can again be extended 10 blocks, repeating these steps as you go.\n\n3)Generators will degrade as used and need repairs They will also make noise that can attract nearby zombies.",,,,
 firstAidTip_title,,Popup Tip,KeyTrunk FrNone GrNone KgNone SpNone,True Survival Electricity Note,,,,
@@ -382,7 +380,7 @@ challenge_Ranger2_offer,,,,"Not very complex but a sharp stick in the eye will t
 challenge_Ranger2_subtitle,,,,"Park Rangers Quest-Wood Spear",,,,
 challenge_Ranger3_offer,,,,"They might not kill the zombies but they sure slow them down Craft some wooden spikes to help keep you safe. You will need to finish upgrading them with a tool and sticks once placed.",,,,
 challenge_Ranger3_subtitle,,,,"Park Rangers Quest-Wooden Spikes",,,,
-challenge_Ranger4_offer,,,,"Some times sharpe sticks dont cut it. Craft a bear trap to catch bigger game.",,,,
+challenge_Ranger4_offer,,,,"Some times sharp sticks dont cut it. Craft a bear trap to catch bigger game.",,,,
 challenge_Ranger4_subtitle,,,,"Park Rangers Quest-Bear Trap",,,,
 challenge_Ranger5_offer,,,,"You picked up a few things from a botanist that used to run experiments in the park. See if you can still craft that herbal Antibiotics it might come in handy.",,,,
 challenge_Ranger5_subtitle,,,,"Park Rangers Quest-Herbal Antibiotics",,,,
@@ -404,23 +402,6 @@ challenge_Scientist4_offer,,,,"Build up your supply of Gun Powder. You'll need i
 challenge_Scientist4_subtitle,,,,"Scientists Quest-Gun Powder",,,,
 challenge_Scientist5_offer,,,,"The world might of ended but the need for Chemist didnt. Craft up these chemical.",,,,
 challenge_Scientist5_subtitle,,,,"Scientists Quest-Refining",,,,
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+quest_getpaid,,,,"Get Paid!",,,,
+quest_getpaid_subtitle,,,,"Collect $500",,,,
+quest_getpaid_description,,,,"As long as you're still alive, there is no sense letting all this money lie around. Collect $500, and maybe you can find somewhere to spend it.",,,,

@@ -1,4 +1,4 @@
-<traders buy_markup="3.0" sell_markdown="0.2" quality_mod="1,2" currency_item="bulletCasing">
+<traders buy_markup="1.0" sell_markdown="0.2" quality_mod="1,2" currency_item="oldCash">
 	<!--
 When adding items or blocks to the list, check if they have an "EconomicValue".
 Most world-decoration blocks like "cntSuitcase" or "airConditioner" do not have values set.
@@ -240,7 +240,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="antibiotics" />
 			<item name="bloodDrawKit" />
 			<item name="AntiVenom" />
-			<item name="SuterKit" />
+			<item name="SutureKit" />
 			<item name="AntivirialMeds" />
 			<item name="workMortarAndPestle" />
 			<item name="Large1stAidKit" />
@@ -303,7 +303,33 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="qc_Steve" count="1" />
 			<item name="qc_Moe" count="1" />
 		</trader_item_group>
-		<trader_item_group name="commonBooks" count="1">
+		<trader_item_group name="monthlyMags" count="1" >
+				<item name="Hunting Monthly" prob="0.2" />
+				<item name="Engineering Monthly" prob="0.2" />
+				<item name="Scavenging Monthly" prob="0.2" />
+				<item name="Medicine Monthly" prob="0.2" />
+				<item name="Gun Smithing Monthly" prob="0.2" />
+				<item name="Tailoring Monthly" prob="0.2" />
+				<item name="Leather Working Monthly" prob="0.2" />
+				<item name="Armor Smithing Monthly" prob="0.2" />
+				<item name="Miscellaneous Monthly" prob="0.2" />
+		</trader_item_group>
+		<trader_item_group name="weeklyMags" count="1,2" >
+				<item name="Miscellaneous Weekly" prob="0.4" />
+				<item name="Armor Smithing Weekly" prob="0.4" />
+				<item name="Leather Working Weekly" prob="0.4" />
+				<item name="Tailoring Weekly" prob="0.4" />
+				<item name="Gun Smithing Weekly" prob="0.4" />
+				<item name="Medicine Weekly" prob="0.4" />
+				<item name="Scavenging Weekly" prob="0.4" />
+				<item name="Engineering Weekly" prob="0.4" />
+				<item name="Hunting Weekly" prob="0.4" />
+		</trader_item_group>
+		<trader_item_group name="periodicalMags" count="1,2" >
+				<item group="weeklyMags" prob="0.5" />
+				<item group="monthlyMags" prob="0.1" />
+		</trader_item_group>
+		<trader_item_group name="commonBooks" count="1,2">
 			<item name="Red Wood Book" count="1" prob="0.7" />
 			<item name="sawedoffPumpShotgunSchematic" count="1" prob="0.5" />
 			<item name="handleBarsSchematic" count="1" prob="0.6" />
@@ -312,6 +338,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="Making Bread" count="1" prob="0.7" />
 			<item name="Awning Book" count="1" prob="0.7" />
 			<item name="Fish N Chips" count="1" prob="0.7" />
+			<item name="DuctTapeBook" count="1" prob="0.7" />
 		</trader_item_group>
 		<trader_item_group name="rareBooks" count="1">
 			<item name="Home Brewing" count="1" prob="0.4" />
@@ -329,14 +356,22 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="Easy as ...." count="1" prob="0.7" />
 			<item name="Wood Shingles Book" count="1" prob="0.7" />
 			<item name="Fencing" count="1" prob="0.7" />
-			<item name="DuctTapeBook" count="1" prob="0.7" />
+			<item name="sledgehammerSchematic" count="1" prob="0.5" />
+			<item name="pistolBook" count="1" prob="0.5" />
+			<item name="huntingRifleSchematic" count="1" prob="0.5" />
+			<item name="nailgunSchematic" count="1" prob="0.5" />
+			<item name="chainsawSchematic" count="1" prob="0.5" />
+			<item name="firstAidKitSchematic" count="1" prob="0.7" />
+			<item group="weeklyMags" prob="0.1" />
 		</trader_item_group>
 		<trader_item_group name="SuperRareBooks" count="1">
-			<item name="ak47Schematic" count="1" prob="0.4" />
-			<item name="smgSchematics" count="1" prob="0.4" />
-			<item name="pistolBook" count="1" prob="0.7" />
+			<item name="AssaultRifleSchematics" count="1" prob="0.4" />
+			<item name="AdvAssaultRifleSchematics" count="1" prob="0.4" />
+			<item name="SubMachineGunSchematics" count="1" prob="0.4" />
+			<item name="theEnforcerMagazine" count="1" prob="0.5" />
 			<item name="pumpShotgunSchematic" count="1" prob="0.7" />
 			<item name="sniperRifleSchematic" count="1" prob="0.4" />
+			<item name="rocketLauncherSchematic" count="1" prob="0.3" />
 			<item name="Claiming Your Shit" count="1" prob="0.5" />
 			<item name="huntingRifleSchematic" count="1" prob="0.7" />
 			<item name="Bed Book" count="1" prob="0.7" />
@@ -345,12 +380,16 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="Duct Book" count="1" prob="0.7" />
 			<item name="Canning Food" count="1" prob="0.7" />
 			<item name="Holy Schnit thats good!" count="1" prob="0.7" />
-			<item name="Wielder Book" count="1" prob="0.7" />
+			<item name="Welder Book" count="1" prob="0.7" />
+			<item name="explodingCrossbowBoltSchematic" count="1" prob="0.3" />
+			<item name="augerSchematic" count="1" prob="0.2" />
+			<item group="monthlyMags" prob="0.1" />
 		</trader_item_group>
-		<trader_item_group name="books" count="1">
+		<trader_item_group name="books" count="1,2">
 			<item group="questChallenge" prob="0.2" />
 			<item group="SuperRareBooks" prob="0.1" />
 			<item group="rareBooks" prob="0.3" />
+			<item group="periodicalMags" prob="0.1" />
 			<item group="commonBooks" />
 		</trader_item_group>
 		<trader_item_group name="gunsCommon">
@@ -447,6 +486,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="rawMeat" count="2,4" />
 			<item name="corn" count="4,12" />
 			<item name="potato" count="4,12" />
+			<item name="Strawberry" count="5,15" />
 			<item name="blueberries" count="5,15" />
 			<item name="snowberryPlant" count="4,8" />
 			<item name="snowberryExtract" count="1,5" />
@@ -480,6 +520,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="snowberryJuice" />
 			<item name="CarrotJuice" prob="0.5" />
 			<item name="AppleJuice" prob="0.5" />
+			<item name="OrangeJuice" prob="0.5" />
 			<item name="RedBull" prob="0.5" />
 			<item name="megaCrush" prob=".045" />
 		</trader_item_group>
@@ -503,6 +544,25 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="rebarFrameBlock" count="5,20" />
 			<!-- 10 -->
 			<item group="landMines" count="1" prob="0.3" />
+		</trader_item_group>
+		<trader_item_group name="workstations" count="1">
+			<item name="workchemistryStation" count="1" prob="0.1" />
+			<item name="workforge" count="1" prob="0.1" />
+			<item name="workcementMixer" count="1" prob="0.3" />
+			<item name="workworkbench" count="1" prob="0.3" />
+			<item name="workStove" count="1" prob="0.3" />
+			<item name="workMetalWorkBench" count="1" prob="0.2" />
+			<item name="workResearchDesk" count="1" prob="0.3" />
+			<item name="workArmorTable" count="1" prob="0.3" />
+			<item name="workSeedNursery" count="1" prob="0.3" />
+			<item name="workBlastFurnace" count="1" prob="0.03" />
+			<item name="workStoneMill" count="1" prob="0.3" />
+			<item name="workMortarAndPestle" count="1" prob="0.3" />
+			<item name="workOilRefinery" count="1" prob="0.3" />
+			<item name="workBulletPress" count="1" prob="0.03" />
+			<item name="workAnvil" count="1" prob="0.3" />
+			<item name="workBatteryPack" count="1" prob="0.3" />
+			<item name="workChickenCoop" count="1" prob="0.3" />
 		</trader_item_group>
 		<trader_item_group name="generalResources">
 			<!-- bundle size -->
@@ -583,9 +643,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="minibikeHandlebars" />
 			<item name="smallEngine" prob=".3" />
 			<item name="shoppingBasketItem" prob=".3" />
-		</trader_item_group>
-		<trader_item_group name="workstations" count="1">
-			<item name="workforge" />
+			<item name="BikeNABox" prob="0.05" />
 		</trader_item_group>
 		<trader_item_group name="decorativeCurtains" count="all">
 			<item name="curtain_top1Sheet3" count="4,15" />
@@ -642,17 +700,17 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="gunsCommon" count="1" prob="0.1" />
 			<item name="flashlight02" />
 			<item group="books" count="1,2" prob="0.6" />
-			<item group="ammo" count="2,5" />
+			<item group="ammo" count="3,5" prob="1.25" />
 			<item group="ammoSupplies" count="2,5" />
 			<item group="seeds" count="1,4" />
 			<item group="cannedfood" count="1,3" />
 			<item group="foodSupplies" count="1,4" />
-			<item group="preparedFood" count="1,2" />
-			<item group="preparedDrink" count="1,2" />
+			<item group="preparedFood" count="1,3" />
+			<item group="preparedDrink" count="1,3" />
 			<item group="constructionSupplies" count="1,3" prob="0.8" />
 			<item group="rareTools" count="1" prob="0.2" />
 			<item group="rareMedicine" count="1" prob="0.2" />
-			<item group="medicine" count="1,2" prob="1" />
+			<item group="medicine" count="1,3" prob="1" />
 		</trader_item_group>
 		<trader_item_group name="ItemsAndBlocksTest" count="all">
 			<!-- 469 entries -->
@@ -1120,7 +1178,7 @@ workstations
 	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
 	<trader_info id="1" min_inventory="26" max_inventory="39" min_items_swapped="13" max_items_swapped="13" reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
-			<item group="traderGeneral" count="4,8" />
+			<item group="traderGeneral" count="6,12" />
 			<item group="generalResources" count="7,11" />
 			<item group="constructionSupplies" count="2,8" />
 			<item group="decorativeBlocks" count="2,7" />
@@ -1131,14 +1189,14 @@ workstations
 			<item group="militaryWeaponParts" count="1" />
 			<item group="gunsCommon" count="1" prob="0.3" />
 			<item group="gunsMilitary" count="1" prob="0.1" />
-			<item group="ammo" count="2,3" prob="0.4" />
+			<item group="ammo" count="3,5" prob="0.4" />
 			<item name="miningHelmet" prob="0.5" />
 		</tier_items>
 		<tier_items level="25,50" count="1,3">
 			<item group="militaryWeaponParts" count="1" />
 			<item group="gunsCommon" count="1,2" prob="0.3" />
 			<item group="gunsMilitary" count="1" prob="0.2" />
-			<item group="ammo" count="2,4" prob="0.4" />
+			<item group="ammo" count="4,6" prob="0.4" />
 			<item group="militaryArmor" count="1" prob="0.4" />
 			<item name="miningHelmet" prob="0.5" />
 		</tier_items>
@@ -1146,7 +1204,7 @@ workstations
 			<item group="militaryWeaponParts" count="1" />
 			<item group="gunsCommon" count="1,2" prob="0.3" />
 			<item group="gunsMilitary" count="1" prob="0.3" />
-			<item group="ammo" count="2,4" prob="0.4" />
+			<item group="ammo" count="5,8" prob="0.4" />
 			<item group="militaryArmor" count="1" prob="0.4" />
 			<item group="rareBooks" count="1" prob="0.2" />
 			<item group="minibikeParts" count="1" prob="0.2" />
@@ -1158,12 +1216,13 @@ workstations
 	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
 	<trader_info id="2" min_inventory="26" max_inventory="39" min_items_swapped="13" max_items_swapped="13" reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
-			<item group="traderGeneral" count="4,8" />
+			<item group="traderGeneral" count="6,12" />
 			<item group="generalResources" count="8,15" />
 			<item group="constructionSupplies" count="4,12" />
 			<item group="decorativeBlocks" count="2,7" />
 			<item group="tools" count="0,2" />
 			<item group="commonWeaponParts" count="0,2" />
+			<item group="workstations" count="0,1" />
 		</trader_items>
 		<tier_items level="1,25" count="1,3">
 			<item group="gunsCommon" count="1" prob="0.2" />
@@ -1171,7 +1230,7 @@ workstations
 			<item group="generalResources" count="3,4" prob="1" />
 			<item group="tools" count="1,2" prob="1" />
 			<item group="rareTools" count="1" prob="0.5" />
-			<item group="ammoSupplies" count="2,3" prob="0.4" />
+			<item group="ammoSupplies" count="3,4" prob="0.4" />
 			<item name="miningHelmet" prob="0.5" />
 		</tier_items>
 		<tier_items level="25,50" count="1,4">
@@ -1180,7 +1239,7 @@ workstations
 			<item group="generalResources" count="3,4" prob="1" />
 			<item group="tools" count="1,2" prob="1" />
 			<item group="rareTools" count="1" prob="0.5" />
-			<item group="ammoSupplies" count="2,3" prob="0.4" />
+			<item group="ammoSupplies" count="4,6" prob="0.4" />
 			<item group="hazmatGear" count="1" prob="0.2" />
 			<item group="workstations" count="1" prob="0.3" />
 			<item group="minibikeParts" count="1" prob="0.2" />
@@ -1192,10 +1251,11 @@ workstations
 			<item group="generalResources" count="3,4" prob="1" />
 			<item group="tools" count="1,2" prob=".9" />
 			<item group="rareTools" count="1" prob="0.6" />
-			<item group="ammoSupplies" count="2,3" prob="0.4" />
+			<item group="ammoSupplies" count="5,8" prob="0.4" />
 			<item group="hazmatGear" count="1" prob="0.4" />
 			<item group="workstations" count="1" prob="0.5" />
 			<item group="minibikeParts" count="1" prob="0.4" />
+			<item group="workstations" count="1,2" prob="0.3" />
 			<item name="nightvisionGoggles" count="1" prob=".2" />
 			<item name="miningHelmet" prob="0.5" />
 		</tier_items>
@@ -1206,13 +1266,14 @@ workstations
 	<trader_info id="4" reset_interval="1" override_buy_markup="1.0" allow_sell="false" min_inventory="6" max_inventory="13" min_items_swapped="6" max_items_swapped="13">
 		<trader_items count="10">
 			<item name="bottledWater" count="1,2" />
-			<item name="goldenRodTea" count="1,2" />
-			<item name="redTea" count="1,2" />
 			<item name="coffee" count="1,2" />
 			<item name="beer" count="1,2" />
 			<item name="canMiso" count="1,2" />
 			<item name="canPasta" count="1,2" />
 			<item name="canSoup" count="1,2" />
+			<item name="OrangeJuice" count="1,2" />
+			<item name="TomatoJuice" count="1" />
+			<item name="RedBull" count="1" />
 		</trader_items>
 	</trader_info>
 	<!-- Rented - Vending Machine -->
@@ -1227,6 +1288,7 @@ workstations
 			<item group="tools" count="0,2" />
 			<item group="commonWeaponParts" count="0,2" />
 			<item group="ItemsAndBlocksTest" />
+			<item group="workstations" count="1,3" />
 		</trader_items>
 		<tier_items level="1,25" count="1,3">
 			<item name="silverNugget" count="1,9" />
