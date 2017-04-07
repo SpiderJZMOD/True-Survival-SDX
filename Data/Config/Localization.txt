@@ -4730,7 +4730,7 @@ axe04Desc,,,,"A razor sharp steel battle axe. Quick and deadly. Its light weight
 axe06,,,,"Death Bringer",,,,
 axe06Desc,,,,"An antic axe probably looted from a museum at some point. On the handle a very old engraving can barely still be read. All you can make out is the words Death Bringer.",,,,
 TomahawkDesc,,,,"A Modern made Tomahawk. Sharp and strong. Designed for fighting.",,,,
-
+PoulticeDesc,,,,"A moist herbal Poultice. Used to draw out hornet venom.",,,,
 
 
 

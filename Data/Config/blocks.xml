@@ -294,7 +294,6 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="15" name="asphalt">
 		<property name="Material" value="MFastRoad" />
-		<property name="MaxDamage" value="1500" />
 		<property name="Shape" value="Terrain" />
 		<property name="Mesh" value="terrain" />
 		<property name="Texture" value="10" />
@@ -546,7 +545,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="32" name="woodDebris">
 		<property name="Material" value="wood" />
-		<property name="MaxDamage" value="30" />
+		<property name="MaxDamage" value="50" />
 		<property name="FuelValue" value="30" />
 		<property name="Shape" value="Terrain" />
 		<property name="Mesh" value="terrain" />
@@ -859,7 +858,7 @@ then add recipes for those white/red/green metals
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="woodFrameGroupDesc" />
 		<property name="Material" value="wood" />
-		<property name="MaxDamage" value="3000" />
+		<property name="MaxDamage" value="300" />
 		<property name="Texture" value="214" />
 		<property name="FuelValue" value="120" />
 		<property name="IsDeveloper" value="true" />
@@ -960,7 +959,6 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="133" name="steelMaster">
 		<property name="Material" value="Msteel" />
-		<property name="MaxDamage" value="10000" />
 		<property name="Texture" value="355,355,356,356,356,356" />
 		<property name="IsDeveloper" value="true" />
 		<property class="RepairItems">
@@ -1005,7 +1003,6 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="135" name="pouredConcreteMaster">
 		<property name="Material" value="Mconcrete" />
-		<property name="MaxDamage" value="1500" />
 		<!--<property name="Texture" value="176,176,186,186,186,186" />-->
 		<property name="Texture" value="176" />
 		<property name="IsDeveloper" value="true" />
@@ -1072,7 +1069,7 @@ then add recipes for those white/red/green metals
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="adobeGroupDesc" />
 		<property name="Material" value="Mbrick" />
-		<property name="MaxDamage" value="1000" />
+		<property name="MaxDamage" value="100" />
 		<property name="Texture" value="171" />
 		<property name="IsDeveloper" value="true" />
 		<property class="RepairItems">
@@ -1346,7 +1343,7 @@ then add recipes for those white/red/green metals
 	<block id="151" name="solidWoodFrameWedge">
 		<property name="Extends" value="woodFrameWedge" />
 		<property name="CustomIcon" value="woodFrameWedge" />
-        <property name="MaxDamage" value="1000" />
+        <property name="MaxDamage" value="100" />
 		<property name="CanPickup" value="false" />
 	</block>
 	<block id="152" name="woodWedge">
@@ -1946,7 +1943,7 @@ then add recipes for those white/red/green metals
 		<property name="Extends" value="woodFrameCNRInside" />
 		<property name="CustomIcon" value="woodFrameCNRInside" />
 		<property name="CanPickup" value="false" />
-        <property name="MaxDamage" value="1000" />
+        <property name="MaxDamage" value="100" />
 	</block>
 	<block id="227" name="woodCNRInside">
 		<property name="Extends" value="woodMaster" />
@@ -1993,7 +1990,7 @@ then add recipes for those white/red/green metals
 		<property name="Extends" value="woodFrameCNRFull" />
 		<property name="CustomIcon" value="woodFrameCNRFull" />
 		<property name="CanPickup" value="false" />
-        <property name="MaxDamage" value="1000" />
+        <property name="MaxDamage" value="100" />
 	</block>
 	<block id="233" name="rWoodCNRFull">
 		<property name="Extends" value="rWoodMaster" />
@@ -2639,15 +2636,15 @@ then add recipes for those white/red/green metals
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Appliances/oven" param1="main_mesh" />
 		<property name="LootList" value="5" />
-		<property name="MaxDamage" value="150" />
-		<drop event="Harvest" name="mechanicalParts" count="2" prob=".1" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="4" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
+		<property name="MaxDamage" value="200" />
+		<drop event="Harvest" name="mechanicalParts" count="1" prob=".1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="2" prob=".5" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="2" prob=".3" tool_category="Disassemble" />
-		<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
-		<drop event="Harvest" name="scrapPlastics" count="2" prob=".8" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="1" prob=".5" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="1" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="scrapPlastics" count="1" prob=".8" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapCable" count="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="10" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
@@ -2704,35 +2701,35 @@ then add recipes for those white/red/green metals
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="241" />
 		<property name="Light" value="0.5" />
-        <property name="MaxDamage" value="150" />
+        <property name="MaxDamage" value="25" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="Model" value="Entities/Lighting/porchLight01Prefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
         <drop event="Destroy" name="scrapIron" count="5" prob="1" />
         <drop event="Destroy" name="scrapCable" count="1" prob=".3" />
-         <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapCable" count="1,2" prob=".6" tool_category="Disassemble" />
         <drop event="Destroy" name="lightBulb" count="1" prob=".75" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 		
 		<property name="Group" value="Building" />
 	</block>
 	<block id="317" name="porchLight04">
 		<property name="Extends" value="porchLight01" />
 		<property name="Model" value="Entities/Lighting/porchLight04Prefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="318" name="porchLight04Brass">
 		<property name="Extends" value="porchLight01" />
 		<property name="Model" value="Entities/Lighting/porchLight04BrassPrefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".3" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapBrass" count="10,30" prob="1" />
 	</block>
 	<block id="319" name="ceilingLight01">
@@ -2740,67 +2737,67 @@ then add recipes for those white/red/green metals
 		<property name="Material" value="glass" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Model" value="Entities/Lighting/ceilingLight01Prefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 	</block>
 	<block id="320" name="ceilingLight02">
 		<property name="Extends" value="porchLight01" />
 		<property name="Model" value="Entities/Lighting/ceilingLight02Prefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="321" name="ceilingLight02Brass">
 		<property name="Extends" value="porchLight04Brass" />
 		<property name="Model" value="Entities/Lighting/ceilingLight02BrassPrefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="322" name="ceilingLight04">
 		<property name="Extends" value="porchLight01" />
 		<property name="Model" value="Entities/Lighting/ceilingLight04Prefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="323" name="ceilingLight05">
 		<property name="Extends" value="porchLight01" />
 		<property name="Model" value="Entities/Lighting/ceilingLight05Prefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="324" name="ceilingLight05Brass">
 		<property name="Extends" value="porchLight04Brass" />
 		<property name="Model" value="Entities/Lighting/ceilingLight05BrassPrefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="325" name="wallLight01">
 		<property name="Extends" value="porchLight01" />
 		<property name="Model" value="Entities/Lighting/wall_light01Prefab" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 	</block>
 	<block id="326" name="ceilingLight07">
 		<property name="Extends" value="porchLight01" />
-		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob="1" tool_category="Disassemble" />
 		<!-- HV: mounted fluorescent lamp -->
-		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="2" prob=".3" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="3" prob=".2" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="1" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="2" prob=".2" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapPlastics" count="1" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapPlastics" count="1" prob=".5" tool_category="Disassemble" />
 		<property name="Model" value="Entities/Lighting/ceilingLight07Prefab" />
@@ -2813,7 +2810,7 @@ then add recipes for those white/red/green metals
 		<property name="Mesh" value="models" />
 		<property name="Model" value="HousingDecor/mailbox" param1="main_mesh" />
 		<property name="LootList" value="14" />
-        <property name="MaxDamage" value="75" />
+        <property name="MaxDamage" value="25" />
 		<property name="FuelValue" value="40" />
 		<property class="RepairItems">
 			<property name="forgedIron" value="2" />
@@ -2927,7 +2924,7 @@ then add recipes for those white/red/green metals
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/trash_can01" param1="main_mesh" />
 		<property name="LootList" value="16" />
-        <property name="MaxDamage" value="100" />
+        <property name="MaxDamage" value="50" />
 		<property class="RepairItems">
 			<property name="scrapIron" value="10" />
 		</property>
@@ -2942,7 +2939,7 @@ then add recipes for those white/red/green metals
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/bin" param1="main_mesh" />
 		<property name="LootList" value="2" />
-         <property name="MaxDamage" value="100" />
+         <property name="MaxDamage" value="20" />
 		<drop event="Destroy" name="scrapIron" count="5" prob="1" />
 		<property name="EconomicValue" value="40" />
 	</block>
@@ -2970,7 +2967,7 @@ then add recipes for those white/red/green metals
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/suitcase" param1="main_mesh" />
 		<property name="LootList" value="36" />
-        <property name="MaxDamage" value="100" />
+        <property name="MaxDamage" value="50" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapPlastics" count="2,8" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
@@ -3043,7 +3040,7 @@ then add recipes for those white/red/green metals
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="282" />
 		<property name="LootList" value="4" />
-		<property name="MaxDamage" value="150" />
+		<property name="MaxDamage" value="200" />
 		<property name="Model" value="Entities/LootContainers/fridgePrefab" />
 		<property name="DescriptionKey" value="refrigeratorGroupDesc" />
 		<property class="RepairItems">
@@ -3052,11 +3049,11 @@ then add recipes for those white/red/green metals
 			<property name="electricParts" value="8" />
 			<property name="electronicParts" value="2" />
 		</property>
-		<drop event="Harvest" name="mechanicalParts" count="2" prob=".6" tool_category="Disassemble" />
-        <drop event="Destroy" name="mechanicalParts" count="4" prob=".3" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="4" prob="1" tool_category="Disassemble" />
-		<drop event="Destroy" name="electricParts" count="3" prob=".35" tool_category="Disassemble" />
-		<drop event="Destroy" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="1" prob=".6" tool_category="Disassemble" />
+        <drop event="Destroy" name="mechanicalParts" count="2" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
+		<drop event="Destroy" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1" prob=".4" tool_category="Disassemble" />
 		<drop event="Destroy" name="electronicParts" count="2" prob=".3" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapCable" count="1" tool_category="Disassemble" />
@@ -3087,13 +3084,13 @@ then add recipes for those white/red/green metals
 			<property name="EntityDamage" value="70" />
 			<!-- damage for entities in the center of the explosion -->
 		</property>
-		<drop event="Harvest" name="electricParts" count="4" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="3" prob=".5" tool_category="Disassemble" />
-		<drop event="Harvest" name="electronicParts" count="2" prob=".3" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="2" prob=".7" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="3" prob=".4" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="3" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
+		<drop event="Harvest" name="electricParts" count="2" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="2" prob=".5" tool_category="Disassemble" />
+		<drop event="Harvest" name="electronicParts" count="1" prob=".3" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="1" prob=".7" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
 		<drop event="Destroy" count="0" />
 		<property name="LPHardnessScale" value="0" />
 		<!-- disable LP for TNT blocks -->
@@ -3190,8 +3187,8 @@ then add recipes for those white/red/green metals
 		<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 		<drop event="Harvest" name="forgedIron" count="1" prob="0.1" />
 		<drop event="Harvest" name="forgedSteel" count="1" prob="0.05" />
-		<drop event="Harvest" name="mechanicalParts" count="3" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="3" prob=".4" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="1" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="1" prob=".4" tool_category="Disassemble" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
 	<block id="364" name="streetLight01">
@@ -3200,7 +3197,7 @@ then add recipes for those white/red/green metals
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="241" />
-        <property name="MaxDamage" value="200" />
+        <property name="MaxDamage" value="50" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="Model" value="Entities/Lighting/street_light01Prefab" />
 		<drop event="Harvest" name="electricParts" count="4" prob="1" tool_category="Disassemble" />
@@ -3215,7 +3212,7 @@ then add recipes for those white/red/green metals
 		<property name="Material" value="metal" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
-		<property name="MaxDamage" value="100" />
+		<property name="MaxDamage" value="200" />
 		<property name="Model" value="Appliances/ac_unit" param1="main_mesh" />
 		<drop event="Harvest" name="electricParts" count="4" prob="1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
@@ -3358,8 +3355,7 @@ then add recipes for those white/red/green metals
 		<property name="Extends" value="woodFrameBlock" />
 		<property name="CustomIcon" value="woodFrameBlock" />
 		<property name="CanPickup" value="false" />
-        <property name="MaxDamage" value="1000" />
-	</block>
+   	</block>
 	<block id="376" name="brickCNRFull">
 		<property name="Extends" value="brickMaster" />
 		<property name="Shape" value="WedgedCornerFull" />
@@ -3393,8 +3389,7 @@ then add recipes for those white/red/green metals
 		<property name="Extends" value="woodFrameRamp" />
 		<property name="CustomIcon" value="woodFrameRamp" />
 		<property name="CanPickup" value="false" />
-        <property name="MaxDamage" value="1000" />
-	</block>
+    </block>
 	<block id="381" name="tnt">
 		<property name="Class" value="TNT" />
 		<property name="Material" value="clothStable" />
@@ -3739,7 +3734,7 @@ then add recipes for those white/red/green metals
 	</block>
 	<block id="417" name="scrapMetalPile">
 		<property name="Material" value="MmetalNoGlue" />
-		<property name="MaxDamage" value="50" />
+		<property name="MaxDamage" value="65" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -3979,7 +3974,7 @@ then add recipes for those white/red/green metals
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="67" />
 		<property name="Texture" value="282" />
-		<property name="MaxDamage" value="150" />
+		<property name="MaxDamage" value="50" />
 		<property name="Model" value="Plumbing/toilet01" param1="main_mesh" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
 		<property class="RepairItems">
@@ -3988,7 +3983,7 @@ then add recipes for those white/red/green metals
 		</property>
 		<drop event="Destroy" name="shortMetalPipe" count="1" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
-		<drop event="Harvest" name="mechanicalParts" count="2" prob=".08" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="1" prob=".08" tool_category="Disassemble" />
 		<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble" />
 		<property name="EconomicValue" value="56" />
@@ -4550,7 +4545,6 @@ kind of free
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Furniture/chair01" param1="main_mesh" />
 		<property name="Place" value="TowardsPlacer" />
-		
 		<property name="Weight" value="50" />
 		<property name="CanPickup" value="true" />
 		<property name="DescriptionKey" value="furnitureGroupDesc" />
@@ -4621,11 +4615,12 @@ kind of free
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Texture" value="282" />
+        <property name="MaxDamage" value="100" />
 		<property name="Model" value="Commercial/store_shelving01" param1="main_mesh" />
 		<property class="RepairItems">
 			<property name="forgedIron" value="3" />
 		</property>
-		<drop event="Harvest" name="scrapIron" count="10" />
+		<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="1,15" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 		<property name="EconomicValue" value="18" />
@@ -5597,6 +5592,7 @@ kind of free
 		<property name="Model" value="Plumbing/faucet02" param1="main_mesh" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="Weight" value="24" />
+        <property name="MaxDamage" value="25" />
 		<property name="EconomicValue" value="40" />
 		<!-- disassemble value -->
 	</block>
@@ -5610,7 +5606,7 @@ kind of free
 		<property name="Weight" value="16" />
 		<property name="EconomicValue" value="20" />
 		<!-- disassemble value -->
-		<property name="MaxDamage" value="15" />
+		<property name="MaxDamage" value="25" />
 	</block>
 	<block id="621" name="faucetBrass02">
 		<property name="Material" value="brass" />
@@ -5622,7 +5618,7 @@ kind of free
 		<property name="Weight" value="25" />
 		<property name="EconomicValue" value="125" />
 		<!-- disassemble value -->
-		<property name="MaxDamage" value="15" />
+		<property name="MaxDamage" value="25" />
 	</block>
 	<block id="622" name="faucetBrass04">
 		<property name="Material" value="brass" />
@@ -5634,7 +5630,7 @@ kind of free
 		<property name="Weight" value="16" />
 		<property name="EconomicValue" value="80" />
 		<!-- disassemble value -->
-		<property name="MaxDamage" value="15" />
+		<property name="MaxDamage" value="25" />
 	</block>
 	<block id="623" name="cntFileCabinet">
 		<property name="Class" value="Loot" />
@@ -5643,6 +5639,7 @@ kind of free
 		<property name="Texture" value="282" />
 		<property name="Weight" value="72" />
 		<property name="LootList" value="44" />
+        <property name="MaxDamage" value="200" />
 		<property name="Model" value="Entities/LootContainers/file_cabinetPrefab" />
 		<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
         <property name="MaxDamage" value="100" />
@@ -5661,7 +5658,7 @@ kind of free
 		<property name="Mesh" value="models" />
 		<property name="Texture" value="282" />
 		<property name="LootList" value="45" />
-        <property name="MaxDamage" value="75" />
+        <property name="MaxDamage" value="100" />
 		<property name="Model" value="LootContainers/cooler" param1="main_mesh" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property class="RepairItems">
@@ -5696,6 +5693,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="282" />
 		<property name="LootList" value="43" />
+        <property name="MaxDamage" value="200" />
 		<property name="Model" value="Entities/LootContainers/lockersPrefab" />
 		<property class="RepairItems">
 			<property name="scrapIron" value="10" />
@@ -5711,6 +5709,7 @@ kind of free
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
 		<property name="Texture" value="282" />
+        <property name="MaxDamage" value="100" />
 		<property name="Model" value="Plumbing/fountain" param1="main_mesh" />
 		<property class="RepairItems">
 			<property name="scrapIron" value="10" />
@@ -6087,7 +6086,7 @@ kind of free
 		<drop event="Harvest" name="goldenRodTea" count="1" prob="0.4" />
 		<drop event="Harvest" name="electricParts" count="2" prob="0.4" />
 		<drop event="Harvest" name="electronicParts" count="2" prob="0.4" />
-		<drop event="Harvest" name="mechanicalParts" count="2" prob="0.4" />
+		<drop event="Harvest" name="mechanicalParts" count="1" prob="0.4" />
 		<drop event="Harvest" name="beer" count="1" prob="0.3" />
 		<drop event="Harvest" name="RedBull" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="redTea" count="1" prob="0.2" tool_category="Disassemble" />
@@ -6095,7 +6094,7 @@ kind of free
 		<drop event="Harvest" name="goldenRodTea" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="3" prob="0.5" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="3" prob="0.5" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="2" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="beer" count="1" prob="0.1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="2" />
 	</block>
@@ -7868,14 +7867,14 @@ kind of free
 	</block>
 	<block id="871" name="treeDeadPineLeaf">
 		<property name="Material" value="leaves" />
-		<property name="MaxDamage" value="5" />
+		<property name="MaxDamage" value="1" />
 		<property name="Shape" value="BillboardPlant" />
 		<property name="Mesh" value="grass" />
 		<property name="Texture" value="177" />
 		<property name="Collide" value="melee" />
 		<property name="CanDecorateOnSlopes" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
-		<drop event="Destroy" name="stick" count="4" prob="1" />
+		<drop event="Destroy" name="stick" count="5,10" prob="1" />
 	</block>
 	<block id="872" name="sidewalkBlock">
 		<property name="Extends" value="stoneToAdobeMaster" />
@@ -9506,7 +9505,7 @@ kind of free
 		<property name="Collide" value="melee" />
 		<property name="CanDecorateOnSlopes" value="true" />
 		<property name="IsTerrainDecoration" value="true" />
-		<drop event="Destroy" name="stick" count="1,3" prob="1" />
+		<drop event="Destroy" name="stick" count="5,10" prob="1" />
 	</block>
 	<block id="1123" name="BaseboardIndustrialTileBlock">
 		<property name="Extends" value="brickBlock" />
@@ -10523,6 +10522,7 @@ kind of free
 		<property name="Texture" value="191,191,190,191,191,191" />
 		<property name="Place" value="TowardsPlacer90" />
 		<property name="LootList" value="52" />
+        <property name="MaxDamage" value="200" />
 		<property class="RepairItems">
 			<property name="forgedIron" value="4" />
 			<property name="shortMetalPipe" value="3" />
@@ -10987,7 +10987,7 @@ kind of free
 	<!-- Free -->
 	<block id="1339" name="cashRegisterEmpty">
 		<property name="Material" value="MmetalNoGlue" />
-		<property name="MaxDamage" value="150" />
+		<property name="MaxDamage" value="50" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -11008,7 +11008,7 @@ kind of free
 	<block id="1340" name="cntCashRegister">
 		<property name="Class" value="Loot" />
 		<property name="Material" value="MmetalNoGlue" />
-		<property name="MaxDamage" value="150" />
+		<property name="MaxDamage" value="50" />
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
@@ -11477,7 +11477,7 @@ kind of free
 		<property name="Model" value="Entities/Trees/AzaleaPrefab" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Collide" value="melee" />
-		<drop event="Destroy" name="stick" count="4" prob="1" />
+		<drop event="Destroy" name="stick" count="5,10" prob="1" />
 		<!-- property name="FallOver" value="false" /-->
 		<property name="EconomicValue" value="20" />
 		<!-- disassemble value -->
@@ -11768,8 +11768,8 @@ kind of free
 		</property>
 		<drop event="Harvest" name="forgedIron" count="1" prob="0.1" />
 		<drop event="Harvest" name="forgedSteel" count="1" prob="0.05" />
-		<drop event="Harvest" name="mechanicalParts" count="2" prob="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="mechanicalParts" count="3" prob=".5" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="1" prob="1" tool_category="Disassemble" />
+		<drop event="Harvest" name="mechanicalParts" count="2" prob=".5" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="25,100" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
@@ -12069,8 +12069,8 @@ kind of free
 		<drop event="Harvest" name="gasCan" count="1" prob="0.5" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="leather" count="2" prob=".5" />
@@ -12114,8 +12114,8 @@ kind of free
 		<drop event="Harvest" name="FanBelt" count="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="hubcap" count="1,4" prob=".5" tool_category="Disassemble" />
         <drop event="Harvest" name="scrapIron" count="15" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="2" prob=".2" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
@@ -12152,8 +12152,8 @@ kind of free
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="15" prob="1" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="5,15" prob="1" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".15" tool_category="Disassemble" />
 		<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
@@ -12298,7 +12298,7 @@ kind of free
 		<property name="Mesh" value="models" />
 		<property name="Model" value="Furniture/coffin" param1="main_mesh" />
 		<property name="MultiBlockDim" value="1,1,2" />
-		<property name="LootList" value="1" />
+		<property name="LootList" value="12" />
 		<property class="RepairItems">
 			<property name="Plank" value="10" />
 		</property>
@@ -12751,6 +12751,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Texture" value="241" />
 		<property name="Light" value="0.5" />
+        <property name="MaxDamage" value="25" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<property name="Model" value="Entities/Lighting/industrialLight01Prefab" />
 		<property name="Place" value="TowardsPlacerInverted" />
@@ -14502,7 +14503,7 @@ kind of free
 		<drop event="Destroy" name="VenomSack" count="2" prob="1" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="debug" value="false" />
-		<property name="ModelOffset" value="0,0.2,0" />
+		<property name="ModelOffset" value="0,0.3,0" />
 	</block>
 	<block id="114" name="spiderTrap">
 		<!-- triggered trap -->
@@ -14515,7 +14516,7 @@ kind of free
 		<property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="FuelValue" value="36" />
 		<property name="KillChance" value="0" />
-		<property name="DamageDone" value="5" />
+		<property name="DamageDone" value="3" />
 		<property name="HitLegs" value="false" />
 		<property name="Baited" value="false" />
 		<!-- if set to true, if the trap kills an entity (not player), it will imediatly disapear -->
@@ -14529,7 +14530,7 @@ kind of free
 		<drop event="Destroy" name="VenomSack" count="2" prob="1" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="debug" value="false" />
-		<property name="ModelOffset" value="0,0.2,0" />
+		<property name="ModelOffset" value="0,0.3,0" />
 	</block>
 	<block id="115" name="snakeTrap">
 		<!-- triggered trap -->
@@ -14542,7 +14543,7 @@ kind of free
 		<property name="Collide" value="movement,bullet,rocket,melee" />
 		<property name="FuelValue" value="36" />
 		<property name="KillChance" value="0" />
-		<property name="DamageDone" value="5" />
+		<property name="DamageDone" value="15" />
 		<property name="HitLegs" value="false" />
 		<property name="Baited" value="false" />
 		<!-- if set to true, if the trap kills an entity (not player), it will imediatly disapear -->
@@ -14556,7 +14557,7 @@ kind of free
 		<drop event="Destroy" name="VenomSack" count="2" prob="1" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="debug" value="false" />
-		<property name="ModelOffset" value="0,0.1,0" />
+		<property name="ModelOffset" value="0,0.3,0" />
 	</block>
 	<!-- POWERED TRAPS -->
 	<block id="116" name="trapSpike">
@@ -15671,48 +15672,44 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="1" />
-        <property name="MaxDamage" value="2000" />
+        <property name="MaxDamage" value="200" />
 		<drop event="Harvest" name="stick" count="75,150" />
 		<drop event="Destroy" name="wood" count="100,150" prob="1" />
 	</block>
 	<block id="1668" name="smallLimeTree">
 		<property name="Extends" value="smallOrangeTree" />
         <property name="MeshScale" value="0.8,0.8" />
-        <property name="MaxDamage" value="1500" />
-		<property name="Model" value="#lemontree?smallLimeTree" />
+      	<property name="Model" value="#lemontree?smallLimeTree" />
 	</block>
 	<block id="1669" name="smallPlainsTree">
 		<property name="Extends" value="smallOrangeTree" />
-        <property name="MaxDamage" value="2000" />
-		<property name="Model" value="#lemontree?smallPearTree" />
+      	<property name="Model" value="#lemontree?smallPearTree" />
 	</block>
 	<block id="1670" name="smallCherryTree">
 		<property name="Extends" value="smallOrangeTree" />
-        <property name="MaxDamage" value="2000" />
-		<property name="Model" value="#lemontree?smallCherryTree" />
+      	<property name="Model" value="#lemontree?smallCherryTree" />
 	</block>
 	<block id="1671" name="smallAvocadoTree">
 		<property name="Extends" value="smallOrangeTree" />
-        <property name="MaxDamage" value="20000" />
-		<property name="Model" value="#avocado?AvocadoTree" />
+       	<property name="Model" value="#avocado?AvocadoTree" />
 	</block>
 	<block id="1672" name="Palm">
 		<property name="Extends" value="smallOrangeTree" />
 		<property name="Model" value="#smallpalm?Palm" />
 		<property name="MeshScale" value="2,2" />
-        <property name="MaxDamage" value="8000" />
+        <property name="MaxDamage" value="800" />
 	</block>
 	<block id="1673" name="BlossomPalm">
 		<property name="Extends" value="smallOrangeTree" />
 		<property name="Model" value="#palm?PalmDate" />
 		<property name="MeshScale" value="2,2" />
-        <property name="MaxDamage" value="8000" />
+        <property name="MaxDamage" value="800" />
 	</block>
 	<block id="1674" name="coconutPalm">
 		<property name="Extends" value="smallOrangeTree" />
 		<property name="Model" value="#palm?PalmCoco" />
 		<property name="MeshScale" value="2,2" />
-        <property name="MaxDamage" value="8000" />
+        <property name="MaxDamage" value="800" />
 	</block>
 	<block id="1675" name="PlantedRedwoodTree">
 		<property name="Extends" value="plantedAppleTree" />
@@ -15726,7 +15723,7 @@ kind of free
 		<property name="Model" value="#redwoodtree?RedwoodTreeSmall" />
 		<property name="UpwardsCount" value="1" />
 		<property name="BigDecorationRadius" value="4" />
-		<property name="MaxDamage" value="20000" />
+		<property name="MaxDamage" value="2000" />
 		<property name="FallOver" value="true" />
 		<drop event="Destroy" name="Redwood" count="25,100" prob="1" />
 		<drop event="Destroy" name="RedwoodSeed" count="1" prob="0.5" />
@@ -15740,7 +15737,7 @@ kind of free
 		<property name="UpwardsCount" value="5" />
 		<property name="ModelOffset" value="0,0,0" />
 		<property name="BigDecorationRadius" value="5" />
-		<property name="MaxDamage" value="30000" />
+		<property name="MaxDamage" value="3000" />
 		<property name="MeshScale" value="2.2,2.2" />
 		<property name="FallOver" value="true" />
 		<drop event="Destroy" name="Redwood" count="50,250" prob="1" />
@@ -15941,8 +15938,8 @@ kind of free
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="Exhaust" count="1" prob="0.3" tool_category="Disassemble" />
 		<drop event="Harvest" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
@@ -16095,6 +16092,7 @@ kind of free
 	<block id="1980" name="PoliceDamaged">
 		<property name="Extends" value="cntCar03WhiteDamage1" />
 		<property name="Model" value="#police?policeD1" />
+        <property name="LootList" value="47" />
         <property name="CustomIcon" value="cntCar03Damage2" />
 	</block>
 	<block id="1796" name="FireTruck">
@@ -16122,8 +16120,8 @@ kind of free
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electronicParts" count="1" prob=".1" tool_category="Disassemble" />
 		<drop event="Harvest" name="oil" count="2" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="Alternator" count="1" prob="0.3" tool_category="Disassemble" />
@@ -16166,8 +16164,8 @@ kind of free
 		<drop event="Harvest" name="EngineBlock" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="airFilter" count="1" prob="0.2" tool_category="Disassemble" />
 		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".4" tool_category="Disassemble" />
-        <drop event="Harvest" name="mechanicalParts" count="4" prob=".5" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="2" prob=".4" tool_category="Disassemble" />
+        <drop event="Harvest" name="mechanicalParts" count="1" prob=".5" tool_category="Disassemble" />
 		<drop event="Harvest" name="headlight" count="1" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="cloth" count="5" prob="0.5" tool_category="Disassemble" />
 		<drop event="Harvest" name="electricParts" count="1" prob=".1" tool_category="Disassemble" />
@@ -16209,7 +16207,7 @@ kind of free
 		<property name="Extends" value="OldArmyTruck" />
 		<property name="Model" value="#vehiclesdeco?Tractor2" />
 		<property name="DowngradeBlock" value="cntCar03Damage2" />
-		<property name="LootList" value="19" />
+		<property name="LootList" value="172" />
         <property name="CustomIcon" value="cntCar03Damage2" />
         <property name="MaxDamage" value="800" />
 	</block>
@@ -16217,7 +16215,7 @@ kind of free
 		<property name="Extends" value="OldArmyTruck" />
 		<property name="Model" value="#vehiclesdeco?Tractor" />
 		<property name="DowngradeBlock" value="cntCar03Damage2" />
-		<property name="LootList" value="19" />
+		<property name="LootList" value="172" />
         <property name="CustomIcon" value="cntCar03Damage2" />
         <property name="MaxDamage" value="800" />
 	</block>
@@ -17004,7 +17002,7 @@ kind of free
 		<property name="MultiBlockDim" value="1,1,1" />
 		<property name="Model" value="#lootcontainers?MedicalBoxPrefab" />
 		<property name="Class" value="Loot" />
-		<property name="LootList" value="50" />
+		<property name="LootList" value="51" />
         <property name="DescriptionKey" value="MedicalBoxDesc" />
 		<drop event="Destroy" name="" count="0" />
 	</block>

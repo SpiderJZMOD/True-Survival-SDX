@@ -581,11 +581,11 @@
 			<requirement perk_level="1" required_player_level="1" />
 			<recipe name="auger" unlock_level="1" />
 		</perk>
-        <perk name="Nailgun" icon="nailgun" description_key="Learn to build and maintain a nailgun" title_key="Chainsaw" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="35" group="tools">
+        <perk name="Nailgun" icon="nailgun" description_key="Learn to build and maintain a nailgun" title_key="Nailgun" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="35" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<recipe name="nailgun" unlock_level="1" />
 		</perk>
-        <perk name="CompactDriver" icon="CompactDriver" description_key="Learn to build and maintain a CompactDriver" title_key="Chainsaw" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="40" group="tools">
+        <perk name="CompactDriver" icon="CompactDriver" description_key="Learn to build and maintain a CompactDriver" title_key="CompactDriver" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="40" group="tools">
 			<requirement perk_level="1" required_player_level="1" />
 			<recipe name="CompactDriver" unlock_level="1" />
 		</perk>

@@ -122,7 +122,7 @@
 		<property name="TimeStayAfterDeath" value="30" />
 		<property name="AttackTimeoutDay" value="1.5" />
 		<property name="AttackTimeoutNight" value="1.1" />
-		<property name="LootListOnDeath" value="15" />
+		<property name="LootListOnDeath" value="154" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="ExperienceGain" value="20" />
@@ -176,7 +176,7 @@
 		<property name="Immunity" value="armordown;sickness;disease;bleeding;wellness" />
 		<property name="ExperienceGain" value="100" />
 		<property name="CanClimbVertical" value="true" />
-		<property name="LootListOnDeath" value="61" />
+		<property name="LootListOnDeath" value="159" />
 		<property name="PhysicsBody" value="zombieStandardFemale" />
 		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
@@ -257,7 +257,7 @@
 		<property name="PhysicsBody" value="zombieStandardFemale" />
 		<property name="RootMotion" value="true" />
 		<property name="HasDeathAnim" value="true" />
-		<property name="LootListOnDeath" value="38" />
+		<property name="LootListOnDeath" value="158" />
 		<property name="DeadBodyHitPoints" value="200" />
 	</entity_class>
 	<entity_class name="zombieDarlene" extends="zombie01">
@@ -343,7 +343,7 @@
 		<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense" />
 		<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
 		<property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="66" />
+		<property name="LootListOnDeath" value="162" />
 	</entity_class>
 	<entity_class name="spiderzombie" extends="zombie01">
 		<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll" />
@@ -392,7 +392,7 @@
 		<property name="NightApproachSpeed" value="1.3" />
 		<property name="PanicSpeed" value="0.9" />
 		<property name="TimeStayAfterDeath" value="3" />
-		<property name="LootListOnDeath" value="103" />
+		<property name="LootListOnDeath" value="153" />
 		<property name="CorpseBlock" value="emberPile1" />
 		<property name="CorpseBlockChance" value="1" />
 		<!-- AI properties -->
@@ -443,7 +443,7 @@
 		<property name="PhysicsBody" value="zombieStandardFemale" />
 		<property name="RootMotion" value="true" />
 		<property name="HasDeathAnim" value="true" />
-		<property name="LootListOnDeath" value="21" />
+		<property name="LootListOnDeath" value="156" />
 	</entity_class>
 	<entity_class name="fatzombiecop" extends="zombie01">
 		<property name="Mesh" value="Zombies/zombieStandardCopRagdoll" />
@@ -461,7 +461,7 @@
 		<property name="MaxHealth" value="7000" />
 		<property name="Weight" value="70" />
 		<property name="PushFactor" value="20" />
-		<property name="LootListOnDeath" value="17" />
+		<property name="LootListOnDeath" value="155" />
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
 		<!-- param1: 0 == attack action, 1 == use action, param2: attack length in s -->
@@ -514,7 +514,7 @@
 		<property name="Explosion.DamageBonus.earth" value="0" />
 		<property name="ExperienceGain" value="20" />
 		<property name="MaxHealth" value="3000" />
-		<property name="LootListOnDeath" value="38" />
+		<property name="LootListOnDeath" value="158" />
 	</entity_class>
 	<entity_class name="hornet">
 		<property name="EntityType" value="Zombie" />
@@ -1174,7 +1174,7 @@
 		<property name="PhysicsBody" value="zombieUMA" />
 		<property name="HasDeathAnim" value="false" />
 		<property name="TimeStayAfterDeath" value="45" />
-		<property name="LootListOnDeath" value="15" />
+		<property name="LootListOnDeath" value="154" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
@@ -1197,13 +1197,13 @@
 		<property name="Archetype" value="ZombieMaleHazmat" />
 		<property name="HandItem" value="handZombieHazMat" />
 		<property name="ExperienceGain" value="25" />
-		<property name="LootListOnDeath" value="65" />
+		<property name="LootListOnDeath" value="161" />
 	</entity_class>
 	<entity_class name="zombieFemaleHazmat" extends="ZombieFemaleUMA">
 		<property name="Archetype" value="ZombieFemaleHazmat" />
 		<property name="HandItem" value="handZombieHazMat" />
 		<property name="ExperienceGain" value="25" />
-		<property name="LootListOnDeath" value="65" />
+		<property name="LootListOnDeath" value="161" />
 	</entity_class>
 	<entity_class name="ZombieFemaleFatUMA" extends="zombieUMA">
 		<property name="Archetype" value="ZombieFemaleFatUMA" />
@@ -1212,11 +1212,11 @@
 		<property name="HandItem" value="handStrongZombie" />
 		<property name="WalkType" value="1" />
 		<property name="ExperienceGain" value="25" />
-		<property name="LootListOnDeath" value="85" />
+		<property name="LootListOnDeath" value="172" />
 	</entity_class>
 	<entity_class name="ZombieSoldier" extends="zombieUMA">
 		<property name="Archetype" value="ZombieSoldier" />
-		<property name="LootListOnDeath" value="73" />
+		<property name="LootListOnDeath" value="163" />
 		<property name="MaxHealth" value="5000" />
 		<property name="ExperienceGain" value="35" />
 		<property name="WalkType" value="7" />
@@ -1225,13 +1225,13 @@
 		<property name="Archetype" value="ZombieUtilityWorker" />
 		<property name="HandItem" value="handZombieWorker" />
 		<property name="ExperienceGain" value="20" />
-		<property name="LootListOnDeath" value="74" />
+		<property name="LootListOnDeath" value="164" />
 	</entity_class>
 	<entity_class name="ZombieMiner" extends="zombieUMA">
 		<property name="Archetype" value="ZombieMiner" />
 		<property name="HandItem" value="handZombieWorker" />
 		<property name="ExperienceGain" value="25" />
-		<property name="LootListOnDeath" value="82" />
+		<property name="LootListOnDeath" value="169" />
 	</entity_class>
 	<entity_class name="ZombieFootballPlayer" extends="zombieUMA">
 		<property name="Archetype" value="ZombieFootballPlayer" />
@@ -1242,27 +1242,27 @@
 		<property name="NightWanderSpeed" value="0.75" />
 		<property name="NightApproachSpeed" value="1.25" />
 		<property name="ExperienceGain" value="65" />
-		<property name="LootListOnDeath" value="78" />
+		<property name="LootListOnDeath" value="165" />
 	</entity_class>
 	<entity_class name="ZombieSkateboarder" extends="zombieUMA">
 		<property name="Archetype" value="ZombieSkateboarder" />
-		<property name="LootListOnDeath" value="80" />
+		<property name="LootListOnDeath" value="167" />
 	</entity_class>
 	<entity_class name="ZombieCheerleader" extends="ZombieFemaleUMA">
 		<property name="Archetype" value="ZombieCheerleader" />
 		<property name="MaxHealth" value="1000" />
-		<property name="LootListOnDeath" value="79" />
+		<property name="LootListOnDeath" value="166" />
 	</entity_class>
 	<entity_class name="zombieOldTimer" extends="zombieUMA">
 		<property name="Archetype" value="zombieOldTimer" />
-		<property name="LootListOnDeath" value="81" />
+		<property name="LootListOnDeath" value="168" />
 	</entity_class>
 	<entity_class name="ZombieBiker" extends="zombieUMA">
 		<property name="Archetype" value="ZombieBiker" />
 		<property name="HandItem" value="handStrongZombie" />
 		<property name="MaxHealth" value="6000" />
 		<property name="ExperienceGain" value="40" />
-		<property name="LootListOnDeath" value="83" />
+		<property name="LootListOnDeath" value="170" />
 		<property name="WalkType" value="7" />
 	</entity_class>
 	<entity_class name="ZombieFarmer" extends="zombieUMA">
@@ -1270,14 +1270,14 @@
 		<property name="HandItem" value="handStrongZombie" />
 		<property name="MaxHealth" value="4500" />
 		<property name="ExperienceGain" value="30" />
-		<property name="LootListOnDeath" value="85" />
+		<property name="LootListOnDeath" value="172" />
 		<property name="WalkType" value="7" />
 	</entity_class>
 	<entity_class name="ZombieStripper" extends="ZombieFemaleUMA">
 		<property name="Archetype" value="ZombieStripper" />
 		<property name="HandItem" value="handZombieStripper" />
 		<property name="MaxHealth" value="1000" />
-		<property name="LootListOnDeath" value="84" />
+		<property name="LootListOnDeath" value="171" />
 	</entity_class>
 	<entity_class name="minibike">
 		<property name="ModelType" value="Standard" />
@@ -1360,7 +1360,7 @@
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
 		<property name="TimeStayAfterDeath" value="45" />
 		<!-- in s -->
-		<property name="LootListOnDeath" value="15" />
+		<property name="LootListOnDeath" value="154" />
 		<property name="HasDeathAnim" value="true" />
 	</entity_class>
 	<entity_class name="Trader">
@@ -1411,7 +1411,7 @@
 		<property name="SoundPlayerLandThump" value="PlayerLandThump" />
 		<property name="TimeStayAfterDeath" value="45" />
 		<!-- in s -->
-		<property name="LootListOnDeath" value="15" />
+		<property name="LootListOnDeath" value="154" />
 		<property name="CorpseBlock" value="GoreBlock1Prefab" />
 		<property name="CorpseBlockChance" value="1" />
 		<property name="ExperienceGain" value="10" />
@@ -3170,7 +3170,7 @@
 		<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep" />
 		<property name="HandItem" value="CharredHand" />
 		<property name="MaxHealth" value="80" />
-		<property name="LootListOnDeath" value="15" />
+		<property name="LootListOnDeath" value="154" />
 		<!-- AI properties -->
 		<property name="AITask-1" value="BreakDoor" />
 		<property name="AITask-2" value="BreakBlock" />
@@ -3211,7 +3211,7 @@
 		<property name="Archetype" value="ZombieBrute" />
 		<property name="MaxHealth" value="20000" />
 		<property name="ExperienceGain" value="75" />
-		<property name="LootListOnDeath" value="15" />
+		<property name="LootListOnDeath" value="154" />
 		<property name="HandItem" value="BruteBash" />
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.25" />

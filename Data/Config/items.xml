@@ -51,37 +51,35 @@ Mesh files no longer used:
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value=".1" />
 			<property name="DamageBonus.head" value="40" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.cloth" value="0.5" />
 			<property name="DamageBonus.stone" value="0.3" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value="0.5" />
-			<property name="ActionExp" value="5" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExp" value="3" />
+			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="2.25" />
+			<property name="Delay" value="4" />
 			<property name="Range" value="2.9" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="9" />
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value=".2" />
-			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.glass" value="40" />
+			<property name="DamageBonus.head" value="50" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="7.5" />
-			<property name="DamageBonus.cloth" value="0.75" />
-			<property name="DamageBonus.stone" value="0.45" />
+			<property name="DamageBonus.cloth" value="0.5" />
+			<property name="DamageBonus.stone" value="0.3" />
 			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.earth" value="0.75" />
-			<property name="ActionExp" value="8" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="DamageBonus.earth" value="0.5" />
+			<property name="ActionExp" value="3" />
+			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="5,10" />
@@ -114,19 +112,19 @@ Mesh files no longer used:
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value=".3" />
 			<property name="DamageBonus.stone" value="0.5" />
-			<property name="DamageBonus.metal" value="5" />
-			<property name="DamageBonus.wood" value="10" />
-			<property name="ActionExp" value="10" />
+			<property name="DamageBonus.metal" value="1" />
+			<property name="DamageBonus.wood" value="2" />
+			<property name="ActionExp" value="4" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="2.4" />
+			<property name="Delay" value="4" />
 			<property name="Stamina_usage" value="12" />
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value=".3" />
-			<property name="DamageBonus.wood" value="15" />
-			<property name="DamageBonus.metal" value="7.5" />
-			<property name="DamageBonus.stone" value="0.75" />
-			<property name="ActionExp" value="15" />
+			<property name="DamageBonus.stone" value="0.5" />
+			<property name="DamageBonus.metal" value="1" />
+			<property name="DamageBonus.wood" value="2" />
+			<property name="ActionExp" value="4" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="9,16" />
@@ -168,25 +166,20 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="9" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".2,.5" />
-			<property name="DamageBonus.wood" value="18" />
-			<property name="DamageBonus.stone" value="1" />
-			<property name="DamageBonus.cloth" value="1" />
-			<property name="DamageBonus.earth" value="1" />
-			<property name="DamageBonus.metal" value="7" />
-			<property name="ActionExp" value="15" />
+			<property name="DamageBonus.wood" value="3" />
+			<property name="DamageBonus.cloth" value="2" />
+			<property name="ActionExp" value="5" />
 		</property>
 		<property class="Action1">
 			<!-- AttackAction -->
-			<property name="Delay" value="2.1" />
+			<property name="Delay" value="4" />
 			<property name="Stamina_usage" value="14" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".5,.6" />
-			<property name="DamageBonus.head" value="90" />
-			<property name="DamageBonus.wood" value="27" />
-			<property name="DamageBonus.cloth" value="1.5" />
-			<property name="DamageBonus.stone" value="1.5" />
-			<property name="DamageBonus.metal" value="10" />
-			<property name="ActionExp" value="20" />
+			<property name="DamageBonus.head" value="60" />
+			<property name="DamageBonus.wood" value="3" />
+			<property name="DamageBonus.cloth" value="2" />
+			<property name="ActionExp" value="5" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="15,25" />
@@ -217,22 +210,21 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="15" />
 			<property name="Buff" value="criticalBlunt,sprainedLeg" />
 			<property name="Buff_chance" value=".5,.3" />
-			<property name="DamageBonus.wood" value="5" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
 			<property name="DamageBonus.head" value="50" />
+			<property name="DamageBonus.stone" value="2" />
+			<property name="DamageBonus.metal" value="2" />
 			<property name="DamageBonus.cloth" value="0.3" />
 			<property name="DamageBonus.earth" value="0.2" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="ActionExp" value="10" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExp" value="6" />
+			<property name="ActionExpBonusMultiplier" value="4" />
 		</property>
 		<property class="Action1">
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="3" />
+			<property name="Delay" value="6" />
 			<property name="Range" value="3.1" />
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="4" />
@@ -240,17 +232,16 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="23" />
 			<property name="Buff" value="criticalBlunt,sprainedLeg" />
 			<property name="Buff_chance" value=".6,.4" />
-			<property name="DamageBonus.wood" value="7.5" />
-			<property name="DamageBonus.stone" value="15" />
-			<property name="DamageBonus.metal" value="8" />
-			<property name="DamageBonus.head" value="75" />
-			<property name="DamageBonus.cloth" value="0.45" />
-			<property name="DamageBonus.glass" value="40" />
+			<property name="DamageBonus.head" value="80" />
+			<property name="DamageBonus.stone" value="2" />
+			<property name="DamageBonus.metal" value="2" />
+			<property name="DamageBonus.cloth" value="0.3" />
+			<property name="DamageBonus.earth" value="0.2" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.earth" value="0.3" />
-			<property name="ActionExp" value="15" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExp" value="6" />
+			<property name="ActionExpBonusMultiplier" value="4" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="15,40" />
@@ -321,10 +312,10 @@ Mesh files no longer used:
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="7" />
 			<property name="DamageBonus.head" value="2" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="0.3" />
+			<property name="DamageBonus.wood" value="0" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="0.1" />
@@ -357,14 +348,14 @@ Mesh files no longer used:
 			<property name="DamageBonus.head" value="2" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.earth" value=".03" />
-			<property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.cloth" value="0" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.earth" value=".3" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.cloth" value="0.5" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="ActionExp" value="3" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExp" value="1" />
+			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property name="Group" value="Resources" />
 	</item>
@@ -386,19 +377,18 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".1,.1" />
 			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value="1" />
-			<property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.cloth" value="1" />
+			<property name="DamageBonus.wood" value="0.1" />
 			<property name="DamageBonus.organic" value="10" />
 			<property name="ToolCategory.Hunter" value="0.25" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
-			<property name="ActionExp" value="5" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExp" value="3" />
+			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="3,9" />
@@ -432,19 +422,15 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".3,.3" />
 			<property name="DamageBonus.head" value="70" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
-			<property name="DamageBonus.earth" value="1" />
-			<property name="DamageBonus.wood" value="1" />
 			<property name="DamageBonus.cloth" value="20" />
 			<property name="DamageBonus.organic" value="10" />
 			<property name="ToolCategory.Hunter" value="1" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
-			<property name="ActionExp" value="5" />
-			<property name="ActionExpBonusMultiplier" value="5" />
+			<property name="ActionExp" value="4" />
+			<property name="ActionExpBonusMultiplier" value="4" />
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="5,12" />
@@ -481,11 +467,9 @@ Mesh files no longer used:
 			<property name="Buff_chance" value=".6,.45" />
 			<property name="DamageBonus.wood" value="2" />
 			<property name="DamageBonus.head" value="75" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
 			<property name="DamageBonus.earth" value=".5" />
 			<property name="DamageBonus.cloth" value="50" />
 			<property name="DamageBonus.organic" value="10" />
@@ -497,22 +481,20 @@ Mesh files no longer used:
 		<property class="Action1">
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="2.02" />
+			<property name="Delay" value="4" />
 			<property name="Range" value="2.7" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="11" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".7,.55" />
-			<property name="DamageBonus.wood" value="3" />
-			<property name="DamageBonus.head" value="112.5" />
-			<property name="DamageBonus.glass" value="37.5" />
+			<property name="DamageBonus.wood" value="2" />
+			<property name="DamageBonus.head" value="90" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.stone" value="15" />
-			<property name="DamageBonus.metal" value="15" />
-			<property name="DamageBonus.earth" value=".75" />
-			<property name="DamageBonus.cloth" value="75" />
+			<property name="DamageBonus.earth" value=".5" />
+			<property name="DamageBonus.cloth" value="50" />
 			<property name="DamageBonus.organic" value="10" />
 			<property name="ToolCategory.Hunter" value=".5" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
@@ -1117,7 +1099,7 @@ Mesh files no longer used:
 			<property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 			<property name="DamageBonus.head" value="30" />
-			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.wood" value="1" />
 			<property name="DamageBonus.cloth" value="25" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
@@ -1173,12 +1155,16 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Delay" value="0.75" />
 			<property name="Range" value="2.5" />
-			<property name="DamageEntity" value="5" />
-			<property name="DamageBlock" value="1" />
+			<property name="DamageEntity" value="2" />
+			<property name="DamageBlock" value="2" />
 			<property name="Stamina_usage" value="3" />
-			<property name="DamageBonus.head" value="2" />
-			<property name="DamageBonus.organic" value="5" />
-			<property name="ToolCategory.Farm" value="1" />
+			<property name="DamageBonus.head" value="10" />
+            <property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.stone" value="0" />
+			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.organic" value="10" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -1210,13 +1196,9 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="10" />
 			<property name="DamageBlock" value="20" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
-			<property name="DamageBonus.wood" value="10" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
+			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
 		</property>
 	</item>
 	<item id="77" name="handZombie02">
@@ -1226,13 +1208,9 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Delay" value="2.0" />
 			<property name="Buff" value="sprainedLeg,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.2,0.5,0.1,0.08" />
-			<property name="DamageBonus.wood" value="10" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="Buff_chance" value="0.2,0.6,0.1,0.08" />
+			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
 		</property>
 	</item>
 	<item id="78" name="handBurningZombie">
@@ -1244,13 +1222,9 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="12" />
 			<property name="DamageBlock" value="2" />
 			<property name="Buff" value="burningSmall,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.5,0.5,0.1,0.3" />
-			<property name="DamageBonus.wood" value="40" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="Buff_chance" value="0.5,0.6,0.1,0.3" />
+			<property name="DamageBonus.wood" value="20" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
 		</property>
 	</item>
 	<item id="80" name="handCopZombie">
@@ -1263,13 +1237,12 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="20" />
 			<property name="DamageBlock" value="250" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.2,0.6,0.3,0.4" />
-			<property name="DamageBonus.wood" value="10" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="Buff_chance" value="0.2,0.7,0.3,0.4" />
+			<property name="DamageBonus.wood" value="6" />
+			<property name="DamageBonus.stone" value="5" />
+			<property name="DamageBonus.metal" value="3" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
+			<property name="DamageBonus.steel" value="2" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -1289,12 +1262,12 @@ Mesh files no longer used:
 			<property name="Sound_end" value="" />
 			<property name="Sound_empty" value="" />
 			<property name="Sound_reload" value="" />
-			<property name="DamageBonus.wood" value="10" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="DamageBonus.wood" value="20" />
+			<property name="DamageBonus.stone" value="20" />
+			<property name="DamageBonus.metal" value="20" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
+			<property name="DamageBonus.steel" value="20" />
+			<property name="DamageBonus.hardStone" value="20" />
 		</property>
 	</item>
 	<item id="81" name="vomitZombieProjectile">
@@ -1310,13 +1283,13 @@ Mesh files no longer used:
 			<property name="FlyTime" value=".50" />
 			<property name="LifeTime" value="4" />
 			<property name="CollisionRadius" value="0.5" />
-			<property name="DamageBonus.wood" value="10" />
-			<property name="DamageBonus.stone" value="15" />
-			<property name="DamageBonus.metal" value="20" />
+			<property name="DamageBonus.wood" value="25" />
+			<property name="DamageBonus.stone" value="25" />
+			<property name="DamageBonus.metal" value="25" />
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.steel" value="25" />
-			<property name="DamageBonus.hardStone" value="10" />
-			<property name="DamageBonus.earth" value="2" />
+			<property name="DamageBonus.hardStone" value="25" />
+			<property name="DamageBonus.earth" value="25" />
 		</property>
 		<property class="Attributes">
 			<property name="ApplyBuff" value="1, 1" param1="acid" />
@@ -1351,14 +1324,10 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="15" />
 			<property name="DamageBlock" value="18" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.3,0.8,0.3,0.4" />
+			<property name="Buff_chance" value="0.3,0.9,0.3,0.4" />
 			<property name="DamageBonus.earth" value="40" />
-			<property name="DamageBonus.wood" value="40" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="DamageBonus.wood" value="20" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
 		</property>
 	</item>
 	<item id="84" name="handStrongZombie">
@@ -1383,14 +1352,10 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="30" />
 			<property name="DamageBlock" value="50" />
 			<property name="Buff" value="bleeding,stunned,scratch" />
-			<property name="Buff_chance" value="0.2,0.3,0.8" />
-			<property name="DamageBonus.earth" value="40" />
-			<property name="DamageBonus.wood" value="40" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="Buff_chance" value="0.2,0.3,0.9" />
+			<property name="DamageBonus.earth" value="20" />
+			<property name="DamageBonus.wood" value="20" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
 		</property>
 	</item>
 	<item id="87" name="zombieHandBear">
@@ -1402,14 +1367,14 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="50" />
 			<property name="DamageBlock" value="100" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.3,0.9,0.4,0.4" />
-			<property name="DamageBonus.earth" value="40" />
-			<property name="DamageBonus.wood" value="40" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="Buff_chance" value="0.3,1,0.4,0.4" />
+			<property name="DamageBonus.earth" value="20" />
+			<property name="DamageBonus.wood" value="20" />
+			<property name="DamageBonus.stone" value="5" />
+			<property name="DamageBonus.metal" value="5" />
 			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.steel" value="10" />
-			<property name="DamageBonus.hardStone" value="10" />
+			<property name="DamageBonus.steel" value="5" />
+			<property name="DamageBonus.hardStone" value="5" />
 		</property>
 	</item>
 	<item id="88" name="handZombieHazMat">
@@ -1418,7 +1383,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="24" />
 		<property class="Action0">
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
 		</property>
 	</item>
 	<item id="89" name="handZombieWorker">
@@ -1428,7 +1393,7 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="DamageBlock" value="150" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
 		</property>
 	</item>
 	<item id="90" name="handZombieFootballPlayer">
@@ -1437,7 +1402,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="24" />
 		<property class="Action0">
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
 		</property>
 	</item>
 	<item id="91" name="handZombieStripper">
@@ -1447,7 +1412,7 @@ Mesh files no longer used:
 			<!-- AttackAction -->
 			<property name="DamageEntity" value="8" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.6,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
 		</property>
 	</item>
 	<!-- * * * * * * * * * * tools for mining / farming, manual or motorised * * * * * * * * * * -->
@@ -1472,11 +1437,11 @@ Mesh files no longer used:
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="5" />
 			<property name="DamageBonus.head" value="20" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="20" />
-			<property name="DamageBonus.stone" value="6" />
+			<property name="DamageBonus.wood" value="5" />
+			<property name="DamageBonus.stone" value="2" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value=".5" />
 			<property name="DamageBonus.cloth" value="5" />
@@ -1486,7 +1451,7 @@ Mesh files no longer used:
 		<property class="Action1">
 			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.2" />
+			<property name="Delay" value="2.5" />
 			<property name="Range" value="2.7" />
 			<property name="Block_range" value="3" />
 			<property name="Sphere" value="0.1" />
@@ -1496,8 +1461,8 @@ Mesh files no longer used:
 			<property name="DamageBonus.glass" value="38" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="30" />
-			<property name="DamageBonus.stone" value="15" />
+			<property name="DamageBonus.wood" value="7" />
+			<property name="DamageBonus.stone" value="4" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value="0.75" />
 			<property name="DamageBonus.cloth" value="7.5" />
@@ -1506,7 +1471,7 @@ Mesh files no longer used:
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="6,15" />
-			<property name="BlockDamage" value="5,30" />
+			<property name="BlockDamage" value="5,15" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="3,1" />
 			<property name="DismembermentBaseChance" value="0,0" />
@@ -1530,8 +1495,8 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".3,.3" />
 			<property name="DamageBonus.head" value="40" />
-			<property name="DamageBonus.wood" value="30" />
-			<property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.wood" value="8" />
+			<property name="DamageBonus.stone" value="5" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value="1" />
 			<property name="DamageBonus.cloth" value="10" />
@@ -1539,13 +1504,13 @@ Mesh files no longer used:
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="1.2" />
+			<property name="Delay" value="2.5" />
 			<property name="Stamina_usage" value="11" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".9,.6" />
 			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.wood" value="45" />
-			<property name="DamageBonus.stone" value="15" />
+			<property name="DamageBonus.wood" value="10" />
+			<property name="DamageBonus.stone" value="7" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value="1.5" />
 			<property name="DamageBonus.cloth" value="15" />
@@ -1554,7 +1519,7 @@ Mesh files no longer used:
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="6,15" />
-			<property name="BlockDamage" value="5,30" />
+			<property name="BlockDamage" value="5,20" />
 			<property name="DegradationMax" value="100,300" />
 			<property name="DegradationRate" value="3,1" />
 		</property>
@@ -1583,11 +1548,11 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".3,.3" />
 			<property name="DamageBonus.head" value="35" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.earth" value=".3" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="DamageBonus.wood" value="35" />
-			<property name="DamageBonus.stone" value="1.5" />
+			<property name="DamageBonus.wood" value="14" />
+			<property name="DamageBonus.stone" value="1" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.steel" value="0" />
@@ -1596,7 +1561,7 @@ Mesh files no longer used:
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.65" />
+			<property name="Delay" value="3.2" />
 			<property name="Range" value="3" />
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="4" />
@@ -1605,11 +1570,11 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".9,.6" />
 			<property name="DamageBonus.head" value="70" />
-			<property name="DamageBonus.glass" value="38" />
+			<property name="DamageBonus.glass" value="10" />
 			<property name="DamageBonus.earth" value=".45" />
 			<property name="DamageBonus.cloth" value="7.5" />
-			<property name="DamageBonus.wood" value="52.5" />
-			<property name="DamageBonus.stone" value="2.25" />
+			<property name="DamageBonus.wood" value="18" />
+			<property name="DamageBonus.stone" value="2" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.metal" value="1.5" />
 			<property name="DamageBonus.steel" value="0" />
@@ -1618,7 +1583,7 @@ Mesh files no longer used:
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="6,15" />
-			<property name="BlockDamage" value="5,30" />
+			<property name="BlockDamage" value="10,30" />
 			<property name="DegradationMax" value="200,1000" />
 			<property name="DegradationRate" value="5,1" />
 			<property name="DismembermentBaseChance" value="0.05,0.3" />
@@ -1646,26 +1611,26 @@ Mesh files no longer used:
 			<property name="Buff_chance" value=".4,.4" />
 			<property name="DamageBonus.head" value="40" />
 			<property name="DamageBonus.earth" value=".3" />
-			<property name="DamageBonus.wood" value="48" />
-			<property name="DamageBonus.stone" value="2" />
-			<property name="DamageBonus.hardStone" value="2" />
-			<property name="DamageBonus.metal" value="2" />
-			<property name="DamageBonus.steel" value="2" />
+			<property name="DamageBonus.wood" value="16" />
+			<property name="DamageBonus.stone" value="1" />
+			<property name="DamageBonus.hardStone" value="1" />
+			<property name="DamageBonus.metal" value="1" />
+			<property name="DamageBonus.steel" value="1" />
 			<property name="DamageBonus.cloth" value="10" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="1.8" />
+			<property name="Delay" value="3.8" />
 			<property name="Stamina_usage" value="14" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".9,.6" />
 			<property name="DamageBonus.head" value="80" />
 			<property name="DamageBonus.earth" value=".6" />
 			<property name="DamageBonus.cloth" value="15" />
-			<property name="DamageBonus.wood" value="72" />
-			<property name="DamageBonus.stone" value="3" />
-			<property name="DamageBonus.hardStone" value="3" />
-			<property name="DamageBonus.metal" value="3" />
-			<property name="DamageBonus.steel" value="3" />
+			<property name="DamageBonus.wood" value="20" />
+			<property name="DamageBonus.stone" value="2" />
+			<property name="DamageBonus.hardStone" value="2" />
+			<property name="DamageBonus.metal" value="2" />
+			<property name="DamageBonus.steel" value="2" />
 		</property>
 		<property class="Attributes">
 			<property name="DegradationMax" value="400,1400" />
@@ -1697,20 +1662,20 @@ Mesh files no longer used:
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value=".2" />
 			<property name="DamageBonus.head" value="20" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.earth" value=".25" />
 			<property name="DamageBonus.cloth" value="2" />
-			<property name="DamageBonus.wood" value="1" />
-			<property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.stone" value="5" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="DamageBonus.metal" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.5" />
+			<property name="Delay" value="3.2" />
 			<property name="Range" value="3" />
 			<property name="Sphere" value="0.1" />
 			<property name="Block_range" value="4" />
@@ -1719,13 +1684,13 @@ Mesh files no longer used:
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value=".6" />
 			<property name="DamageBonus.head" value="40" />
-			<property name="DamageBonus.glass" value="38" />
+			<property name="DamageBonus.glass" value="10" />
 			<property name="DamageBonus.earth" value=".5" />
 			<property name="DamageBonus.cloth" value="3" />
-			<property name="DamageBonus.wood" value="1.5" />
-			<property name="DamageBonus.stone" value="15" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.stone" value="8" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.metal" value="15" />
+			<property name="DamageBonus.metal" value="8" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
@@ -1758,21 +1723,21 @@ Mesh files no longer used:
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value=".3" />
 			<property name="DamageBonus.wood" value=".25" />
-			<property name="DamageBonus.stone" value="23" />
-			<property name="DamageBonus.hardStone" value="10" />
-			<property name="DamageBonus.metal" value="25" />
-			<property name="DamageBonus.steel" value="80" />
+			<property name="DamageBonus.stone" value="7" />
+			<property name="DamageBonus.hardStone" value="7" />
+			<property name="DamageBonus.metal" value="7" />
+			<property name="DamageBonus.steel" value="12" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="2.25" />
+			<property name="Delay" value="4.5" />
 			<property name="Stamina_usage" value="14" />
 			<property name="DamageBonus.wood" value="0.37" />
-			<property name="DamageBonus.stone" value="34.5" />
-			<property name="DamageBonus.hardStone" value="15" />
-			<property name="DamageBonus.metal" value="25" />
-			<property name="DamageBonus.steel" value="120" />
+			<property name="DamageBonus.stone" value="9" />
+			<property name="DamageBonus.hardStone" value="9" />
+			<property name="DamageBonus.metal" value="9" />
+			<property name="DamageBonus.steel" value="15" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
@@ -1807,10 +1772,10 @@ Mesh files no longer used:
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="6" />
 			<property name="DamageBonus.earth" value="1" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.head" value="10" />
 			<property name="DamageBonus.wood" value=".25" />
-			<property name="DamageBonus.metal" value=".01" />
+			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.stone" value=".25" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
@@ -1897,9 +1862,9 @@ Mesh files no longer used:
 			<property name="Sphere" value="0.2" />
 			<property name="Block_range" value="5" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="2" />
-			<property name="DamageBonus.head" value=".5" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="Stamina_usage" value="1" />
+			<property name="DamageBonus.head" value="0" />
+			<property name="DamageBonus.glass" value="0" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.wood" value="0" />
@@ -1955,14 +1920,13 @@ Mesh files no longer used:
 			<property name="Sound_harvesting" value="UseActions/wrench_harvest" />
 			<property name="Stamina_usage" value="4" />
 			<property name="DamageBonus.head" value="3" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.stone" value="0.5" />
+			<property name="DamageBonus.wood" value="0.5" />
 			<property name="DamageBonus.metal" value="5" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="DamageBonus.wrench" value="99" />
 			<property name="ToolCategory.Disassemble" value="1" />
 			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
@@ -2011,13 +1975,14 @@ Mesh files no longer used:
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="4" />
 			<property name="DamageBonus.head" value="5" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.earth" value="0" />
-			<property name="DamageBonus.cloth" value="3" />
+			<property name="DamageBonus.stone" value="5" />
+            <property name="DamageBonus.wood" value="5" />
+			<property name="DamageBonus.metal" value="1" />
+			<property name="DamageBonus.cloth" value="5" />
+            <property name="ToolCategory.Disassemble" value="1" />
 			<property name="ActionExp" value="0" />
 			<property name="ActionExpBonusMultiplier" value="0" />
 		</property>
@@ -2035,7 +2000,7 @@ Mesh files no longer used:
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="8,20" />
-			<property name="BlockDamage" value="15,40" />
+			<property name="BlockDamage" value="2,10" />
 			<property name="DegradationMax" value="100,600" />
 			<property name="DegradationRate" value="2,1" />
 		</property>
@@ -2077,7 +2042,7 @@ Mesh files no longer used:
 			<property name="Sound_empty" value="Weapons/weapon_empty" />
 			<property name="Sound_reload" value="Weapons/Motorized/Nailgun/nailgun_reload" />
 			<property name="DamageBonus.head" value="6" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="ActionExp" value="0" />
 		</property>
 		<property class="Action1">
@@ -2135,12 +2100,12 @@ Mesh files no longer used:
 			<property name="Horde_meter_distance" value="20" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
 			<property name="DamageBonus.head" value="4" />
-			<property name="DamageBonus.wood" value="140" />
+			<property name="DamageBonus.wood" value="80" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.earth" value=".5" />
 			<property name="DamageBonus.cloth" value="25" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="SupportHarvesting" value="true" />
@@ -2191,12 +2156,12 @@ Mesh files no longer used:
 			<property name="Horde_meter_distance" value="20" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw" />
 			<property name="DamageBonus.head" value="4" />
-			<property name="DamageBonus.stone" value="15" />
+			<property name="DamageBonus.stone" value="2" />
 			<property name="DamageBonus.wood" value="1" />
 			<property name="DamageBonus.earth" value="10" />
-			<property name="DamageBonus.metal" value="0.5" />
+			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="25" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="SupportHarvesting" value="true" />
@@ -2481,15 +2446,15 @@ Mesh files no longer used:
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.25" />
 			<property name="DamageBonus.head" value="40" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.wood" value="1" />
 			<property name="DamageBonus.earth" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="ActionExp" value="20" />
+			<property name="ActionExp" value="10" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property name="Group" value="Ammo/Weapons,Basics" />
@@ -2508,7 +2473,7 @@ Mesh files no longer used:
 			<property name="Velocity" value="65" />
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.35" />
-			<property name="ActionExp" value="30" />
+			<property name="ActionExp" value="15" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -2528,7 +2493,7 @@ Mesh files no longer used:
 			<property name="FlyTime" value="0.15" />
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.35" />
-			<property name="ActionExp" value="40" />
+			<property name="ActionExp" value="20" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -2556,7 +2521,7 @@ Mesh files no longer used:
 			<property name="FlyTime" value="0" />
 			<property name="Gravity" value="-6" />
 			<property name="DamageBonus.head" value="40" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.wood" value="100" />
@@ -2564,7 +2529,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="100" />
-			<property name="ActionExp" value="20" />
+			<property name="ActionExp" value="10" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
@@ -2596,15 +2561,15 @@ Mesh files no longer used:
 			<property name="LifeTime" value="12" />
 			<property name="Gravity" value="-4" />
 			<property name="DamageBonus.head" value="40" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.earth" value="0" />
 			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.wood" value="1" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="ActionExp" value="20" />
+			<property name="ActionExp" value="10" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property class="Attributes">
@@ -2636,15 +2601,15 @@ Mesh files no longer used:
 			<property name="Gravity" value="-4" />
 			<property name="LifeTime" value="12" />
 			<property name="DamageBonus.head" value="50" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.wood" value="1" />
 			<property name="DamageBonus.earth" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="DamageBonus.stone" value="0" />
-			<property name="ActionExp" value="30" />
+			<property name="ActionExp" value="15" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property class="Attributes">
@@ -2677,15 +2642,15 @@ Mesh files no longer used:
 			<property name="Gravity" value="-4" />
 			<property name="LifeTime" value="12" />
 			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
-			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.wood" value="1" />
 			<property name="DamageBonus.earth" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="ActionExp" value="40" />
+			<property name="ActionExp" value="20" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
 		<property class="Attributes">
@@ -2714,15 +2679,15 @@ Mesh files no longer used:
 			<property name="Gravity" value="-6" />
 			<property name="LifeTime" value="12" />
 			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.steel" value="5" />
-			<property name="DamageBonus.hardStone" value="5" />
-			<property name="DamageBonus.wood" value="5" />
+			<property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.steel" value="10" />
+			<property name="DamageBonus.hardStone" value="10" />
+			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.earth" value="5" />
-			<property name="DamageBonus.metal" value="5" />
+			<property name="DamageBonus.metal" value="10" />
 			<property name="DamageBonus.cloth" value="100" />
 			<property name="Explosion.BlockDamage" value="100" />
-			<property name="Explosion.EntityDamage" value="80" />
+			<property name="Explosion.EntityDamage" value="50" />
 			<property name="Explosion.ParticleIndex" value="1" />
 			<property name="Explosion.RadiusBlocks" value="3" />
 			<property name="Explosion.RadiusEntities" value="4" />
@@ -2749,12 +2714,12 @@ Mesh files no longer used:
 		<property name="Explosion.RadiusBlocks" value="3" />
 		<property name="Explosion.RadiusEntities" value="5" />
 		<property name="Explosion.DamageBonus.head" value="100" />
-		<property name="Explosion.DamageBonus.stone" value="1" />
+		<property name="Explosion.DamageBonus.stone" value="5" />
 		<property name="Explosion.DamageBonus.steel" value="0" />
 		<property name="Explosion.DamageBonus.hardStone" value="0" />
-		<property name="Explosion.DamageBonus.metal" value="1" />
+		<property name="Explosion.DamageBonus.metal" value="5" />
 		<property name="Explosion.DamageBonus.earth" value="1" />
-		<property name="Explosion.DamageBonus.wood" value="1" />
+		<property name="Explosion.DamageBonus.wood" value="10" />
 		<property name="Explosion.DamageBonus.water" value="0" />
 		<property name="Explosion.DamageBonus.cloth" value="100" />
 		<property name="Explosion.DamageBonus.glass" value="100" />
@@ -2794,12 +2759,12 @@ Mesh files no longer used:
 		<property name="Explosion.RadiusBlocks" value="3" />
 		<property name="Explosion.RadiusEntities" value="6" />
 		<property name="Explosion.DamageBonus.head" value="100" />
-		<property name="Explosion.DamageBonus.stone" value="25" />
-		<property name="Explosion.DamageBonus.steel" value="15" />
-		<property name="Explosion.DamageBonus.hardStone" value="15" />
-		<property name="Explosion.DamageBonus.metal" value="20" />
+		<property name="Explosion.DamageBonus.stone" value="20" />
+		<property name="Explosion.DamageBonus.steel" value="20" />
+		<property name="Explosion.DamageBonus.hardStone" value="20" />
+		<property name="Explosion.DamageBonus.metal" value="30" />
 		<property name="Explosion.DamageBonus.earth" value="100" />
-		<property name="Explosion.DamageBonus.wood" value="15" />
+		<property name="Explosion.DamageBonus.wood" value="30" />
 		<property name="Explosion.DamageBonus.water" value="0" />
 		<property name="Explosion.DamageBonus.cloth" value="100" />
 		<property name="Explosion.DamageBonus.glass" value="100" />
@@ -3821,6 +3786,7 @@ Mesh files no longer used:
 		<property name="EconomicValue" value="132" />
 		<property name="EquipSlot" value="Feet" />
 		<property name="HoldType" value="45" />
+        <property name="Weight" value="5" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
@@ -5994,6 +5960,7 @@ Mesh files no longer used:
 			<property name="Gain_health" value="10" />
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
+            <property name="Debuff" value="SpiderRash" />
 			<property name="Sound_start" value="UseActions/player_ointment" />
 		</property>
 		<property class="Action1">
@@ -6003,6 +5970,7 @@ Mesh files no longer used:
 			<property name="Gain_health" value="10" />
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
+            <property name="Debuff" value="SpiderRash" />
 			<property name="Sound_start" value="UseActions/player_ointment" />
 		</property>
 		<property name="Group" value="Medicine" />
@@ -8300,6 +8268,19 @@ Mesh files no longer used:
 			<property name="Max_strain_time" value="1" />
 			<property name="Sound_start" value="swoosh" />
 		</property>
+        <property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_stamina" value="2" />
+			<property name="Gain_food" value="0" />
+			<property name="Gain_water" value="1" />
+			<property name="Gain_sickness" value="0" />
+			<property name="Sound_start" value="UseActions/player_eating" />
+			<property name="Buff" value="dysentery,BrainFreeze" />
+			<property name="Buff_chance" value="0.05,1" />
+		</property>
 		<property name="ThrowableDecoy" value="true" />
 		<property name="DropScale" value="3" />
 		<property name="Group" value="Resources" />
@@ -8681,11 +8662,13 @@ Mesh files no longer used:
 			<property name="FlyTime" value="1" />
 			<property name="LifeTime" value="1" />
 			<property name="DamageBonus.head" value="6" />
-			<property name="DamageBonus.glass" value="0.01" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.wood" value="0.1" />
+            <property name="DamageBonus.hardStone" value="0" />
+            <property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.earth" value="0" />
 			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.cloth" value="0" />
+			<property name="DamageBonus.cloth" value="1" />
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -9693,7 +9676,7 @@ Mesh files no longer used:
 			<property name="Sound_start" value="Weapons/Ranged/44Magnum/44magnum_fire" />
 			<property name="Sound_reload" value="Weapons/Ranged/44Magnum/44magnum_reload" />
 			<property name="DamageBonus.head" value="50" />
-			<property name="DamageBonus.wood" value="0" />
+			<property name="DamageBonus.wood" value="2" />
 		</property>
 		<property name="CraftingSkillGroup" value="Gun Smithing" />
 	</item>
@@ -9829,7 +9812,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.earth" value=".25" />
 			<property name="DamageBonus.metal" value="1" />
 			<property name="DamageBonus.stone" value="1" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.cloth" value="25" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
@@ -11011,7 +10994,7 @@ Mesh files no longer used:
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 			<property name="DamageBonus.head" value="60" />
 			<property name="DamageBonus.wood" value="20" />
-			<property name="DamageBonus.glass" value="0.01" />
+			<property name="DamageBonus.glass" value="15" />
 			<property name="Max_strain_time" value="0.001" />
 		</property>
 		<property class="Action1">
@@ -11313,7 +11296,7 @@ Mesh files no longer used:
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="4" />
 			<property name="DamageBonus.head" value="30" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.stone" value="1" />
@@ -11423,7 +11406,7 @@ Mesh files no longer used:
 			<property name="Gravity" value="-10" />
 			<property name="LifeTime" value="12" />
 			<property name="DamageBonus.head" value="50" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="0" />
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.wood" value="0" />
@@ -11516,7 +11499,7 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="9" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".3,.3" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.head" value="60" />
 			<property name="DamageBonus.wood" value=".25" />
 			<property name="DamageBonus.stone" value=".25" />
@@ -11573,14 +11556,14 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".2,.2" />
 			<property name="DamageBonus.head" value="30" />
-			<property name="DamageBonus.wood" value="30" />
+			<property name="DamageBonus.wood" value="14" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="1.95" />
+			<property name="Delay" value="4" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".5,.8" />
 			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.wood" value="45" />
+			<property name="DamageBonus.wood" value="18" />
 		</property>
 		<property class="Attributes">
 			<property name="DegradationMax" value="25,200" />
@@ -11608,11 +11591,13 @@ Mesh files no longer used:
 			<property name="DamageBonus.head" value="4" />
 			<property name="DamageBonus.organic" value="10" />
 			<property name="DamageBonus.cloth" value="10" />
-			<property name="DamageBonus.glass" value="1" />
-			<property name="DamageBonus.earth" value="0.01" />
-			<property name="DamageBonus.wood" value="0.01" />
-			<property name="DamageBonus.stone" value="0.01" />
-			<property name="DamageBonus.metal" value="0.01" />
+			<property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.earth" value="0.1" />
+			<property name="DamageBonus.wood" value="0.2" />
+			<property name="DamageBonus.stone" value="0.1" />
+            <property name="DamageBonus.steel" value="0" />
+            <property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.metal" value="0.3" />
 			<property name="ToolCategory.Hunter" value="0.4" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
 		</property>
@@ -11743,7 +11728,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value=".5" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="1.95" />
+			<property name="Delay" value="3.95" />
 			<property name="Stamina_usage" value="9" />
 			<property name="Buff" value="criticalBlunt" />
 			<property name="Buff_chance" value=".45" />
@@ -11777,22 +11762,22 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".5,.45" />
 			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.wood" value="10" />
+			<property name="DamageBonus.wood" value="4" />
 			<property name="DamageBonus.cloth" value="1" />
 			<property name="DamageBonus.stone" value="1" />
-			<property name="DamageBonus.metal" value="7" />
+			<property name="DamageBonus.metal" value="2" />
 			<property name="DamageBonus.earth" value="1" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="2.02" />
+			<property name="Delay" value="4.05" />
 			<property name="Stamina_usage" value="12" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".6,.55" />
 			<property name="DamageBonus.head" value="90" />
-			<property name="DamageBonus.wood" value="15" />
+			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.cloth" value="1.5" />
 			<property name="DamageBonus.stone" value="1.5" />
-			<property name="DamageBonus.metal" value="10.5" />
+			<property name="DamageBonus.metal" value="3" />
 			<property name="DamageBonus.earth" value="1.5" />
 		</property>
 		<property class="Attributes">
@@ -11818,20 +11803,20 @@ Mesh files no longer used:
 			<property name="Buff_chance" value="1,.3,.45" />
 			<property name="DamageBonus.head" value="60" />
 			<property name="DamageBonus.hardStone" value="10" />
-			<property name="DamageBonus.wood" value="10" />
+			<property name="DamageBonus.wood" value="2" />
 			<property name="DamageBonus.steel" value="10" />
 			<property name="DamageBonus.stone" value="1" />
 			<property name="DamageBonus.metal" value="12" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="1.99" />
+			<property name="Delay" value="3.98" />
 			<property name="Sound_start" value="lucille_swing" />
 			<property name="Stamina_usage" value="12" />
 			<property name="Buff" value="lucilleimpact,bleeding,criticalBlunt" />
 			<property name="Buff_chance" value="1,.5,.55" />
 			<property name="DamageBonus.head" value="90" />
 			<property name="DamageBonus.hardStone" value="15" />
-			<property name="DamageBonus.wood" value="15" />
+			<property name="DamageBonus.wood" value="3" />
 			<property name="DamageBonus.steel" value="15" />
 			<property name="DamageBonus.stone" value="1.5" />
 			<property name="DamageBonus.metal" value="18" />
@@ -11860,7 +11845,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="0.5" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="2.02" />
+			<property name="Delay" value="4.05" />
 			<property name="Stamina_usage" value="12" />
 			<property name="Buff" value="criticalBlunt,breakLeg" />
 			<property name="Buff_chance" value=".4,1" />
@@ -11886,10 +11871,10 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="9" />
 			<property name="Buff" value="criticalBlunt,shocked" />
 			<property name="Buff_chance" value="0.3,0.9" />
-			<property name="DamageBonus.stone" value="7" />
+			<property name="DamageBonus.stone" value="0.25" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="2" />
+			<property name="Delay" value="4" />
 			<property name="Buff" value="criticalBlunt,shocked" />
 			<property name="Buff_chance" value="0.4,1" />
 			<property name="DamageBonus.stone" value="0.5" />
@@ -11915,14 +11900,14 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".4,.6" />
 			<property name="DamageBonus.metal" value="12" />
-			<property name="DamageBonus.glass" value="10" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.steel" value="10" />
 			<property name="DamageBonus.hardStone" value="10" />
 			<property name="ActionExp" value="20" />
 			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="2.02" />
+			<property name="Delay" value="4.04" />
 			<property name="Stamina_usage" value="15" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".6,.7" />
@@ -11954,11 +11939,11 @@ Mesh files no longer used:
             <property name="Stamina_usage" value="6" />
 			<property name="Buff" value="bleeding" />
 			<property name="Buff_chance" value=".5" />
-			<property name="DamageBonus.wood" value="25" />
+			<property name="DamageBonus.wood" value="7" />
 			<property name="DamageBonus.head" value="60" />
-            <property name="DamageBonus.glass" value="25" />
+            <property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.stone" value="1" />
-			<property name="DamageBonus.cloth" value="10" />
+			<property name="DamageBonus.cloth" value="5" />
 			<property name="DamageBonus.organic" value="10" />
             <property name="DamageBonus.metal" value="1" />
             <property name="DamageBonus.earth" value="0.3" />
@@ -11969,14 +11954,14 @@ Mesh files no longer used:
 		</property>
 		<property class="Action1">
             <property name="Class" value="Melee" />
-			<property name="Delay" value="2.6" />
+			<property name="Delay" value="5.1" />
 			<property name="Range" value="2.7" />
             <property name="Stamina_usage" value="9" />
             <property name="Buff" value="bleeding" />
 			<property name="Buff_chance" value=".6" />
-			<property name="DamageBonus.wood" value="37" />
+			<property name="DamageBonus.wood" value="9" />
 			<property name="DamageBonus.head" value="90" />
-            <property name="DamageBonus.glass" value="37" />
+            <property name="DamageBonus.glass" value="10" />
 			<property name="DamageBonus.stone" value="1.5" />
 			<property name="DamageBonus.cloth" value="15" />
 			<property name="DamageBonus.organic" value="10" />
@@ -12019,9 +12004,9 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="8" />
 			<property name="Buff" value="bleeding" />
 			<property name="Buff_chance" value="0.1" />
-			<property name="DamageBonus.wood" value="15" />
+			<property name="DamageBonus.wood" value="6" />
 			<property name="DamageBonus.head" value="45" />
-            <property name="DamageBonus.glass" value="25" />
+            <property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.stone" value="1" />
 			<property name="DamageBonus.cloth" value="10" />
 			<property name="DamageBonus.organic" value="10" />
@@ -12034,14 +12019,14 @@ Mesh files no longer used:
 		</property>
         <property class="Action1">
             <property name="Class" value="Melee" />
-			<property name="Delay" value="3" />
+			<property name="Delay" value="6" />
 			<property name="Range" value="2.7" />
             <property name="Stamina_usage" value="12" />
             <property name="Buff" value="bleeding" />
 			<property name="Buff_chance" value="0.2" />
-			<property name="DamageBonus.wood" value="22" />
+			<property name="DamageBonus.wood" value="8" />
 			<property name="DamageBonus.head" value="67" />
-            <property name="DamageBonus.glass" value="37" />
+            <property name="DamageBonus.glass" value="10" />
 			<property name="DamageBonus.stone" value="1.5" />
 			<property name="DamageBonus.cloth" value="15" />
 			<property name="DamageBonus.organic" value="10" />
@@ -12084,9 +12069,9 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="9" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value="0.4,0.2" />
-			<property name="DamageBonus.wood" value="22" />
+			<property name="DamageBonus.wood" value="8" />
 			<property name="DamageBonus.head" value="67" />
-            <property name="DamageBonus.glass" value="37" />
+            <property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.stone" value="1.5" />
 			<property name="DamageBonus.cloth" value="15" />
 			<property name="DamageBonus.organic" value="10" />
@@ -12099,14 +12084,14 @@ Mesh files no longer used:
 		</property>
          <property class="Action1">
             <property name="Class" value="Melee" />
-			<property name="Delay" value="3.6" />
+			<property name="Delay" value="7.2" />
 			<property name="Range" value="2.7" />
             <property name="Stamina_usage" value="13.5" />
             <property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value="0.5,0.3" />
-			<property name="DamageBonus.wood" value="30" />
+			<property name="DamageBonus.wood" value="9" />
 			<property name="DamageBonus.head" value="82" />
-            <property name="DamageBonus.glass" value="37" />
+            <property name="DamageBonus.glass" value="10" />
 			<property name="DamageBonus.stone" value="1.5" />
 			<property name="DamageBonus.cloth" value="15" />
 			<property name="DamageBonus.organic" value="10" />
@@ -12152,21 +12137,21 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding" />
 			<property name="Buff_chance" value="0.6" />
             <property name="DamageBonus.head" value="65" />
-			<property name="DamageBonus.wood" value="25" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.wood" value="8" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.stone" value="2" />
 			<property name="DamageBonus.cloth" value="10" />
 			<property name="DamageBonus.organic" value="10" />
             <property name="DamageBonus.metal" value="2" />
             <property name="DamageBonus.earth" value="0.3" />
-            <property name="DamageBonus.steel" value="1" />
+            <property name="DamageBonus.steel" value="5" />
 			<property name="DamageBonus.hardStone" value="1" />
             <property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
         <property class="Action1">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="3" />
+			<property name="Delay" value="6" />
 			<property name="Range" value="2.7" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
@@ -12174,14 +12159,14 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding" />
 			<property name="Buff_chance" value="0.7" />
             <property name="DamageBonus.head" value="97" />
-			<property name="DamageBonus.wood" value="37" />
-			<property name="DamageBonus.glass" value="37" />
+			<property name="DamageBonus.wood" value="12" />
+			<property name="DamageBonus.glass" value="10" />
 			<property name="DamageBonus.stone" value="3" />
 			<property name="DamageBonus.cloth" value="15" />
 			<property name="DamageBonus.organic" value="10" />
             <property name="DamageBonus.metal" value="3" />
             <property name="DamageBonus.earth" value="0.45" />
-            <property name="DamageBonus.steel" value="1.5" />
+            <property name="DamageBonus.steel" value="8.5" />
 			<property name="DamageBonus.hardStone" value="1.5" />
             <property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
@@ -12219,7 +12204,7 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value="0.7,0.3" />
             <property name="DamageBonus.head" value="65" />
-			<property name="DamageBonus.wood" value="25" />
+			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.stone" value="2" />
 			<property name="DamageBonus.cloth" value="10" />
@@ -12267,7 +12252,7 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value="0.7,0.3" />
             <property name="DamageBonus.head" value="80" />
-			<property name="DamageBonus.wood" value="30" />
+			<property name="DamageBonus.wood" value="14" />
 			<property name="DamageBonus.glass" value="25" />
 			<property name="DamageBonus.stone" value="2" />
 			<property name="DamageBonus.cloth" value="10" />
@@ -12281,7 +12266,7 @@ Mesh files no longer used:
 		</property>
         <property class="Action1">
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1.3" />
+			<property name="Delay" value="4.5" />
 			<property name="Range" value="2.5" />
 			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
@@ -12289,8 +12274,8 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value="0.8,0.4" />
             <property name="DamageBonus.head" value="120" />
-			<property name="DamageBonus.wood" value="45" />
-			<property name="DamageBonus.glass" value="37" />
+			<property name="DamageBonus.wood" value="17" />
+			<property name="DamageBonus.glass" value="10" />
 			<property name="DamageBonus.stone" value="3" />
 			<property name="DamageBonus.cloth" value="15" />
 			<property name="DamageBonus.organic" value="10" />
@@ -12332,7 +12317,7 @@ Mesh files no longer used:
 			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="2.1" />
+			<property name="Delay" value="4.02" />
 			<property name="Range" value="2.8" />
 			<property name="Stamina_usage" value="12" />
 			<property name="Buff" value="bleeding,criticalBlunt" />
@@ -12370,7 +12355,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.hardStone" value="10" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="1.95" />
+			<property name="Delay" value="2.9" />
 			<property name="Stamina_usage" value="9" />
 			<property name="DamageBonus.steel" value="15" />
 			<property name="DamageBonus.hardStone" value="15" />
@@ -12398,7 +12383,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.wood" value="10" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="2.4" />
+			<property name="Delay" value="4.8" />
 			<property name="Range" value="3" />
 			<property name="Sphere" value="0.1" />
 			<property name="Stamina_usage" value="15" />
@@ -12433,7 +12418,7 @@ Mesh files no longer used:
 			<property name="ToolCategory.Hunter" value=".8" />
 		</property>
 		<property class="Action1">
-			<property name="Delay" value="2.25" />
+			<property name="Delay" value="4.5" />
 			<property name="Range" value="2.9" />
 			<property name="Stamina_usage" value="13" />
 			<property name="Buff" value="katanaimpact,bleeding,criticalBlunt" />
@@ -12617,25 +12602,28 @@ Mesh files no longer used:
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="Weight" value="24" />
 		<property class="Action0">
+			<!-- AttackAction -->
 			<property name="Class" value="Melee" />
-			<property name="Delay" value="1" />
-			<property name="Range" value="1.5" />
-			<property name="Sphere" value="0.5" />
-			<property name="DamageEntity" value="15" />
-			<property name="DamageBlock" value="0.4" />
+			<property name="Delay" value="1.15" />
+			<property name="Range" value="2.2" />
+			<property name="Block_range" value="4" />
+			<property name="Sphere" value="0.1" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="1" />
+			<property name="Sound_harvesting" value="UseActions/wrench_harvest" />
+			<property name="Stamina_usage" value="4" />
 			<property name="DamageBonus.head" value="3" />
-			<property name="DamageBonus.cloth" value="4" />
-			<property name="DamageBonus.glass" value="1" />
-			<property name="DamageBonus.earth" value="0.01" />
-			<property name="DamageBonus.wood" value="0.01" />
-			<property name="DamageBonus.stone" value="0.01" />
-			<property name="DamageBonus.metal" value="0.01" />
-            <property name="ActionExp" value="1" />
+			<property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.steel" value="0" />
+			<property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.stone" value="0.5" />
+			<property name="DamageBonus.wood" value="0.5" />
+			<property name="DamageBonus.metal" value="5" />
+			<property name="DamageBonus.cloth" value="5" />
+			<property name="ToolCategory.Disassemble" value="1" />
+			<property name="ActionExp" value="1" />
 			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
-        <property class="Action1">
+		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="Repair" />
 			<property name="Delay" value="0.4" />
@@ -12645,17 +12633,18 @@ Mesh files no longer used:
 			<property name="Allowed_upgrade_items" value="Plank,scrapIron,forgedIron,fertileDirt,forgedSteel,clayLump,fertileDirt,stick,nail" />
 			<property name="Restricted_upgrade_items" value="concreteMix,cobblestones" />
 			<property name="ActionExp" value="1" />
-			<property name="ActionExpBonusMultiplier" value="2" />
+			<property name="ActionExpBonusMultiplier" value="1" />
 		</property>
 		<property class="Attributes">
-			<property name="EntityDamage" value="15,25" />
-			<property name="BlockDamage" value=".4,1" />
-			<property name="DegradationMax" value="100,600" />
-			<property name="DegradationRate" value="1,1" />
+			<property name="EntityDamage" value="4,10" />
+			<property name="BlockDamage" value="2,10" />
+			<property name="DegradationMax" value="100,1400" />
+			<property name="DegradationRate" value="2,1" />
 		</property>
-        <property name="ActionSkillGroup" value="Engineering" />
-		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 		<property name="Group" value="Tools/Traps" />
+        <property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="RepairExpMultiplier" value="5.5" />
+        <property name="ActionSkillGroup" value="Engineering" />
 	</item>
 	<item id="1671" name="AdminPick">
 		<property name="Extends" value="pickaxeIron" />
@@ -12743,12 +12732,12 @@ Mesh files no longer used:
 			<property name="Sound_harvesting" value="UseActions/wrench_harvest" />
 			<property name="Stamina_usage" value="3" />
 			<property name="DamageBonus.head" value="60" />
-			<property name="DamageBonus.glass" value="25" />
-			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.steel" value="0" />
-			<property name="DamageBonus.hardStone" value="0" />
+			<property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.stone" value="5" />
+			<property name="DamageBonus.wood" value="5" />
+			<property name="DamageBonus.metal" value="5" />
+			<property name="DamageBonus.steel" value="5" />
+			<property name="DamageBonus.hardStone" value="5" />
 			<property name="DamageBonus.earth" value="0" />
 			<property name="ToolCategory.Disassemble" value="1" />
 			<property name="ActionExp" value="1" />
@@ -14067,6 +14056,7 @@ Mesh files no longer used:
 			<property name="Gain_health" value="10" />
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
+            <property name="Debuff" value="SpiderRash" />
 			<property name="Sound_start" value="UseActions/player_ointment" />
 		</property>
 		<property class="Action1">
@@ -14076,6 +14066,7 @@ Mesh files no longer used:
 			<property name="Gain_health" value="10" />
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
+            <property name="Debuff" value="SpiderRash" />
 			<property name="Sound_start" value="UseActions/player_ointment" />
 		</property>
 		<property name="Group" value="Medicine" />
@@ -14108,7 +14099,7 @@ Mesh files no longer used:
 		<property name="Weight" value="5" />
 		<property class="Action1">
 			<property name="Gain_health" value="0" />
-			<property name="Debuff" value="bleeding,bearTrap,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4" />
+			<property name="Debuff" value="bleeding,bearTrap,arrowCriticalBleedout,biteWound,dirtyBiteBandage1,smallWound,dirtyBandage1,wound,dirtyBandage2,severeWound,dirtyBandage3,InfectedWound,dirtyBandage4,Swelling" />
 			<property name="Create_item" value="emptyJar" />
 		</property>
 		<property name="DescriptionKey" value="SanitizingBandageDesc" />
@@ -14719,6 +14710,39 @@ Mesh files no longer used:
 		</property>
         <property name="DescriptionKey" value="CanMeatDesc" />
 		<property name="Group" value="Food/Cooking" />
+	</item>
+    <item id="3010" name="Poultice">
+      	<property name="Meshfile" value="Items/Health/gauze" />
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+		<property name="Material" value="cloth" />
+		<property name="HoldType" value="16" />
+		<property name="Stacknumber" value="5" />
+		<property name="SellableToTrader" value="false" />
+		<property class="Action0">
+			<property name="Class" value="UseOther" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="0" />
+			<property name="Gain_water" value="0" />
+			<property name="Sound_start" value="UseActions/player_bandage" />
+			<property name="Debuff" value="bleeding" />
+        </property>
+		<property class="Action1">
+			<property name="Class" value="Eat" />
+			<property name="Delay" value="1.0" />
+			<property name="Use_time" value="..." />
+			<property name="Gain_health" value="0" />
+			<property name="Gain_food" value="0" />
+			<property name="Gain_water" value="0" />
+			<property name="Sound_start" value="UseActions/player_bandage" />
+			<property name="Debuff" value="bleeding" />
+        </property>
+		<property name="Group" value="Medicine" />
+		<property name="DescriptionKey" value="PoulticeDesc" />
+		<property name="ActionSkillGroup" value="Medicine" />
+		<property name="CraftingSkillGroup" value="Medicine" />
+		<property name="ActionExp" value="10" />
 	</item>
 	<!--JZMOD Flask -->
 	<item id="1876" name="BladderFlaskFull">
@@ -15744,7 +15768,7 @@ Mesh files no longer used:
 			<property name="DamageBlock" value="0.5" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Buff" value="bleeding,stunned,scratch" />
-			<property name="Buff_chance" value="0.01,0.02,0.3" />
+			<property name="Buff_chance" value="0.01,0.02,0.4" />
 			<property name="DamageBonus.earth" value="5" />
 			<property name="DamageBonus.wood" value="1" />
 		</property>
@@ -15761,7 +15785,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="20" />
 			<property name="DamageBlock" value="50" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.1,0.6,0.3,0.4" />
+			<property name="Buff_chance" value="0.1,0.7,0.3,0.4" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
@@ -15856,10 +15880,10 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="12" />
 			<property name="DamageBlock" value="2" />
 			<property name="Buff" value="burningSmall,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.5,0.5,0.1,0.3" />
+			<property name="Buff_chance" value="0.5,0.6,0.1,0.3" />
 			<property name="DamageBonus.wood" value="20" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
+			<property name="DamageBonus.stone" value="3" />
+			<property name="DamageBonus.metal" value="3" />
 			<property name="DamageBonus.glass" value="10" />
 		</property>
 		<property class="Action1">
@@ -15885,10 +15909,8 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="12" />
 			<property name="DamageBlock" value="2" />
 			<property name="Buff" value="scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.5,0.5,0.1,0.3" />
+			<property name="Buff_chance" value="0.6,0.5,0.1,0.3" />
 			<property name="DamageBonus.wood" value="20" />
-			<property name="DamageBonus.stone" value="10" />
-			<property name="DamageBonus.metal" value="10" />
 			<property name="DamageBonus.glass" value="10" />
 		</property>
 		<property class="Action1">
@@ -15946,7 +15968,7 @@ Mesh files no longer used:
 			<property name="DamageBlock" value="0.5" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Buff" value="stunned,scratch,SpiderPoisoning" />
-			<property name="Buff_chance" value="0.02,0.4,0.5" />
+			<property name="Buff_chance" value="0.02,0.5,0.5" />
 		</property>
 	</item>
 	<item id="1967" name="RadSpiderBite">
@@ -15965,7 +15987,7 @@ Mesh files no longer used:
 			<property name="DamageBlock" value="0.5" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Buff" value="stunned,scratch,SpiderPoisoning,Radiation" />
-			<property name="Buff_chance" value="0.02,0.4,0.5,0.09" />
+			<property name="Buff_chance" value="0.02,0.5,0.5,0.09" />
 		</property>
 	</item>
 	<item id="1968" name="BobcatClaw">
@@ -16207,11 +16229,11 @@ Mesh files no longer used:
 			<property name="Stamina_usage" value="3" />
 			<property name="DamageBonus.head" value="40" />
 			<property name="DamageBonus.cloth" value="0" />
-			<property name="DamageBonus.glass" value="25" />
+			<property name="DamageBonus.glass" value="5" />
 			<property name="DamageBonus.earth" value="0" />
-			<property name="DamageBonus.wood" value="0" />
-			<property name="DamageBonus.stone" value="0" />
-			<property name="DamageBonus.metal" value="0" />
+			<property name="DamageBonus.wood" value="0.1" />
+			<property name="DamageBonus.stone" value="0.5" />
+			<property name="DamageBonus.metal" value="0.1" />
             <property name="DamageBonus.hardStone" value="0" />
             <property name="DamageBonus.steel" value="0" />
 		</property>
