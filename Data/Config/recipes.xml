@@ -3489,6 +3489,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="coal" count="1" />
 		<ingredient name="goldenrodPlant" count="1" />
 	</recipe>
+    <recipe name="Poultice" count="1" craft_time="5" craft_exp_gain="10">
+		<ingredient name="ZincPowder" count="1" />
+        <ingredient name="clayLump" count="3" />
+        <ingredient name="bottledWater" count="1" />
+        <ingredient name="forestFlower" count="1" />
+	</recipe>
 	<recipe name="powerCeilingLight01" count="1" craft_area="workMetalWorkBench" craft_tool="CompactDriver" craft_time="10" craft_exp_gain="25">
 		<ingredient name="scrapCable" count="5" />
 		<ingredient name="glassCTRSheet" count="1" />

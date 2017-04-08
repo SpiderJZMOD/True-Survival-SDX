@@ -10411,6 +10411,7 @@ Mesh files no longer used:
         <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab" />
 		<property name="HandMeshfile" value="#hk?UMP45" />
 		<property name="DropMeshfile" value="#hk?UMP45" />
+        <property name="CustomIcon" value="UMPJZ" />
 		<property class="Parts">
 			<property name="Receiver" value="UMP_receiver" />
 			<property name="Barrel" value="UMP_barrel" />
@@ -11661,6 +11662,7 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="200,400" />
 		</property>
 		<property name="DescriptionKey" value="kaBarDesc" />
+         <property name="ActionSkillGroup" value="Blade Weapons" />
 	</item>
 	<item id="1644" name="battleKnifeCherry">
 		<!--Loot only -->
@@ -11675,6 +11677,7 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="200,400" />
 		</property>
 		<property name="DescriptionKey" value="battleKnifeCherryDesc" />
+         <property name="ActionSkillGroup" value="Blade Weapons" />
 	</item>
 	<item id="1645" name="FieldKnife">
 		<property name="Extends" value="huntingKnife" />
@@ -11712,6 +11715,7 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="200,400" />
 		</property>
 		<property name="DescriptionKey" value="knifeSharkDesc" />
+         <property name="ActionSkillGroup" value="Blade Weapons" />
 	</item>
 	<item id="1647" name="bat">
 		<property name="Extends" value="clubMaster" />
@@ -11746,6 +11750,7 @@ Mesh files no longer used:
     <item id="1648" name="GoodNight">
 		<property name="Extends" value="bat" />
 		<property name="Meshfile" value="#goodNight?goodNight" />
+        <property name="CustomIcon" value="GoodNightBat" />
 	</item>
 	<item id="1649" name="TPXBat">
 		<property name="Extends" value="bat" />
@@ -15664,6 +15669,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1948" name="Strawberry">
 		<property name="Extends" value="FoodMaster" />
+         <property name="CustomIcon" value="StrawberryJZ" />
 		<property class="Action1">
 			<property name="Gain_food" value="1" />
 		</property>
@@ -15738,6 +15744,7 @@ Mesh files no longer used:
 	</item>
 	<item id="1957" name="StrawberrySeed">
 		<property name="Extends" value="cornSeed" />
+        <property name="CustomIcon" value="StrawberrySeedJZ" />
 		<property class="Action1">
 			<property name="Blockname" value="plantedTomato" />
 		</property>
@@ -16555,8 +16562,7 @@ Mesh files no longer used:
 	</item>
 	<item id="2032" name="DriedCannabis">
 		<property name="Extends" value="CannabisBub" />
-        <property name="CustomIcon" value="DriedCannabis" />
-		<property name="EconomicValue" value="50" />
+       	<property name="EconomicValue" value="50" />
         <property name="SellableToTrader" value="false" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="DescriptionKey" value="TobaccoLeafsDesc" />
@@ -16605,6 +16611,7 @@ Mesh files no longer used:
 		<property name="Material" value="Msteel" />
 		<property name="Stacknumber" value="5000" />
 		<property name="SellableToTrader" value="false" />
+        <property name="CustomIcon" value="LockPickJZ" />
 		<property name="DescriptionKey" value="LockpickBubDesc" />
 	</item>
     <item id="2036" name="bambooPole">
@@ -16994,6 +17001,7 @@ Mesh files no longer used:
 		<property name="Material" value="brass" />
 		<property name="HoldType" value="21" />
 		<property name="Stacknumber" value="500" />
+        <property name="CustomIcon" value="unused" />
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
 			<property name="ApplyBuff" value="1,1" param1="banditBonus" />
@@ -17166,7 +17174,7 @@ Mesh files no longer used:
 			<property name="Class" value="PlaceAsBlock" />
 			<property name="Delay" value="0.5" />
 			<property name="Blockname" value="workforge" />
-			<property name="Change_item_to" value="HandDolly" />
+			<property name="Change_item_to" value="Crowbar" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 		</property>
 	</item>

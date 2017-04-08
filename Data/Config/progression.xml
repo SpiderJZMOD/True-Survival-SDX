@@ -1697,7 +1697,7 @@
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="50" />
 			<recipe name="WellnessJuice" unlock_level="1" />
 		</perk>
-		<perk name="Fishing Pole" icon="fork" description_key="Learn to craft Fishing Pole" title_key="Fishing Pole" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="health">
+		<perk name="Fishing Pole" icon="fork" description_key="Learn to craft Fishing Pole" title_key="Fishing Pole" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">
 			<recipe name="SimplePole" unlock_level="1" />
 			<recipe name="fishingLure1" unlock_level="1" />
 		</perk>
@@ -1895,7 +1895,7 @@
 			</effect>
 		</action_skill>
 		<!--JZMOD PROFESSIONS-->
-		<perk name="Carpenter" icon="gunsmithing" description_key="These are the skills a Carpenter starts with. Collect 20 Profession pages to learn another profession" title_key="Carpenter" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Carpenter" icon="Carpenter" description_key="These are the skills a Carpenter starts with. Collect 20 Profession pages to learn another profession" title_key="Carpenter" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="woodFrameBlock" unlock_level="1" />
 			<recipe name="woodFrameCNRFull" unlock_level="1" />
 			<recipe name="woodFrameCNRInside" unlock_level="1" />
@@ -1917,7 +1917,7 @@
 				<multiply perk_level="1" value="0.9" />
 			</effect>
 		</perk>
-		<perk name="Doctor" icon="gunsmithing" description_key="These are the skills a Doctor starts with. Collect 20 Profession pages to learn another profession" title_key="Doctor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Doctor" icon="Doctor" description_key="These are the skills a Doctor starts with. Collect 20 Profession pages to learn another profession" title_key="Doctor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="DoctorBook" unlock_level="1" />
 			<recipe name="painkillers" unlock_level="1" />
 			<recipe name="SuperPill" unlock_level="1" />
@@ -1931,7 +1931,7 @@
 			<recipe name="aloeCream" unlock_level="1" />
 			<recipe name="antibiotics" unlock_level="1" />
 		</perk>
-		<perk name="Cop" icon="gunsmithing" description_key="These are the skills a cop starts with. Collect 20 Profession pages to learn another profession" title_key="Cop" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Cop" icon="Cop" description_key="These are the skills a cop starts with. Collect 20 Profession pages to learn another profession" title_key="Cop" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="NightStick" unlock_level="1" />
 			<recipe name="GunOil" unlock_level="1" />
 			<recipe name="weaponRepairKit" unlock_level="1" />
@@ -1948,7 +1948,7 @@
 				<multiply perk_level="1" value="0.9" />
 			</effect>
 		</perk>
-		<perk name="Soldier" icon="gunsmithing" description_key="These are the skills a soldier starts with. Collect 20 Profession pages to learn another profession" title_key="Soldier" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Soldier" icon="Soldier" description_key="These are the skills a soldier starts with. Collect 20 Profession pages to learn another profession" title_key="Soldier" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="Grubs" unlock_level="1" />
 			<recipe name="weaponRepairKit" unlock_level="1" />
 			<recipe name="pipeBomb" unlock_level="1" />
@@ -1968,7 +1968,7 @@
 				<multiply perk_level="1" value="0.9" />
 			</effect>
 		</perk>
-		<perk name="Farmer" icon="gunsmithing" description_key="These are the skills a farmer starts with. Collect 20 Profession pages to learn another profession" title_key="Farmer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Farmer" icon="Farmer" description_key="These are the skills a farmer starts with. Collect 20 Profession pages to learn another profession" title_key="Farmer" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="workSeedNursery" unlock_level="1" />
 			<recipe name="StoneHoe" unlock_level="1" />
             <recipe name="hoeIron" unlock_level="1" />
@@ -1991,7 +1991,7 @@
 			<recipe name="chrysanthemumSeed" unlock_level="1" />
 			<recipe name="TomatoSeed" unlock_level="1" />
 		</perk>
-		<perk name="Chemist" icon="gunsmithing" description_key="These are the skills a Chemist starts with. Collect 20 Profession pages to learn another profession" title_key="Chemist" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Chemist" icon="Chemist" description_key="These are the skills a Chemist starts with. Collect 20 Profession pages to learn another profession" title_key="Chemist" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="RedBull" unlock_level="1" />
 			<recipe name="Stimulant" unlock_level="1" />
 			<recipe name="MixedChemicals" unlock_level="1" />
@@ -2001,7 +2001,7 @@
 			<recipe name="bioFuel" unlock_level="1" />
 			<recipe name="PurificationTablets" unlock_level="1" />
 		</perk>
-		<perk name="Fisherman" icon="gunsmithing" description_key="These are the skills a Fisherman starts with. Collect 20 Profession pages to learn another profession" title_key="Fisherman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Fisherman" icon="Fisherman" description_key="These are the skills a Fisherman starts with. Collect 20 Profession pages to learn another profession" title_key="Fisherman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="SimplePole" unlock_level="1" />
 			<recipe name="FishingPole" unlock_level="1" />
             <recipe name="hook" unlock_level="1" />
@@ -2013,10 +2013,10 @@
 			<recipe name="fishingLure4" unlock_level="1" />
 			<recipe name="fishingLure5" unlock_level="1" />
 		</perk>
-		<perk name="Chef" icon="gunsmithing" description_key="These are the skills a Chef starts with. Collect 20 Profession pages to learn another profession" title_key="Chef" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Chef" icon="Chef" description_key="These are the skills a Chef starts with. Collect 20 Profession pages to learn another profession" title_key="Chef" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="SharpeningStone" unlock_level="1" />
 		</perk>
-		<perk name="Fitness Instructor" icon="gunsmithing" description_key="These are the skills a Fitness Instructor starts with. Collect 20 Profession pages to learn another profession" title_key="Fitness Instructor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Fitness Instructor" icon="Fitness" description_key="These are the skills a Fitness Instructor starts with. Collect 20 Profession pages to learn another profession" title_key="Fitness Instructor" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="RedBull" unlock_level="1" />
 			<recipe name="WellnessJuice" unlock_level="1" />
 			<recipe name="goldenRodTea" unlock_level="1" />
@@ -2046,7 +2046,7 @@
 				<multiply perk_level="1" value="2" />
 			</effect>
 		</perk>
-		<perk name="Fireman" icon="gunsmithing" description_key="These are the skill a Fireman starts with. Collect 20 Profession pages to learn another profession" title_key="Fireman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Fireman" icon="Fireman" description_key="These are the skill a Fireman starts with. Collect 20 Profession pages to learn another profession" title_key="Fireman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="aloeCream" unlock_level="1" />
 			<recipe name="fireaxeIron" unlock_level="1" />
 			<recipe name="fireaxeSteel" unlock_level="1" />
@@ -2059,7 +2059,7 @@
 				<multiply perk_level="1" value="1.2" />
 			</effect>
 		</perk>
-		<perk name="Construction Worker" icon="gunsmithing" description_key="These are the skills a Construction Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Construction Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Construction Worker" icon="Construction" description_key="These are the skills a Construction Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Construction Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="wrench" unlock_level="1" />
 			<recipe name="scrapIronFrameBlock" unlock_level="1" />
 			<recipe name="scrapIronFrameCNRFull" unlock_level="1" />
@@ -2075,7 +2075,7 @@
 				<multiply perk_level="1" value="1.1" />
 			</effect>
 		</perk>
-		<perk name="Electrician" icon="gunsmithing" description_key="These are the skills a Electrician starts with. Collect 20 Profession pages to learn another profession" title_key="Electrician" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Electrician" icon="Electrician" description_key="These are the skills a Electrician starts with. Collect 20 Profession pages to learn another profession" title_key="Electrician" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="screwdriver" unlock_level="1" />
 			<recipe name="ShockStick" unlock_level="1" />
 			<recipe name="powerCeilingLight01" unlock_level="1" />
@@ -2101,7 +2101,7 @@
 				<multiply perk_level="1" value="0.9" />
 			</effect>
 		</perk>
-		<perk name="Metal Worker" icon="gunsmithing" description_key="These are the skills a Metal Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Metal Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Metal Worker" icon="Metal" description_key="These are the skills a Metal Worker starts with. Collect 20 Profession pages to learn another profession" title_key="Metal Worker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="workforge" unlock_level="1" />
             <recipe name="bellows" unlock_level="1" />
 			<recipe name="rebarFrameBlock" unlock_level="1" />
@@ -2113,7 +2113,7 @@
 				<multiply perk_level="1" value="1.1" />
 			</effect>
 		</perk>
-		<perk name="Burglar" icon="gunsmithing" description_key="These are the skills a Burglar starts with. Collect 20 Profession pages to learn another profession" title_key="Burglar" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Burglar" icon="Burglar" description_key="These are the skills a Burglar starts with. Collect 20 Profession pages to learn another profession" title_key="Burglar" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="ironShiv" unlock_level="1" />
 			<recipe name="LockPick" unlock_level="1" />
 			<effect name="TreasureRadius">
@@ -2133,7 +2133,7 @@
 				<multiply perk_level="1" value="0.75" />
 			</effect>
 		</perk>
-		<perk name="Park Ranger" icon="gunsmithing" description_key="These are the skills a Park Ranger starts with. Collect 20 Profession pages to learn another profession" title_key="Park Ranger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Park Ranger" icon="Ranger" description_key="These are the skills a Park Ranger starts with. Collect 20 Profession pages to learn another profession" title_key="Park Ranger" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="BearTrap" unlock_level="1" />
 			<recipe name="WoodSpear" unlock_level="1" />
 			<recipe name="WoodJavelin" unlock_level="1" />
@@ -2141,7 +2141,7 @@
 			<recipe name="herbalAntibiotics" unlock_level="1" />
 			<recipe name="PurificationTablets" unlock_level="1" />
 		</perk>
-		<perk name="Mechanic" icon="gunsmithing" description_key="These are the skills a Mechanic starts with. Collect 20 Profession pages to learn another profession" title_key="Mechanic" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
+		<perk name="Mechanic" icon="Mechanic" description_key="These are the skills a Mechanic starts with. Collect 20 Profession pages to learn another profession" title_key="Mechanic" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="auger" unlock_level="1" />
 			<recipe name="chainsaw" unlock_level="1" />
 			<recipe name="wrench" unlock_level="1" />

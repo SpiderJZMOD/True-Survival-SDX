@@ -15134,8 +15134,7 @@ kind of free
 			<property name="Modules" value="output" />
 		</property>
         <property name="DescriptionKey" value="digesterDesc" />
-        <property name="DescriptionKey" value="workFermentationBarrelDesc" />
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+       	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="3,20" tool_category="Disassemble" />
 		<drop event="Harvest" name="" count="0" tool_category="Dolly" />
 		<drop event="Destroy" name="MethaneProducer" count="1" tool_category="Dolly" />
@@ -15163,8 +15162,8 @@ kind of free
 		<property name="Mesh" value="models" />
 		<property name="Model" value="LootContainers/suitcase" param1="main_mesh" />
 		<property name="Place" value="TowardsPlacer" />
-		<property name="CustomIcon" value="cntSuitcase" />
 		<property name="CanPickup" value="true" />
+        <property name="CustomIcon" value="ui_game_symbol_Soldier" />
 		<property name="DescriptionKey" value="ProfessionChoiceDesc" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="SoldierSupplies" />
@@ -15181,6 +15180,7 @@ kind of free
 	<block id="457" name="DoctorProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Doctor" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="DoctorSupplies" />
 		</property>
@@ -15198,6 +15198,7 @@ kind of free
 	<block id="459" name="FarmerProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Farmer" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="FarmerSupplies" />
 		</property>
@@ -15215,6 +15216,7 @@ kind of free
 	<block id="461" name="ChemistProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Chemist" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="ChemistSupplies" />
 		</property>
@@ -15232,6 +15234,7 @@ kind of free
 	<block id="1184" name="CarpenterProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Carpenter" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="CarpenterSupplies" />
 		</property>
@@ -15249,6 +15252,7 @@ kind of free
 	<block id="1186" name="CopProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Cop" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="CopSupplies" />
 		</property>
@@ -15266,6 +15270,7 @@ kind of free
 	<block id="1188" name="FishermanProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Fisherman" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="FishermanSupplies" />
 		</property>
@@ -15283,6 +15288,7 @@ kind of free
 	<block id="1190" name="ChefProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Chef" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="ChefSupplies" />
 		</property>
@@ -15300,6 +15306,7 @@ kind of free
 	<block id="1287" name="Fitness InstructorProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Fitness" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="Fitness InstructorSupplies" />
 		</property>
@@ -15317,6 +15324,7 @@ kind of free
 	<block id="1289" name="FiremanProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Fireman" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="FiremanSupplies" />
 		</property>
@@ -15334,6 +15342,7 @@ kind of free
 	<block id="1291" name="Construction WorkerProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Construction" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="Construction WorkerSupplies" />
 		</property>
@@ -15351,6 +15360,7 @@ kind of free
 	<block id="1293" name="ElectricianProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Electrician" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="ElectricianSupplies" />
 		</property>
@@ -15368,6 +15378,7 @@ kind of free
 	<block id="1295" name="Metal WorkerProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Metal" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="Metal WorkerSupplies" />
 		</property>
@@ -15385,6 +15396,7 @@ kind of free
 	<block id="1297" name="BurglarProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Burglar" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="BurglarSupplies" />
 		</property>
@@ -15402,6 +15414,7 @@ kind of free
 	<block id="1443" name="Park RangerProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Ranger" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="Park RangerSupplies" />
 		</property>
@@ -15419,6 +15432,7 @@ kind of free
 	<block id="1445" name="MechanicProfession">
 		<property name="Extends" value="SoldierProfession" />
 		<property name="DescriptionKey" value="ProfessionKitDesc" />
+        <property name="CustomIcon" value="ui_game_symbol_Mechanic" />
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="MechanicSupplies" />
 		</property>
@@ -15645,8 +15659,7 @@ kind of free
 		<property name="BigDecorationRadius" value="2" />
 		<property name="UpwardsCount" value="2" />
 		<property name="FallOver" value="true" />
-        <property name="MaxDamage" value="2000" />
-		<drop event="Harvest" name="stick" count="75,150" />
+        <drop event="Harvest" name="stick" count="75,150" />
 		<drop event="Destroy" name="wood" count="100,150" prob="1" />
 	</block>
 	<block id="1666" name="appleTree">
@@ -15657,8 +15670,7 @@ kind of free
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="3" />
 		<property name="ModelOffset" value="0,0,0" />
-        <property name="MaxDamage" value="5000" />
-		<drop event="Harvest" name="stick" count="75,150" />
+        <drop event="Harvest" name="stick" count="75,150" />
 		<drop event="Destroy" name="wood" count="100,150" prob="1" />
 		<drop event="Destroy" name="Apple" count="3,15" prob="1" />
 	</block>
@@ -16323,6 +16335,7 @@ kind of free
         <drop event="Destroy" name="DieselGen" count="1" prob="1" tool_category="Dolly" />
         <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" count="0" />
     </block>
 	<block id="1711" name="bigGenerator">
 		<property name="Extends" value="dieselGen" />
@@ -16344,6 +16357,7 @@ kind of free
         <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
         <drop event="Harvest" name="scrapIron" count="50" prob="1" />
+        <drop event="Destroy" count="0" />
     </block>
 	<block id="1712" name="smallGenerator">
 		<property name="Extends" value="dieselGen" />
@@ -16365,6 +16379,7 @@ kind of free
         <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapIron" count="20" prob="1" />
+        <drop event="Destroy" count="0" />
     </block>
 	<block id="1718" name="powerCeilingLight01">
 		<property name="Extends" value="ceilingLight01" />

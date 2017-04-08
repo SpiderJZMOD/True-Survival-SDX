@@ -174,10 +174,10 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="0" stat="stamina" amount="-1" rate="1" />
 		<modify id="0" stat="speedmodifier" setValue="0.70" />
 	</buff>
-	<buff id="Hangover" mutex="AlcoholPoisoning" duration="1500" type="staminadown" icon="ui_game_symbol_food_poisoning" name_key="hangover" description_key="hangoverDesc" tooltip_key="hangoverTooltip">
+	<buff id="Hangover" mutex="AlcoholPoisoning" duration="1500" type="staminadown" icon="ui_game_symbol_Vomit" name_key="hangover" description_key="hangoverDesc" tooltip_key="hangoverTooltip">
 		<modify id="0" stat="stamina" amount="-1" rate="1" />
 	</buff>
-	<buff id="AlcoholPoisoning" buffif="beers greater 14" debuffif="beers less 9" ondebuff="SickDrunk" actions="increment(@wellness, -1, 150, 0, 0);debuff(SickDrunk);debuff(Hangover)" type="bleeding" icon="ui_game_symbol_food_poisoning" name_key="alcoholPoisoning" description_key="alcoholPoisoningDesc" tooltip_key="alcoholPoisoningTooltip">
+	<buff id="AlcoholPoisoning" buffif="beers greater 14" debuffif="beers less 9" ondebuff="SickDrunk" actions="increment(@wellness, -1, 150, 0, 0);debuff(SickDrunk);debuff(Hangover)" type="bleeding" icon="ui_game_symbol_Vomit" name_key="alcoholPoisoning" description_key="alcoholPoisoningDesc" tooltip_key="alcoholPoisoningTooltip">
 		<modify id="0" stat="stamina" amount="-5" rate="1" />
 		<modify id="0" stat="speedmodifier" setValue="0.40" />
 	</buff>
@@ -212,7 +212,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="0" stat="stamina" amount="-2" rate="1" />
 		<modify id="1" stat="health" amount="-5" rate="60" />
 	</buff>
-	<buff id="foodPoisoning" duration="300" name_key="foodPoisoning" type="sickness" actions="increment(@wellness, -.5, 60, 0, 0)" description_key="foodPoisoningDesc" tooltip_key="foodPoisoningTooltip" icon="ui_game_symbol_food_poisoning">
+	<buff id="foodPoisoning" duration="300" name_key="foodPoisoning" type="sickness" actions="increment(@wellness, -.5, 60, 0, 0)" description_key="foodPoisoningDesc" tooltip_key="foodPoisoningTooltip" icon="ui_game_symbol_Vomit">
 		<modify id="0" stat="stamina" amount="-10" rate="1" />
 		<modify id="1" stat="health" amount="-1" rate="30" />
 	</buff>
