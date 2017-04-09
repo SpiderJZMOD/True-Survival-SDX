@@ -6,6 +6,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="militaryFiber" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
+    <recipe name="ScrapRubber" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
 	<recipe name="scrapPlastics" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
@@ -13,6 +16,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<wildcard_forge_category />
 	</recipe>
 	<recipe name="electronicParts" count="1" tooltip="ttScrapMetalBrass">
+		<wildcard_forge_category />
+	</recipe>
+    <recipe name="mechanicalParts" count="1" tooltip="ttScrapMetalBrass">
 		<wildcard_forge_category />
 	</recipe>
 	<recipe name="brokenGlass" count="1" tooltip="ttScrapMetalBrass">
@@ -437,14 +443,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="femur" count="1" />
 	</recipe>
 	<recipe name="bottledWater" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="30" craft_exp_gain="0">
-		<ingredient name="snowBall" count="4" />
+		<ingredient name="snowBall" count="5" />
 		<ingredient name="emptyJar" count="1" />
 	</recipe>
 	<recipe name="bottledWater" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="30" craft_exp_gain="0">
 		<ingredient name="bottledRiverWater" count="1" />
 	</recipe>
 	<recipe name="bottledRiverWater" count="1" craft_area="workcampfire" craft_time="10" craft_exp_gain="0">
-		<ingredient name="snowBall" count="1" />
+		<ingredient name="snowBall" count="5" />
 		<ingredient name="emptyJar" count="1" />
 	</recipe>
 	<recipe name="bottledWater" count="1" craft_time="60" craft_exp_gain="10">
@@ -561,7 +567,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="canMurkyWater" count="1" />
 	</recipe>
 	<recipe name="canBoiledWater" count="1" craft_area="workcampfire" craft_time="30" craft_exp_gain="0">
-		<ingredient name="snowBall" count="1" />
+		<ingredient name="snowBall" count="5" />
 		<ingredient name="canEmpty" count="1" />
 	</recipe>
 	<recipe name="candle" count="1" craft_time="10" craft_exp_gain="10">
@@ -1677,7 +1683,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="stick" count="5" />
 	</recipe>
 	<recipe name="snow" count="1" craft_time="5" craft_exp_gain="1">
-		<ingredient name="snowBall" count="12" />
+		<ingredient name="snowBall" count="11" />
 	</recipe>
 	<recipe name="snowberryExtract" count="1" craft_area="workMortarAndPestle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="snowberryPlant" count="5" />
@@ -2162,7 +2168,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cornMeal" count="15" />
 		<ingredient name="bottledWater" count="30" />
 	</recipe>
-    <recipe name="workBiogasDigester" count="1" craft_area="workMetalWorkBench" craft_time="20" craft_exp_gain="20">
+    <recipe name="workMethaneProducer" count="1" craft_area="workMetalWorkBench" craft_time="20" craft_exp_gain="20">
 		<ingredient name="scrapIron" count="50" />
 		<ingredient name="mechanicalParts" count="1" />
 		<ingredient name="airFilter" count="1" />
@@ -2856,7 +2862,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="G36C_barrel" count="1" />
 		<ingredient name="assaultRifle_parts" count="1" />
 	</recipe>
-    <recipe name="gasTank" count="1" craft_area="workBiogasDigester" craft_time="300" craft_exp_gain="0">
+    <recipe name="gasTank" count="1" craft_area="workMethaneProducer" craft_time="300" craft_exp_gain="0">
 		<ingredient name="gasTankEmpty" count="1" />
         <ingredient name="turd" count="2" />
         <ingredient name="rottingFlesh" count="10" />
@@ -3643,13 +3649,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="NutAndBolt" count="4" />
 		<ingredient name="scrapHelmet" count="1" />
 	</recipe>
-    <recipe name="ScrapRubber" count="2" craft_time="10" craft_exp_gain="10">
-		<ingredient name="minibikeWheels" count="1" />
-	</recipe>
-    <recipe name="ScrapRubber" count="1" craft_time="5" craft_exp_gain="5">
-		<ingredient name="FanBelt" count="2" />
-	</recipe>
-	<recipe name="Scrap_Iron_Gate_2x3" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="10" craft_exp_gain="10">
+    <recipe name="Scrap_Iron_Gate_2x3" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="10" craft_exp_gain="10">
 		<ingredient name="forgedIron" count="50" />
 		<ingredient name="scrapLead" count="5" />
 		<ingredient name="mechanicalParts" count="1" />

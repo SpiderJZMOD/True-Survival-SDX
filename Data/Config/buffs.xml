@@ -457,11 +457,11 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff>
     <!--JZMOD Limp Buff-->
-	<buff id="limp" name_key="Limp" buffif="health less .1" mutex="limp,AddictionLv1,Drunk,limp1,limp2" duration="1" onexpired="limp1" type="speedmodifier" tooltip_key="You are injured and limping" icon="Fever">
+	<buff id="limp" name_key="Limp" buffif="health less .1" mutex="limp,AddictionLv1,Drunk,limp1,limp2" duration="1" onexpired="limp1" type="speedmodifier" tooltip_key="You are injured and limping" icon="Limp">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff>
-	<buff id="limp1" duration="1" onexpired="limp2" description_key="You are injured and limping. Heal up to feel better." tooltip_key="You are injured and limping" icon="Fever" />
-	<buff id="limp2" name_key="Limp" debuffif="health gequal .1" duration="1" onexpired="limp1" type="speedmodifier" description_key="You are injured and limping. Heal up to feel better." tooltip_key="You are injured and limping" icon="Fever">
+	<buff id="limp1" duration="1" onexpired="limp2" description_key="You are injured and limping. Heal up to feel better." tooltip_key="You are injured and limping" icon="Limp" />
+	<buff id="limp2" name_key="Limp" debuffif="health gequal .1" duration="1" onexpired="limp1" type="speedmodifier" description_key="You are injured and limping. Heal up to feel better." tooltip_key="You are injured and limping" icon="Limp">
 		<modify id="0" stat="speedmodifier" mulValue="0.4" />
 	</buff>
 	<!--JZMOD SIMPLE STAM BUFF-->
@@ -750,12 +750,12 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <!--Spider-->
     <buff id="SpiderPoisoning" name_key="Spider Bite Stage 1" type="speedmodifier" mutex="AntiVenom,SpiderPoisoning2,SpiderPoisoning3" actions="increment(@wellness, -0.1, 300, 0, 0)" onexpired="SpiderPoisoning2" duration="1800" tooltip_key="You've been bitten by a spider" description_key="A spider bit and poisoned you. Now you will need to find or make some Anti-Venom or you will get very ill. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="SpiderBuff" cures="AntiVenom">
 		<modify id="0" stat="speedmodifier" mulValue="0.98" />
-        <modify id="1" stat="water" amount="-1" rate="4" />
+        <modify id="1" stat="water" amount="-1" rate="30" />
         <modify id="2" stat="coretemp" modifyValue="5" />
 	</buff>
     <buff id="SpiderPoisoning2" name_key="Spider Bite Stage 2" type="speedmodifier" mutex="AntiVenom" actions="buff(SpiderRash);increment(@wellness, -0.2, 300, 0, 0)" onexpired="SpiderPoisoning3" duration="3600" tooltip_key="Burrrr! Your getting the chills" description_key="The spider bite is blistering and swelling. You need to find or make some Anti-Venom soon or you will get even more sick. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="rashes" cures="AntiVenom">
 		<modify id="0" stat="speedmodifier" mulValue="0.95" />
-        <modify id="1" stat="water" amount="-1" rate="3" />
+        <modify id="1" stat="water" amount="-1" rate="30" />
         <modify id="2" stat="coretemp" modifyValue="-25" />
         <modify id="3" stat="stamina" amount="-3" rate="5" />
 	</buff>
@@ -764,7 +764,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     </buff>
     <buff id="SpiderPoisoning3" name_key="Spider Poisoning Stage 3" type="speedmodifier" mutex="AntiVenom" actions="buff(pain);increment(@wellness, -0.5, 300, 0, 0)" duration="3600" tooltip_key="You feel very ill with a deathly chill" description_key="Your body convulses with shivers. You have going through the worst of it. If you can make it through the day you might just live or you can find or make some Anti-Venom. Anti-Venom can be crafted on the Campfire with a Venom Gland from a poisonous animal." icon="SpiderBuff" cures="AntiVenom">
 		<modify id="0" stat="speedmodifier" mulValue="0.75" />
-        <modify id="1" stat="water" amount="-1" rate="3" />
+        <modify id="1" stat="water" amount="-1" rate="30" />
         <modify id="2" stat="coretemp" modifyValue="-50" />
         <modify id="3" stat="stamina" amount="-5" rate="1" />
 	</buff>

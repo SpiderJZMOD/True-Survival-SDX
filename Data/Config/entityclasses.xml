@@ -242,12 +242,12 @@
 	</entity_class>
 	<entity_class name="zombieScreamer" extends="zombie01">
 		<property name="Mesh" value="Zombies/zombieStandardScreamerRagdoll" />
-		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemalescoutroam" />
-		<property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert" />
-		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack" />
-		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain" />
-		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath" />
-		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense" />
+		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+        <property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+        <property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack"/>
+        <property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain"/>
+        <property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath"/>
+        <property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
 		<property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="3" />
@@ -1419,6 +1419,30 @@
 		<!-- For harvesting -->
 		<property name="HasDeathAnim" value="true" />
 	</entity_class>
+    <entity_class name="traderJoel" extends="Trader">
+		<property name="Archetype" value="TraderJoel" />
+		<property name="NPCID" value="traitorjoel" />
+	</entity_class>
+	<entity_class name="traderRekt" extends="Trader">
+		<property name="Archetype" value="TraderRekt" />
+		<property name="NPCID" value="traderric" />
+	</entity_class>
+	<entity_class name="traderBob" extends="Trader">
+		<property name="Archetype" value="TraderBob" />
+		<property name="NPCID" value="traderric" />
+	</entity_class>
+	<entity_class name="traderJimmy" extends="Trader">
+		<property name="Archetype" value="TraderJimmy" />
+		<property name="NPCID" value="traderric" />
+	</entity_class>
+	<entity_class name="traderHugh" extends="Trader">
+		<property name="Archetype" value="TraderHugh" />
+		<property name="NPCID" value="traderric" />
+	</entity_class>
+	<entity_class name="traderTest" extends="Trader">
+		<property name="Archetype" value="TraderJoel" />
+		<property name="NPCID" value="traderTest" />
+	</entity_class>
 	<entity_class name="banditMelee">
 		<!-- This one decides for scoring -->
 		<property name="EntityType" value="Player" />
@@ -1534,27 +1558,8 @@
 		<property name="LootListOnDeath" value="72" />
         <property name="ExperienceGain" value="50" />
 	</entity_class>
-	<!-- JZMOD ADDED ZOMBIE WALK VARIATIONS -->
-	<!-- Climbers-->
-	<entity_class name="GorillaZombie" extends="zombieMoe">
-		<property name="WalkType" value="2" />
-		<property name="CanClimbVertical" value="true" />
-		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.25" />
-		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
-		<property name="PanicSpeed" value="0.6" />
-	</entity_class>
-	<entity_class name="FatZombieCopClimber" extends="fatzombiecop">
-		<property name="WalkType" value="2" />
-		<property name="CanClimbVertical" value="true" />
-		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.25" />
-		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
-		<property name="PanicSpeed" value="0.6" />
-	</entity_class>
-	<!--Zombie Animals -->
+	
+	<!--JZMOD Zombie Animals -->
 	<entity_class name="ZombieChicken" extends="zombieBear">
 		<property name="Mesh" value="Animals/CHICKEN/chickenPrefab" />
 		<property name="Class" value="EntityAnimalRabbit" />
@@ -1669,7 +1674,345 @@
 		<!--JZMOD Destroy-->
 		<drop event="Destroy" name="femur" count="1" />
 	</entity_class>
-    <!--JZMOD Survivors Starting Set-->
+    <!--JZMOD Animals-->
+    <entity_class name="Buck" extends="animalStag">
+		<!-- General entity properties -->
+		<property name="WanderSpeed" value="0.7" />
+        <property name="PanicSpeed" value="2.7" />
+		<property name="ApproachSpeed" value="2.2" />
+       <!-- Mean Animal AI properties -->
+        <property name="AITask-1" value="Swim" />
+		<property name="AITask-2" value="BreakDoor" />
+		<property name="AITask-3" value="BreakBlock" />
+		<property name="AITask-4" value="Territorial" param1="10" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="30" />
+        <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieDog" param2="5" />
+        <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityAnimalBear" param2="5" />
+        <property name="AITask-8" value="RunawayFromEntity" param1="EntityZombie" />
+        <property name="AITask-9" value="RunawayFromEntity" param1="EntityZombieCrawl" />
+        <property name="AITask-10" value="RunawayFromEntity" param1="EntityHornet" />
+        <property name="AITask-1" value="Wander" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+	    <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieDog" />
+		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
+        <property name="AITarget-2" value="BlockingTargetTask" />
+    </entity_class>
+    <entity_class name="Boar" extends="animalPig">
+		<!-- General entity properties -->
+        <property name="WanderSpeed" value="0.7" />
+        <property name="PanicSpeed" value="2.7" />
+		<property name="ApproachSpeed" value="2.2" />
+	    <!-- Mean Animal AI properties -->
+        <property name="AITask-1" value="Swim" />
+		<property name="AITask-2" value="BreakDoor" />
+		<property name="AITask-3" value="BreakBlock" />
+		<property name="AITask-4" value="Territorial" param1="10" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="30" />
+        <property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombieDog" param2="5" />
+        <property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityAnimalBear" param2="5" />
+        <property name="AITask-8" value="RunawayFromEntity" param1="EntityZombie" />
+        <property name="AITask-9" value="RunawayFromEntity" param1="EntityZombieCrawl" />
+        <property name="AITask-10" value="RunawayFromEntity" param1="EntityHornet" />
+        <property name="AITask-1" value="Wander" />
+        <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+	    <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieDog" />
+		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
+        <property name="AITarget-2" value="BlockingTargetTask" />
+	</entity_class>
+    <entity_class name="crocodile">
+		<!-- Mesh and class properties -->
+		<property name="Mesh" value="#croc?CROCO" />
+		<property name="ModelType" value="Standard" />
+		<property name="Prefab" value="NPC" />
+		<property name="Class" value="EntityAnimalHal, Mods" />
+		<property name="Parent" value="Animals" />
+		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
+		<property name="Weight" value="70" />
+		<property name="RotateToGround" value="true" />
+		<property name="IsEntityAnimal" value="true" />
+		<property name="PhysicsBody" value="Stag" />
+		<property name="HandItem" value="CrocBite" />
+		<!-- AI properties -->
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="Territorial" param1="10" />
+		<property name="AITask-4" value="RangedAttackTarget" param1="1" param2="1" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
+		<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="30" />
+		<!-- give up time -->
+		<property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30" />
+		<!-- give up time -->
+		<property name="AITask-8" value="ApproachSpot" />
+		<property name="AITask-9" value="Wander" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+		<property name="AITarget-2" value="BlockingTargetTask" />
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8" />
+		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+		<property name="CanClimbLadders" value="false" />
+		<!-- General entity properties -->
+		<property name="MaxHealth" value="2000" />
+		<property name="MaxViewAngle" value="260" />
+		<property name="WanderSpeed" value="0.25" />
+		<property name="PanicSpeed" value="2.0" />
+		<property name="ApproachSpeed" value="1.5" />
+		<!-- This decides on the particle effect played on hit -->
+		<property name="SurfaceCategory" value="organic" />
+		<property name="ParticleOnDeath" value="blood_death" />
+		<property name="SoundHurt" value="CrocoHurt" />
+		<property name="SoundDeath" value="CrocoDeath" />
+		<property name="SoundRandom" value="CrocoRandom" />
+		<property name="SoundAlert" value="CrocoAlert" />
+		<property name="SoundAttack" value="CrocoAttack" />
+		<property name="SoundSense" value="CrocoSense" />
+		<property name="SoundGiveUp" value="CrocoGiveUp" />
+		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
+		<property name="TimeStayAfterDeath" value="300" />
+		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
+		<property name="IsEnemyEntity" value="false" />
+		<property name="ExperienceGain" value="150" />
+		<property name="CorpseBlock" value="animalGore" />
+		<property name="CorpseBlockChance" value="1" />
+		<property name="DeadBodyHitPoints" value="500" />
+        <!-- JZMOD Harvest For Beginner -->
+		<drop event="Harvest" name="rawMeat" count="6" />
+		<drop event="Harvest" name="animalHide" count="2" />
+		<drop event="Harvest" name="BrainMatter" count="2" />
+		<!--JZMOD Hunter-->
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="6" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="3" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="4" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="3" prob=".5" />
+		<drop event="Harvest" name="femur" tool_category="Hunter" count="2" prob=".4" />
+		<drop event="Harvest" name="femur" tool_category="Hunter" count="3" prob=".4" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="10" prob="1"/>
+		<drop event="Harvest" name="Sinew" tool_category="Hunter" count="3" prob=".65" />
+        <drop event="Harvest" name="Sinew" tool_category="Hunter" count="3" prob=".75" />
+		<!--JZMOD Butcher-->
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="8" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="3" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="3" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="3" prob=".4" />
+        <drop event="Harvest" name="femur" tool_category="Butcher" count="4" prob=".4" />
+		<drop event="Harvest" name="AnimalBladder" tool_category="Butcher" count="1" prob=".5" />
+		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="4" prob=".6" />
+		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="4" prob="1" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Butcher" count="10" />
+		<!--JZMOD Destroy-->
+		<drop event="Destroy" name="femur" count="2" />
+		<drop event="Destroy" name="femur" tool_category="Hunter" count="2" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
+    </entity_class>
+    <entity_class name="Bobcat">
+		<!-- Mesh and class properties -->
+		<property name="Mesh" value="#Cougar?CougarAlbino" />
+		<property name="ModelType" value="Standard" />
+		<property name="Prefab" value="NPC" />
+		<property name="Class" value="EntityAnimalHal, Mods" />
+		<property name="Parent" value="Animals" />
+		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
+		<property name="Weight" value="70" />
+		<property name="MeshScale" value="0.57,0.57" />
+		<property name="RotateToGround" value="true" />
+		<property name="IsEntityAnimal" value="true" />
+		<property name="PhysicsBody" value="Stag" />
+		<property name="HandItem" value="BobcatClaw" />
+		<property name="CanClimbLadders" value="true" />
+		<property name="CanClimbVertical" value="true" />
+		<!-- AI properties -->
+		<!-- AI properties -->
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="Territorial" param1="10" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="30" />
+		<!-- give up time -->
+		<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30" />
+		<!-- give up time -->
+		<property name="AITask-7" value="ApproachSpot" />
+		<property name="AITask-8" value="Wander" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" />
+		<property name="AITarget-2" value="BlockingTargetTask" />
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8" />
+		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
+		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
+		<property name="CanClimbLadders" value="false" />
+		<!-- General entity properties -->
+		<property name="MaxHealth" value="400" />
+		<property name="MaxViewAngle" value="300" />
+		<property name="WanderSpeed" value="0.35" />
+		<property name="PanicSpeed" value="2.0" />
+		<property name="ApproachSpeed" value="1.2" />
+		<property name="NightWanderSpeed" value="0.4" />
+		<property name="NightApproachSpeed" value="1.9" />
+		<!-- This decides on the particle effect played on hit -->
+		<property name="SurfaceCategory" value="organic" />
+		<property name="ParticleOnDeath" value="blood_death" />
+		<property name="SoundHurt" value="CougarHurt" />
+		<property name="SoundDeath" value="CougarDeath" />
+		<property name="SoundRandom" value="CougarRandom" />
+		<property name="SoundAlert" value="CougarAlert" />
+		<property name="SoundAttack" value="CougarAttack" />
+		<property name="SoundSense" value="CougarSense" />
+		<property name="SoundGiveUp" value="CougarRandom" />
+		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
+		<property name="TimeStayAfterDeath" value="300" />
+		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
+		<property name="IsEnemyEntity" value="true" />
+		<property name="ExperienceGain" value="500" />
+		<property name="CorpseBlock" value="animalGore" />
+		<property name="CorpseBlockChance" value="1" />
+		<property name="DeadBodyHitPoints" value="250" />
+		<!-- JZMOD Harvest For Beginner -->
+		<drop event="Harvest" name="rawMeat" count="6" />
+		<drop event="Harvest" name="animalHide" count="2" />
+		<drop event="Harvest" name="BrainMatter" count="2" />
+		<!--JZMOD Hunter-->
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
+		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="10" />
+		<drop event="Harvest" name="Sinew" tool_category="Hunter" count="1" prob=".4" />
+		<!--JZMOD Butcher-->
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="1" prob=".4" />
+		<drop event="Harvest" name="AnimalBladder" tool_category="Butcher" count="1" prob=".2" />
+		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob=".4" />
+		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob=".4" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Butcher" count="10" />
+		<!--JZMOD Destroy-->
+		<drop event="Destroy" name="femur" count="2" />
+		<drop event="Destroy" name="femur" tool_category="Hunter" count="2" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
+	</entity_class>
+	<entity_class name="SpiderSmall">
+		<!--make spider hand-->
+		<!-- Mesh and class properties -->
+		<property name="Mesh" value="#Spider?spider" />
+		<property name="ModelType" value="Standard" />
+		<property name="Prefab" value="NPC" />
+		<property name="Class" value="EntityAnimalHal, Mods" />
+		<property name="Parent" value="Animals" />
+		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
+		<property name="MeshScale" value="0.5,0.5" />
+		<property name="Weight" value="35" />
+		<property name="RotateToGround" value="true" />
+		<property name="IsEntityAnimal" value="true" />
+		<property name="PhysicsBody" value="Stag" />
+		<property name="HandItem" value="SpiderBite" />
+        <!-- AI properties -->
+		<property name="AITask-1" value="BreakDoor" />
+		<property name="AITask-2" value="BreakBlock" />
+		<property name="AITask-3" value="Territorial" param1="10" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="20" />
+		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" param2="20" />
+		<property name="AITask-6" value="ApproachSpot" />
+		<property name="AITask-7" value="Wander" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
+		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityNPC" />
+		<property name="AITarget-3" value="BlockingTargetTask" />
+		<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
+		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC" />
+        <property name="CanClimbLadders" value="true" />
+		<!-- General entity properties -->
+		<property name="WanderSpeed" value="0.5" />
+		<property name="ApproachSpeed" value="1.1" />
+		<property name="NightWanderSpeed" value="0.3" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="1.1" />
+		<property name="CanClimbLadders" value="true" />
+		<property name="CanClimbVertical" value="true" />
+		<property name="RotateToGround" value="true" />
+		<property name="MaxHealth" value="85" />
+		<property name="SoundRandomTime" value="45.0" />
+		<property name="SoundAlertTime" value="25.0" />
+		<property name="SoundRandom" value="Spider_Random" />
+		<property name="SoundAlert" value="Spider_Alert" />
+		<property name="SoundHurt" value="Spider_Hurt" />
+		<property name="SoundDeath" value="Spider_Death" />
+		<property name="SoundAttack" value="Spider_Attack" />
+		<property name="SoundSense" value="Spider_Alert" />
+		<property name="ExperienceGain" value="150" />
+		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
+		<property name="Weight" value="70" />
+		<property name="MaxViewAngle" value="300" />
+		<!-- This decides on the particle effect played on hit -->
+		<property name="SurfaceCategory" value="organic" />
+		<property name="ParticleOnDeath" value="blood_death" />
+		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
+		<property name="TimeStayAfterDeath" value="300" />
+		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
+		<property name="IsEnemyEntity" value="false" />
+		<property name="ExperienceGain" value="150" />
+		<property name="CorpseBlock" value="animalGore" />
+		<property name="CorpseBlockChance" value="1" />
+		<property name="DeadBodyHitPoints" value="150" />
+		<!-- JZMOD Harvest For Beginner -->
+		<drop event="Harvest" name="rawMeat" count="2" />
+		<drop event="Harvest" name="VenomSack" count="1" />
+		<drop event="Harvest" name="BrainMatter" count="1" />
+		<!--JZMOD Hunter-->
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="VenomSack" tool_category="Hunter" count="1" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="1" />
+		<!--JZMOD Butcher-->
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="VenomSack" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="2" />
+		<!--JZMOD Destroy-->
+		<drop event="Destroy" name="femur" count="1" />
+	</entity_class>
+	<entity_class name="RadSpider" extends="SpiderSmall">
+		<property name="MaxHealth" value="140" />
+		<property name="Mesh" value="#RadSpider?RadSpider" />
+		<property name="MeshScale" value="0.5,0.5" />
+		<property name="HandItem" value="RadSpiderBite" />
+        <!-- JZMOD Harvest For Beginner -->
+		<drop event="Harvest" name="rawMeat" count="2" />
+		<drop event="Harvest" name="VenomSack" count="1" />
+		<drop event="Harvest" name="BrainMatter" count="1" />
+		<!--JZMOD Hunter-->
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="VenomSack" tool_category="Hunter" count="1" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="1" />
+		<!--JZMOD Butcher-->
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="VenomSack" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="2" />
+		<!--JZMOD Destroy-->
+		<drop event="Destroy" name="femur" count="1" />
+	</entity_class>
+	<!--JZMOD Survivors Starting Set-->
   	<entity_class name="Maggi" extends="Survivor"><!--Melee Female Survivor Master-->
 		<property name="Archetype" value="Maggi" />
 		<property name="Class" value="EntityNPC" />
@@ -1947,31 +2290,6 @@
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="NPCAK47,762mmNPCBullet" />
 		<property name="HandItem" value="NPCAK47" />
 	</entity_class>
-    <!--JZMOD END-->
-	<entity_class name="traderJoel" extends="Trader">
-		<property name="Archetype" value="TraderJoel" />
-		<property name="NPCID" value="traitorjoel" />
-	</entity_class>
-	<entity_class name="traderRekt" extends="Trader">
-		<property name="Archetype" value="TraderRekt" />
-		<property name="NPCID" value="traderric" />
-	</entity_class>
-	<entity_class name="traderBob" extends="Trader">
-		<property name="Archetype" value="TraderBob" />
-		<property name="NPCID" value="traderric" />
-	</entity_class>
-	<entity_class name="traderJimmy" extends="Trader">
-		<property name="Archetype" value="TraderJimmy" />
-		<property name="NPCID" value="traderric" />
-	</entity_class>
-	<entity_class name="traderHugh" extends="Trader">
-		<property name="Archetype" value="TraderHugh" />
-		<property name="NPCID" value="traderric" />
-	</entity_class>
-	<entity_class name="traderTest" extends="Trader">
-		<property name="Archetype" value="TraderJoel" />
-		<property name="NPCID" value="traderTest" />
-	</entity_class>
     <!-- JZMOD ADDED BANDITS -->
 	<entity_class name="BanditTemplate"><!--Male Melee Master-->
 		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubSpiked" />
@@ -1984,8 +2302,7 @@
 		<property name="ModelType" value="NpcUMA" />
 		<property name="EntityType" value="Zombie" />
 		<property name="Prefab" value="NPC" />
-		<!--    <property name="Parent" value="Players"/>-->
-		<property name="Parent" value="Enemies" />
+        <property name="Parent" value="Enemies" />
 		<property name="HasRagdoll" value="true" />
 		<property name="IsEnemyEntity" value="true" />
 		<property name="SurfaceCategory" value="organic" />
@@ -2166,6 +2483,7 @@
 		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="NPCAK47,762mmNPCBullet" />
         <property name="HandItem" value="NPCAK47" />
 	</entity_class>
+    <!-- JZMOD ADDED ZOMBIE WALK VARIATIONS -->
 	<!--JZMOD WALKTYPE 1-->
 	<entity_class name="Boe1" extends="zombieBoe">
 		<property name="WalkType" value="1" />
@@ -2248,6 +2566,7 @@
 		<property name="NightApproachSpeed" value="1.3" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
+    
 	<!--JZMOD WALKTYPE 2-->
 	<entity_class name="Steve2" extends="zombieSteve">
 		<property name="WalkType" value="2" />
@@ -2534,6 +2853,14 @@
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.1" />
 		<property name="PanicSpeed" value="0.9" />
+	</entity_class>
+    <entity_class name="Darlene5" extends="zombieDarlene">
+		<property name="WalkType" value="5" />
+		<property name="WanderSpeed" value="0.09" />
+		<property name="ApproachSpeed" value="0.28" />
+		<property name="NightWanderSpeed" value="0.1" />
+		<property name="NightApproachSpeed" value="1.22" />
+		<property name="PanicSpeed" value="0.59" />
 	</entity_class>
 	<!--JZMOD WALKTYPE 6-->
 	<entity_class name="Boe6" extends="zombieBoe">
@@ -2861,302 +3188,57 @@
 		<property name="ApproachSpeed" value="0.32" />
 		<property name="NightApproachSpeed" value="1.18" />
 	</entity_class>
-	<entity_class name="crocodile">
-		<!-- Mesh and class properties -->
-		<property name="Mesh" value="#croc?CROCO" />
-		<property name="ModelType" value="Standard" />
-		<property name="Prefab" value="NPC" />
-		<property name="Class" value="EntityAnimalHal, Mods" />
-		<property name="Parent" value="Animals" />
-		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
-		<property name="Weight" value="70" />
-		<property name="RotateToGround" value="true" />
-		<property name="IsEntityAnimal" value="true" />
-		<property name="PhysicsBody" value="Stag" />
-		<property name="HandItem" value="CrocBite" />
-		<!-- AI properties -->
-		<property name="AITask-1" value="BreakDoor" />
-		<property name="AITask-2" value="BreakBlock" />
-		<property name="AITask-3" value="Territorial" param1="10" />
-		<property name="AITask-4" value="RangedAttackTarget" param1="1" param2="1" />
-		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
-		<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="30" />
-		<!-- give up time -->
-		<property name="AITask-7" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30" />
-		<!-- give up time -->
-		<property name="AITask-8" value="ApproachSpot" />
-		<property name="AITask-9" value="Wander" />
-		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
-		<property name="AITarget-2" value="BlockingTargetTask" />
-		<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8" />
-		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
-		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
-		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
-		<property name="MaxHealth" value="2000" />
-		<property name="MaxViewAngle" value="180" />
-		<property name="WanderSpeed" value="0.25" />
-		<property name="PanicSpeed" value="2.0" />
-		<property name="ApproachSpeed" value="1" />
-		<property name="NightWanderSpeed" value="0.25" />
-		<property name="NightApproachSpeed" value="1.4" />
-		<!-- This decides on the particle effect played on hit -->
-		<property name="SurfaceCategory" value="organic" />
-		<property name="ParticleOnDeath" value="blood_death" />
-		<property name="SoundHurt" value="CrocoHurt" />
-		<property name="SoundDeath" value="CrocoDeath" />
-		<property name="SoundRandom" value="CrocoRandom" />
-		<property name="SoundAlert" value="CrocoAlert" />
-		<property name="SoundAttack" value="CrocoAttack" />
-		<property name="SoundSense" value="CrocoSense" />
-		<property name="SoundGiveUp" value="CrocoGiveUp" />
-		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
-		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
-		<property name="IsEnemyEntity" value="false" />
-		<property name="ExperienceGain" value="150" />
-		<property name="CorpseBlock" value="animalGore" />
-		<property name="CorpseBlockChance" value="1" />
-		<property name="DeadBodyHitPoints" value="500" />
-        <!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="6" />
-		<drop event="Harvest" name="animalHide" count="2" />
-		<drop event="Harvest" name="BrainMatter" count="2" />
-		<!--JZMOD Hunter-->
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="6" prob=".5" />
-		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="5" />
-		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="3" prob=".5" />
-		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="4" />
-		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="3" prob=".5" />
-		<drop event="Harvest" name="femur" tool_category="Hunter" count="2" prob=".4" />
-		<drop event="Harvest" name="femur" tool_category="Hunter" count="3" prob=".4" />
-		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="10" prob="1"/>
-		<drop event="Harvest" name="Sinew" tool_category="Hunter" count="3" prob=".65" />
-        <drop event="Harvest" name="Sinew" tool_category="Hunter" count="3" prob=".75" />
-		<!--JZMOD Butcher-->
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="8" prob=".5" />
-		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="5" />
-		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="3" prob=".5" />
-		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="4" prob=".5" />
-		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" />
-		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="3" prob=".5" />
-		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" prob=".5" />
-		<drop event="Harvest" name="femur" tool_category="Butcher" count="3" prob=".4" />
-        <drop event="Harvest" name="femur" tool_category="Butcher" count="4" prob=".4" />
-		<drop event="Harvest" name="AnimalBladder" tool_category="Butcher" count="1" prob=".5" />
-		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="4" prob=".6" />
-		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="4" prob="1" />
-		<drop event="Harvest" name="BrainMatter" tool_category="Butcher" count="10" />
-		<!--JZMOD Destroy-->
-		<drop event="Destroy" name="femur" count="2" />
-		<drop event="Destroy" name="femur" tool_category="Hunter" count="2" />
-		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
-    </entity_class>
-	<entity_class name="SpiderSmall">
-		<!--make spider hand-->
-		<!-- Mesh and class properties -->
-		<property name="Mesh" value="#Spider?spider" />
-		<property name="ModelType" value="Standard" />
-		<property name="Prefab" value="NPC" />
-		<property name="Class" value="EntityAnimalHal, Mods" />
-		<property name="Parent" value="Animals" />
-		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
-		<property name="MeshScale" value="0.5,0.5" />
-		<property name="Weight" value="35" />
-		<property name="RotateToGround" value="true" />
-		<property name="IsEntityAnimal" value="true" />
-		<property name="PhysicsBody" value="Stag" />
-		<property name="HandItem" value="SpiderBite" />
-        <!-- AI properties -->
-		<property name="AITask-1" value="BreakDoor" />
-		<property name="AITask-2" value="BreakBlock" />
-		<property name="AITask-3" value="Territorial" param1="10" />
-		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="20" />
-		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityNPC" param2="20" />
-		<property name="AITask-6" value="ApproachSpot" />
-		<property name="AITask-7" value="Wander" />
-		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
-		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityNPC" />
-		<property name="AITarget-3" value="BlockingTargetTask" />
-		<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer" />
-		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
-		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityNPC" />
-        <property name="CanClimbLadders" value="true" />
-		<!-- General entity properties -->
-		<property name="WanderSpeed" value="0.5" />
-		<property name="ApproachSpeed" value="1.1" />
-		<property name="NightWanderSpeed" value="0.3" />
-		<property name="NightApproachSpeed" value="1.1" />
-		<property name="PanicSpeed" value="1.1" />
-		<property name="CanClimbLadders" value="true" />
-		<property name="CanClimbVertical" value="true" />
-		<property name="RotateToGround" value="true" />
-		<property name="MaxHealth" value="85" />
-		<property name="SoundRandomTime" value="45.0" />
-		<property name="SoundAlertTime" value="25.0" />
-		<property name="SoundRandom" value="Spider_Random" />
-		<property name="SoundAlert" value="Spider_Alert" />
-		<property name="SoundHurt" value="Spider_Hurt" />
-		<property name="SoundDeath" value="Spider_Death" />
-		<property name="SoundAttack" value="Spider_Attack" />
-		<property name="SoundSense" value="Spider_Alert" />
-		<property name="ExperienceGain" value="150" />
-		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
-		<property name="Weight" value="70" />
-		<property name="MaxViewAngle" value="300" />
-		<!-- This decides on the particle effect played on hit -->
-		<property name="SurfaceCategory" value="organic" />
-		<property name="ParticleOnDeath" value="blood_death" />
-		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
-		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
-		<property name="IsEnemyEntity" value="false" />
-		<property name="ExperienceGain" value="150" />
-		<property name="CorpseBlock" value="animalGore" />
-		<property name="CorpseBlockChance" value="1" />
-		<property name="DeadBodyHitPoints" value="150" />
-		<!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="2" />
-		<drop event="Harvest" name="VenomSack" count="1" />
-		<drop event="Harvest" name="BrainMatter" count="1" />
-		<!--JZMOD Hunter-->
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="VenomSack" tool_category="Hunter" count="1" />
-		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="1" />
-		<!--JZMOD Butcher-->
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="VenomSack" tool_category="Butcher" count="1" />
-		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="2" />
-		<!--JZMOD Destroy-->
-		<drop event="Destroy" name="femur" count="1" />
+    <!--JZMOD COP-->
+    <entity_class name="Cop1" extends="fatzombiecop">
+		<property name="WalkType" value="1" />
+		<property name="WanderSpeed" value="0.09" />
+		<property name="ApproachSpeed" value="0.25" />
+		<property name="NightWanderSpeed" value="0.09" />
+		<property name="NightApproachSpeed" value="1.3" />
+		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-	<entity_class name="RadSpider" extends="SpiderSmall">
-		<property name="MaxHealth" value="140" />
-		<property name="Mesh" value="#RadSpider?RadSpider" />
-		<property name="MeshScale" value="0.5,0.5" />
-		<property name="HandItem" value="RadSpiderBite" />
-        <!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="2" />
-		<drop event="Harvest" name="VenomSack" count="1" />
-		<drop event="Harvest" name="BrainMatter" count="1" />
-		<!--JZMOD Hunter-->
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="VenomSack" tool_category="Hunter" count="1" />
-		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="1" />
-		<!--JZMOD Butcher-->
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="VenomSack" tool_category="Butcher" count="1" />
-		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="2" />
-		<!--JZMOD Destroy-->
-		<drop event="Destroy" name="femur" count="1" />
+    <entity_class name="Cop2" extends="fatzombiecop">
+		<property name="WalkType" value="2" />
+		<property name="WanderSpeed" value="0.09" />
+		<property name="ApproachSpeed" value="0.25" />
+		<property name="NightWanderSpeed" value="0.09" />
+		<property name="NightApproachSpeed" value="1.3" />
+		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-	<entity_class name="Bobcat">
-		<!-- Mesh and class properties -->
-		<property name="Mesh" value="#Cougar?CougarAlbino" />
-		<property name="ModelType" value="Standard" />
-		<property name="Prefab" value="NPC" />
-		<property name="Class" value="EntityAnimalHal, Mods" />
-		<property name="Parent" value="Animals" />
-		<property name="AvatarController" value="GameObjectAnimalAnimationSDX, Mods" />
-		<property name="Weight" value="70" />
-		<property name="MeshScale" value="0.57,0.57" />
-		<property name="RotateToGround" value="true" />
-		<property name="IsEntityAnimal" value="true" />
-		<property name="PhysicsBody" value="Stag" />
-		<property name="HandItem" value="BobcatClaw" />
-		<property name="CanClimbLadders" value="true" />
-		<property name="CanClimbVertical" value="true" />
-		<!-- AI properties -->
-		<!-- AI properties -->
-		<property name="AITask-1" value="BreakDoor" />
-		<property name="AITask-2" value="BreakBlock" />
-		<property name="AITask-3" value="Territorial" param1="10" />
-		<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityAnimalStag" />
-		<property name="AITask-5" value="ApproachAndAttackTarget" param1="EntityPlayer" param2="30" />
-		<!-- give up time -->
-		<property name="AITask-6" value="ApproachAndAttackTarget" param1="EntityZombie" param2="30" />
-		<!-- give up time -->
-		<property name="AITask-7" value="ApproachSpot" />
-		<property name="AITask-8" value="Wander" />
-		<property name="AITarget-1" value="SetAsTargetIfHurt" />
-		<property name="AITarget-2" value="BlockingTargetTask" />
-		<property name="AITarget-3" value="SetNearestEntityAsTarget" param1="EntityPlayer" param2="8" />
-		<property name="AITarget-4" value="SetNearestEntityAsTarget" param1="EntityAnimalStag" />
-		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityZombie" />
-		<property name="CanClimbLadders" value="false" />
-		<!-- General entity properties -->
-		<property name="MaxHealth" value="400" />
-		<property name="MaxViewAngle" value="300" />
-		<property name="WanderSpeed" value="0.35" />
-		<property name="PanicSpeed" value="2.0" />
-		<property name="ApproachSpeed" value="1.2" />
-		<property name="NightWanderSpeed" value="0.4" />
-		<property name="NightApproachSpeed" value="1.9" />
-		<!-- This decides on the particle effect played on hit -->
-		<property name="SurfaceCategory" value="organic" />
-		<property name="ParticleOnDeath" value="blood_death" />
-		<property name="SoundHurt" value="CougarHurt" />
-		<property name="SoundDeath" value="CougarDeath" />
-		<property name="SoundRandom" value="CougarRandom" />
-		<property name="SoundAlert" value="CougarAlert" />
-		<property name="SoundAttack" value="CougarAttack" />
-		<property name="SoundSense" value="CougarSense" />
-		<property name="SoundGiveUp" value="CougarRandom" />
-		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
-		<property name="TimeStayAfterDeath" value="300" />
-		<!-- Set this if you want this entity to be spawned when user chooses 'enemy entities off' -->
-		<property name="IsEnemyEntity" value="true" />
-		<property name="ExperienceGain" value="500" />
-		<property name="CorpseBlock" value="animalGore" />
-		<property name="CorpseBlockChance" value="1" />
-		<property name="DeadBodyHitPoints" value="250" />
-		<!-- JZMOD Harvest For Beginner -->
-		<drop event="Harvest" name="rawMeat" count="6" />
-		<drop event="Harvest" name="animalHide" count="2" />
-		<drop event="Harvest" name="BrainMatter" count="2" />
-		<!--JZMOD Hunter-->
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
-		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="5" />
-		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" />
-		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" prob=".5" />
-		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
-		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
-		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="10" />
-		<drop event="Harvest" name="Sinew" tool_category="Hunter" count="1" prob=".4" />
-		<!--JZMOD Butcher-->
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
-		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
-		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="5" />
-		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" />
-		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" prob=".5" />
-		<drop event="Harvest" name="femur" tool_category="Butcher" count="1" prob=".4" />
-		<drop event="Harvest" name="AnimalBladder" tool_category="Butcher" count="1" prob=".2" />
-		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob=".4" />
-		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob=".4" />
-		<drop event="Harvest" name="BrainMatter" tool_category="Butcher" count="10" />
-		<!--JZMOD Destroy-->
-		<drop event="Destroy" name="femur" count="2" />
-		<drop event="Destroy" name="femur" tool_category="Hunter" count="2" />
-		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
+    <entity_class name="Cop3" extends="fatzombiecop">
+		<property name="WalkType" value="3" />
+		<property name="WanderSpeed" value="0.09" />
+		<property name="ApproachSpeed" value="0.25" />
+		<property name="NightWanderSpeed" value="0.09" />
+		<property name="NightApproachSpeed" value="1.3" />
+		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
-	
+    <entity_class name="Cop5" extends="fatzombiecop">
+		<property name="WalkType" value="5" />
+		<property name="WanderSpeed" value="0.09" />
+		<property name="ApproachSpeed" value="0.25" />
+		<property name="NightWanderSpeed" value="0.09" />
+		<property name="NightApproachSpeed" value="1.3" />
+		<property name="PanicSpeed" value="0.6" />
+	</entity_class>
+    <entity_class name="Cop6" extends="fatzombiecop">
+		<property name="WalkType" value="6" />
+		<property name="WanderSpeed" value="0.09" />
+		<property name="ApproachSpeed" value="0.25" />
+		<property name="NightWanderSpeed" value="0.09" />
+		<property name="NightApproachSpeed" value="1.3" />
+		<property name="PanicSpeed" value="0.6" />
+	</entity_class>
+    <entity_class name="Cop8" extends="fatzombiecop">
+        <property name="CanClimbVertical" value="true" />
+		<property name="WalkType" value="8" />
+		<property name="WanderSpeed" value="0.09" />
+		<property name="ApproachSpeed" value="0.25" />
+		<property name="NightWanderSpeed" value="0.09" />
+		<property name="NightApproachSpeed" value="1.3" />
+		<property name="PanicSpeed" value="0.6" />
+	</entity_class>
+    <!--JZMOD ADDED UMA ZOMBIES-->
 	<!-- JZMOD CHARRED ZOMBIE-->
 	<entity_class name="ZombieCharred" extends="zombieUMA">
 		<property name="Archetype" value="ZombieCharred" />

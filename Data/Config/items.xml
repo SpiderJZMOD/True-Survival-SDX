@@ -1164,7 +1164,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.hardStone" value="0" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
-			<property name="DamageBonus.organic" value="10" />
+			<property name="DamageBonus.organic" value="4" />
 		</property>
 		<property class="Action1">
 			<!-- UseAction -->
@@ -3408,7 +3408,8 @@ Mesh files no longer used:
 		<property name="VehicleSlotType" value="wheel" />
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-		<property name="Material" value="organic" />
+		<property name="Material" value="Mrubber" />
+        <property name="Weight" value="5" />
 		<property name="RepairTools" value="ScavengedParts" />
 		<property name="HoldType" value="45" />
 		<property name="Group" value="Resources" />
@@ -4808,7 +4809,7 @@ Mesh files no longer used:
 		<property name="EquipSlot" value="Face" />
 		<property name="EconomicValue" value="6" />
 		<property name="FuelValue" value="4" />
-		<property name="Weight" value="15" />
+		<property name="Weight" value="10" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="Encumbrance" value="0" />
 		<property class="Attributes">
@@ -8447,8 +8448,8 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property name="HoldType" value="45" />
-		<property name="Material" value="metal" />
-		<property name="Weight" value="5" />
+		<property name="Material" value="MmechanicalParts" />
+		<property name="Weight" value="1" />
 		<property name="Stacknumber" value="5000" />
 		<!-- STK resource -->
 		<property name="EconomicValue" value="32" />
@@ -12995,11 +12996,11 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0.065,0.13" />
-			<property name="PunctureProtection" value="0.065,0.13" />
-			<property name="FireProtection" value="0.12,0.2" />
-			<property name="RadiationProtection" value="0.06,0.1" />
-			<property name="DegradationMax" value="72,180" />
+			<property name="ConcussiveProtection" value="0,0" />
+			<property name="PunctureProtection" value="0,0" />
+			<property name="FireProtection" value="0,0" />
+			<property name="RadiationProtection" value="0,0" />
+			<property name="DegradationMax" value="1,100" />
 		</property>
 		<property class="UMA">
 			<property name="Mesh" value="shirt" />
@@ -13024,11 +13025,11 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Misc/sackPrefab" />
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0.065,0.13" />
-			<property name="PunctureProtection" value="0.065,0.13" />
-			<property name="FireProtection" value="0.12,0.2" />
-			<property name="RadiationProtection" value="0.06,0.1" />
-			<property name="DegradationMax" value="72,180" />
+			<property name="ConcussiveProtection" value="0,0" />
+			<property name="PunctureProtection" value="0,0" />
+			<property name="FireProtection" value="0,0" />
+			<property name="RadiationProtection" value="0,0" />
+			<property name="DegradationMax" value="1,100" />
 		</property>
 		<property class="UMA">
 			<property name="Mesh" value="clothes_denim_pants" />
@@ -13054,11 +13055,11 @@ Mesh files no longer used:
 		<property name="FuelValue" value="3" />
 		<property name="SellableToTrader" value="false" />
 		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0.125,0.25" />
-			<property name="PunctureProtection" value="0.125,0.25" />
-			<property name="FireProtection" value="0.1,0.2" />
-			<property name="RadiationProtection" value="0.075,0.15" />
-			<property name="DegradationMax" value="100,250" />
+			<property name="ConcussiveProtection" value="0,0" />
+			<property name="PunctureProtection" value="0,0" />
+			<property name="FireProtection" value="0,0" />
+			<property name="RadiationProtection" value="0,0" />
+			<property name="DegradationMax" value="1,100" />
 		</property>
 		<property class="UMA">
 			<property name="Mesh" value="running_shoes" />
@@ -16307,6 +16308,8 @@ Mesh files no longer used:
 	</item>
 	<item id="1999" name="FanBelt">
 		<property name="Extends" value="itemMaster" />
+        <property name="Material" value="Mrubber" />
+        <property name="Weight" value="2" />
 		<property name="DescriptionKey" value="FanBeltDesc" />
 		<property name="CustomIcon" value="ui_game_symbol_FanBelt" />
 		<property name="CraftingSkillGroup" value="Engineering" />
@@ -17131,7 +17134,7 @@ Mesh files no longer used:
 		<property name="Candrop" value="false" />
 		<property name="IsDeveloper" value="true" />
 	</item>
-	<!--JZMOD HAND DOLLY AND WORKSTATIONS-->
+	<!--JZMOD Crowbar AND WORKSTATIONS-->
 	<item id="2079" name="Crowbar">
 		<property name="Meshfile" value="#Crowbar?Crowbar" />
 		<property name="Material" value="metal" />
@@ -17157,7 +17160,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="0" />
 			<property name="DamageBonus.workstation" value="9999" />
-			<property name="ToolCategory.Dolly" value="1" />
+			<property name="ToolCategory.Crowbar" value="1" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
@@ -17277,7 +17280,7 @@ Mesh files no longer used:
 	</item>
 	<item id="2095" name="BatteryPack">
 		<property name="Extends" value="forge" />
-		<property name="CustomIcon" value="chemistryStation" />
+		<property name="CustomIcon" value="ui_game_symbol_batteryPack" />
 		<property class="Action1">
 			<property name="Blockname" value="workBatteryPack" />
 		</property>
@@ -17324,7 +17327,7 @@ Mesh files no longer used:
 			<property name="Blockname" value="workStill" />
 		</property>
 	</item>
-    <item id="3007" name="FermitationBarrel">
+    <item id="3007" name="FermentationBarrel">
 		<property name="Extends" value="forge" />
 		<property name="CustomIcon" value="ui_game_symbol_Barrel" />
 		<property class="Action1">
@@ -17335,7 +17338,21 @@ Mesh files no longer used:
 		<property name="Extends" value="forge" />
 		<property name="CustomIcon" value="ui_game_symbol_workBiogasDigester" />
 		<property class="Action1">
-			<property name="Blockname" value="workBiogasDigester" />
+			<property name="Blockname" value="workMethaneProducer" />
+		</property>
+	</item>
+    <item id="3057" name="Anvil">
+		<property name="Extends" value="forge" />
+		<property name="CustomIcon" value="ui_game_symbol_Anvil" />
+		<property class="Action1">
+			<property name="Blockname" value="workAnvil" />
+		</property>
+	</item>
+    <item id="3058" name="MortarAndPestle">
+		<property name="Extends" value="forge" />
+		<property name="CustomIcon" value="ui_game_symbol_MortarAndPestle" />
+		<property class="Action1">
+			<property name="Blockname" value="workMortarAndPestle" />
 		</property>
 	</item>
 	<item id="2098" name="scorpionBag">
@@ -17397,8 +17414,10 @@ Mesh files no longer used:
 		<property name="DescriptionKey" value="ScrapRubberDesc" />
         <property name="CustomIcon" value="cobblestones" />
         <property name="CustomIconTint" value="232323" />
+        <property name="Material" value="Mrubber" />
+		<property name="Weight" value="1" />
 	</item>
-	<item id="3005" name="mead">
+ 	<item id="3005" name="mead">
         <property name="Extends" value="beer" />
         <property name="CustomIcon" value="beer" />
         <property name="CustomIconTint" value="af8d05" />
@@ -17407,5 +17426,330 @@ Mesh files no longer used:
 			<property name="Gain_wellness" value="0.2" />
 		</property>
 	</item>
+    <!--JZMOD XYTH JUNK ITEMS-->
+    <item id="3011" name="ironSoldier">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="ironSoldier" />
+		<property name="DescriptionKey" value="ironSoldierDesc" />
+		<property name="Material" value="metal" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3012" name="ironPaperClips">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="ironPaperClips" />
+		<property name="DescriptionKey" value="ironPaperClipsDesc" />
+		<property name="Material" value="metal" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3013" name="ironWeight">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="ironWeight" />
+		<property name="DescriptionKey" value="ironWeightDesc" />
+		<property name="Material" value="metal" />
+		<property name="Weight" value="60" />
+	</item>
+	<item id="3014" name="ironHinge">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="ironHinge" />
+		<property name="DescriptionKey" value="ironHingeDesc" />
+		<property name="Material" value="metal" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3015" name="leadMusketBalls">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="leadMusketBalls" />
+		<property name="DescriptionKey" value="leadMusketBallsDesc" />
+		<property name="Material" value="lead" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3016" name="leadSolder">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="leadSolder" />
+		<property name="DescriptionKey" value="leadSolderDesc" />
+		<property name="Material" value="lead" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3017" name="leadSoldier">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="leadSoldier" />
+		<property name="DescriptionKey" value="leadSoldierDesc" />
+		<property name="Material" value="lead" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3018" name="brassHinge">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="brassHinge" />
+		<property name="DescriptionKey" value="brassHingeDesc" />
+		<property name="Material" value="brass" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3019" name="brassMonkey">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="brassMonkey" />
+		<property name="DescriptionKey" value="brassMonkeyDesc" />
+		<property name="Material" value="brass" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3020" name="brassCowBell">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="brassCowBell" />
+		<property name="DescriptionKey" value="brassCowBellDesc" />
+		<property name="Material" value="brass" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3021" name="brassKnuckles">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="brassKnuckles" />
+		<property name="DescriptionKey" value="brassKnucklesDesc" />
+		<property name="Material" value="brass" />
+		<property name="Weight" value="3" />
+	</item>
+	<item id="3022" name="stonePlate">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="stonePlate" />
+		<property name="DescriptionKey" value="stonePlateDesc" />
+		<property name="Material" value="stone" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3023" name="stonePaperWeight">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="stonePaperWeight" />
+		<property name="DescriptionKey" value="stonePaperWeightDesc" />
+		<property name="Material" value="stone" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3024" name="stoneStatue">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="stoneStatue" />
+		<property name="DescriptionKey" value="stoneStatueDesc" />
+		<property name="Material" value="stone" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3025" name="woodSoldier">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="woodSoldier" />
+		<property name="DescriptionKey" value="woodSoldierDesc" />
+		<property name="Material" value="wood" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3026" name="woodWhistle">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="woodWhistle" />
+		<property name="DescriptionKey" value="woodWhistleDesc" />
+		<property name="Material" value="wood" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3027" name="woodSpoon">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="woodSpoon" />
+		<property name="DescriptionKey" value="woodSpoonDesc" />
+		<property name="Material" value="wood" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3028" name="paperPlayingCards">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="paperPlayingCards" />
+		<property name="DescriptionKey" value="paperPlayingCardsDesc" />
+		<property name="Material" value="paper" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3029" name="paperNews">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="paperNews" />
+		<property name="DescriptionKey" value="paperNewsDesc" />
+		<property name="Material" value="paper" />
+		<property name="Weight" value="3" />
+	</item>
+	<item id="3030" name="paperToilet">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="paperToilet" />
+		<property name="DescriptionKey" value="paperToiletDesc" />
+		<property name="Material" value="paper" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3031" name="paperGoggles">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="paperGoggles" />
+		<property name="DescriptionKey" value="paperGogglesDesc" />
+		<property name="Material" value="paper" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3032" name="clothTeddyBear">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="clothTeddyBearJZ" />
+		<property name="DescriptionKey" value="clothTeddyBearDesc" />
+		<property name="Material" value="cloth" />
+		<property name="Weight" value="10" />
+	</item>
+	<item id="3033" name="clothRags">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="clothRags" />
+		<property name="DescriptionKey" value="clothRagsDesc" />
+		<property name="Material" value="cloth" />
+		<property name="Weight" value="10" />
+	</item>
+	<item id="3034" name="clothRug">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="clothRug" />
+		<property name="DescriptionKey" value="clothRugDesc" />
+		<property name="Material" value="cloth" />
+		<property name="Weight" value="25" />
+	</item>
+	<item id="3035" name="plasticCds">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="plasticCds" />
+		<property name="DescriptionKey" value="plasticCdsDesc" />
+		<property name="Material" value="Mplastics" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3036" name="plasticSoldier">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="plasticSoldier" />
+		<property name="DescriptionKey" value="plasticSoldierDesc" />
+        <property name="Material" value="Mplastics" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3037" name="plasticLegos">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="plasticLegos" />
+		<property name="DescriptionKey" value="plasticLegosDesc" />
+		<property name="Material" value="Mplastics" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3038" name="electronic3ds">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="electronic3ds" />
+		<property name="DescriptionKey" value="electronic3dsDesc" />
+		<property name="Material" value="MelectronicParts" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3039" name="electronicCellPhone">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="electronicCellPhone" />
+		<property name="DescriptionKey" value="electronicCellPhoneDesc" />
+		<property name="Material" value="MelectronicParts" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3040" name="electronicClockRadio">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="electronicClockRadio" />
+		<property name="DescriptionKey" value="electronicClockRadioDesc" />
+		<property name="Material" value="MelectronicParts" />
+		<property name="Weight" value="3" />
+	</item>
+	<item id="3041" name="electricShaver">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="electricShaver" />
+		<property name="DescriptionKey" value="electricShaverDesc" />
+		<property name="Material" value="MelectricParts" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3042" name="electricToyMotor">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="electricToyMotor" />
+		<property name="DescriptionKey" value="electricToyMotorDesc" />
+		<property name="Material" value="MelectricParts" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3043" name="electricToaster">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="electricToaster" />
+		<property name="DescriptionKey" value="electricToasterDesc" />
+		<property name="Material" value="MelectricParts" />
+		<property name="Weight" value="3" />
+	</item>
+	<item id="3044" name="mechanicalKeyPad">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="mechanicalKeyPad" />
+		<property name="DescriptionKey" value="mechanicalKeyPadDesc" />
+		<property name="Material" value="MmechanicalParts" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3045" name="mechanicalOldWatch">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="mechanicalOldWatch" />
+		<property name="DescriptionKey" value="mechanicalOldWatchDesc" />
+		<property name="Material" value="MmechanicalParts" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3046" name="mechanicalTypeWriter">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="mechanicalTypeWriter" />
+		<property name="DescriptionKey" value="mechanicalTypeWriterDesc" />
+		<property name="Material" value="MmechanicalParts" />
+		<property name="Weight" value="4" />
+	</item>
+	<item id="3047" name="rubberDoll">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="rubberDoll" />
+		<property name="DescriptionKey" value="rubberDollDesc" />
+		<property name="Material" value="Mrubber" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3048" name="rubberDuck">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="rubberDuck" />
+		<property name="DescriptionKey" value="rubberDuckDesc" />
+        <property name="Material" value="Mrubber" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3049" name="rubberChicken">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="rubberChicken" />
+		<property name="DescriptionKey" value="rubberChickenDesc" />
+		<property name="Material" value="Mrubber" />
+		<property name="Weight" value="2" />
+	</item>
+	<item id="3050" name="rubberBands">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="rubberBands" />
+		<property name="DescriptionKey" value="rubberBandsDesc" />
+		<property name="Material" value="Mrubber" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3051" name="steelHinge">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="steelHinge" />
+		<property name="DescriptionKey" value="steelHingeDesc" />
+		<property name="Material" value="Msteel" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3052" name="steelSpoon">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="steelSpoon" />
+		<property name="DescriptionKey" value="steelSpoonDesc" />
+		<property name="Material" value="Msteel" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3053" name="steelBracelet">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="steelBracelet" />
+		<property name="DescriptionKey" value="steelBraceletDesc" />
+		<property name="Material" value="Msteel" />
+		<property name="Weight" value="1" />
+	</item>
+	<item id="3054" name="glassPurfume">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="glassPurfume" />
+		<property name="DescriptionKey" value="glassPurfumeDesc" />
+		<property name="Material" value="glass" />
+		<property name="Weight" value="4" />
+	</item>
+	<item id="3055" name="glassCompact">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="glassCompact" />
+		<property name="DescriptionKey" value="glassCompactDesc" />
+		<property name="Material" value="glass" />
+		<property name="Weight" value="4" />
+	</item>
+	<item id="3056" name="glassFrame">
+		<property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="glassFrame" />
+		<property name="DescriptionKey" value="glassFrameDesc" />
+		<property name="Stacknumber" value="1" />
+		<property name="Material" value="glass" />
+		<property name="Weight" value="10" />
+	</item>
+
 	
 </items>

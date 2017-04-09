@@ -14,68 +14,59 @@
 		<spawn maxcount="2" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
 		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="AnimalsSnow" spawnDeadChance="0" />
-        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
-	</biome>
+    </biome>
 	<!-- Gravestown & Perishton-->
 	<biome name="city_wasteland">
 		<spawn maxcount="6" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
-		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
+		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="ZombiesBoss" />
+        <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBossNight" />
 		<spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
-        <spawn maxcount="1" respawndelay="20" time="Any" entitygroup="ArmedSurvivorGroup" />
     </biome>
 	<!-- Random gen city-->
 	<biome name="wasteland_hub">
 		<spawn maxcount="5" respawndelay="0" time="Day" entitygroup="ZombiesWasteland" />
 		<spawn maxcount="5" respawndelay="0" time="Night" entitygroup="ZombiesWastelandNight" />
-		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
+		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="ZombiesBoss" />
+        <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBossNight" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
-        <spawn maxcount="1" respawndelay="20" time="Any" entitygroup="ArmedSurvivorGroup" />
     </biome>
 	<biome name="forest">
 		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="ZombiesNight" />
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0" />
-        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
+		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="ForestAnimals" spawnDeadChance="0" />
     </biome>
 	<biome name="pine_forest">
 		<spawn maxcount="2" respawndelay="2" time="Any" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="2" time="Night" entitygroup="ZombiesNight" />
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="AnimalsAll" spawnDeadChance="0" />
-        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
-	</biome>
+		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="ForestAnimals" spawnDeadChance="0" />
+    </biome>
 	<biome name="plains">
 		<spawn maxcount="1" respawndelay="4" time="Any" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="4" time="Night" entitygroup="ZombiesNight" />
-		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="AnimalsSmall" spawnDeadChance="0" />
-         <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
-	</biome>
+		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="PlainsDesertAnimals" spawnDeadChance="0" />
+    </biome>
 	<biome name="desert">
 		<spawn maxcount="1" respawndelay="3" time="Any" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="2" time="Night" entitygroup="ZombiesNight" />
-		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="AnimalsSmall" spawnDeadChance="0" />
-        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
-	</biome>
+		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="PlainsDesertAnimals" spawnDeadChance="0" />
+    </biome>
 	<biome name="wasteland">
 		<spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
 		<spawn maxcount="4" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBoss" />
-		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
-        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
-	</biome>
+        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="BurntForestAnimals" spawnDeadChance="0" />
+    </biome>
 	<biome name="burnt_forest">
 		<spawn maxcount="3" respawndelay="3" time="Any" entitygroup="ZombiesBurntForest" />
 		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
-		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" />
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBoss" />
-		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="AnimalsSmall" spawnDeadChance="0" />
-        <spawn maxcount="1" respawndelay="20" time="Any" entitygroup="ArmedSurvivorGroup" />
+        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="BurntForestAnimals" spawnDeadChance="0" />
     </biome>
 	<biome name="snow">
 		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="SnowZombies" />
 		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="ZombiesNight" />
 		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="AnimalsSnow" spawnDeadChance="0" />
-        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
     </biome>
 	<biome name="water">
 		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="CrocGrp" spawnDeadChance="0" />
@@ -271,7 +262,7 @@
 	<entityspawner name="SpawnSmall_Territorial">
 		<day value="*">
 			<property name="ResetToday" value="false" />
-			<property name="EntityGroupName" value="HornetGroup" />
+			<property name="EntityGroupName" value="HornitSwarm" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="0" />
 			<!-- in seconds -->

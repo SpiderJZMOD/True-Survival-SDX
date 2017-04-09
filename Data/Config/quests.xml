@@ -524,7 +524,7 @@ Alternative settings for custom quest creation:
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Soldier3" name_key="challenge_Profession" subtitle_key="challenge_Soldier3_subtitle" description_key="challenge_Soldier3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier5_offer" difficulty="easy">
+	<quest id="challenge_Soldier3" name_key="challenge_Profession" subtitle_key="challenge_Soldier3_subtitle" description_key="challenge_Soldier3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Soldier3_offer" difficulty="easy">
 		<objective type="Craft" id="mineCookingPot" value="3" />
 		<objective type="Craft" id="pipeBomb" value="3" />
 		<reward type="Exp" value="800" />
@@ -583,7 +583,7 @@ Alternative settings for custom quest creation:
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Fisherman2" name_key="challenge_Profession" subtitle_key="challenge_Fisherman2_subtitle" description_key="challenge_Fisherman2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist2_offer" difficulty="easy">
+	<quest id="challenge_Fisherman2" name_key="challenge_Profession" subtitle_key="challenge_Fisherman2_subtitle" description_key="challenge_Fisherman2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Fisherman2_offer" difficulty="easy">
 		<objective type="Craft" id="fishingLure1" value="1" />
 		<objective type="Craft" id="fishingLure2" value="1" />
 		<objective type="Craft" id="fishingLure3" value="1" />
@@ -592,12 +592,12 @@ Alternative settings for custom quest creation:
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Fisherman3" name_key="challenge_Profession" subtitle_key="challenge_Fisherman3_subtitle" description_key="challenge_Fisherman3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
+	<quest id="challenge_Fisherman3" name_key="challenge_Profession" subtitle_key="challenge_Fisherman3_subtitle" description_key="challenge_Fisherman3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="cchallenge_Fisherman3_offer" difficulty="easy">
 		<objective type="Craft" id="FishingPole" value="1" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
-	<quest id="challenge_Fisherman4" name_key="challenge_Profession" subtitle_key="challenge_Fisherman4_subtitle" description_key="challenge_Fisherman4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Scientist4_offer" difficulty="easy">
+	<quest id="challenge_Fisherman4" name_key="challenge_Profession" subtitle_key="challenge_Fisherman4_subtitle" description_key="challenge_Fisherman4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Fisherman4_offer" difficulty="easy">
 		<objective type="Craft" id="barge" value="1" />
 		<reward type="Exp" value="800" />
 		<reward type="SkillPoints" value="2" />

@@ -435,10 +435,6 @@
 	<lootgroup name="toiletLoot" count="1">
 		<item name="turd" count="1,5" prob="100.0" />
 	</lootgroup>
-	<lootgroup name="trophyGroup" count="1">
-		<item name="trophy" />
-		<item name="trophy2" />
-	</lootgroup>
 	<lootgroup name="ammoBig" count="1">
 		<item name="50CalBullet" count="1,6" prob="33.3" />
 		<item name="PersonalRocket" count="1,3" prob="33.3" />
@@ -761,40 +757,45 @@
 		<item name="workChickenCoop" count="1" prob="7.4" />
     </lootgroup>
 	<lootgroup name="cannedfood" count="1">
-		<item name="canBeef" prob="4.3" />
-		<item name="canCatfood" prob="4.3" />
-		<item name="canChicken" prob="4.3" />
-		<item name="canChili" prob="4.3" />
-		<item name="canDogfood" prob="4.3" />
-		<item name="canHam" prob="5.4" />
-		<item name="canUnlabeled" prob="8.6" />
-		<item name="canLamb" prob="5.4" />
-		<item name="canMiso" prob="5.4" />
+		<item name="canBeef" prob="5.55" />
+		<item name="canCatfood" prob="5.55" />
+		<item name="canChicken" prob="5.55" />
+		<item name="canChili" prob="5.55" />
+		<item name="canDogfood" prob="5.55" />
+		<item name="canHam" prob="5.55" />
+		<item name="canUnlabeled" prob="5.55" />
+		<item name="canLamb" prob="5.55" />
+		<item name="canMiso" prob="5.55" />
 		<item name="canPasta" prob="5.4" />
-		<item name="canPeas" prob="5.4" />
-		<item name="canSalmon" prob="5.4" />
-		<item name="canSoup" prob="5.4" />
-		<item name="canStock" prob="6.5" />
-		<item name="canTuna" prob="6.5" />
-		<item name="foodHoney" prob="6.5" />
-		<item name="cornMeal" prob="6.5" />
-		<item name="canPears" prob="6.5" />
+		<item name="canPeas" prob="5.55" />
+		<item name="canSalmon" prob="5.55" />
+		<item name="canSoup" prob="5.55" />
+		<item name="canStock" prob="5.55" />
+		<item name="canTuna" prob="5.55" />
+		<item name="foodHoney" prob="5.55" />
+		<item name="cornMeal" prob="5.55" />
+		<item name="canPears" prob="5.55" />
 	</lootgroup>
 	<lootgroup name="seeds" count="1">
-		<item name="WheatSeed" prob="6.1" />
-		<item name="CarrotSeed" prob="6.1" />
-		<item name="aloeSeed" prob="6.1" />
-		<item name="potatoSeed" prob="7.6" />
-		<item name="coffeeBeans" prob="7.6" />
-		<item name="cornSeed" prob="7.6" />
-		<item name="blueberrySeed" prob="7.6" />
-		<item name="AppleSeed" prob="7.6" />
-		<item name="yuccaSeed" prob="9.1" />
-		<item name="chrysanthemumSeed" prob="9.1" />
-		<item name="cottonSeed" prob="7.6" />
-		<item name="goldenrodSeed" prob="9.1" />
-		<item name="mushroomSeed" prob="9.1" />
-	</lootgroup>
+		<item name="WheatSeed" prob="5.55" />
+		<item name="CarrotSeed" prob="5.55" />
+		<item name="aloeSeed" prob="5.55" />
+		<item name="potatoSeed" prob="5.55" />
+		<item name="coffeeBeans" prob="5.55" />
+		<item name="cornSeed" prob="5.55" />
+		<item name="blueberrySeed" prob="5.55" />
+		<item name="AppleSeed" prob="5.55" />
+		<item name="yuccaSeed" prob="5.55" />
+		<item name="chrysanthemumSeed" prob="5.55" />
+		<item name="cottonSeed" prob="5.55" />
+		<item name="goldenrodSeed" prob="5.55" />
+		<item name="mushroomSeed" prob="5.55" />
+        <item name="hopSeed" prob="5.55" />
+        <item name="CoffeeSeeds" prob="5.55" />
+        <item name="StrawberrySeed" prob="5.55" />
+        <item name="SunflowerSeed" prob="5.55" />
+        <item name="TomatoSeed" prob="5.55" />
+    </lootgroup>
 	<lootgroup name="coldfood" count="1">
 		<item name="egg" count="1,2" prob="4.5" />
 		<item name="rawMeat" prob="11.2" />
@@ -832,14 +833,10 @@
 		<item name="electricParts" count="1,2" prob="0.5"/>
 		<item name="lightBulb" prob="0.5" />
 	</lootgroup>
-	<lootgroup name="rareOres">
-		<!-- 907 average -->
-		<item name="silverNugget" count="1,4" />
-		<!-- 250 -->
-		<item name="goldNugget" count="1,3" prob="0.3" />
-		<!-- 700 -->
-		<item name="rawDiamond" count="1,2" prob="0.1" />
-		<!-- 1500 -->
+	<lootgroup name="rareOres">	<!-- 907 average -->
+		<item name="silverNugget" count="1,4" /><!-- 250 -->
+		<item name="goldNugget" count="1,3" prob="0.3" />	<!-- 700 -->
+		<item name="rawDiamond" count="1,2" prob="0.1" />	<!-- 1500 -->
 	</lootgroup>
 	<lootgroup name="BikeLoot" count="1">
 		<item name="smallEngine" prob="13.2" />
@@ -852,17 +849,110 @@
 		<item name="EngineBlock" prob="10.5" quality="1,300" />
 		<item name="scrapCable" prob="13.2" />
 	</lootgroup>
+	<!--  New Junk Item groups -->
+	<lootgroup name="paperJunk" count="1">
+		<item name="paper" count="1,6" prob="24.38" />
+		<item name="book" prob="18.3" />
+		<item name="paperPlayingCards" count="1,5" prob="7.32" />
+		<item name="paperNews" prob="18.3" />
+		<item name="paperToilet"  prob="24.38" />
+		<item name="paperGoggles" prob="7.32" />
+	</lootgroup>
+	<lootgroup name="leadJunk" count="1">
+		<item name="leadSoldier" prob="2" />
+		<item name="leadMusketBalls" count="1,6" prob="32.66" />
+		<item name="leadSolder" prob="32.66" />
+        <item name="trophy" prob="32.66" />
+	</lootgroup>
+	<lootgroup name="glassJunk" count="1">
+		<item name="glassPurfume" prob="33.3" />
+		<item name="glassCompact"  prob="33.3" />
+		<item name="glassFrame"  prob="33.3" />
+	</lootgroup>
+	<lootgroup name="electronicJunk" count="1">
+		<item name="electronic3ds"  prob="33.3" />
+		<item name="electronicCellPhone"  prob="33.3" />
+		<item name="electronicClockRadio"  prob="33.3" />
+	</lootgroup>
+	<lootgroup name="ironJunk" count="1">
+		<item name="ironSoldier" prob="2" />
+		<item name="ironPaperClips" count="1,6" prob="24.5" />
+		<item name="ironWeight" prob="24.5" />
+		<item name="ironHinge" prob="24.5" />
+        <item name="trophy3" prob="24.5" />
+	</lootgroup>
+	<lootgroup name="brassJunk" count="1">
+		<item name="brassHinge" prob="16.66" />
+		<item name="brassMonkey" prob="16.66" />
+		<item name="brassCowBell" prob="16.66" />
+		<item name="brassKnuckles" prob="16.66" />
+        <item name="trophy" prob="16.66" />
+        <item name="candleStick" prob="16.66" />
+	</lootgroup>
+	<lootgroup name="stoneJunk" count="1">
+		<item name="stonePlate" prob="33.3" />
+		<item name="stonePaperWeight" prob="33.3" />
+		<item name="stoneStatue" prob="33.3" />
+	</lootgroup>
+	<lootgroup name="woodJunk" count="1">
+		<item name="woodSoldier" prob="1.3" />
+		<item name="woodWhistle" prob="43.3" />
+		<item name="woodSpoon" prob="55.3" />
+	</lootgroup>
+	<lootgroup name="clothJunk" count="1">
+		<item name="clothTeddyBear" prob="33.3" />
+		<item name="clothRags" count="1,3" prob="33.3" />
+		<item name="clothRug" prob="33.3" />
+	</lootgroup>
+	<lootgroup name="plasticJunk" count="1">
+		<item name="plasticCds" count="1,6" prob="45.3" />
+		<item name="plasticSoldier" prob="1.3" />
+		<item name="plasticLegos" count="1,6" prob="43.3" />
+	</lootgroup>
+	<lootgroup name="electricJunk" count="1">
+		<item name="electricShaver" prob="33.3" />
+		<item name="electricToyMotor" prob="33.3" />
+		<item name="electricToaster" prob="33.3" />
+	</lootgroup>
+	<lootgroup name="mechanicalJunk" count="1">
+		<item name="mechanicalKeyPad" prob="33.3" />
+		<item name="mechanicalOldWatch" prob="33.3" />
+		<item name="mechanicalTypeWriter" prob="33.3" />
+	</lootgroup>
+	<lootgroup name="rubberJunk" count="1">
+		<item name="rubberDoll" prob="25.0" />
+		<item name="rubberDuck" prob="25.0" />
+		<item name="rubberChicken" prob="25.0" />
+		<item name="rubberBands" count="1,3" prob="25.0" />
+	</lootgroup>
+	<lootgroup name="steelJunk" count="1">
+		<item name="steelHinge" prob="33.3" />
+		<item name="steelSpoon" prob="33.3" />
+		<item name="steelBracelet" prob="33.3" />
+	</lootgroup>	
+	<lootgroup name="itemJunk" count="1">
+		<item group="paperJunk" prob="7.38" />
+		<item group="steelJunk" prob="4" />
+		<item group="rubberJunk" prob="7.38" />
+        <item group="mechanicalJunk" prob="7.38" />
+        <item group="electricJunk" prob="7.38" />
+        <item group="clothJunk" prob="7.38" />
+        <item group="plasticJunk" prob="7.38" />
+        <item group="woodJunk" prob="7.38" />
+        <item group="stoneJunk" prob="7.38" />
+        <item group="brassJunk" prob="7.38" />
+        <item group="ironJunk" prob="7.38" />
+        <item group="electronicJunk" prob="7.38" />
+        <item group="glassJunk" prob="7.38" />
+        <item group="leadJunk" prob="7.38" />
+    </lootgroup>
+<!--  End of new Groups -->
 	<lootgroup name="junk" count="1">
 		<item name="candyTin" prob="1.4" />
 		<item name="emptyJar" count="1" prob="2.1" />
 		<item name="canEmpty" count="1" prob="2.4" />
 		<item name="painkillers" prob="3.5" />
 		<item name="ductTape" count="1,3" prob="3.5" />
-		<item name="paper" count="1,6" prob="6.1" />
-		<item name="cloth" count="1,4" prob="3.1" />
-		<item group="trophyGroup" prob="2.1" />
-		<item name="candleStick" prob="2.1" />
-		<item name="brokenGlass" prob="2.1" />
 		<item name="canUnlabeled" prob=".7" />
 		<item name="hook" prob="1.4" />
 		<item name="gunPowder" count="1,3" prob=".2" />
@@ -887,12 +977,22 @@
 		<item name="Ink Pen" prob="1.4" />
 		<item name="cigarette" count="1,3" prob="3.5" />
 		<item name="cigar" count="1" prob="3.0" />
-		<item name="scrapIron" count="1" prob="2.0" />
-		<item name="scrapPlastics" count="1" prob="2.0" />
 		<item name="scrapCable" count="1" prob="2.0" />
-		<item name="scrapLead" count="1" prob="2.0" />
-		<item name="scrapBrass" count="1" prob="2.0" />
 		<item group="tatteredClothes" prob="3.0" />
+		<item group="paperJunk" prob="3.0" />
+		<item group="leadJunk" prob="3.0" />
+		<item group="glassJunk" prob="3.0" />
+		<item group="electronicJunk" prob="3.0" />
+		<item group="ironJunk" prob="3.0" />
+		<item group="brassJunk" prob="3.0" />
+		<item group="stoneJunk" prob="3.0" />
+		<item group="woodJunk" prob="3.0" />
+		<item group="clothJunk" prob="3.0" />
+		<item group="plasticJunk" prob="3.0" />
+		<item group="electricJunk" prob="3.0" />
+		<item group="mechanicalJunk" prob="3.0" />
+		<item group="rubberJunk" prob="3.0" />
+		<item group="steelJunk" prob="3.0" />	
 	</lootgroup>
 	
 	<lootgroup name="junkPersonal" count="1">
@@ -901,12 +1001,12 @@
 		<item name="paper" count="1,6" prob="8.1" />
 		<item name="cloth" count="1,4" prob="4.1" />
 		<item name="brokenGlass" prob="2.8" />
-		<item name="canUnlabeled" prob="9.3" />
+		<item name="canUnlabeled" prob="7.3" />
 		<item name="hook" prob="1.9" />
 		<item name="gunPowder" count="1,3" prob="2.6" />
 		<item name="fishingWeight" count="1,3" prob="4.6" />
 		<item name="glue" count="1,3" prob="6.5" />
-		<item name="nail" count="1,6" prob="6.5" />
+		<item name="nail" count="1,6" prob="8.5" />
 		<item name="OldRevolver" prob="1.3" />
 		<item name="NutAndBolt" count="1,6" prob="6.5" />
 		<item name="bulletCasing" count="1,10" prob="4.6" />
@@ -1890,7 +1990,7 @@
 	<!-- lootcontainer 6 night stands and desks -->
 	<lootcontainer id="6" count="0,2" size="4,3" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" open_time="5">
 		<item group="clothes" prob="16.9" />
-		<item group="trophyGroup" prob="10.2" />
+		<item group="itemJunk" prob="17.0" />
 		<item group="ammoSmall" prob="15.9" />
 		<item group="ammoBig" prob="0.01" />
 		<item name="book" count="1,2" prob="13.6" />
@@ -2137,7 +2237,7 @@
 		<item group="TierOneBooks" prob="1.7" />
 		<item name="paper" count="1,8" prob="1.2" />
 		<item group="medicine" prob="1.2" />
-		<item group="trophyGroup" prob="12.2" />
+		<item group="itemJunk" prob="12.2" />
 		<item name="gunPowder" count="1,5" prob="12.2" />
 		<item name="book" count="1,2" prob="12.2" />
 		<item group="MonthlyMagazines" prob="2.4" />
@@ -2150,7 +2250,7 @@
 		<item group="TierOneBooks" prob="1.7" />
 		<item name="paper" count="5,10" prob="21.3" />
 		<item name="painkillers" prob="4.3" />
-		<item group="trophyGroup" prob="21.3" />
+		<item group="itemJunk" prob="21.3" />
 		<item name="book" count="1,4" prob="21.3" />
 		<item group="MonthlyMagazines" prob="4.3" />
 		<item group="WeeklyMagazines" prob="8.5" />
@@ -2317,7 +2417,7 @@
 		<item name="herbalAntibiotics" count="1,3" prob="66.7" />
 	</lootcontainer>
 	<!-- gas pump loot -->
-	<lootcontainer id="64" count="30,500" size="8,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="30">
+	<lootcontainer id="64" count="1" size="4,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" open_time="30">
 		<item group="gasPumps" count="1" />
 	</lootcontainer>
 	<!-- lootcontainer zombieMaleHazmat/zombieFemaleHazmat -->
