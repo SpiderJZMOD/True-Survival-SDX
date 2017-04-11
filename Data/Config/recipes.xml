@@ -2432,7 +2432,48 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="mechanicalParts" count="5" />
 		<ingredient name="NutAndBolt" count="10" />
 	</recipe>
-	<recipe name="coal" count="1" craft_area="workBlastFurnace" material_based="true" craft_time="1" craft_exp_gain="0">
+    <recipe name="cntUSRLockers" count="1" craft_area="workMetalWorkBench" craft_tool="wrench" craft_time="30" craft_exp_gain="25">
+		<ingredient name="forgedIron" count="20" />
+        <ingredient name="spring" count="4" />
+		<ingredient name="mechanicalParts" count="4" />
+		<ingredient name="NutAndBolt" count="10" />
+	</recipe>
+	<recipe name="cntUSRFileCabinet" count="1" craft_area="workMetalWorkBench" craft_tool="wrench" craft_time="30" craft_exp_gain="25">
+		<ingredient name="forgedIron" count="20" />
+		<ingredient name="spring" count="4" />
+		<ingredient name="mechanicalParts" count="4" />
+		<ingredient name="NutAndBolt" count="4" />
+	</recipe>
+	<recipe name="cntUSRFridge" count="1" craft_area="workMetalWorkBench" craft_tool="wrench" craft_time="30" craft_exp_gain="25">
+		<ingredient name="forgedIron" count="40" />
+		<ingredient name="spring" count="4" />
+		<ingredient name="mechanicalParts" count="8" />
+		<ingredient name="NutAndBolt" count="8" />
+	</recipe>
+	<recipe name="cntUSRBeerCooler" count="1" craft_area="workWorkBench" craft_tool="clawHammer" craft_time="30" craft_exp_gain="25">
+		<ingredient name="scrapPlastics" count="20" />
+		<ingredient name="spring" count="2" />
+		<ingredient name="mechanicalParts" count="3" />
+		<ingredient name="NutAndBolt" count="4" />
+	</recipe>
+	<recipe name="cntUSRMedicineCabinet" count="1" craft_area="workMetalWorkBench" craft_tool="wrench" craft_time="30" craft_exp_gain="25">
+		<ingredient name="forgedIron" count="20" />
+		<ingredient name="spring" count="2" />
+		<ingredient name="mechanicalParts" count="2" />
+		<ingredient name="NutAndBolt" count="4" />
+	</recipe>
+	<recipe name="cntUSRBookcase" count="1" craft_area="workWorkBench" craft_tool="clawHammer" craft_time="30" craft_exp_gain="25">
+		<ingredient name="Plank" count="20" />
+		<ingredient name="nail" count="10" />
+	</recipe>
+	<recipe name="cntUSRCoffin" count="1" craft_area="workWorkBench" craft_tool="clawHammer" craft_time="30" craft_exp_gain="25">
+		<ingredient name="Plank" count="30" />
+		<ingredient name="nail" count="10" />
+		<ingredient name="spring" count="2" />
+		<ingredient name="mechanicalParts" count="2" />
+		<ingredient name="NutAndBolt" count="5" />
+	</recipe>
+    <recipe name="coal" count="1" craft_area="workBlastFurnace" material_based="true" craft_time="1" craft_exp_gain="0">
 		<ingredient name="unit_coal" count="5" />
 	</recipe>
 	<recipe name="coal" count="1" craft_area="workBurnBarrel" craft_time="10" craft_exp_gain="5">
@@ -2629,13 +2670,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="ElectricianProfession" count="1" craft_area="workResearchDesk" craft_time="30" craft_exp_gain="1000">
 		<ingredient name="ProfessionPage" count="20" />
 	</recipe>
-	<recipe name="electricParts" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
-		<ingredient name="scrapLead" count="5" />
-		<ingredient name="scrapPlastics" count="2" />
-		<ingredient name="goldNugget" count="1" />
-		<ingredient name="silverNugget" count="2" />
-		<ingredient name="scrapIron" count="1" />
-	</recipe>
 	<recipe name="electricSpear" count="1" craft_area="workMetalWorkBench" craft_tool="CompactDriver" craft_time="30" craft_exp_gain="30">
 		<ingredient name="IronSpear" count="1" />
         <ingredient name="electronicParts" count="2" />
@@ -2644,13 +2678,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="carBattery" count="1" />
         <ingredient name="ductTape" count="3" />
 		<ingredient name="MeltedRubber" count="3" />
-	</recipe>
-	<recipe name="electronicParts" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="5" craft_exp_gain="5">
-		<ingredient name="scrapLead" count="5" />
-		<ingredient name="scrapPlastics" count="2" />
-		<ingredient name="goldNugget" count="2" />
-		<ingredient name="silverNugget" count="3" />
-		<ingredient name="scrapIron" count="1" />
 	</recipe>
 	<recipe name="Elevator_1x1x3" count="1" craft_area="workMetalWorkBench" craft_tool="CompactDriver" craft_time="30" craft_exp_gain="25">
 		<ingredient name="electricParts" count="10" />
@@ -3129,7 +3156,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="NutAndBolt" count="100" />
 	</recipe>
 	<recipe name="Lashing" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="5" craft_exp_gain="0">
-		<ingredient name="Sinew" count="5" />
+		<ingredient name="Sinew" count="4" />
 		<ingredient name="bottledWater" count="1" />
 	</recipe>
 	<recipe name="LeatherNeedle" count="1" craft_time="30" craft_exp_gain="5">
@@ -3268,13 +3295,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="corn" count="1" />
 		<ingredient name="Carrot" count="1" />
 		<ingredient name="stick" count="1" />
-	</recipe>
-	<recipe name="mechanicalParts" count="1" craft_area="workMetalWorkBench" craft_tool="wrench" craft_time="5" craft_exp_gain="5">
-		<ingredient name="shortMetalPipe" count="1" />
-		<ingredient name="NutAndBolt" count="2" />
-		<ingredient name="scrapIron" count="5" />
-		<ingredient name="scrapBrass" count="5" />
-		<ingredient name="FiberRope" count="2" />
 	</recipe>
 	<recipe name="MechanicProfession" count="1" craft_time="5" craft_exp_gain="1000">
 		<ingredient name="ChooseAProfession" count="1" />
@@ -4135,7 +4155,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="spring" count="4" />
 	</recipe>
 	<recipe name="trapNail" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">
-		<ingredient name="Lashing" count="5" />
+		<ingredient name="Lashing" count="3" />
 		<ingredient name="Plank" count="10" />
 		<ingredient name="shortMetalPipe" count="10" />
 		<ingredient name="spring" count="1" />

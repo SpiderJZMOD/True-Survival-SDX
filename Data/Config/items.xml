@@ -1196,7 +1196,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="10" />
 			<property name="DamageBlock" value="20" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.8,0.2,0.1" />
 			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.glass" value="25" />
 		</property>
@@ -1208,7 +1208,7 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="Delay" value="2.0" />
 			<property name="Buff" value="sprainedLeg,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.2,0.6,0.1,0.08" />
+			<property name="Buff_chance" value="0.2,0.8,0.1,0.08" />
 			<property name="DamageBonus.wood" value="5" />
 			<property name="DamageBonus.glass" value="25" />
 		</property>
@@ -1222,7 +1222,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="12" />
 			<property name="DamageBlock" value="2" />
 			<property name="Buff" value="burningSmall,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.5,0.6,0.1,0.3" />
+			<property name="Buff_chance" value="0.5,0.9,0.1,0.3" />
 			<property name="DamageBonus.wood" value="20" />
 			<property name="DamageBonus.glass" value="25" />
 		</property>
@@ -1237,7 +1237,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="20" />
 			<property name="DamageBlock" value="250" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.2,0.7,0.3,0.4" />
+			<property name="Buff_chance" value="0.2,1,0.3,0.4" />
 			<property name="DamageBonus.wood" value="6" />
 			<property name="DamageBonus.stone" value="5" />
 			<property name="DamageBonus.metal" value="3" />
@@ -1352,7 +1352,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="30" />
 			<property name="DamageBlock" value="50" />
 			<property name="Buff" value="bleeding,stunned,scratch" />
-			<property name="Buff_chance" value="0.2,0.3,0.9" />
+			<property name="Buff_chance" value="0.2,0.3,1" />
 			<property name="DamageBonus.earth" value="20" />
 			<property name="DamageBonus.wood" value="20" />
 			<property name="DamageBonus.glass" value="25" />
@@ -1383,7 +1383,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="24" />
 		<property class="Action0">
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.9,0.2,0.1" />
 		</property>
 	</item>
 	<item id="89" name="handZombieWorker">
@@ -1393,7 +1393,7 @@ Mesh files no longer used:
 		<property class="Action0">
 			<property name="DamageBlock" value="150" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.9,0.2,0.1" />
 		</property>
 	</item>
 	<item id="90" name="handZombieFootballPlayer">
@@ -1402,7 +1402,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="24" />
 		<property class="Action0">
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.9,0.2,0.1" />
 		</property>
 	</item>
 	<item id="91" name="handZombieStripper">
@@ -1412,7 +1412,7 @@ Mesh files no longer used:
 			<!-- AttackAction -->
 			<property name="DamageEntity" value="8" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.04,0.7,0.2,0.1" />
+			<property name="Buff_chance" value="0.04,0.9,0.2,0.1" />
 		</property>
 	</item>
 	<!-- * * * * * * * * * * tools for mining / farming, manual or motorised * * * * * * * * * * -->
@@ -6261,7 +6261,7 @@ Mesh files no longer used:
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
-			<property name="Buff" value="guts" />
+			<property name="Buff" value="HornetPoisoning" />
 		</property>
 	</item>
 	<item id="671" name="brokenGlass">
@@ -9611,7 +9611,8 @@ Mesh files no longer used:
 		<property name="Extends" value="crossbow" />
 		<property name="Meshfile" value="#crossbownew?CrossbowNew" />
 		<property name="CustomIcon" value="ui_game_symbol_CarbonCrossbow" />
-		<property name="Material" value="metal" />
+		<property name="DescriptionKey" value="CarbonCrossbowDesc" />
+        <property name="Material" value="metal" />
 		<property class="Parts">
 			<property name="Stock" value="CarbonCrossbow_Stock" />
 			<property name="Receiver" value="CarbonCrossbow_Limb" />
@@ -9626,6 +9627,7 @@ Mesh files no longer used:
 	<item id="1512" name="CarbonCrossbow_Parts">
 		<property name="Extends" value="Crossbow_Parts" />
 		<property name="CustomIcon" value="parts44Magnum_parts" />
+        <property name="DescriptionKey" value="CarbonCrossbow_PartsDesc" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="100,1000" />
 		</property>
@@ -9634,6 +9636,7 @@ Mesh files no longer used:
 	<item id="1513" name="CarbonCrossbow_Limb">
 		<property name="Extends" value="Crossbow_Limb" />
 		<property name="CustomIcon" value="Crossbow_Limb" />
+        <property name="DescriptionKey" value="CarbonCrossbow_PartsDesc" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="100,1000" />
 		</property>
@@ -9642,6 +9645,7 @@ Mesh files no longer used:
 	<item id="1514" name="CarbonCrossbow_Stock">
 		<property name="Extends" value="Crossbow_Stock" />
 		<property name="CustomIcon" value="Crossbow_Stock" />
+        <property name="DescriptionKey" value="CarbonCrossbow_PartsDesc" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="100,1000" />
 		</property>
@@ -9650,6 +9654,7 @@ Mesh files no longer used:
 	<item id="1515" name="CarbonCrossbow_Barrel">
 		<property name="Extends" value="Crossbow_Barrel" />
 		<property name="CustomIcon" value="Crossbow_Barrel" />
+        <property name="DescriptionKey" value="CarbonCrossbow_PartsDesc" />
 		<property class="Attributes">
 			<property name="DegradationMax" value="100,1000" />
 		</property>
@@ -9679,6 +9684,7 @@ Mesh files no longer used:
 			<property name="DamageBonus.head" value="50" />
 			<property name="DamageBonus.wood" value="2" />
 		</property>
+        <property name="DescriptionKey" value="CraftedRevolverDesc" />
 		<property name="CraftingSkillGroup" value="Gun Smithing" />
 	</item>
 	<item id="1517" name="CraftedRevolverStock">
@@ -9785,6 +9791,7 @@ Mesh files no longer used:
 		<property name="Weight" value="10" />
 		<property name="DegradationBreaksAfter" value="true" />
         <property name="CustomIcon" value="gunRevolver" />
+        <property name="DescriptionKey" value="OldRevolverDesc" />
 		<property name="Stacknumber" value="1" />
 		<property name="Degradation" value="99999" param1="true" />
 		<property name="SoundJammed" value="Weapons/weapon_jam" />
@@ -9840,6 +9847,7 @@ Mesh files no longer used:
 		<property name="Extends" value="OldRevolver" />
 		<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
 		<property name="CustomIcon" value="gunHuntingRifle" />
+        <property name="DescriptionKey" value="OldRifleDesc" />
         <property name="HoldType" value="30" />
 		<property name="FuelValue" value="15" />
 		<property name="Stacknumber" value="1" />
@@ -11859,7 +11867,7 @@ Mesh files no longer used:
 		</property>
 		<property class="Attributes">
 			<property name="EntityDamage" value="10,17" />
-			<property name="BlockDamage" value="3,13,2" />
+			<property name="BlockDamage" value="3,13" />
 			<property name="DegradationMax" value="100,600" />
 		</property>
 		<property name="DescriptionKey" value="NightStickDesc" />
@@ -12763,6 +12771,7 @@ Mesh files no longer used:
 		<property name="Group" value="Tools/Traps" />
 		<property name="ActionSkillGroup" value="Master Craftsman" />
 		<property name="CraftingSkillGroup" value="Engineering" />
+        <property name="DescriptionKey" value="CompactDriverDesc" />
 		<property name="RepairExpMultiplier" value="2" />
     </item>
 	<item id="1676" name="CompactDriver_receiver">
@@ -14711,6 +14720,7 @@ Mesh files no longer used:
 			<property name="Gain_water" value="3" />
 			<property name="Gain_stamina" value="3" />
 			<property name="Gain_wellness" value="0" />
+            <property name="Create_item" value="canEmpty" />
 			<property name="Buff" value="eatFood_8_Trigger" />
 			<property name="Sound_start" value="UseActions/player_eating" />
 		</property>
@@ -14731,8 +14741,9 @@ Mesh files no longer used:
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
+            <property name="Create_item" value="emptyJar" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
-			<property name="Debuff" value="bleeding" />
+			<property name="Debuff" value="Stinger" />
         </property>
 		<property class="Action1">
 			<property name="Class" value="Eat" />
@@ -14741,8 +14752,9 @@ Mesh files no longer used:
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
+            <property name="Create_item" value="emptyJar" />
 			<property name="Sound_start" value="UseActions/player_bandage" />
-			<property name="Debuff" value="bleeding" />
+			<property name="Debuff" value="Stinger" />
         </property>
 		<property name="Group" value="Medicine" />
 		<property name="DescriptionKey" value="PoulticeDesc" />
@@ -15776,7 +15788,7 @@ Mesh files no longer used:
 			<property name="DamageBlock" value="0.5" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Buff" value="bleeding,stunned,scratch" />
-			<property name="Buff_chance" value="0.01,0.02,0.4" />
+			<property name="Buff_chance" value="0.01,0.02,0.5" />
 			<property name="DamageBonus.earth" value="5" />
 			<property name="DamageBonus.wood" value="1" />
 		</property>
@@ -15793,7 +15805,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="20" />
 			<property name="DamageBlock" value="50" />
 			<property name="Buff" value="bleeding,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.1,0.7,0.3,0.4" />
+			<property name="Buff_chance" value="0.1,1,0.3,0.4" />
 			<property name="DamageBonus.wood" value="10" />
 			<property name="DamageBonus.stone" value="10" />
 			<property name="DamageBonus.metal" value="10" />
@@ -15888,7 +15900,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="12" />
 			<property name="DamageBlock" value="2" />
 			<property name="Buff" value="burningSmall,scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.5,0.6,0.1,0.3" />
+			<property name="Buff_chance" value="0.5,1,0.1,0.3" />
 			<property name="DamageBonus.wood" value="20" />
 			<property name="DamageBonus.stone" value="3" />
 			<property name="DamageBonus.metal" value="3" />
@@ -15917,7 +15929,7 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="12" />
 			<property name="DamageBlock" value="2" />
 			<property name="Buff" value="scratch,bite,stunned" />
-			<property name="Buff_chance" value="0.6,0.5,0.1,0.3" />
+			<property name="Buff_chance" value="0.9,0.5,0.1,0.3" />
 			<property name="DamageBonus.wood" value="20" />
 			<property name="DamageBonus.glass" value="10" />
 		</property>
@@ -16344,7 +16356,7 @@ Mesh files no longer used:
 		<property name="Extends" value="itemMaster" />
 		<property name="RepairTime" value="2.5" />
 		<property name="RepairAmount" value="30" />
-		<property name="DescriptionKey" value="FiberRopeDesc" />
+		<property name="DescriptionKey" value="SinewDesc" />
 	</item>
 	<item id="2005" name="BoneMeal">
 		<property name="Extends" value="itemMaster" />
@@ -16354,7 +16366,7 @@ Mesh files no longer used:
 	</item>
 	<item id="2006" name="FishingLine">
 		<property name="Extends" value="itemMaster" />
-		<property name="DescriptionKey" value="FiberRopeDesc" />
+		<property name="DescriptionKey" value="FishingLineDesc" />
 	</item>
 	<item id="2007" name="BowString">
 		<property name="Extends" value="itemMaster" />
@@ -16363,16 +16375,16 @@ Mesh files no longer used:
 	</item>
 	<item id="2008" name="Lashing">
 		<property name="Extends" value="itemMaster" />
-		<property name="DescriptionKey" value="FiberRopeDesc" />
+		<property name="DescriptionKey" value="LashingDesc" />
 	</item>
 	<item id="2009" name="Sutures">
 		<property name="Extends" value="itemMaster" />
-		<property name="DescriptionKey" value="FiberRopeDesc" />
+		<property name="DescriptionKey" value="SuturesDesc" />
 	</item>
 	<item id="2010" name="Hoof">
 		<property name="Extends" value="itemMaster" />
 		<property name="Stacknumber" value="500" />
-		<property name="DescriptionKey" value="FiberRopeDesc" />
+		<property name="DescriptionKey" value="HoofDesc" />
 	</item>
 	<item id="2011" name="scrapSteel">
 		<property name="Extends" value="itemMaster" />
@@ -17750,6 +17762,65 @@ Mesh files no longer used:
 		<property name="Material" value="glass" />
 		<property name="Weight" value="10" />
 	</item>
-
-	
+    <item id="3057" name="handBoomer">
+        <property name="Extends" value="handMaster"/>
+        <property name="IsDeveloper" value="true"/>
+        <property class="Action0">
+            <property name="Class" value="Melee"/>
+            <property name="Delay" value="0.4"/>
+            <property name="DamageEntity" value="5"/>
+            <property name="DamageBlock" value="100"/>
+            <property name="Buff" value="bleeding,scratch,bite,stunned" />
+            <property name="Buff_chance" value="0.04,1,0.2,0.1" />
+			<property name="DamageBonus.wood" value="4" />
+            <property name="DamageBonus.stone" value="4" />
+            <property name="DamageBonus.metal" value="5" />
+            <property name="DamageBonus.steel" value="6" />
+            <property name="DamageBonus.glass" value="25" />
+        </property>
+        <property class="Action1">
+            <property name="Class" value="Eat"/>
+            <property name="Delay" value="1"/>
+            <property name="Use_time" value="..."/>
+            <property name="Consume" value="false" />
+            <property name="Buff" value="SuicideBomber"/>
+            <property name="Buff_chance" value="1"/>
+        </property>
+     </item>
+      <item id="3058" name="handBuck">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property name="HoldType" value="46" />
+		<property class="Action0">
+			<!-- AttackAction -->
+			<property name="Delay" value="1.5" />
+			<property name="Range" value="2.75" />
+			<property name="Sphere" value="0.4" />
+			<property name="DamageEntity" value="15" />
+			<property name="DamageBlock" value="50" />
+			<property name="Buff" value="bleeding,stunned,scratch" />
+			<property name="Buff_chance" value="0.5,0.2,1" />
+			<property name="DamageBonus.earth" value="20" />
+			<property name="DamageBonus.wood" value="20" />
+			<property name="DamageBonus.glass" value="25" />
+		</property>
+	</item>
+    <item id="3059" name="handBoar">
+		<property name="Extends" value="handMaster" />
+		<property name="IsDeveloper" value="true" />
+		<property name="HoldType" value="46" />
+		<property class="Action0">
+			<!-- AttackAction -->
+			<property name="Delay" value="1.8" />
+			<property name="Range" value="2.75" />
+			<property name="Sphere" value="0.4" />
+			<property name="DamageEntity" value="7" />
+			<property name="DamageBlock" value="50" />
+			<property name="Buff" value="scratch" />
+			<property name="Buff_chance" value="1" />
+			<property name="DamageBonus.earth" value="40" />
+			<property name="DamageBonus.wood" value="20" />
+			<property name="DamageBonus.glass" value="25" />
+		</property>
+	</item>
 </items>

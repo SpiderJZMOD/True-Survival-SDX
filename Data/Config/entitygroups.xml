@@ -1,4 +1,4 @@
-<!--    NEW ZOMBIE LIST
+<!--    JZMOD ENTITY LIST
         <entity name="spider1" />
         <entity name="spider2" />
         <entity name="spider3" />
@@ -125,7 +125,11 @@
         <entity name="ZombieCharred" />
         <entity name="ZombieBaby" />
         <entity name="ZombieBrute" />
-              
+        <entity name="ZombieBabyBoomer" />
+        
+        <entity name="ZombieBabyBoomer" />
+        <entity name="WitchBoomer" />
+                     
         <entity name="animalRabbit" />
 		<entity name="animalChicken" />
 		<entity name="ZombieChicken" />
@@ -143,6 +147,55 @@
 		<entity name="zombiedog"  />
         <entity name="Bobcat"  />
 		<entity name="hornet" />
+        
+        <entity name="HungryHornet" />
+        <entity name="HungryFeral8" />
+        <entity name="HungryFeral7" />
+        <entity name="HungryFeral6" />
+        <entity name="HungryFeral5" />
+        <entity name="HungryFeral3" />
+        <entity name="HungryFeral1" />
+        <entity name="HungryBrute" />
+        <entity name="HungryMoe7" />
+        <entity name="HungryMoe6" />
+        <entity name="HungryMoe5" />
+        <entity name="HungryMoe3" />
+        <entity name="HungryMoe2" />
+        <entity name="HungryZombieMoe" />
+        <entity name="HungryFatCop" />
+        <entity name="HungryCop6" />
+        <entity name="HungryCop5" />
+        <entity name="HungryCop3" />
+        <entity name="HungryCop2" />
+        <entity name="HungryCop1" />
+        <entity name="HungryMarlene" />
+        <entity name="HungryDarlene" />
+        <entity name="HungryArlene" />
+        <entity name="HungryMoe" />
+        <entity name="HungryBoe" />
+        <entity name="HungrySpider" />
+        <entity name="HungryBurnt" />
+        <entity name="HungryYo" />
+        <entity name="HungryNurse" />
+        <entity name="HungrySteve" />
+        <entity name="HungryJoe" />
+        <entity name="HungryWitchBoomer" />
+        <entity name="HungryBabyBoomer" />
+       
+        <entity name="feral8" />
+        <entity name="snow8" />   
+        <entity name="Joe8" />
+        <entity name="Steve8" />
+        <entity name="Nurse8" />
+        <entity name="Yo8" />
+        <entity name="burnt8" />
+        <entity name="spiderzombie" />
+        <entity name="Boe8" />
+        <entity name="Moe8" />
+        <entity name="Arlene8" />
+        <entity name="Darlene8" />
+        <entity name="Marlene8" />
+        <entity name="Cop8" />       
         
    -->
 <entitygroups>
@@ -1256,15 +1309,13 @@
 		<entity name="ZombieRabbit" prob="10" />
 	</entitygroup>
     <entitygroup name="ZombieFarmGroup">
-		<entity name="ZombieFarmer" />
-		<entity name="ZombieFemaleFatUMA" />
-		<entity name="zombiedog" />
-		<entity name="animalPig" />
-        <entity name="Boar" prob="7.5" />
-		<entity name="animalChicken" />
-		<entity name="ZombieChicken" prob="0.03" />
-		<entity name="ZombieFarmer" />
-        
+		<entity name="ZombieFarmer" prod="30" />
+		<entity name="ZombieFemaleFatUMA" prod="30"/>
+        <entity name="zombiedog" prob="15"/>
+        <entity name="ZombieChicken" prob="15" />
+        <entity name="animalPig" prob="3.33"/>
+        <entity name="animalChicken" prob="3.33"/>
+        <entity name="Boar" prob="3.33" />
 	</entitygroup>
     
 	<entitygroup name="Zombie7thDayHorde">
@@ -1363,6 +1414,7 @@
 		<entity name="zombieBoe" />
 		<entity name="zombieMoe" />
 	</entitygroup>
+    
 	<entitygroup name="BanditGroup">
 		<entity name="BanditWarLeader" prob="0.15" />
 		<entity name="BanditDreadLeader" prob="0.15" />
@@ -1373,10 +1425,445 @@
 		<entity name="BanditPestilenceLeader" prob="0.15" />
 	</entitygroup>
   
-   
-	<entitygroup name="SupplyCrates_General">
+   <!--JZMOD NIGHT TOWER BUSTING UNDEAD ARMYS-->
+	<entitygroup name="Bomber1Class">
+		<entity name="ZombieBabyBoomer" prob="50" />
+        <entity name="WitchBoomer" prob="50" />
+	</entitygroup>
+    <entitygroup name="BomberNLeigon">
+        <!--JZMOD 75%-->
+		<entity name="ZombieBabyBoomer" prob="37.50" />
+        <entity name="WitchBoomer" prob="37.50" />
+        <!--JZMOD 25%-->
+        <entity name="feral8" prob="1.78" />
+        <entity name="snow8" prob="1.78" />  
+        <entity name="Joe8" prob="1.78" />
+        <entity name="Steve8" prob="1.78" />
+        <entity name="Nurse8" prob="1.78" />
+        <entity name="Yo8" prob="1.78" />
+        <entity name="burnt8" prob="1.78" />
+        <entity name="spiderzombie" prob="1.78" />
+        <entity name="Boe8" prob="1.78" />
+        <entity name="Moe8" prob="1.78" />
+        <entity name="Arlene8" prob="1.78" />
+        <entity name="Darlene8" prob="1.78" />
+        <entity name="Marlene8" prob="1.78" />
+        <entity name="Cop8" prob="1.78" />
+	</entitygroup>
+    <entitygroup name="BomberNRanged">
+        <!--JZMOD 75%-->
+		<entity name="ZombieBabyBoomer" prob="37.50" />
+        <entity name="WitchBoomer" prob="37.50" />
+        <!--JZMOD 25%-->
+        <entity name="Cop1" prob="1.78" />
+        <entity name="Cop2" prob="1.78" />
+        <entity name="Cop3" prob="1.78" />
+        <entity name="Cop5" prob="1.78" />
+        <entity name="Cop6" prob="1.78" />
+        <entity name="fatzombiecop" prob="1.78" />
+        <entity name="Cop8" prob="1.78" />
+        <entity name="zombieMoe" prob="1.78" />
+        <entity name="Moe2" prob="1.78" />
+        <entity name="Moe3" prob="1.78" />
+        <entity name="Moe5" prob="1.78" />
+        <entity name="Moe6" prob="1.78" />
+        <entity name="Moe7" prob="1.78" />
+        <entity name="Moe8" prob="1.78" />
+	</entitygroup>
+    <entitygroup name="Ranged1Class">
+		<entity name="Cop1" prob="7.14" />
+        <entity name="Cop2" prob="7.14" />
+        <entity name="Cop3" prob="7.14" />
+        <entity name="Cop5" prob="7.14" />
+        <entity name="Cop6" prob="7.14" />
+        <entity name="fatzombiecop" prob="7.14" />
+        <entity name="Cop8" prob="7.14" />
+        <entity name="zombieMoe" prob="7.14" />
+        <entity name="Moe2" prob="7.14" />
+        <entity name="Moe3" prob="7.14" />
+        <entity name="Moe5" prob="7.14" />
+        <entity name="Moe6" prob="7.14" />
+        <entity name="Moe7" prob="7.14" />
+        <entity name="Moe8" prob="7.14" />
+	</entitygroup>
+    <entitygroup name="RangedNLeigon">
+        <!--JZMOD 75%-->
+		<entity name="Cop1" prob="5.35" />
+        <entity name="Cop2" prob="5.35" />
+        <entity name="Cop3" prob="5.35" />
+        <entity name="Cop5" prob="5.35" />
+        <entity name="Cop6" prob="5.35" />
+        <entity name="fatzombiecop" prob="5.35" />
+        <entity name="Cop8" prob="5.35" />
+        <entity name="zombieMoe" prob="5.35" />
+        <entity name="Moe2" prob="5.35" />
+        <entity name="Moe3" prob="5.35" />
+        <entity name="Moe5" prob="5.35" />
+        <entity name="Moe6" prob="5.35" />
+        <entity name="Moe7" prob="5.35" />
+        <entity name="Moe8" prob="5.35" />
+        <!--JZMOD 25%-->
+        <entity name="feral8" prob="2.08" />
+        <entity name="snow8" prob="2.08" />
+        <entity name="Joe8" prob="2.08" />
+        <entity name="Steve8" prob="2.08" />
+        <entity name="Nurse8" prob="2.08" />
+        <entity name="Yo8" prob="2.08" />
+        <entity name="burnt8" prob="2.08" />
+        <entity name="spiderzombie" prob="2.08" />
+        <entity name="Boe8" prob="2.08" />
+        <entity name="Arlene8" prob="2.08" />
+        <entity name="Darlene8" prob="2.08" />
+        <entity name="Marlene8" prob="2.08" />
+    </entitygroup>
+    <entitygroup name="RangedNBomber">
+        <!--JZMOD 75%-->
+		<entity name="Cop1" prob="5.35" />
+        <entity name="Cop2" prob="5.35" />
+        <entity name="Cop3" prob="5.35" />
+        <entity name="Cop5" prob="5.35" />
+        <entity name="Cop6" prob="5.35" />
+        <entity name="fatzombiecop" prob="5.35" />
+        <entity name="Cop8" prob="5.35" />
+        <entity name="zombieMoe" prob="5.35" />
+        <entity name="Moe2" prob="5.35" />
+        <entity name="Moe3" prob="5.35" />
+        <entity name="Moe5" prob="5.35" />
+        <entity name="Moe6" prob="5.35" />
+        <entity name="Moe7" prob="5.35" />
+        <entity name="Moe8" prob="5.35" />
+        <!--JZMOD 25%-->
+        <entity name="ZombieBabyBoomer" prob="12.5" />
+        <entity name="WitchBoomer" prob="12.5" />
+	</entitygroup>
+    <entitygroup name="RangedNSky">
+		<!--JZMOD 75%-->
+		<entity name="Cop1" prob="5.35" />
+        <entity name="Cop2" prob="5.35" />
+        <entity name="Cop3" prob="5.35" />
+        <entity name="Cop5" prob="5.35" />
+        <entity name="Cop6" prob="5.35" />
+        <entity name="fatzombiecop" prob="5.35" />
+        <entity name="Cop8" prob="5.35" />
+        <entity name="zombieMoe" prob="5.35" />
+        <entity name="Moe2" prob="5.35" />
+        <entity name="Moe3" prob="5.35" />
+        <entity name="Moe5" prob="5.35" />
+        <entity name="Moe6" prob="5.35" />
+        <entity name="Moe7" prob="5.35" />
+        <entity name="Moe8" prob="5.35" />
+        <!--JZMOD 20%-->
+        <entity name="hornet"  prob="20" />
+        <!--JZMOD 2%-->
+        <entity name="zombiedog"  prob="2" />
+        <!--JZMOD 3%-->
+        <entity name="ZombieBrute" prob="3" />
+	</entitygroup>
+    <entitygroup name="LeigonClass1">
+		 <!--JZMOD 80%-->
+		<entity name="Boe8" prob="0.94" />
+        <entity name="spider1" prob="0.94" />
+        <entity name="zombieBoe" prob="0.94" />
+        <entity name="Moe3" prob="0.94" />
+        <entity name="CrawlerArlene" prob="0.94" />
+        <entity name="Darlene5" prob="0.94" />
+        <entity name="Marlene6" prob="0.94" />
+        <entity name="burnt8" prob="0.94" />
+        <entity name="Yo7" prob="0.94" />
+        <entity name="Nurse1" prob="0.94" />
+        <entity name="Steve2" prob="0.94" />
+        <entity name="Joe3" prob="0.94" />
+        <entity name="Moe8" prob="0.94" />
+        <entity name="burnt6" prob="0.94" />
+        <entity name="spiderCrawler" prob="0.94" />
+        <entity name="Boe5" prob="0.94" />
+        <entity name="Moe6" prob="0.94" />
+        <entity name="Arlene7" prob="0.94" />
+        <entity name="Darlene1" prob="0.94" />
+        <entity name="Marlene2" prob="0.94" />
+        <entity name="Yo3" prob="0.94" />
+        <entity name="CrawlerNurse" prob="0.94" />
+        <entity name="Steve5" prob="0.94" />
+        <entity name="Joe6" prob="0.94" />
+        <entity name="Arlene8" prob="0.94" />
+        <entity name="spider7" prob="0.94" />
+        <entity name="Boe1" prob="0.94" />
+        <entity name="Moe2" prob="0.94" />
+        <entity name="zombieArlene" prob="0.94" />
+        <entity name="CrawlerDarlene" prob="0.94" />
+        <entity name="zombieMarlene" prob="0.94" />
+        <entity name="Yo6" prob="0.94" />
+        <entity name="zombieNurse" prob="0.94" />
+        <entity name="Steve1" prob="0.94" />
+        <entity name="Joe2" prob="0.94" />
+        <entity name="burnt5" prob="0.94" />
+        <entity name="Marlene8" prob="0.94" />
+        <entity name="spider3" prob="0.94" />
+        <entity name="CrawlerBoe" prob="0.94" />
+        <entity name="Moe5" prob="0.94" />
+        <entity name="Arlene6" prob="0.94" />
+        <entity name="Darlene7" prob="0.94" />
+        <entity name="Marlene1" prob="0.94" />
+        <entity name="Yo2" prob="0.94" />
+        <entity name="Nurse3" prob="0.94" />
+        <entity name="zombieSteveCrawler" prob="0.94" />
+        <entity name="zombieJoe" prob="0.94" />
+        <entity name="Yo8" prob="0.94" />
+        <entity name="spider6" prob="0.94" />
+        <entity name="Boe7" prob="0.94" />
+        <entity name="zombieMoe" prob="0.94" />
+        <entity name="Arlene2" prob="0.94" />
+        <entity name="zombieDarlene" prob="0.94" />
+        <entity name="CrawlerMarlene" prob="0.94" />
+        <entity name="zombieYo" prob="0.94" />
+        <entity name="Nurse6" prob="0.94" />
+        <entity name="Steve7" prob="0.94" />
+        <entity name="Joe1" prob="0.94" />
+        <entity name="Nurse8" prob="0.94" />
+        <entity name="spider2" prob="0.94" />
+        <entity name="Boe3" prob="0.94" />
+        <entity name="burntCrawler" prob="0.94" />
+        <entity name="Moe7" prob="0.94" />
+        <entity name="Arlene5" prob="0.94" />
+        <entity name="Darlene6" prob="0.94" />
+        <entity name="Marlene7" prob="0.94" />
+        <entity name="Yo1" prob="0.94" />
+        <entity name="burnt1" prob="0.94" />
+        <entity name="Nurse2" prob="0.94" />
+        <entity name="Steve3" prob="0.94" />
+        <entity name="CrawlerJoe" prob="0.94" />
+        <entity name="Steve8" prob="0.94" />
+        <entity name="spider5" prob="0.94" />
+        <entity name="Boe6" prob="0.94" />
+        <entity name="burnt3" prob="0.94" />
+        <entity name="Arlene1" prob="0.94" />
+        <entity name="Darlene2" prob="0.94" />
+        <entity name="Marlene3" prob="0.94" />
+        <entity name="CrawlerYo" prob="0.94" />
+        <entity name="Nurse5" prob="0.94" />
+        <entity name="zombieSteve" prob="0.94" /> 
+        <entity name="Joe7" prob="0.94" />
+        <entity name="burnt2" prob="0.94" />
+        <entity name="Joe8" prob="0.94" />
+        <entity name="ZombieCharred" prob="0.94" />
+        <!--JZMOD 5%-->
+        <entity name="hornet"  prob="1.25" />
+		<entity name="zombiedog"  prob="1.25" />
+        <entity name="ZombieBaby" prob="1.25" />
+        <entity name="ZombieBrute" prob="1.25" />
+        <!--JZMOD 7.5%-->
+		<entity name="feral1" prob="1.07" />
+        <entity name="zombieferal" prob="1.07" />
+        <entity name="feral3" prob="1.07" />
+        <entity name="feral5" prob="1.07" />
+        <entity name="feral6" prob="1.07" />
+        <entity name="feral7" prob="1.07" />
+        <entity name="feral8" prob="1.07" />
+        <!--JZMOD 7.5%-->    
+        <entity name="Cop1" prob="1.07" />
+        <entity name="Cop2" prob="1.07" />
+        <entity name="Cop3" prob="1.07" />
+        <entity name="Cop5" prob="1.07" />
+        <entity name="Cop6" prob="1.07" />
+        <entity name="fatzombiecop" prob="1.07" />
+        <entity name="Cop8" prob="1.07" />
+	</entitygroup>
+    <entitygroup name="LeigonClass2">
+        <!--JZMOD 70%-->
+		<entity name="feral8" prob="5" />
+        <entity name="snow8" prob="5" />
+        <entity name="Joe8" prob="5" />
+        <entity name="Steve8" prob="5" />
+        <entity name="Nurse8" prob="5" />
+        <entity name="Yo8" prob="5" />
+        <entity name="burnt8" prob="5" />
+        <entity name="spiderzombie" prob="5" />
+        <entity name="Boe8" prob="5" />
+        <entity name="Moe8" prob="5" />
+        <entity name="Arlene8" prob="5" />
+        <entity name="Darlene8" prob="5" />
+        <entity name="Marlene8" prob="5" />
+        <entity name="Cop8" prob="5" />
+        <!--JZMOD 5%-->
+        <entity name="hornet"  prob="5" />
+        <!--JZMOD 5%-->
+		<entity name="zombiedog"  prob="2.5" />
+        <entity name="ZombieBaby" prob="2.5" />
+        <!--JZMOD 10%-->
+        <entity name="ZombieBrute" prob="10" />
+        <!--JZMOD 10%-->
+		<entity name="feral1" prob="1.66" />
+        <entity name="zombieferal" prob="1.66" />
+        <entity name="feral3" prob="1.66" />
+        <entity name="feral5" prob="1.66" />
+        <entity name="feral6" prob="1.66" />
+        <entity name="feral7" prob="1.66" />
+    </entitygroup>
+    <entitygroup name="LeigonNBomber">
+        <!--JZMOD 75%-->
+		<entity name="feral8" prob="5.35" />
+        <entity name="snow8" prob="5.35" />
+        <entity name="Joe8" prob="5.35" />
+        <entity name="Steve8" prob="5.35" />
+        <entity name="Nurse8" prob="5.35" />
+        <entity name="Yo8" prob="5.35" />
+        <entity name="burnt8" prob="5.35" />
+        <entity name="spiderzombie" prob="5.35" />
+        <entity name="Boe8" prob="5.35" />
+        <entity name="Moe8" prob="5.35" />
+        <entity name="Arlene8" prob="5.35" />
+        <entity name="Darlene8" prob="5.35" />
+        <entity name="Marlene8" prob="5.35" />
+        <entity name="Cop8" prob="5.35" />
+        <!--JZMOD 25%-->
+        <entity name="ZombieBabyBoomer" prob="12.5" />
+        <entity name="WitchBoomer" prob="12.5" />
+	</entitygroup>
+    <entitygroup name="LeigonNRanged">
+        <!--JZMOD 75%-->
+		<entity name="feral8" prob="5.35" />
+        <entity name="snow8" prob="5.35" />
+        <entity name="Joe8" prob="5.35" />
+        <entity name="Steve8" prob="5.35" />
+        <entity name="Nurse8" prob="5.35" />
+        <entity name="Yo8" prob="5.35" />
+        <entity name="burnt8" prob="5.35" />
+        <entity name="spiderzombie" prob="5.35" />
+        <entity name="Boe8" prob="5.35" />
+        <entity name="Moe8" prob="5.35" />
+        <entity name="Arlene8" prob="5.35" />
+        <entity name="Darlene8" prob="5.35" />
+        <entity name="Marlene8" prob="5.35" />
+        <entity name="Cop8" prob="5.35" />
+        <!--JZMOD 25%-->
+        <entity name="Cop1" prob="2.08" />
+        <entity name="Cop2" prob="2.08" />
+        <entity name="Cop3" prob="2.08" />
+        <entity name="Cop5" prob="2.08" />
+        <entity name="Cop6" prob="2.08" />
+        <entity name="fatzombiecop" prob="2.08" />
+        <entity name="zombieMoe" prob="2.08" />
+        <entity name="Moe2" prob="2.08" />
+        <entity name="Moe3" prob="2.08" />
+        <entity name="Moe5" prob="2.08" />
+        <entity name="Moe6" prob="2.08" />
+        <entity name="Moe7" prob="2.08" />
+    </entitygroup>
+    <entitygroup name="HellLeigon">
+        <!--JZMOD 25%-->
+		<entity name="snow8" prob="2.08" />
+        <entity name="Joe8" prob="2.08" />
+        <entity name="Steve8" prob="2.08" />
+        <entity name="Nurse8" prob="2.08" />
+        <entity name="Yo8" prob="2.08" />
+        <entity name="burnt8" prob="2.08" />
+        <entity name="spiderzombie" prob="2.08" />
+        <entity name="Boe8" prob="2.08" />
+        <entity name="Moe8" prob="2.08" />
+        <entity name="Arlene8" prob="2.08" />
+        <entity name="Darlene8" prob="2.08" />
+        <entity name="Marlene8" prob="2.08" />
+        <!--JZMOD 25%-->    
+        <entity name="Cop1" prob="3.57" />
+        <entity name="Cop2" prob="3.57" />
+        <entity name="Cop3" prob="3.57" />
+        <entity name="Cop5" prob="3.57" />
+        <entity name="Cop6" prob="3.57" />
+        <entity name="fatzombiecop" prob="3.57" />
+        <entity name="Cop8" prob="3.57" />
+        <!--JZMOD 25%-->
+		<entity name="feral1" prob="3.57" />
+        <entity name="zombieferal" prob="3.57" />
+        <entity name="feral3" prob="3.57" />
+        <entity name="feral5" prob="3.57" />
+        <entity name="feral6" prob="3.57" />
+        <entity name="feral7" prob="3.57" />
+        <entity name="feral8" prob="3.57" />
+         <!--JZMOD 3%-->
+        <entity name="hornet"  prob="3" />
+        <!--JZMOD 2%-->
+		<entity name="zombiedog"  prob="1" />
+        <entity name="ZombieBaby" prob="1" />
+        <!--JZMOD 10%-->
+        <entity name="ZombieBrute" prob="10" />
+        <!--JZMOD 10%-->
+        <entity name="ZombieBabyBoomer" prob="5" />
+        <entity name="WitchBoomer" prob="5" />
+	</entitygroup>
+    <entitygroup name="MixClass1">
+        <!--JZMOD 33.33%-->
+		<entity name="ZombieBabyBoomer" prob="16.66" />
+        <entity name="WitchBoomer" prob="16.66" />
+        <!--JZMOD 33.33%-->
+        <entity name="Cop1" prob="2.77" />
+        <entity name="Cop2" prob="2.77" />
+        <entity name="Cop3" prob="2.77" />
+        <entity name="Cop5" prob="2.77" />
+        <entity name="Cop6" prob="2.77" />
+        <entity name="fatzombiecop" prob="2.77" />
+        <entity name="zombieMoe" prob="2.77" />
+        <entity name="Moe2" prob="2.77" />
+        <entity name="Moe3" prob="2.77" />
+        <entity name="Moe5" prob="2.77" />
+        <entity name="Moe6" prob="2.77" />
+        <entity name="Moe7" prob="2.77" />
+        <!--JZMOD 33.33%-->
+        <entity name="feral8" prob="2.77" />
+        <entity name="snow8" prob="2.77" />
+        <entity name="Joe8" prob="2.77" />
+        <entity name="Steve8" prob="2.77" />
+        <entity name="Nurse8" prob="2.77" />
+        <entity name="Yo8" prob="2.77" />
+        <entity name="burnt8" prob="2.77" />
+        <entity name="spiderzombie" prob="2.77" />
+        <entity name="Boe8" prob="2.77" />
+        <entity name="Arlene8" prob="2.77" />
+        <entity name="Darlene8" prob="2.77" />
+        <entity name="Marlene8" prob="2.77" />
+    </entitygroup>
+    <entitygroup name="MixClass2">
+		<!--JZMOD 25%-->
+		<entity name="ZombieBabyBoomer" prob="12.5" />
+        <entity name="WitchBoomer" prob="12.5" />
+        <!--JZMOD 25%-->
+        <entity name="Cop1" prob="2.08" />
+        <entity name="Cop2" prob="2.08" />
+        <entity name="Cop3" prob="2.08" />
+        <entity name="Cop5" prob="2.08" />
+        <entity name="Cop6" prob="2.08" />
+        <entity name="fatzombiecop" prob="2.08" />
+        <entity name="zombieMoe" prob="2.08" />
+        <entity name="Moe2" prob="2.08" />
+        <entity name="Moe3" prob="2.08" />
+        <entity name="Moe5" prob="2.08" />
+        <entity name="Moe6" prob="2.08" />
+        <entity name="Moe7" prob="2.08" />
+        <!--JZMOD 25%-->
+        <entity name="snow8" prob="2.27" />
+        <entity name="Joe8" prob="2.27" />
+        <entity name="Steve8" prob="2.27" />
+        <entity name="Nurse8" prob="2.27" />
+        <entity name="Yo8" prob="2.27" />
+        <entity name="burnt8" prob="2.27" />
+        <entity name="spiderzombie" prob="2.27" />
+        <entity name="Boe8" prob="2.27" />
+        <entity name="Arlene8" prob="2.27" />
+        <entity name="Darlene8" prob="2.27" />
+        <entity name="Marlene8" prob="2.27" />
+         <!--JZMOD 25%-->
+		<entity name="feral1" prob="3.57" />
+        <entity name="zombieferal" prob="3.57" />
+        <entity name="feral3" prob="3.57" />
+        <entity name="feral5" prob="3.57" />
+        <entity name="feral6" prob="3.57" />
+        <entity name="feral7" prob="3.57" />
+        <entity name="feral8" prob="3.57" />
+	</entitygroup>
+    <!--END OF TOWER BUSTERS-->
+    <entitygroup name="SupplyCrates_General">
 		<entity name="sc_General" />
 	</entitygroup>
+    
 	<!-- https://docs.google.com/spreadsheets/d/1P58Ewih074DzsA8OnROUT0CN6jcBnoX81bdiLOtnN2k -->
 	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXX  start: auto generated horde groups  XXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
 	<entitygroup name="hordeStageGS1">

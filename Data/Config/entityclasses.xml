@@ -99,9 +99,9 @@
 		<property name="Weight" value="70" />
 		<property name="Immunity" value="sickness;disease;bleeding;wellness" />
 		<property name="WanderSpeed" value="0.08" />
-		<property name="ApproachSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.3" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.5" />
 		<property name="PanicSpeed" value="0.55" />
 		<property name="CanClimbLadders" value="true" />
 		<property name="IsEnemyEntity" value="true" />
@@ -172,7 +172,7 @@
 		<property name="MaxHealth" value="15000" />
 		<property name="NightApproachSpeed" value="1.8" />
 		<property name="ApproachSpeed" value="0.67" />
-		<property name="PanicSpeed" value="1.4" />
+		<property name="PanicSpeed" value="1.8" />
 		<property name="Immunity" value="armordown;sickness;disease;bleeding;wellness" />
 		<property name="ExperienceGain" value="100" />
 		<property name="CanClimbVertical" value="true" />
@@ -331,7 +331,7 @@
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="2" />
 		<property name="ExperienceGain" value="30" />
-		<property name="MaxHealth" value="4500" />
+        <property name="MaxHealth" value="4500" />
 		<property name="PhysicsBody" value="zombieStandardFemale" />
 		<property name="RootMotion" value="true" />
 		<property name="HasDeathAnim" value="true" />
@@ -364,7 +364,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.65" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.2" />
+		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="1.2" />
 		<property name="ExperienceGain" value="17" />
 		<property name="LowerLegDismemberThreshold" value="0" />
@@ -389,7 +389,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.53" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.9" />
 		<property name="TimeStayAfterDeath" value="3" />
 		<property name="LootListOnDeath" value="153" />
@@ -614,10 +614,10 @@
 		<property name="HandItem" value="handZombieDog" />
 		<property name="Class" value="EntityZombieDog" />
 		<property name="AvatarController" value="AvatarZombieDogController" />
-		<property name="WanderSpeed" value="0.5" />
+		<property name="WanderSpeed" value="0.8" />
 		<property name="ApproachSpeed" value="1.45" />
-		<property name="NightWanderSpeed" value="0.3" />
-		<property name="NightApproachSpeed" value="1.6" />
+		<property name="NightWanderSpeed" value="0.8" />
+		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="1.6" />
 		<property name="CanClimbLadders" value="false" />
 		<property name="RotateToGround" value="true" />
@@ -1675,11 +1675,104 @@
 		<drop event="Destroy" name="femur" count="1" />
 	</entity_class>
     <!--JZMOD Animals-->
-    <entity_class name="Buck" extends="animalStag">
+    <entity_class name="ZombieBaby" extends="zombieUMA">
+		<property name="Archetype" value="ZombieBaby" />
+		<property name="MaxHealth" value="800" />
+		<property name="HandItem" value="handZombie02" />
+		<property name="Class" value="EntityZombie" />
+		<property name="WalkType" value="8" />
+		<property name="CanClimbLadders" value="true" />
+		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack" />
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain" />
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath" />
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense" />
+		<property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.45" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.25" />
+		<property name="CanClimbVertical" value="true" />
+	</entity_class>
+     <entity_class name="ZombieBabyBoomer" extends="ZombieBaby">
+        <property name="Archetype" value="ZombieBaby"/>
+        <property name="Class" value="EntityZombieCop"/>
+        <property name="MaxHealth" value="1000"/>
+        <property name="HandItem" value="handBoomer"/>
+        <property name="WanderSpeed" value="0.5"/>
+        <property name="ApproachSpeed" value="1.5"/>
+        <property name="NightWanderSpeed" value="1"/>
+        <property name="NightApproachSpeed" value="2.25"/>
+        <property name="AITask-1" value="BreakDoor"/>
+        <property name="AITask-2" value="BreakBlock"/>
+        <property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+        <property name="AITask-6" value="ApproachSpot"/>
+        <property name="AITask-6" value="Wander"/>
+        <property name="Explosion.ParticleIndex" value="8" />
+		<property name="Explosion.RadiusBlocks" value="6" />
+		<property name="Explosion.RadiusEntities" value="2" />
+		<property name="Explosion.BlockDamage" value="1000" />
+		<property name="Explosion.EntityDamage" value="15" />
+		<property name="Explosion.DamageBonus.stone" value="10" />
+		<property name="Explosion.DamageBonus.metal" value="15" />
+		<property name="Explosion.DamageBonus.wood" value="5" />
+		<property name="Explosion.DamageBonus.glass" value="20" />
+		<property name="Explosion.DamageBonus.earth" value="0.1" />
+        <property name="Explosion.DamageBonus.steel" value="20" />
+		<property name="ExperienceGain" value="35" />
+		<property name="LegCrawlerThreshold" value="0" />
+		<property name="LegCrippleThreshold" value="0" />
+		<property name="KnockdownProneDamageThreshold" value="0" />
+		<property name="KnockdownKneelDamageThreshold" value="0" />
+        <property name="LegsExplosionDamageMultiplier" value="0.05"/>
+        <property name="ArmsExplosionDamageMultiplier" value="0.05"/>
+        <property name="HeadExplosionDamageMultiplier" value="0.05"/>
+        <property name="ChestExplosionDamageMultiplier" value="0.05"/>
+     </entity_class>
+     <entity_class name="WitchBoomer" extends="zombie01">
+        <property name="Mesh" value="Zombies/zombieStandardScreamerRagdoll" />
+        <property name="Class" value="EntityZombieCop"/>
+        <property name="MaxHealth" value="1000"/>
+        <property name="HandItem" value="handBoomer"/>
+        <property name="WalkType" value="8" />
+        <property name="WanderSpeed" value="0.5"/>
+        <property name="ApproachSpeed" value="1.5"/>
+        <property name="NightWanderSpeed" value="1"/>
+        <property name="NightApproachSpeed" value="2.25"/>
+        <property name="AITask-1" value="BreakDoor"/>
+        <property name="AITask-2" value="BreakBlock"/>
+        <property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
+        <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+        <property name="AITask-6" value="ApproachSpot"/>
+        <property name="AITask-6" value="Wander"/>
+        <property name="Explosion.ParticleIndex" value="8" />
+		<property name="Explosion.RadiusBlocks" value="6" />
+		<property name="Explosion.RadiusEntities" value="2" />
+		<property name="Explosion.BlockDamage" value="1000" />
+		<property name="Explosion.EntityDamage" value="15" />
+		<property name="Explosion.DamageBonus.stone" value="10" />
+		<property name="Explosion.DamageBonus.metal" value="15" />
+		<property name="Explosion.DamageBonus.wood" value="5" />
+		<property name="Explosion.DamageBonus.glass" value="20" />
+		<property name="Explosion.DamageBonus.earth" value="0.1" />
+        <property name="Explosion.DamageBonus.steel" value="20" />
+		<property name="ExperienceGain" value="35" />
+		<property name="LegCrawlerThreshold" value="0" />
+		<property name="LegCrippleThreshold" value="0" />
+		<property name="KnockdownProneDamageThreshold" value="0" />
+		<property name="KnockdownKneelDamageThreshold" value="0" />
+        <property name="LegsExplosionDamageMultiplier" value="0.05"/>
+        <property name="ArmsExplosionDamageMultiplier" value="0.05"/>
+        <property name="HeadExplosionDamageMultiplier" value="0.05"/>
+        <property name="ChestExplosionDamageMultiplier" value="0.05"/>
+     </entity_class>
+     <entity_class name="Buck" extends="animalStag">
 		<!-- General entity properties -->
 		<property name="WanderSpeed" value="0.7" />
         <property name="PanicSpeed" value="2.7" />
 		<property name="ApproachSpeed" value="2.2" />
+        <property name="HandItem" value="handBuck" />
        <!-- Mean Animal AI properties -->
         <property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="BreakDoor" />
@@ -1696,12 +1789,58 @@
 	    <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieDog" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
         <property name="AITarget-2" value="BlockingTargetTask" />
+        <!-- JZMOD Harvest For Beginner -->
+		<drop event="Harvest" name="rawMeat" count="5" />
+		<drop event="Harvest" name="animalHide" count="2" />
+		<drop event="Harvest" name="BrainMatter" count="2" />
+        <!--JZMOD Hunter-->
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="3" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="5" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="6" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="1" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="1" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="1" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
+		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="5" />
+		<drop event="Harvest" name="Sinew" tool_category="Hunter" count="1" prob=".75" />
+		<drop event="Harvest" name="Hoof" tool_category="Hunter" count="2" prob=".4" />
+		<drop event="Harvest" name="VenisonTenderloin" tool_category="Hunter" count="1" prob=".2" />
+		<drop event="Harvest" name="VenisonTenderloin" tool_category="Hunter" count="1" prob=".2" />
+		<!--JZMOD Butcher-->
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="8" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="1" prob=".4" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="1" prob=".4" />
+		<drop event="Harvest" name="AnimalBladder" tool_category="Butcher" count="1" prob=".2" />
+		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob=".75" />
+		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="1" prob="1" />
+		<drop event="Harvest" name="Hoof" tool_category="Butcher" count="2" prob=".4" />
+		<drop event="Harvest" name="Hoof" tool_category="Butcher" count="2" prob=".4" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Butcher" count="9" />
+		<drop event="Harvest" name="VenisonTenderloin" tool_category="Butcher" count="1" />
+		<drop event="Harvest" name="VenisonTenderloin" tool_category="Butcher" count="1" prob=".2" />
+		<drop event="Harvest" name="VenisonTenderloin" tool_category="Butcher" count="1" prob=".2" />
+		<!--JZMOD Destroy-->
+		<drop event="Destroy" name="femur" count="2" />
+		<drop event="Destroy" name="femur" tool_category="Hunter" count="2" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="3" />
     </entity_class>
     <entity_class name="Boar" extends="animalPig">
 		<!-- General entity properties -->
         <property name="WanderSpeed" value="0.7" />
         <property name="PanicSpeed" value="2.7" />
 		<property name="ApproachSpeed" value="2.2" />
+        <property name="HandItem" value="handBoar" />
 	    <!-- Mean Animal AI properties -->
         <property name="AITask-1" value="Swim" />
 		<property name="AITask-2" value="BreakDoor" />
@@ -1718,6 +1857,47 @@
 	    <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieDog" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
         <property name="AITarget-2" value="BlockingTargetTask" />
+        <!-- JZMOD Harvest For Beginner -->
+		<drop event="Harvest" name="rawMeat" count="6" />
+		<drop event="Harvest" name="animalHide" count="2" />
+		<drop event="Harvest" name="BrainMatter" count="2" />
+		<!--JZMOD Hunter-->
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Hunter" count="4" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="4" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Hunter" count="2" prob=".5" />
+		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
+		<drop event="Harvest" name="femur" tool_category="Hunter" count="1" prob=".4" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Hunter" count="10" />
+		<drop event="Harvest" name="Sinew" tool_category="Hunter" count="2" prob=".65" />
+		<drop event="Harvest" name="Hoof" tool_category="Hunter" count="2" prob=".4" />
+		<drop event="Harvest" name="PorkBelly" tool_category="Hunter" count="1" prob=".2" />
+		<drop event="Harvest" name="PorkBelly" tool_category="Hunter" count="1" prob=".2" />
+		<!--JZMOD Butcher-->
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="rawMeat" tool_category="Butcher" count="4" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="4" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="animalFat" tool_category="Butcher" count="2" prob=".5" />
+		<drop event="Harvest" name="femur" tool_category="Butcher" count="1" prob=".4" />
+		<drop event="Harvest" name="AnimalBladder" tool_category="Butcher" count="1" prob=".2" />
+		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="2" prob=".75" />
+		<drop event="Harvest" name="Sinew" tool_category="Butcher" count="2" prob="1" />
+		<drop event="Harvest" name="Hoof" tool_category="Butcher" count="2" prob=".4" />
+		<drop event="Harvest" name="Hoof" tool_category="Butcher" count="2" prob=".4" />
+		<drop event="Harvest" name="BrainMatter" tool_category="Butcher" count="10" />
+		<drop event="Harvest" name="PorkBelly" tool_category="Butcher" count="2" />
+		<!--JZMOD Destroy-->
+		<drop event="Destroy" name="femur" count="2" />
+		<drop event="Destroy" name="femur" tool_category="Hunter" count="2" />
+		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
 	</entity_class>
     <entity_class name="crocodile">
 		<!-- Mesh and class properties -->
@@ -2490,7 +2670,7 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.25" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
 	<entity_class name="Joe1" extends="zombieJoe">
@@ -2498,7 +2678,7 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.3" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.2" />
+		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
 	<entity_class name="Arlene1" extends="zombieArlene">
@@ -2506,7 +2686,7 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.33" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.25" />
+		<property name="NightApproachSpeed" value="1.7" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
 	<entity_class name="Darlene1" extends="zombieDarlene">
@@ -2514,7 +2694,7 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.2" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
 	<entity_class name="Marlene1" extends="zombieMarlene">
@@ -2522,7 +2702,7 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.35" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.5" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
 	<entity_class name="Yo1" extends="zombieYo">
@@ -2530,16 +2710,16 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.26" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.2" />
+		<property name="NightApproachSpeed" value="1.52" />
 		<property name="PanicSpeed" value="0.56" />
 	</entity_class>
 	<entity_class name="spider1" extends="spiderzombie">
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.07" />
-		<property name="ApproachSpeed" value="0.19" />
+		<property name="ApproachSpeed" value="0.64" />
 		<property name="NightWanderSpeed" value="0.07" />
-		<property name="NightApproachSpeed" value="1.4" />
+		<property name="NightApproachSpeed" value="1.65" />
 		<property name="PanicSpeed" value="0.54" />
 	</entity_class>
 	<entity_class name="burnt1" extends="burntzombie">
@@ -2547,7 +2727,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.59" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Nurse1" extends="zombieNurse">
@@ -2555,15 +2735,15 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.28" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.25" />
+		<property name="NightApproachSpeed" value="1.45" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
 	<entity_class name="Steve1" extends="zombieSteve">
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.15" />
+		<property name="ApproachSpeed" value="0.61" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.39" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
     
@@ -2573,7 +2753,7 @@
 		<property name="WanderSpeed" value="0.06" />
 		<property name="ApproachSpeed" value="0.18" />
 		<property name="NightWanderSpeed" value="0.07" />
-		<property name="NightApproachSpeed" value="1.15" />
+		<property name="NightApproachSpeed" value="1.95" />
 		<property name="PanicSpeed" value="0.50" />
 	</entity_class>
 	<entity_class name="Joe2" extends="zombieJoe">
@@ -2581,7 +2761,7 @@
 		<property name="WanderSpeed" value="0.06" />
 		<property name="ApproachSpeed" value="0.23" />
 		<property name="NightWanderSpeed" value="0.07" />
-		<property name="NightApproachSpeed" value="1.35" />
+		<property name="NightApproachSpeed" value="1.85" />
 		<property name="PanicSpeed" value="0.50" />
 	</entity_class>
 	<entity_class name="Moe2" extends="zombieMoe">
@@ -2589,7 +2769,7 @@
 		<property name="WanderSpeed" value="0.06" />
 		<property name="ApproachSpeed" value="0.18" />
 		<property name="NightWanderSpeed" value="0.07" />
-		<property name="NightApproachSpeed" value="1.05" />
+		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.50" />
 	</entity_class>
 	<entity_class name="Arlene2" extends="zombieArlene">
@@ -2597,7 +2777,7 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.4" />
 		<property name="NightWanderSpeed" value="0.05" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.57" />
 	</entity_class>
 	<entity_class name="Darlene2" extends="zombieDarlene">
@@ -2605,7 +2785,7 @@
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.3" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.15" />
+		<property name="NightApproachSpeed" value="1.58" />
 		<property name="PanicSpeed" value="0.8" />
 	</entity_class>
 	<entity_class name="Marlene2" extends="zombieMarlene">
@@ -2613,24 +2793,24 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.25" />
 		<property name="NightWanderSpeed" value="0.1" />
-		<property name="NightApproachSpeed" value="1.15" />
+		<property name="NightApproachSpeed" value="1.72" />
 		<property name="PanicSpeed" value="0.55" />
 	</entity_class>
 	<entity_class name="Yo2" extends="zombieYo">
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.05" />
-		<property name="ApproachSpeed" value="0.1" />
+		<property name="ApproachSpeed" value="0.55" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.2" />
+		<property name="NightApproachSpeed" value="1.81" />
 		<property name="PanicSpeed" value="0.85" />
 	</entity_class>
 	<entity_class name="spider2" extends="spiderzombie">
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="2" />
-		<property name="WanderSpeed" value="0.1" />
+		<property name="WanderSpeed" value="0.57" />
 		<property name="ApproachSpeed" value="0.36" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.73" />
 		<property name="PanicSpeed" value="0.8" />
 	</entity_class>
 	<entity_class name="burnt2" extends="burntzombie">
@@ -2638,7 +2818,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.52" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.85" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Nurse2" extends="zombieNurse">
@@ -2646,7 +2826,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.35" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1" />
+		<property name="NightApproachSpeed" value="1.5" />
 		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<!--JZMOD WALKTYPE 3-->
@@ -2655,7 +2835,7 @@
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.27" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.12" />
+		<property name="NightApproachSpeed" value="1.62" />
 		<property name="PanicSpeed" value="0.65" />
 	</entity_class>
 	<entity_class name="Boe3" extends="zombieBoe">
@@ -2663,7 +2843,7 @@
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.27" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.65" />
 	</entity_class>
 	<entity_class name="Joe3" extends="zombieJoe">
@@ -2671,7 +2851,7 @@
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.32" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.23" />
+		<property name="NightApproachSpeed" value="1.68" />
 		<property name="PanicSpeed" value="0.65" />
 	</entity_class>
 	<entity_class name="Moe3" extends="zombieMoe">
@@ -2679,14 +2859,14 @@
 		<property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.34" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.12" />
+		<property name="NightApproachSpeed" value="1.83" />
 	</entity_class>
 	<entity_class name="Marlene3" extends="zombieMarlene">
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.05" />
-		<property name="ApproachSpeed" value="0.15" />
+		<property name="ApproachSpeed" value="0.65" />
 		<property name="NightWanderSpeed" value="0.1" />
-		<property name="NightApproachSpeed" value="1.15" />
+		<property name="NightApproachSpeed" value="1.9" />
 		<property name="PanicSpeed" value="0.51" />
 	</entity_class>
 	<entity_class name="Yo3" extends="zombieYo">
@@ -2694,16 +2874,16 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.22" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.13" />
+		<property name="NightApproachSpeed" value="1.73" />
 		<property name="PanicSpeed" value="0.75" />
 	</entity_class>
 	<entity_class name="spider3" extends="spiderzombie">
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.06" />
-		<property name="ApproachSpeed" value="0.19" />
+		<property name="ApproachSpeed" value="0.60" />
 		<property name="NightWanderSpeed" value="0.06" />
-		<property name="NightApproachSpeed" value="1.35" />
+		<property name="NightApproachSpeed" value="1.71" />
 		<property name="PanicSpeed" value="0.50" />
 	</entity_class>
 	<entity_class name="burnt3" extends="burntzombie">
@@ -2711,7 +2891,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.58" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.45" />
+		<property name="NightApproachSpeed" value="1.68" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Nurse3" extends="zombieNurse">
@@ -2719,7 +2899,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.36" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.2" />
+		<property name="NightApproachSpeed" value="1.45" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<!--JZMOD CRAWLERS-->
@@ -2802,7 +2982,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.35" />
 		<property name="NightWanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<entity_class name="Boe5" extends="zombieBoe">
@@ -2810,7 +2990,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.3" />
 		<property name="NightWanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.35" />
+		<property name="NightApproachSpeed" value="1.85" />
 		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<entity_class name="Moe5" extends="zombieMoe">
@@ -2818,13 +2998,13 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.4" />
 		<property name="NightWanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<entity_class name="Arlene5" extends="zombieArlene">
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.05" />
-		<property name="ApproachSpeed" value="0.11" />
+		<property name="ApproachSpeed" value="0.58" />
 		<property name="NightWanderSpeed" value="0.06" />
 		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.50" />
@@ -2833,9 +3013,9 @@
 		<property name="CanClimbVertical" value="false" />
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.07" />
-		<property name="ApproachSpeed" value="0.1" />
+		<property name="ApproachSpeed" value="0.55" />
 		<property name="NightWanderSpeed" value="0.5" />
-		<property name="NightApproachSpeed" value="1.5" />
+		<property name="NightApproachSpeed" value="1.56" />
 		<property name="PanicSpeed" value="0.8" />
 	</entity_class>
 	<entity_class name="burnt5" extends="burntzombie">
@@ -2843,7 +3023,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.5" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Nurse5" extends="zombieNurse">
@@ -2851,7 +3031,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.2" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
     <entity_class name="Darlene5" extends="zombieDarlene">
@@ -2859,7 +3039,7 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.28" />
 		<property name="NightWanderSpeed" value="0.1" />
-		<property name="NightApproachSpeed" value="1.22" />
+		<property name="NightApproachSpeed" value="1.77" />
 		<property name="PanicSpeed" value="0.59" />
 	</entity_class>
 	<!--JZMOD WALKTYPE 6-->
@@ -2868,7 +3048,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.12" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Joe6" extends="zombieJoe">
@@ -2876,7 +3056,7 @@
 		<property name="WanderSpeed" value="0.03" />
 		<property name="ApproachSpeed" value="0.14" />
 		<property name="NightWanderSpeed" value="0.05" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.48" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Moe6" extends="zombieMoe">
@@ -2884,7 +3064,7 @@
 		<property name="WanderSpeed" value="0.03" />
 		<property name="ApproachSpeed" value="0.14" />
 		<property name="NightWanderSpeed" value="0.05" />
-		<property name="NightApproachSpeed" value="1.15" />
+		<property name="NightApproachSpeed" value="1.65" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Arlene6" extends="zombieArlene">
@@ -2892,7 +3072,7 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.23" />
 		<property name="NightWanderSpeed" value="0.1" />
-		<property name="NightApproachSpeed" value="1.12" />
+		<property name="NightApproachSpeed" value="1.68" />
 		<property name="PanicSpeed" value="0.59" />
 	</entity_class>
 	<entity_class name="Darlene6" extends="zombieDarlene">
@@ -2900,7 +3080,7 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.28" />
 		<property name="NightWanderSpeed" value="0.1" />
-		<property name="NightApproachSpeed" value="1.22" />
+		<property name="NightApproachSpeed" value="1.52" />
 		<property name="PanicSpeed" value="0.59" />
 	</entity_class>
 	<entity_class name="Marlene6" extends="zombieMarlene">
@@ -2908,15 +3088,15 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.3" />
 		<property name="NightWanderSpeed" value="0.1" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.63" />
 		<property name="PanicSpeed" value="0.55" />
 	</entity_class>
 	<entity_class name="Yo6" extends="zombieYo">
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.08" />
-		<property name="ApproachSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.65" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.2" />
+		<property name="NightApproachSpeed" value="1.87" />
 		<property name="PanicSpeed" value="0.7" />
 	</entity_class>
 	<entity_class name="spider6" extends="spiderzombie">
@@ -2925,15 +3105,15 @@
 		<property name="WanderSpeed" value="0.09" />
 		<property name="ApproachSpeed" value="0.24" />
 		<property name="NightWanderSpeed" value="0.12" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.74" />
 		<property name="PanicSpeed" value="0.62" />
 	</entity_class>
 	<entity_class name="burnt6" extends="burntzombie">
 		<property name="WalkType" value="6" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.55" />
+		<property name="ApproachSpeed" value="0.65" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.51" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Nurse6" extends="zombieNurse">
@@ -2941,7 +3121,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.48" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.18" />
+		<property name="NightApproachSpeed" value="1.65" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<!--JZMOD WALKTYPE 7-->
@@ -2958,23 +3138,23 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.28" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.1" />
+		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Moe7" extends="zombieMoe">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.25" />
+		<property name="ApproachSpeed" value="0.37" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.71" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Steve7" extends="zombieSteve">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.1" />
-		<property name="ApproachSpeed" value="0.21" />
+		<property name="ApproachSpeed" value="0.35" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.36" />
+		<property name="NightApproachSpeed" value="1.63" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Arlene7" extends="zombieArlene">
@@ -2982,7 +3162,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.28" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.24" />
+		<property name="NightApproachSpeed" value="1.58" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Darlene7" extends="zombieDarlene">
@@ -2990,7 +3170,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.29" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.25" />
+		<property name="NightApproachSpeed" value="1.75" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Marlene7" extends="zombieMarlene">
@@ -2998,7 +3178,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.22" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.29" />
+		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="Yo7" extends="zombieYo">
@@ -3006,7 +3186,7 @@
 		<property name="WanderSpeed" value="0.1" />
 		<property name="ApproachSpeed" value="0.28" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.5" />
+		<property name="NightApproachSpeed" value="1.83" />
 		<property name="PanicSpeed" value="0.9" />
 	</entity_class>
 	<entity_class name="spider7" extends="spiderzombie">
@@ -3023,7 +3203,7 @@
 		<property name="WalkType" value="8" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.55" />
+		<property name="ApproachSpeed" value="0.68" />
 		<property name="NightWanderSpeed" value="0.08" />
 		<property name="NightApproachSpeed" value="1.4" />
 		<property name="PanicSpeed" value="1.2" />
@@ -3034,7 +3214,7 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.55" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.2" />
+		<property name="NightApproachSpeed" value="1.7" />
 		<property name="PanicSpeed" value="1.2" />
 	</entity_class>
 	<entity_class name="Moe8" extends="zombieMoe">
@@ -3043,7 +3223,7 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.5" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.2" />
+		<property name="NightApproachSpeed" value="1.51" />
 		<property name="PanicSpeed" value="1.2" />
 	</entity_class>
 	<entity_class name="Arlene8" extends="zombieArlene">
@@ -3052,7 +3232,7 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.47" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.49" />
 		<property name="PanicSpeed" value="1.2" />
 	</entity_class>
 	<entity_class name="Darlene8" extends="zombieDarlene">
@@ -3061,7 +3241,7 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.47" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.35" />
+		<property name="NightApproachSpeed" value="1.68" />
 		<property name="PanicSpeed" value="1.2" />
 	</entity_class>
 	<entity_class name="Marlene8" extends="zombieMarlene">
@@ -3070,7 +3250,7 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.57" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.88" />
 		<property name="PanicSpeed" value="1.2" />
 	</entity_class>
 	<entity_class name="Yo8" extends="zombieYo">
@@ -3079,7 +3259,7 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.48" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.28" />
+		<property name="NightApproachSpeed" value="1.73" />
 		<property name="PanicSpeed" value="1.2" />
 	</entity_class>
 	<entity_class name="burnt8" extends="burntzombie">
@@ -3088,7 +3268,7 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.58" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.35" />
+		<property name="NightApproachSpeed" value="1.67" />
 		<property name="PanicSpeed" value="1.2" />
 	</entity_class>
 	<entity_class name="Nurse8" extends="zombieNurse">
@@ -3097,37 +3277,37 @@
 		<property name="WanderSpeed" value="0.2" />
 		<property name="ApproachSpeed" value="0.49" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.29" />
+		<property name="NightApproachSpeed" value="1.68" />
 		<property name="PanicSpeed" value="1.2" />
 	</entity_class>
 	<entity_class name="Steve8" extends="zombieSteve">
 		<property name="WalkType" value="8" />
 		<property name="CanClimbVertical" value="true" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="ApproachSpeed" value="0.37" />
+		<property name="ApproachSpeed" value="0.63" />
 		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.49" />
+		<property name="NightApproachSpeed" value="1.84" />
 		<property name="PanicSpeed" value="1.2" />
 	</entity_class>
 	<!--JZMOD FERALS-->
 	<entity_class name="feral1" extends="zombieferal">
 		<property name="WalkType" value="1" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.75" />
+		<property name="NightApproachSpeed" value="1.9" />
 		<property name="ApproachSpeed" value="0.88" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<entity_class name="feral3" extends="zombieferal">
 		<property name="WalkType" value="3" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.7" />
-		<property name="ApproachSpeed" value="0.89" />
+		<property name="NightApproachSpeed" value="1.9" />
+		<property name="ApproachSpeed" value="0.93" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<entity_class name="feral5" extends="zombieferal">
 		<property name="WalkType" value="5" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.75" />
+		<property name="NightApproachSpeed" value="1.9" />
 		<property name="ApproachSpeed" value="0.89" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
@@ -3141,22 +3321,22 @@
 	<entity_class name="feral7" extends="zombieferal">
 		<property name="WalkType" value="7" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.6" />
+		<property name="NightApproachSpeed" value="1.69" />
 		<property name="ApproachSpeed" value="0.78" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<entity_class name="feral8" extends="zombieferal">
 		<property name="WalkType" value="8" />
 		<property name="WanderSpeed" value="0.2" />
-		<property name="NightApproachSpeed" value="1.8" />
+		<property name="NightApproachSpeed" value="1.84" />
 		<property name="ApproachSpeed" value="0.84" />
 		<property name="PanicSpeed" value="1.4" />
 	</entity_class>
 	<!-- JZMOD SNOW ZOMBIES -->
 	<entity_class name="snow1" extends="snowzombie">
 		<property name="WalkType" value="1" />
-		<property name="ApproachSpeed" value="0.23" />
-		<property name="NightApproachSpeed" value="1.4" />
+		<property name="ApproachSpeed" value="0.36" />
+		<property name="NightApproachSpeed" value="1.6" />
 	</entity_class>
 	<entity_class name="snow3" extends="snowzombie">
 		<property name="WalkType" value="3" />
@@ -3166,76 +3346,76 @@
 	<entity_class name="snow4" extends="snowzombie">
 		<property name="WalkType" value="4" />
 		<property name="ApproachSpeed" value="1.25" />
-		<property name="NightApproachSpeed" value="1.18" />
+		<property name="NightApproachSpeed" value="1.68" />
 	</entity_class>
 	<entity_class name="snow5" extends="snowzombie">
 		<property name="WalkType" value="5" />
 		<property name="ApproachSpeed" value="0.26" />
-		<property name="NightApproachSpeed" value="1.28" />
+		<property name="NightApproachSpeed" value="1.78" />
 	</entity_class>
 	<entity_class name="snow6" extends="snowzombie">
 		<property name="WalkType" value="6" />
-		<property name="ApproachSpeed" value="0.28" />
-		<property name="NightApproachSpeed" value="1.35" />
+		<property name="ApproachSpeed" value="0.35" />
+		<property name="NightApproachSpeed" value="1.85" />
 	</entity_class>
 	<entity_class name="snow7" extends="snowzombie">
 		<property name="WalkType" value="7" />
 		<property name="ApproachSpeed" value="0.3" />
-		<property name="NightApproachSpeed" value="1.21" />
+		<property name="NightApproachSpeed" value="1.71" />
 	</entity_class>
 	<entity_class name="snow8" extends="snowzombie">
 		<property name="WalkType" value="8" />
 		<property name="ApproachSpeed" value="0.32" />
-		<property name="NightApproachSpeed" value="1.18" />
+		<property name="NightApproachSpeed" value="1.67" />
 	</entity_class>
     <!--JZMOD COP-->
     <entity_class name="Cop1" extends="fatzombiecop">
 		<property name="WalkType" value="1" />
-		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.25" />
+		<property name="WanderSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.45" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.5" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
     <entity_class name="Cop2" extends="fatzombiecop">
 		<property name="WalkType" value="2" />
-		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.25" />
+		<property name="WanderSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.38" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.8" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
     <entity_class name="Cop3" extends="fatzombiecop">
 		<property name="WalkType" value="3" />
-		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.25" />
+		<property name="WanderSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.27" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.56" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
     <entity_class name="Cop5" extends="fatzombiecop">
 		<property name="WalkType" value="5" />
-		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.25" />
+		<property name="WanderSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.38" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.6" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
     <entity_class name="Cop6" extends="fatzombiecop">
 		<property name="WalkType" value="6" />
-		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.25" />
+		<property name="WanderSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.4" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.75" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
     <entity_class name="Cop8" extends="fatzombiecop">
         <property name="CanClimbVertical" value="true" />
 		<property name="WalkType" value="8" />
-		<property name="WanderSpeed" value="0.09" />
-		<property name="ApproachSpeed" value="0.25" />
+		<property name="WanderSpeed" value="0.2" />
+		<property name="ApproachSpeed" value="0.33" />
 		<property name="NightWanderSpeed" value="0.09" />
-		<property name="NightApproachSpeed" value="1.3" />
+		<property name="NightApproachSpeed" value="1.55" />
 		<property name="PanicSpeed" value="0.6" />
 	</entity_class>
     <!--JZMOD ADDED UMA ZOMBIES-->
@@ -3269,25 +3449,7 @@
 		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 	</entity_class>
 	<!-- JZMOD BABY ZOMBIE-->
-	<entity_class name="ZombieBaby" extends="zombieUMA">
-		<property name="Archetype" value="ZombieBaby" />
-		<property name="MaxHealth" value="800" />
-		<property name="HandItem" value="handZombie02" />
-		<property name="Class" value="EntityZombie" />
-		<property name="WalkType" value="8" />
-		<property name="CanClimbLadders" value="true" />
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
-		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert" />
-		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack" />
-		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain" />
-		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath" />
-		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense" />
-		<property name="WanderSpeed" value="0.08" />
-		<property name="ApproachSpeed" value="0.45" />
-		<property name="NightWanderSpeed" value="0.08" />
-		<property name="NightApproachSpeed" value="1.25" />
-		<property name="CanClimbVertical" value="true" />
-	</entity_class>
+	
 	<!-- JZMOD Brute-->
 	<entity_class name="ZombieBrute" extends="zombieUMA">
 		<property name="Archetype" value="ZombieBrute" />
@@ -3298,9 +3460,9 @@
 		<property name="WalkType" value="2" />
 		<property name="WanderSpeed" value="0.25" />
 		<property name="PanicSpeed" value="1.0" />
-		<property name="ApproachSpeed" value="0.35" />
+		<property name="ApproachSpeed" value="0.46" />
 		<property name="NightWanderSpeed" value="0.25" />
-		<property name="NightApproachSpeed" value="1.5" />
+		<property name="NightApproachSpeed" value="1.86" />
 		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
 		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
 		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack" />
@@ -3322,6 +3484,392 @@
 		<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC" />
 		<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer" />
 	</entity_class>
+    
+    
+    <!--JZMOD NIGHT TOWER BUSTING ZOMBIES-->
+    <entity_class name="HungryHornet" extends="hornet">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="1" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+	</entity_class>
+    <entity_class name="HungryFeral8" extends="feral8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryFeral7" extends="feral7">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryFeral6" extends="feral6">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryFeral5" extends="feral5">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryFeral3" extends="feral3">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryZombieFeral" extends="zombieferal">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryFeral1" extends="feral1">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryBrute" extends="ZombieBrute">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryMoe7" extends="Moe7">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryMoe6" extends="Moe6">
+        <property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryMoe5" extends="Moe5">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryMoe3" extends="Moe3">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryMoe2" extends="Moe2">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryZombieMoe" extends="zombieMoe">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryCop8" extends="Cop8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryFatCop" extends="fatzombiecop">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryCop6" extends="Cop6">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryCop5" extends="Cop5">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryCop3" extends="Cop3">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryCop2" extends="Cop2">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryCop1" extends="Cop1">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryMarlene" extends="Marlene8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryDarlene" extends="Darlene8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryArlene" extends="Arlene8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryMoe" extends="Moe8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryBoe" extends="Boe8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungrySpider" extends="spiderzombie">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryBurnt" extends="burnt8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryYo" extends="Yo8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryNurse" extends="Nurse8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungrySteve" extends="Steve8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryJoe" extends="Joe8">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryWitchBoomer" extends="WitchBoomer">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="MaxHealth" value="4500" />
+        <property name="WanderSpeed" value="0.08" />
+		<property name="ApproachSpeed" value="0.2" />
+		<property name="NightWanderSpeed" value="0.08" />
+		<property name="NightApproachSpeed" value="1.1" />
+		<property name="PanicSpeed" value="0.55" />
+	</entity_class>
+    <entity_class name="HungryBabyBoomer" extends="ZombieBabyBoomer">
+		<property name="ExperienceGain" value="30" />
+        <property name="HandItem" value="handStrongZombie" />
+		<property name="LootListOnDeath" value="162" />
+		<property name="WanderSpeed" value="1" />
+		<property name="ApproachSpeed" value="1.8" />
+		<property name="NightWanderSpeed" value="1" />
+		<property name="NightApproachSpeed" value="2.5" />
+	</entity_class>
+        
 	<entity_class name="Dummy">
 		<property name="Mesh" value="LootContainers/backpack_droppedPrefab" />
 		<property name="ModelType" value="Custom" />

@@ -2086,8 +2086,6 @@
 			<recipe name="powerStreetLight01" unlock_level="1" />
 			<recipe name="powerIndustrialLight01" unlock_level="1" />
 			<recipe name="dieselGen" unlock_level="1" />
-			<recipe name="electricParts" unlock_level="1" />
-			<recipe name="electronicParts" unlock_level="1" />
 			<effect name="HarvestCount">
 				<multiply perk_level="0" value="1" />
 				<multiply perk_level="1" value="2" />
@@ -2145,7 +2143,6 @@
 			<recipe name="auger" unlock_level="1" />
 			<recipe name="chainsaw" unlock_level="1" />
 			<recipe name="wrench" unlock_level="1" />
-			<recipe name="mechanicalParts" unlock_level="1" />
 			<effect name="HarvestCount">
 				<multiply perk_level="0" value="1" />
 				<multiply perk_level="1" value="2" />

@@ -2657,6 +2657,19 @@
 	<lootcontainer id="111" count="1" size="3,3" destroy_on_close="true" open_time="8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest">
 		<item group="BikeNABox" count="1" />
 	</lootcontainer>
+    <!-- Player crafted storage loot containers-->
+	<lootcontainer id="112" size="8,8" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker"> 
+    </lootcontainer>
+	<lootcontainer id="113" size="8,8" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet"> 
+    </lootcontainer>
+	<lootcontainer id="114" size="8,8" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge"> 
+    </lootcontainer>	
+    <lootcontainer id="115" size="8,8" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler"> 
+    </lootcontainer>
+    <lootcontainer id="116" size="8,8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest"> 
+    </lootcontainer>
+	<lootcontainer id="117" size="8,8" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer"> 
+    </lootcontainer>
 		<!-- Day Zombies -->
 		<!--NightZombie Loot Containers  150-189 -->
 		<!-- lootcontainer 153 Burnt Zombie Loot -->

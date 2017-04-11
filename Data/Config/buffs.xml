@@ -677,7 +677,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	</buff>
 	<!-- JZMOD Bandit Zombie Bonus -->
 	<buff id="banditBonus" mutex="isPlayer" duration="2" stack="extend">
-		<modify id="0" stat="health" amount="-400" rate="1" />
+		<modify id="0" stat="health" amount="-200" rate="1" />
 	</buff>
 	<!-- JZMOD MYSTERY CAN FOOD -->
 	<buff id="randomFood1" duration="1.5" stack="discard">
@@ -799,7 +799,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="HornetStun" type="staminadown" duration="1.8" castsound="Player_Female/player2death" >
 		<modify id="0" stat="stamina" amount="-50" rate="1" />
     </buff>
-    <buff id="Stinger" name_key="Oozing Puncture Wound" type="healthdown" smell="mediumSmell" duration="7200" tooltip_key="That stuff strinks" description_key="The hornet’s stinger left a hole in you that’s oozing stinky venom and it attracting zombies. Craft a poultice and use it on the wound to draw out the venom and stop the smell." icon="Stinger" cures="Poultice" >
+    <buff id="Stinger" name_key="Oozing Puncture Wound" type="healthdown" smell="mediumSmell" duration="7200" tooltip_key="That stuff strinks" description_key="The hornet’s stinger left a hole in you that’s oozing stinky venom and it attracting zombies. Craft a poultice and use it on the wound to draw out the venom and stop the smell." icon="ui_game_symbol_Stinger" cures="Poultice" >
 		<modify id="0" stat="coretemp" modifyValue="-20" />
         <modify id="1" stat="health" amount="-1" rate="60" />
     </buff>
@@ -823,4 +823,23 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
     <buff id="BrainChill" type="coretemp" stack="stack" stacklimit="180">
 		<modify id="0" stat="coretemp" modifyValue="-3" />
     </buff>
+    <!--JZMOD ZOBIE BOMBERS-->
+    <buff id="SuicideBomber" duration="1" ffcheck="true" castsound="malehateattack" onexpired="SuicideBomberCharge">
+        <modify id="0" stat="health" setValue="50"/>
+    </buff>
+    <buff id="SuicideBomberCharge" duration="20" ffcheck="true" actions="attach(ParticleEffects/p_onFire, @impact)">
+        <modify id="0" stat="speedmodifier" modifyMaxValue="2.0"/>
+        <modify id="1" stat="speedmodifier" mulValue="2.0"/>
+        <modify id="2" stat="health" setValue="500"/>
+    </buff>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </buffs>

@@ -3738,6 +3738,7 @@ then add recipes for those white/red/green metals
 		<property name="StabilitySupport" value="false" />
 		<property name="Shape" value="Ext3dModel" />
 		<property name="Mesh" value="models" />
+        <property name="MaxDamage" value="1000" />
 		<property name="Model" value="OutdoorDecor/scrapmetalblock" param1="main_mesh" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
@@ -7791,7 +7792,7 @@ kind of free
 		<property name="Material" value="hay" />
 		<property name="Texture" value="196" />
 		<property name="FuelValue" value="8" />
-		<property name="CanPickup" value="false" />
+		<property name="CanPickup" value="true" />
 		<property name="FallDamage" value="false" />
 		<drop event="Destroy" name="PlantFibers" count="6,10" />
 		<property name="EconomicValue" value="10" />
@@ -13879,6 +13880,7 @@ kind of free
 	<block id="17" name="cntSteelGunSafe">
 		<property name="Extends" value="cntGunSafe" />
 		<property name="CustomIcon" value="ui_game_symbol_SteelGunSafe" />
+        <property name="DescriptionKey" value="cntSteelGunSafeDesc" />
 		<property name="Material" value="Msteel" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#hk?WeaponWorkbenchPrefab" />
@@ -14095,10 +14097,7 @@ kind of free
 		<property name="Extends" value="candleWall" />
 		<property name="Class" value="Torch" />
         <property name="ParticleName" value="candleWall_flame" />
-        <property name="Class" value="UpgradeRated" />
-		<property name="UpgradeRated.ToBlock" value="air" />
-		<property name="UpgradeRated.Rate" value="15" />		
-	</block>
+    </block>
 	<block id="72" name="CandleTable">
 		<property name="Extends" value="candleTable" />
 		<property name="Class" value="Torch" />
@@ -17150,5 +17149,153 @@ kind of free
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Science" />
+	</block>
+    <block id="1931" name="cntUSRLockers">
+		<property name="Extends" value="cntLockers" />
+		<property name="Class" value="SecureLoot" />
+		<property name="CustomIcon" value="cntLockers" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="LootList" value="112" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+		<property name="DowngradeBlock" value="cntUSRLockersInsecure" />
+	</block>
+	<block id="1932" name="cntUSRFileCabinet">
+		<property name="Extends" value="cntFileCabinet" />
+		<property name="Class" value="SecureLoot" />
+		<property name="CustomIcon" value="cntFileCabinet" />
+		<property name="LootList" value="113" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+		<property name="DowngradeBlock" value="cntEPSFileCabinetInsecure" />
+	</block>
+	<block id="1933" name="cntUSRFridge">
+		<property name="Extends" value="cntFridge" />
+		<property name="CustomIcon" value="cntFridge" />
+		<property name="Class" value="SecureLoot" />
+		<property name="LootList" value="114" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+		 <property name="DowngradeBlock" value="cntEPSFridgeInsecure" />
+	</block>
+	<block id="1934" name="cntUSRBeerCooler">
+		<property name="Extends" value="cntBeerCooler" />
+		<property name="CustomIcon" value="cntBeerCooler" />
+		<property name="Class" value="SecureLoot" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="LootList" value="115" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+		<property name="DowngradeBlock" value="cntEPSBeerCoolerInsecure" />
+	</block>
+	<block id="1935" name="cntUSRMedicineCabinet">
+		<property name="Extends" value="cntMedicineCabinet" />
+		<property name="CustomIcon" value="cntMedicineCabinet" />
+        <property name="Material" value="metal" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Model" value="#lootcontainers?MedicalBoxPrefab" />
+		<property name="Class" value="SecureLoot" />
+		<property name="LootList" value="116" />
+		<drop event="Destroy" name="0" count="1" />
+        <property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+		<property name="DowngradeBlock" value="cntEPSMedicineCabinetInsecure" />
+	</block>
+	<block id="1936" name="cntUSRBookcase">
+		<property name="Extends" value="cntBookcase" />
+		<property name="Class" value="SecureLoot" />
+		<property name="CustomIcon" value="cntBookStoreBookcase" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="LootList" value="117" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+		<property name="DowngradeBlock" value="cntEPSBookcaseInsecure" />
+	</block>
+	<block id="1937" name="cntUSRCoffin">
+		<property name="Extends" value="cntCoffin" />
+		<property name="Class" value="SecureLoot" />
+		<property name="CustomIcon" value="cntCoffin" />
+		<property name="LootList" value="116" />
+		<property name="Group" value="Decor/Miscellaneous" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+		<property name="DowngradeBlock" value="cntEPSCoffinInsecure" />
+	</block>
+	
+	<block id="1938" name="cntUSRLockersInsecure">
+		<property name="Extends" value="cntLockers" />
+		<property name="Class" value="Loot" />
+		<property name="CustomIcon" value="cntLockers" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="LootList" value="112" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1939" name="cntEPSFileCabinetInsecure">
+		<property name="Extends" value="cntFileCabinet" />
+		<property name="Class" value="Loot" />
+		<property name="CustomIcon" value="cntFileCabinet" />
+		<property name="LootList" value="113" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1940" name="cntEPSFridgeInsecure">
+		<property name="Extends" value="cntFridge" />
+		<property name="CustomIcon" value="cntFridge" />
+		<property name="Class" value="Loot" />
+		<property name="LootList" value="114" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1941" name="cntEPSBeerCoolerInsecure">
+		<property name="Extends" value="cntBeerCooler" />
+		<property name="CustomIcon" value="cntBeerCooler" />
+		<property name="Class" value="Loot" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="LootList" value="115" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1942" name="cntEPSMedicineCabinetInsecure">
+		<property name="Extends" value="cntMedicineCabinet" />
+        <property name="Material" value="metal" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<property name="Model" value="#lootcontainers?MedicalBoxPrefab" />
+		<property name="CustomIcon" value="cntMedicineCabinet" />
+		<property name="Class" value="Loot" />
+		<property name="LootList" value="116" />
+		<drop event="Destroy" name="0" count="1" />
+        <property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1943" name="cntEPSBookcaseInsecure">
+		<property name="Extends" value="cntBookcase" />
+		<property name="Class" value="Loot" />
+		<property name="CustomIcon" value="cntBookStoreBookcase" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="LootList" value="117" />
+		<drop event="Destroy" count="0" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
+	</block>
+	<block id="1944" name="cntEPSCoffinInsecure">
+		<property name="Extends" value="cntCoffin" />
+		<property name="Class" value="Loot" />
+		<property name="CustomIcon" value="cntCoffin" />
+		<property name="LootList" value="118" />
+		<property name="Group" value="Decor/Miscellaneous" />
+		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
+		<property name="Group" value="Building" />
 	</block>
 </blocks>
