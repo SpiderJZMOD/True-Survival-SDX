@@ -11,8 +11,23 @@
 	<!-- JOEL: change "respawndelay" to world days, change "maxcount" to entities per area -->
 	<!-- Diersville -->
 	<biome name="city">
-		<spawn maxcount="2" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
+		<spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
+		<spawn maxcount="1" respawndelay="3" time="Any" entitygroup="SnowZombies" />
 		<spawn maxcount="2" respawndelay="1" time="Night" entitygroup="ZombiesNight" />
+<<<<<<< HEAD
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsSnow" spawndeadchance="0.05" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsForest" spawndeadchance="0.05" />
+		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
+	</biome>
+	<!-- Gravestown & Perishton-->
+	<biome name="city_wasteland">
+		<spawn maxcount="4" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
+		<spawn maxcount="4" respawndelay="0" time="Night" entitygroup="ZombiesWastelandNight" />
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsSmall" spawndeadchance="0.9" />
+        <spawn maxcount="1" respawndelay="20" time="Any" entitygroup="ArmedSurvivorGroup" />
+=======
 		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="AnimalsSnow" spawnDeadChance="0" />
     </biome>
 	<!-- Gravestown & Perishton-->
@@ -22,54 +37,112 @@
         <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBossNight" />
 		<spawn maxcount="6" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
+>>>>>>> ec2b7f98567878b095c3cb6a64da2db5db9077a5
     </biome>
 	<!-- Random gen city-->
 	<biome name="wasteland_hub">
-		<spawn maxcount="5" respawndelay="0" time="Day" entitygroup="ZombiesWasteland" />
+		<spawn maxcount="4" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
 		<spawn maxcount="5" respawndelay="0" time="Night" entitygroup="ZombiesWastelandNight" />
+<<<<<<< HEAD
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="ZombiesBoss" />
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawndeadchance="0.1" />
+        <spawn maxcount="1" respawndelay="20" time="Any" entitygroup="ArmedSurvivorGroup" />
+=======
 		<spawn maxcount="1" respawndelay="1" time="Day" entitygroup="ZombiesBoss" />
         <spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBossNight" />
 		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
+>>>>>>> ec2b7f98567878b095c3cb6a64da2db5db9077a5
     </biome>
 	<biome name="forest">
 		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="ZombiesNight" />
+<<<<<<< HEAD
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsAll" spawndeadchance="0.05" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsForest" spawndeadchance="0.05" />
+        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
+=======
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="ForestAnimals" spawnDeadChance="0" />
+>>>>>>> ec2b7f98567878b095c3cb6a64da2db5db9077a5
     </biome>
 	<biome name="pine_forest">
 		<spawn maxcount="2" respawndelay="2" time="Any" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="2" time="Night" entitygroup="ZombiesNight" />
+<<<<<<< HEAD
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsAll" spawndeadchance="0.05" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsForest" spawndeadchance="0.05" />
+        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
+	</biome>
+=======
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="ForestAnimals" spawnDeadChance="0" />
     </biome>
+>>>>>>> ec2b7f98567878b095c3cb6a64da2db5db9077a5
 	<biome name="plains">
-		<spawn maxcount="1" respawndelay="4" time="Any" entitygroup="ZombiesAll" />
+		<spawn maxcount="2" respawndelay="4" time="Any" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="4" time="Night" entitygroup="ZombiesNight" />
+<<<<<<< HEAD
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsSmall" spawndeadchance="0.05" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsPlains" spawndeadchance="0.05" />
+         <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
+	</biome>
+=======
 		<spawn maxcount="1" respawndelay="30" time="Any" entitygroup="PlainsDesertAnimals" spawnDeadChance="0" />
     </biome>
+>>>>>>> ec2b7f98567878b095c3cb6a64da2db5db9077a5
 	<biome name="desert">
-		<spawn maxcount="1" respawndelay="3" time="Any" entitygroup="ZombiesAll" />
+		<spawn maxcount="3" respawndelay="3" time="Any" entitygroup="ZombiesAll" />
 		<spawn maxcount="2" respawndelay="2" time="Night" entitygroup="ZombiesNight" />
+<<<<<<< HEAD
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsSmall" spawndeadchance="0.05" />
+		<spawn maxcount="3" respawndelay="7" time="Any" entitygroup="AnimalsAllDesert" spawndeadchance="0.1" />	
+        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
+	</biome>
+=======
 		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="PlainsDesertAnimals" spawnDeadChance="0" />
     </biome>
+>>>>>>> ec2b7f98567878b095c3cb6a64da2db5db9077a5
 	<biome name="wasteland">
-		<spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesAll" />
+		<spawn maxcount="3" respawndelay="1" time="Day" entitygroup="ZombiesWasteland" />
 		<spawn maxcount="4" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBoss" />
+<<<<<<< HEAD
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsSmall" spawndeadchance="0.9" />
+        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="ArmedSurvivorGroup" />
+	</biome>
+=======
         <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="BurntForestAnimals" spawnDeadChance="0" />
     </biome>
+>>>>>>> ec2b7f98567878b095c3cb6a64da2db5db9077a5
 	<biome name="burnt_forest">
 		<spawn maxcount="3" respawndelay="3" time="Any" entitygroup="ZombiesBurntForest" />
 		<spawn maxcount="5" respawndelay="1" time="Night" entitygroup="ZombiesWastelandNight" />
 		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBoss" />
+<<<<<<< HEAD
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsSmall" spawndeadchance="0.1" />
+        <spawn maxcount="1" respawndelay="20" time="Any" entitygroup="ArmedSurvivorGroup" />
+=======
         <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="BurntForestAnimals" spawnDeadChance="0" />
+>>>>>>> ec2b7f98567878b095c3cb6a64da2db5db9077a5
     </biome>
 	<biome name="snow">
 		<spawn maxcount="2" respawndelay="3" time="Any" entitygroup="SnowZombies" />
+		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="SnowZombies" />
 		<spawn maxcount="2" respawndelay="3" time="Night" entitygroup="ZombiesNight" />
+<<<<<<< HEAD
+		<spawn maxcount="1" respawndelay="14" time="Any" entitygroup="AnimalsSnow" spawndeadchance="0.05" />
+        <spawn maxcount="1" respawndelay="40" time="Any" entitygroup="StartingSurvivorGroup" />
+=======
 		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="AnimalsSnow" spawnDeadChance="0" />
+>>>>>>> ec2b7f98567878b095c3cb6a64da2db5db9077a5
     </biome>
 	<biome name="water">
-		<spawn maxcount="1" respawndelay="40" time="Any" entitygroup="CrocGrp" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="7" time="Any" entitygroup="AnimalsWater" spawndeadchance="0.1" />
+	</biome>
+	<biome name="radiated">
+		<spawn maxcount="3" respawndelay="0" time="Any" entitygroup="ZombiesWastelandNight" />
+		<spawn maxcount="1" respawndelay="1" time="Night" entitygroup="ZombiesBoss" />
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="RadZoneAnimalGrp" spawnDeadChance="0" />
+		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="AnimalsAll" spawndeadchance="1" />
 	</biome>
 	<!-- Entity spawner classes -->
 	<!-- Dogs Barns -->
@@ -807,61 +880,92 @@
 			<property name="ResetToday" value="true" />
 			<property name="EntityGroupName" value="ZombiesNight" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 			<property name="TotalPerWave" value="50" />
 		</day>
 		<day value="14">
 			<property name="ResetToday" value="true" />
 			<property name="EntityGroupName" value="ZombiesNight" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 			<property name="TotalPerWave" value="100" />
 		</day>
 		<day value="21">
 			<property name="ResetToday" value="true" />
 			<property name="EntityGroupName" value="ZombiesWastelandNightNoBears" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 			<property name="TotalPerWave" value="150" />
 		</day>
 		<day value="28">
 			<property name="ResetToday" value="true" />
 			<property name="EntityGroupName" value="ZombiesWastelandNightNoBears" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 			<property name="TotalPerWave" value="175" />
 		</day>
 		<day value="35">
 			<property name="ResetToday" value="true" />
 			<property name="EntityGroupName" value="ZombiesWastelandNightNoBears" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 			<property name="TotalPerWave" value="200" />
 		</day>
 		<day value="42">
 			<property name="ResetToday" value="true" />
 			<property name="EntityGroupName" value="ZombiesWastelandNightNoBears" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 			<property name="TotalPerWave" value="250" />
 		</day>
 		<day value="49">
 			<property name="ResetToday" value="true" />
 			<property name="EntityGroupName" value="ZombiesWastelandNight2NoBears" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 			<property name="TotalPerWave" value="300" />
 		</day>
 	</entityspawner>
-	<entityspawner name="Scouts" dynamic="true" wrapMode="wrap">
+	<entityspawner name="Scouts" dynamic="true">
+		<day value="1,7">
+			<property name="ResetToday"		value="true" />
+			<property name="EntityGroupName"	value="ZombieScouts" />
+			<property name="Time"			value="Any" />
+			<property name="DelayBetweenSpawns"	value="1" />
+			<property name="TotalAlive"		value="1" />
+			<property name="TotalPerWave"		value="1" />
+		</day>
+		<day value="8,14">
+			<property name="ResetToday"		value="true" />
+			<property name="EntityGroupName"	value="ZombieScouts" />
+			<property name="Time"			value="Any" />
+			<property name="DelayBetweenSpawns"	value="1" />
+			<property name="TotalAlive"		value="2" />
+			<property name="TotalPerWave"		value="1" />
+		</day>
+		<day value="15,28">
+			<property name="ResetToday"		value="true" />
+			<property name="EntityGroupName"	value="ScoutParty" />
+			<property name="Time"			value="Any" />
+			<property name="DelayBetweenSpawns"	value="1" />
+			<property name="TotalAlive"		value="4" />
+			<property name="TotalPerWave"		value="1,2" />
+		</day>
+		<day value="29,56">
+			<property name="ResetToday"		value="true" />
+			<property name="EntityGroupName"	value="ScoutParty" />
+			<property name="Time"			value="Any" />
+			<property name="DelayBetweenSpawns"	value="1" />
+			<property name="TotalAlive"		value="6" />
+			<property name="TotalPerWave"		value="1,3" />
+		</day>
 		<day value="*">
-			<!--* means it is used when no day is specified -->
-			<property name="ResetToday" value="true" />
-			<property name="EntityGroupName" value="ZombieScouts" />
-			<property name="Time" value="Any" />
-			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="1" />
-			<property name="TotalPerWave" value="1" />
+			<property name="ResetToday"		value="true" />
+			<property name="EntityGroupName"	value="ScoutWarparty" />
+			<property name="Time"			value="Any" />
+			<property name="DelayBetweenSpawns"	value="1" />
+			<property name="TotalAlive"		value="8" />
+			<property name="TotalPerWave"		value="2,4" />
 		</day>
 	</entityspawner>
 	<!-- these are what the scouts summon if they see you total per wave is now hard coded to dynamically change every time she screams-->
@@ -943,55 +1047,55 @@
 			<property name="EntityGroupName" value="LeigonClass1" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="7" />
+			<property name="TotalAlive" value="9" />
 		</day>
 		<day value="14">
 			<property name="EntityGroupName" value="LeigonClass2" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="7" />
+			<property name="TotalAlive" value="9" />
 		</day>
 		<day value="15">
 			<property name="EntityGroupName" value="LeigonClass2" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="7" />
+			<property name="TotalAlive" value="9" />
 		</day>
 		<day value="16">
 			<property name="EntityGroupName" value="LeigonClass2" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="7" />
+			<property name="TotalAlive" value="9" />
 		</day>
 		<day value="17">
 			<property name="EntityGroupName" value="LeigonClass2" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="7" />
+			<property name="TotalAlive" value="9" />
 		</day>
 		<day value="18">
 			<property name="EntityGroupName" value="LeigonClass2" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="7" />
+			<property name="TotalAlive" value="9" />
 		</day>
 		<day value="19">
 			<property name="EntityGroupName" value="LeigonClass2" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 		</day>
 		<day value="20">
 			<property name="EntityGroupName" value="LeigonClass2" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 		</day>
 		<day value="21">
 			<property name="EntityGroupName" value="LeigonClass2" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="8" />
+			<property name="TotalAlive" value="12" />
 		</day>
 		<day value="22">
 			<property name="EntityGroupName" value="LeigonClass2" />

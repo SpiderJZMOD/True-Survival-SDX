@@ -61,6 +61,7 @@
 		</window_group>
 		<window_group name="creative" controller="XUiC_CreativeWindowGroup">
 			<window name="windowCreative" />
+			<window name="windowCombine" />
 		</window_group>
 		<window_group name="backpack">
 			<window name="itemInfoPanel" />
@@ -343,7 +344,7 @@
 			<window name="lowerwindowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-        <window_group name="workstation_workFermentationBarrel" controller="XUiC_WorkstationWindowGroup">
+		 <window_group name="workstation_workFermentationBarrel" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />

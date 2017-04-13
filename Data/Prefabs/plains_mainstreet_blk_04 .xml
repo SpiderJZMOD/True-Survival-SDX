@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+    <property name="CopyAirBlocks" value="True" />
+    <property name="AllowTopSoilDecorations" value="False" />
+    <property name="AllowedBiomes" value="wasteland_hub" />
+    <property name="Zoning" value="CityBlock" />
+    <property name="AllowedTownships" value="city" />
+    <property name="TraderArea" value="False" />
+</prefab>

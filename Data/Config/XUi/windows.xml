@@ -3,20 +3,20 @@
 	<window name="SMX">
 		<!-- EDIT THE TEXTURE PART TO REMOVE THE SMX "LOGO" OR INSERT YOUR OWN LOGO IF YOU WISH. TO AVOID ISSUES, STICK TO THE SIZE. -->
 		<!-- EDIT THE TEXT PART OF THE LABEL SECTION TO SET A CUSTOM MESSAGE FOR YOUR DEDICATED SERVER - STANDARD COLOR IS GREEN, THIS CAN BE CHANGED IN THE COLOR PART. DON'T OVER-DO IT! -->
-		<texture name="SMX" depth="0" size="250,27" texture="@http://i63.tinypic.com/9pw8oz.jpg" material="Materials/Transparent Colored" pos="-320,-6" />
+		<texture name="SMX" depth="0" size="250,27" texture="@file:Data\TexturesUI\9pw8oz.jpg" material="Materials/Transparent Colored" pos="-320,-6" />
 		<!-- Local Asset Equivalent: smxserverlogo.png -->
 		<label name="SMXServerInfo1" depth="0" size="250,27" text="" font_size="20" effect="outline" color="[green]" justify="center" pos="-610,-8" overflow="resizeheight" />
 	</window>
 	<window name="SMXUnitFrame1" style="SMXUnitFrameWindow">
 		<grid name="SMXHSFrame" pos="0,150" rows="2" cols="1" width="240" cell_width="240" cell_height="35" repeat_content="false" side="left">
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
-				<texture name="SMXHealthBarBG" depth="1" size="240,54" texture="@http://i67.tinypic.com/nq5ml5.jpg" material="Materials/Transparent Colored" pos="0,-55" />
+				<texture name="SMXHealthBarBG" depth="1" size="240,54" texture="@file:Data\TexturesUI\nq5ml5.jpg" material="Materials/Transparent Colored" pos="0,-55" />
 				<!-- Local Asset Equivalent: healthbarempty.png -->
 				<sprite name="BarContent" depth="2" height="25" width="220" atlas="itemiconatlas" sprite="smxuf1health" type="filled" fill="0" pos="8,-65" />
 				<label depth="6" name="TextContent" pos="0,-62" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
 			</rect>
 			<rect width="240" height="35" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
-				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@http://i67.tinypic.com/rro0ut.jpg" material="Materials/Transparent Colored" pos="0,-55" />
+				<texture name="SMXStaminaBarBG" depth="1" size="240,54" texture="@file:Data\TexturesUI\rro0ut.jpg" material="Materials/Transparent Colored" pos="0,-55" />
 				<!-- Local Asset Equivalent: staminabarempty.png -->
 				<sprite name="BarContent" depth="2" size="220,25" atlas="itemiconatlas" sprite="smxuf1stamina" type="filled" fill="0" pos="8,-67" />
 				<label depth="6" name="TextContent" pos="0,-64" font_size="32" effect="outline" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" />
@@ -24,13 +24,13 @@
 		</grid>
 		<grid name="SMXFWFrame" pos="-2,70" rows="1" cols="2" width="118" cell_width="118" cell_height="35" repeat_content="false" side="left">
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@http://i64.tinypic.com/iwm73o.jpg" material="Materials/Transparent Colored" pos="0,-55" />
+				<texture name="SMXFoodBarBG" depth="1" size="120,27" texture="@file:Data\TexturesUI\iwm73o.jpg" material="Materials/Transparent Colored" pos="0,-55" />
 				<!-- Local Asset Equivalent: foodwaterempty.png -->
 				<sprite name="BarContent" depth="2" size="102,-10" color="0,128,0" type="filled" fill="0" pos="10,-75" />
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerfood} %" controller="PlayerStatsWindow" />
 			</rect>
 			<rect width="118" height="35" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@http://i64.tinypic.com/iwm73o.jpg" material="Materials/Transparent Colored" pos="0,-55" />
+				<texture name="SMXWaterBarBG" depth="1" size="120,27" texture="@file:Data\TexturesUI\iwm73o.jpg" material="Materials/Transparent Colored" pos="0,-55" />
 				<!-- Local Asset Equivalent: foodwaterempty.png -->
 				<sprite name="BarContent" depth="2" size="102,-10" color="0,153,255" type="filled" fill="0" pos="10,-75" />
 				<label depth="6" name="TextContent" pos="0,-58" font_size="22" effect="outline" color="[white]" justify="center" pivot="topleft" text="{playerwater} %" controller="PlayerStatsWindow" />
@@ -47,7 +47,7 @@
 	</window>
 	<window name="SMXToolbelt1" width="760" height="226" depth="0" pos="0,85" anchor="CenterBottom" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">
 		<rect>
-			<texture name="SMXToolbeltBG" depth="0" size="760,120" pos="-380,30" texture="@http://i63.tinypic.com/29p6g6b.jpg" material="Materials/Transparent" />
+			<texture name="SMXToolbeltBG" depth="0" size="760,120" pos="-380,30" texture="@file:Data\TexturesUI\29p6g6b.jpg" material="Materials/Transparent" />
 			<!-- Local Asset Equivalent: toolbeltbg.png -->
 			<grid name="SMXToolbelt" depth="1" rows="1" cols="8" pos="-340,20" cell_width="85" cell_height="85" controller="Toolbelt" repeat_content="true">
 				<SMX_tb_item_stack_uf1 name="0" />
@@ -65,7 +65,7 @@
 		</rect>
 	</window>
 	<window name="SMXHudOther">
-		<texture name="SMXHudOther" depth="0" size="165,355" pos="-230,-50" texture="@http://i66.tinypic.com/xft537.jpg" material="Materials/Transparent" justify="right" rotation="90" />
+		<texture name="SMXHudOther" depth="0" size="165,355" pos="-230,-50" texture="@file:Data\TexturesUI\xft537.jpg" material="Materials/Transparent" justify="right" rotation="90" />
 		<!-- Local Asset Equivalent: hudotherbg.png -->
 		<rect name="SMXCollector" pos="-90,31" side="right" controller="CollectedItemList" pivot="BottomLeft">
 			<panel width="168" height="43" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0">
@@ -103,7 +103,7 @@
 		</grid>
 	</window>
 	<window name="SMXQuestTracker" pos="-255, -88" width="300" height="100" anchor="RightTop" controller="QuestTrackerWindow" visible="{showquest}" depth="-20">
-		<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@http://i67.tinypic.com/28we34m.jpg" material="Materials/Transparent" />
+		<texture name="SMXHudOther" depth="0" size="316,58" pos="-140,18" texture="@file:Data\TexturesUI\28we34m.jpg" material="Materials/Transparent" />
 		<!-- Local Asset Equivalent: questsbg.png -->
 		<label depth="1" text="{questtitle}" font_size="26" effect="outline" justify="center" upper_case="true" pos="-100, -5" height="28" />
 		<sprite pos="-100,-8" depth="1" name="windowIcon" style="icon22px" sprite="{questicon}" justify="left" />
@@ -541,7 +541,7 @@
 			<label style="header.name" text="TOOLS" text_key="xuiTools" />
 		</panel>
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="workAnvil,calipers,toolAndDieSet" required_tools_only="true">
+			<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="calipers,toolAndDieSet" required_tools_only="true">
 				<required_item_stack name="0" />
 			</grid>
 		</rect>
@@ -1923,7 +1923,7 @@
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="SewingNeedle,LeatherNeedle,clawHammer,workAnvil,Wielder" required_tools_only="true">
+			<grid name="inventory" rows="2" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="SewingNeedle,LeatherNeedle,clawHammer,workAnvil,Welder" required_tools_only="true">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>
@@ -1945,7 +1945,7 @@
 			<label style="header.name" text="TOOLS" />
 		</panel>
 		<panel name="content" depth="0" pos="0,-46" backgroundcolor="[black]">
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="wrench,CompactDriver,Wielder" required_tools_only="true">
+			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false" required_tools="wrench,CompactDriver,Welder" required_tools_only="true">
 				<required_item_stack name="0" />
 			</grid>
 		</panel>

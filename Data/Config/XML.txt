@@ -594,7 +594,7 @@ For a start I assigned these values in Duke Coins:
 .6 forgedIron
 1.6 forgedSteel
 1 leadScrap
-.005 yuccaFibers
+.005 PlantFibers
 .4 coal
 .4 potassiumNitratePowder
 1.5 bulletCasing
