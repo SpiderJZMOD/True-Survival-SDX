@@ -2022,7 +2022,7 @@
 		<item name="scrapLead" count="1,5" prob="11.9" />
 	</lootcontainer>
 	<!-- lootcontainer 9 backpack, place where people stash things, -->
-	<lootcontainer id="9" count="0,2" size="4,2" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="5">
+	<lootcontainer id="9" count="0,2" size="8,3" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="5">
 		<item group="backpacks" />
 	</lootcontainer>
 	<!-- lootcontainer 10 empty, storage containers the player crafts-->
@@ -2080,7 +2080,7 @@
 		<item name="militaryFiber" count="1,4" prob="3.3" />
 	</lootcontainer>
 	<!-- lootcontainer 19 cars-->
-	<lootcontainer id="19" count="0,2" size="7,4" buff_chance="0.1" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5">
+	<lootcontainer id="19" count="0,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="5">
 		<item group="automotive+tools+junk" prob="90.0" />
 		<item group="deadBody" prob="10.0" />
 	</lootcontainer>
@@ -2870,7 +2870,7 @@
 		<item name="grainAlcohol" prob="11.1" /> <!-- these farmers make thier own shine -->
 		<item name="mead" prob="5.6" />
 	</lootcontainer>
-	<!-- NPC and Class Loot tables 190-229 -->
+   	<!-- NPC and Class Loot tables 190-229 -->
 	<!--Bandit Loot-->
 	<lootcontainer id="200" count="1" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
 		<item group="banditsLeader+AK47" prob="1" />

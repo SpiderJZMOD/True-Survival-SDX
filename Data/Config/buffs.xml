@@ -655,12 +655,12 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	</buff>
 	<buff id="katanaimpact" hitmask="body;head" duration="1" castsound="katana_impact" />
 	<!-- FISHING -->
-	<buff id="lure1" duration="60" name_key="lure1" smell="smallSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
-	<buff id="lure2" duration="60" name_key="lure2" smell="smallSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
-	<buff id="lure3" duration="60" name_key="lure3" smell="mediumSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
-	<buff id="lure4" duration="60" name_key="lure4" smell="mediumSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
-	<buff id="lure5" duration="60" name_key="lure5" smell="largeSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
-	<buff id="lure6" duration="120" name_key="lure6" smell="largeSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
+	<buff id="lure1" duration="120" name_key="lure1" smell="smallSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
+	<buff id="lure2" duration="120" name_key="lure2" smell="smallSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
+	<buff id="lure3" duration="120" name_key="lure3" smell="mediumSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
+	<buff id="lure4" duration="120" name_key="lure4" smell="mediumSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
+	<buff id="lure5" duration="120" name_key="lure5" smell="largeSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
+	<buff id="lure6" duration="180" name_key="lure6" smell="largeSmell" description_key="lureFish" tooltip_key="lureFish" icon="ui_game_symbol_percent" />
 	<buff id="fishingWater" duration="0" name_key="fishingWater" description_key="fishingWaterDesc" icon="ui_game_symbol_water" />
 	<!-- JZMOD Lucille -->
 	<buff id="lucilleimpact" hitmask="body;head" duration="1" castsound="lucille_impact" />
@@ -832,14 +832,6 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
         <modify id="1" stat="speedmodifier" mulValue="2.0"/>
         <modify id="2" stat="health" setValue="500"/>
     </buff>
-  
-    
-    
-    
-    
-    
-    
-    
-    
+   
     
 </buffs>

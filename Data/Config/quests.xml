@@ -29,7 +29,7 @@ Alternative settings for custom quest creation:
         <reward type="Item" id="TatteredShoes" value="600" />
         <reward type="Item" id="TatteredPants" value="600" />
         <reward type="Item" id="TatteredShirt" value="600" />
-		<reward type="Quest" id="quest_BasicSurvival2" />
+       	<reward type="Quest" id="quest_BasicSurvival2" />
 		<reward type="Quest" id="quest_BasicSurvival3" />
 		<reward type="Quest" id="quest_BasicSurvival4" />
 		<reward type="Quest" id="quest_BasicSurvival5" />
@@ -1054,4 +1054,5 @@ Alternative settings for custom quest creation:
 		<objective type="ZombieKill" value="250" />
 		<reward type="SkillPoints" value="5" />
 	</quest>
+   
 </quests>

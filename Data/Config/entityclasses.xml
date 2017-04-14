@@ -224,13 +224,13 @@
 	</entity_class>
 	<entity_class name="zombieArlene" extends="zombie01">
 		<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
-		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
-		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
-		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
-		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
-		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
-		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
-		<property name="AvatarController" value="AvatarZombie01Controller" />
+        <property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemalescoutroam" />
+        <property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert" />
+        <property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack" />
+        <property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain" />
+        <property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath" />
+        <property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense" />
+        <property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="3" />
 		<property name="HandItem" value="handZombie" />
@@ -727,6 +727,7 @@
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
 		<!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="trophyDeer" count="1" />
 		<drop event="Harvest" name="rawMeat" count="5" />
 		<drop event="Harvest" name="animalHide" count="2" />
 		<drop event="Harvest" name="BrainMatter" count="2" />
@@ -830,6 +831,7 @@
 		<property name="ExperienceGain" value="75" />
 		<property name="DeadBodyHitPoints" value="250" />
 		<!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="trophyBear" count="1" />
 		<drop event="Harvest" name="rawMeat" count="7" />
 		<drop event="Harvest" name="animalHide" count="2" />
 		<drop event="Harvest" name="BrainMatter" count="2" />
@@ -974,6 +976,7 @@
 		<property name="SwimOffset" value="2" />
         <property name="DeadBodyHitPoints" value="50" />
 		<!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="tropyRabbit" count="1" />
 		<drop event="Harvest" name="rawMeat" count="3" />
 		<drop event="Harvest" name="animalHide" count="1" />
 		<drop event="Harvest" name="BrainMatter" count="1" />
@@ -1011,6 +1014,7 @@
 		<!-- For harvesting -->
 		<property name="DeadBodyHitPoints" value="50" />
 		<!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="trophyChicken" count="1" />
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="feather" count="5" />
 		<!--JZMOD Hunter-->
@@ -1044,6 +1048,7 @@
 		<property name="ExperienceGain" value="30" />
 		<property name="SwimOffset" value="0.7" />
 		<!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="tropyPig" count="1" />
 		<drop event="Harvest" name="rawMeat" count="6" />
 		<drop event="Harvest" name="animalHide" count="2" />
 		<drop event="Harvest" name="BrainMatter" count="2" />
@@ -1784,12 +1789,13 @@
         <property name="AITask-8" value="RunawayFromEntity" param1="EntityZombie" />
         <property name="AITask-9" value="RunawayFromEntity" param1="EntityZombieCrawl" />
         <property name="AITask-10" value="RunawayFromEntity" param1="EntityHornet" />
-        <property name="AITask-1" value="Wander" />
+        <property name="AITask-11" value="Wander" />
         <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
 	    <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieDog" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
-        <property name="AITarget-2" value="BlockingTargetTask" />
+        <property name="AITarget-4" value="BlockingTargetTask" />
         <!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="trophyBuck" count="1" />
 		<drop event="Harvest" name="rawMeat" count="5" />
 		<drop event="Harvest" name="animalHide" count="2" />
 		<drop event="Harvest" name="BrainMatter" count="2" />
@@ -1852,12 +1858,13 @@
         <property name="AITask-8" value="RunawayFromEntity" param1="EntityZombie" />
         <property name="AITask-9" value="RunawayFromEntity" param1="EntityZombieCrawl" />
         <property name="AITask-10" value="RunawayFromEntity" param1="EntityHornet" />
-        <property name="AITask-1" value="Wander" />
+        <property name="AITask-11" value="Wander" />
         <property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityPlayer" />
 	    <property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntityZombieDog" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
-        <property name="AITarget-2" value="BlockingTargetTask" />
+        <property name="AITarget-4" value="BlockingTargetTask" />
         <!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="tropyBoar" count="1" />
 		<drop event="Harvest" name="rawMeat" count="6" />
 		<drop event="Harvest" name="animalHide" count="2" />
 		<drop event="Harvest" name="BrainMatter" count="2" />
@@ -1941,7 +1948,7 @@
 		<property name="ParticleOnDeath" value="blood_death" />
 		<property name="SoundHurt" value="CrocoHurt" />
 		<property name="SoundDeath" value="CrocoDeath" />
-		<property name="SoundRandom" value="CrocoRandom" />
+		<!--<property name="SoundRandom" value="CrocoRandom" />-->
 		<property name="SoundAlert" value="CrocoAlert" />
 		<property name="SoundAttack" value="CrocoAttack" />
 		<property name="SoundSense" value="CrocoSense" />
@@ -1955,6 +1962,7 @@
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="500" />
         <!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="trophyCroc" count="1" />
 		<drop event="Harvest" name="rawMeat" count="6" />
 		<drop event="Harvest" name="animalHide" count="2" />
 		<drop event="Harvest" name="BrainMatter" count="2" />
@@ -2053,6 +2061,7 @@
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="250" />
 		<!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="trophyBobcat" count="1" />
 		<drop event="Harvest" name="rawMeat" count="6" />
 		<drop event="Harvest" name="animalHide" count="2" />
 		<drop event="Harvest" name="BrainMatter" count="2" />
@@ -2130,7 +2139,7 @@
 		<property name="MaxHealth" value="85" />
 		<property name="SoundRandomTime" value="45.0" />
 		<property name="SoundAlertTime" value="25.0" />
-		<property name="SoundRandom" value="Spider_Random" />
+		<!--<property name="SoundRandom" value="Spider_Random" />-->
 		<property name="SoundAlert" value="Spider_Alert" />
 		<property name="SoundHurt" value="Spider_Hurt" />
 		<property name="SoundDeath" value="Spider_Death" />
@@ -2152,6 +2161,7 @@
 		<property name="CorpseBlockChance" value="1" />
 		<property name="DeadBodyHitPoints" value="150" />
 		<!-- JZMOD Harvest For Beginner -->
+        <drop event="Harvest" name="trophySpider" count="1" />
 		<drop event="Harvest" name="rawMeat" count="2" />
 		<drop event="Harvest" name="VenomSack" count="1" />
 		<drop event="Harvest" name="BrainMatter" count="1" />
@@ -2221,6 +2231,7 @@
 		<property name="AITask-8" value="ApproachAndAttackTarget" param1="EntityHornet" />
 		<property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
 		<property name="AITask-10" value="ApproachSpot" />
+        <property name="AITask-11" value="Wander" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
 		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieCrawl" />
@@ -2242,7 +2253,7 @@
 		<property name="MaxHealth" value="550" />
 		<property name="MaxViewAngle" value="320" />
 		<property name="Weight" value="70" />
-		<property name="WanderSpeed" value="0.5" />
+		<property name="WanderSpeed" value="0.8" />
 		<property name="ApproachSpeed" value="1.3" />
 		<property name="NightWanderSpeed" value="0.5" />
 		<property name="NightApproachSpeed" value="1.6" />
@@ -2308,6 +2319,7 @@
 		<property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityHornet" />
 		<property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
 		<property name="AITask-11" value="ApproachSpot" />
+        <property name="AITask-12" value="Wander" />
 		<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
 		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieCrawl" />
@@ -2329,7 +2341,7 @@
         <property name="MaxHealth" value="550" />
 		<property name="MaxViewAngle" value="320" />
 		<property name="Weight" value="70" />
-		<property name="WanderSpeed" value="0.5" />
+		<property name="WanderSpeed" value="0.8" />
 		<property name="ApproachSpeed" value="1.3" />
 		<property name="NightWanderSpeed" value="0.5" />
 		<property name="NightApproachSpeed" value="1.6" />
@@ -2376,6 +2388,7 @@
 		<property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityHornet" />
 		<property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
 		<property name="AITask-11" value="ApproachSpot" />
+        <property name="AITask-3" value="Wander" />
      	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
 		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieCrawl" />
@@ -2397,7 +2410,7 @@
         <property name="MaxHealth" value="550" />
 		<property name="MaxViewAngle" value="320" />
 		<property name="Weight" value="70" />
-		<property name="WanderSpeed" value="0.5" />
+		<property name="WanderSpeed" value="0.8" />
 		<property name="ApproachSpeed" value="1.3" />
 		<property name="NightWanderSpeed" value="0.5" />
 		<property name="NightApproachSpeed" value="1.6" />
@@ -3884,5 +3897,6 @@
 	</entity_class>
    
 	
-	<!-- <property name="MeshScale" value="2,2" />-->
+	<!-- <property name="MeshScale" value="2,2" />
+    <property name="DamageCategory" value="Boss"/>-->
 </entity_classes>

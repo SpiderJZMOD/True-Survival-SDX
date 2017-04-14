@@ -2147,7 +2147,7 @@ emptyJar,items,Item,KgNone,Glass Jar,Bocal,Glaskrug,,Tarro de cristal
 emptyJarDesc,items,Item,KgNone,An empty glass jar can be filled at water sources using the secondary action or used in other recipes.,"Un bocal vide qui peut être rempli aux points d'eau à l'aide de l'action secondaire, ou servir dans d'autres compositions.","Ein leeres Glasgefäß, das an Wasserquellen gefüllt werden kann, indem die sekundäre Aktion benutzt wird. Wird auch in anderen Rezepten verwendet.",,Un tarro de cristal vacío que se pueda llenar en fuentes de agua mediante la acción secundaria y usar en otras recetas.
 feather,items,Item,KgNone,Feather,Plume,Feder,,Pluma
 featherDesc,items,Item,KgNone,Feathers are primarily found in bird nests & on chickens. They can be used to craft arrows and crossbow bolts.,Les plumes se trouvent principalement dans les nids d'oiseau et sur les poulets. Elles peuvent servir à fabriquer des flèches et des carreaux d'arbalète.,Federn werden primär in Vogelnestern und bei Hühnern gefunden. Mit ihnen können Pfeile und Armbrustbolzen gefertigt werden.,,Las plumas se encuentran principalmente en nidos de aves y en los pollos. Se pueden usar para fabricar flechas y saetas para ballestas.
-femur,items,Item,KgNone,Large Bone,Gros os,Großer Knochen,,Hueso largo
+femur,items,Item,KgNone,Bone,Gros os,Großer Knochen,,Hueso largo
 femurDesc,items,Item,KgNone,A rather ordinary femur. It could be useful.,Un fémur des plus ordinaires. Ça peut servir.,Ein recht gewöhnlicher Oberschenkelknochen. Er könnte sich als nützlich erweisen.,,Un fémur común y corriente. Podría ser útil.
 fertilizer,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Fertilizer,,,,
 fertilizerDesc,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Fertilizer is made in a Seed Nursery. Use a gardening hoe to fertilize your farmland and increase the yield of your crops.,,,,
@@ -4525,7 +4525,7 @@ SewingNeedleDesc,,,,"Perfect for stitching together some needed padding.",,,,
 LeatherNeedle,,,,"Leather Needle",,,,
 LeatherNeedleDesc,,,,"A strong needle for sewing leather",,,,
 WielderDesc,,,,"Used to cut and connect hard metals",,,,
-FryingPanDesc,,,,"Great for cooking up some grub on the campfire",,,,
+FryingPanDesc,,,,"Great for cooking up some grub on the campfire and can be used to bash heads in a pinch",,,,
 FryingPan,,,,"Frying Pan",,,,
 workMortarAndPestle,,,,"Mortar and Pestle",,,,
 MortarAndPestleDesc,,,,"Used to grind Plants and Minerals into powders and creams.",,,,
@@ -4895,18 +4895,21 @@ LockPick,,,,"Lockpick",,,,
 LockpickBubDesc,,,,"Small steel lock pick bits used in a lock pick gun. Crafted on the anvil with the claw hammer.",,,,
 bambooPole,,,,"Bamboo Pole",,,,
 bambooRaft,,,,"Bamboo Raft",,,,
-
-
-
-
-
-
-
-
-
-
-
-
+ironShiv,,,,"iron Shiv",,,,
+ironShivDesc,,,,"A sharpened piece of iron crafted on the anvil with a claw hammer. Best when used for fighting.",,,,
+trophyDeer,,,,"Antlers",,,,
+tropyRabbit,,,,"Rabbit Foot",,,,
+trophyChicken,,,,"Chicken Feet",,,,
+tropyPig,,,,"Pig Tail",,,,
+tropyBoar,,,,"Pig Tail",,,,
+trophyBuck,,,,"Antlers",,,,
+trophyBear,,,,"Bear Claw",,,,
+trophyBobcat,,,,"Bobcat Tail",,,,
+trophyCroc,,,,"Croc Tooth",,,,
+trophySpider,,,,"Spider Fang",,,,
+trophyFish,,,,"Fish Head",,,,
+HuntingDesc,,,,"A Trophy retrieved from your game. Craft it into bones to earn xp toward your hunting skill.",,,,
+narrowLog,,,,"Narrow Log",,,,
 
 
 
