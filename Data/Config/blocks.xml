@@ -3360,6 +3360,7 @@ then add recipes for those white/red/green metals
 		<property name="Extends" value="woodFrameBlock" />
 		<property name="CustomIcon" value="woodFrameBlock" />
 		<property name="CanPickup" value="false" />
+        <property name="MaxDamage" value="100" />
    	</block>
 	<block id="376" name="brickCNRFull">
 		<property name="Extends" value="brickMaster" />
@@ -4822,8 +4823,8 @@ kind of free
 		<property name="LootList" value="25" />
 		<property name="Collide" value="melee,bullet,arrow,rocket" />
 		<drop event="Destroy" count="0" prob="1" />
-		<drop event="Harvest" name="feather" count="3" prob=".35" tool_category="Disassemble" />
-		<drop event="Harvest" name="feather" count="2" prob=".6" tool_category="Disassemble" />
+		<drop event="Harvest" name="feather" count="3" prob=".35" />
+		<drop event="Harvest" name="feather" count="2" prob=".6" />
 		<drop event="Destroy" name="yuccaFibers" count="2,8" />
 	</block>
 	<block id="543" name="concreteCNRRoundTop">
@@ -5626,7 +5627,10 @@ kind of free
 		<property name="Weight" value="24" />
         <property name="MaxDamage" value="25" />
 		<property name="EconomicValue" value="40" />
-		<!-- disassemble value -->
+        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="faucet02" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="2,5"  />
+		<drop event="Destroy" count="0" />
 	</block>
 	<block id="620" name="faucet04">
 		<property name="Material" value="Mmetal_thin" />
@@ -5639,6 +5643,10 @@ kind of free
 		<property name="EconomicValue" value="20" />
 		<!-- disassemble value -->
 		<property name="MaxDamage" value="25" />
+        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="faucet04" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="2,5"  />
+		<drop event="Destroy" count="0" />
 	</block>
 	<block id="621" name="faucetBrass02">
 		<property name="Material" value="brass" />
@@ -5651,6 +5659,10 @@ kind of free
 		<property name="EconomicValue" value="125" />
 		<!-- disassemble value -->
 		<property name="MaxDamage" value="25" />
+        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="faucetBrass02" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapBrass" count="2,5"  />
+		<drop event="Destroy" count="0" />
 	</block>
 	<block id="622" name="faucetBrass04">
 		<property name="Material" value="brass" />
@@ -5663,6 +5675,10 @@ kind of free
 		<property name="EconomicValue" value="80" />
 		<!-- disassemble value -->
 		<property name="MaxDamage" value="25" />
+        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+        <drop event="Destroy" name="faucetBrass04" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapBrass" count="2,5"  />
+		<drop event="Destroy" count="0" />
 	</block>
 	<block id="623" name="cntFileCabinet">
 		<property name="Class" value="Loot" />
@@ -17486,21 +17502,23 @@ kind of free
     <block id="1132" name="1x3Planks">
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
+        <property name="CustomIcon" value="playerSignWood1x3" />
 		<property name="Model" value="Entities/Signs/sign_wood_1x3_Prefab" />
 		<property name="MultiBlockDim" value="3,1,1" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="Group" value="Building" />
+		<property name="Group" value="Basics,Building" />
 		<property name="DescriptionKey" value="PlankGroupDesc" />
 	</block>
 	<block id="1133" name="2x5Planks">
 		<property name="Material" value="wood" />
 		<property name="Shape" value="ModelEntity" />
+        <property name="CustomIcon" value="playerSignWood2x5" />
 		<property name="Model" value="Entities/Signs/sign_wood_2x5_Prefab" />
 		<property name="MultiBlockDim" value="5,2,1" />
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 		<property name="Place" value="TowardsPlacerInverted" />
-		<property name="Group" value="Building" />
+		<property name="Group" value="Basics,Building" />
         <property name="DescriptionKey" value="PlankGroupDesc" />
 	</block>
 	<!-- JZMOD Free ID's     1134 ; 1156 ; 1157 ; 1161 ; 1177 ; 1178 ; 1179 ; 1198 ; 1247 ; 1256 ; 1257 ; 1258 ; 1332 ; 1333 ; 1337 ; 1338 ; 1355 ; 1369 ; 1370 ; 1375 ; 1376 ; 1395 ; 1396 ; 1397 ; 1398 ; 1399 ; 1407 ; 1415 ; 1421 ; 1423 ; 1452 ; 1473 ; 1474 ; 1475 ; 1476 ; 1501 ; 1504 ; 1506 ; 1507 ; 1508 ; 1547 ; 1714 ; 1715 ; 1716 ; 1717 ; 1742 ; 1743 

@@ -4698,7 +4698,7 @@ workforge,,,,"Forge",,,,
 workcementMixer,,,,"Cement Mixer",,,,
 workworkbench,,,,"Wood Working Bench",,,,
 workBatteryPack,,,,"Battery Pack",,,,
-workBatteryPackDesc,,,,"Place the Battery Pack next to a power line and power it with a genorator. Use this workstation to recharge batteries and refill scuba tanks. You do not gain any XP in this Workstation.",,,,
+workBatteryPackDesc,,,,"Place the Battery Pack next to a power line and power it with a genorator. Use this workstation to recharge batteries and refill scuba tanks. You do not gain any XP in this Workstation. Crafted on the wood working bench with a wrench.",,,,
 workMortarAndPestle,,,,"Mortar & Pestle",,,,
 workAnvil,,,,"Anvil",,,,
 workStoneMill,,,,"Stone Mill",,,,
@@ -4910,8 +4910,8 @@ trophySpider,,,,"Spider Fang",,,,
 trophyFish,,,,"Fish Head",,,,
 HuntingDesc,,,,"A Trophy retrieved from your game. Craft it into bones to earn xp toward your hunting skill.",,,,
 narrowLog,,,,"Narrow Log",,,,
-
-
+PlankGroupDesc,,,,"Easily crafted large flat planks. Great for early building or boarding up a hole.",,,,
+ScubaTankEmptyDesc,,,,"This tank is empty and needs to be refilled. To refill it you will need to use the battery pack with the air compressor. You will also need power to run it all.",,,,
 
 
 

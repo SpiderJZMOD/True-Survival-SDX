@@ -1602,6 +1602,11 @@
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="7" />
 			<recipe name="mineAirFilter" unlock_level="1" />
 		</perk>
+        <perk name="Nitroglycerin" icon="Tnt" description_key="Learn to craft Nitroglycerin chemistry station woth a beaker. Explosives made with this will destroy hardstone " title_key="Nitroglycerin" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
+			<requirement perk_level="1" required_player_level="75" />
+			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="45" />
+			<recipe name="Nitroglycerin" unlock_level="1" />
+		</perk>
 		<perk name="Dynamite" icon="Tnt" description_key="Learn to craft Dynamite and TNT on the chemistry station. These explosives will destroy hardstone " title_key="Dynamite" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 			<requirement perk_level="1" required_player_level="75" />
 			<requirement perk_level="1" required_skill_name="Engineering" required_skill_level="45" />

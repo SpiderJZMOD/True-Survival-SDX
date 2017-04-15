@@ -224,12 +224,12 @@
 	</entity_class>
 	<entity_class name="zombieArlene" extends="zombie01">
 		<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll" />
-        <property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemalescoutroam" />
-        <property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert" />
-        <property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack" />
-        <property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain" />
-        <property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath" />
-        <property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense" />
+        <property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam" />
+        <property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert" />
+        <property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack" />
+        <property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain" />
+        <property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath" />
+        <property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense" />
         <property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="3" />
@@ -242,12 +242,12 @@
 	</entity_class>
 	<entity_class name="zombieScreamer" extends="zombie01">
 		<property name="Mesh" value="Zombies/zombieStandardScreamerRagdoll" />
-		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
-        <property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
-        <property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack"/>
-        <property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain"/>
-        <property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath"/>
-        <property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemalescoutroam" />
+        <property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert" />
+        <property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack" />
+        <property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain" />
+        <property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath" />
+        <property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense" />
 		<property name="AvatarController" value="AvatarZombie01Controller" />
 		<property name="ModelType" value="Standard" />
 		<property name="WalkType" value="3" />

@@ -449,10 +449,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="bottledWater" count="1" craft_area="workcampfire" craft_tool="cookingPot" craft_time="30" craft_exp_gain="0">
 		<ingredient name="bottledRiverWater" count="1" />
 	</recipe>
-	<recipe name="bottledRiverWater" count="1" craft_area="workcampfire" craft_time="10" craft_exp_gain="0">
-		<ingredient name="snowBall" count="5" />
-		<ingredient name="emptyJar" count="1" />
-	</recipe>
 	<recipe name="bottledWater" count="1" craft_time="60" craft_exp_gain="10">
 		<ingredient name="PurificationTablets" count="1" />
 		<ingredient name="bottledRiverWater" count="1" />
@@ -1839,9 +1835,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Plank" count="10" />
 		<ingredient name="nail" count="5" />
 	</recipe>
-	<recipe name="woodLogPillar100" count="1" craft_time="5" craft_exp_gain="5">
-		<ingredient name="wood" count="20" />
-	</recipe>
 	<recipe name="woodLogSpike1" count="1" craft_time="10" craft_exp_gain="10">
 		<ingredient name="wood" count="20" />
 	</recipe>
@@ -2039,10 +2032,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Apple" count="1" />
 		<ingredient name="rawMeat" count="1" />
 	</recipe>
-	<recipe name="AppleHoneyGlazedMeat" count="1" craft_area="workcampfire" craft_tool="FryingPan" craft_time="5" craft_exp_gain="0">
-		<ingredient name="Apple" count="1" />
-		<ingredient name="rawMeat" count="1" />
-		<ingredient name="foodHoney" count="1" />
+	<recipe name="foodHoney" count="2" craft_time="30" craft_exp_gain="5">
+		<ingredient name="honeyComb" count="1" />
 	</recipe>
 	<recipe name="AppleJuice" count="1" craft_time="20" craft_exp_gain="5">
 		<ingredient name="Apple" count="6" />
@@ -2794,6 +2785,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="FiremanProfession" count="1" craft_area="workResearchDesk" craft_time="30" craft_exp_gain="1000">
 		<ingredient name="ProfessionPage" count="20" />
 	</recipe>
+    <recipe name="fireWood" count="1" craft_area="workDryingRack" craft_time="60" craft_exp_gain="0">
+		<ingredient name="wood" count="5" />
+        <ingredient name="animalFat" count="1" />
+	</recipe>
+    <recipe name="fireWood" count="1" craft_area="workDryingRack" craft_time="60" craft_exp_gain="0">
+		<ingredient name="stick" count="85" />
+        <ingredient name="animalFat" count="1" />
+	</recipe>
 	<recipe name="FishermanProfession" count="1" craft_time="5" craft_exp_gain="1000">
 		<ingredient name="ChooseAProfession" count="1" />
 	</recipe>
@@ -3350,7 +3349,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Carrot" count="1" />
 		<ingredient name="stick" count="1" />
 	</recipe>
-	<recipe name="MechanicProfession" count="1" craft_time="5" craft_exp_gain="1000">
+    <recipe name="MechanicProfession" count="1" craft_time="5" craft_exp_gain="1000">
 		<ingredient name="ChooseAProfession" count="1" />
 	</recipe>
 	<recipe name="MechanicProfession" count="1" craft_area="workResearchDesk" craft_time="30" craft_exp_gain="1000">
@@ -3722,6 +3721,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="flashlight02" count="1" />
 		<ingredient name="NutAndBolt" count="4" />
 		<ingredient name="scrapHelmet" count="1" />
+	</recipe>
+    <recipe name="scrapIron" count="1" craft_time="2" craft_exp_gain="1">
+		<ingredient name="mechanicalParts" count="1" />
 	</recipe>
     <recipe name="Scrap_Iron_Gate_2x3" count="1" craft_area="workMetalWorkBench" craft_tool="Wielder" craft_time="10" craft_exp_gain="10">
 		<ingredient name="forgedIron" count="50" />

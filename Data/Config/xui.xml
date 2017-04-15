@@ -336,7 +336,7 @@
 			<window name="lowerwindowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-        <window_group name="workstation_workBiogasDigester" controller="XUiC_WorkstationWindowGroup">
+        <window_group name="workstation_workMethaneProducer" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList" />
 			<window name="craftingInfoPanel" />
 			<window name="windowCraftingQueue" />

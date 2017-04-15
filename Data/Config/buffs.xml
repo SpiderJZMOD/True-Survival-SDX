@@ -677,7 +677,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	</buff>
 	<!-- JZMOD Bandit Zombie Bonus -->
 	<buff id="banditBonus" mutex="isPlayer" duration="2" stack="extend">
-		<modify id="0" stat="health" amount="-200" rate="1" />
+		<modify id="0" stat="health" amount="-150" rate="1" />
 	</buff>
 	<!-- JZMOD MYSTERY CAN FOOD -->
 	<buff id="randomFood1" duration="1.5" stack="discard">

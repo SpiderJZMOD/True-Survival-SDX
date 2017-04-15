@@ -37,6 +37,7 @@ Mesh files no longer used:
 		<property name="DegradationBreaksAfter" value="true" />
 		<property name="SoundDestroy" value="wooddestroy1" />
 		<property name="FuelValue" value="30" />
+        <property name="Weight" value="10" />
 		<property name="Stacknumber" value="1" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
@@ -295,7 +296,7 @@ Mesh files no longer used:
 		<property name="Class" value="ItemClassToggle" />
 		<property name="Meshfile" value="Items/Tools/flashlight02Prefab" />
 		<property name="Material" value="metal" />
-		<property name="Weight" value="5" />
+		<property name="Weight" value="1" />
 		<property name="RepairTools" value="weaponRepairKit" />
 		<property name="DegradationBreaksAfter" value="false" />
 		<property name="SoundJammed" value="ItemNeedsRepair" />
@@ -2187,6 +2188,14 @@ Mesh files no longer used:
 		<property class="Action0">
 			<!-- AttackAction -->
 			<property name="Magazine_size" value="250" />
+            <property name="DamageBonus.stone" value="10" />
+			<property name="DamageBonus.wood" value="1" />
+			<property name="DamageBonus.earth" value="3" />
+			<property name="DamageBonus.metal" value="10" />
+			<property name="DamageBonus.cloth" value="1" />
+			<property name="DamageBonus.glass" value="5" />
+			<property name="DamageBonus.steel" value="10" />
+			<property name="DamageBonus.hardStone" value="10" />
 		</property>
 		<property name="DescriptionKey" value="augerDesc" />
 	</item>
@@ -16174,7 +16183,7 @@ Mesh files no longer used:
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="metal" />
 		<property name="Stacknumber" value="6" />
-		<property name="DescriptionKey" value="cowboyHatGroupDesc" />
+		<property name="DescriptionKey" value="ScubaTankEmptyDesc" />
 	</item>
 	<item id="1986" name="Plank">
 		<property name="Extends" value="itemMaster" />
@@ -17163,8 +17172,8 @@ Mesh files no longer used:
 		<property name="Material" value="metal" />
 		<property name="HoldType" value="2" />
 		<property name="Stacknumber" value="1" />
-		<property name="Degradation" value="1" param1="true" />
-		<property name="DegradationBreaksAfter" value="true" />
+		<property name="DegradationBreaksAfter" value="false" />
+		<property name="Degradation" value="99999" param1="true" />
 		<property name="SoundDestroy" value="metaldestroy1" />
         <property name="SellableToTrader" value="false" />
 		<property class="Action0">
@@ -17175,13 +17184,16 @@ Mesh files no longer used:
 			<property name="DamageEntity" value="7" />
 			<property name="DamageBlock" value="5" />
 			<property name="Sound_start" value="swoosh" />
-			<property name="Stamina_usage" value="50" />
+			<property name="Stamina_usage" value="90" />
 			<property name="DamageBonus.head" value="0" />
 			<property name="DamageBonus.glass" value="0" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.wood" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="0" />
+            <property name="DamageBonus.steel" value="0" />
+            <property name="DamageBonus.hardStone" value="0" />
+            <property name="DamageBonus.earth" value="0" />
 			<property name="DamageBonus.workstation" value="9999" />
 			<property name="ToolCategory.Crowbar" value="1" />
 		</property>
@@ -17200,7 +17212,6 @@ Mesh files no longer used:
 			<property name="Class" value="PlaceAsBlock" />
 			<property name="Delay" value="0.5" />
 			<property name="Blockname" value="workforge" />
-			<property name="Change_item_to" value="Crowbar" />
 			<property name="Sound_start" value="UseActions/repair_block" />
 		</property>
 	</item>
@@ -17773,7 +17784,7 @@ Mesh files no longer used:
 		<property name="Material" value="glass" />
 		<property name="Weight" value="10" />
 	</item>
-    <item id="3057" name="handBoomer">
+    <item id="3076" name="handBoomer">
         <property name="Extends" value="handMaster"/>
         <property name="IsDeveloper" value="true"/>
         <property class="Action0">
@@ -17798,7 +17809,7 @@ Mesh files no longer used:
             <property name="Buff_chance" value="1"/>
         </property>
      </item>
-      <item id="3058" name="handBuck">
+      <item id="3077" name="handBuck">
 		<property name="Extends" value="handMaster" />
 		<property name="IsDeveloper" value="true" />
 		<property name="HoldType" value="46" />
@@ -17836,6 +17847,7 @@ Mesh files no longer used:
     <item id="3060" name="woodBranch">
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="wood" />
+        <property name="FuelValue" value="1" />
         <property name="CustomIcon" value="woodBranch" />
 		<property name="Weight" value="1" />
 	</item>
@@ -17922,6 +17934,11 @@ Mesh files no longer used:
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="wood" />
 		<property name="Weight" value="2" />
+	</item>
+    <item id="3078" name="fireWood">
+        <property name="Extends" value="itemMaster" />
+		<property name="Material" value="wood" />
+		<property name="FuelValue" value="125" />
 	</item>
     
 </items>
