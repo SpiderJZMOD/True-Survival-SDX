@@ -183,13 +183,17 @@
         <entity name="HungryBabyBoomer" />
         
         <entity name="Abraham"   />
-         <entity name="Maggi"   />
-         <entity name="Morgan"  />
-         <entity name="DarrylDixon"  />
-         <entity name="Tara"   />
-         <entity name="Michonne"  />
-         <entity name="Rosita"  />
-         <entity name="Rick"  />
+        <entity name="Maggi"   />
+        <entity name="Morgan"  />
+        <entity name="DarrylDixon"  />
+        <entity name="Tara"   />
+        <entity name="Michonne"  />
+        <entity name="Rosita"  />
+        <entity name="Rick"  />
+        <entity name="Jill"  />
+        <entity name="Chris"  />
+        <entity name="Barry"  />
+      
        
         <entity name="feral8" />
         <entity name="snow8" />   
@@ -207,86 +211,79 @@
         <entity name="Cop8" />       
         
    -->
+   
 <entitygroups>
 	<entitygroup name="ZombiesAll">
-		<entity name="Abraham"  prob="0.32" />
-        <entity name="spider1" prob="1.39" />
-        <entity name="zombieBoe" prob="1.39" />
-        <entity name="Moe3" prob="1.39" />
-        <entity name="CrawlerArlene" prob="1.39" />
-        <entity name="Darlene5" prob="1.39" />
-        <entity name="Marlene6" prob="1.39" />
-        <entity name="Yo7" prob="1.39" />
-        <entity name="Nurse1" prob="1.39" />
-        <entity name="Steve2" prob="1.39" />
-        <entity name="Joe3" prob="1.39" />
-        <entity name="Maggi"  prob="0.32" />
-        <entity name="spiderCrawler" prob="1.39" />
-        <entity name="Boe5" prob="1.39" />
-        <entity name="Moe6" prob="1.39" />
-        <entity name="Arlene7" prob="1.39" />
-        <entity name="Darlene1" prob="1.39" />
-        <entity name="Marlene2" prob="1.39" />
-        <entity name="Yo3" prob="1.39" />
-        <entity name="CrawlerNurse" prob="1.39" />
-        <entity name="Steve5" prob="1.39" />
-        <entity name="Joe6" prob="1.39" />
-        <entity name="Morgan" prob="0.32" />
-        <entity name="spider7" prob="1.39" />
-        <entity name="Boe1" prob="1.39" />
-        <entity name="Moe2" prob="1.39" />
-        <entity name="zombieArlene" prob="1.39" />
-        <entity name="CrawlerDarlene" prob="1.39" />
-        <entity name="zombieMarlene" prob="1.39" />
-        <entity name="Yo6" prob="1.39" />
-        <entity name="zombieNurse" prob="1.39" />
-        <entity name="Steve1" prob="1.39" />
-        <entity name="Joe2" prob="1.39" />
-        <entity name="DarrylDixon" prob="0.32" />
-        <entity name="spider3" prob="1.39" />
-        <entity name="CrawlerBoe" prob="1.39" />
-        <entity name="Moe5" prob="1.39" />
-        <entity name="Arlene6" prob="1.39" />
-        <entity name="Darlene7" prob="1.39" />
-        <entity name="Marlene1" prob="1.39" />
-        <entity name="Yo2" prob="1.39" />
-        <entity name="Nurse3" prob="1.39" />
-        <entity name="zombieSteveCrawler" prob="1.39" />
-        <entity name="zombieJoe" prob="1.39" />
-        <entity name="Tara"  prob="0.32" />
-        <entity name="spider6" prob="1.39" />
-        <entity name="Boe7" prob="1.39" />
-        <entity name="zombieMoe" prob="1.39" />
-        <entity name="Arlene2" prob="1.39" />
-        <entity name="zombieDarlene" prob="1.39" />
-        <entity name="CrawlerMarlene" prob="1.39" />
-        <entity name="zombieYo" prob="1.39" />
-        <entity name="Nurse6" prob="1.39" />
-        <entity name="Steve7" prob="1.39" />
-        <entity name="Joe1" prob="1.39" />
-        <entity name="Michonne" prob="0.32" />
-        <entity name="spider2" prob="1.39" />
-        <entity name="Boe3" prob="1.39" />
-        <entity name="Moe7" prob="1.39" />
-        <entity name="Arlene5" prob="1.39" />
-        <entity name="Darlene6" prob="1.39" />
-        <entity name="Marlene7" prob="1.39" />
-        <entity name="Yo1" prob="1.39" />
-        <entity name="Nurse2" prob="1.39" />
-        <entity name="Steve3" prob="1.39" />
-        <entity name="CrawlerJoe" prob="1.39" />
-        <entity name="Rosita" prob="0.32" />
-        <entity name="spider5" prob="1.39" />
-        <entity name="Boe6" prob="1.39" />
-        <entity name="Arlene1" prob="1.39" />
-        <entity name="Darlene2" prob="1.39" />
-        <entity name="Marlene3" prob="1.39" />
-        <entity name="CrawlerYo" prob="1.39" />
-        <entity name="Nurse5" prob="1.39" />
-        <entity name="zombieSteve" prob="1.39" />
-        <entity name="Joe7" prob="1.39" />
-        <entity name="Rick" prob="0.32" />
-	</entitygroup>
+		<entity name="spider1" prob="1.44" />
+        <entity name="zombieBoe" prob="1.44" />
+        <entity name="Moe3" prob="1.44" />
+        <entity name="CrawlerArlene" prob="1.44" />
+        <entity name="Darlene5" prob="1.44" />
+        <entity name="Marlene6" prob="1.44" />
+        <entity name="Yo7" prob="1.44" />
+        <entity name="Nurse1" prob="1.44" />
+        <entity name="Steve2" prob="1.44" />
+        <entity name="Joe3" prob="1.44" />
+        <entity name="spiderCrawler" prob="1.44" />
+        <entity name="Boe5" prob="1.44" />
+        <entity name="Moe6" prob="1.44" />
+        <entity name="Arlene7" prob="1.44" />
+        <entity name="Darlene1" prob="1.44" />
+        <entity name="Marlene2" prob="1.44" />
+        <entity name="Yo3" prob="1.44" />
+        <entity name="CrawlerNurse" prob="1.44" />
+        <entity name="Steve5" prob="1.44" />
+        <entity name="Joe6" prob="1.44" />
+        <entity name="spider7" prob="1.44" />
+        <entity name="Boe1" prob="1.44" />
+        <entity name="Moe2" prob="1.44" />
+        <entity name="zombieArlene" prob="1.44" />
+        <entity name="CrawlerDarlene" prob="1.44" />
+        <entity name="zombieMarlene" prob="1.44" />
+        <entity name="Yo6" prob="1.44" />
+        <entity name="zombieNurse" prob="1.44" />
+        <entity name="Steve1" prob="1.44" />
+        <entity name="Joe2" prob="1.44" />
+        <entity name="spider3" prob="1.44" />
+        <entity name="CrawlerBoe" prob="1.44" />
+        <entity name="Moe5" prob="1.44" />
+        <entity name="Arlene6" prob="1.44" />
+        <entity name="Darlene7" prob="1.44" />
+        <entity name="Marlene1" prob="1.44" />
+        <entity name="Yo2" prob="1.44" />
+        <entity name="Nurse3" prob="1.44" />
+        <entity name="zombieSteveCrawler" prob="1.44" />
+        <entity name="zombieJoe" prob="1.44" />
+        <entity name="spider6" prob="1.44" />
+        <entity name="Boe7" prob="1.44" />
+        <entity name="zombieMoe" prob="1.44" />
+        <entity name="Arlene2" prob="1.44" />
+        <entity name="zombieDarlene" prob="1.44" />
+        <entity name="CrawlerMarlene" prob="1.44" />
+        <entity name="zombieYo" prob="1.44" />
+        <entity name="Nurse6" prob="1.44" />
+        <entity name="Steve7" prob="1.44" />
+        <entity name="Joe1" prob="1.44" />
+        <entity name="spider2" prob="1.44" />
+        <entity name="Boe3" prob="1.44" />
+        <entity name="Moe7" prob="1.44" />
+        <entity name="Arlene5" prob="1.44" />
+        <entity name="Darlene6" prob="1.44" />
+        <entity name="Marlene7" prob="1.44" />
+        <entity name="Yo1" prob="1.44" />
+        <entity name="Nurse2" prob="1.44" />
+        <entity name="Steve3" prob="1.44" />
+        <entity name="CrawlerJoe" prob="1.44" />
+        <entity name="spider5" prob="1.44" />
+        <entity name="Boe6" prob="1.44" />
+        <entity name="Arlene1" prob="1.44" />
+        <entity name="Darlene2" prob="1.44" />
+        <entity name="Marlene3" prob="1.44" />
+        <entity name="CrawlerYo" prob="1.44" />
+        <entity name="Nurse5" prob="1.44" />
+        <entity name="zombieSteve" prob="1.44" />
+        <entity name="Joe7" prob="1.44" />
+    </entitygroup>
     
 	<entitygroup name="ZombiesNight">
         <entity name="Boe8" prob="1.07" />
@@ -463,30 +460,19 @@
         <entity name="burnt2" prob="1" />
         <entity name="Joe8" prob="1" />
         <entity name="ZombieCharred" prob="1" />
-        <!--JZMOD 6.25%-->
-        <entity name="hornet"  prob="2.08" />
-		<entity name="zombiedog"  prob="2.08" />
-        <entity name="RadSpider"  prob="2.08" />
+        <!--JZMOD 7.5%-->
+        <entity name="hornet"  prob="7.5" />
+        <!--JZMOD 5%-->
+		<entity name="zombiedog"  prob="2.5" />
+        <entity name="RadSpider"  prob="2.5" />
         <!--JZMOD 2.5%-->
-        <entity name="Maggi" prob="0.22" />
-		<entity name="Morgan" prob="0.22" />
-		<entity name="DarrylDixon" prob="0.22" />
-        <entity name="Jill" prob="0.22" />
-		<entity name="Chris" prob="0.22" />
-		<entity name="Barry" prob="0.22" />
-        <entity name="Tara" prob="0.22" />
-		<entity name="Michonne" prob="0.22" />
-		<entity name="Rosita" prob="0.22" />
-		<entity name="Rick" prob="0.22" />
-        <entity name="Abraham" prob="0.22" />
-        <!--JZMOD 6.25%-->
-        <entity name="BanditWarLeader" prob="0.92" />
-        <entity name="BanditDreadLeader" prob="0.92" />
-		<entity name="BanditTheMakerLeader" prob="0.92" />
-		<entity name="BanditFamineLeader" prob="0.92" />
-		<entity name="BanditDragonLeader" prob="0.92" />
-		<entity name="BanditDeathLeader" prob="0.92" />
-		<entity name="BanditPestilenceLeader" prob="0.92" />
+        <entity name="BanditWarLeader" prob="0.35" />
+        <entity name="BanditDreadLeader" prob="0.35" />
+		<entity name="BanditTheMakerLeader" prob="0.35" />
+		<entity name="BanditFamineLeader" prob="0.35" />
+		<entity name="BanditDragonLeader" prob="0.35" />
+		<entity name="BanditDeathLeader" prob="0.35" />
+		<entity name="BanditPestilenceLeader" prob="0.35" />
     </entitygroup>
 	<entitygroup name="ZombiesWastelandNight">
         <!--JZMOD 80%-->
@@ -575,19 +561,22 @@
         <entity name="burnt2" prob="0.94" />
         <entity name="Joe8" prob="0.94" />
         <entity name="ZombieCharred" prob="0.94" />
-        <!--JZMOD 5%-->
+        <!--JZMOD 1.25%-->
         <entity name="hornet"  prob="1.25" />
+        <!--JZMOD 1.25%-->
 		<entity name="zombiedog"  prob="1.25" />
-        <entity name="ZombieBaby" prob="1.25" />
-        <entity name="ZombieBrute" prob="1.25" />
-        <!--JZMOD 5%-->   
-        <entity name="BanditWarLeader" prob="0.45" />
-        <entity name="BanditDreadLeader" prob="0.45" />
-		<entity name="BanditTheMakerLeader" prob="0.71" />
-		<entity name="BanditFamineLeader" prob="0.71" />
-		<entity name="BanditDragonLeader" prob="0.71" />
-		<entity name="BanditDeathLeader" prob="0.71" />
-		<entity name="BanditPestilenceLeader" prob="0.71" />
+        <!--JZMOD 2.25%-->
+        <entity name="ZombieBaby" prob="2.25" />
+        <!--JZMOD 1.75%-->
+        <entity name="ZombieBrute" prob="1.75" />
+        <!--JZMOD 2.5%-->
+        <entity name="BanditWarLeader" prob="0.35" />
+        <entity name="BanditDreadLeader" prob="0.35" />
+		<entity name="BanditTheMakerLeader" prob="0.35" />
+		<entity name="BanditFamineLeader" prob="0.35" />
+		<entity name="BanditDragonLeader" prob="0.35" />
+		<entity name="BanditDeathLeader" prob="0.35" />
+		<entity name="BanditPestilenceLeader" prob="0.35" />
         <!--JZMOD 5%-->
 		<entity name="feral1" prob="0.71" />
         <entity name="zombieferal" prob="0.71" />
@@ -616,85 +605,77 @@
 		<entity name="snow7" prob="4.16" />
 		<entity name="snow8" prob="4.16" />
 		<entity name="snowzombie" prob="4.16" />
-        <!--JZMOD 66.66%-->
-        <entity name="Abraham"  prob="0.43" />
-        <entity name="spider1" prob="0.90" />
-        <entity name="zombieBoe" prob="0.90" />
-        <entity name="Moe3" prob="0.90" />
-        <entity name="CrawlerArlene" prob="0.90" />
-        <entity name="Darlene5" prob="0.90" />
-        <entity name="Marlene6" prob="0.90" />
-        <entity name="Yo7" prob="0.90" />
-        <entity name="Nurse1" prob="0.90" />
-        <entity name="Steve2" prob="0.90" />
-        <entity name="Joe3" prob="0.90" />
-        <entity name="Maggi"  prob="0.43" />
-        <entity name="spiderCrawler" prob="0.90" />
-        <entity name="Boe5" prob="0.90" />
-        <entity name="Moe6" prob="0.90" />
-        <entity name="Arlene7" prob="0.90" />
-        <entity name="Darlene1" prob="0.90" />
-        <entity name="Marlene2" prob="0.90" />
-        <entity name="Yo3" prob="0.90" />
-        <entity name="CrawlerNurse" prob="0.90" />
-        <entity name="Steve5" prob="0.90" />
-        <entity name="Joe6" prob="0.90" />
-        <entity name="Morgan" prob="0.43" />
-        <entity name="spider7" prob="0.90" />
-        <entity name="Boe1" prob="0.90" />
-        <entity name="Moe2" prob="0.90" />
-        <entity name="zombieArlene" prob="0.90" />
-        <entity name="CrawlerDarlene" prob="0.90" />
-        <entity name="zombieMarlene" prob="0.90" />
-        <entity name="Yo6" prob="0.90" />
-        <entity name="zombieNurse" prob="0.90" />
-        <entity name="Steve1" prob="0.90" />
-        <entity name="Joe2" prob="0.90" />
-        <entity name="DarrylDixon" prob="0.43" />
-        <entity name="spider3" prob="0.90" />
-        <entity name="CrawlerBoe" prob="0.90" />
-        <entity name="Moe5" prob="0.90" />
-        <entity name="Arlene6" prob="0.90" />
-        <entity name="Darlene7" prob="0.90" />
-        <entity name="Marlene1" prob="0.90" />
-        <entity name="Yo2" prob="0.90" />
-        <entity name="Nurse3" prob="0.90" />
-        <entity name="zombieSteveCrawler" prob="0.90" />
-        <entity name="zombieJoe" prob="0.90" />
-        <entity name="Tara"  prob="0.43" />
-        <entity name="spider6" prob="0.90" />
-        <entity name="Boe7" prob="0.90" />
-        <entity name="zombieMoe" prob="0.90" />
-        <entity name="Arlene2" prob="0.90" />
-        <entity name="zombieDarlene" prob="0.90" />
-        <entity name="CrawlerMarlene" prob="0.90" />
-        <entity name="zombieYo" prob="0.90" />
-        <entity name="Nurse6" prob="0.90" />
-        <entity name="Steve7" prob="0.90" />
-        <entity name="Joe1" prob="0.90" />
-        <entity name="Michonne" prob="0.43" />
-        <entity name="spider2" prob="0.90" />
-        <entity name="Boe3" prob="0.90" />
-        <entity name="Moe7" prob="0.90" />
-        <entity name="Arlene5" prob="0.90" />
-        <entity name="Darlene6" prob="0.90" />
-        <entity name="Marlene7" prob="0.90" />
-        <entity name="Yo1" prob="0.90" />
-        <entity name="Nurse2" prob="0.90" />
-        <entity name="Steve3" prob="0.90" />
-        <entity name="CrawlerJoe" prob="0.90" />
-        <entity name="Rosita" prob="0.43" />
-        <entity name="spider5" prob="0.90" />
-        <entity name="Boe6" prob="0.90" />
-        <entity name="Arlene1" prob="0.90" />
-        <entity name="Darlene2" prob="0.90" />
-        <entity name="Marlene3" prob="0.90" />
-        <entity name="CrawlerYo" prob="0.90" />
-        <entity name="Nurse5" prob="0.90" />
-        <entity name="zombieSteve" prob="0.90" />
-        <entity name="Joe7" prob="0.90" />
-        <entity name="Rick" prob="0.43" />
-	</entitygroup>
+        <!--JZMOD 66.66%-->       
+        <entity name="spider1" prob="0.96" />
+        <entity name="zombieBoe" prob="0.96" />
+        <entity name="Moe3" prob="0.96" />
+        <entity name="CrawlerArlene" prob="0.96" />
+        <entity name="Darlene5" prob="0.96" />
+        <entity name="Marlene6" prob="0.96" />
+        <entity name="Yo7" prob="0.96" />
+        <entity name="Nurse1" prob="0.96" />
+        <entity name="Steve2" prob="0.96" />
+        <entity name="Joe3" prob="0.96" />
+        <entity name="spiderCrawler" prob="0.96" />
+        <entity name="Boe5" prob="0.96" />
+        <entity name="Moe6" prob="0.96" />
+        <entity name="Arlene7" prob="0.96" />
+        <entity name="Darlene1" prob="0.96" />
+        <entity name="Marlene2" prob="0.96" />
+        <entity name="Yo3" prob="0.96" />
+        <entity name="CrawlerNurse" prob="0.96" />
+        <entity name="Steve5" prob="0.96" />
+        <entity name="Joe6" prob="0.96" />
+        <entity name="spider7" prob="0.96" />
+        <entity name="Boe1" prob="0.96" />
+        <entity name="Moe2" prob="0.96" />
+        <entity name="zombieArlene" prob="0.96" />
+        <entity name="CrawlerDarlene" prob="0.96" />
+        <entity name="zombieMarlene" prob="0.96" />
+        <entity name="Yo6" prob="0.96" />
+        <entity name="zombieNurse" prob="0.96" />
+        <entity name="Steve1" prob="0.96" />
+        <entity name="Joe2" prob="0.96" />
+        <entity name="spider3" prob="0.96" />
+        <entity name="CrawlerBoe" prob="0.96" />
+        <entity name="Moe5" prob="0.96" />
+        <entity name="Arlene6" prob="0.96" />
+        <entity name="Darlene7" prob="0.96" />
+        <entity name="Marlene1" prob="0.96" />
+        <entity name="Yo2" prob="0.96" />
+        <entity name="Nurse3" prob="0.96" />
+        <entity name="zombieSteveCrawler" prob="0.96" />
+        <entity name="zombieJoe" prob="0.96" />
+        <entity name="spider6" prob="0.96" />
+        <entity name="Boe7" prob="0.96" />
+        <entity name="zombieMoe" prob="0.96" />
+        <entity name="Arlene2" prob="0.96" />
+        <entity name="zombieDarlene" prob="0.96" />
+        <entity name="CrawlerMarlene" prob="0.96" />
+        <entity name="zombieYo" prob="0.96" />
+        <entity name="Nurse6" prob="0.96" />
+        <entity name="Steve7" prob="0.96" />
+        <entity name="Joe1" prob="0.96" />
+        <entity name="spider2" prob="0.96" />
+        <entity name="Boe3" prob="0.96" />
+        <entity name="Moe7" prob="0.96" />
+        <entity name="Arlene5" prob="0.96" />
+        <entity name="Darlene6" prob="0.96" />
+        <entity name="Marlene7" prob="0.96" />
+        <entity name="Yo1" prob="0.96" />
+        <entity name="Nurse2" prob="0.96" />
+        <entity name="Steve3" prob="0.96" />
+        <entity name="CrawlerJoe" prob="0.96" />
+        <entity name="spider5" prob="0.96" />
+        <entity name="Boe6" prob="0.96" />
+        <entity name="Arlene1" prob="0.96" />
+        <entity name="Darlene2" prob="0.96" />
+        <entity name="Marlene3" prob="0.96" />
+        <entity name="CrawlerYo" prob="0.96" />
+        <entity name="Nurse5" prob="0.96" />
+        <entity name="zombieSteve" prob="0.96" />
+        <entity name="Joe7" prob="0.96" />
+    </entitygroup>
     
     <entitygroup name="ZombiesBoss">
 		<entity name="ZombieBrute" prob="33.33" />
@@ -1426,21 +1407,36 @@
 	</entitygroup>
     
 	<entitygroup name="BanditGroup">
-		<entity name="BanditWarLeader" prob="0.15" />
-		<entity name="BanditDreadLeader" prob="0.15" />
-		<entity name="BanditTheMakerLeader" prob="0.15" />
-		<entity name="BanditFamineLeader" prob="0.15" />
-		<entity name="BanditDragonLeader" prob="0.15" />
-		<entity name="BanditDeathLeader" prob="0.15" />
-		<entity name="BanditPestilenceLeader" prob="0.15" />
+		<entity name="BanditWarLeader" prob="14.28" />
+		<entity name="BanditDreadLeader" prob="14.28" />
+		<entity name="BanditTheMakerLeader" prob="14.28" />
+		<entity name="BanditFamineLeader" prob="14.28" />
+		<entity name="BanditDragonLeader" prob="14.28" />
+		<entity name="BanditDeathLeader" prob="14.28" />
+		<entity name="BanditPestilenceLeader" prob="14.28" />
 	</entitygroup>
   
+    <entitygroup name="Survivors">
+        <entity name="Dummy"  prob="80" />
+        <entity name="Abraham" prob="1.81" />
+        <entity name="Maggi" prob="1.81" />
+        <entity name="Morgan" prob="1.81" />
+        <entity name="DarrylDixon" prob="1.81" />
+        <entity name="Tara" prob="1.81" />
+        <entity name="Michonne" prob="1.81" />
+        <entity name="Rosita" prob="1.81" />
+        <entity name="Rick" prob="1.81" />
+        <entity name="Jill" prob="1.81" />
+        <entity name="Chris" prob="1.81" />
+        <entity name="Barry" prob="1.81" />
+   </entitygroup>
+   
    <!--JZMOD NIGHT TOWER BUSTING UNDEAD ARMYS-->
 	<entitygroup name="Bomber1Class">
 		<entity name="ZombieBabyBoomer" prob="50" />
         <entity name="WitchBoomer" prob="50" />
 	</entitygroup>
-    <entitygroup name="BomberNLeigon">
+    <entitygroup name="BomberNLegion">
         <!--JZMOD 75%-->
 		<entity name="ZombieBabyBoomer" prob="37.50" />
         <entity name="WitchBoomer" prob="37.50" />

@@ -1766,12 +1766,17 @@
 		<item group="beverages" prob="9.0" />
 		<item group="treasureMaps" count="1" prob=".5"/>
 	</lootgroup>
-	
-	<lootgroup name="airdropfood" count="all">
+    
+	<lootgroup name="ProfessionPageChance" count="1">
+        <item name="ProfessionPage" count="1" prob="50" />
+        <item group="empty" prob="50" />
+    </lootgroup>
+    
+    <lootgroup name="airdropfood" count="all">
 		<item group="cupboard" count="1,3" />
 		<item group="cannedfood" count="1,3" />
 		<item group="beverages" count="1,3" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropMedicine" count="all">
@@ -1780,7 +1785,7 @@
 		<item name="antibiotics" count="1,3" />
 		<item name="beaker" count="1" />
 		<item name="AntivirialMeds" count="1,3" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropGuns" count="all">
@@ -1788,7 +1793,7 @@
 		<item group="commonWeaponParts" count="1,3" />
 		<item group="ammoBig" count="1,3" />
 		<item name="GunOil" count="5,20" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropSoldier" count="all">
@@ -1799,7 +1804,7 @@
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
 		<item name="308mmBullet" count="10" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropFarmer" count="all">
@@ -1811,7 +1816,7 @@
 		<item name="canBeef" />
 		<item name="bottledWater" count="5" />
 	    <item name="308mmBullet" count="15" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropChemist" count="all">
@@ -1822,7 +1827,7 @@
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
 		<item name="Stimulant" count="6" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropCarpenter" count="all">
@@ -1834,7 +1839,7 @@
 		<item name="canBeef" />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropCop" count="all">
@@ -1844,7 +1849,7 @@
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
 		<item name="9mmBullet" count="20" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropDoctor" count="all">
@@ -1856,7 +1861,7 @@
 		<item name="SuterKit" count="3" />
 		<item name="Stimulant" count="1,2" />
 		<item name="SuperPill" count="1" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropFisherman" count="all">
@@ -1867,7 +1872,7 @@
 		<item name="vitamins" />
 		<item name="FishingLine" count="5" />
 		<item name="hook" count="10"  />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropChef" count="all">
@@ -1878,7 +1883,7 @@
 		<item name="canBeef" />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropFitness" count="all">
@@ -1888,8 +1893,7 @@
 		<item group="cannedfood" count="5" />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
-		
+        <item group="ProfessionPageChance" count="1" />		
 	</lootgroup>
 	
 	<lootgroup name="airdropFireman" count="all">
@@ -1898,7 +1902,7 @@
 		<item name="canBeef" />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropConstruction" count="all">
@@ -1907,7 +1911,7 @@
 		<item name="canBeef" />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropElectrician" count="all">
@@ -1918,7 +1922,7 @@
 		<item name="canBeef" />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropMetal" count="all">
@@ -1928,7 +1932,7 @@
 		<item name="canBeef" />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropBurglar" count="all">
@@ -1938,7 +1942,7 @@
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" count="2,5" />
 		<item name="LockPick" count="50" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropPark" count="all">
@@ -1949,7 +1953,7 @@
 		<item name="bottledWater" count="5" />
         <item name="painkillers" />
 		<item name="308mmBullet" count="19" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	
 	<lootgroup name="airdropMechanic" count="all">
@@ -1958,7 +1962,7 @@
 		<item name="canBeef" count="5"  />
 		<item name="bottledWater" count="5" />
 		<item name="painkillers" />
-        <item name="ProfessionPage" count="1" prob="0.5" />
+        <item group="ProfessionPageChance" count="1" />
 	</lootgroup>
 	<!-- Loot Containers 1-149 -->
 	<!-- lootcontainer 1 misc storage, cardboard boxes-->
@@ -2192,18 +2196,18 @@
 	</lootcontainer>
 	<!-- fat zombie loot -->
 	<lootcontainer id="38" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item name="bottledWater" count="1" prob="6.2" />
-		<item name="shamSandwich" prob="8.3" />
+		<item name="bottledWater" count="1" prob="7.2" />
+		<item name="shamSandwich" prob="9.3" />
 		<item group="cannedfood" prob="2.1" />
 		<item group="ammoBig" prob="0.4" />
-		<item name="animalFat" count="1,2" prob="41.4" />
-		<item name="painkillers" prob="3.7" />
-		<item group="ammoSmall" prob="4.1" />
-		<item group="hazmatGear" count="1" prob="0.3" />
-		<item group="books" prob="0.4" />
-		<item group="MonthlyMagazines" prob="4.1" />
-		<item group="WeeklyMagazines" prob="8.3" />
-		<item name="ProfessionPage" count="1,2" prob="20.7" />
+		<item name="animalFat" count="1,2" prob="43.4" />
+		<item name="painkillers" prob="4.7" />
+		<item group="ammoSmall" prob="5.2" />
+		<item group="hazmatGear" count="1" prob="1.8" />
+		<item group="books" prob="1.4" />
+		<item group="MonthlyMagazines" prob="5.1" />
+		<item group="WeeklyMagazines" prob="9.3" />
+		<item name="ProfessionPage" count="1" prob="10" />
 	</lootcontainer>
 	<!-- shotgun messiah -->
 	<lootcontainer id="39" count="0,2" size="4,3" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest"></lootcontainer>
@@ -2279,7 +2283,7 @@
 		<item group="books" prob="2.0" />
 		<item group="empty" prob="4.6" />
 		<item group="GunBooks" prob="9.7" />
-		<item name="ProfessionPage" count="1,2" prob="10.2" />
+		<item name="ProfessionPage" count="1" prob="10.2" />
 		<item group="deadBody" prob="9.1" />
 	</lootcontainer>
 	<!-- Police Car -->
@@ -2292,7 +2296,7 @@
 		<item name="bottledWater" prob="21.4" />
 		<item group="medicine" prob="8.5" />
 		<item name="Stimulant" prob="7.1" />
-		<item name="ProfessionPage" count="1,2" prob="19.2" />
+		<item name="ProfessionPage" count="1" prob="19.2" />
 		<item group="deadBody" prob="10.0" />
 	</lootcontainer>
 	<!-- lootcontainer 48 purse -->
@@ -2723,18 +2727,18 @@
 	
 	<!-- lootcontainer 158 fat zombie loot -->
 	<lootcontainer id="158" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse">
-		<item name="bottledWater" count="1" prob="6.2" />
-		<item name="shamSandwich" prob="8.3" />
+		<item name="bottledWater" count="1" prob="7.2" />
+		<item name="shamSandwich" prob="9.3" />
 		<item group="cannedfood" prob="2.1" />
 		<item group="ammoBig" prob="0.4" />
-		<item name="animalFat" count="1,2" prob="41.4" />
-		<item name="painkillers" prob="3.7" />
-		<item group="ammoSmall" prob="4.1" />
-		<item group="hazmatGear" count="1" prob="0.3" />
-		<item group="books" prob="0.4" />
-		<item group="MonthlyMagazines" prob="4.1" />
-		<item group="WeeklyMagazines" prob="8.3" />
-		<item name="ProfessionPage" count="1,2" prob="20.7" />
+		<item name="animalFat" count="1,2" prob="43.4" />
+		<item name="painkillers" prob="4.7" />
+		<item group="ammoSmall" prob="5.2" />
+		<item group="hazmatGear" count="1" prob="1.8" />
+		<item group="books" prob="1.4" />
+		<item group="MonthlyMagazines" prob="5.1" />
+		<item group="WeeklyMagazines" prob="9.3" />
+		<item name="ProfessionPage" count="1" prob="10" />
 	</lootcontainer>
 	
 	<!-- lootcontainer 159 feral loot -->

@@ -892,7 +892,7 @@ then add recipes for those white/red/green metals
 		<property name="Tag" value="TreeTrunk" />
 		<property name="IsPlant" value="true" />
 		<property name="ParticleOnDeath" value="treeGib_burnt" />
-        <drop event="Harvest" name="oldFrisbie" count="1" prob="0.01" />
+        <drop event="Harvest" name="oldFrisbee" count="1" prob="0.01" />
         <drop event="Harvest" name="honeyComb" count="1" prob="0.01" />
         <drop event="Harvest" name="oldKite" count="1" prob="0.01" />
         <drop event="Harvest" name="paperToilet" count="1" prob="0.01" />
@@ -4706,7 +4706,7 @@ kind of free
 		<property name="PlantGrowing.FertileLevel" value="1" />
 		<property name="Class" value="UpgradeRated" />
 		<property name="UpgradeRated.ToBlock" value="plantedMushroom2" />
-		<property name="UpgradeRated.Rate" value="300" />
+		<property name="UpgradeRated.Rate" value="63" />
 		<drop event="Destroy" count="0" />
 		<property name="DescriptionKey" value="mushroomSeedDesc" />
 	</block>
@@ -5058,8 +5058,8 @@ kind of free
 		<property name="BigDecorationRadius" value="2" />
 		<property name="CanPlayersSpawnOn" value="false" />
 		<property name="ParticleOnDeath" value="treeGib_small_dust" />
-		<drop event="Harvest" name="woodBranch" count="20" />
-		<drop event="Destroy" name="narrowLog" count="3,8" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="15" />
+		<drop event="Destroy" name="narrowLog" count="2,7" prob="1" />
 	</block>
 	<block id="560" name="treeMountainPine8m">
 		<property name="Extends" value="treeMaster" />
@@ -5067,8 +5067,8 @@ kind of free
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,10,1" />
 		<property name="BigDecorationRadius" value="2" />
-		<drop event="Harvest" name="woodBranch" count="45" />
-		<drop event="Destroy" name="narrowLog" count="7,17" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="25" />
+		<drop event="Destroy" name="narrowLog" count="5,15" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="1" />
 	</block>
 	<block id="561" name="treeMountainPine13m">
@@ -5078,8 +5078,8 @@ kind of free
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,19,1" />
 		<property name="BigDecorationRadius" value="2" />
-		<drop event="Harvest" name="woodBranch" count="50" />
-		<drop event="Destroy" name="narrowLog" count="15,25" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="25" />
+		<drop event="Destroy" name="narrowLog" count="13,23" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="1" />
 	</block>
 	<block id="562" name="treeMountainPine16m">
@@ -5089,9 +5089,9 @@ kind of free
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,24,1" />
 		<property name="BigDecorationRadius" value="3" />
-		<drop event="Harvest" name="woodBranch" count="55" />
-		<drop event="Destroy" name="narrowLog" count="10,15" prob="1" />
-        <drop event="Destroy" name="woodLogPillar100" count="10,15" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="27" />
+		<drop event="Destroy" name="narrowLog" count="8,13" prob="1" />
+        <drop event="Destroy" name="woodLogPillar100" count="10,13" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="1" />
 	</block>
 	<block id="563" name="treeMountainPine19m">
@@ -5102,9 +5102,9 @@ kind of free
 		<property name="MultiBlockDim" value="1,27,1" />
 		<property name="BigDecorationRadius" value="3" />
         <property name="MaxDamage" value="1300" />
-        <drop event="Harvest" name="woodBranch" count="60" />
-        <drop event="Destroy" name="narrowLog" count="15,20" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="15,20" prob="1" />
+        <drop event="Harvest" name="woodBranch" count="30" />
+        <drop event="Destroy" name="narrowLog" count="13,18" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="14,18" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="2" />
 	</block>
 	<block id="564" name="treeMountainPine20m">
@@ -5115,9 +5115,9 @@ kind of free
 		<property name="MultiBlockDim" value="1,28,1" />
 		<property name="BigDecorationRadius" value="4" />
         <property name="MaxDamage" value="1500" />
-		<drop event="Harvest" name="woodBranch" count="65" />
-        <drop event="Destroy" name="narrowLog" count="16,21" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="17,22" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="32" />
+        <drop event="Destroy" name="narrowLog" count="14,19" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="15,20" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="2" />
 	</block>
 	<block id="565" name="treeMountainPineDry">
@@ -5127,9 +5127,9 @@ kind of free
 		<property name="MultiBlockDim" value="1,21,1" />
 		<property name="BigDecorationRadius" value="3" />
 		<property name="ModelOffset" value="0,-0.3,0" />
-		<drop event="Harvest" name="woodBranch" count="55" />
-        <drop event="Destroy" name="narrowLog" count="12,17" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="12,17" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="27" />
+        <drop event="Destroy" name="narrowLog" count="10,15" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="10,15" prob="1" />
 	</block>
 	<block id="566" name="treeBirch10m">
 		<property name="Extends" value="treeMaster" />
@@ -5138,8 +5138,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,7,1" />
 		<property name="BigDecorationRadius" value="2" />
 		<property name="ParticleOnDeath" value="treeGib_birch_small" />
-		<drop event="Harvest" name="woodBranch" count="25" />
-        <drop event="Destroy" name="narrowLog" count="8,13" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="14" />
+        <drop event="Destroy" name="narrowLog" count="6,11" prob="1" />
 	</block>
 	<block id="567" name="treeBirch12m">
 		<property name="Extends" value="treeMaster" />
@@ -5149,8 +5149,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,4,1" />
 		<property name="BigDecorationRadius" value="3" />
 		<property name="ParticleOnDeath" value="treeGib_birch_small" />
-		<drop event="Harvest" name="woodBranch" count="30" />
-        <drop event="Destroy" name="narrowLog" count="14,19" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="17" />
+        <drop event="Destroy" name="narrowLog" count="12,17" prob="1" />
 	</block>
 	<block id="568" name="treeBirch15m">
 		<property name="Extends" value="treeMaster" />
@@ -5160,8 +5160,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,13,1" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="ParticleOnDeath" value="treeGib_birch" />
-		<drop event="Harvest" name="woodBranch" count="35" />
-        <drop event="Destroy" name="narrowLog" count="18,23" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="18" />
+        <drop event="Destroy" name="narrowLog" count="16,21" prob="1" />
 	</block>
 	<block id="569" name="treeDeadShrub">
 		<property name="Material" value="wood_weak" />
@@ -5173,8 +5173,8 @@ kind of free
 		<property name="Model" value="Entities/Trees/Haunted_Shrub_Wasteland2Prefab" />
 		<!-- uses dummy texture id from opaque atlas -->
 		<!-- uses dummy texture id from opaque atlas -->
-		<drop event="Harvest" name="woodBranch" count="10" />
-		<drop event="Destroy" name="woodBranch" count="10,15" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="8" />
+		<drop event="Destroy" name="woodBranch" count="8,13" prob="1" />
 	</block>
 	<block id="570" name="treeMaple6m">
 		<property name="Extends" value="treeMaster" />
@@ -5183,8 +5183,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,5,1" />
 		<property name="BigDecorationRadius" value="2" />
 		<property name="ParticleOnDeath" value="treeGib_birch_small" />
-		<drop event="Harvest" name="woodBranch" count="25" />
-        <drop event="Destroy" name="narrowLog" count="5,10" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="12" />
+        <drop event="Destroy" name="narrowLog" count="4,8" prob="1" />
 		<drop event="Destroy" name="mapleSeed" count="1" />
 	</block>
 	<block id="571" name="treeMaple13m">
@@ -5195,8 +5195,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,7,1" />
 		<property name="BigDecorationRadius" value="3" />
 		<property name="ParticleOnDeath" value="treeGib_birch_small" />
-		 <drop event="Harvest" name="woodBranch" count="30" />
-        <drop event="Destroy" name="narrowLog" count="8,13" prob="1" />
+		 <drop event="Harvest" name="woodBranch" count="15" />
+        <drop event="Destroy" name="narrowLog" count="6,11" prob="1" />
 		<drop event="Destroy" name="mapleSeed" count="1" />
 	</block>
 	<block id="572" name="rConcreteCNRRoundTop">
@@ -5215,8 +5215,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,7,1" />
 		<property name="BigDecorationRadius" value="4" />
 		<property name="ParticleOnDeath" value="treeGib_birch" />
-		<drop event="Harvest" name="woodBranch" count="30" />
-        <drop event="Destroy" name="narrowLog" count="8,13" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="15" />
+        <drop event="Destroy" name="narrowLog" count="7,11" prob="1" />
 		<drop event="Destroy" name="mapleSeed" count="1" />
 	</block>
 	<block id="574" name="treeMaple16m">
@@ -5228,9 +5228,9 @@ kind of free
 		<property name="BigDecorationRadius" value="5" />
 		<property name="ParticleOnDeath" value="treeGib_birch" />
         <property name="MaxDamage" value="1400" />
-        <drop event="Harvest" name="woodBranch" count="55" />
-        <drop event="Destroy" name="narrowLog" count="10,15" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="10,15" prob="1" />
+        <drop event="Harvest" name="woodBranch" count="28" />
+        <drop event="Destroy" name="narrowLog" count="8,13" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="9,13" prob="1" />
         <drop event="Destroy" name="mapleSeed" count="2" />
 	</block>
 	<block id="575" name="treeMaple17m">
@@ -5242,9 +5242,9 @@ kind of free
 		<property name="BigDecorationRadius" value="6" />
 		<property name="ParticleOnDeath" value="treeGib_birch" />
 		<property name="MaxDamage" value="1500" />
-        <drop event="Harvest" name="woodBranch" count="65" />
-        <drop event="Destroy" name="narrowLog" count="15,20" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="15,20" prob="1" />
+        <drop event="Harvest" name="woodBranch" count="33" />
+        <drop event="Destroy" name="narrowLog" count="13,18" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="14,18" prob="1" />
         <drop event="Destroy" name="mapleSeed" count="2" />
 	</block>
 	<block id="576" name="steelCNRRound">
@@ -5263,9 +5263,9 @@ kind of free
 		<property name="MultiBlockDim" value="1,3,1" />
 		<property name="BigDecorationRadius" value="3" />
 		<property name="ParticleOnDeath" value="treeGib_burnt_small" />
-		<drop event="Harvest" name="woodBranch" count="25" />
-        <drop event="Destroy" name="narrowLog" count="5,8" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="2,4" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="15" />
+        <drop event="Destroy" name="narrowLog" count="4,7" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="2,3" prob="1" />
 	</block>
 	<block id="578" name="treeBurntPine02">
 		<property name="Extends" value="treeMaster" />
@@ -5274,9 +5274,9 @@ kind of free
 		<property name="ModelOffset" value=".7,-1,-.7" />
 		<property name="MultiBlockDim" value="1,5,1" />
 		<property name="BigDecorationRadius" value="4" />
-		<drop event="Harvest" name="woodBranch" count="30" />
-        <drop event="Destroy" name="narrowLog" count="5,10" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="5,10" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="15" />
+        <drop event="Destroy" name="narrowLog" count="5,8" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="4,9" prob="1" />
 	</block>
 	<block id="579" name="treeBurntPine03">
 		<property name="Extends" value="treeMaster" />
@@ -5285,9 +5285,9 @@ kind of free
 		<property name="ModelOffset" value="-.5,-1.3,-.5" />
 		<property name="MultiBlockDim" value="2,9,2" />
 		<property name="BigDecorationRadius" value="4" />
-		<drop event="Harvest" name="woodBranch" count="30" />
-        <drop event="Destroy" name="narrowLog" count="8,13" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="8,13" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="15" />
+        <drop event="Destroy" name="narrowLog" count="7,11" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="7,11" prob="1" />
 	</block>
 	<block id="580" name="steelCNRRoundTop">
 		<property name="Extends" value="steelCNRRound" />
@@ -5406,9 +5406,9 @@ kind of free
 		<property name="ModelOffset" value="0,-0.3,0" />
 		<property name="MultiBlockDim" value="1,28,1" />
 		<property name="BigDecorationRadius" value="2" />
-		<drop event="Harvest" name="woodBranch" count="50" />
-        <drop event="Destroy" name="narrowLog" count="15,20" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="15,20" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="25" />
+        <drop event="Destroy" name="narrowLog" count="15,18" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="14,18" prob="1" />
 	</block>
 	<block id="591" name="treeDesertShrub">
 		<property name="Class" value="Deadgrass" />
@@ -6300,8 +6300,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,10,1" />
 		<property name="BigDecorationRadius" value="2" />
 		<property name="PlantGrowing.Next" value="treePlantedMountainPine8m" />
-		<drop event="Harvest" name="woodBranch" count="45" />
-		<drop event="Destroy" name="narrowLog" count="7,17" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="23" />
+		<drop event="Destroy" name="narrowLog" count="7,15" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="1" />
 	</block>
 	<block id="676" name="treePlantedMountainPine8m">
@@ -6313,8 +6313,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,19,1" />
 		<property name="BigDecorationRadius" value="2" />
 		<property name="PlantGrowing.Next" value="treePlantedMountainPine13m" />
-		<drop event="Harvest" name="woodBranch" count="50" />
-		<drop event="Destroy" name="narrowLog" count="15,25" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="25" />
+		<drop event="Destroy" name="narrowLog" count="14,23" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="1" />
 	</block>
 	<block id="677" name="treePlantedMountainPine13m">
@@ -6327,9 +6327,9 @@ kind of free
 		<property name="BigDecorationRadius" value="3" />
 		<property name="PlantGrowing.Next" value="treePlantedMountainPine16m" />
 		<property name="PlantGrowing.FertileLevel" value="3" />
-		<drop event="Harvest" name="woodBranch" count="55" />
-		<drop event="Destroy" name="narrowLog" count="10,15" prob="1" />
-        <drop event="Destroy" name="woodLogPillar100" count="10,15" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="23" />
+		<drop event="Destroy" name="narrowLog" count="9,13" prob="1" />
+        <drop event="Destroy" name="woodLogPillar100" count="9,14" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="1" />
 	</block>
 	<block id="678" name="treePlantedMountainPine16m">
@@ -6345,9 +6345,9 @@ kind of free
 		<property name="PlantGrowing.GrowthRate" value="300" />
 		<property name="PlantGrowing.FertileLevel" value="5" />
 		<property name="MaxDamage" value="1500" />
-        <drop event="Harvest" name="woodBranch" count="65" />
-        <drop event="Destroy" name="narrowLog" count="16,21" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="17,22" prob="1" />
+        <drop event="Harvest" name="woodBranch" count="32" />
+        <drop event="Destroy" name="narrowLog" count="14,20" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="15,20" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="2" />
 	</block>
 	<block id="679" name="treePlantedMountainPine19m">
@@ -6380,8 +6380,8 @@ kind of free
 		<property name="BigDecorationRadius" value="2" />
 		<property name="PlantGrowing.Next" value="treePlantedMaple13m" />
 		<property name="ParticleOnDeath" value="treeGib_birch_small" />
-		<drop event="Harvest" name="woodBranch" count="25" />
-        <drop event="Destroy" name="narrowLog" count="5,10" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="20" />
+        <drop event="Destroy" name="narrowLog" count="5,9" prob="1" />
 		<drop event="Destroy" name="mapleSeed" count="1" />
 	</block>
 	<block id="682" name="treePlantedMaple13m">
@@ -6394,8 +6394,8 @@ kind of free
 		<property name="BigDecorationRadius" value="3" />
 		<property name="PlantGrowing.Next" value="treePlantedMaple15m" />
 		<property name="ParticleOnDeath" value="treeGib_birch_small" />
-		<drop event="Harvest" name="woodBranch" count="30" />
-        <drop event="Destroy" name="narrowLog" count="8,13" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="20" />
+        <drop event="Destroy" name="narrowLog" count="8,11" prob="1" />
 		<drop event="Destroy" name="mapleSeed" count="1" />
 	</block>
 	<block id="683" name="treePlantedMaple15m">
@@ -6409,8 +6409,8 @@ kind of free
 		<property name="PlantGrowing.Next" value="treePlantedMaple17m" />
 		<property name="PlantGrowing.FertileLevel" value="3" />
 		<property name="ParticleOnDeath" value="treeGib_birch" />
-		<drop event="Harvest" name="woodBranch" count="30" />
-        <drop event="Destroy" name="narrowLog" count="8,13" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="19" />
+        <drop event="Destroy" name="narrowLog" count="8,11" prob="1" />
 		<drop event="Destroy" name="mapleSeed" count="1" />
 	</block>
 	<block id="684" name="treePlantedMaple17m">
@@ -6426,9 +6426,9 @@ kind of free
 		<property name="PlantGrowing.Next" value="treePlantedMaple17mPlus" />
 		<property name="PlantGrowing.GrowthRate" value="300" />
 		<property name="PlantGrowing.FertileLevel" value="5" />
-		<drop event="Harvest" name="woodBranch" count="65" />
-        <drop event="Destroy" name="narrowLog" count="15,20" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="15,20" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="34" />
+        <drop event="Destroy" name="narrowLog" count="14,18" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="14,18" prob="1" />
         <drop event="Destroy" name="mapleSeed" count="2" />
 	</block>
 	<block id="685" name="adobeWhiteBlock">
@@ -7453,8 +7453,8 @@ kind of free
 		<property name="Model" value="Entities/Trees/SnakeweedPrefab" />
 		<property name="ParticleOnDeath" value="treeGib_burnt" />
 		<!-- uses dummy texture id from opaque atlas -->
-		<drop event="Harvest" name="woodBranch" count="5" />
-        <drop event="Destroy" name="woodBranch" count="5,10" />
+		<drop event="Harvest" name="woodBranch" count="4" />
+        <drop event="Destroy" name="woodBranch" count="5,8" />
 	</block>
 	<block id="817" name="bridgeAsphaltBlock">
 		<property name="Material" value="Mbridge_asphalt" />
@@ -7864,8 +7864,8 @@ kind of free
 		<property name="BigDecorationRadius" value="2" />
 		<property name="IsTerrainDecoration" value="true" />
 		<property name="CanPlayersSpawnOn" value="false" />
-		<drop event="Harvest" name="woodBranch" count="20" />
-        <drop event="Destroy" name="narrowLog" count="12,17" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="12" />
+        <drop event="Destroy" name="narrowLog" count="11,15" prob="1" />
 	</block>
 	<block id="864" name="treeGreenBrownGrassDiagonal">
 		<property name="Class" value="Deadgrass" />
@@ -12992,8 +12992,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,10,1" />
 		<property name="BigDecorationRadius" value="2" />
 		<property name="PlantGrowing.Next" value="treePlantedWinterPine13m" />
-		<drop event="Harvest" name="woodBranch" count="45" />
-		<drop event="Destroy" name="narrowLog" count="7,17" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="23" />
+		<drop event="Destroy" name="narrowLog" count="7,15" prob="1" />
 		<drop event="Destroy" name="pineSeed" count="1" />
 	</block>
 	<block id="1566" name="greenRustyMetalWall04Sheet2">
@@ -13017,8 +13017,8 @@ kind of free
 		<property name="MultiBlockDim" value="1,12,1" />
 		<property name="BigDecorationRadius" value="2" />
 		<property name="PlantGrowing.Next" value="treePlantedWinterPine16m" />
-		<drop event="Harvest" name="woodBranch" count="30" />
-        <drop event="Destroy" name="narrowLog" count="20,25" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="18" />
+        <drop event="Destroy" name="narrowLog" count="18,22" prob="1" />
 		<drop event="Destroy" name="blueSpruceSeed" count="2" />
 	</block>
 	<block id="1568" name="treePlantedWinterPine16m">
@@ -13031,8 +13031,8 @@ kind of free
 		<property name="BigDecorationRadius" value="2" />
 		<property name="PlantGrowing.Next" value="treePlantedWinterPine19m" />
 		<property name="PlantGrowing.FertileLevel" value="3" />
-		<drop event="Harvest" name="woodBranch" count="30" />
-        <drop event="Destroy" name="narrowLog" count="20,25" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="20" />
+        <drop event="Destroy" name="narrowLog" count="20,24" prob="1" />
 		<drop event="Destroy" name="blueSpruceSeed" count="2" />
 	</block>
 	<block id="1569" name="treePlantedWinterPine19m">
@@ -13047,9 +13047,9 @@ kind of free
 		<property name="PlantGrowing.Next" value="treePlantedWinterPine19mPlus" />
 		<property name="PlantGrowing.GrowthRate" value="300" />
 		<property name="PlantGrowing.FertileLevel" value="5" />
-		<drop event="Harvest" name="woodBranch" count="50" />
-        <drop event="Destroy" name="narrowLog" count="15,20" prob="1" />
-		<drop event="Destroy" name="woodLogPillar100" count="15,20" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="25" />
+        <drop event="Destroy" name="narrowLog" count="14,18" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="14,18" prob="1" />
 		<drop event="Destroy" name="blueSpruceSeed" count="2" />
 	</block>
 	<block id="1570" name="corrugatedMetalWallSheet">
@@ -15779,8 +15779,8 @@ kind of free
 		<property name="BigDecorationRadius" value="2" />
 		<property name="UpwardsCount" value="2" />
 		<property name="FallOver" value="true" />
-        <drop event="Harvest" name="woodBranch" count="15" />
-        <drop event="Destroy" name="narrowLog" count="5,10" prob="1" />
+        <drop event="Harvest" name="woodBranch" count="10" />
+        <drop event="Destroy" name="narrowLog" count="5,8" prob="1" />
 	</block>
 	<block id="1666" name="appleTree">
 		<property name="Extends" value="treeMaster" />
@@ -15790,8 +15790,8 @@ kind of free
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="3" />
 		<property name="ModelOffset" value="0,0,0" />
-        <drop event="Harvest" name="woodBranch" count="25" />
-        <drop event="Destroy" name="narrowLog" count="7,15" prob="1" />
+        <drop event="Harvest" name="woodBranch" count="15" />
+        <drop event="Destroy" name="narrowLog" count="6,14" prob="1" />
 		<drop event="Destroy" name="Apple" count="3,15" prob="1" />
 	</block>
 	<block id="1667" name="smallOrangeTree">
@@ -15805,8 +15805,8 @@ kind of free
 		<property name="BigDecorationRadius" value="4" />
 		<property name="UpwardsCount" value="1" />
         <property name="MaxDamage" value="200" />
-		<drop event="Harvest" name="woodBranch" count="10" />
-        <drop event="Destroy" name="woodBranch" count="10,15" />
+		<drop event="Harvest" name="woodBranch" count="8" />
+        <drop event="Destroy" name="woodBranch" count="8,13" />
 	</block>
 	<block id="1668" name="smallLimeTree">
 		<property name="Extends" value="smallOrangeTree" />

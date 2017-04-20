@@ -976,7 +976,7 @@
 		<property name="SwimOffset" value="2" />
         <property name="DeadBodyHitPoints" value="50" />
 		<!-- JZMOD Harvest For Beginner -->
-        <drop event="Harvest" name="tropyRabbit" count="1" />
+        <drop event="Harvest" name="trophyRabbit" count="1" />
 		<drop event="Harvest" name="rawMeat" count="3" />
 		<drop event="Harvest" name="animalHide" count="1" />
 		<drop event="Harvest" name="BrainMatter" count="1" />
@@ -1048,7 +1048,7 @@
 		<property name="ExperienceGain" value="30" />
 		<property name="SwimOffset" value="0.7" />
 		<!-- JZMOD Harvest For Beginner -->
-        <drop event="Harvest" name="tropyPig" count="1" />
+        <drop event="Harvest" name="trophyPig" count="1" />
 		<drop event="Harvest" name="rawMeat" count="6" />
 		<drop event="Harvest" name="animalHide" count="2" />
 		<drop event="Harvest" name="BrainMatter" count="2" />
@@ -1864,7 +1864,7 @@
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityAnimalBear" />
         <property name="AITarget-4" value="BlockingTargetTask" />
         <!-- JZMOD Harvest For Beginner -->
-        <drop event="Harvest" name="tropyBoar" count="1" />
+        <drop event="Harvest" name="trophyBoar" count="1" />
 		<drop event="Harvest" name="rawMeat" count="6" />
 		<drop event="Harvest" name="animalHide" count="2" />
 		<drop event="Harvest" name="BrainMatter" count="2" />
@@ -1906,6 +1906,20 @@
 		<drop event="Destroy" name="femur" tool_category="Hunter" count="2" />
 		<drop event="Destroy" name="femur" tool_category="Butcher" count="2" />
 	</entity_class>
+    
+    <entity_class name="Dummy">
+		<property name="Mesh" value="LootContainers/backpack_droppedPrefab" />
+		<property name="ModelType" value="Custom" />
+		<property name="Prefab" value="Backpack" />
+		<property name="Class" value="EntityBackpack" />
+		<property name="Parent" value="Backpack" />
+		<property name="TimeStayAfterDeath" value="0" />
+		<!-- player death backpacks will go poof after this many seconds. 0 means 0, not infinite. -->
+		<property name="IsEnemyEntity" value="false" />
+		<property name="LootListOnDeath" value="41" />
+		<!-- dropped backpack loot list -->
+	</entity_class>
+    
     <entity_class name="crocodile">
 		<!-- Mesh and class properties -->
 		<property name="Mesh" value="#croc?CROCO" />
@@ -3883,18 +3897,7 @@
 		<property name="NightApproachSpeed" value="2.5" />
 	</entity_class>
         
-	<entity_class name="Dummy">
-		<property name="Mesh" value="LootContainers/backpack_droppedPrefab" />
-		<property name="ModelType" value="Custom" />
-		<property name="Prefab" value="Backpack" />
-		<property name="Class" value="EntityBackpack" />
-		<property name="Parent" value="Backpack" />
-		<property name="TimeStayAfterDeath" value="0" />
-		<!-- player death backpacks will go poof after this many seconds. 0 means 0, not infinite. -->
-		<property name="IsEnemyEntity" value="false" />
-		<property name="LootListOnDeath" value="41" />
-		<!-- dropped backpack loot list -->
-	</entity_class>
+	
    
 	
 	<!-- <property name="MeshScale" value="2,2" />

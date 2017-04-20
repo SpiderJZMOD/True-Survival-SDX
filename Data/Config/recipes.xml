@@ -69,7 +69,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<recipe name="scrapSteel" count="1" craft_area="workBlastFurnace" material_based="true" craft_time="1" craft_exp_gain="0">
 		<ingredient name="unit_steel" count="1" />
 	</recipe>
-	<recipe name="stick" count="1" tooltip="ttScrapMetalLead">
+	<recipe name="stick" count="1" tooltip="ttScrapMetalLead" >
 		<wildcard_forge_category />
 	</recipe>
 	<recipe name="PlantFibers" count="1" tooltip="ttScrapMetalBrass">
@@ -2735,16 +2735,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="trophyDeer" count="1" />
 	</recipe>
     <recipe name="femur" count="1" craft_time="2" craft_exp_gain="15">
-		<ingredient name="tropyRabbit" count="1" />
+		<ingredient name="trophyRabbit" count="1" />
 	</recipe>
     <recipe name="femur" count="1" craft_time="2" craft_exp_gain="15">
 		<ingredient name="trophyChicken" count="1" />
 	</recipe>
     <recipe name="femur" count="1" craft_time="2" craft_exp_gain="25">
-		<ingredient name="tropyPig" count="1" />
+		<ingredient name="trophyPig" count="1" />
 	</recipe>
     <recipe name="femur" count="1" craft_time="2" craft_exp_gain="15">
-		<ingredient name="tropyBoar" count="1" />
+		<ingredient name="trophyBoar" count="1" />
 	</recipe>
     <recipe name="femur" count="1" craft_time="2" craft_exp_gain="15">
 		<ingredient name="trophyBuck" count="1" />
@@ -3507,19 +3507,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="partsPistol_grip" count="1" />
 		<ingredient name="BlankSkillBook" count="1" />
 	</recipe>
-	<recipe name="Plank" count="2" craft_time="5" craft_exp_gain="2">
-		<ingredient name="driftwood2" count="1" />
-	</recipe>
-	<recipe name="Plank" count="5" craft_time="5" craft_exp_gain="2">
+    <recipe name="Plank" count="5" craft_time="5" craft_exp_gain="2">
 		<ingredient name="wood" count="1" />
 	</recipe>
-	<recipe name="Plank" count="10" craft_area="workworkbench" craft_tool="CircularSaw" craft_time="5" craft_exp_gain="3">
+    <recipe name="Plank" count="100" craft_area="workworkbench" craft_tool="CircularSaw" craft_time="270" craft_exp_gain="40">
+		<ingredient name="woodLogPillar100" count="1" />		
+	</recipe>
+    <recipe name="Plank" count="50" craft_area="workworkbench" craft_tool="CircularSaw" craft_time="135" craft_exp_gain="20">
+		<ingredient name="narrowLog" count="1" />		
+	</recipe>
+    <recipe name="Plank" count="5" craft_area="workworkbench" craft_tool="CircularSaw" craft_time="3" craft_exp_gain="2">
 		<ingredient name="wood" count="1" />
 	</recipe>
-	<recipe name="PlantFibers" count="6" craft_time="5" craft_exp_gain="1">
-		<ingredient name="plantedYucca3Harvest" count="1" />
-	</recipe>
-	<recipe name="powerBox" count="1" craft_area="workMetalWorkBench" craft_tool="CompactDriver" craft_time="30" craft_exp_gain="25">
+    <recipe name="powerBox" count="1" craft_area="workMetalWorkBench" craft_tool="CompactDriver" craft_time="30" craft_exp_gain="25">
 		<ingredient name="forgedIron" count="10" />
 		<ingredient name="scrapBrass" count="5" />
 		<ingredient name="NutAndBolt" count="4" />
@@ -4023,6 +4023,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="unit_steel" count="100" />
 		<ingredient name="unit_clay" count="5" />
 	</recipe>
+    <recipe name="stick" count="3" craft_time="1" craft_exp_gain="0">
+		<ingredient name="Plank" count="1" />
+	</recipe>
 	<recipe name="Stimulant" count="3" craft_area="workMortarAndPestle" craft_time="30" craft_exp_gain="25">
 		<ingredient name="forestFlower" count="1" />
 		<ingredient name="goldenrodPlant" count="1" />
@@ -4338,6 +4341,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="electricParts" count="10" />
 		<ingredient name="NutAndBolt" count="10" />
 		<ingredient name="scrapCable" count="5" />
+	</recipe>
+    <recipe name="wood" count="10" craft_area="workworkbench" craft_tool="CircularSaw" craft_time="3" craft_exp_gain="5">
+		<ingredient name="narrowLog" count="1" />		
+	</recipe>
+    <recipe name="wood" count="20" craft_area="workworkbench" craft_tool="CircularSaw" craft_time="3" craft_exp_gain="5">
+		<ingredient name="woodLogPillar100" count="1" />		
 	</recipe>
     <recipe name="wood" count="10" craft_time="5" craft_exp_gain="5">
 		<ingredient name="narrowLog" count="1" />		

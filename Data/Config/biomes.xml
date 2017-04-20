@@ -1406,7 +1406,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="driftwood" prob="0.001" rotatemax="3" />
 					<decoration type="block" blockname="driftwood2" prob="0.001" rotatemax="3" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob=".005" />
-					<decoration type="block" blockname="mineHubcap" prob="0.001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.011" />
 					<decoration type="block" blockname="cinderBlocks01" prob="0.0002" rotatemax="7" />
 					<decoration type="block" blockname="cinderBlocks02" prob="0.0002" rotatemax="7" />
@@ -1579,7 +1579,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.10" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -1644,7 +1644,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.10" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -1709,7 +1709,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.10" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -1774,7 +1774,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.10" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -1866,7 +1866,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="cntCar03Damage2" prob="0.0005" rotatemax="3" />
 				<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.09" />
 				<decoration type="block" blockname="mineCandyTin" prob="0.00075" />
-				<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+				<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 				<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				<decoration type="block" blockname="DecalSphere" prob=".0007" rotatemax="3" />
 				<decoration type="block" blockname="RadTree" prob=".0006" rotatemax="3" />
@@ -2712,7 +2712,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="prefab" name="street_light_01" prob="0.00125" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.025" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -2764,7 +2764,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="prefab" name="street_light_01" prob="0.00125" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.025" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -3056,7 +3056,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="block" blockname="treePlainsGrassDiagonal" prob="0.15" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.10" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -3132,7 +3132,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="prefab" name="mp_waste_hole_asphalt_01" prob="0.0005" />
 					<decoration type="prefab" name="mp_waste_hole_rock_01" prob="0.005" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -3188,7 +3188,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="prefab" name="street_light_01" prob="0.00125" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.025" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -3241,7 +3241,7 @@ If you do not declare them, the decorations of the main biome are used.
 					<decoration type="prefab" name="street_light_01" prob="0.00125" />
 					<decoration type="block" blockname="treeBrownGrassDiagonal" prob="0.025" />
 					<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-					<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+					<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 					<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				</decorations>
 			</subbiome>
@@ -3329,7 +3329,7 @@ If you do not declare them, the decorations of the main biome are used.
 				<decoration type="block" blockname="BrokenCars" prob=".0008" rotatemax="3" />
 				<decoration type="block" blockname="militaryCars" prob=".0003" rotatemax="3" />
 				<decoration type="block" blockname="mineCandyTin" prob="0.00015" />
-				<decoration type="block" blockname="mineHubcap" prob="0.0001" />
+				<decoration type="block" blockname="mineHubcap" prob="0.00005" />
 				<decoration type="block" blockname="hubcapNoMine" prob="0.0011" />
 				<decoration type="block" blockname="rockResource" prob=".0005" rotatemax="3" />
 				<decoration type="block" blockname="rockResource02" prob=".0005" rotatemax="3" />

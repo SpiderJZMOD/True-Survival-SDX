@@ -61,7 +61,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!-- Basic Survival 3 - Craft Stone Axe /> -->
 	<quest id="quest_BasicSurvival2" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival2" subtitle_key="quest_BasicSurvival2_subtitle" description_key="quest_BasicSurvival2_description" icon="ui_game_symbol_hammer" category_key="Quest">
-		<objective type="FetchKeep" id="stick" value="2" />
+		<objective type="FetchKeep" id="woodBranch" value="2" />
 		<objective type="FetchKeep" id="FiberRope" value="2" />
 		<objective type="FetchKeep" id="rockSmall" value="5" />
 		<objective type="Craft" id="stoneAxe" value="1" />
@@ -80,7 +80,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!-- Basic Survival 5 - Craft a Wooden Club /> -->
 	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_club" category_key="Quest">
-		<objective type="FetchKeep" id="stick" value="10" />
+		<objective type="FetchKeep" id="woodBranch" value="10" />
 		<objective type="FetchKeep" id="PlantFibers" value="10" />
 		<objective type="Craft" id="FiberRope" value="5" />
 		<objective type="Craft" id="clubWood" value="1" />
@@ -134,7 +134,7 @@ Alternative settings for custom quest creation:
 	<quest id="quest_BasicSurvival12" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival12" subtitle_key="quest_BasicSurvival12_subtitle" description_key="quest_BasicSurvival12_description" icon="ui_game_symbol_tool" category_key="Quest">
 		<objective type="FetchKeep" id="FiberRope" value="3" />
 		<objective type="FetchKeep" id="rockSmall" value="3" />
-		<objective type="FetchKeep" id="stick" value="3" />
+		<objective type="FetchKeep" id="woodBranch" value="3" />
 		<objective type="Craft" id="stoneShovel" value="1" />
 		<reward type="Exp" value="400" />
 	</quest>
@@ -166,7 +166,7 @@ Alternative settings for custom quest creation:
 	</quest>
 	<!-- Basic Survival 17 - Craft a Torch /> -->
 	<quest id="quest_BasicSurvival17" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival17" subtitle_key="quest_BasicSurvival17_subtitle" description_key="quest_BasicSurvival17_description" icon="ui_game_symbol_lightbulb" category_key="Quest">
-		<objective type="FetchKeep" id="stick" value="2" />
+		<objective type="FetchKeep" id="woodBranch" value="2" />
 		<objective type="FetchKeep" id="coal" value="5" />
 		<objective type="Craft" id="torch" value="1" />
 		<reward type="Exp" value="400" />
@@ -738,8 +738,8 @@ Alternative settings for custom quest creation:
 		<reward type="SkillPoints" value="2" />
 	</quest>
 	<quest id="challenge_Electrician3" name_key="challenge_Profession" subtitle_key="challenge_Electrician3_subtitle" description_key="challenge_Electrician3_offer" icon="ui_game_symbol_Electrician" repeatable="false" category_key="challenge" offer_key="challenge_Electrician3_offer" difficulty="easy">
-		<objective type="Craft" id="electricParts" value="10" />
-		<objective type="Craft" id="electronicParts" value="10" />
+		<objective type="FetchKeep" id="electricParts" value="25" />
+		<objective type="FetchKeep" id="electronicParts" value="25" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
@@ -844,7 +844,7 @@ Alternative settings for custom quest creation:
 		<reward type="SkillPoints" value="1" />
 	</quest>
 	<quest id="challenge_Mechanic2" name_key="challenge_Profession" subtitle_key="challenge_Mechanic2_subtitle" description_key="challenge_Mechanic2_offer" icon="ui_game_symbol_Mechanic" repeatable="false" category_key="challenge" offer_key="challenge_Mechanic2_offer" difficulty="easy">
-		<objective type="Craft" id="mechanicalParts" value="10" />
+		<objective type="FetchKeep" id="mechanicalParts" value="25" />
 		<reward type="Exp" value="400" />
 		<reward type="SkillPoints" value="1" />
 	</quest>
