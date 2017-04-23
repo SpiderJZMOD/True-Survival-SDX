@@ -2232,6 +2232,8 @@ Mesh files no longer used:
 			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 			<property name="Max_strain_time" value=".5" />
+			<property name="ActionExp" value="3" />
+			<property name="ActionExpBonusMultiplier" value="5" />
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Zoom" />
@@ -2284,7 +2286,9 @@ Mesh files no longer used:
 			<property name="Sound_end" value="" />
 			<property name="Sound_empty" value="Weapons/weapon_empty" />
 			<property name="Sound_reload" value="Weapons/Ranged/Bows/Crossbow/crossbow_reload" />
-		</property>
+			<property name="ActionExp" value="3" />
+			<property name="ActionExpBonusMultiplier" value="5" />
+        </property>
 		<property class="Action1">
 			<!-- UseAction -->
 			<property name="Class" value="Zoom" />
@@ -2466,8 +2470,8 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="ActionExp" value="10" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<!-- <property name="ActionExp" value="10" />
+			<property name="ActionExpBonusMultiplier" value="3" />  Removed exp and bonus on arrows to avoid duplicate exp. and align with bullets -->
 		</property>
 		<property name="Group" value="Ammo/Weapons,Basics" />
 		<property class="Attributes">
@@ -2485,8 +2489,8 @@ Mesh files no longer used:
 			<property name="Velocity" value="65" />
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.35" />
-			<property name="ActionExp" value="15" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<!-- <property name="ActionExp" value="15" />
+			<property name="ActionExpBonusMultiplier" value="3" /> -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property class="Attributes">
@@ -2505,8 +2509,8 @@ Mesh files no longer used:
 			<property name="FlyTime" value="0.15" />
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.35" />
-			<property name="ActionExp" value="20" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<!-- <property name="ActionExp" value="20" />
+			<property name="ActionExpBonusMultiplier" value="3" />  -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property class="Attributes">
@@ -2542,8 +2546,8 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="100" />
-			<property name="ActionExp" value="10" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<!-- <property name="ActionExp" value="10" />
+			<property name="ActionExpBonusMultiplier" value="3" />   -->
 		</property>
 		<property name="Group" value="Ammo/Weapons" />
 		<property class="Attributes">
@@ -2582,8 +2586,8 @@ Mesh files no longer used:
 			<property name="DamageBonus.wood" value="1" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="ActionExp" value="10" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<!-- <property name="ActionExp" value="10" />
+			<property name="ActionExpBonusMultiplier" value="3" />  -->
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -2622,8 +2626,8 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
 			<property name="DamageBonus.stone" value="0" />
-			<property name="ActionExp" value="15" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<!-- <property name="ActionExp" value="15" />
+			<property name="ActionExpBonusMultiplier" value="3" />  -->
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -2663,8 +2667,8 @@ Mesh files no longer used:
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="ActionExp" value="20" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<!-- <property name="ActionExp" value="20" />
+			<property name="ActionExpBonusMultiplier" value="3" />  -->
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -9535,8 +9539,8 @@ Mesh files no longer used:
 			<property name="Magazine_items" value="CarbonArrow,SedativeShot,InfectedShot,StimulantShot,PainKillerShot" />
 			<property name="Rays_spread" value="0.01" />
 			<property name="Max_strain_time" value="1.2" />
-			<property name="ActionExp" value="5" />
-			<property name="ActionExpBonusMultiplier" value="4" />
+			<property name="ActionExp" value="10" />
+			<property name="ActionExpBonusMultiplier" value="3" /> <!-- changed to match basic bow exp -->
 		</property>
 		<property class="Attributes">
 			<property name="DegradationMax" value="100,1000" />
@@ -10295,11 +10299,12 @@ Mesh files no longer used:
 			<property name="Delay" value="0.12" />
 			<property name="Auto_fire" value="true" />
 			<property name="Magazine_size" value="20" />
+            <!-- jzmod test
 			<property name="Sound_start" value="usas_fire_start" />
 			<property name="Sound_repeat" value="usas_fire_start" />
 			<property name="Sound_end" value="usas_fire_start" />
 			<property name="Sound_empty" value="Weapons/weapon_empty" />
-			<property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />
+			<property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />-->
 			<property name="Particles_muzzle_fire" value="nozzleflash_ak" />
 		</property>
 	</item>
@@ -10402,11 +10407,6 @@ Mesh files no longer used:
 			<property name="Magazine_item_ray_counts" value="1, 1 " />
 			<property name="Magazine_item_ray_spreads" value="0, 0" />
 			<property name="Magazine_size" value="40" />
-			<property name="Sound_start" value="cbj_fire_start" />
-			<property name="Sound_repeat" value="#sfx?mp2Lp" />
-			<property name="Sound_end" value="#sfx?mp1_end" />
-			<property name="Sound_empty" value="Weapons/weapon_empty" />
-			<property name="Sound_reload" value="Weapons/Ranged/MP5/mp5_reload" />
 			<property name="DamageBonus.head" value="40" />
 		</property>
 	</item>
@@ -10526,11 +10526,6 @@ Mesh files no longer used:
 			<property name="Magazine_item_ray_counts" value="1" />
 			<property name="Magazine_item_ray_spreads" value="0" />
 			<property name="Reload_time" value="4.1" />
-			<property name="Sound_start" value="assaultRifle1_fire_start" />
-			<property name="Sound_repeat" value="#sfx?AssaultRifle_lp" />
-			<property name="Sound_end" value="#sfx?AssaultRifle_end" />
-			<property name="Sound_empty" value="Weapons/weapon_empty" />
-			<property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload" />
 		</property>
 	</item>
 	<item id="1573" name="assaultRifle_stock">
@@ -10568,11 +10563,6 @@ Mesh files no longer used:
 		</property>
 		<property class="Action0">
 			<property name="Delay" value=".085" />
-			<property name="Sound_start" value="scarH_fire_start" />
-			<property name="Sound_repeat" value="#sfx?Scar-HAuto" />
-			<property name="Sound_end" value="#sfx?Scar-H_end" />
-			<property name="Sound_empty" value="Weapons/weapon_empty" />
-			<property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload" />
 		</property>
 	</item>
 	<item id="1578" name="SCARH_receiver">
@@ -10597,9 +10587,7 @@ Mesh files no longer used:
 		</property>
 		<property class="Action0">
 			<property name="Delay" value="0.1" />
-			<property name="Sound_start" value="assaultRifle_fire_start" />
-			<property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end" />
-		</property>
+        </property>
 	</item>
 	<item id="1581" name="M4A1_receiver">
 		<property name="Extends" value="partsAK47_receiver" />
@@ -11286,8 +11274,8 @@ Mesh files no longer used:
 			<property name="LifeTime" value="20" />
 			<property name="Buff" value="arrowCriticalBleedout" />
 			<property name="Buff_chance" value="0.6" />
-			<property name="ActionExp" value="50" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<!-- <property name="ActionExp" value="50" />
+			<property name="ActionExpBonusMultiplier" value="3" />  removed same as other arrows -->
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />
@@ -11379,6 +11367,9 @@ Mesh files no longer used:
 			<property name="Particles_muzzle_fire" value="nozzleflashuzi" />
 			<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
 			<property name="Max_strain_time" value="1" />
+			<property name="ActionExp" value="3" />
+			<property name="ActionExpBonusMultiplier" value="1" />
+			<!-- added above lines to put exp on weapon and not on projectile named javalin -->
 		</property>
 		<property class="Action1">
 			<property name="Class" value="Melee" />
@@ -11438,8 +11429,8 @@ Mesh files no longer used:
 			<property name="DamageBonus.stone" value="0" />
 			<property name="DamageBonus.metal" value="0" />
 			<property name="DamageBonus.cloth" value="5" />
-			<property name="ActionExp" value="20" />
-			<property name="ActionExpBonusMultiplier" value="3" />
+			<!-- <property name="ActionExp" value="20" />
+			<property name="ActionExpBonusMultiplier" value="3" />  -->
 		</property>
 		<property class="Attributes">
 			<property name="GetQualityFromWeapon" value="true" />

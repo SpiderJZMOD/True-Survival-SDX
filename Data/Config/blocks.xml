@@ -14935,7 +14935,8 @@ kind of free
 		<property name="Class" value="Campfire" />
 		<property name="Stacknumber" value="1" />
 		<property class="Workstation">
-			<property name="Modules" value="output,fuel" />
+			<property name="Modules" value="output" />
+			<!-- <property name="Modules" value="output,fuel" />    Old code that causes user to have to be in screen to tick  --> 
 		</property>
 		<property class="RepairItems">
 			<property name="forgedIron" value="20" />

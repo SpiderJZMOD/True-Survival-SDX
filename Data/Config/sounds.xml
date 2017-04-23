@@ -7108,7 +7108,6 @@
 		<AudioSource name="Sounds/AudioSource_WeaponFire" />
 		<Noise range="5" prio="1" time="1" heat_map_strength="0.001" heat_map_time="1" />
 		<AudioClip ClipName="#psg-1?PSGFire" />
-		<!-- <AudioClip ClipName="#psg-1?PSGFireAuto" Loop="true" /> -->
 		<LocalCrouchVolumeScale name="1" />
 		<CrouchNoiseScale name="1" />
 		<NoiseScale name="1" />
@@ -7121,7 +7120,6 @@
 		<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network" />
 		<Noise range="70" prio="1" time="1" heat_map_strength="0.3" heat_map_time="120" />
 		<AudioClip ClipName="#hk?UmpFire" />
-		<AudioClip ClipName="#hk?UmpFire_lp" Loop="true" />
 		<LocalCrouchVolumeScale name="1" />
 		<CrouchNoiseScale name="1" />
 		<NoiseScale name="1" />
@@ -7145,7 +7143,7 @@
 		<Noise range="50" prio="1" time="1" heat_map_strength="0.3" heat_map_time="120" />
 		<Sequence />
 		<AudioClip ClipName="#sfx?MG_single" />
-		<AudioClip ClipName="#sfx?MG_single" Loop="true" />
+		<AudioClip ClipName="#sfx?MG_single"  />
 		<AudioClip ClipName="Sounds/Weapons/Ranged/AK47/ak47_fire_end" />
 		<LocalCrouchVolumeScale name="1" />
 		<CrouchNoiseScale name="1" />
@@ -7224,7 +7222,7 @@
 		<AudioSource name="Sounds/AudioSource_WeaponFire" />
 		<Noise range="30" prio="1" time="1" heat_map_strength="0.1" heat_map_time="60" />
 		<AudioClip ClipName="#sfx?mpStart" />
-		<AudioClip ClipName="#sfx?mpLp" Loop="true" />
+		<AudioClip ClipName="#sfx?mpLp" />
 		<AudioClip ClipName="#sfx?mpEnd" />
 		<LocalCrouchVolumeScale name="1" />
 		<CrouchNoiseScale name="1" />
@@ -7237,7 +7235,6 @@
 		<AudioSource name="Sounds/AudioSource_WeaponFire" />
 		<Noise range="30" prio="1" time="1" heat_map_strength="0.1" heat_map_time="60" />
 		<AudioClip ClipName="#sfx?mp1Start" />
-		<AudioClip ClipName="#sfx?mp2Lp" Loop="true" />
 		<AudioClip ClipName="#sfx?mp1_end" />
 		<LocalCrouchVolumeScale name="1" />
 		<CrouchNoiseScale name="1" />
@@ -7272,11 +7269,11 @@
 		<MaxEntities name="30" />
 		<MaxRepeatRate name="0.001" />
 	</SoundDataNode>
-	<SoundDataNode name="assaultRifle_fire_start">
+    <SoundDataNode name="assaultRifle_fire_start">
 		<AudioSource name="Sounds/AudioSource_WeaponFire" />
 		<Noise range="50" prio="1" time="1" heat_map_strength="0.3" heat_map_time="120" />
 		<AudioClip ClipName="#sfx?AssaultRifle_single" />
-		<AudioClip ClipName="#sfx?AssaultRifle_lp" Loop="true" />
+		<AudioClip ClipName="#sfx?AssaultRifle_single"  />
 		<AudioClip ClipName="Sounds/Weapons/Ranged/AK47/ak47_fire_end" />
 		<LocalCrouchVolumeScale name="1" />
 		<CrouchNoiseScale name="1" />
