@@ -8020,7 +8020,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="45" />
 		<property name="Stacknumber" value="5000" />
 		<!-- STK resource -->
-		<property name="FuelValue" value="10" />
+		<property name="FuelValue" value="20" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="50" />
 		<property name="SellableToTrader" value="false" />
@@ -10616,11 +10616,6 @@ Mesh files no longer used:
 		</property>
 		<property class="Action0">
 			<property name="Delay" value="0.085" />
-			<property name="Sound_start" value="g36c_fire_start" />
-			<property name="Sound_repeat" value="#sfx?g36c_fire_lp" />
-			<property name="Sound_end" value="#sfx?g36c_fire_end" />
-			<property name="Sound_empty" value="Weapons/weapon_empty" />
-			<property name="Sound_reload" value="Weapons/Ranged/AK47/ak47_reload" />
 		</property>
 	</item>
 	<item id="1584" name="G36C_receiver">
@@ -10828,10 +10823,6 @@ Mesh files no longer used:
 		</property>
 		<property class="Action0">
 			<property name="Reload_time" value="6" />
-			<property name="Sound_start" value="mg2_fire_start" />
-			<property name="Sound_repeat" value="#sfx?Mg2_lp" />
-			<property name="Sound_end" value="#sfx?Mg2_end" />
-			<property name="Sound_reload" value="mg_reload" />
 		</property>
 	</item>
 	<item id="1603" name="MG42_receiver">
@@ -10928,7 +10919,6 @@ Mesh files no longer used:
 			<property name="Reload_time" value="2.5" />
 			<property name="Horde_meter_rate" value=".4" />
 			<property name="Horde_meter_distance" value="25" />
-			<property name="Sound_start" value="AMR_Fire" />
 			<property name="DamageBonus.head" value="100" />
 			<property name="DamageBonus.steel" value="10" />
 			<property name="DamageBonus.hardStone" value="10" />
@@ -16181,7 +16171,7 @@ Mesh files no longer used:
         <property name="Material" value="wood" />
         <property name="Weight" value="4" />
 		<property name="Stacknumber" value="5000" />
-		<property name="FuelValue" value="3" />
+		<property name="FuelValue" value="4" />
 		<property name="CustomIcon" value="ui_game_symbol_Plank" />
 		<property name="DescriptionKey" value="PlankDesc" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
@@ -17172,7 +17162,7 @@ Mesh files no longer used:
 			<property name="Delay" value="1.1" />
 			<property name="Range" value="2.2" />
 			<property name="Block_range" value="4" />
-			<property name="DamageEntity" value="7" />
+			<property name="DamageEntity" value="7" /> 
 			<property name="DamageBlock" value="5" />
 			<property name="Sound_start" value="swoosh" />
 			<property name="Stamina_usage" value="90" />
@@ -17185,8 +17175,16 @@ Mesh files no longer used:
             <property name="DamageBonus.steel" value="0" />
             <property name="DamageBonus.hardStone" value="0" />
             <property name="DamageBonus.earth" value="0" />
-			<property name="DamageBonus.workstation" value="9999" />
 			<property name="ToolCategory.Crowbar" value="1" />
+		</property>
+        <property class="Action1">
+			<property name="Class" value="Repair" />
+			<property name="Delay" value="0.5" />
+			<property name="Repair_amount" value="0" />
+            <property name="Sound_start" value="UseActions/repair_block" />
+			<property name="Allowed_upgrade_items" value="Crowbar" />
+			<property name="ActionExp" value="0" />
+			<property name="ActionExpBonusMultiplier" value="0" />
 		</property>
 		<property name="Group" value="Tools/Traps" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
@@ -17929,7 +17927,7 @@ Mesh files no longer used:
     <item id="3078" name="fireWood">
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="wood" />
-		<property name="FuelValue" value="125" />
+		<property name="FuelValue" value="290" />
 	</item>
     
 </items>
