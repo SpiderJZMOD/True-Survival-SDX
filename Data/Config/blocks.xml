@@ -2606,17 +2606,30 @@ then add recipes for those white/red/green metals
 			<property name="Modules" value="tools,output,fuel,input" />
 		</property>
 		<property name="CustomIcon" value="campfire" />
-		<property class="RepairItems">
-			<property name="rockSmall" value="8" />
+		<property class="RepairItems"> <property name="rockSmall" value="8" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="campfire" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="campfire" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="campfireDesc" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
 		<property name="SellableToTrader" value="false" />
+	</block>
+    <block id="1247" name="campfire">
+		<property name="Material" value="MSWorkStation" />
+		<property name="MaxDamage" value="100" />
+		<property name="StabilitySupport" value="false" />
+        <property name="CanPickup" param1="workcampfire" value="true" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Crafting/campfirePrefab" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Stacknumber" value="1" />
 	</block>
 	<block id="310" name="cookingPot">
 		<property name="Material" value="MmetalNoGlue" />
@@ -3838,11 +3851,13 @@ then add recipes for those white/red/green metals
 			<property name="CraftingAreaRecipes" value="workMortarAndPestle,workchemistryStation" />
 			<property name="Modules" value="output,fuel,input" />
 		</property>
-		<property class="RepairItems">
-			<property name="forgedIron" value="8" />
+		<property class="RepairItems"> <property name="forgedIron" value="8" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="chemistryStation" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="chemistryStation" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Food/Cooking,Building" />
 		<property name="EconomicValue" value="5" />
@@ -3851,6 +3866,21 @@ then add recipes for those white/red/green metals
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="RotationAllowed" value="pivotOnFloor" />
 		<property name="CraftingSkillGroup" value="Engineering" />
+	</block>
+    <block id="1332" name="chemistryStation">
+		<property name="Material" value="MMWorkStation" />
+        <property name="CanPickup" param1="workchemistryStation" value="true" />
+		<property name="CustomIcon" value="chemistryStation" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Crafting/chemistry_stationPrefab" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="MultiBlockDim" value="3,2,1" />
+		<property name="Stacknumber" value="1" />
+		<property name="SellableToTrader" value="false" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="RotationAllowed" value="pivotOnFloor" />
 	</block>
 	<block id="423" name="cntBackpack01">
 		<property name="Class" value="Loot" />
@@ -4998,6 +5028,12 @@ kind of free
 			<property name="clayLump" value="50" />
 			<property name="animalHide" value="12" />
 		</property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="forge" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<property class="Workstation">
 			<property name="CraftingAreaRecipes" value="workforge" />
 			<property name="Modules" value="tools,output,fuel,material_input" />
@@ -5005,14 +5041,23 @@ kind of free
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="forge" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="forgeDesc" />
 		<property name="EconomicValue" value="214" />
 		<property name="SellableToTrader" value="false" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
+	</block>
+    <block id="1198" name="forge">
+		<property name="CustomIcon" value="forge" />
+		<property name="Material" value="MSWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Crafting/forgePrefab" />
+		<property name="Place" value="TowardsPlacerInverted" />
+        <property name="CanPickup" param1="workforge" value="true" />
+		<property name="Stacknumber" value="1" />
+		<property name="MaxDamage" value="100" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="557" name="cntMunitionsBox">
 		<!-- military ammo -->
@@ -7153,7 +7198,7 @@ kind of free
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole1m" />
 		<property name="Texture" value="21,21,116,116,116,116" />
-		<property name="FuelValue" value="160" />
+		<property name="FuelValue" value="400" />
 		<property name="DescriptionKey" value="woodLogPillar100Desc" />
 		<drop event="Destroy" name="wood" count="10" />
 		<property name="SellableToTrader" value="false" />
@@ -12894,21 +12939,36 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
-		<property class="RepairItems">
-			<property name="forgedIron" value="50" />
+		<property class="RepairItems"> <property name="forgedIron" value="50" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="cementMixer" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="airFilter" count="1" prob=".2" tool_category="Disassemble" />
         <drop event="Destroy" name="radiator" count="1" prob=".2" tool_category="Disassemble" />
         <drop event="Destroy" name="Exhaust" count="1" prob=".2" tool_category="Disassemble" />
         <drop event="Destroy" name="EngineBlock" count="1" prob=".2" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="cementMixer" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
 		<property name="CustomIcon" value="ui_game_symbol_cementMixer" />
 		<property name="DescriptionKey" value="cementMixerDesc" />
 		<property name="EconomicValue" value="1544" />
+	</block>
+    <block id="1257" name="cementMixer">
+		<property name="Material" value="MMWorkStation" />
+        <property name="CanPickup" param1="workcementMixer" value="true" />
+		<property name="StabilitySupport" value="false" />
+		<property name="MaxDamage" value="250" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Crafting/cement_mixerPrefab" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="Place" value="TowardsPlacer" />
+		<property name="RotationAllowed" value="pivotOnFloor" />
+		<property name="Stacknumber" value="1" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1562" name="bedroll">
 		<property name="DescriptionKey" value="bedGroupDesc" />
@@ -12958,16 +13018,33 @@ kind of free
 			<property name="forgedIron" value="35" />
 			<property name="wood" value="50" />
 		</property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="workbench" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="carBattery" count="1,4" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="woodWorkBench" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="workbenchDesc" />
 		<property name="EconomicValue" value="776" />
 		<property name="Place" value="TowardsPlacerInverted" />
+        <property name="RotationAllowed" value="pivotOnFloor" />
+	</block>
+     <block id="1258" name="workbench">
+		<property name="CustomIcon" value="ui_game_symbol_workworkbench" />
+		<property name="Material" value="MWWorkStation" />
+        <property name="CanPickup" param1="workworkbench" value="true" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="Entities/Crafting/workbenchPrefab" />
+		<property name="MultiBlockDim" value="2,2,1" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Stacknumber" value="1" />
 		<property name="RotationAllowed" value="pivotOnFloor" />
+        <property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1564" name="treePlantedWinterPine1m">
 		<property name="Extends" value="treeMasterGrowing" />
@@ -13571,11 +13648,27 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="fuel,output" />
 		</property>
+        <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="BBarrel" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="2" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="BurnBarrel" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
+	</block>
+    <block id="1826" name="BBarrel">
+		<property name="Material" value="Mmetal_weak" />
+        <property name="CanPickup" param1="workBurnBarrel" value="true" />
+		<property name="Shape" value="Ext3dModel" />
+		<property name="Mesh" value="models" />
+		<property name="Group" value="Decor" />
+		<property name="Model" value="Industrial/barrel01" param1="main_mesh" />
+		<property name="Stacknumber" value="1" />
+		<property name="MaxDamage" value="100" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1776" name="stainlessSteelBlock">
 		<property name="Extends" value="stainlessSteelMaster" />
@@ -14724,16 +14817,32 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output,input" />
 		</property>
-		<property class="RepairItems">
-			<property name="rockSmall" value="100" />
+		<property class="RepairItems"> <property name="rockSmall" value="100" /> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="StoneMill" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="StoneMill" count="1" tool_category="Crowbar" />
+		<drop event="Harvest" name="rockSmall" count="10" />
+        <drop event="Destroy" name="rockSmall" count="10" />
+        <drop event="Destroy" count="0" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="StoneMillDesc" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
-		<property name="EconomicValue" value="5" />
-		<property name="EconomicBundleSize" value="1" />
+		<property name="SellableToTrader" value="false" />
+	</block>
+    <block id="1134" name="StoneMill">
+		<property name="Material" value="MSWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#millStone?millStone" />
+		<property name="CustomIcon" value="ui_game_symbol_StoneMill" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Stacknumber" value="1" />
+        <property name="CanPickup" param1="workStoneMill" value="true" />
+		<property name="MaxDamage" value="100" />
 		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1985" name="workStove">
@@ -14758,16 +14867,32 @@ kind of free
 			<property name="CraftingAreaRecipes" value="workcampfire,workStove" />
 			<property name="Modules" value="tools,output,fuel,input" />
 		</property>
-		<property class="RepairItems">
-			<property name="scrapIron" value="20" />
+		<property class="RepairItems"> <property name="scrapIron" value="20" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="Stove" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="Stove" count="1" tool_category="Crowbar" />
+        <drop event="Destroy" count="0" />
         <property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="workStoveDesc" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
+		<property name="SellableToTrader" value="false" />
+	</block>
+    <block id="1156" name="Stove">
+		<property name="Material" value="MMWorkStation" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#oven?oven" />
+		<property name="CustomIcon" value="ui_game_symbol_Stove" />
+		<property name="Collide" value="melee,bullet,arrow,rocket" />
+		<property name="IsTerrainDecoration" value="true" />
+		<property name="Stacknumber" value="1" />
+		<property name="MaxDamage" value="100" />
+        <property name="CanPickup" param1="workStove" value="true" />
 		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="442" name="workMetalWorkBench">
@@ -14787,17 +14912,32 @@ kind of free
 		<property class="RepairItems">
 			<property name="forgedIron" value="50" />
 		</property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="MetalWorkBench" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<property name="Group" value="Building" />
 		<property class="Workstation">
-			<property name="Modules" value="tools,output,fuel" />
+			<property name="Modules" value="tools,output" />
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="MetalWorkBench" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<property name="DescriptionKey" value="MetalWorkBenchDesc" />
 		<property name="CraftingSkillGroup" value="Engineering" />
+	</block>
+    <block id="1157" name="MetalWorkBench">
+		<property name="Material" value="MWWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#metalBench?metalBench" />
+		<property name="CustomIcon" value="ui_game_symbol_MetalWorkBench" />
+		<property name="MultiBlockDim" value="2,1,1" />
+		<property name="Stacknumber" value="1" />
+        <property name="CanPickup" param1="workMetalWorkBench" value="true" />
+        <property name="MaxDamage" value="100" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="443" name="workResearchDesk">
 		<property name="Material" value="MWWorkStation" />
@@ -14814,16 +14954,30 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
-		<property class="RepairItems">
-			<property name="Plank" value="10" />
+		<property class="RepairItems"> <property name="Plank" value="10" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="ResearchDesk" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DescriptionKey" value="ResearchDeskDesc" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="ResearchDesk" count="1" tool_category="Crowbar" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
         <drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
 		<property name="CraftingSkillGroup" value="Science" />
+	</block>
+    <block id="1161" name="ResearchDesk">
+		<property name="Material" value="MWWorkStation" />
+		<property name="Stacknumber" value="1" />
+		<property name="Mesh" value="models" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#studyDesk?studyDesk" />
+		<property name="MultiBlockDim" value="2,1,1" />
+		<property name="CustomIcon" value="cntDesk01" />
+        <property name="CanPickup" param1="workResearchDesk" value="true" />
+        <property name="MaxDamage" value="100" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="444" name="wallTorch">
 		<property name="Class" value="Torch" />
@@ -14860,15 +15014,26 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output,tools" />
 		</property>
-		<property class="RepairItems">
-			<property name="Plank" value="10" />
+		<property class="RepairItems"> <property name="Plank" value="10" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="ArmorTable" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DescriptionKey" value="ArmorTableDesc" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="ArmorTable" count="1" tool_category="Crowbar" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Clothing" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
+	</block>
+    <block id="1177" name="ArmorTable">
+		<property name="Material" value="MWWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Mesh" value="models" />
+		<property name="Model" value="#armorAssambler?armorAssambler" />
+        <property name="CanPickup" param1="workArmorTable" value="true" />
+		<property name="CustomIcon" value="ui_game_symbol_ArmorTable" />
+		<property name="Stacknumber" value="1" />
 	</block>
 	<block id="446" name="workSeedNursery">
 		<property name="Material" value="MMWorkStation" />
@@ -14882,15 +15047,30 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
+        <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="SeedNursery" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<property name="CustomIcon" value="ui_game_symbol_SeedNursery" />
 		<property name="DescriptionKey" value="SeedNurseryDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="fertilizer" count="3,15" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="SeedNursery" count="1" tool_category="Crowbar" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Engineering" />
+	</block>
+    <block id="1178" name="SeedNursery">
+		<property name="Material" value="MMWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#Meter?MeterPrefab" />
+		<property name="MultiBlockDim" value="1,2,1" />
+		<property name="Stacknumber" value="1" />
+        <property name="CanPickup" param1="workSeedNursery" value="true" />
+		<property name="MaxDamage" value="100" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="447" name="workBlastFurnace">
 		<property name="Class" value="Forge" />
@@ -14909,6 +15089,12 @@ kind of free
 		<property class="RepairItems">
 			<property name="electronicParts" value="10" />
 		</property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="BlastFurnace" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<property class="Workstation">
 			<property name="CraftingAreaRecipes" value="workBlastFurnace" />
 			<property name="Modules" value="output,fuel,material_input" />
@@ -14919,10 +15105,18 @@ kind of free
 		<property name="CraftingSkillGroup" value="Master Craftsman" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="BlastFurnace" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Building" />
+	</block>
+    <block id="1256" name="BlastFurnace">
+        <property name="Material" value="MMWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#forge1?forge1Prefab" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Stacknumber" value="1" />
+		<property name="MaxDamage" value="100" />
+        <property name="CanPickup" param1="workBlastFurnace" value="true" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="448" name="workOilRefinery">
 		<property name="Material" value="MMWorkStation" />
@@ -14936,20 +15130,30 @@ kind of free
 		<property name="Stacknumber" value="1" />
 		<property class="Workstation">
 			<property name="Modules" value="output" />
-			<!-- <property name="Modules" value="output,fuel" />    Old code that causes user to have to be in screen to tick  --> 
 		</property>
-		<property class="RepairItems">
-			<property name="forgedIron" value="20" />
+		<property class="RepairItems"> <property name="forgedIron" value="20" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="OilRefinery" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_OilRefinery" />
 		<property name="DescriptionKey" value="OilRefineryDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="OilRefinery" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="CraftingSkillGroup" value="Science" />
+	</block>
+    <block id="1355" name="OilRefinery">
+		<property name="Material" value="MMWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#moonshine?moonshinePrefab" />
+		<property name="Stacknumber" value="1" />
+		<property name="MaxDamage" value="100" />
+        <property name="CanPickup" param1="workOilRefinery" value="true" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="450" name="workBulletPress">
 		<property name="Material" value="MMWorkStation" />
@@ -14967,15 +15171,31 @@ kind of free
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property class="Workstation">
-			<property name="Modules" value="output,fuel" />
+			<property name="Modules" value="output" />
+		</property>
+        <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="BulletPress" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DescriptionKey" value="BulletPressDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="BulletPress" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<property name="CraftingSkillGroup" value="Engineering" />
+	</block>
+    <block id="1369" name="BulletPress">  
+		<property name="Material" value="MMWorkStation" />
+		<property name="Place" value="TowardsPlacerInverted" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#ammoreloder?ammunitionReloader1" />
+		<property name="CustomIcon" value="ui_game_symbol_BulletPress" />
+		<property name="Stacknumber" value="1" />
+		<property name="MaxDamage" value="100" />
+        <property name="CanPickup" param1="workBulletPress" value="true" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="451" name="workDryingRack">
 		<property name="Material" value="MWWorkStation" />
@@ -14989,8 +15209,12 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
-		<property class="RepairItems">
-			<property name="stick" value="50" />
+		<property class="RepairItems"> <property name="stick" value="50" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="DryingRack" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
         <property name="DescriptionKey" value="DryingRackDesc" />
 		<property name="CustomIcon" value="DryingRack" />
@@ -14999,10 +15223,17 @@ kind of free
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="DryingRack" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
+	</block>
+    <block id="1370" name="DryingRack">
+		<property name="Material" value="MWWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#TableMetal1?TableMetal1Prefab" />
+		<property name="Stacknumber" value="1" />
+        <property name="CanPickup" param1="workDryingRack" value="true" />
+		<property name="MaxDamage" value="100" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1756" name="workMortarAndPestle">
 		<property name="DescriptionKey" value="MortarAndPestle1Desc" />
@@ -15016,19 +15247,31 @@ kind of free
 		<property name="HeatMapTime" value="1200" />
 		<property name="HeatMapFrequency" value="25" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
-		<property class="RepairItems">
-			<property name="rockSmall" value="50" />
+		<property class="RepairItems"> <property name="rockSmall" value="50" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="MortarAndPestle" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="MortarAndPestle" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
         <property name="DescriptionKey" value="MortarAndPestleDesc" />
 		<property name="Group" value="Basics" />
+	</block>
+    <block id="1375" name="MortarAndPestle">
+		<property name="Material" value="MSWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#MortarAndPestle1?MortarAndPestle1Prefab" />
+		<property name="CustomIcon" value="ui_game_symbol_MortarAndPestle" />
+		<property name="Stacknumber" value="1" />
+        <property name="CanPickup" param1="workMortarAndPestle" value="true" />
+		<property name="MaxDamage" value="100" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1959" name="workAnvil">
 		<property name="DescriptionKey" value="anvil1Desc" />
@@ -15045,11 +15288,26 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="tools,output" />
 		</property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="Anvil" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
+        <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
         <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="Anvil" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
+	</block>
+<block id="1376" name="Anvil">
+		<property name="Material" value="MMWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#forge1?anvilPrefab" />
+		<property name="CustomIcon" value="ui_game_symbol_Anvil" />
+		<property name="Stacknumber" value="1" />
+        <property name="CanPickup" param1="workAnvil" value="true" />
+		<property name="MaxDamage" value="100" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1746" name="workBatteryPack">
 		<property name="Class" value="Machine, Mods" />
@@ -15068,15 +15326,29 @@ kind of free
 		<property class="RepairItems">
 			<property name="forgedIron" value="10" />
 		</property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="BatteryPack" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<property name="Group" value="Building" />
 		<property class="Workstation">
 			<property name="Modules" value="tools,output" />
 		</property>
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="BatteryPack" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" count="0" />
+	</block>
+    <block id="1179" name="BatteryPack">
+		<property name="Material" value="MWWorkStation" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#batteries?BatteryBlock" />
+		<property name="CustomIcon" value="ui_game_symbol_batteryPack" />
+       	<property name="Stacknumber" value="1" />
+        <property name="CanPickup" param1="workBatteryPack" value="true" />
+		<property name="MaxDamage" value="100" />
+		<property name="SellableToTrader" value="false" />
 	</block>
 	<block id="1969" name="DeleteMe">
 		<property name="Class" value="Campfire" />
@@ -15179,8 +15451,12 @@ kind of free
         <property name="CustomIcon" value="ui_game_symbol_workBiogasDigester" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
         <property name="ModelOffset" value="0,0.5,0" />
-		<property class="RepairItems">
-			<property name="scrapIron" value="50" />
+		<property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="MethaneProducer" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property class="Workstation">
 			<property name="Modules" value="output" />
@@ -15188,11 +15464,19 @@ kind of free
         <property name="DescriptionKey" value="digesterDesc" />
        	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="3,20" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="MethaneProducer" count="1" tool_category="Crowbar" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 		<property name="Group" value="Tools/Traps" />
+	</block>
+    <block id="1338" name="MethaneProducer">
+        <property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#watertank?watertankPrefab" />
+        <property name="Texture" value="284" />
+		<property name="Material" value="MMWorkStation" />
+		<property name="Stacknumber" value="1" />
+        <property name="CustomIcon" value="ui_game_symbol_workBiogasDigester" />
+	    <property name="ModelOffset" value="0,0.5,0" />
+		<property name="CanPickup" param1="workMethaneProducer" value="true" />
 	</block>
     <!--JZMOD PROFESSION KITS-->
 	<block id="455" name="SoldierSupplies">
@@ -16444,19 +16728,31 @@ kind of free
 		<property name="Place" value="TowardsPlacerInverted" />
 		<property name="LootList" value="88" />
 		<property name="CraftingSkillGroup" value="Engineering" />
-		<property class="RepairItems">
-			<property name="scrapLead" value="20" />
+		<property class="RepairItems"> <property name="scrapLead" value="20" /> </property>
+		<property class="UpgradeBlock">
+			<property name="ToBlock" value="DieselGen" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<property name="Group" value="Decor" />
+        <property name="Group" value="Decor" />
 		<property name="debug" value="false" />
         <property name="DescriptionKey" value="dieselGenDesc" />
         <property name="CraftingSkillGroup" value="Journeyman Crafting" />
-        <drop event="Harvest" name="" count="0" prob="1" tool_category="Crowbar" />
-        <drop event="Destroy" name="DieselGen" count="1" prob="1" tool_category="Crowbar" />
         <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" count="0" />
     </block>
+    <block id="1395" name="DieselGen">
+		<property name="CustomIcon" value="ui_game_symbol_dieselGen" />
+        <property name="Stacknumber" value="1" />
+		<property name="Material" value="MMWorkStation" />
+      	<property name="MaxDamage" value="500" />
+        <property name="CanPickup" param1="dieselGen" value="true" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#animGen?dieselGen" />
+		<property name="Place" value="TowardsPlacerInverted" />
+	</block>
 	<block id="1711" name="bigGenerator">
 		<property name="Extends" value="dieselGen" />
 		<property name="Model" value="#biggenerator?Generator1" />
@@ -16464,8 +16760,12 @@ kind of free
 		<property name="FuelRate" value="30" />
         <property name="DecayTime" value="120" />
 		<property name="MaxDamage" value="1000" />
-		<property class="RepairItems">
-			<property name="scrapLead" value="40" />
+		<property class="RepairItems"> <property name="scrapLead" value="40" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="BGenerator" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
         <property name="CustomIcon" value="ui_game_symbol_bigGenerator" />
         <property name="DescriptionKey" value="bigGeneratorDesc" />
@@ -16477,6 +16777,12 @@ kind of free
         <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" count="0" />
     </block>
+    <block id="1396" name="BGenerator"> 
+		<property name="Extends" value="DieselGen" />
+		<property name="Model" value="#biggenerator?Generator1" />
+        <property name="CustomIcon" value="ui_game_symbol_bigGenerator" />
+       <property name="CanPickup" param1="bigGenerator" value="true" />
+    </block>
 	<block id="1712" name="smallGenerator">
 		<property name="Extends" value="dieselGen" />
         <property name="Model" value="#smallgenerator?smallGeneratorPrefab" />
@@ -16485,8 +16791,12 @@ kind of free
 		<property name="FuelRate" value="50" />
 		<property name="DecayTime" value="120" />
         <property name="MaxDamage" value="800" />
-		<property class="RepairItems">
-			<property name="scrapLead" value="10" />
+		<property class="RepairItems"> <property name="scrapLead" value="10" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="SGenerator" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="CanPickup" value="true" />
 		<property name="DescriptionKey" value="smallGeneratorDesc" />
@@ -16496,6 +16806,12 @@ kind of free
         <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
         <drop event="Destroy" count="0" />
+    </block>
+    <block id="1397" name="SGenerator"> 
+		<property name="Extends" value="DieselGen" />
+		<property name="Model" value="#smallgenerator?smallGeneratorPrefab" />
+        <property name="CustomIcon" value="smallGenerator" />
+       <property name="CanPickup" param1="smallGenerator" value="true" />
     </block>
 	<block id="1718" name="powerCeilingLight01">
 		<property name="Extends" value="ceilingLight01" />
@@ -17169,15 +17485,31 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
+        <property class="RepairItems"> <property name="Plank" value="20" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="FermentationBarrel" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<property name="DescriptionKey" value="workFermentationBarrelDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="Plank" count="3,10" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="FermitationBarrel" count="1" tool_category="Crowbar" />
 		<drop event="Destroy" name="woodDebris" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Science" />
+	</block>
+    <block id="1337" name="FermentationBarrel">
+        <property name="Material" value="MWWorkStation" />
+        <property name="CanPickup" param1="workFermentationBarrel" value="true" />
+        <property name="Place" value="TowardsPlacerInverted" />
+		<property name="CustomIcon" value="ui_game_symbol_Barrel" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#WoodenBarrels?WoodenBarrels" />
+        <property name="MultiBlockDim" value="1,2,1" />
+		<property name="Stacknumber" value="1" />
+		<property name="SellableToTrader" value="false" />
 	</block>
     <block id="2013" name="BrokenCars">
 		<property name="Material" value="stone" />
@@ -17260,14 +17592,30 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output,fuel" />
 		</property>
+        <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
+        <property class="UpgradeBlock">
+			<property name="ToBlock" value="Still" />
+			<property name="Item" value="Crowbar" />
+			<property name="ItemCount" value="0" />
+			<property name="UpgradeHitCount" value="10" />
+		</property>
 		<property name="DescriptionKey" value="workStillDesc" />
 		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="3,10" tool_category="Disassemble" />
-		<drop event="Harvest" name="" count="0" tool_category="Crowbar" />
-		<drop event="Destroy" name="Still" count="1" tool_category="Crowbar" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Science" />
+	</block>
+    <block id="1333" name="Still">
+        <property name="Material" value="MWWorkStation" />
+        <property name="CanPickup" param1="workStill" value="true" />
+        <property name="Place" value="TowardsPlacerInverted" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#OilRefinery?OilRefinery" />
+        <property name="MultiBlockDim" value="1,2,1" />
+        <property name="CustomIcon" value="ui_game_symbol_workStill" />
+		<property name="Stacknumber" value="1" />
+        <property name="SellableToTrader" value="false" />
 	</block>
     <block id="1931" name="cntUSRLockers">
         <property name="Material" value="metal" />
@@ -17480,7 +17828,7 @@ kind of free
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole0.5m" />
 		<property name="Texture" value="21,21,116,116,116,116" />
-		<property name="FuelValue" value="80" />
+		<property name="FuelValue" value="200" />
 		<property name="DescriptionKey" value="woodLogPillar100Desc" />
 		<drop event="Destroy" name="wood" count="10" />
 		<property name="SellableToTrader" value="false" />
@@ -17522,8 +17870,8 @@ kind of free
 		<property name="Group" value="Basics,Building" />
         <property name="DescriptionKey" value="PlankGroupDesc" />
 	</block>
-	<!-- JZMOD Free ID's     1134 ; 1156 ; 1157 ; 1161 ; 1177 ; 1178 ; 1179 ; 1198 ; 1247 ; 1256 ; 1257 ; 1258 ; 1332 ; 1333 ; 1337 ; 1338 ; 1355 ; 1369 ; 1370 ; 1375 ; 1376 ; 1395 ; 1396 ; 1397 ; 1398 ; 1399 ; 1407 ; 1415 ; 1421 ; 1423 ; 1452 ; 1473 ; 1474 ; 1475 ; 1476 ; 1501 ; 1504 ; 1506 ; 1507 ; 1508 ; 1547 ; 1714 ; 1715 ; 1716 ; 1717 ; 1742 ; 1743 
-    1744 ; 1745 ; 1748 ; 1751 ; 1753 ; 1754 ; 1755 ; 1757 ; 1758 ; 1759 ; 1760 ; 1762 ; 1763 ; 1764 ; 1765 ; 1766 ; 1767 ; 1769 ; 1770 ; 1771 ; 1772 ; 1773 ; 1781 ; 1782 ; 1783 ; 1784 ; 1785 ; 1786 ; 1799 ; 1826 ; 1916 ; 1917 ; 1918 ; 1919 ; 1920 ; 1921 ; 1922 ; 1923 ; 1945 ; 1946 ; 1947 ; 1948 ; 1949 ; 1952 ; 1953 ; 1958 ; 1960 ; 1962 ; 1968 ; 1977 ; 2011 ; 2012
+	<!-- JZMOD Free ID's   1256; 1398 ; 1399 ; 1407 ; 1415 ; 1421 ; 1423 ; 1452 ; 1473 ; 1474 ; 1475 ; 1476 ; 1501 ; 1504 ; 1506 ; 1507 ; 1508 ; 1547 ; 1714 ; 1715 ; 1716 ; 1717 ; 1742 ; 1743 
+    1744 ; 1745 ; 1748 ; 1751 ; 1753 ; 1754 ; 1755 ; 1757 ; 1758 ; 1759 ; 1760 ; 1762 ; 1763 ; 1764 ; 1765 ; 1766 ; 1767 ; 1769 ; 1770 ; 1771 ; 1772 ; 1773 ; 1781 ; 1782 ; 1783 ; 1784 ; 1785 ; 1786 ; 1799 ;  ; 1916 ; 1917 ; 1918 ; 1919 ; 1920 ; 1921 ; 1922 ; 1923 ; 1945 ; 1946 ; 1947 ; 1948 ; 1949 ; 1952 ; 1953 ; 1958 ; 1960 ; 1962 ; 1968 ; 1977 ; 2011 ; 2012
     -->   
     
     

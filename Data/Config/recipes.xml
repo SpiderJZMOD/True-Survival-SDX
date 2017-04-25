@@ -1835,7 +1835,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Plank" count="10" />
 		<ingredient name="nail" count="5" />
 	</recipe>
-	<recipe name="woodLogSpike1" count="1" craft_time="10" craft_exp_gain="10">
+	<recipe name="woodLogSpike1" count="1" craft_time="10" craft_exp_gain="5">
 		<ingredient name="wood" count="20" />
 	</recipe>
 	<recipe name="woodPillar100" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_time="5" craft_exp_gain="5">

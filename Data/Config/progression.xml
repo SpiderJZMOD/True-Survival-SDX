@@ -1401,7 +1401,6 @@
 			<requirement perk_level="1" required_skill_name="Master Craftsman" required_skill_level="5" />
 			<requirement perk_level="1" required_player_level="75" />
 			<recipe name="bigGenerator" unlock_level="1" />
-            <recipe name="cableTest" unlock_level="1" />
         </perk>
 		<crafting_skill name="Miscellaneous Crafting" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting" skill_point_cost_per_level="3">
 			<effect name="CraftingTime">

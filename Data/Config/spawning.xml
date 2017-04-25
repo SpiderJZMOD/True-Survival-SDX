@@ -1125,13 +1125,253 @@
 		</day>
 	</entityspawner>
 	<entityspawner name="HordeMeterDynamicSpawnNight" dynamic="true">
+        <day value="1,7">
+			<property name="EntityGroupName" value="ZombiesAll" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="1" />
+		</day>
+		<day value="8,14">
+			<property name="EntityGroupName" value="ZombiesAll" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="2" />
+		</day>
+		<day value="15,21">
+			<property name="EntityGroupName" value="ZombiesAll" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="3" />
+		</day>
+		<day value="22,28">
+			<property name="EntityGroupName" value="ZombiesAll" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="3" />
+		</day>
+		<day value="29,35">
+			<property name="EntityGroupName" value="ZombiesAll" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="3" />
+		</day>
+		<day value="36,42">
+			<property name="EntityGroupName" value="ZombiesAll" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="4" />
+		</day>
+		<day value="43,49">
+			<property name="EntityGroupName" value="ZombiesAll" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="5" />
+		</day>
+		<day value="50,56">
+			<property name="EntityGroupName" value="LegionClass1" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="5" />
+		</day>
+		<day value="57,63">
+			<property name="EntityGroupName" value="LegionClass1" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="5" />
+		</day>
+		<day value="64,70">
+			<property name="EntityGroupName" value="LegionClass1" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="6" />
+		</day>
+		<day value="71,84">
+			<property name="EntityGroupName" value="LegionClass1" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="6" />
+		</day>
+		<day value="85,98">
+			<property name="EntityGroupName" value="LegionClass1" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="6" />
+		</day>
+		<day value="99,112">
+			<property name="EntityGroupName" value="LegionClass1" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="7" />
+		</day>
+		<day value="113,126">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="7" />
+		</day>
+		<day value="127,140">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="7" />
+		</day>
+		<day value="141,161">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="7" />
+		</day>
+		<day value="162,182">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="7" />
+		</day>
+		<day value="183,203">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="7" />
+		</day>
+		<day value="204,224">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="8" />
+		</day>
+		<day value="225,245">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="8" />
+		</day>
+		<day value="246,266">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="8" />
+		</day>
+		<day value="267,287">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="9" />
+		</day>
+		<day value="288,308">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="9" />
+		</day>
+		<day value="309,336">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="9" />
+		</day>
+		<day value="337,364">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="10" />
+		</day>
+		<day value="365,392">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="10" />
+		</day>
+		<day value="393,420">
+			<property name="EntityGroupName" value="LegionClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="12" />
+		</day>
+		<day value="421,448">
+			<property name="EntityGroupName" value="MixClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="12" />
+		</day>
+		<day value="449,476">
+			<property name="EntityGroupName" value="MixClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="12" />
+		</day>
+        <day value="477,504">
+			<property name="EntityGroupName" value="MixClass2" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="12" />
+		</day>
+        <day value="505,532">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="13" />
+		</day>
+        <day value="533,567">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="14" />
+		</day>
+        <day value="568,602">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="15" />
+		</day>
+        <day value="603,637">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="16" />
+		</day>
+        <day value="638,672">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="17" />
+		</day>
+        <day value="673,707">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="18" />
+		</day>
+        <day value="708,742">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="19" />
+		</day>
+        <day value="743,777">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="20" />
+		</day>
+        <day value="778,812">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="21" />
+		</day>
+        <day value="813,854">
+			<property name="EntityGroupName" value="HellLegion" />
+			<property name="Time" value="Any" />
+			<property name="DelayBetweenSpawns" value="1" />
+			<property name="TotalAlive" value="22" />
+		</day>
 		<day value="*">
 			<property name="EntityGroupName" value="HellLegion" />
 			<property name="Time" value="Any" />
 			<property name="DelayBetweenSpawns" value="1" />
-			<property name="TotalAlive" value="25" />
-			<property name="TotalPerWave" value="60" />
+			<property name="TotalAlive" value="23" />
 		</day>
+		
 	</entityspawner>
 	<!--JZMOD BANDIT POI SPAWNER-->
 	<entityspawner name="BanditSpawn">
