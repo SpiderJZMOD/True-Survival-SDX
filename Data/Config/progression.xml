@@ -211,7 +211,7 @@
 			<recipe name="SmallKnifeBlade" unlock_level="1" />
 			<recipe name="kaBar" unlock_level="1" />
 		</perk>
-		<perk name="Machete" icon="machete" description_key="Learn to craft a Machete on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="weapons">
+		<perk name="Machete" icon="machete" description_key="Learn to craft a Machete on the anvil using a claw hammer and learn how to craft the Large Knife Blade in the forge using the anvil that you need to craft it. This is a long strong knife thats good for fighting." title_key="Machete" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="weapons">
 			<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="1" />
 			<requirement perk_level="1" required_skill_name="Journeyman Crafting" required_skill_level="25" />
 			<recipe name="LargeKnifeBlade" unlock_level="1" />
