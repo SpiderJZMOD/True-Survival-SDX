@@ -2622,8 +2622,34 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	</recipe>
 	<recipe name="denimShortsPants" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
 		<ingredient name="cloth" count="6" />
-		<ingredient name="FiberRope" count="4" />
+		<ingredient name="FiberRope" count="3" />
 	</recipe>
+	<recipe name="denimShortsPantsBlack" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="coal" count="3" />
+	</recipe>
+	<recipe name="denimShortsPantsBrown" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="dirtFragment" count="3" />
+	</recipe>
+	<recipe name="denimShortsPantsRed" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="chrysanthemumPlant" count="3" />
+	</recipe>
+	<recipe name="denimShortsPantsGreen" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="PlantFibers" count="3" />
+	</recipe>	
+	<recipe name="denimShortsPantsBlue" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="blueberries" count="3" />
+	</recipe>	
+	
 	<recipe name="DesertEagleVII" count="1" craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="parts44Magnum_parts" count="1" />
@@ -4257,6 +4283,36 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="cloth" count="6" />
 		<ingredient name="FiberRope" count="3" />
 	</recipe>
+	<recipe name="skirtBlack" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="coal" count="3" />
+	</recipe>
+	<recipe name="skirtBlue" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="blueberries" count="3" />
+	</recipe>
+	<recipe name="skirtBrown" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="dirtFragment" count="3" />
+	</recipe>
+	<recipe name="skirtGreen" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="PlantFibers" count="3" />
+	</recipe>
+	<recipe name="skirtRed" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+		<ingredient name="chrysanthemumPlant" count="3" />
+	</recipe>
+	<recipe name="skirt" count="1" craft_area="workArmorTable" craft_tool="SewingNeedle" craft_time="5" craft_exp_gain="5">
+		<ingredient name="cloth" count="6" />
+		<ingredient name="FiberRope" count="3" />
+	</recipe>
+		
 	<recipe name="UMP" count="1" craft_area="assembly">
 		<ingredient name="flashlight02" count="0" />
 		<ingredient name="SubMachine_stock" count="1" />

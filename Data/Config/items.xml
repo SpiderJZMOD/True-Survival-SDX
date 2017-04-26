@@ -62,8 +62,6 @@ Mesh files no longer used:
 			<property name="ActionExp" value="3" />
 			<property name="ActionExpBonusMultiplier" value="3" />
 		</property>
-        <property name="Consume" value="false" />
-			<property name="Buff" value="bruteCharge" />
 		<property class="Action1">
 			<property name="Class" value="Melee" />
 			<property name="Delay" value="4" />
@@ -5526,10 +5524,19 @@ Mesh files no longer used:
 		<property class="UMA">
 			<property name="Mesh" value="skirt" />
 			<property name="Overlay0" value="skirt" />
+			<property name="Overlay0Tint" value="255,255,255" />
 			<property name="Layer" value="inner" />
 			<property name="Mask0" value="legs" param1="middle" />
 			<property name="Mask1" value="legs" param1="outer" />
 			<property name="UISlot" value="Pants" />
+		</property>
+		<property class="Action1">
+			<property name="Class" value="LearnRecipe" />
+			<property name="Recipes_to_learn" value="skirtBlack,skirtBlue,skirtBrown,skirtGreen,skirtRed,skirt" />
+			<property name="Delay" value="1" />
+			<property name="ActionExp" value="0" />
+			<property name="ActionExpBonusMultiplier" value="0" />
+			<property name="Sound_start" value="Misc/recipe_unlocked" />
 		</property>
 	</item>
 	<item id="544" name="jacketWhite">
@@ -5681,6 +5688,14 @@ Mesh files no longer used:
 			<property name="Mask0" value="legs" param1="inner" />
 			<property name="UISlot" value="Pants" />
 		</property>
+	<property class="Action1">
+			<property name="Class" value="LearnRecipe" />
+			<property name="Recipes_to_learn" value="denimShortsPants,denimShortsPantsBlack,denimShortsPantsRed,denimShortsPantsBlue,denimShortsPantsBrown,denimShortsPantsGreen" />
+			<property name="Delay" value="1" />
+			<property name="ActionExp" value="0" />
+			<property name="ActionExpBonusMultiplier" value="0" />
+			<property name="Sound_start" value="Misc/recipe_unlocked" />
+		</property>	
 	</item>
 	<item id="558" name="denimShortsPantsRed">
 		<property name="Extends" value="denimShortsPants" />
@@ -11333,7 +11348,7 @@ Mesh files no longer used:
 		<property name="HoldType" value="18" />
 		<property name="Stacknumber" value="1" />
 		<property name="SoundDestroy" value="wooddestroy1" />
-		<property name="FuelValue" value="24" />
+		<property name="FuelValue" value="5" />
 		<property name="Weight" value="1" />
         <property name="CrosshairOnAim" value="true" />
 		<property name="CrosshairUpAfterShot" value="false" />
@@ -11401,7 +11416,7 @@ Mesh files no longer used:
 		<property name="Material" value="wood" />
 		<property name="HoldType" value="18" />
 		<property name="Stacknumber" value="250" />
-		<property name="FuelValue" value="24" />
+		<property name="FuelValue" value="5" />
 		<property name="Weight" value="1" />
 		<property class="Action1">
 			<property name="Class" value="Projectile" />
