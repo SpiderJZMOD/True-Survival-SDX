@@ -1712,7 +1712,7 @@
         <property name="AITask-2" value="BreakBlock"/>
         <property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
         <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-        <property name="AITask-6" value="ApproachSpot"/>
+        <property name="AITask-5" value="ApproachSpot"/>
         <property name="AITask-6" value="Wander"/>
         <property name="Explosion.ParticleIndex" value="8" />
 		<property name="Explosion.RadiusBlocks" value="6" />
@@ -1749,7 +1749,7 @@
         <property name="AITask-2" value="BreakBlock"/>
         <property name="AITask-3" value="RangedAttackTarget" param1="1" param2="1"/>
         <property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
-        <property name="AITask-6" value="ApproachSpot"/>
+        <property name="AITask-5" value="ApproachSpot"/>
         <property name="AITask-6" value="Wander"/>
         <property name="Explosion.ParticleIndex" value="8" />
 		<property name="Explosion.RadiusBlocks" value="6" />
@@ -2401,7 +2401,7 @@
 		<property name="AITask-9" value="ApproachAndAttackTarget" param1="EntityHornet" />
 		<property name="AITask-10" value="ApproachAndAttackTarget" param1="EntityAnimalBear" />
 		<property name="AITask-11" value="ApproachSpot" />
-        <property name="AITask-3" value="Wander" />
+        <property name="AITask-12" value="Wander" />
      	<property name="AITarget-1" value="SetAsTargetIfHurt" param1="EntityEnemy" />
 		<property name="AITarget-2" value="SetAsTargetIfHurt" param1="EntitySurvivor" />
 		<property name="AITarget-3" value="SetAsTargetIfHurt" param1="EntityZombieCrawl" />

@@ -3954,7 +3954,7 @@ then add recipes for those white/red/green metals
 		<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger" />
 		<property class="RepairItems">
 			<property name="Plank" value="5" />
-			<property name="forgedIron" value="2" />
+			<property name="scrapIron" value="30" />
 		</property>
 		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="barbedFence" count="1" tool_category="Disassemble" />
