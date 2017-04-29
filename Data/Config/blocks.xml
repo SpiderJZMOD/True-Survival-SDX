@@ -2613,7 +2613,9 @@ then add recipes for those white/red/green metals
 			<property name="ItemCount" value="0" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="stone" count="1,3" />
+        <drop event="Destroy" count="0" />
+		<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="campfireDesc" />
 		<property name="EconomicValue" value="5" />
@@ -3858,7 +3860,9 @@ then add recipes for those white/red/green metals
 			<property name="ItemCount" value="0" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="scrapIron" count="5,10" />
+        <drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
 		<property name="Group" value="Food/Cooking,Building" />
 		<property name="EconomicValue" value="5" />
 		<property name="EconomicBundleSize" value="1" />
@@ -5039,9 +5043,9 @@ kind of free
 			<property name="Modules" value="tools,output,fuel,material_input" />
 			<property name="InputMaterials" value="iron,brass,lead,glass,stone,clay" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" name="bellows" count="1" />
 		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="forgeDesc" />
 		<property name="EconomicValue" value="214" />
@@ -7195,6 +7199,7 @@ kind of free
         <property name="Weight" value="400" />
 		<property name="MaxDamage" value="400" />
 		<property name="Class" value="Trunk" />
+		<property name="CustomIcon" value="woodLogPillar100" />
 		<property name="Shape" value="New" />
 		<property name="Model" value="Pole1m" />
 		<property name="Texture" value="21,21,116,116,116,116" />
@@ -12946,12 +12951,12 @@ kind of free
 			<property name="ItemCount" value="0" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="airFilter" count="1" prob=".2" tool_category="Disassemble" />
-        <drop event="Destroy" name="radiator" count="1" prob=".2" tool_category="Disassemble" />
-        <drop event="Destroy" name="Exhaust" count="1" prob=".2" tool_category="Disassemble" />
-        <drop event="Destroy" name="EngineBlock" count="1" prob=".2" tool_category="Disassemble" />
+		<drop event="Destroy" name="airFilter" count="1" prob=".2" />
+        <drop event="Destroy" name="radiator" count="1" prob=".2" />
+        <drop event="Destroy" name="Exhaust" count="1" prob=".2" />
+        <drop event="Destroy" name="EngineBlock" count="1" prob=".2" />
 		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Building" />
 		<property name="CustomIcon" value="ui_game_symbol_cementMixer" />
 		<property name="DescriptionKey" value="cementMixerDesc" />
@@ -13024,9 +13029,9 @@ kind of free
 			<property name="ItemCount" value="0" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="carBattery" count="1,4" tool_category="Disassemble" />
+		<drop event="Destroy" name="mechanicalParts" count="2,4" />
 		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="woodDebris" count="1" prob=".75" stick_chance="1" />
 		<property name="Group" value="Building" />
 		<property name="DescriptionKey" value="workbenchDesc" />
 		<property name="EconomicValue" value="776" />
@@ -13655,9 +13660,8 @@ kind of free
 			<property name="ItemCount" value="0" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="2" tool_category="Disassemble" />
 		<drop event="Destroy" name="scrapIron" count="2,4" prob="1" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".25" stick_chance="1" />
 	</block>
     <block id="1826" name="BBarrel">
 		<property name="Material" value="Mmetal_weak" />
@@ -14824,9 +14828,9 @@ kind of free
 			<property name="ItemCount" value="0" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
-		<drop event="Harvest" name="rockSmall" count="10" />
-        <drop event="Destroy" name="rockSmall" count="10" />
+		<drop event="Destroy" name="rockSmall" count="10" />
         <drop event="Destroy" count="0" />
+		<drop event="Fall" name="destroyedStone" count="1" prob=".5" stick_chance="1" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="StoneMillDesc" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
@@ -14874,7 +14878,9 @@ kind of free
 			<property name="ItemCount" value="0" />
 			<property name="UpgradeHitCount" value="10" />
 		</property>
+		<drop event="Destroy" name="scrapIron" count="5,10" />
         <drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
         <property name="Group" value="Food/Cooking" />
 		<property name="DescriptionKey" value="workStoveDesc" />
 		<property name="CraftingSkillGroup" value="Journeyman Crafting" />
@@ -14922,9 +14928,9 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="tools,output" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="scrapIron" count="10,20" />
+        <drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
 		<property name="DescriptionKey" value="MetalWorkBenchDesc" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
@@ -14962,8 +14968,9 @@ kind of free
 			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DescriptionKey" value="ResearchDeskDesc" />
-		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
+		<drop event="Destroy" name="Plank" count="10,20" />
         <drop event="Destroy" count="0" />
+		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Building" />
 		<property name="CraftingSkillGroup" value="Science" />
 	</block>
@@ -15022,7 +15029,9 @@ kind of free
 			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DescriptionKey" value="ArmorTableDesc" />
-		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
+		<drop event="Destroy" name="scrapIron" count="10,20" />
+        <drop event="Destroy" count="0" />
+		<drop event="Fall" name="woodDebris" count="1" prob=".5" stick_chance=".75" />
 		<property name="Group" value="Clothing" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
 	</block>
@@ -15056,8 +15065,9 @@ kind of free
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_SeedNursery" />
 		<property name="DescriptionKey" value="SeedNurseryDesc" />
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="fertilizer" count="3,15" tool_category="Disassemble" />
+		<drop event="Destroy" name="fertilizer" count="3,15" />
+		<drop event="Destroy" name="scrapIron" count="5,10" />
+        <drop event="Destroy" count="0" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Engineering" />
@@ -15103,9 +15113,9 @@ kind of free
 		<property name="CustomIcon" value="ui_game_symbol_BlastFurnace" />
 		<property name="DescriptionKey" value="BlastFurnaceDesc" />
 		<property name="CraftingSkillGroup" value="Master Craftsman" />
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="bellows" count="1" />
+		<drop event="Destroy" name="scrapIron" count="10,20" />
+        <drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
 		<property name="Group" value="Building" />
 	</block>
     <block id="1256" name="BlastFurnace">
@@ -15140,9 +15150,9 @@ kind of free
 		</property>
 		<property name="CustomIcon" value="ui_game_symbol_OilRefinery" />
 		<property name="DescriptionKey" value="OilRefineryDesc" />
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="bellows" count="1" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="bellows" count="1" />
+		<drop event="Destroy" name="scrapIron" count="5,10" />
+        <drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
 		<property name="Group" value="Tools/Traps" />
 		<property name="CraftingSkillGroup" value="Science" />
 	</block>
@@ -15181,9 +15191,9 @@ kind of free
 			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DescriptionKey" value="BulletPressDesc" />
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="scrapIron" count="5,10" />
+        <drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 	</block>
     <block id="1369" name="BulletPress">  
@@ -15221,10 +15231,9 @@ kind of free
 		<property name="CustomIcon" value="ui_game_symbol_DryingRack" />
 		<property name="Group" value="Clothing" />
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
-		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
+		<drop event="Destroy" name="Plank" count="5,10" />
+        <drop event="Destroy" count="0" />
+		<drop event="Fall" name="woodDebris" count="1" prob=".5" stick_chance="1" />
 	</block>
     <block id="1370" name="DryingRack">
 		<property name="Material" value="MWWorkStation" />
@@ -15257,9 +15266,9 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="output" />
 		</property>
-        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="stone" count="5,10" />
+        <drop event="Destroy" count="0" />
+		<drop event="Fall" name="destroyedStone" count="1" prob=".5" stick_chance="1" />
         <property name="DescriptionKey" value="MortarAndPestleDesc" />
 		<property name="Group" value="Basics" />
 	</block>
@@ -15295,9 +15304,9 @@ kind of free
 			<property name="UpgradeHitCount" value="10" />
 		</property>
         <property class="RepairItems"> <property name="scrapIron" value="50" /> </property>
-        <drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="scrapIron" count="10,20" />
+        <drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
 	</block>
 <block id="1376" name="Anvil">
 		<property name="Material" value="MMWorkStation" />
@@ -15336,9 +15345,9 @@ kind of free
 		<property class="Workstation">
 			<property name="Modules" value="tools,output" />
 		</property>
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" count="0" />
+		<drop event="Destroy" name="carBattery" count="1,2" />
+        <drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
 	</block>
     <block id="1179" name="BatteryPack">
 		<property name="Material" value="MWWorkStation" />
@@ -15462,8 +15471,8 @@ kind of free
 			<property name="Modules" value="output" />
 		</property>
         <property name="DescriptionKey" value="digesterDesc" />
-       	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="3,20" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="3,20" />
+        <drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
 		<property name="CraftingSkillGroup" value="Engineering" />
 		<property name="Group" value="Tools/Traps" />
@@ -16736,12 +16745,12 @@ kind of free
 			<property name="UpgradeHitCount" value="10" />
 		</property>
         <property name="Group" value="Decor" />
-		<property name="debug" value="false" />
+		<property name="debug" value="false" /> <!-- check on this -->
         <property name="DescriptionKey" value="dieselGenDesc" />
         <property name="CraftingSkillGroup" value="Journeyman Crafting" />
-        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
-        <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="10,20" prob="1" />
         <drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
     </block>
     <block id="1395" name="DieselGen">
 		<property name="CustomIcon" value="ui_game_symbol_dieselGen" />
@@ -16770,12 +16779,9 @@ kind of free
         <property name="CustomIcon" value="ui_game_symbol_bigGenerator" />
         <property name="DescriptionKey" value="bigGeneratorDesc" />
         <property name="CraftingSkillGroup" value="Master Craftsman" />
-        <drop event="Destroy" name="DieselGen" count="0" prob="1" tool_category="Crowbar" />
-        <drop event="Harvest" name="" count="0" prob="1" tool_category="Crowbar" />
-        <drop event="Destroy" name="BigGenerator" count="1" prob="1" tool_category="Crowbar" />
-        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
-        <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="10,20" prob="1" />
         <drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
     </block>
     <block id="1396" name="BGenerator"> 
 		<property name="Extends" value="DieselGen" />
@@ -16800,12 +16806,9 @@ kind of free
 		</property>
 		<property name="CanPickup" value="true" />
 		<property name="DescriptionKey" value="smallGeneratorDesc" />
-        <drop event="Destroy" name="DieselGen" count="0" prob="1" tool_category="Crowbar" />
-        <drop event="Harvest" name="" count="0" prob="1" tool_category="Crowbar" />
-        <drop event="Destroy" name="SmallGenerator" count="1" prob="1" tool_category="Crowbar" />
-        <drop event="Harvest" name="" count="1" prob="1" tool_category="Disassemble" />
-        <drop event="Destroy" name="scrapIron" count="20" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="scrapIron" count="10,20" prob="1" />
         <drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".5" stick_chance="1" />
     </block>
     <block id="1397" name="SGenerator"> 
 		<property name="Extends" value="DieselGen" />
@@ -16897,7 +16900,7 @@ kind of free
 		<property name="Shape" value="ModelEntity" />
 		<property name="Model" value="#cable?cableTest" />
 		<property name="ShapeMinBB" value="0.3,0,0.3" />
-        <drop event="Destroy" name="cableTest" count="1" prob="1" tool_category="Disassemble" />
+        <drop event="Destroy" name="cableTest" count="1" prob="1" />
 		<drop event="Destroy" name="scrapIron" count="5,10" prob="1" />
         <property name="DescriptionKey" value="powerlineDesc" />
         <property name="CraftingSkillGroup" value="Engineering" />
@@ -17493,8 +17496,7 @@ kind of free
 			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DescriptionKey" value="workFermentationBarrelDesc" />
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="Plank" count="3,10" tool_category="Disassemble" />
+		<drop event="Destroy" name="Plank" count="3,10" />
 		<drop event="Destroy" name="woodDebris" count="1" />
 		<drop event="Fall" name="woodDebris" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Food/Cooking" />
@@ -17600,8 +17602,8 @@ kind of free
 			<property name="UpgradeHitCount" value="10" />
 		</property>
 		<property name="DescriptionKey" value="workStillDesc" />
-		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="3,10" tool_category="Disassemble" />
+		<drop event="Destroy" name="scrapIron" count="3,10" />
+		<drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0" stick_chance=".75" />
 		<property name="Group" value="Food/Cooking" />
 		<property name="CraftingSkillGroup" value="Science" />
@@ -17628,7 +17630,6 @@ kind of free
         <property name="DowngradeBlock" value="cntUSRLockersInsecure" />
         <property name="SellableToTrader" value="false" />
 		<property class="RepairItems"> <property name="forgedIron" value="10" /> </property>
-        <drop event="Destroy" count="0" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
     <block id="1932" name="cntUSRFileCabinet">
@@ -17645,7 +17646,6 @@ kind of free
 		<property name="DowngradeBlock" value="cntEPSFileCabinetInsecure" />
         <property name="Model" value="Entities/LootContainers/file_cabinetPrefab" />
 		<property class="RepairItems"> <property name="scrapIron" value="10" /> </property>
-      	<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
     <block id="1933" name="cntUSRFridge">
@@ -17660,8 +17660,6 @@ kind of free
         <property name="DowngradeBlock" value="cntEPSFridgeInsecure" />
         <property name="CraftingSkillGroup" value="Journeyman Crafting" />
 		<property class="RepairItems"> <property name="forgedIron" value="10" /> </property>
-		<drop event="Harvest" name="scrapIron" count="40" tool_category="Disassemble" />
-		<drop event="Destroy" name="scrapIron" count="10" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
     <block id="1934" name="cntUSRBeerCooler">
@@ -17676,7 +17674,6 @@ kind of free
         <property name="CustomIcon" value="cntBeerCooler" />
 		<property name="DowngradeBlock" value="cntEPSBeerCoolerInsecure" />
 		<property class="RepairItems"> <property name="forgedIron" value="10" /> </property>
-		<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
     <block id="1935" name="cntUSRMedicineCabinet">
@@ -17688,7 +17685,7 @@ kind of free
 		<property name="Class" value="SecureLoot" />
         <property name="SellableToTrader" value="false" />
 		<property name="LootList" value="116" />
-		<drop event="Destroy" count="0" />
+		<drop event="Fall" name="scrapMetalPile" count="1" prob=".25" stick_chance="1" />
         <property name="CraftingSkillGroup" value="Journeyman Crafting" />
 		<property name="Group" value="Building" />
 		<property name="DowngradeBlock" value="cntEPSMedicineCabinetInsecure" />
@@ -17722,6 +17719,7 @@ kind of free
         <property name="CraftingSkillGroup" value="Journeyman Crafting" />
 		<property name="DowngradeBlock" value="cntEPSCoffinInsecure" />
 		<property class="RepairItems"> <property name="Plank" value="10" /> </property>
+		<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	</block>
 	<block id="1938" name="cntUSRLockersInsecure">
         <property name="Material" value="metal" />
@@ -17735,8 +17733,7 @@ kind of free
 		<property class="RepairItems">
 			<property name="forgedIron" value="10" />
 		</property>
-        <drop event="Destroy" count="0" />
-		<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
+        <drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>
 	<block id="1939" name="cntEPSFileCabinetInsecure">
@@ -17788,7 +17785,6 @@ kind of free
         <property name="SellableToTrader" value="false" />
 		<property name="Class" value="Loot" />
 		<property name="LootList" value="116" />
-		<drop event="Destroy" count="0" />
 		<drop event="Destroy" name="scrapIron" count="1,2" prob="1" />
 		<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	</block>

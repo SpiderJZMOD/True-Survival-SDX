@@ -5116,6 +5116,7 @@ Mesh files no longer used:
 			<property name="Overlay0" value="running_shoes" />
 		</property>
 		<property name="EconomicValue" value="200" />
+		<property name="CustomIcon" value="runningShoes" />
 	</item>
 	<item id="509" name="shirt">
 		<!-- longClothShirtMaster -->
@@ -17859,14 +17860,17 @@ Mesh files no longer used:
 		<property name="Extends" value="itemMaster" />
 		<property name="Material" value="Mplastics" />
 		<property name="Weight" value="3" />
+		<property name="CustomIcon" value="oldFrisbee" />
 	</item>
     <item id="3062" name="honeyComb">
         <property name="Extends" value="itemMaster" />
+		<property name="CustomIcon" value="honeyComb" />
 	</item>
     <item id="3063" name="oldKite">
         <property name="Extends" value="itemMaster" />
 		<property name="Material" value="Mplastics" />
 		<property name="Weight" value="2" />
+		<property name="CustomIcon" value="oldKite" />
 	</item>
     <item id="3064" name="trophyDeer">
         <property name="Extends" value="itemMaster" />
@@ -17894,7 +17898,7 @@ Mesh files no longer used:
 	</item>
     <item id="3068" name="trophyBoar">
         <property name="Extends" value="itemMaster" />
-		<property name="CustomIcon" value="trophyBoar" />
+		<property name="CustomIcon" value="trophyPig" />
 		<property name="CraftingSkillGroup" value="Hunting" />
         <property name="DescriptionKey" value="HuntingDesc" />
 	</item>
