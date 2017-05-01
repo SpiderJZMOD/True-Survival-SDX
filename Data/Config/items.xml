@@ -11708,6 +11708,7 @@ Mesh files no longer used:
 			<property name="Buff" value="bleeding,criticalBlunt" />
 			<property name="Buff_chance" value=".4,.4" />
             <property name="ToolCategory.Butcher" value="1" />
+			<property name="ToolCategory.Hunter" value="0" />
 			<property name="Sound_harvesting" value="UseActions/open_animal" />
 			<property name="ActionExp" value="5" />
 			<property name="ActionExpBonusMultiplier" value="1" />
