@@ -2458,7 +2458,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="NutAndBolt" count="8" />
         <ingredient name="padlock" count="1" />
 	</recipe>
-	<recipe name="cntUSRBeerCooler" count="1" craft_area="workworkBench" craft_tool="clawHammer" craft_time="30" craft_exp_gain="25">
+	<recipe name="cntUSRBeerCooler" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_time="30" craft_exp_gain="25">
 		<ingredient name="scrapPlastics" count="20" />
 		<ingredient name="spring" count="2" />
 		<ingredient name="mechanicalParts" count="3" />
@@ -2477,7 +2477,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="nail" count="10" />
         <ingredient name="padlock" count="1" />
 	</recipe>
-	<recipe name="cntUSRCoffin" count="1" craft_area="workworkBench" craft_tool="clawHammer" craft_time="30" craft_exp_gain="25">
+	<recipe name="cntUSRCoffin" count="1" craft_area="workworkbench" craft_tool="clawHammer" craft_time="30" craft_exp_gain="25">
 		<ingredient name="Plank" count="30" />
 		<ingredient name="nail" count="10" />
 		<ingredient name="spring" count="2" />
