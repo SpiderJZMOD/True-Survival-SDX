@@ -8663,6 +8663,7 @@ Mesh files no longer used:
 		<!-- STK resource -->
 		<property name="EconomicValue" value="25" />
 		<property name="EconomicBundleSize" value="5" />
+		<property name="SellableToTrader" value="false" />
 		<property name="Group" value="Resources,Ammo/Weapons" />
 		<property name="CraftingSkillGroup" value="Gun Smithing" />
 	</item>
@@ -15774,14 +15775,14 @@ Mesh files no longer used:
 		<property name="Extends" value="cornSeed" />
         <property name="CustomIcon" value="StrawberrySeedJZ" />
 		<property class="Action1">
-			<property name="Blockname" value="plantedTomato" />
+			<property name="Blockname" value="plantedStrawberry" />
 		</property>
 	</item>
 	<item id="1958" name="SunflowerSeed">
 		<property name="Extends" value="cornSeed" />
         <property name="CustomIcon" value="CarrotSeed" />
 		<property class="Action1">
-			<property name="Blockname" value="plantedTomato" />
+			<property name="Blockname" value="plantedSunflower" />
 		</property>
 	</item>
 	<!--JZMOD ATTACKS-->
@@ -17768,10 +17769,10 @@ Mesh files no longer used:
 		<property name="Material" value="Msteel" />
 		<property name="Weight" value="1" />
 	</item>
-	<item id="3054" name="glassPurfume">
+	<item id="3054" name="glassPerfume">
 		<property name="Extends" value="itemMaster" />
-		<property name="CustomIcon" value="glassPurfume" />
-		<property name="DescriptionKey" value="glassPurfumeDesc" />
+		<property name="CustomIcon" value="glassPerfume" />
+		<property name="DescriptionKey" value="glassPerfumeDesc" />
 		<property name="Material" value="glass" />
 		<property name="Weight" value="10" />
 	</item>

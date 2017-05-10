@@ -12353,11 +12353,31 @@ kind of free
 		<property name="DowngradeBlock" value="scrapHatch_v1" />
 	</block>
 	<block id="1465" name="scrapHatch_v3">
-		<property name="Extends" value="scrapHatch_v1" />
+		<property name="Class" value="DoorSecure" />
+		<property name="Material" value="Mmetal_medium" />
+		<property name="StabilitySupport" value="false" />
+		<property name="Shape" value="ModelEntity" />
+		<property name="Texture" value="241" />
+		<property name="Tag" value="Door" />
+		<property name="PlaceEverywhere" value="true" />
+		<property name="Place" value="Door" />
 		<property name="Model" value="Entities/Doors/scrap_hatch_v3Prefab" />
+		<property name="MultiBlockDim" value="1,1,1" />
+		<!-- we need to override the default door size of 2 blocks high -->
+		<property name="Mesh-Damage-1" value="Door/Hatch_DMG0" />
+		<property name="Mesh-Damage-2" value="Door/Hatch_DMG1" />
+		<property name="Mesh-Damage-3" value="Door/Hatch_DMG2" />
+		<property name="Mesh-Damage-4" value="Door/Hatch_DMG3" />
+		<property name="Mesh-Damage-5" value="Door/Hatch_DMG4" />
 		<property name="OpenSound" value="UseActions/open_hatch_scrap" />
 		<property name="CloseSound" value="UseActions/close_hatch_scrap" />
-		<property name="CustomUpgradeSound" value="Crafting/place_block_metal" />
+		<property class="RepairItems">
+			<property name="scrapIron" value="40" />
+		</property>
+		<drop event="Harvest" name="scrapIron" count="16" prob="1" />
+		<drop event="Destroy" count="0" />
+		<property name="Group" value="Building" />
+		<property name="EconomicValue" value="20" />
 		<property name="DowngradeBlock" value="scrapHatch_v2" />
 	</block>
 	<!-- Free -->
@@ -16247,7 +16267,7 @@ kind of free
 	<block id="1954" name="plantedSunflower">
 		<property name="Extends" value="plantedTomato" />
 		<property name="Texture" value="296" />
-		<property name="PlantGrowing.Next" value="plantedSunflower" />
+		<property name="PlantGrowing.Next" value="smallSunflower" />
 	</block>
 	<block id="1690" name="smallSunflower">
 		<property name="Extends" value="plantedTomato" />
