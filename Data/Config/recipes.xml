@@ -4510,7 +4510,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 		<ingredient name="Plank" count="10" />
 	</recipe>
     <recipe name="workFermentationBarrel" count="1" craft_area="workAnvil" craft_tool="clawHammer" craft_time="30" craft_exp_gain="10">
-		<ingredient name="Redwood" count="25" />
+		<ingredient name="Plank" count="25" />
 		<ingredient name="scrapCable" count="4" />
         <ingredient name="nail" count="10" />
 	</recipe>

@@ -872,7 +872,7 @@
         <item name="trophy" prob="32.66" />
 	</lootgroup>
 	<lootgroup name="glassJunk" count="1">
-		<item name="glassPurfume" prob="33.3" />
+		<item name="glassPerfume" prob="33.3" />
 		<item name="glassCompact"  prob="33.3" />
 		<item name="glassFrame"  prob="33.3" />
 	</lootgroup>

@@ -2053,6 +2053,7 @@
 		<perk name="Fireman" icon="Fireman" description_key="These are the skill a Fireman starts with. Collect 20 Profession pages to learn another profession" title_key="Fireman" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="1000" group="scavenging">
 			<recipe name="aloeCream" unlock_level="1" />
 			<recipe name="fireaxeIron" unlock_level="1" />
+			<recipe name="IronFireaxeHead" unlock_level="1" />
 			<recipe name="fireaxeSteel" unlock_level="1" />
 			<effect name="MaxStamina">
 				<multiply perk_level="0" value="1" />
@@ -2092,7 +2093,7 @@
 			<recipe name="dieselGen" unlock_level="1" />
 			<effect name="HarvestCount">
 				<multiply perk_level="0" value="1" />
-				<multiply perk_level="1" value="2" />
+				<multiply perk_level="1" value="1.1" />
 			</effect>
 			<effect name="CraftingTime">
 				<multiply perk_level="0" value="1" />
@@ -2149,7 +2150,7 @@
 			<recipe name="wrench" unlock_level="1" />
 			<effect name="HarvestCount">
 				<multiply perk_level="0" value="1" />
-				<multiply perk_level="1" value="2" />
+				<multiply perk_level="1" value="1.1" />
 			</effect>
 			<effect name="CraftingTime">
 				<multiply perk_level="0" value="1" />
