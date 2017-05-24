@@ -1294,10 +1294,10 @@
 	<lootgroup name="rareMedicine" count="1">
 		<item name="firstAidKit" prob="9.4" />
 		<item name="beaker" prob="1.4" />
-		<item name="antibiotics" prob="8.2" />
+		<item name="antibiotics" prob="12.2" />
 		<item name="AntiVenom" prob="14.1" />
 		<item name="SuterKit" prob="14.1" />
-		<item name="AntivirialMeds" prob="17.6" />
+		<item name="AntivirialMeds" prob="12.6" />
 		<item name="bloodDrawKit" prob="9.4" />
 		<item name="workMortarAndPestle" prob="2.3" />
 		<item name="Large1stAidKit" prob="11.7" />
@@ -1306,12 +1306,11 @@
 	<lootgroup name="medicine" count="1">
 		<item name="painkillers" prob="7.2" />
 		<item name="firstAidBandage" prob="7.2" />
-		<item name="bandage" prob="10.9" />
-		<item name="AntivirialMeds" prob="1.1" />
+		<item name="bandage" prob="10.0" />
 		<item name="vitamins" prob="7.2" />
 		<item name="grainAlcohol" prob="5.4" />
 		<item name="Stimulant" count="1,3" prob="7.2" />
-		<item group="rareMedicine" prob="5.4" />
+		<item group="rareMedicine" prob="7.4" />
 		<item name="emptyJar" prob="21.7" />
 		<item name="SanitizingBandage" prob="6.2" />
 		<item name="PurificationTablets" count="1,2" prob="18.1" />
@@ -2550,14 +2549,15 @@
 	<!-- lootcontainer 155 zombie cop-->
 	<lootcontainer id="155" count="0,2" size="4,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage">
 		<item name="shamSandwich" count="1" prob="16.3" />
-		<item group="ammoSmall" prob="35.7" />
+		<item group="ammoSmall" prob="26.7" />
 		<item group="books" prob="6.5" />
 		<item name="NightStick" prob="0.8" />
 		<item name="weaponRepairKit" prob="8.1" />
 		<item name="scrapBrass" count="5" prob="5.0" />
 		<item group="MonthlyMagazines" prob="8.1" />
-		<item group="WeeklyMagazines" prob="16.3" />
-		<item name="militaryFiber" count="1,4" prob="3.3" />
+		<item group="WeeklyMagazines" prob="10.3" />
+		<item name="militaryFiber" count="1,4" prob="5.3" />
+		<item name="ProfessionPage" count="1" prob="10.2" />
 	</lootcontainer>
 	
 	<!-- lootcontainer 156 dead nurse-->

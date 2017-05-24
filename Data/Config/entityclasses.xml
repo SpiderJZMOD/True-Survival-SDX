@@ -3680,7 +3680,7 @@
     <entity_class name="HungryCop8" extends="Cop8">
 		<property name="ExperienceGain" value="30" />
         <property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="162" />
+		<property name="LootListOnDeath" value="155" />
 		<property name="MaxHealth" value="4500" />
         <property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
@@ -3691,7 +3691,7 @@
     <entity_class name="HungryFatCop" extends="fatzombiecop">
 		<property name="ExperienceGain" value="30" />
         <property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="162" />
+		<property name="LootListOnDeath" value="155" />
 		<property name="MaxHealth" value="4500" />
         <property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
@@ -3702,7 +3702,7 @@
     <entity_class name="HungryCop6" extends="Cop6">
 		<property name="ExperienceGain" value="30" />
         <property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="162" />
+		<property name="LootListOnDeath" value="155" />
 		<property name="MaxHealth" value="4500" />
         <property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
@@ -3713,7 +3713,7 @@
     <entity_class name="HungryCop5" extends="Cop5">
 		<property name="ExperienceGain" value="30" />
         <property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="162" />
+		<property name="LootListOnDeath" value="155" />
 		<property name="MaxHealth" value="4500" />
         <property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
@@ -3724,7 +3724,7 @@
     <entity_class name="HungryCop3" extends="Cop3">
 		<property name="ExperienceGain" value="30" />
         <property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="162" />
+		<property name="LootListOnDeath" value="155" />
 		<property name="MaxHealth" value="4500" />
         <property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
@@ -3735,7 +3735,7 @@
     <entity_class name="HungryCop2" extends="Cop2">
 		<property name="ExperienceGain" value="30" />
         <property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="162" />
+		<property name="LootListOnDeath" value="155" />
 		<property name="MaxHealth" value="4500" />
         <property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
@@ -3746,7 +3746,7 @@
     <entity_class name="HungryCop1" extends="Cop1">
 		<property name="ExperienceGain" value="30" />
         <property name="HandItem" value="handStrongZombie" />
-		<property name="LootListOnDeath" value="162" />
+		<property name="LootListOnDeath" value="155" />
 		<property name="MaxHealth" value="4500" />
         <property name="WanderSpeed" value="0.08" />
 		<property name="ApproachSpeed" value="0.2" />
