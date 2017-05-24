@@ -3323,6 +3323,7 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="3000,6000" />
 		</property>
 		<property name="Group" value="Resources" />
+		<property name="CraftingSkillGroup" value="Engineering" />
 	</item>
 	<item id="261" name="partsChainsaw_parts">
 		<property name="Extends" value="partsMaster" />
@@ -6331,13 +6332,14 @@ Mesh files no longer used:
 		<property name="Stacknumber" value="15" />
 		<!-- STK food -->
 		<property class="Action0">
-			<property name="Class" value="UseOther" />
+			<property name="Class" value="Eat" />
 			<property name="Delay" value="1.0" />
 			<property name="Use_time" value="..." />
 			<property name="Gain_health" value="0" />
 			<property name="Gain_food" value="0" />
 			<property name="Gain_water" value="0" />
 			<property name="Gain_wellness" value="0" />
+			<property name="Create_item" value="emptyJar" />
 			<property name="Sound_start" value="UseActions/player_ointment" />
 			<property name="Debuff" value="bioInfection" />
 		</property>
@@ -9631,6 +9633,7 @@ Mesh files no longer used:
 			<property name="DegradationMax" value="30,600" />
 		</property>
 		<property name="CraftingSkillGroup" value="Primitive Crafting" />
+		<property name="EconomicValue" value="25" />
 	</item>
 	<item id="1509" name="BoltCylinder">
 		<property name="Extends" value="Crossbow_Barrel" />
@@ -14184,7 +14187,7 @@ Mesh files no longer used:
 		<property name="CustomIconTint" value="96f91d" />
 	</item>
 	<item id="1836" name="Stimulant">
-		<property name="Extends" value="SuterKit" />
+		<property name="Extends" value="FoodMaster" />
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 		<property name="HoldType" value="16" />
 		<property name="CustomIcon" value="ui_game_symbol_Stimulant" />
@@ -14197,9 +14200,12 @@ Mesh files no longer used:
 		</property>
 		<property name="DescriptionKey" value="StimulantDesc" />
 		<property name="ActionExp" value="10" />
+		<property name="Group" value="Medicine" />
+		<property name="ActionSkillGroup" value="Medicine" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 	</item>
 	<item id="1837" name="SuperPill">
-		<property name="Extends" value="SuterKit" />
+		<property name="Extends" value="FoodMaster" />
 		<property name="Meshfile" value="Items/Health/painkillersPrefab" />
 		<property name="HoldType" value="16" />
 		<property name="Stacknumber" value="50" />
@@ -14214,6 +14220,9 @@ Mesh files no longer used:
 		</property>
 		<property name="DescriptionKey" value="SuperPillDesc" />
 		<property name="ActionExp" value="50" />
+		<property name="Group" value="Medicine" />
+		<property name="ActionSkillGroup" value="Medicine" />
+		<property name="CraftingSkillGroup" value="Medicine" />
 	</item>
 	<item id="1838" name="PainKillerShot">
 		<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/Arrow" />
@@ -17822,10 +17831,10 @@ Mesh files no longer used:
 		<property name="HoldType" value="46" />
 		<property class="Action0">
 			<!-- AttackAction -->
-			<property name="Delay" value="1" />
+			<property name="Delay" value="1.3" />
 			<property name="Range" value="2.75" />
 			<property name="Sphere" value="0.4" />
-			<property name="DamageEntity" value="25" />
+			<property name="DamageEntity" value="20" />
 			<property name="DamageBlock" value="50" />
 			<property name="Buff" value="bleeding,stunned,scratch" />
 			<property name="Buff_chance" value="0.5,0.2,1" />

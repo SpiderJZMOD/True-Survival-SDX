@@ -1557,9 +1557,9 @@
 		<perk name="Treasure Hunter" icon="treasure" description_key="treasureHunterDesc" title_key="treasureHunter" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="scavenging">
 			<effect name="TreasureRadius">
 				<setvalue perk_level="0" value="9" />
-				<setvalue perk_level="1" value="5" />
-				<setvalue perk_level="2" value="3" />
-				<setvalue perk_level="3" value="1" />
+				<setvalue perk_level="1" value="7" />
+				<setvalue perk_level="2" value="5" />
+				<setvalue perk_level="3" value="3" />
 			</effect>
 		</perk>
 		<perk name="Chemistry Station" icon="AloeCream" description_key="Learn to craft achemistry Station on the wood working bench using a claw hammer. Use it to craft complex chemical and medical items. The Chemistry Station has 2 tools - Mortar And Pestle and beaker." title_key="Chemistry Station" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="health">

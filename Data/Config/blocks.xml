@@ -1028,7 +1028,7 @@ then add recipes for those white/red/green metals
 		<property name="Texture" value="289,289,65,65,65,65" />
 		<property name="IsDeveloper" value="true" />
 		<property class="RepairItems">
-			<property name="wood" value="10" />
+			<property name="Plank" value="10" />
 		</property>
 		<property class="UpgradeBlock">
 			<property name="ToBlock" value="pouredConcreteMaster" />
@@ -1784,6 +1784,7 @@ then add recipes for those white/red/green metals
 			<property name="ItemCount" value="20" />
 			<property name="UpgradeHitCount" value="4" />
 		</property>
+		<property name="DowngradeBlock" value="concreteBlock" />
 	</block>
 	<block id="205" name="pouredConcreteWedgeTip">
 		<property name="Extends" value="pouredConcreteMaster" />
@@ -15337,6 +15338,7 @@ kind of free
         <property name="CanPickup" param1="workAnvil" value="true" />
 		<property name="MaxDamage" value="100" />
 		<property name="SellableToTrader" value="false" />
+		<property name="Weight" value="1200" />
 	</block>
 	<block id="1746" name="workBatteryPack">
 		<property name="Class" value="Machine, Mods" />
@@ -16171,7 +16173,9 @@ kind of free
 		<property name="BigDecorationRadius" value="4" />
 		<property name="MaxDamage" value="2000" />
 		<property name="FallOver" value="true" />
-		<drop event="Destroy" name="Redwood" count="25,100" prob="1" />
+		<drop event="Harvest" name="woodBranch" count="40" />
+        <drop event="Destroy" name="narrowLog" count="20,25" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="18,20" prob="1" />
 		<drop event="Destroy" name="RedwoodSeed" count="1" prob="0.5" />
 	</block>
 	<block id="1677" name="redwoodTree">
@@ -16186,8 +16190,10 @@ kind of free
 		<property name="MaxDamage" value="3000" />
 		<property name="MeshScale" value="2.2,2.2" />
 		<property name="FallOver" value="true" />
-		<drop event="Destroy" name="Redwood" count="50,250" prob="1" />
-		<drop event="Destroy" name="RedwoodSeed" count="1" prob="0.7" />
+        <drop event="Harvest" name="woodBranch" count="55" />
+        <drop event="Destroy" name="narrowLog" count="25,30" prob="1" />
+		<drop event="Destroy" name="woodLogPillar100" count="24,28" prob="1" />
+		<drop event="Destroy" name="RedwoodSeed" count="1,2" prob="1" />
 	</block>
 	<block id="1678" name="plantedTomato">
 		<property name="Extends" value="cropsGrowingMaster" />
